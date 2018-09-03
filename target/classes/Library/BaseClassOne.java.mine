@@ -30,12 +30,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Configuration;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -44,14 +46,13 @@ import org.testng.asserts.SoftAssert;
 import Functions.CreateANew_Assessment;
 
 
-public class BaseClassOne {
+public class BaseClassOne	{
 
 	
 	   // alert.accept();
 	 public static WebDriver driver;
-	public String  baseUrl = "http://192.168.10.124/Edinsight/Login.aspx";
-  //public String  baseUrl = "http://192.168.10.201/Edinsight/Login.aspx";
-	 protected  String downloadPath="D:\\selenium_downloads";
+	 public String  baseUrl = "http://192.168.10.124/Edinsight/Login.aspx";
+	 protected  String downloadPath="E:\\selenium_downloads";
 	 int i=0;
 	
 	 private static final int TIMEOUT = 20000;
@@ -63,7 +64,7 @@ public class BaseClassOne {
 	 { 
 		//FirefoxProfile profile=Browser_Preference();
 		//System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
-		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "F:\\Jars\\geckodriver.exe");
 		
 		FirefoxProfile profile = new FirefoxProfile();
 		profile.setPreference("browser.download.folderList", 2);
@@ -98,7 +99,7 @@ public class BaseClassOne {
 	 @AfterTest
     public void tearDown() throws Exception { 
 	//driver.close();	 
-    //driver.quit();
+	//driver.quit();
     
 	 }
 	 
@@ -435,7 +436,7 @@ public class BaseClassOne {
 		} else if (optionLocator.startsWith("label=")) {
 			select.selectByVisibleText(optionLocator.substring("label=".length()));
 		} else {
-			select.selectByVisibleText(optionLocator);
+				select.selectByVisibleText(optionLocator);
 		}
 	}
 	
@@ -533,5 +534,8 @@ public class BaseClassOne {
 		((JavascriptExecutor) driver).executeScript(
 		"arguments[0].scrollIntoView();", element);
 	}
+	
+	//*****************************************Test Listner *********************************	
+	
 
 }
