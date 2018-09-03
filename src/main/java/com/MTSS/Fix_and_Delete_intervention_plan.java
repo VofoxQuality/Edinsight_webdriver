@@ -138,8 +138,7 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 	public void TCED19808() throws InterruptedException, AWTException
 	
 	{
-		
-			
+					
 		try 
 		{
 			driver.navigate().to("http://192.168.10.124/Edinsight/Form/RTI/FixInterventionPlans.aspx?args=fPCcek9X3JyzRdS9nDE+7KD3NBSoLWFnR+sq1TMwYPs=");

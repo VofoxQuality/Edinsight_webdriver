@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.MTSS.Early_Warning_Identification">
+      <class name="com.curriculum.Report_By_Standard">
         <methods>
           <include name="setup1"/>
-          <include name="TCED22107"/>
+          <include name="TCED26104"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.MTSS.Early_Warning_Identification -->
+      </class> <!-- com.curriculum.Report_By_Standard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

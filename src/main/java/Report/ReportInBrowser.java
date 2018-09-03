@@ -11,7 +11,7 @@ public class ReportInBrowser {
 	{
 		WebDriver driver1;
 		//FirefoxProfile profile=Browser_Preference();
-		System.setProperty("webdriver.gecko.driver","F:\\Jars\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
 		
 		driver1 = new FirefoxDriver();
 	     

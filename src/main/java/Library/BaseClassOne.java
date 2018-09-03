@@ -38,6 +38,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Configuration;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -52,7 +53,7 @@ public class BaseClassOne	{
 	   // alert.accept();
 	 public static WebDriver driver;
 	 public String  baseUrl = "http://192.168.10.124/Edinsight/Login.aspx";
-	 protected  String downloadPath="E:\\selenium_downloads";
+	 protected  String downloadPath="D:\\selenium_downloads";
 	 int i=0;
 	
 	 private static final int TIMEOUT = 20000;
@@ -63,13 +64,8 @@ public class BaseClassOne	{
 	 public void setup1() throws Exception
 	 { 
 		//FirefoxProfile profile=Browser_Preference();
-
 		//System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
-		System.setProperty("webdriver.gecko.driver", "F:\\Jars\\geckodriver.exe");
-
-	//	System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
-		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
-
+		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		
 		FirefoxProfile profile = new FirefoxProfile();
 		profile.setPreference("browser.download.folderList", 2);

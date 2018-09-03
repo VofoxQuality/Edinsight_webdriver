@@ -1,50 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
-  <test thread-count="5" name="Mozhilla Browser(failed)">
+  <test name="Mozhilla Browser(failed)">
     <classes>
       <class name="com.analyzeByScore.AnalyzeByQuestion">
         <methods>
           <include name="setup1"/>
           <include name="TCED14127"/>
           <include name="tearDown"/>
-          <include name="TCED14125"/>
-          <include name="TCED14126"/>
           <include name="TCED14124"/>
         </methods>
       </class> <!-- com.analyzeByScore.AnalyzeByQuestion -->
+      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
+        <methods>
+          <include name="setup1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
+      <class name="com.analyzeByScore.AnalyzeByStandard">
+        <methods>
+          <include name="setup1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.analyzeByScore.AnalyzeByStandard -->
+      <class name="com.analyzeByScore.AnalyzeByTag">
+        <methods>
+          <include name="setup1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.analyzeByScore.AnalyzeByTag -->
     </classes>
   </test> <!-- Mozhilla Browser(failed) -->
-  <test thread-count="5" name="Mozhilla Browser1(failed)">
+  <test name="Mozhilla Browser1(failed)">
     <classes>
+      <class name="com.analyzeByScore.AnalyzeByQuestion">
+        <methods>
+          <include name="setup1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.analyzeByScore.AnalyzeByQuestion -->
       <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
         <methods>
           <include name="setup1"/>
           <include name="TCED14427"/>
-          <include name="TCED14426"/>
-          <include name="TCED14425"/>
-          <include name="TCED14424"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
-    </classes>
-  </test> <!-- Mozhilla Browser1(failed) -->
-  <test thread-count="5" name="Mozhilla Browser2(failed)">
-    <classes>
       <class name="com.analyzeByScore.AnalyzeByStandard">
         <methods>
           <include name="setup1"/>
-          <include name="TCED14126"/>
           <include name="tearDown"/>
-          <include name="TCED14125"/>
-          <include name="TCED14127"/>
-          <include name="TCED14124"/>
         </methods>
       </class> <!-- com.analyzeByScore.AnalyzeByStandard -->
+      <class name="com.analyzeByScore.AnalyzeByTag">
+        <methods>
+          <include name="setup1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.analyzeByScore.AnalyzeByTag -->
     </classes>
-  </test> <!-- Mozhilla Browser2(failed) -->
-  <test thread-count="5" name="Mozhilla Browser3(failed)">
+  </test> <!-- Mozhilla Browser1(failed) -->
+  <test name="Mozhilla Browser3(failed)">
     <classes>
+      <class name="com.analyzeByScore.AnalyzeByQuestion">
+        <methods>
+          <include name="setup1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.analyzeByScore.AnalyzeByQuestion -->
+      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
+        <methods>
+          <include name="setup1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
+      <class name="com.analyzeByScore.AnalyzeByStandard">
+        <methods>
+          <include name="setup1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.analyzeByScore.AnalyzeByStandard -->
       <class name="com.analyzeByScore.AnalyzeByTag">
         <methods>
           <include name="setup1"/>
