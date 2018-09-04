@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 04 17:05:39 IST 2018</td>
+<td>Started on:</td><td>Tue Sep 04 19:09:51 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>64 seconds (64164 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23103 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,88 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.curriculum.Batch_Print.TCED28103()'><b>TCED28103</b><br>Test class: com.curriculum.Batch_Print</td>
+<td><div><pre>java.lang.AssertionError: TypeError: Expected an element or WindowProxy, got: [object Text] {}
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;AKHIL-TS&apos;, ip: &apos;192.168.10.122&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11852, moz:profile: D:\Users\Akhil-TS\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 21427749-f0fb-48a1-b144-a7bdf95dd03c
+*** Element info: {Using=xpath, value=//*[@id=&apos;ctl00_MainContent_lblMsg&apos;]/text()[1]}
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.curriculum.Batch_Print.TCED28103(Batch_Print.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace29260643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29260643'><pre>java.lang.AssertionError: TypeError: Expected an element or WindowProxy, got: [object Text] {}
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;AKHIL-TS&apos;, ip: &apos;192.168.10.122&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11852, moz:profile: D:\Users\Akhil-TS\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 21427749-f0fb-48a1-b144-a7bdf95dd03c
+*** Element info: {Using=xpath, value=//*[@id=&apos;ctl00_MainContent_lblMsg&apos;]/text()[1]}
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.curriculum.Batch_Print.TCED28103(Batch_Print.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>2</td>
+<td>com.curriculum.Batch_Print@1ee9989</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,80 +157,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.MTSS.Configure_Settings.TCED23101()'><b>TCED23101</b><br>Test class: com.MTSS.Configure_Settings</td>
+<td title='com.curriculum.Batch_Print.TCED28101()'><b>TCED28101</b><br>Test class: com.curriculum.Batch_Print</td>
 <td></td>
 <td>7</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
+<td>com.curriculum.Batch_Print@1ee9989</td></tr>
 <tr>
-<td title='com.MTSS.Configure_Settings.TCED23102()'><b>TCED23102</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>0</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23103()'><b>TCED23103</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>2</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23104()'><b>TCED23104</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>2</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23105()'><b>TCED23105</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>3</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23106()'><b>TCED23106</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>2</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23107()'><b>TCED23107</b><br>Test class: com.MTSS.Configure_Settings</td>
+<td title='com.curriculum.Batch_Print.TCED28102()'><b>TCED28102</b><br>Test class: com.curriculum.Batch_Print</td>
 <td></td>
 <td>1</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23108()'><b>TCED23108</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>2</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23109()'><b>TCED23109</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>1</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23110()'><b>TCED23110</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>1</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23111()'><b>TCED23111</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>1</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23112()'><b>TCED23112</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>1</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23113()'><b>TCED23113</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>2</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23114()'><b>TCED23114</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>2</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
-<tr>
-<td title='com.MTSS.Configure_Settings.TCED23115()'><b>TCED23115</b><br>Test class: com.MTSS.Configure_Settings</td>
-<td></td>
-<td>2</td>
-<td>com.MTSS.Configure_Settings@1686d1f</td></tr>
+<td>com.curriculum.Batch_Print@1ee9989</td></tr>
 </table><p>
 </body>
 </html>
