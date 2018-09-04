@@ -28,6 +28,8 @@ public class Report_By_Standard extends BaseClassOne
 			
 			click("//*[@id='ctl00_tdLeftMenu']/table/tbody/tr[18]/td[2]/a/strong");
 			
+			//Assert the label "Search Curriculum by Standards"
+			
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/h4")).getText().contains("Search Curriculum by Standards"));
 		} 
 	
@@ -51,7 +53,21 @@ public class Report_By_Standard extends BaseClassOne
 		{
 			driver.navigate().refresh();
 			
+
+			//Assert the Label "Standards Type"			
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[2]/tbody/tr[1]/td")).getText().contains("Standards Type"));
+			
+			//Assert the Label "Available Standards"			
 			Assert.assertTrue(driver.findElement(By.xpath("//b[contains(text(),'Available Standards')]")).getText().contains("Available Standards"));
+			
+			//Assert the Label "No standard selected."
+			
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_ctl00_MainContent_CurriculumReportByStandards1_litStandardNamePanel']")).getText().contains("No standard selected."));
+			
+			//Assert the Label "No standard has been selected."
+			
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_ctl00_MainContent_CurriculumReportByStandards1_litNumOfMapsFoundPanel']")).getText().contains("No standard has been selected."));
+			
 		}
 		catch (Exception e)
 		
@@ -77,6 +93,52 @@ public class Report_By_Standard extends BaseClassOne
 			
 			if (driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/div/div/span")).isDisplayed()==false)
 			{		
+			click("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/div/span");			 
+			
+			}
+			
+			if(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/ul/li[1]/div/div/span")).isDisplayed()==false)
+			{				
+				click("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/div/span");		
+			}
+					
+			
+			if(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/ul/li[1]/ul/li[1]/div/div/span")).isDisplayed()==false)
+						
+			{				
+				
+				click("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/ul/li[1]/div/span");		
+			}
+			
+			if(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/ul/li[1]/ul/li[1]/ul/li/div/div/span")).isDisplayed()==false)
+			{				
+				click("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/ul/li[1]/ul/li[3]/div/span");		
+			}
+			
+			if(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/ul/li[1]/ul/li[3]/ul/li[1]/ul/li/div/div/span")).isDisplayed()==false)
+			{				
+				click("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/ul/li[1]/ul/li[3]/ul/li[1]/div/span");		
+			}
+					
+						
+			if (driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/ul/li[1]/ul/li[3]/ul/li[1]/ul/li/ul/li[1]/div/div/span")).isDisplayed()==false)
+				
+			{
+				
+				click("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/ul/li[1]/ul/li[3]/ul/li[1]/ul/li/div/span");		
+				
+			}
+			
+			//Assert the label "Demonstrate an understanding that in a multi-digit number, a digit in one place represents 1/10 of what it represents in the place to its left. Example: Recognize that in the number 770, the 7 in the tens place is 1/10 the 7 in the hundreds place"
+			
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/ul/li[1]/ul/li[3]/ul/li[1]/ul/li/ul/li[1]/div/div/span")).getText().contains("Demonstrate an understanding that in a multi-digit number"));
+			
+			
+			driver.navigate().refresh();				
+						
+			
+			if (driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/div/div/span")).isDisplayed()==false)
+			{		
 			click("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/div/span");	
 			
 			}
@@ -86,6 +148,8 @@ public class Report_By_Standard extends BaseClassOne
 			click("#ctl00_MainContent_CurriculumReportByStandards1_btnAddToPrint");
 			
 			System.out.println(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_lblStandard']/ul/li")).getText());
+			
+			//Assert the label "M05.A-T.1.1.1 - Demonstrate an understanding that in a multi-digit number, (STATE: PA Core Anchors and Eligible Content (2014))"
 			
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_lblStandard']/ul/li")).getText().contains("M - Mathematics (STATE: PA Core Anchors and Eligible Content (2014))"));
 					
@@ -104,7 +168,7 @@ public class Report_By_Standard extends BaseClassOne
 		
 	}
 	
-	@Test(priority=3)
+@Test(priority=3)
 	
 	public void TCED26104() throws InterruptedException
 	
@@ -157,7 +221,7 @@ public class Report_By_Standard extends BaseClassOne
 		
 	}
 	
-	@Test(priority=4)
+@Test(priority=4)
 	
 	public void TCED26105()
 	{
@@ -193,8 +257,8 @@ public class Report_By_Standard extends BaseClassOne
 					
 	
 	}
-	
-	@Test(priority=5)
+
+@Test(priority=5)
 	
 	public void TCED26106()
 	{
