@@ -5,8 +5,8 @@
     <classes>
       <class name="com.curriculum.Batch_Print">
         <methods>
+          <include name="TCED28104"/>
           <include name="setup1"/>
-          <include name="TCED28103"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.curriculum.Batch_Print -->

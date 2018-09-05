@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23103" started-at="2018-09-04T13:39:51Z" finished-at="2018-09-04T13:40:14Z">
+  <suite name="Default suite" duration-ms="27876" started-at="2018-09-05T13:24:22Z" finished-at="2018-09-05T13:24:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23103" started-at="2018-09-04T13:39:51Z" finished-at="2018-09-04T13:40:14Z">
+    <test name="Default test" duration-ms="27876" started-at="2018-09-05T13:24:22Z" finished-at="2018-09-05T13:24:50Z">
       <class name="com.curriculum.Batch_Print">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="setup1" is-config="true" duration-ms="12099" started-at="2018-09-04T19:09:51Z" finished-at="2018-09-04T19:10:03Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="setup1" is-config="true" duration-ms="6078" started-at="2018-09-05T18:54:22Z" finished-at="2018-09-05T18:54:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED28101()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28101" duration-ms="7807" started-at="2018-09-04T19:10:03Z" finished-at="2018-09-04T19:10:11Z">
+        <test-method status="PASS" signature="TCED28101()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28101" duration-ms="7680" started-at="2018-09-05T18:54:28Z" finished-at="2018-09-05T18:54:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED28101 -->
-        <test-method status="PASS" signature="TCED28102()[pri:1, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28102" duration-ms="1045" started-at="2018-09-04T19:10:11Z" finished-at="2018-09-04T19:10:12Z">
+        <test-method status="PASS" signature="TCED28102()[pri:1, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28102" duration-ms="1028" started-at="2018-09-05T18:54:36Z" finished-at="2018-09-05T18:54:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED28102 -->
-        <test-method status="FAIL" signature="TCED28103()[pri:2, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28103" duration-ms="2121" started-at="2018-09-04T19:10:12Z" finished-at="2018-09-04T19:10:14Z">
+        <test-method status="PASS" signature="TCED28103()[pri:2, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28103" duration-ms="3707" started-at="2018-09-05T18:54:37Z" finished-at="2018-09-05T18:54:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED28103 -->
+        <test-method status="FAIL" signature="TCED28104()[pri:3, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28104" duration-ms="9226" started-at="2018-09-05T18:54:40Z" finished-at="2018-09-05T18:54:50Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[TypeError: Expected an element or WindowProxy, got: [object Text] {}
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'AKHIL-TS', ip: '192.168.10.122', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11852, moz:profile: D:\Users\Akhil-TS\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 21427749-f0fb-48a1-b144-a7bdf95dd03c
-*** Element info: {Using=xpath, value=//*[@id='ctl00_MainContent_lblMsg']/text()[1]}]]>
+              <![CDATA[Failed to download document which has extension .PDF expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: TypeError: Expected an element or WindowProxy, got: [object Text] {}
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'AKHIL-TS', ip: '192.168.10.122', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11852, moz:profile: D:\Users\Akhil-TS\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 21427749-f0fb-48a1-b144-a7bdf95dd03c
-*** Element info: {Using=xpath, value=//*[@id='ctl00_MainContent_lblMsg']/text()[1]}
+              <![CDATA[java.lang.AssertionError: Failed to download document which has extension .PDF expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
-	at com.curriculum.Batch_Print.TCED28103(Batch_Print.java:108)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.curriculum.Batch_Print.TCED28104(Batch_Print.java:164)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -70,8 +64,12 @@ Session ID: 21427749-f0fb-48a1-b144-a7bdf95dd03c
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED28103 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-04T19:10:14Z" finished-at="2018-09-04T19:10:14Z">
+        </test-method> <!-- TCED28104 -->
+        <test-method status="PASS" signature="TCED28105()[pri:4, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28105" duration-ms="128" started-at="2018-09-05T18:54:50Z" finished-at="2018-09-05T18:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED28105 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-05T18:54:50Z" finished-at="2018-09-05T18:54:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
