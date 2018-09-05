@@ -1,57 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="144249" started-at="2018-08-13T11:50:37Z" finished-at="2018-08-13T11:53:02Z">
+  <suite name="Default suite" duration-ms="50056" started-at="2018-09-04T14:56:09Z" finished-at="2018-09-04T14:56:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="144249" started-at="2018-08-13T11:50:37Z" finished-at="2018-08-13T11:53:02Z">
-      <class name="com.MTSS.TeamDecisionReport">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.TeamDecisionReport@1ce92674]" name="setup1" is-config="true" duration-ms="11701" started-at="2018-08-13T17:20:37Z" finished-at="2018-08-13T17:20:49Z">
+    <test name="Default test" duration-ms="50056" started-at="2018-09-04T14:56:09Z" finished-at="2018-09-04T14:56:59Z">
+      <class name="com.MTSS.InterventionEffectivenessBySkill">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.InterventionEffectivenessBySkill@7085bdee]" name="setup1" is-config="true" duration-ms="9019" started-at="2018-09-04T20:26:09Z" finished-at="2018-09-04T20:26:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED22606()[pri:1, instance:com.MTSS.TeamDecisionReport@1ce92674]" name="TCED22606" duration-ms="18546" started-at="2018-08-13T17:20:49Z" finished-at="2018-08-13T17:21:08Z">
+        <test-method status="PASS" signature="TCED22807()[pri:1, instance:com.MTSS.InterventionEffectivenessBySkill@7085bdee]" name="TCED22807" duration-ms="22414" started-at="2018-09-04T20:26:18Z" finished-at="2018-09-04T20:26:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22606 -->
-        <test-method status="PASS" signature="TCED22607()[pri:2, instance:com.MTSS.TeamDecisionReport@1ce92674]" name="TCED22607" duration-ms="9300" started-at="2018-08-13T17:21:08Z" finished-at="2018-08-13T17:21:17Z">
+        </test-method> <!-- TCED22807 -->
+        <test-method status="PASS" signature="TCED22808()[pri:2, instance:com.MTSS.InterventionEffectivenessBySkill@7085bdee]" name="TCED22808" duration-ms="9303" started-at="2018-09-04T20:26:41Z" finished-at="2018-09-04T20:26:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22607 -->
-        <test-method status="PASS" signature="TCED22612()[pri:3, instance:com.MTSS.TeamDecisionReport@1ce92674]" name="TCED22612" duration-ms="18762" started-at="2018-08-13T17:21:17Z" finished-at="2018-08-13T17:21:36Z">
+        </test-method> <!-- TCED22808 -->
+        <test-method status="PASS" signature="TCED22811()[pri:3, instance:com.MTSS.InterventionEffectivenessBySkill@7085bdee]" name="TCED22811" duration-ms="9289" started-at="2018-09-04T20:26:50Z" finished-at="2018-09-04T20:26:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22612 -->
-        <test-method status="PASS" signature="TCED22613()[pri:4, instance:com.MTSS.TeamDecisionReport@1ce92674]" name="TCED22613" duration-ms="9285" started-at="2018-08-13T17:21:36Z" finished-at="2018-08-13T17:21:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22613 -->
-        <test-method status="PASS" signature="TCED22615()[pri:5, instance:com.MTSS.TeamDecisionReport@1ce92674]" name="TCED22615" duration-ms="18960" started-at="2018-08-13T17:21:45Z" finished-at="2018-08-13T17:22:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22615 -->
-        <test-method status="PASS" signature="TCED22616()[pri:6, instance:com.MTSS.TeamDecisionReport@1ce92674]" name="TCED22616" duration-ms="9344" started-at="2018-08-13T17:22:04Z" finished-at="2018-08-13T17:22:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22616 -->
-        <test-method status="PASS" signature="TCED22617()[pri:7, instance:com.MTSS.TeamDecisionReport@1ce92674]" name="TCED22617" duration-ms="9357" started-at="2018-08-13T17:22:13Z" finished-at="2018-08-13T17:22:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22617 -->
-        <test-method status="PASS" signature="TCED22608()[pri:8, instance:com.MTSS.TeamDecisionReport@1ce92674]" name="TCED22608" duration-ms="19550" started-at="2018-08-13T17:22:23Z" finished-at="2018-08-13T17:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22608 -->
-        <test-method status="PASS" signature="TCED22609()[pri:9, instance:com.MTSS.TeamDecisionReport@1ce92674]" name="TCED22609" duration-ms="19382" started-at="2018-08-13T17:22:42Z" finished-at="2018-08-13T17:23:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22609 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.TeamDecisionReport@1ce92674]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-08-13T17:23:02Z" finished-at="2018-08-13T17:23:02Z">
+        </test-method> <!-- TCED22811 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.InterventionEffectivenessBySkill@7085bdee]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-04T20:26:59Z" finished-at="2018-09-04T20:26:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.TeamDecisionReport -->
+      </class> <!-- com.MTSS.InterventionEffectivenessBySkill -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

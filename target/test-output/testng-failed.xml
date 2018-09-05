@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.MTSS.TeamDecisionReport">
+      <class name="com.MTSS.InterventionEffectivenessBySkill">
         <methods>
           <include name="setup1"/>
-          <include name="TCED22609"/>
           <include name="tearDown"/>
-          <include name="TCED22608"/>
+          <include name="TCED14216"/>
         </methods>
-      </class> <!-- com.MTSS.TeamDecisionReport -->
+      </class> <!-- com.MTSS.InterventionEffectivenessBySkill -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
