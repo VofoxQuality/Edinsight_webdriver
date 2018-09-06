@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="1" total="5" passed="4">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27876" started-at="2018-09-05T13:24:22Z" finished-at="2018-09-05T13:24:50Z">
+  <suite name="Default suite" duration-ms="29634" started-at="2018-09-06T13:38:10Z" finished-at="2018-09-06T13:38:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27876" started-at="2018-09-05T13:24:22Z" finished-at="2018-09-05T13:24:50Z">
-      <class name="com.curriculum.Batch_Print">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="setup1" is-config="true" duration-ms="6078" started-at="2018-09-05T18:54:22Z" finished-at="2018-09-05T18:54:28Z">
+    <test name="Default test" duration-ms="29634" started-at="2018-09-06T13:38:10Z" finished-at="2018-09-06T13:38:39Z">
+      <class name="com.curriculum.Enter_weeks_minutes">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Enter_weeks_minutes@17d0008]" name="setup1" is-config="true" duration-ms="28430" started-at="2018-09-06T19:08:10Z" finished-at="2018-09-06T19:08:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED28101()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28101" duration-ms="7680" started-at="2018-09-05T18:54:28Z" finished-at="2018-09-05T18:54:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED28101 -->
-        <test-method status="PASS" signature="TCED28102()[pri:1, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28102" duration-ms="1028" started-at="2018-09-05T18:54:36Z" finished-at="2018-09-05T18:54:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED28102 -->
-        <test-method status="PASS" signature="TCED28103()[pri:2, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28103" duration-ms="3707" started-at="2018-09-05T18:54:37Z" finished-at="2018-09-05T18:54:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED28103 -->
-        <test-method status="FAIL" signature="TCED28104()[pri:3, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28104" duration-ms="9226" started-at="2018-09-05T18:54:40Z" finished-at="2018-09-05T18:54:50Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="TCED29401()[pri:0, instance:com.curriculum.Enter_weeks_minutes@17d0008]" name="TCED29401" duration-ms="1181" started-at="2018-09-06T19:08:38Z" finished-at="2018-09-06T19:08:39Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to download document which has extension .PDF expected [true] but found [false]]]>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'AKHIL-TS', ip: '192.168.10.122', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14072, moz:profile: D:\Users\Akhil-TS\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a650b585-306a-43d3-86bd-8c88e5d29dfa]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed to download document which has extension .PDF expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.curriculum.Batch_Print.TCED28104(Batch_Print.java:164)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'AKHIL-TS', ip: '192.168.10.122', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14072, moz:profile: D:\Users\Akhil-TS\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a650b585-306a-43d3-86bd-8c88e5d29dfa
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
+	at Library.BaseClassOne.login(BaseClassOne.java:109)
+	at com.curriculum.Enter_weeks_minutes.TCED29401(Enter_weeks_minutes.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,146 +68,15 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED28104 -->
-        <test-method status="PASS" signature="TCED28105()[pri:4, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28105" duration-ms="128" started-at="2018-09-05T18:54:50Z" finished-at="2018-09-05T18:54:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED28105 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-05T18:54:50Z" finished-at="2018-09-05T18:54:50Z">
-=======
-<testng-results skipped="0" failed="0" ignored="0" total="28" passed="28">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="190098" started-at="2018-09-05T11:33:26Z" finished-at="2018-09-05T11:36:36Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="190098" started-at="2018-09-05T11:33:26Z" finished-at="2018-09-05T11:36:36Z">
-      <class name="com.curriculum.Print_Lessons">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Print_Lessons@5cb9f472]" name="setup1" is-config="true" duration-ms="8166" started-at="2018-09-05T17:03:26Z" finished-at="2018-09-05T17:03:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED25101()[pri:0, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25101" duration-ms="9093" started-at="2018-09-05T17:03:34Z" finished-at="2018-09-05T17:03:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25101 -->
-        <test-method status="PASS" signature="TCED25102()[pri:1, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25102" duration-ms="2530" started-at="2018-09-05T17:03:43Z" finished-at="2018-09-05T17:03:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25102 -->
-        <test-method status="PASS" signature="TCED25103()[pri:2, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25103" duration-ms="2075" started-at="2018-09-05T17:03:46Z" finished-at="2018-09-05T17:03:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25103 -->
-        <test-method status="PASS" signature="TCED25104()[pri:3, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25104" duration-ms="13461" started-at="2018-09-05T17:03:48Z" finished-at="2018-09-05T17:04:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25104 -->
-        <test-method status="PASS" signature="TCED25105()[pri:4, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25105" duration-ms="13381" started-at="2018-09-05T17:04:02Z" finished-at="2018-09-05T17:04:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25105 -->
-        <test-method status="PASS" signature="TCED25106()[pri:5, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25106" duration-ms="3142" started-at="2018-09-05T17:04:15Z" finished-at="2018-09-05T17:04:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25106 -->
-        <test-method status="PASS" signature="TCED25107()[pri:6, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25107" duration-ms="2627" started-at="2018-09-05T17:04:18Z" finished-at="2018-09-05T17:04:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25107 -->
-        <test-method status="PASS" signature="TCED25108()[pri:7, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25108" duration-ms="1885" started-at="2018-09-05T17:04:21Z" finished-at="2018-09-05T17:04:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25108 -->
-        <test-method status="PASS" signature="TCED25109()[pri:8, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25109" duration-ms="2196" started-at="2018-09-05T17:04:23Z" finished-at="2018-09-05T17:04:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25109 -->
-        <test-method status="PASS" signature="TCED25110()[pri:9, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25110" duration-ms="13450" started-at="2018-09-05T17:04:25Z" finished-at="2018-09-05T17:04:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25110 -->
-        <test-method status="PASS" signature="TCED25111()[pri:10, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25111" duration-ms="13281" started-at="2018-09-05T17:04:38Z" finished-at="2018-09-05T17:04:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25111 -->
-        <test-method status="PASS" signature="TCED25112()[pri:11, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25112" duration-ms="2793" started-at="2018-09-05T17:04:52Z" finished-at="2018-09-05T17:04:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25112 -->
-        <test-method status="PASS" signature="TCED25113()[pri:12, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25113" duration-ms="1976" started-at="2018-09-05T17:04:54Z" finished-at="2018-09-05T17:04:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25113 -->
-        <test-method status="PASS" signature="TCED25114()[pri:13, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25114" duration-ms="1955" started-at="2018-09-05T17:04:56Z" finished-at="2018-09-05T17:04:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25114 -->
-        <test-method status="PASS" signature="TCED25115()[pri:14, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25115" duration-ms="13327" started-at="2018-09-05T17:04:58Z" finished-at="2018-09-05T17:05:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25115 -->
-        <test-method status="PASS" signature="TCED25116()[pri:15, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25116" duration-ms="13357" started-at="2018-09-05T17:05:12Z" finished-at="2018-09-05T17:05:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25116 -->
-        <test-method status="PASS" signature="TCED25117()[pri:16, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25117" duration-ms="2988" started-at="2018-09-05T17:05:25Z" finished-at="2018-09-05T17:05:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25117 -->
-        <test-method status="PASS" signature="TCED25118()[pri:17, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25118" duration-ms="2101" started-at="2018-09-05T17:05:28Z" finished-at="2018-09-05T17:05:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25118 -->
-        <test-method status="PASS" signature="TCED25119()[pri:18, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25119" duration-ms="2088" started-at="2018-09-05T17:05:30Z" finished-at="2018-09-05T17:05:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25119 -->
-        <test-method status="PASS" signature="TCED25120()[pri:19, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25120" duration-ms="13273" started-at="2018-09-05T17:05:32Z" finished-at="2018-09-05T17:05:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25120 -->
-        <test-method status="PASS" signature="TCED25121()[pri:20, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25121" duration-ms="13196" started-at="2018-09-05T17:05:45Z" finished-at="2018-09-05T17:05:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25121 -->
-        <test-method status="PASS" signature="TCED25122()[pri:21, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25122" duration-ms="2742" started-at="2018-09-05T17:05:59Z" finished-at="2018-09-05T17:06:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25122 -->
-        <test-method status="PASS" signature="TCED25123()[pri:22, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25123" duration-ms="1892" started-at="2018-09-05T17:06:01Z" finished-at="2018-09-05T17:06:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25123 -->
-        <test-method status="PASS" signature="TCED25124()[pri:23, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25124" duration-ms="2044" started-at="2018-09-05T17:06:03Z" finished-at="2018-09-05T17:06:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25124 -->
-        <test-method status="PASS" signature="TCED25125()[pri:24, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25125" duration-ms="13137" started-at="2018-09-05T17:06:05Z" finished-at="2018-09-05T17:06:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25125 -->
-        <test-method status="PASS" signature="TCED25126()[pri:25, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25126" duration-ms="13339" started-at="2018-09-05T17:06:18Z" finished-at="2018-09-05T17:06:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25126 -->
-        <test-method status="PASS" signature="TCED25127()[pri:26, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED25127" duration-ms="2775" started-at="2018-09-05T17:06:32Z" finished-at="2018-09-05T17:06:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25127 -->
-        <test-method status="PASS" signature="TCED27128()[pri:27, instance:com.curriculum.Print_Lessons@5cb9f472]" name="TCED27128" duration-ms="1783" started-at="2018-09-05T17:06:35Z" finished-at="2018-09-05T17:06:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED27128 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Print_Lessons@5cb9f472]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-05T17:06:36Z" finished-at="2018-09-05T17:06:36Z">
->>>>>>> 1521672ac04081354ffc852ff7bfc82a447f9196
+        </test-method> <!-- TCED29401 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Enter_weeks_minutes@17d0008]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-06T19:08:39Z" finished-at="2018-09-06T19:08:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.curriculum.Print_Lessons -->
+      </class> <!-- com.curriculum.Enter_weeks_minutes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

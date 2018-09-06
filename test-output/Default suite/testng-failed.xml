@@ -3,17 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.curriculum.Report_By_Standard">
+      <class name="com.curriculum.Enter_weeks_minutes">
         <methods>
-          <include name="TCED28104"/>
+          <include name="TCED29401"/>
           <include name="setup1"/>
-<<<<<<< HEAD
-=======
-          <include name="TCED26104"/>
->>>>>>> 1521672ac04081354ffc852ff7bfc82a447f9196
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.curriculum.Report_By_Standard -->
+      </class> <!-- com.curriculum.Enter_weeks_minutes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

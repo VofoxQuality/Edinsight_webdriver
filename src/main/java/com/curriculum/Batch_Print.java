@@ -3,6 +3,7 @@ package com.curriculum;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -46,7 +47,7 @@ public class Batch_Print extends BaseClassOne
 				
 	}
 	
-	@Test(priority=1)
+@Test(priority=1)
 	
 	public void TCED28102()
 	
@@ -75,7 +76,7 @@ public class Batch_Print extends BaseClassOne
 		}
 	}
 	
-	@Test(priority=2)
+@Test(priority=2)
 	
 	public void TCED28103() 
 	
@@ -83,19 +84,23 @@ public class Batch_Print extends BaseClassOne
 		try
 		
 		{
-			driver.navigate().refresh();		
+			driver.navigate().refresh();
 			
 			
 			JavascriptExecutor js=(JavascriptExecutor)driver;
 			
-			js.executeScript("scroll(0,document.body.scrollHeight)");
+			js.executeScript("scroll(0,document.body.scrollHeight)");			
 			
 			if(isAlertPresents())
 			{			
 			driver.switchTo().alert().dismiss();	
 			}
 			
-			click("//*[@id='ctl00_MainContent_btnDownloadPDF']");				
+			//Click on "Click Here to Dowload Lesson plans" 
+			
+			click("//*[@id='ctl00_MainContent_btnDownloadPDF']");
+			
+			//Click on Print PDF
 			
 			click("//*[@id='ctl00_MainContent_linkPdf']");
 			
@@ -111,7 +116,11 @@ public class Batch_Print extends BaseClassOne
 			
 			js.executeScript("scroll(0,document.body.scrollHeight)");
 			
+			//Click on "Click Here to Dowload Lesson plans" 
+			
             click("//*[@id='ctl00_MainContent_btnDownloadPDF']");
+            
+          //Click on Print word
 			
 			click("//*[@id='ctl00_MainContent_linkWord']");		
 			
@@ -121,7 +130,8 @@ public class Batch_Print extends BaseClassOne
             
             //Assert the message "You must select at least one Period."
 			
-			//Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_lblMsg']")).getText().contains("You must select at least one Period"));
+			//Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_lblMsg']")).getText().contains("You must select at least one Period"));            
+           
 			
 		} 
 		
@@ -129,9 +139,12 @@ public class Batch_Print extends BaseClassOne
 		{
 			
 			e.printStackTrace();
-			Assert.fail(e.getMessage());
+		    Assert.fail(e.getMessage());
+
+			
 		}
 		
+
 	}
 	
 	@Test(priority=3)
@@ -139,45 +152,53 @@ public class Batch_Print extends BaseClassOne
 	public void TCED28104() throws Exception	
 	{
 		try 
-		{
+		{			
+
 			driver.navigate().refresh();
 			
-			Thread.sleep(2000);				
-			
-			click("//*[@id='ctl00_MainContent_cblTeachers_0']");										
-			
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			
-			js.executeScript("scroll(0,document.body.scrollHeight)");
+			Thread.sleep(6000);		
+										
 			
 			if(isAlertPresents())
 			{			
 			driver.switchTo().alert().dismiss();	
 			}
 			
-			click("//*[@id='ctl00_MainContent_btnDownloadPDF']");
-						
+			//select Teacher = Ableton, A - 10
+			
+			click("//*[@id='ctl00_MainContent_cblTeachers_0']");			
+		
 			FileDelete();
+			
+			//Click on "Click Here to Dowload Lesson plans" 
+			
+			click("//*[@id='ctl00_MainContent_btnDownloadPDF']");	
+			
+			//click on Print PDF
+			
 			click("//*[@id='ctl00_MainContent_linkPdf']");			
 			
 			Thread.sleep(6000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			
-			
+			//Click on "Click Here to Dowload Lesson plans" 
             click("//*[@id='ctl00_MainContent_btnDownloadPDF']");
             
             FileDelete();
+            
+            ////click on Print Word
 			
 			click("//*[@id='ctl00_MainContent_linkWord']");					
 			
 			Thread.sleep(6000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 			
-		} 
-		
-		catch (Exception e)
+		} 	
+				
+		catch (Exception e) 
 		{
-			
+					
+						
 			e.printStackTrace();			
 			Assert.fail(e.getMessage());
 		}
@@ -185,30 +206,40 @@ public class Batch_Print extends BaseClassOne
 	}
 @Test(priority=4)
 	
-public void TCED28105()
+public void TCED28105() throws InterruptedException
 	{
 	
 		try 
 		{
+			
+			
 			driver.navigate().refresh(); 
+			
+   		    Thread.sleep(2000);
+   		    
+   			if(isAlertPresents())
+			{			
+			driver.switchTo().alert().dismiss();	
+			}
+   			
+   			//click on Logout button
 			 
 			click("//*[@id='ctl00_A3']/img");
 			
 			//Assert the page Header as "Edinsight Login"
-			
-			System.out.println(driver.getTitle());
-			
-			//Assert.assertTrue(driver.getTitle().contains(""));
+						
+			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
 		} 
+					
 		
 		catch (Exception e)		
 		{
 			
 			e.printStackTrace();			
 			Assert.fail(e.getMessage());
+			
 		}
-		
-		
+	   
 	}
 
 }
