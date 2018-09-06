@@ -13,21 +13,26 @@ public class Print_Lessons extends BaseClassOne
 {
 	
 	@Test(priority=0)
-	
 	public void TCED25101()
 	{
 		
-		//Superintent Login
-		login(Supertent_Login_id,Supertent_Login_Password);	
-				
-		Actions act=new Actions(driver);
-		act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/a"))).build().perform();
-		
-		click("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/div/div[2]/div/a");
-		
-		click("a#ctl00_plcLeftMenu_LessonPlannerLeftMenu1_lnkPrintToday.smalltext");
-		
-		Assert.assertTrue(driver.findElement(By.xpath("//h6[@class='rwTitle']")).getText().contains("Print Lesson(s)"));		
+		try {
+			//Superintent Login
+			login(Supertent_Login_id,Supertent_Login_Password);	
+					
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/a"))).build().perform();
+			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/div/div[2]/div/a");
+			
+			click("a#ctl00_plcLeftMenu_LessonPlannerLeftMenu1_lnkPrintToday.smalltext");
+			
+			Assert.assertTrue(driver.findElement(By.xpath("//h6[@class='rwTitle']")).getText().contains("Print Lesson(s)"));
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}		
 			
 	}
 @Test(priority=1)
@@ -68,7 +73,7 @@ public class Print_Lessons extends BaseClassOne
 		
 	}
 	
-//	@Test(priority=2)
+	@Test(priority=2)
 	
 	public void TCED25103()
 	{
@@ -92,14 +97,14 @@ public class Print_Lessons extends BaseClassOne
         
         catch (Exception e) 
         {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+        	e.printStackTrace();
+    		Assert.fail(e.getMessage());
 		}
 		
 		
 	}
 	
-//	@Test(priority=3)
+	@Test(priority=3)
 	
 	public void TCED25104() throws Exception
 	{
@@ -130,7 +135,7 @@ public class Print_Lessons extends BaseClassOne
 		
 	}
 	
-//	@Test(priority=4)
+	@Test(priority=4)
 	
 	public void TCED25105() throws Exception
 	{
@@ -162,7 +167,7 @@ public class Print_Lessons extends BaseClassOne
 		
 	}
 	
-//@Test(priority=5)
+@Test(priority=5)
 	
 	public void TCED25106() throws Exception
 	{
@@ -203,13 +208,13 @@ public class Print_Lessons extends BaseClassOne
 	}
 	catch (Exception e) 	  
 	{
-		// TODO Auto-generated catch block
 		e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 	
 	}
 
-//@Test(priority=6)
+@Test(priority=6)
 
 public void TCED25107()
 
@@ -231,29 +236,35 @@ public void TCED25107()
 	  catch (Exception e) 
 	  
 	{
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		  e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 
 
 }
 
-// @Test(priority=7)
+@Test(priority=7)
 
   public void TCED25108()
 
   {
-	   driver.navigate().refresh();
-	   
-	   click("//*[@id='ctl00_plcLeftMenu_LessonPlannerLeftMenu1_lnkPrintTomorrow']");
-	   
-	   Assert.assertTrue(driver.findElement(By.xpath("//h6[@class='rwTitle']")).getText().contains("Print Lesson(s)"));
+	   try {
+		driver.navigate().refresh();
+		   
+		   click("//*[@id='ctl00_plcLeftMenu_LessonPlannerLeftMenu1_lnkPrintTomorrow']");
+		   
+		   Assert.assertTrue(driver.findElement(By.xpath("//h6[@class='rwTitle']")).getText().contains("Print Lesson(s)"));
+	} catch (Exception e) {
+		
+		e.printStackTrace();
+		Assert.fail(e.getMessage());
+	}
 	   
 	   
 
   }
  
-// @Test(priority=8)
+@Test(priority=8)
 
  public void TCED25109()
  
@@ -278,61 +289,73 @@ public void TCED25107()
 	} 
 	 catch (Exception e) 
 	{
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		 e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 	 
 	 
 	 
  }
  
-// @Test(priority=9)
+ @Test(priority=9)
 
  public void TCED25110() throws Exception
  {
 	 
 	 
-	    driver.navigate().refresh();
-	   
-	    click("//*[@id='ctl00_plcLeftMenu_LessonPlannerLeftMenu1_lnkPrintTomorrow']"); 
-	 
-	    driver.switchTo().frame("PrintDialog");
-		
-		FileDelete();
-		
-		click("input#ctl00_ContentPlaceHolder1_btnPrint.buttontext");
-		
-		Thread.sleep(6000);			
-		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+	    try {
+			driver.navigate().refresh();
+   
+			click("//*[@id='ctl00_plcLeftMenu_LessonPlannerLeftMenu1_lnkPrintTomorrow']"); 
+ 
+			driver.switchTo().frame("PrintDialog");
+			
+			FileDelete();
+			
+			click("input#ctl00_ContentPlaceHolder1_btnPrint.buttontext");
+			
+			Thread.sleep(6000);			
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}
 	 	 
 	 
  }
 
  
-// @Test(priority=10)
+ @Test(priority=10)
 
  public void TCED25111() throws Exception
  {
 	 
 	 
-	    driver.navigate().refresh();
-	   
-	    click("//*[@id='ctl00_plcLeftMenu_LessonPlannerLeftMenu1_lnkPrintTomorrow']"); 
-	 
-	    driver.switchTo().frame("PrintDialog");
-		
-		FileDelete();
-		
-		click("//*[@id='ctl00_ContentPlaceHolder1_btnPrintWord']");
-		
-		Thread.sleep(6000);			
-		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+	    try {
+			driver.navigate().refresh();
+   
+			click("//*[@id='ctl00_plcLeftMenu_LessonPlannerLeftMenu1_lnkPrintTomorrow']"); 
+ 
+			driver.switchTo().frame("PrintDialog");
+			
+			FileDelete();
+			
+			click("//*[@id='ctl00_ContentPlaceHolder1_btnPrintWord']");
+			
+			Thread.sleep(6000);			
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}
 	 
 	 
 	 
  }
  
-//@Test(priority=11)
+@Test(priority=11)
  
  public void TCED25112()
 
@@ -352,29 +375,34 @@ public void TCED25107()
 	   catch (Exception e) 
 	   
 	   {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		   e.printStackTrace();
+			Assert.fail(e.getMessage());
 	}
 	   
  }
  
-//@Test(priority=12)
+@Test(priority=12)
  
  public void TCED25113()
  
  {
 	 
-	   driver.navigate().refresh();
-	   
-	   click("//*[@id='ctl00_plcLeftMenu_LessonPlannerLeftMenu1_lnkPrintThisWeek']");
-	   
-	   Assert.assertTrue(driver.findElement(By.xpath("//h6[@class='rwTitle']")).getText().contains("Print Lesson(s)"));
+	   try {
+		driver.navigate().refresh();
+		   
+		   click("//*[@id='ctl00_plcLeftMenu_LessonPlannerLeftMenu1_lnkPrintThisWeek']");
+		   
+		   Assert.assertTrue(driver.findElement(By.xpath("//h6[@class='rwTitle']")).getText().contains("Print Lesson(s)"));
+	} catch (Exception e) {
+		e.printStackTrace();
+		Assert.fail(e.getMessage());
+	}
 	 
 	 
 	 
  }
 
-//@Test(priority=13)
+@Test(priority=13)
  
  public void TCED25114()
  
@@ -401,15 +429,15 @@ public void TCED25107()
 	 
 	 catch (Exception e) 
 	{
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		 e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 	 	 
 	 
  }
  
 
-//@Test(priority=14)
+@Test(priority=14)
  
  public void TCED25115() throws Exception
  
@@ -433,15 +461,15 @@ public void TCED25107()
 	 catch (Exception e) 
 	 
 	 {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		 e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 	 
 	 
 	 
  }
  
-//@Test(priority=15)
+@Test(priority=15)
  
  public void TCED25116() throws Exception
  
@@ -467,13 +495,13 @@ public void TCED25107()
 	 catch (Exception e) 
 	 
 	 {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		 e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 	 
 }
  
-//@Test(priority=16)
+@Test(priority=16)
  
  public void TCED25117()
  {
@@ -493,14 +521,14 @@ public void TCED25107()
 	 catch (Exception e) 
 	   
 	{
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		 e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 	 
 	 
  }
  
-//@Test(priority=17)
+@Test(priority=17)
  
  public void TCED25118()
  
@@ -518,13 +546,13 @@ public void TCED25107()
   
   catch (Exception e)
     {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+	  e.printStackTrace();
+	Assert.fail(e.getMessage());
 	} 
 	 
 }
  
-//@Test(priority=18)
+@Test(priority=18)
  
  public void TCED25119()
  {
@@ -549,14 +577,14 @@ public void TCED25107()
 	    catch (Exception e) 
 	
 	    {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	    	e.printStackTrace();
+			Assert.fail(e.getMessage());
 		}	 
 	 
 	 
  }
  
-//@Test(priority=19)
+@Test(priority=19)
  
  public void TCED25120() throws Exception
  
@@ -581,14 +609,14 @@ public void TCED25107()
 	 catch (Exception e) 
 	 
 	 {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		 e.printStackTrace();
+		Assert.fail(e.getMessage());
 	} 
 	 
 	 
  }
 
-//@Test(priority=20)
+@Test(priority=20)
 
 public void TCED25121() throws Exception
 
@@ -613,13 +641,13 @@ public void TCED25121() throws Exception
 	 catch (Exception e) 
 	 
 	 {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		 e.printStackTrace();
+		Assert.fail(e.getMessage());
 	} 
 	 
 }
 
-//@Test(priority=21)
+@Test(priority=21)
 
 public void TCED25122()
 
@@ -639,13 +667,13 @@ try
 
 catch (Exception e)
  {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+	e.printStackTrace();
+	Assert.fail(e.getMessage());
  } 
 	 
 }
 
-//@Test(priority=22)
+@Test(priority=22)
 
 public void TCED25123()
 
@@ -664,13 +692,13 @@ try
 
 catch (Exception e)
 {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+	e.printStackTrace();
+	Assert.fail(e.getMessage());
 } 
 	 
 }
 
-//@Test(priority=23)
+@Test(priority=23)
 
 public void TCED25124()
 {
@@ -695,14 +723,14 @@ public void TCED25124()
 	    catch (Exception e) 
 	
 	    {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	    	e.printStackTrace();
+			Assert.fail(e.getMessage());
 		}	 
 	 
 	 
 }
 
-//@Test(priority=24)
+@Test(priority=24)
 
 public void TCED25125() throws Exception
 
@@ -732,14 +760,14 @@ public void TCED25125() throws Exception
 	catch (Exception e) 
 	
 	{
-		// TODO Auto-generated catch block
 		e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 	
 
 }
 
-//@Test(priority=25)
+@Test(priority=25)
 
 public void TCED25126() throws Exception
 
@@ -769,13 +797,13 @@ public void TCED25126() throws Exception
 	catch (Exception e) 
 	
 	{
-		// TODO Auto-generated catch block
 		e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 	
 }
 
-//@Test(priority=26)
+@Test(priority=26)
 
 public void TCED25127()
 
@@ -796,13 +824,13 @@ try
 
 catch (Exception e)
 {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+	e.printStackTrace();
+	Assert.fail(e.getMessage());
 } 
 	 
 }
 
-//@Test(priority=27)
+@Test(priority=27)
 
 public void TCED27128()
 {
@@ -817,8 +845,8 @@ public void TCED27128()
 	catch (Exception e) 
 	
 	{
-		// TODO Auto-generated catch block
 		e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 	 
 	 

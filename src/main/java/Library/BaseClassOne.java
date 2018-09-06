@@ -38,7 +38,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Configuration;
+//import org.testng.annotations.Configuration;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -64,8 +64,8 @@ public class BaseClassOne	{
 	 public void setup1() throws Exception
 	 { 
 		//FirefoxProfile profile=Browser_Preference();
-		//System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
-		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		
 		FirefoxProfile profile = new FirefoxProfile();
 		profile.setPreference("browser.download.folderList", 2);
@@ -375,8 +375,7 @@ public class BaseClassOne	{
 			}
 			
 		}
-		
-		
+			
 	public String generateRandomData() {
 		final String alphabet = "0123456789111213141516171819abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		final int N = alphabet.length();

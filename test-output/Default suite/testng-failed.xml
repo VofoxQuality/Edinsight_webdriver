@@ -3,13 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.curriculum.Batch_Print">
+      <class name="com.curriculum.Report_By_Standard">
         <methods>
           <include name="TCED28104"/>
           <include name="setup1"/>
+<<<<<<< HEAD
+=======
+          <include name="TCED26104"/>
+>>>>>>> 1521672ac04081354ffc852ff7bfc82a447f9196
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.curriculum.Batch_Print -->
+      </class> <!-- com.curriculum.Report_By_Standard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
