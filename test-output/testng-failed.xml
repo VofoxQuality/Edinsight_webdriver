@@ -5,7 +5,7 @@
     <classes>
       <class name="com.curriculum.Enter_weeks_minutes">
         <methods>
-          <include name="TCED29401"/>
+          <include name="TCED29404"/>
           <include name="setup1"/>
           <include name="tearDown"/>
         </methods>

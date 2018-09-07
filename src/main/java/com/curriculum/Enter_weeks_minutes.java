@@ -1,7 +1,11 @@
 package com.curriculum;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Library.BaseClassOne;
@@ -16,39 +20,260 @@ public class Enter_weeks_minutes extends BaseClassOne
 	public void TCED29401() throws InterruptedException
 	{
 	
-	//Superintent Login
-	login(Supertent_Login_id,Supertent_Login_Password);	
-	
-	//hover over curriculum link
-	
-	Actions act=new Actions(driver);		
+	try {
+		//Superintent Login
+		login(Supertent_Login_id,Supertent_Login_Password);	
+		
+		//hover over curriculum link
+		
+		Actions act=new Actions(driver);		
+				
+		act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/a"))).build().perform();	
+		
+		//Click Edit Curriculum Menu	
+		click("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/div/div[7]/div/a");	
+		
+		//Enter "For Automation [Do not Edit and Delete]" in the Title filter text box 
+		
+		type("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title']", "For Automation [Do not Edit and Delete]");
+		
+		//Clear filter box
 			
-	act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/a"))).build().perform();	
+		driver.findElement(By.id("ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title")).clear();
+		
+		// Click on the filter button
+		
+		 driver.findElement(By.id("ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title")).click();
+		 
+		//Enter "For Automation [Do not Edit and Delete]" in the Title filter text box 
+			
+		type("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title']", "For Automation [Do not Edit and Delete]");
+
+		Thread.sleep(2000);
+			
+		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::span[2]")).click();
+		    
+		 Thread.sleep(2000);
+			
+		 driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='NoFilter'])[1]/following::span[1]")).click();
+		
+		//Click on Build/Edit
+		 
+		 click("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00__0']/td[2]/a");
+		
+		// Click on Enter Weeks/Minutes
+		 
+		 click("//*[@id='ctl00_MainContent_CurriculumMapEditMenu1_hlkWeeksMinutes']");
+		 
+		 //Assert the Heading "Enter Map Weeks or Minutes"
+		 
+		 Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_Label1']").contains("Enter Map Weeks or Minutes"),"failed to assert text"+"Enter Map Weeks or Minutes");
+	} 
 	
-	//Click Edit Curriculum Menu	
-	click("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/div/div[7]/div/a");
+	catch (Exception e) 
 	
-	//Enter "For Automation [Do not Edit and Delete]" in the Title filter text box 
+	{
+		Assert.fail(e.getMessage());
+		e.printStackTrace();
+	}
+
+    }
 	
-	type("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title']", "For Automation [Do not Edit and Delete]");
+	@Test(priority=1)
 	
-	// Click on the filter button
+	public void TCED29402()
+	{
 	
-	click("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_Filter_CourseName']");
+		try 
+		{
+			driver.navigate().refresh();
+			
+			//Assert the Labels "Enter Unit Weeks"
+			
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_pnlEnterTime']/table[2]/tbody/tr[1]/td/label[1]").contains("Enter Unit Weeks"),"failed to assert text"+"Enter Unit Weeks");
+			
+			//Assert the Labels "Enter Topic Minutes"
+			
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_pnlEnterTime']/table[2]/tbody/tr[1]/td/label[2]").contains("Enter Topic Minutes"),"failed to assert text"+"Enter Topic Minutes");
+			
+			//Assert the Labels "Unit Order" 
+			
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry']/tbody/tr[1]/th[1]").contains("Unit Order"),"failed to assert text"+"Unit Order");
+			
+			//Assert the Labels "Unit Title"
+			
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry']/tbody/tr[1]/th[2]").contains("Unit Title"),"failed to assert text"+"Unit Title");
+			
+			//Assert the Labels "Week Begin"
+			
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry']/tbody/tr[1]/th[3]").contains("Week Begin"),"failed to assert text"+"Week Begin");
+			
+			//Assert the Labels "Week Instruction"
+			
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry']/tbody/tr[1]/th[4]").contains("Week Instruction"),"failed to assert text"+"Week Instruction");
+		}
+		
+		catch (Exception e)
+		
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}
+	}
 	
-	Thread.sleep(1000);
+//	@Test(priority=2)
 	
-	Actions act1=new Actions(driver);	
+	public void TCED29403()
+	{
+		
+		String WB1="2";
+		String WI1="5";
+		
+		String WB2="2";
+		String WI2="5";
+		
+		String WB3="2";
+		String WI3="5";
+		
+		try {
+			driver.navigate().refresh();
+			
+			//Enter Week Begins for Test Unit 01 = 2
+			
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl02_txtWeekBegin']")).clear();
+			
+			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl02_txtWeekBegin']",WB1);
+			
+			//Enter Week Instruction for Test Unit 01 = 5
+			
+			 driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl02_txtWeekInstruction']")).clear();
+			
+			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl02_txtWeekInstruction']",WI1);
+			
+			//Enter Week Begins for Test Unit 02 = 2
+			
+			 driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl03_txtWeekBegin']")).clear();
+				
+			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl03_txtWeekBegin']",WB2);
+			
+			//Enter Week Instruction for Test Unit 02 = 5
+			
+			 driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl03_txtWeekInstruction']")).clear();
+				
+			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl03_txtWeekInstruction']",WI2);
+			
+			//Enter Week Begins for Test Unit 03 = 2
+			
+			 driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl04_txtWeekBegin']")).clear();
+				
+			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl04_txtWeekBegin']",WB3);
+			
+			//Enter Week Begins for Test Unit 03 = 2
+			
+			 driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl04_txtWeekBegin']")).clear();
+				
+			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl04_txtWeekBegin']","2");
+			
+			
+			//Enter Week Instruction for Test Unit 03 = 5
+			
+			 driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl04_txtWeekInstruction']")).clear();
+				
+			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl04_txtWeekInstruction']","5");
+			
+			//click save changes button
+			
+			click("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_btnSaveChanges']");		
+			
+			//Assert the message "Unit Weeks Successfully Saved"
+			
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_lblMessageSuccess']").contains("Unit Weeks Successfully Saved"),"failed to assert text"+"Unit Weeks Successfully Saved");
+			
+			
+			//Assert the Week Begins for Test Unit 01 as 2
+			
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl02_txtWeekBegin']")).getAttribute("Value").equals(WB1));	
+			
+			//Assert the Week Instruction for Test Unit 01 as 5
+			
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl02_txtWeekInstruction']")).getAttribute("Value").equals(WI1));	
+			
+			//Assert the Week Begins for Test Unit 02 as 2
+			
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl03_txtWeekBegin']")).getAttribute("Value").equals(WB2));	
+			
+			//Assert the Week Instruction for Test Unit 02 as 5
+			
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl03_txtWeekInstruction']")).getAttribute("Value").equals(WI2));	
+			
+			//Assert the Week Begins for Test Unit 03 as 2
+			
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl04_txtWeekBegin']")).getAttribute("Value").equals(WB3));
+			
+			//Assert the Week Instruction for Test Unit 03 as 5
+			
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl04_txtWeekInstruction']")).getAttribute("Value").equals(WI3));
+			
+			
+			//Delete all Entered values from Week Begins and Week Instructions columns			
+			
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl02_txtWeekBegin']")).clear();
+			
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl02_txtWeekInstruction']")).clear();
+			
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl03_txtWeekBegin']")).clear();
+			
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl03_txtWeekInstruction']")).clear();
+			 
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl04_txtWeekBegin']")).clear();
+			
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl04_txtWeekInstruction']")).clear();
+			
+            //click save changes button
+			
+			click("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_btnSaveChanges']");		
+			
+			//Assert the message "Unit Weeks Successfully Saved"
+			
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_lblMessageSuccess']").contains("Unit Weeks Successfully Saved"),"failed to assert text"+"Unit Weeks Successfully Saved");
+			
+			if (isAlertPresents())
+				
+			{
+				driver.switchTo().alert().accept();
+			}
+			
+			
+		}
+		
+		catch (Exception e)
+		
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}	
+		
+	}
 	
-	act1.doubleClick(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_rgAttendanceData_rfltMenu_detached']/ul/li[2]/span"))).build().perform();
+	@Test(priority=3)
 	
-//	act1.doubleClick(//*[@id='ctl00_MainContent_rgAttendanceData_rfltMenu_detached']/ul/li[2]/span);		
-	
-	//click("//*[@id='ctl00_MainContent_rgAttendanceData_rfltMenu_detached']/ul/li[2]/span");
-	
-	
-	
-	
+	public void TCED29404()
+	{
+//		if (isAlertPresents())
+//			
+//		{
+//			driver.switchTo().alert().accept();
+//		}
+		
+		driver.navigate().refresh();
+		
+		if(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_rdBtnTopicweeks']")).isSelected()==false)
+		{
+			click("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_rdBtnTopicweeks']");
+		}
+		
+		
+		
 	
 	}
 
