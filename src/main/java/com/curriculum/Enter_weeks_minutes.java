@@ -1,5 +1,9 @@
 package com.curriculum;
+
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -117,7 +121,7 @@ public class Enter_weeks_minutes extends BaseClassOne
 		}
 	}
 	
-@Test(priority=2)
+//	@Test(priority=2)
 	
 	public void TCED29403()
 	{
@@ -131,15 +135,8 @@ public class Enter_weeks_minutes extends BaseClassOne
 		String WB3="2";
 		String WI3="5";
 		
-		try 
-		  
-		{
+		try {
 			driver.navigate().refresh();
-			
-			if(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_rdBtnUnitweeks']")).isSelected()==false)
-			{
-				click("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_rdBtnUnitweeks']");
-			}
 			
 			//Enter Week Begins for Test Unit 01 = 2
 			
@@ -217,14 +214,6 @@ public class Enter_weeks_minutes extends BaseClassOne
 			
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl04_txtWeekInstruction']")).getAttribute("Value").equals(WI3));
 			
-			driver.navigate().refresh();
-			
-			Thread.sleep(4000);
-			
-   			if(isAlertPresents())
-			{			
-			driver.switchTo().alert().dismiss();	
-			}
 			
 			//Delete all Entered values from Week Begins and Week Instructions columns			
 			
@@ -232,7 +221,7 @@ public class Enter_weeks_minutes extends BaseClassOne
 			
 			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl02_txtWeekInstruction']")).clear();
 			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl03_txtWeekBegin']")).clear();		
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl03_txtWeekBegin']")).clear();
 			
 			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntry_ctl03_txtWeekInstruction']")).clear();
 			 
@@ -243,18 +232,24 @@ public class Enter_weeks_minutes extends BaseClassOne
             //click save changes button
 			
 			click("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_btnSaveChanges']");		
-						
+			
 			//Assert the message "Unit Weeks Successfully Saved"
 			
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_lblMessageSuccess']").contains("Unit Weeks Successfully Saved"),"failed to assert text"+"Unit Weeks Successfully Saved");
 			
-					
-		}		
-
+			if (isAlertPresents())
+				
+			{
+				driver.switchTo().alert().accept();
+			}
+			
+			
+		}
+		
 		catch (Exception e)
 		
 		{
-		    Assert.fail(e.getMessage());
+			Assert.fail(e.getMessage());
 			e.printStackTrace();
 		}	
 		
@@ -264,116 +259,22 @@ public class Enter_weeks_minutes extends BaseClassOne
 	
 	public void TCED29404()
 	{
+//		if (isAlertPresents())
+//			
+//		{
+//			driver.switchTo().alert().accept();
+//		}
 		
-		String TU1="15";
+		driver.navigate().refresh();
 		
-		String T1U1="20";
-		
-        String TU2="15";
-		
-		String T1U2="20";
-		
-        String TU3="15";
-		
-		String T1U3="20";
-
-
-		
-		try {
-			
-			
-			driver.navigate().refresh();
-			
-			Thread.sleep(3000);
-			
-   			if(isAlertPresents())
-			{	
-   				
-   			System.out.println(driver.switchTo().alert().getText());	
-			driver.switchTo().alert().dismiss();	
-			}   				
-			
-			if(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_rdBtnTopicweeks']")).isSelected()==false)
-			{
-				click("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_rdBtnTopicweeks']");
-			}
-			
-            // Minutes For Topic for Test Topic 01 = 15
-			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();
-			
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']",TU1);
-			
-            //Minutes For Topic for Test Topic 02 = 20
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();
-			
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']",T1U1);
-			
-			
-             //	Minutes For Topic for Test Topic 03 = 15
-			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();		
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']",TU2);
-			
-            //	Minutes For Topic for Test Topic 04 = 20
-			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();		
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']",T1U2);
-			
-			
-           //	Minutes For Topic for Test Topic 05 = 15
-			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();		
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']",TU3);
-			
-            //	Minutes For Topic for Test Topic 06 = 20
-			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();		
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']",T1U3);
-			
-			//click save changes button
-			
-			click("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_btnSaveChanges']");		
-			
-			//Assert the message "Topic Minutes Successfully Saved"
-			
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_lblMessageSuccess']").contains("Topic Minutes Successfully Saved"),"failed to assert text"+"Topic Minutes Successfully Saved");
-			
-			//Delete all Entered values from Minutes For Topic column
-			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();		
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();		
-
-			//click save changes button
-			
-			click("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_btnSaveChanges']");		
-					
-			//Assert the message "Topic Minutes Successfully Saved"
-					
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_lblMessageSuccess']").contains("Topic Minutes Successfully Saved"),"failed to assert text"+"Topic Minutes Successfully Saved");
-			
-			//Click on Exit button
-			
-			click("//*[@id='ctl00_A3']/img");
-			
-			//Assert the page Header as "Edinsight Login"
-						
-			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
-		} 
-		
-		catch (Exception e) 
-		
-		{	
-					
-			e.printStackTrace();
-			
-			Assert.fail(e.getMessage());
+		if(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_rdBtnTopicweeks']")).isSelected()==false)
+		{
+			click("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_rdBtnTopicweeks']");
 		}
 		
+		
+		
+	
 	}
 
 }
