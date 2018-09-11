@@ -191,7 +191,7 @@ public class Print_Lessons extends BaseClassOne
 				if(!parent_window.equals(all_windows))
 				{
 					
-					driver.switchTo().window(all_windows);
+					driver.switchTo().window(all_windows);					
 					
 					Assert.assertTrue(driver.findElement(By.cssSelector("#ctl00_ContentPlaceHolder1_lblCurriculumMap")).getText().contains("Lesson View:"));
 					
