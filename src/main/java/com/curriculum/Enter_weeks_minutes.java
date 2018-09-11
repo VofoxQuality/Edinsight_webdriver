@@ -287,9 +287,8 @@ public class Enter_weeks_minutes extends BaseClassOne
 			Thread.sleep(3000);
 			
    			if(isAlertPresents())
-			{	
-   				
-   			System.out.println(driver.switchTo().alert().getText());	
+			{	  				
+   			
 			driver.switchTo().alert().dismiss();	
 			}   				
 			

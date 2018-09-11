@@ -3,27 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.MTSS.Configure_Settings">
+      <class name="com.curriculum.Edit_Curriculum">
         <methods>
-          <include name="TCED23110"/>
-          <include name="TCED23109"/>
-          <include name="TCED23106"/>
-          <include name="TCED23108"/>
-          <include name="TCED23105"/>
-          <include name="TCED23102"/>
-          <include name="TCED23113"/>
-          <include name="TCED23104"/>
-          <include name="TCED23115"/>
-          <include name="tearDown"/>
-          <include name="TCED23101"/>
-          <include name="TCED23112"/>
-          <include name="TCED23103"/>
-          <include name="TCED23114"/>
-          <include name="TCED23111"/>
           <include name="setup1"/>
-          <include name="TCED23107"/>
+          <include name="tearDown"/>
+          <include name="TCED29207"/>
         </methods>
-      </class> <!-- com.MTSS.Configure_Settings -->
+      </class> <!-- com.curriculum.Edit_Curriculum -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
