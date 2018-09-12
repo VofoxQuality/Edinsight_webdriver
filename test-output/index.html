@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>D:\Users\Akhil-TS\AppData\Local\Temp\testng-eclipse--1238134648\testng-customsuite.xml</span>
+                    <span>D:\Users\Akhil-TS\AppData\Local\Temp\testng-eclipse--1287257066\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.curriculum.Edit_Curriculum" hash-for-method="TCED29207">TCED29207</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,17 +102,27 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.curriculum.Edit_Curriculum" hash-for-method="TCED29201">TCED29201</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.curriculum.View_Print" hash-for-method="TCED29601">TCED29601</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.curriculum.Edit_Curriculum" hash-for-method="TCED29202">TCED29202</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.curriculum.View_Print" hash-for-method="TCED29602">TCED29602</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.curriculum.Edit_Curriculum" hash-for-method="TCED29206">TCED29206</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.curriculum.View_Print" hash-for-method="TCED29603">TCED29603</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.curriculum.View_Print" hash-for-method="TCED29604">TCED29604</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.curriculum.View_Print" hash-for-method="TCED29605">TCED29605</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -141,78 +137,45 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.curriculum.Edit_Curriculum</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TCED29207">
-                  </a> <!-- TCED29207 -->
-                  <span class="method-name">TCED29207</span>
-                  <div class="stack-trace">java.lang.AssertionError: Failed to download document which has extension .DOC expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.curriculum.Edit_Curriculum.TCED29207(Edit_Curriculum.java:351)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.curriculum.Edit_Curriculum</span>
+              <span class="class-name">com.curriculum.View_Print</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TCED29201">
-                  </a> <!-- TCED29201 -->
-                  <span class="method-name">TCED29201</span>
+                  <a name="TCED29601">
+                  </a> <!-- TCED29601 -->
+                  <span class="method-name">TCED29601</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TCED29202">
-                  </a> <!-- TCED29202 -->
-                  <span class="method-name">TCED29202</span>
+                  <a name="TCED29602">
+                  </a> <!-- TCED29602 -->
+                  <span class="method-name">TCED29602</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TCED29206">
-                  </a> <!-- TCED29206 -->
-                  <span class="method-name">TCED29206</span>
+                  <a name="TCED29603">
+                  </a> <!-- TCED29603 -->
+                  <span class="method-name">TCED29603</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCED29604">
+                  </a> <!-- TCED29604 -->
+                  <span class="method-name">TCED29604</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCED29605">
+                  </a> <!-- TCED29605 -->
+                  <span class="method-name">TCED29605</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,7 +183,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Users\Akhil-TS\AppData\Local\Temp\testng-eclipse--1238134648\testng-customsuite.xml</span>
+            <span class="header-content">D:\Users\Akhil-TS\AppData\Local\Temp\testng-eclipse--1287257066\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -229,7 +192,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.curriculum.Edit_Curriculum&quot;/&gt;
+      &lt;class name=&quot;com.curriculum.View_Print&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -269,28 +232,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TCED29207')
-data.setCell(0, 2, 'com.curriculum.Edit_Curriculum')
-data.setCell(0, 3, 23626);
+data.setCell(0, 1, 'TCED29605')
+data.setCell(0, 2, 'com.curriculum.View_Print')
+data.setCell(0, 3, 24697);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TCED29206')
-data.setCell(1, 2, 'com.curriculum.Edit_Curriculum')
-data.setCell(1, 3, 22428);
+data.setCell(1, 1, 'TCED29601')
+data.setCell(1, 2, 'com.curriculum.View_Print')
+data.setCell(1, 3, 16583);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TCED29201')
-data.setCell(2, 2, 'com.curriculum.Edit_Curriculum')
-data.setCell(2, 3, 8346);
+data.setCell(2, 1, 'TCED29603')
+data.setCell(2, 2, 'com.curriculum.View_Print')
+data.setCell(2, 3, 15737);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TCED29202')
-data.setCell(3, 2, 'com.curriculum.Edit_Curriculum')
-data.setCell(3, 3, 1510);
+data.setCell(3, 1, 'TCED29604')
+data.setCell(3, 2, 'com.curriculum.View_Print')
+data.setCell(3, 3, 15161);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TCED29602')
+data.setCell(4, 2, 'com.curriculum.View_Print')
+data.setCell(4, 3, 14528);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -316,32 +283,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.curriculum.Edit_Curriculum</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.curriculum.View_Print</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup1</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">TCED29201</span>
-                <span class="method-start">13028 ms</span>
+                <span class="method-name">TCED29601</span>
+                <span class="method-start">8359 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TCED29202</span>
-                <span class="method-start">21377 ms</span>
+                <span class="method-name">TCED29602</span>
+                <span class="method-start">24954 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TCED29206</span>
-                <span class="method-start">22889 ms</span>
+                <span class="method-name">TCED29603</span>
+                <span class="method-start">39486 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TCED29207</span>
-                <span class="method-start">45319 ms</span>
+                <span class="method-name">TCED29604</span>
+                <span class="method-start">55227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TCED29605</span>
+                <span class="method-start">70394 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">68949 ms</span>
+                <span class="method-start">95092 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

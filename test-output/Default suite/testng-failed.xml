@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.curriculum.Edit_Curriculum">
+      <class name="com.curriculum.View_Print">
         <methods>
           <include name="setup1"/>
           <include name="tearDown"/>
-          <include name="TCED29207"/>
+          <include name="TCED29602"/>
         </methods>
-      </class> <!-- com.curriculum.Edit_Curriculum -->
+      </class> <!-- com.curriculum.View_Print -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
