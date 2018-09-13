@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.curriculum.View_Print">
         <methods>
           <include name="setup1"/>
@@ -10,6 +11,15 @@
           <include name="TCED29602"/>
         </methods>
       </class> <!-- com.curriculum.View_Print -->
+=======
+      <class name="com.MTSS.FacilitatorPersonResponsibleList">
+        <methods>
+          <include name="setup1"/>
+          <include name="tearDown"/>
+          <include name="TCED22911"/>
+        </methods>
+      </class> <!-- com.MTSS.FacilitatorPersonResponsibleList -->
+>>>>>>> 5ab27883c96469a8d009a93f2fd1537d2429b346
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
