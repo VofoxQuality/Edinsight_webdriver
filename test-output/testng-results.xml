@@ -1,73 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="95099" started-at="2018-09-12T12:50:45Z" finished-at="2018-09-12T12:52:20Z">
+  <suite name="Default suite" duration-ms="54182" started-at="2018-09-13T07:35:12Z" finished-at="2018-09-13T07:36:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="95099" started-at="2018-09-12T12:50:45Z" finished-at="2018-09-12T12:52:20Z">
-      <class name="com.curriculum.View_Print">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.View_Print@f777e8]" name="setup1" is-config="true" duration-ms="8341" started-at="2018-09-12T18:20:45Z" finished-at="2018-09-12T18:20:53Z">
+    <test name="Default test" duration-ms="54182" started-at="2018-09-13T07:35:12Z" finished-at="2018-09-13T07:36:06Z">
+      <class name="com.curriculum.Current_Map">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Current_Map@45f292]" name="setup1" is-config="true" duration-ms="15741" started-at="2018-09-13T13:05:12Z" finished-at="2018-09-13T13:05:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED29601()[pri:0, instance:com.curriculum.View_Print@f777e8]" name="TCED29601" duration-ms="16583" started-at="2018-09-12T18:20:53Z" finished-at="2018-09-12T18:21:10Z">
+        <test-method status="PASS" signature="TCED29501()[pri:0, instance:com.curriculum.Current_Map@45f292]" name="TCED29501" duration-ms="15651" started-at="2018-09-13T13:05:28Z" finished-at="2018-09-13T13:05:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29601 -->
-        <test-method status="PASS" signature="TCED29602()[pri:1, instance:com.curriculum.View_Print@f777e8]" name="TCED29602" duration-ms="14528" started-at="2018-09-12T18:21:10Z" finished-at="2018-09-12T18:21:24Z">
+        </test-method> <!-- TCED29501 -->
+        <test-method status="PASS" signature="TCED29502()[pri:1, instance:com.curriculum.Current_Map@45f292]" name="TCED29502" duration-ms="1377" started-at="2018-09-13T13:05:43Z" finished-at="2018-09-13T13:05:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29602 -->
-        <test-method status="PASS" signature="TCED29603()[pri:2, instance:com.curriculum.View_Print@f777e8]" name="TCED29603" duration-ms="15737" started-at="2018-09-12T18:21:24Z" finished-at="2018-09-12T18:21:40Z">
+        </test-method> <!-- TCED29502 -->
+        <test-method status="PASS" signature="TCED29503()[pri:2, instance:com.curriculum.Current_Map@45f292]" name="TCED29503" duration-ms="1526" started-at="2018-09-13T13:05:45Z" finished-at="2018-09-13T13:05:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29603 -->
-        <test-method status="PASS" signature="TCED29604()[pri:3, instance:com.curriculum.View_Print@f777e8]" name="TCED29604" duration-ms="15161" started-at="2018-09-12T18:21:40Z" finished-at="2018-09-12T18:21:55Z">
+        </test-method> <!-- TCED29503 -->
+        <test-method status="PASS" signature="TCED29212()[pri:3, instance:com.curriculum.Current_Map@45f292]" name="TCED29212" duration-ms="5352" started-at="2018-09-13T13:05:46Z" finished-at="2018-09-13T13:05:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29604 -->
-        <test-method status="PASS" signature="TCED29605()[pri:4, instance:com.curriculum.View_Print@f777e8]" name="TCED29605" duration-ms="24697" started-at="2018-09-12T18:21:55Z" finished-at="2018-09-12T18:22:20Z">
+        </test-method> <!-- TCED29212 -->
+        <test-method status="PASS" signature="TCED29213()[pri:4, instance:com.curriculum.Current_Map@45f292]" name="TCED29213" duration-ms="14502" started-at="2018-09-13T13:05:52Z" finished-at="2018-09-13T13:06:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29605 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.View_Print@f777e8]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-12T18:22:20Z" finished-at="2018-09-12T18:22:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.curriculum.View_Print -->
-=======
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="65589" started-at="2018-09-12T10:03:19Z" finished-at="2018-09-12T10:04:24Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="65589" started-at="2018-09-12T10:03:19Z" finished-at="2018-09-12T10:04:24Z">
-      <class name="com.MTSS.TieredStudentsWithNoInterventionPlan">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.TieredStudentsWithNoInterventionPlan@52f759d7]" name="setup1" is-config="true" duration-ms="25924" started-at="2018-09-12T10:03:19Z" finished-at="2018-09-12T10:03:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED221105()[pri:1, instance:com.MTSS.TieredStudentsWithNoInterventionPlan@52f759d7]" name="TCED221105" duration-ms="21034" started-at="2018-09-12T10:03:45Z" finished-at="2018-09-12T10:04:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221105 -->
-        <test-method status="PASS" signature="TCED221106()[pri:2, instance:com.MTSS.TieredStudentsWithNoInterventionPlan@52f759d7]" name="TCED221106" duration-ms="9306" started-at="2018-09-12T10:04:06Z" finished-at="2018-09-12T10:04:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221106 -->
-        <test-method status="PASS" signature="TCED221111()[pri:3, instance:com.MTSS.TieredStudentsWithNoInterventionPlan@52f759d7]" name="TCED221111" duration-ms="9293" started-at="2018-09-12T10:04:15Z" finished-at="2018-09-12T10:04:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221111 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.TieredStudentsWithNoInterventionPlan@52f759d7]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-12T10:04:24Z" finished-at="2018-09-12T10:04:24Z">
+        </test-method> <!-- TCED29213 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Current_Map@45f292]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-09-13T13:06:06Z" finished-at="2018-09-13T13:06:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.TieredStudentsWithNoInterventionPlan -->
->>>>>>> 5ab27883c96469a8d009a93f2fd1537d2429b346
+      </class> <!-- com.curriculum.Current_Map -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

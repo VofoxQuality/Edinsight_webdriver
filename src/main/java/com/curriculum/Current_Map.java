@@ -2,6 +2,7 @@ package com.curriculum;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -35,9 +36,6 @@ public class Current_Map extends BaseClassOne
 					
 					type("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title']", "For Automation [Do not Edit and Delete]");
 					
-					//Clear filter box
-						
-					//driver.findElement(By.id("ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title")).clear();
 					
 					// Click on the filter button
 					
@@ -190,6 +188,9 @@ public class Current_Map extends BaseClassOne
 	
 	}
 	
+	
+	
+	
 	@Test
 	(priority=3)
 	
@@ -223,6 +224,8 @@ public class Current_Map extends BaseClassOne
 			
 			//Assert the random generated text as Title
 			
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapTitleDescription1_txtTitle']")).getAttribute("value").equals(title));
+			
 			
 		} 
 		
@@ -235,6 +238,118 @@ public class Current_Map extends BaseClassOne
 		
 		
 		
+		
+	}
+	
+	@Test(priority=4)
+	
+	public void TCED29213() throws InterruptedException
+	{
+		
+        try
+        {       	
+        	
+        	
+			driver.navigate().refresh();
+			
+			Thread.sleep(2000);
+			
+			if(isAlertPresents())
+			{	  				
+				
+			driver.switchTo().alert().dismiss();	
+			}  
+			
+			 // Click on Copy Current Map
+			 
+			 click("//*[@id='ctl00_MainContent_CurriculumMapEditMenu1_hlkCopyCurrentMap']");
+					
+			
+			//Subject = Mathematics
+			Select sub_drop=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlSubjects']")));
+			sub_drop.selectByVisibleText("Mathematics");
+			
+			//Existing Map = 01 demo
+			Select sub_map=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlMaps']")));
+			sub_map.selectByVisibleText("01 demo");
+			
+			Thread.sleep(500);
+			
+			//Existing Map Unit = unit 1
+			Select sub_map_unit=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlUnits']")));
+			sub_map_unit.selectByVisibleText("Unit 1");
+			
+			//Existing Map Topics = Topic1
+			Select sub_map_top=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlTopics']")));
+			sub_map_top.selectByVisibleText("Topic1");		
+					
+			//Current Map Units = Test Unit 01
+			Select sub_map_un=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlCurrentMapUnits']")));
+			sub_map_un.selectByVisibleText("Test Unit 01");
+			
+			//Click on Copy to Current Map button
+			click("//*[@id='ctl00_MainContent_btnCopyFrom']");
+			
+			
+			//Assert the message "Topic Topic1 has been successfully added to the current map!"
+			String success=driver.switchTo().alert().getText();
+			
+			Assert.assertEquals("Topic Topic1 has been successfully added to the current map!", success);
+			
+			driver.switchTo().alert().accept();
+			
+			//Click on "Return to Current Map" link 
+			click("//*[@id='ctl00_MainContent_LinkButton2']");		
+					
+			
+			// Click on "Test Unit 01"
+			click("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[6]/td/a");
+			
+			//Assert the newly copied Topic as "Topic1"
+			Assert.assertEquals("Topic1", getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[10]/td/a"));
+			
+			//Click on Topic1 
+			
+			click("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[10]/td/a");
+			
+			// Click on Delete this topic button
+			
+			click("//*[@id='ctl00_MainContent_CurriculumMapUnitTopic1_btnDeleteTopic']");
+			
+			//Assert the message "Are you sure you want to delete the selected Topic?"
+			
+			String del=driver.switchTo().alert().getText();
+			Assert.assertEquals("Are you sure you want to delete the selected Topic?",del);
+			
+			//Click OK button in the "Are you sure you want to delete the selected Topic?" 
+			
+			driver.switchTo().alert().accept();
+			
+			Thread.sleep(2000);
+			
+			//Assert the message "Topic Deleted Successfully !!!"
+			
+			String top_del=driver.switchTo().alert().getText();
+			Assert.assertEquals("Topic Deleted Successfully !!!",top_del);
+			
+			driver.switchTo().alert().accept();
+			
+			//click on Logout button
+			 
+			click("//*[@id='ctl00_A3']/img");
+			
+			//Assert the page Header as "Edinsight Login"
+						
+			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
+		} 
+        
+        catch (Exception e) 
+        
+        {
+		
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}
 		
 	}
 
