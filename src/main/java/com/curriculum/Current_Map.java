@@ -194,7 +194,7 @@ public class Current_Map extends BaseClassOne
 	@Test
 	(priority=3)
 	
-	public void TCED29212()
+	public void TCED29504()
 	{
 		
 		try {
@@ -243,7 +243,7 @@ public class Current_Map extends BaseClassOne
 	
 	@Test(priority=4)
 	
-	public void TCED29213() throws InterruptedException
+	public void TCED29505() throws InterruptedException
 	{
 		
         try

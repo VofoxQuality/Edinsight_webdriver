@@ -3,13 +3,22 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.curriculum.Current_Map">
+      <class name="com.curriculum.Edit_Curriculum">
         <methods>
+          <include name="TCED29208"/>
           <include name="setup1"/>
+          <include name="TCED29212"/>
+          <include name="TCED29210"/>
+          <include name="TCED29205"/>
+          <include name="TCED29211"/>
+          <include name="TCED29203"/>
+          <include name="TCED29206"/>
           <include name="tearDown"/>
-          <include name="TCED29213"/>
+          <include name="TCED29209"/>
+          <include name="TCED29204"/>
+          <include name="TCED29207"/>
         </methods>
-      </class> <!-- com.curriculum.Current_Map -->
+      </class> <!-- com.curriculum.Edit_Curriculum -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
