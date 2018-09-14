@@ -97,7 +97,7 @@ public class Edit_Curriculum extends BaseClassOne
 	
 @Test(priority=2)
 	
-	public void TCED29203() throws InterruptedException
+	public void TCED29203()
 	{
 		
     	try 
@@ -180,7 +180,7 @@ public class Edit_Curriculum extends BaseClassOne
 	
 @Test(priority=3)
 	
-	public void TCED29204() throws InterruptedException
+public void TCED29204()
 	{
 		
     	     try
@@ -409,7 +409,7 @@ public class Edit_Curriculum extends BaseClassOne
 	
 @Test(priority=4)
 	
-	public void TCED29205() throws InterruptedException
+	public void TCED29205()
 	{
 		
     	try {
@@ -497,7 +497,7 @@ public class Edit_Curriculum extends BaseClassOne
 	
 @Test(priority=5)
 	
-	public void TCED29206() throws InterruptedException
+	public void TCED29206()
 	{
 		
     	    try
@@ -574,75 +574,83 @@ public class Edit_Curriculum extends BaseClassOne
 	
 @Test(priority=6)
 	
-	public void TCED29207() throws InterruptedException
+	public void TCED29207()
 	{
-        driver.navigate().refresh();
-        
-        Thread.sleep(3000);
-        
-		if(isAlertPresents())
-		{	  				
+        try {
+			driver.navigate().refresh();
 			
-		driver.switchTo().alert().dismiss();	
-		}  
-        
-        
-        //Enter "For Automation [Do not Edit and Delete]" in the Title filter text box         
+			Thread.sleep(3000);
+			
+			if(isAlertPresents())
+			{	  				
+				
+			driver.switchTo().alert().dismiss();	
+			}  
+			
+			
+			//Enter "For Automation [Do not Edit and Delete]" in the Title filter text box         
 
-		type("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title']", "For Automation [Do not Edit and Delete]");		
-		
-		// Click on the filter button
-		
-		 driver.findElement(By.id("ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title")).click();
-		 
-		Thread.sleep(2000);
+			type("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title']", "For Automation [Do not Edit and Delete]");		
 			
-		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::span[2]")).click();
-			    
-		Thread.sleep(2000);
+			// Click on the filter button
+			
+			 driver.findElement(By.id("ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title")).click();
+			 
+			Thread.sleep(2000);
 				
-		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='NoFilter'])[1]/following::span[1]")).click();		  
-		 
-		 //click on View/print button
-		 
-		 click("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00__0']/td[1]/a"); 
-		 
-		 String parent_window=driver.getWindowHandle();
-		 
-		 Thread.sleep(3000);				 
-		 
-			for(String all_windows:driver.getWindowHandles())
-				
-			{
-				if(!parent_window.equals(all_windows))
+			driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::span[2]")).click();
+				    
+			Thread.sleep(2000);
+					
+			driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='NoFilter'])[1]/following::span[1]")).click();		  
+			 
+			 //click on View/print button
+			 
+			 click("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00__0']/td[1]/a"); 
+			 
+			 String parent_window=driver.getWindowHandle();
+			 
+			 Thread.sleep(3000);				 
+			 
+				for(String all_windows:driver.getWindowHandles())
+					
 				{
-					
-					driver.switchTo().window(all_windows);    					
-									
-					FileDelete();
-					
-					//Option button > Print Word
-					
-					click("//*[@id='ctl00_ContentPlaceHolder1_SplitButton']");
-					
-					Thread.sleep(500);	
+					if(!parent_window.equals(all_windows))
+					{
+						
+						driver.switchTo().window(all_windows);    					
 										
-					click("//*[@id='ctl00_ContentPlaceHolder1_RadContextMenu1_detached']/ul/li[3]/span");					
-					
-					Thread.sleep(6000);			
-					Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".rtf"), "Failed to download document which has extension .RTF");
-					
-					driver.close();
+						FileDelete();
+						
+						//Option button > Print Word
+						
+						click("//*[@id='ctl00_ContentPlaceHolder1_SplitButton']");
+						
+						Thread.sleep(500);	
+											
+						click("//*[@id='ctl00_ContentPlaceHolder1_RadContextMenu1_detached']/ul/li[3]/span");					
+						
+						Thread.sleep(6000);			
+						Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".rtf"), "Failed to download document which has extension .RTF");
+						
+						driver.close();
+					}
+			
 				}
-		
-			}
-	
-			driver.switchTo().window(parent_window);
+
+				driver.switchTo().window(parent_window);
+		}
+        
+        catch (InterruptedException e)         
+        {
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}
 	}
 	
      @Test(priority=7)
 	
-	public void TCED29208() throws InterruptedException
+	public void TCED29208()
 	{
     	 
     	try
@@ -957,8 +965,7 @@ public class Edit_Curriculum extends BaseClassOne
 	
 @Test(priority=12)
 			
-    public void TCED29213() throws InterruptedException
-		
+    public void TCED29213()
 	    {
 			
 	        try

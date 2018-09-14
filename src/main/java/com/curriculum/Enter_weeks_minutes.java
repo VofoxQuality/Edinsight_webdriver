@@ -13,10 +13,12 @@ public class Enter_weeks_minutes extends BaseClassOne
 	
 	@Test(priority=0)
 	
-	public void TCED29401() throws InterruptedException
+	public void TCED29401()
 	{
 	
-	try {
+	try
+	
+	{
 		//Superintent Login
 		login(Supertent_Login_id,Supertent_Login_Password);	
 		

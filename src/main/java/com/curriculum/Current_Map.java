@@ -15,7 +15,7 @@ public class Current_Map extends BaseClassOne
 	@Test
 	(priority=0)
 	
-	public void TCED29501() throws InterruptedException
+	public void TCED29501()
 	{
 		  try 
 		    
@@ -84,7 +84,9 @@ public class Current_Map extends BaseClassOne
 	public void TCED29502()
 	{
 		
-		try {
+		try 
+		
+		{
 			driver.navigate().refresh();
 			
             //Assert the label "Return to Current Map"
@@ -243,7 +245,7 @@ public class Current_Map extends BaseClassOne
 	
 	@Test(priority=4)
 	
-	public void TCED29505() throws InterruptedException
+	public void TCED29505()
 	{
 		
         try
