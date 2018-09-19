@@ -15,9 +15,11 @@ public class Analyze_curriculam extends BaseClassOne
 	@Test(priority=0)
 	
 	public void TCED29701()
-	{
+    {
 		
-		try {
+	 try
+		
+		{
 			//Superintent Login
 			login(Supertent_Login_id,Supertent_Login_Password);	
 			
@@ -54,7 +56,24 @@ public class Analyze_curriculam extends BaseClassOne
 			
 			
 			//Assert the label "Analyze Curriculum"
+			Assert.assertTrue(getText("//*[@id='lnkAnalyzeSubmenu']").contains("Analyze Curriculum"),"failed to assert text"+"Analyze Curriculum");
 			
+			Thread.sleep(2000);
+			
+			
+			//Click on Analyze Curriculum
+			click("//*[@id='lnkAnalyzeSubmenu']");
+			Thread.sleep(3000);
+			
+			//Assert the label "Standards Coverage"
+			Assert.assertTrue(getText("a#ctl00_MainContent_CurriculumMapEditMenu1_hlkCoverage").contains("Standards Coverage"),"failed to assert text"+"Standards Coverage");
+			
+			//Assert the label "Timeline"
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapEditMenu1_hlkTimeline']").contains("Timeline"),"failed to assert text"+"Timeline");
+			
+			
+			//Assert the label "Browse by Standards"
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapEditMenu1_hlkBrowse']").contains("Browse by Standards"),"failed to assert text"+"Browse by Standards");
 			
 			
 		}
@@ -64,12 +83,62 @@ public class Analyze_curriculam extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}	
+		}	 
 		
 		
 	}
 	
+	@Test(priority=1)
 	
+	public void TCED29702()
+    {
+		
+		
+		try
+		
+		{
+			//Click on Analyze Curriculum
+			click("//*[@id='lnkAnalyzeSubmenu']");
+			Thread.sleep(3000);
+			
+			//Click on Standards Coverage link.		
+			click("a#ctl00_MainContent_CurriculumMapEditMenu1_hlkCoverage");
+			
+			//Assert the heading "Standards Coverage Report"
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_pnlStandardsCoverage']/table[1]/tbody/tr/td[2]/h3").contains("Standards Coverage Report"),"failed to assert text"+"Standards Coverage Report");
+		}
+		
+		catch (Exception e)
+		
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}
+    
+    }
 	
+	@Test(priority=2)
+	
+	public void TCED29703()
+   
+	{
+		
+		//Application should be in the Standards Coverage Report
+		
+		
+		//Click on STEP 1: Select the Curriculum to report on
+		click("//*[@id='lnkMapSelect']");		
+		
+//		Assert the label "STEP 1: Select the Curriculum to report on"
+//		Assert the label "Maps selected: For Automation [Do not Edit and Delete]"
+//		Assert the label "Subject"
+//		Assert the label "Active Maps Only"
+//		Assert the label "Available Maps"
+//		Assert the all available items in the Subject Drop-down
+	
+
+		
+		
+    }
 
 }

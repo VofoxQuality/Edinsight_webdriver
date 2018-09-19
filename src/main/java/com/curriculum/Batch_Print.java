@@ -66,6 +66,49 @@ public class Batch_Print extends BaseClassOne
 			//Assert the Label "1. Select the teacher(s) whose lesson plans you wish to print"
 			
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_tblContent']/tbody/tr/td[1]/table/tbody/tr[1]/td/b")).getText().contains("1. Select the teacher(s) whose lesson plans you wish to print."));
+		
+			//Assert the Label "2. Select the date range for when the lessons are being taught."
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_tblContent']/tbody/tr/td[2]/table/tbody/tr[1]/td/b")).getText().contains("2. Select the date range for when the lessons are being taught."),"failed to assert text"+"2. Select the date range for when the lessons are being taught.");
+			
+			//Assert the Label "Today"
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_rblDateRange']/tbody/tr[1]/td/label")).getText().contains("Today"),"failed to assert text"+"Today");
+					
+			//Assert the Label "Tomorrow'
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_rblDateRange']/tbody/tr[2]/td/label")).getText().contains("Tomorrow"),"failed to assert text"+"Tomorrow");
+									
+			//Assert the Label "This Week"
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_rblDateRange']/tbody/tr[3]/td/label")).getText().contains("This Week"),"failed to assert text"+"This Week");
+			
+			//Assert the Label "Next Week"
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_rblDateRange']/tbody/tr[4]/td/label")).getText().contains("Next Week"),"failed to assert text"+"Next Week");
+			
+			
+			//Assert the Label "Custom Date Range"
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_rblDateRange']/tbody/tr[5]/td/label")).getText().contains("Custom Date Range"),"failed to assert text"+"Custom Date Range");
+			
+			
+			//Assert the Label "3. Select Periods to Print."
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_tblContent]/tbody/tr/td[2]/table/tbody/tr[5]/td/b")).getText().contains("3. Select Periods to Print"),"failed to assert text"+"3. Select Periods to Print");
+			
+           //Assert the Label "Select periods to print"
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlPrintPeriod']/label")).getText().contains("Select periods to print"),"failed to assert text"+"Select periods to print");
+			
+           //Assert the Label "4. Specify print options."
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_tblContent']/tbody/tr/td[2]/table/tbody/tr[9]/td/b")).getText().contains("4. Specify print options."),"failed to assert text"+"4. Specify print options.");
+			
+						
+           //Assert the Label "Sort by teacher, then date"
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_rblSortType']/tbody/tr[1]/td/label")).getText().contains("Sort by teacher, then date"),"failed to assert text"+"Sort by teacher, then date");
+			
+           //Assert the Label "Sort by date, then teacher"
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_rblSortType']/tbody/tr[2]/td/label")).getText().contains("Sort by date, then teacher"),"failed to assert text"+"Sort by date, then teacher");
+			
+           //Assert the Label "Put a divider sheet between days"
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_cblDividerType']/tbody/tr[1]/td/label")).getText().contains("Put a divider sheet between days"),"failed to assert text"+"Put a divider sheet between days");
+			
+			
+           //Assert the Label "Put a divider sheet between teachers"
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_cblDividerType']/tbody/tr[2]/td/label")).getText().contains("Put a divider sheet between teachers"),"failed to assert text"+"Put a divider sheet between teachers");
 		} 
 		
 		catch (Exception e)
@@ -147,9 +190,9 @@ public class Batch_Print extends BaseClassOne
 
 	}
 	
-	@Test(priority=3)
+@Test(priority=3)
 	
-	public void TCED28104() throws Exception	
+	public void TCED28104()	
 	{
 		try 
 		{			
@@ -206,7 +249,7 @@ public class Batch_Print extends BaseClassOne
 	}
 @Test(priority=4)
 	
-public void TCED28105() throws InterruptedException
+public void TCED28105()
 	{
 	
 		try 
