@@ -88,7 +88,7 @@ public class Batch_Print extends BaseClassOne
 			
 			
 			//Assert the Label "3. Select Periods to Print."
-			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_tblContent]/tbody/tr/td[2]/table/tbody/tr[5]/td/b")).getText().contains("3. Select Periods to Print"),"failed to assert text"+"3. Select Periods to Print");
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_tblContent']/tbody/tr/td[2]/table/tbody/tr[5]/td/b")).getText().contains("3. Select Periods to Print"),"failed to assert text"+"3. Select Periods to Print");
 			
            //Assert the Label "Select periods to print"
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlPrintPeriod']/label")).getText().contains("Select periods to print"),"failed to assert text"+"Select periods to print");
