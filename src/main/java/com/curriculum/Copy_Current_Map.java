@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import Library.BaseClassOne;
 
-public class Current_Map extends BaseClassOne
+public class Copy_Current_Map extends BaseClassOne
 
 {
 	
