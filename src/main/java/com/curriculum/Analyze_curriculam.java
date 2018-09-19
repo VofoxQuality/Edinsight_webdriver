@@ -130,12 +130,25 @@ public class Analyze_curriculam extends BaseClassOne
 		click("//*[@id='lnkMapSelect']");		
 		
 //		Assert the label "STEP 1: Select the Curriculum to report on"
+		Assert.assertTrue(getText("//*[@id='lnkMapSelect']").contains("STEP 1: Select the Curriculum to report on"),"failed to assert text"+"STEP 1: Select the Curriculum to report on");
+		
 //		Assert the label "Maps selected: For Automation [Do not Edit and Delete]"
+		Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_tblMapSelect']/tbody/tr[1]/td").contains("Maps selected: For Automation [Do not Edit and Delete]"),"failed to assert text"+"Maps selected: For Automation [Do not Edit and Delete]");
+		
+		
 //		Assert the label "Subject"
+		Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_tblMapSelect']/tbody/tr[2]/td").contains("Subject"),"failed to assert text"+"Subject");
+		
 //		Assert the label "Active Maps Only"
+		Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_tblMapSelect']/tbody/tr[2]/td/label").contains("Active Maps Only"),"failed to assert text"+"Active Maps Only");
+		
+		
 //		Assert the label "Available Maps"
+		Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_lblMapsToSelect']").contains("Available Maps"),"failed to assert text"+"Available Maps");
+		
+		
 //		Assert the all available items in the Subject Drop-down
-	
+		Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_tblMapSelect']/tbody/tr[2]/td").contains("Subject"),"failed to assert text"+"Subject");
 
 		
 		

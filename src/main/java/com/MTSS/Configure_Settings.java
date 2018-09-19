@@ -298,7 +298,9 @@ public class Configure_Settings extends BaseClassOne
 
     {
 	 
-    	try {
+    	try 
+    	
+    	{
 			driver.navigate().refresh();
 			
 			//Click on  Team Decisions 

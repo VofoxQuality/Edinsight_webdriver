@@ -271,9 +271,9 @@ public class Copy_Current_Map extends BaseClassOne
 			Select sub_drop=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlSubjects']")));
 			sub_drop.selectByVisibleText("Mathematics");
 			
-			//Existing Map = 01 demo
+			//Existing Map = 01 demo1
 			Select sub_map=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlMaps']")));
-			sub_map.selectByVisibleText("01 demo");
+			sub_map.selectByVisibleText("01 demo1");
 			
 			Thread.sleep(500);
 			
