@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.curriculum.Copy_Current_Map">
+      <class name="com.MTSS.TierHistoryReport">
         <methods>
           <include name="setup1"/>
-          <include name="TCED29505"/>
+          <include name="TCED22707"/>
           <include name="tearDown"/>
+          <include name="TCED22706"/>
+          <include name="TCED22711"/>
         </methods>
-      </class> <!-- com.curriculum.Copy_Current_Map -->
+      </class> <!-- com.MTSS.TierHistoryReport -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
