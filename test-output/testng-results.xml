@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48278" started-at="2018-09-19T12:03:55Z" finished-at="2018-09-19T12:04:43Z">
+  <suite name="Default suite" duration-ms="20611" started-at="2018-09-24T12:59:09Z" finished-at="2018-09-24T12:59:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48278" started-at="2018-09-19T12:03:55Z" finished-at="2018-09-19T12:04:43Z">
-      <class name="com.curriculum.Copy_Current_Map">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Copy_Current_Map@45f292]" name="setup1" is-config="true" duration-ms="9170" started-at="2018-09-19T17:33:55Z" finished-at="2018-09-19T17:34:04Z">
+    <test name="Default test" duration-ms="20611" started-at="2018-09-24T12:59:09Z" finished-at="2018-09-24T12:59:30Z">
+      <class name="com.curriculum.Custom_Reports">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Custom_Reports@f777e8]" name="setup1" is-config="true" duration-ms="10616" started-at="2018-09-24T18:29:09Z" finished-at="2018-09-24T18:29:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED29501()[pri:0, instance:com.curriculum.Copy_Current_Map@45f292]" name="TCED29501" duration-ms="16053" started-at="2018-09-19T17:34:04Z" finished-at="2018-09-19T17:34:20Z">
+        <test-method status="PASS" signature="TCED30601()[pri:0, instance:com.curriculum.Custom_Reports@f777e8]" name="TCED30601" duration-ms="8687" started-at="2018-09-24T18:29:20Z" finished-at="2018-09-24T18:29:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29501 -->
-        <test-method status="PASS" signature="TCED29502()[pri:1, instance:com.curriculum.Copy_Current_Map@45f292]" name="TCED29502" duration-ms="1547" started-at="2018-09-19T17:34:20Z" finished-at="2018-09-19T17:34:22Z">
+        </test-method> <!-- TCED30601 -->
+        <test-method status="PASS" signature="TCED30602()[pri:1, instance:com.curriculum.Custom_Reports@f777e8]" name="TCED30602" duration-ms="73" started-at="2018-09-24T18:29:29Z" finished-at="2018-09-24T18:29:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29502 -->
-        <test-method status="PASS" signature="TCED29503()[pri:2, instance:com.curriculum.Copy_Current_Map@45f292]" name="TCED29503" duration-ms="1537" started-at="2018-09-19T17:34:22Z" finished-at="2018-09-19T17:34:23Z">
+        </test-method> <!-- TCED30602 -->
+        <test-method status="PASS" signature="TCED30603()[pri:2, instance:com.curriculum.Custom_Reports@f777e8]" name="TCED30603" duration-ms="1212" started-at="2018-09-24T18:29:29Z" finished-at="2018-09-24T18:29:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29503 -->
-        <test-method status="PASS" signature="TCED29504()[pri:3, instance:com.curriculum.Copy_Current_Map@45f292]" name="TCED29504" duration-ms="4767" started-at="2018-09-19T17:34:23Z" finished-at="2018-09-19T17:34:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29504 -->
-        <test-method status="PASS" signature="TCED29505()[pri:4, instance:com.curriculum.Copy_Current_Map@45f292]" name="TCED29505" duration-ms="15172" started-at="2018-09-19T17:34:28Z" finished-at="2018-09-19T17:34:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29505 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Copy_Current_Map@45f292]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-19T17:34:43Z" finished-at="2018-09-19T17:34:43Z">
+        </test-method> <!-- TCED30603 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Custom_Reports@f777e8]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-24T18:29:30Z" finished-at="2018-09-24T18:29:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.curriculum.Copy_Current_Map -->
+      </class> <!-- com.curriculum.Custom_Reports -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

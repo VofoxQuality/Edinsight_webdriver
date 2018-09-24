@@ -265,12 +265,10 @@ public void TCED28105()
 			driver.switchTo().alert().dismiss();	
 			}
    			
-   			//click on Logout button
-			 
+   			//click on Logout button			 
 			click("//*[@id='ctl00_A3']/img");
 			
-			//Assert the page Header as "Edinsight Login"
-						
+			//Assert the page Header as "Edinsight Login"						
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
 		} 
 					
