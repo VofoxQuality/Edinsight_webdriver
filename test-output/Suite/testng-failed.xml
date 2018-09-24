@@ -3,15 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.MTSS.TierHistoryReport">
+      <class name="com.curriculum.View_Print">
         <methods>
           <include name="setup1"/>
-          <include name="TCED22707"/>
+          <include name="TCED29605"/>
+          <include name="TCED29603"/>
+          <include name="TCED29604"/>
+          <include name="TCED29601"/>
           <include name="tearDown"/>
-          <include name="TCED22706"/>
-          <include name="TCED22711"/>
+          <include name="TCED29602"/>
         </methods>
-      </class> <!-- com.MTSS.TierHistoryReport -->
+      </class> <!-- com.curriculum.View_Print -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
