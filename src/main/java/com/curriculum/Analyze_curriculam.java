@@ -607,7 +607,7 @@ public void TCED29712()
 
 }
 
-//@Test(priority=12)
+@Test(priority=12)
 
 public void TCED29713()	   
 {
@@ -633,7 +633,7 @@ public void TCED29713()
 
 }
 
-//@Test(priority=13)
+@Test(priority=13)
 
 public void TCED29714()	   
 {	
@@ -659,7 +659,7 @@ public void TCED29714()
 
 }
 
-//@Test(priority=14)
+@Test(priority=14)
 
 public void TCED29715()	   
 {	
@@ -692,7 +692,7 @@ public void TCED29715()
 
 }
 
-//@Test(priority=15)
+@Test(priority=15)
 
 public void TCED29716()	 
 {
@@ -741,7 +741,7 @@ catch (Exception e)
 	
 }
 
-//@Test(priority=16)
+@Test(priority=16)
 
 public void TCED29717()	 
 {
