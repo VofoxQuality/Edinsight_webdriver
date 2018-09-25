@@ -5,8 +5,9 @@
     <classes>
       <class name="com.curriculum.Custom_Reports">
         <methods>
-          <include name="TCED30603"/>
+          <include name="TCED30602"/>
           <include name="setup1"/>
+          <include name="TCED30604"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.curriculum.Custom_Reports -->
