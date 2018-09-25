@@ -99,7 +99,7 @@ public class Custom_Reports extends BaseClassOne
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_divDisplay']/table/tbody/tr[10]/td[2]/label").contains("Avoid Page-Break on Table Row"),"failed to assert text"+"Avoid Page-Break on Table Row"); 
 			
            //Assert the Label "Please select a topic to continue!"
-           Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_divDisplay']/text()[3]").contains("Please select a topic to continue!"),"failed to assert text"+"Please select a topic to continue!");
+           Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_divDisplay']").contains("Please select a topic to continue!"),"failed to assert text"+"Please select a topic to continue!");
 		
 		  } 
 		
@@ -111,7 +111,7 @@ public class Custom_Reports extends BaseClassOne
 	   
 	   }
 	
-	@Test(priority=2)	
+@Test(priority=2)	
 	public void TCED30603()
 	   {
 		
@@ -139,7 +139,7 @@ public class Custom_Reports extends BaseClassOne
 		  }
 	   
 	   }
-	@Test(priority=3)
+@Test(priority=3)
 	public void TCED30604()
 	   {
 		
@@ -151,12 +151,9 @@ public class Custom_Reports extends BaseClassOne
 			FileDelete();
 			
 			//Click on PDF button
-			click("//*[@id='ctl00_ContentPlaceHolder1_btnPDF']");
+			click("//*[@id='ctl00_ContentPlaceHolder1_btnPDF']");		
 			
-//			WebDriverWait wt=new WebDriverWait(driver,200);
-//			wt.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='ctl00_ContentPlaceHolder1_divDisplay']/text()[3]"))));
-//			
-			Thread.sleep(20000);		
+			Thread.sleep(40000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");			
 			
 		} 
@@ -168,7 +165,7 @@ public class Custom_Reports extends BaseClassOne
 		}
 	   
 	   }
-//	@Test(priority=4)
+@Test(priority=4)
 	public void TCED30605()
 	   {
 		try 
@@ -179,7 +176,7 @@ public class Custom_Reports extends BaseClassOne
 			//Click on WORD button
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnWord']");
 			
-			Thread.sleep(10000);		
+			Thread.sleep(40000);		
 			//Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 			
 			String parent_wind=driver.getWindowHandle();
