@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="54558" started-at="2018-09-20T11:40:19Z" finished-at="2018-09-20T11:41:14Z">
+  <suite name="Suite" duration-ms="46224" started-at="2018-09-25T09:14:36Z" finished-at="2018-09-25T09:15:22Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="54558" started-at="2018-09-20T11:40:19Z" finished-at="2018-09-20T11:41:14Z">
-      <class name="com.MTSS.TierHistoryReport">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.TierHistoryReport@3e9b1010]" name="setup1" is-config="true" duration-ms="14555" started-at="2018-09-20T11:40:19Z" finished-at="2018-09-20T11:40:34Z">
+    <test name="Test" duration-ms="46224" started-at="2018-09-25T09:14:36Z" finished-at="2018-09-25T09:15:22Z">
+      <class name="com.MTSS.TieredStudentsWithNoInterventionPlan">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.TieredStudentsWithNoInterventionPlan@3108bc]" name="setup1" is-config="true" duration-ms="10017" started-at="2018-09-25T09:14:36Z" finished-at="2018-09-25T09:14:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED22706()[pri:1, instance:com.MTSS.TierHistoryReport@3e9b1010]" name="TCED22706" duration-ms="21339" started-at="2018-09-20T11:40:34Z" finished-at="2018-09-20T11:40:55Z">
+        <test-method status="PASS" signature="TCED221105()[pri:1, instance:com.MTSS.TieredStudentsWithNoInterventionPlan@3108bc]" name="TCED221105" duration-ms="17555" started-at="2018-09-25T09:14:46Z" finished-at="2018-09-25T09:15:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22706 -->
-        <test-method status="PASS" signature="TCED22707()[pri:2, instance:com.MTSS.TierHistoryReport@3e9b1010]" name="TCED22707" duration-ms="9329" started-at="2018-09-20T11:40:55Z" finished-at="2018-09-20T11:41:04Z">
+        </test-method> <!-- TCED221105 -->
+        <test-method status="PASS" signature="TCED221106()[pri:2, instance:com.MTSS.TieredStudentsWithNoInterventionPlan@3108bc]" name="TCED221106" duration-ms="9317" started-at="2018-09-25T09:15:03Z" finished-at="2018-09-25T09:15:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22707 -->
-        <test-method status="PASS" signature="TCED22711()[pri:3, instance:com.MTSS.TierHistoryReport@3e9b1010]" name="TCED22711" duration-ms="9303" started-at="2018-09-20T11:41:04Z" finished-at="2018-09-20T11:41:14Z">
+        </test-method> <!-- TCED221106 -->
+        <test-method status="PASS" signature="TCED221111()[pri:3, instance:com.MTSS.TieredStudentsWithNoInterventionPlan@3108bc]" name="TCED221111" duration-ms="9304" started-at="2018-09-25T09:15:13Z" finished-at="2018-09-25T09:15:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22711 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.TierHistoryReport@3e9b1010]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-09-20T11:41:14Z" finished-at="2018-09-20T11:41:14Z">
+        </test-method> <!-- TCED221111 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.TieredStudentsWithNoInterventionPlan@3108bc]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-25T09:15:22Z" finished-at="2018-09-25T09:15:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.TierHistoryReport -->
+      </class> <!-- com.MTSS.TieredStudentsWithNoInterventionPlan -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

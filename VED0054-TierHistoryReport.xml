@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.MTSSss.TierHistoryReport"/>
+      <class name="com.MTSS.TierHistoryReport"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

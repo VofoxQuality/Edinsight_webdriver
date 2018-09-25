@@ -57,7 +57,8 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>VED0054-TierHistoryReport.xml</suiteXmlFile>
+						<suiteXmlFile>VED0058-TieredStudentsWithNoInterventionPlan.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
