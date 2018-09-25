@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.curriculum.Custom_Reports">
+      <class name="com.MTSS.Test_Suite_MTSS_Tier_Students_plan_interventions">
         <methods>
-          <include name="TCED30605"/>
           <include name="setup1"/>
+          <include name="TCED19207"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.curriculum.Custom_Reports -->
+      </class> <!-- com.MTSS.Test_Suite_MTSS_Tier_Students_plan_interventions -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
