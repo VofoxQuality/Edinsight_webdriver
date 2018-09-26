@@ -3,17 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.curriculum.View_Print">
+      <class name="com.curriculum.Custom_Reports">
         <methods>
           <include name="setup1"/>
-          <include name="TCED29605"/>
-          <include name="TCED29603"/>
-          <include name="TCED29604"/>
-          <include name="TCED29601"/>
+          <include name="TCED30604"/>
           <include name="tearDown"/>
-          <include name="TCED29602"/>
         </methods>
-      </class> <!-- com.curriculum.View_Print -->
+      </class> <!-- com.curriculum.Custom_Reports -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
