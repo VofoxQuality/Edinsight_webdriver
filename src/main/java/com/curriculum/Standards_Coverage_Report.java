@@ -22,7 +22,6 @@ public class Standards_Coverage_Report extends BaseClassOne
 	public void TCED30201()
 	{		
 
-		
 		try 
 		
 		 {
@@ -83,7 +82,6 @@ public void TCED30202()
 	 try
 		{ 	 
 
-		 
 			//Click on STEP 1: Select the Curriculum to report on
      		click("//*[@id='lnkMapSelect']");	
 		
@@ -108,7 +106,6 @@ public void TCED30203()
 		{ 	 
 			
 		    //calling TCED29704 tc from the Analyze Curriculum test suite
-			
 			ob.TCED29704();
 		} 
 	 
@@ -191,7 +188,6 @@ public void TCED30207()
 		{ 	 
 			
 		    //calling TCED29708 tc from the Analyze Curriculum test suite
-			
 			ob.TCED29708();
 		} 
 	 
@@ -212,7 +208,6 @@ public void TCED30208()
 		{ 	 
 			
 		    //calling TCED29709 tc from the Analyze Curriculum test suite
-			
 			ob.TCED29709();
 		} 
 	 

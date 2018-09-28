@@ -62,6 +62,7 @@
 						<suiteXmlFile>VED0076-Copy_Current_Map.xml</suiteXmlFile>
 						<suiteXmlFile>VED0077-View_Print.xml</suiteXmlFile>
 						<suiteXmlFile>VED0058-Tiered_Students_With_No_Intervention_Plan.xml</suiteXmlFile>
+						<suiteXmlFile>VED0083-Standards_Coverage_Report.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

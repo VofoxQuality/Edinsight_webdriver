@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.Home.Attendance">
         <methods>
           <include name="setup1"/>
@@ -10,6 +11,27 @@
           <include name="TCED34301"/>
         </methods>
       </class> <!-- com.Home.Attendance -->
+=======
+      <class name="com.curriculum.Analyze_curriculam">
+        <methods>
+          <include name="TCED29705"/>
+          <include name="tearDown"/>
+          <include name="setup1"/>
+          <include name="TCED29709"/>
+          <include name="TCED29708"/>
+          <include name="TCED29707"/>
+          <include name="TCED29718"/>
+          <include name="TCED29706"/>
+          <include name="TCED29704"/>
+          <include name="TCED29703"/>
+          <include name="TCED29702"/>
+          <include name="TCED29701"/>
+          <include name="TCED29712"/>
+          <include name="TCED29711"/>
+          <include name="TCED29710"/>
+        </methods>
+      </class> <!-- com.curriculum.Analyze_curriculam -->
+>>>>>>> 6cd676a43c8e0574ac199e42d03a170d6276e447
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

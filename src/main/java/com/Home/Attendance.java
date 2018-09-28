@@ -97,9 +97,10 @@ public class Attendance extends BaseClassOne
 		    Actions act=new Actions(driver);
 		    act.moveToElement(driver.findElement(By.xpath("//*[@id='shcAttendanceHistory2017Toggle']/a[1]")));
 		    
-		   // js.executeScript("scroll(0,300)");
-		    
+		   // js.executeScript("scroll(0,300)");		    
 		    click("//*[@id='shcAttendanceHistory2017Toggle']/a[1]");
+		    
+		    //Assert the lablel "Show student attendance for 2016-2017 school year  (Hide)"
 	      }       
 	  catch (WebDriverException e) 
 	  {
@@ -112,4 +113,10 @@ public class Attendance extends BaseClassOne
 	}
 	}
 
+	@Test(priority=3)
+	public void TCED34304()	
+	{ 
+	
+	}
+	
 }
