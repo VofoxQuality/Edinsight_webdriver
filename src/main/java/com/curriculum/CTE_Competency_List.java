@@ -13,6 +13,9 @@ public class CTE_Competency_List extends BaseClassOne
 
 {
 	
+	String parent_wind;
+	String child;
+	
    @Test(priority=0)	
    public void TCED30701()
    {
@@ -30,7 +33,7 @@ public class CTE_Competency_List extends BaseClassOne
 			//Click Reports Menu 
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/div/div[11]/div/a");
 			
-			String parent_wind=driver.getWindowHandle();	
+			 parent_wind=driver.getWindowHandle();	
 			
 			//Click on CTE Competency List Menu
 			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[2]/tbody/tr[6]/td[3]/div/a/img");				
@@ -157,14 +160,22 @@ public void TCED30705()
 		click("//*[@id='ctl00_MainContent_ReportDisplayCtrl1_btnSaveToExcel']");
 		
 		Thread.sleep(30000);		
-		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");	
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
 		
+		if(!parent_wind.equals(child))
+		{
+			driver.close();
+		}
+		
+			driver.switchTo().window(parent_wind);
 		
 		//click on Logout button			 
 		click("//*[@id='ctl00_A3']/img");
 		
 		//Assert the page Header as "Edinsight Login"						
 		Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
+		
+		 CheckExtraTabs();
 	} 
 	 
 	 catch (Exception e)

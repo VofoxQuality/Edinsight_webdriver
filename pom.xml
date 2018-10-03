@@ -63,6 +63,7 @@
 						<suiteXmlFile>VED0077-View_Print.xml</suiteXmlFile>
 						<suiteXmlFile>VED0058-Tiered_Students_With_No_Intervention_Plan.xml</suiteXmlFile>
 						<suiteXmlFile>VED0083-Standards_Coverage_Report.xml</suiteXmlFile>
+						<suiteXmlFile>VED0088-CTE_Competency_List.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
