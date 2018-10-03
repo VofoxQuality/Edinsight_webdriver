@@ -3,13 +3,24 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.Home.Attendance">
+        <methods>
+          <include name="setup1"/>
+=======
       <class name="com.curriculum.Custom_Reports">
         <methods>
           <include name="setup1"/>
           <include name="TCED30604"/>
+>>>>>>> 6cd676a43c8e0574ac199e42d03a170d6276e447
           <include name="tearDown"/>
+          <include name="TCED34301"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.Home.Attendance -->
+=======
       </class> <!-- com.curriculum.Custom_Reports -->
+>>>>>>> 6cd676a43c8e0574ac199e42d03a170d6276e447
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
