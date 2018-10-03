@@ -425,7 +425,9 @@ public void TCED29710()
 public void TCED29711()	   
 {
 	
-	try {
+	try 
+	{
+		
 		//Application should be in the Timeline Report
 		
 		//"Assert the label ""Please enter a school year begin date for time calculations!
