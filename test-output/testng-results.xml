@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="42512" started-at="2018-10-03T09:48:28Z" finished-at="2018-10-03T09:49:10Z">
+  <suite name="Suite" duration-ms="37421" started-at="2018-10-03T12:02:08Z" finished-at="2018-10-03T12:02:45Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="42512" started-at="2018-10-03T09:48:28Z" finished-at="2018-10-03T09:49:10Z">
-      <class name="com.Home.Contacts">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Contacts@52f759d7]" name="setup1" is-config="true" duration-ms="19266" started-at="2018-10-03T09:48:28Z" finished-at="2018-10-03T09:48:47Z">
+    <test name="Test" duration-ms="37421" started-at="2018-10-03T12:02:08Z" finished-at="2018-10-03T12:02:45Z">
+      <class name="com.curriculum.CompletionStatusReport">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.CompletionStatusReport@64f6106c]" name="setup1" is-config="true" duration-ms="8410" started-at="2018-10-03T12:02:08Z" finished-at="2018-10-03T12:02:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED22706()[pri:1, instance:com.Home.Contacts@52f759d7]" name="TCED22706" duration-ms="23213" started-at="2018-10-03T09:48:47Z" finished-at="2018-10-03T09:49:10Z">
+        <test-method status="PASS" signature="TCED30404()[pri:1, instance:com.curriculum.CompletionStatusReport@64f6106c]" name="TCED30404" duration-ms="19182" started-at="2018-10-03T12:02:16Z" finished-at="2018-10-03T12:02:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22706 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Contacts@52f759d7]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-03T09:49:10Z" finished-at="2018-10-03T09:49:10Z">
+        </test-method> <!-- TCED30404 -->
+        <test-method status="PASS" signature="TCED30405()[pri:2, instance:com.curriculum.CompletionStatusReport@64f6106c]" name="TCED30405" duration-ms="9796" started-at="2018-10-03T12:02:35Z" finished-at="2018-10-03T12:02:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED30405 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.CompletionStatusReport@64f6106c]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-03T12:02:45Z" finished-at="2018-10-03T12:02:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Home.Contacts -->
+      </class> <!-- com.curriculum.CompletionStatusReport -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
