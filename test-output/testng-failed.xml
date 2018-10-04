@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.curriculum.CompletionStatusReport">
+      <class name="com.curriculum.Print_View_Multiple_Maps">
         <methods>
-          <include name="setup1"/>
           <include name="TCED30405"/>
+          <include name="TCED30404"/>
+          <include name="setup1"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.curriculum.CompletionStatusReport -->
+      </class> <!-- com.curriculum.Print_View_Multiple_Maps -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
