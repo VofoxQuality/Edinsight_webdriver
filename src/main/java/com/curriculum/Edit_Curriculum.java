@@ -696,11 +696,11 @@ public void TCED29204()
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapTitleDescription1_txtTitle']")).getAttribute("value").equals("For Automation [Do not Edit and Delete]"),"failed to assert text"+"  For Automation [Do not Edit and Delete]");
 			 		
 			//Assert the unit names "Test Unit 01"
-			Assert.assertTrue(getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[6]/td/a").contains("Test Unit 01"),"failed to assert text"+"  Test Unit 01");
+			Assert.assertTrue(getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[6]/td/a").contains("Test Unit 02"),"failed to assert text"+"  Test Unit 02");
 			
 			
 			//Assert the unit names "Test Unit 02"
-			Assert.assertTrue(getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[7]/td/a").contains("Test Unit 02"),"failed to assert text"+"  Test Unit 02");
+			Assert.assertTrue(getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[7]/td/a").contains("Test Unit 01"),"failed to assert text"+"  Test Unit 01");
 			
 			//Assert the unit names "Test Unit 03"
 			Assert.assertTrue(getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[8]/td").contains("Test Unit 03"),"failed to assert text"+"  Test Unit 03");
@@ -1049,10 +1049,10 @@ public void TCED29204()
 						
 				
 				// Click on "Test Unit 01"
-				click("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[6]/td/a");
+				click("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[7]/td/a");
 				
 				//Assert the newly copied Topic as "Topic1"
-				Assert.assertEquals("Topic1", getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[10]/td/a"));
+				Assert.assertEquals(getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[18]/td/a"),"Topic1");
 				
 				//Click on Topic1 
 				

@@ -88,11 +88,11 @@ public class Print_Lessons extends BaseClassOne
 			Select select = new Select(driver.findElement(By.xpath("//*[@id='ctl00_ContentPlaceHolder1_ddlPrintRangeType']")));
 			WebElement option = select.getFirstSelectedOption();
 			 
-			 String SelectedText = option.getText();
+			String SelectedText = option.getText();
 			 
-			 System.out.println(SelectedText);
+			System.out.println(SelectedText);
 			 
-			 Assert.assertTrue(SelectedText.equalsIgnoreCase("Today's lessons"));
+			Assert.assertTrue(SelectedText.equalsIgnoreCase("Today's lessons"));
 		} 
         
         catch (Exception e) 

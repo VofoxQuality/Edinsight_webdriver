@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -38,4 +39,33 @@
       </class> <!-- com.curriculum.View_Print -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
+=======
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18572" started-at="2018-10-04T12:24:57Z" finished-at="2018-10-04T12:25:15Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18572" started-at="2018-10-04T12:24:57Z" finished-at="2018-10-04T12:25:15Z">
+      <class name="com.Home.Assessments">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Assessments@17d0008]" name="setup1" is-config="true" duration-ms="6578" started-at="2018-10-04T17:54:57Z" finished-at="2018-10-04T17:55:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup1 -->
+        <test-method status="PASS" signature="TCED34201()[pri:0, instance:com.Home.Assessments@17d0008]" name="TCED34201" duration-ms="11793" started-at="2018-10-04T17:55:03Z" finished-at="2018-10-04T17:55:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34201 -->
+        <test-method status="PASS" signature="TCED34202()[pri:1, instance:com.Home.Assessments@17d0008]" name="TCED34202" duration-ms="174" started-at="2018-10-04T17:55:15Z" finished-at="2018-10-04T17:55:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34202 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Assessments@17d0008]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-04T17:55:15Z" finished-at="2018-10-04T17:55:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Home.Assessments -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
 </testng-results>

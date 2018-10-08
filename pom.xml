@@ -62,6 +62,12 @@
 						<suiteXmlFile>VED0076-Copy_Current_Map.xml</suiteXmlFile>
 						<suiteXmlFile>VED0077-View_Print.xml</suiteXmlFile>
 						<suiteXmlFile>VED0058-Tiered_Students_With_No_Intervention_Plan.xml</suiteXmlFile>
+						<suiteXmlFile>VED0083-Standards_Coverage_Report.xml</suiteXmlFile>
+						<suiteXmlFile>VED0088-CTE_Competency_List.xml</suiteXmlFile>
+						<suiteXmlFile>VED0090-Contacts.xml</suiteXmlFile>
+						<suiteXmlFile>VED0085-Completion_status_report.xml</suiteXmlFile>
+						<suiteXmlFile>VED0086-Print_View_Multiple_Maps.xml</suiteXmlFile>
+						<suiteXmlFile>VED0089-Student_Search.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

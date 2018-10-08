@@ -3,17 +3,29 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.curriculum.View_Print">
+=======
+      <class name="com.Home.Attendance">
+>>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
         <methods>
+          <include name="TCED34305"/>
           <include name="setup1"/>
+<<<<<<< HEAD
           <include name="TCED29605"/>
           <include name="TCED29603"/>
           <include name="TCED29604"/>
           <include name="TCED29601"/>
+=======
+>>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
           <include name="tearDown"/>
           <include name="TCED29602"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.curriculum.View_Print -->
+=======
+      </class> <!-- com.Home.Attendance -->
+>>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
