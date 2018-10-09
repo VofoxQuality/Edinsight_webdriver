@@ -6,8 +6,8 @@
       <class name="com.curriculum.Create_New_Map">
         <methods>
           <include name="setup1"/>
-          <include name="TCED29107"/>
           <include name="tearDown"/>
+          <include name="TCED29138"/>
         </methods>
       </class> <!-- com.curriculum.Create_New_Map -->
     </classes>
