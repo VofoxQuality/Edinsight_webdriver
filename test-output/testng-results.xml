@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18572" started-at="2018-10-04T12:24:57Z" finished-at="2018-10-04T12:25:15Z">
+  <suite name="Default suite" duration-ms="26997" started-at="2018-10-09T13:10:44Z" finished-at="2018-10-09T13:11:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18572" started-at="2018-10-04T12:24:57Z" finished-at="2018-10-04T12:25:15Z">
-      <class name="com.Home.Assessments">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Assessments@17d0008]" name="setup1" is-config="true" duration-ms="6578" started-at="2018-10-04T17:54:57Z" finished-at="2018-10-04T17:55:03Z">
+    <test name="Default test" duration-ms="26997" started-at="2018-10-09T13:10:44Z" finished-at="2018-10-09T13:11:10Z">
+      <class name="com.localassessment.Test_Suite_Print_Login_Codes">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="setup1" is-config="true" duration-ms="12762" started-at="2018-10-09T18:40:44Z" finished-at="2018-10-09T18:40:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED34201()[pri:0, instance:com.Home.Assessments@17d0008]" name="TCED34201" duration-ms="11793" started-at="2018-10-04T17:55:03Z" finished-at="2018-10-04T17:55:15Z">
+        <test-method status="PASS" signature="TCED13301()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="TCED13301" duration-ms="6132" started-at="2018-10-09T18:40:56Z" finished-at="2018-10-09T18:41:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED34201 -->
-        <test-method status="PASS" signature="TCED34202()[pri:1, instance:com.Home.Assessments@17d0008]" name="TCED34202" duration-ms="174" started-at="2018-10-04T17:55:15Z" finished-at="2018-10-04T17:55:15Z">
+        </test-method> <!-- TCED13301 -->
+        <test-method status="PASS" signature="TCED13302()[pri:1, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="TCED13302" duration-ms="6376" started-at="2018-10-09T18:41:02Z" finished-at="2018-10-09T18:41:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED34202 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Assessments@17d0008]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-04T17:55:15Z" finished-at="2018-10-04T17:55:15Z">
+        </test-method> <!-- TCED13302 -->
+        <test-method status="PASS" signature="TCED13303()[pri:2, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="TCED13303" duration-ms="464" started-at="2018-10-09T18:41:09Z" finished-at="2018-10-09T18:41:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13303 -->
+        <test-method status="PASS" signature="TCED13304()[pri:3, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="TCED13304" duration-ms="191" started-at="2018-10-09T18:41:09Z" finished-at="2018-10-09T18:41:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13304 -->
+        <test-method status="PASS" signature="TCED13305()[pri:4, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="TCED13305" duration-ms="1028" started-at="2018-10-09T18:41:09Z" finished-at="2018-10-09T18:41:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13305 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-09T18:41:10Z" finished-at="2018-10-09T18:41:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Home.Assessments -->
+      </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
