@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="148517" started-at="2018-10-03T11:25:24Z" finished-at="2018-10-03T11:27:52Z">
+  <suite name="Suite" duration-ms="29804" started-at="2018-10-05T04:46:23Z" finished-at="2018-10-05T04:46:53Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="148517" started-at="2018-10-03T11:25:24Z" finished-at="2018-10-03T11:27:52Z">
-      <class name="com.curriculum.CTE_Competency_List">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.CTE_Competency_List@42eca56e]" name="setup1" is-config="true" duration-ms="8726" started-at="2018-10-03T11:25:24Z" finished-at="2018-10-03T11:25:32Z">
+    <test name="Test" duration-ms="29804" started-at="2018-10-05T04:46:23Z" finished-at="2018-10-05T04:46:53Z">
+      <class name="com.Home.Student_Search">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Student_Search@42eca56e]" name="setup1" is-config="true" duration-ms="9120" started-at="2018-10-05T04:46:23Z" finished-at="2018-10-05T04:46:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED30701()[pri:0, instance:com.curriculum.CTE_Competency_List@42eca56e]" name="TCED30701" duration-ms="31071" started-at="2018-10-03T11:25:32Z" finished-at="2018-10-03T11:26:03Z">
+        <test-method status="PASS" signature="TCED33106()[pri:1, instance:com.Home.Student_Search@42eca56e]" name="TCED33106" duration-ms="20657" started-at="2018-10-05T04:46:32Z" finished-at="2018-10-05T04:46:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED30701 -->
-        <test-method status="PASS" signature="TCED30702()[pri:1, instance:com.curriculum.CTE_Competency_List@42eca56e]" name="TCED30702" duration-ms="699" started-at="2018-10-03T11:26:03Z" finished-at="2018-10-03T11:26:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED30702 -->
-        <test-method status="PASS" signature="TCED30703()[pri:2, instance:com.curriculum.CTE_Competency_List@42eca56e]" name="TCED30703" duration-ms="35638" started-at="2018-10-03T11:26:04Z" finished-at="2018-10-03T11:26:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED30703 -->
-        <test-method status="PASS" signature="TCED30704()[pri:3, instance:com.curriculum.CTE_Competency_List@42eca56e]" name="TCED30704" duration-ms="35672" started-at="2018-10-03T11:26:40Z" finished-at="2018-10-03T11:27:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED30704 -->
-        <test-method status="PASS" signature="TCED30705()[pri:4, instance:com.curriculum.CTE_Competency_List@42eca56e]" name="TCED30705" duration-ms="36668" started-at="2018-10-03T11:27:16Z" finished-at="2018-10-03T11:27:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED30705 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.CTE_Competency_List@42eca56e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-03T11:27:52Z" finished-at="2018-10-03T11:27:52Z">
+        </test-method> <!-- TCED33106 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Student_Search@42eca56e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-05T04:46:53Z" finished-at="2018-10-05T04:46:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.curriculum.CTE_Competency_List -->
+      </class> <!-- com.Home.Student_Search -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
