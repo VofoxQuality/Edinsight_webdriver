@@ -2,28 +2,28 @@
 <testng-results skipped="3" failed="0" ignored="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29078" started-at="2018-10-07T23:57:56Z" finished-at="2018-10-07T23:58:25Z">
+  <suite name="Suite" duration-ms="29438" started-at="2018-10-08T18:37:04Z" finished-at="2018-10-08T18:37:33Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29078" started-at="2018-10-07T23:57:56Z" finished-at="2018-10-07T23:58:25Z">
+    <test name="Test" duration-ms="29438" started-at="2018-10-08T18:37:04Z" finished-at="2018-10-08T18:37:33Z">
       <class name="com.MTSS.TierHistoryReport">
-        <test-method status="FAIL" signature="setup1()[pri:0, instance:com.MTSS.TierHistoryReport@3108bc]" name="setup1" is-config="true" duration-ms="29047" started-at="2018-10-07T23:57:56Z" finished-at="2018-10-07T23:58:25Z">
+        <test-method status="FAIL" signature="setup1()[pri:0, instance:com.MTSS.TierHistoryReport@3108bc]" name="setup1" is-config="true" duration-ms="29423" started-at="2018-10-08T18:37:04Z" finished-at="2018-10-08T18:37:33Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15544, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 0298a9ff-2534-484a-8744-a55fa2d05a3d]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7024, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3b3ca0dc-cfb8-484a-8da7-a8b1a52e2c02]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15544, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 0298a9ff-2534-484a-8744-a55fa2d05a3d
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7024, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3b3ca0dc-cfb8-484a-8da7-a8b1a52e2c02
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -69,23 +69,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="SKIP" signature="TCED22706()[pri:1, instance:com.MTSS.TierHistoryReport@3108bc]" name="TCED22706" duration-ms="0" started-at="2018-10-07T23:58:25Z" finished-at="2018-10-07T23:58:25Z">
+        <test-method status="SKIP" signature="TCED22706()[pri:1, instance:com.MTSS.TierHistoryReport@3108bc]" name="TCED22706" duration-ms="0" started-at="2018-10-08T18:37:33Z" finished-at="2018-10-08T18:37:33Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15544, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 0298a9ff-2534-484a-8744-a55fa2d05a3d]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7024, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3b3ca0dc-cfb8-484a-8da7-a8b1a52e2c02]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15544, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 0298a9ff-2534-484a-8744-a55fa2d05a3d
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7024, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3b3ca0dc-cfb8-484a-8da7-a8b1a52e2c02
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -131,23 +131,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22706 -->
-        <test-method status="SKIP" signature="TCED22707()[pri:2, instance:com.MTSS.TierHistoryReport@3108bc]" name="TCED22707" duration-ms="0" started-at="2018-10-07T23:58:25Z" finished-at="2018-10-07T23:58:25Z">
+        <test-method status="SKIP" signature="TCED22707()[pri:2, instance:com.MTSS.TierHistoryReport@3108bc]" name="TCED22707" duration-ms="0" started-at="2018-10-08T18:37:33Z" finished-at="2018-10-08T18:37:33Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15544, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 0298a9ff-2534-484a-8744-a55fa2d05a3d]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7024, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3b3ca0dc-cfb8-484a-8da7-a8b1a52e2c02]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15544, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 0298a9ff-2534-484a-8744-a55fa2d05a3d
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7024, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3b3ca0dc-cfb8-484a-8da7-a8b1a52e2c02
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -193,23 +193,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22707 -->
-        <test-method status="SKIP" signature="TCED22711()[pri:3, instance:com.MTSS.TierHistoryReport@3108bc]" name="TCED22711" duration-ms="0" started-at="2018-10-07T23:58:25Z" finished-at="2018-10-07T23:58:25Z">
+        <test-method status="SKIP" signature="TCED22711()[pri:3, instance:com.MTSS.TierHistoryReport@3108bc]" name="TCED22711" duration-ms="0" started-at="2018-10-08T18:37:33Z" finished-at="2018-10-08T18:37:33Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15544, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 0298a9ff-2534-484a-8744-a55fa2d05a3d]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7024, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3b3ca0dc-cfb8-484a-8da7-a8b1a52e2c02]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15544, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 0298a9ff-2534-484a-8744-a55fa2d05a3d
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7024, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3b3ca0dc-cfb8-484a-8da7-a8b1a52e2c02
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -255,7 +255,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22711 -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.MTSS.TierHistoryReport@3108bc]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-07T23:58:25Z" finished-at="2018-10-07T23:58:25Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.MTSS.TierHistoryReport@3108bc]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-08T18:37:33Z" finished-at="2018-10-08T18:37:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

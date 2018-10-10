@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 29.486 sec <<< FAILURE! - in TestSuite
-setup1(com.MTSS.TierHistoryReport)  Time elapsed: 29.283 sec  <<< FAILURE!
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 29.858 sec <<< FAILURE! - in TestSuite
+setup1(com.MTSS.TierHistoryReport)  Time elapsed: 29.67 sec  <<< FAILURE!
 org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15544, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 0298a9ff-2534-484a-8744-a55fa2d05a3d
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7024, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3b3ca0dc-cfb8-484a-8da7-a8b1a52e2c02
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
