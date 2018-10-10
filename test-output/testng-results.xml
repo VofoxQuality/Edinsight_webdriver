@@ -1,41 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26997" started-at="2018-10-09T13:10:44Z" finished-at="2018-10-09T13:11:10Z">
+  <suite name="Default suite" duration-ms="42581" started-at="2018-10-10T13:28:56Z" finished-at="2018-10-10T13:29:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26997" started-at="2018-10-09T13:10:44Z" finished-at="2018-10-09T13:11:10Z">
-      <class name="com.localassessment.Test_Suite_Print_Login_Codes">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="setup1" is-config="true" duration-ms="12762" started-at="2018-10-09T18:40:44Z" finished-at="2018-10-09T18:40:56Z">
+    <test name="Default test" duration-ms="42581" started-at="2018-10-10T13:28:56Z" finished-at="2018-10-10T13:29:38Z">
+      <class name="com.localassessment.apply_standard">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.apply_standard@45f292]" name="setup1" is-config="true" duration-ms="23414" started-at="2018-10-10T18:58:56Z" finished-at="2018-10-10T18:59:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED13301()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="TCED13301" duration-ms="6132" started-at="2018-10-09T18:40:56Z" finished-at="2018-10-09T18:41:02Z">
+        <test-method status="PASS" signature="TCED16201()[pri:0, instance:com.localassessment.apply_standard@45f292]" name="TCED16201" duration-ms="6074" started-at="2018-10-10T18:59:19Z" finished-at="2018-10-10T18:59:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13301 -->
-        <test-method status="PASS" signature="TCED13302()[pri:1, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="TCED13302" duration-ms="6376" started-at="2018-10-09T18:41:02Z" finished-at="2018-10-09T18:41:09Z">
+        </test-method> <!-- TCED16201 -->
+        <test-method status="PASS" signature="TCED16202()[pri:1, instance:com.localassessment.apply_standard@45f292]" name="TCED16202" duration-ms="6882" started-at="2018-10-10T18:59:25Z" finished-at="2018-10-10T18:59:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13302 -->
-        <test-method status="PASS" signature="TCED13303()[pri:2, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="TCED13303" duration-ms="464" started-at="2018-10-09T18:41:09Z" finished-at="2018-10-09T18:41:09Z">
+        </test-method> <!-- TCED16202 -->
+        <test-method status="PASS" signature="TCED16203()[pri:2, instance:com.localassessment.apply_standard@45f292]" name="TCED16203" duration-ms="734" started-at="2018-10-10T18:59:32Z" finished-at="2018-10-10T18:59:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13303 -->
-        <test-method status="PASS" signature="TCED13304()[pri:3, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="TCED13304" duration-ms="191" started-at="2018-10-09T18:41:09Z" finished-at="2018-10-09T18:41:09Z">
+        </test-method> <!-- TCED16203 -->
+        <test-method status="PASS" signature="TCED16204()[pri:3, instance:com.localassessment.apply_standard@45f292]" name="TCED16204" duration-ms="2636" started-at="2018-10-10T18:59:33Z" finished-at="2018-10-10T18:59:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13304 -->
-        <test-method status="PASS" signature="TCED13305()[pri:4, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="TCED13305" duration-ms="1028" started-at="2018-10-09T18:41:09Z" finished-at="2018-10-09T18:41:10Z">
+        </test-method> <!-- TCED16204 -->
+        <test-method status="FAIL" signature="TCED16208()[pri:7, instance:com.localassessment.apply_standard@45f292]" name="TCED16208" duration-ms="2321" started-at="2018-10-10T18:59:36Z" finished-at="2018-10-10T18:59:38Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Browsing context has been discarded
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'AKHIL-TS', ip: '192.168.10.122', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 2968, moz:profile: D:\Users\Akhil-TS\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 529ce183-7243-4aca-a6a3-00c2200edfa5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Browsing context has been discarded
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'AKHIL-TS', ip: '192.168.10.122', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 2968, moz:profile: D:\Users\Akhil-TS\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 529ce183-7243-4aca-a6a3-00c2200edfa5
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.localassessment.apply_standard.TCED16208(apply_standard.java:303)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13305 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@17d0008]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-09T18:41:10Z" finished-at="2018-10-09T18:41:10Z">
+        </test-method> <!-- TCED16208 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.apply_standard@45f292]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-10T18:59:38Z" finished-at="2018-10-10T18:59:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
+      </class> <!-- com.localassessment.apply_standard -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
