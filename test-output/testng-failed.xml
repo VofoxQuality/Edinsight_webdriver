@@ -5,9 +5,30 @@
     <classes>
       <class name="com.curriculum.Create_New_Map">
         <methods>
-          <include name="setup1"/>
+          <include name="TCED29129"/>
           <include name="tearDown"/>
+          <include name="TCED29103"/>
+          <include name="TCED29125"/>
+          <include name="TCED29136"/>
+          <include name="TCED29104"/>
+          <include name="TCED29126"/>
+          <include name="TCED29137"/>
+          <include name="TCED29105"/>
+          <include name="TCED29127"/>
           <include name="TCED29138"/>
+          <include name="TCED29106"/>
+          <include name="TCED29128"/>
+          <include name="TCED29121"/>
+          <include name="TCED29122"/>
+          <include name="TCED29101"/>
+          <include name="TCED29123"/>
+          <include name="TCED29134"/>
+          <include name="setup1"/>
+          <include name="TCED29102"/>
+          <include name="TCED29124"/>
+          <include name="TCED29135"/>
+          <include name="TCED29130"/>
+          <include name="TCED29120"/>
         </methods>
       </class> <!-- com.curriculum.Create_New_Map -->
     </classes>
