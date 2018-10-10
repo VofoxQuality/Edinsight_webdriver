@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
@@ -8,8 +9,13 @@
 =======
       <class name="com.Home.Attendance">
 >>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.curriculum.Create_New_Map">
+>>>>>>> 5247e009002e6a11aeaea0c8e96d741b185afd5c
         <methods>
-          <include name="TCED34305"/>
           <include name="setup1"/>
 <<<<<<< HEAD
           <include name="TCED29605"/>
@@ -19,6 +25,7 @@
 =======
 >>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
           <include name="tearDown"/>
+<<<<<<< HEAD
           <include name="TCED29602"/>
         </methods>
 <<<<<<< HEAD
@@ -26,6 +33,11 @@
 =======
       </class> <!-- com.Home.Attendance -->
 >>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
+=======
+          <include name="TCED29138"/>
+        </methods>
+      </class> <!-- com.curriculum.Create_New_Map -->
+>>>>>>> 5247e009002e6a11aeaea0c8e96d741b185afd5c
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
