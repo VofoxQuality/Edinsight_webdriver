@@ -6,6 +6,7 @@
       <class name="com.localassessment.apply_standard">
         <methods>
           <include name="setup1"/>
+          <include name="TCED16207"/>
           <include name="tearDown"/>
           <include name="TCED16208"/>
         </methods>
