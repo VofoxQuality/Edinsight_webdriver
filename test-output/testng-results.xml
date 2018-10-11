@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55449" started-at="2018-10-10T10:34:17Z" finished-at="2018-10-10T10:35:12Z">
+  <suite name="Default suite" duration-ms="49423" started-at="2018-10-11T09:51:47Z" finished-at="2018-10-11T09:52:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55449" started-at="2018-10-10T10:34:17Z" finished-at="2018-10-10T10:35:12Z">
-      <class name="com.Home.Attendance">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Attendance@5891e32e]" name="setup1" is-config="true" duration-ms="13815" started-at="2018-10-10T10:34:17Z" finished-at="2018-10-10T10:34:31Z">
+    <test name="Default test" duration-ms="49423" started-at="2018-10-11T09:51:47Z" finished-at="2018-10-11T09:52:37Z">
+      <class name="com.Home.Grades">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Grades@52f759d7]" name="setup1" is-config="true" duration-ms="24109" started-at="2018-10-11T09:51:47Z" finished-at="2018-10-11T09:52:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED34301()[pri:0, instance:com.Home.Attendance@5891e32e]" name="TCED34301" duration-ms="11839" started-at="2018-10-10T10:34:31Z" finished-at="2018-10-10T10:34:43Z">
+        <test-method status="PASS" signature="TCED34508()[pri:1, instance:com.Home.Grades@52f759d7]" name="TCED34508" duration-ms="25282" started-at="2018-10-11T09:52:11Z" finished-at="2018-10-11T09:52:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED34301 -->
-        <test-method status="PASS" signature="TCED34302()[pri:1, instance:com.Home.Attendance@5891e32e]" name="TCED34302" duration-ms="598" started-at="2018-10-10T10:34:43Z" finished-at="2018-10-10T10:34:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED34302 -->
-        <test-method status="PASS" signature="TCED34303()[pri:2, instance:com.Home.Attendance@5891e32e]" name="TCED34303" duration-ms="2354" started-at="2018-10-10T10:34:43Z" finished-at="2018-10-10T10:34:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED34303 -->
-        <test-method status="PASS" signature="TCED34304()[pri:3, instance:com.Home.Attendance@5891e32e]" name="TCED34304" duration-ms="1440" started-at="2018-10-10T10:34:46Z" finished-at="2018-10-10T10:34:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED34304 -->
-        <test-method status="PASS" signature="TCED34305()[pri:4, instance:com.Home.Attendance@5891e32e]" name="TCED34305" duration-ms="4581" started-at="2018-10-10T10:34:47Z" finished-at="2018-10-10T10:34:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED34305 -->
-        <test-method status="PASS" signature="TCED34306()[pri:5, instance:com.Home.Attendance@5891e32e]" name="TCED34306" duration-ms="4721" started-at="2018-10-10T10:34:52Z" finished-at="2018-10-10T10:34:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED34306 -->
-        <test-method status="PASS" signature="TCED34307()[pri:6, instance:com.Home.Attendance@5891e32e]" name="TCED34307" duration-ms="2226" started-at="2018-10-10T10:34:56Z" finished-at="2018-10-10T10:34:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED34307 -->
-        <test-method status="PASS" signature="TCED34308()[pri:7, instance:com.Home.Attendance@5891e32e]" name="TCED34308" duration-ms="13829" started-at="2018-10-10T10:34:59Z" finished-at="2018-10-10T10:35:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED34308 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Attendance@5891e32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-10T10:35:12Z" finished-at="2018-10-10T10:35:12Z">
+        </test-method> <!-- TCED34508 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Grades@52f759d7]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-11T09:52:37Z" finished-at="2018-10-11T09:52:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Home.Attendance -->
+      </class> <!-- com.Home.Grades -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
