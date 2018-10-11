@@ -12,20 +12,33 @@ import Library.BaseClassOne;
 public class apply_standard extends BaseClassOne
 {
 	
-	@Test(priority=1)
-	public void TCED16205() throws Exception
+	@Test(priority=0)
+	public void TCED16201()
 	{
-		
-		
 		try
 		{
-			//Supertent Login
-			login(Supertent_Login_id,Supertent_Login_Password);
+			//Superintent Login
+			login(Supertent_Login_id,Supertent_Login_Password);	
 			
+			//Assert logout button is displayed in the dashboard page
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_A3']/img")).isDisplayed());
+		}
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}
+		
+	}
+	
+	@Test(priority=1)
+	public void TCED16202()
+	{
+		try 
+		{
 			//Hover over main menu local Assignment.
 			Actions act= new Actions(driver);
-			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"))).build().perform();
-			
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"))).build().perform();			
 			
 			//click on Question bank link		
 			click("//a[contains(text(),'Question Bank')]");
@@ -33,13 +46,112 @@ public class apply_standard extends BaseClassOne
 			//click search question		
 			click("//a[@id='ctl00_MainContent_lnkSearchQuestions']");
 			
-			//select standard dropdown
-			Select drop=new Select(driver.findElement(By.xpath("//select[@id='ctl00_MainContent_cbddlStandardsType']")));		
-			drop.selectByIndex(1);
+			driver.navigate().refresh();
 			
-			//select subject dropdown		
-			Select drop1=new Select(driver.findElement(By.xpath("//select[@id='ctl00_MainContent_cbddlSubject']")));		
-			drop1.selectByIndex(2);
+			//select some questions
+			click("//*[@id='ctl00_MainContent_grdQuestion_ctl03_chkQuestion']");
+			click("//*[@id='ctl00_MainContent_grdQuestion_ctl04_chkQuestion']");
+			
+			//Click on Apply Standards button
+			click("//*[@id='ctl00_MainContent_btnApplyStandards']");
+			
+			//A pop-up should open Assert the header "Align Standard to Multiple Questions"
+			Assert.assertTrue(getText("//*[@id='RadWindowWrapper_ctl00_MainContent_MassEditStandards']/div[1]/div/h6").contains("Align Standards to Multiple Questions"),"failed to assert the Header"+"Align Standard to Multiple Questions");
+		} 
+		
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}	
+				
+	}
+	
+	@Test(priority=2)
+	public void TCED16203()
+	{		
+		
+		try
+		{
+			//Assert the Label "Saved Favorites" 
+			driver.switchTo().frame("MassEditStandards");
+			Assert.assertTrue(getText("//*[@id='Table1']/tbody/tr[1]/td[1]").contains("Saved Favorites"),"failed to assert the label -Saved Favorites:");
+			
+			//Assert the Label "Standards Type"
+			Assert.assertTrue(getText("//*[@id='Table1']/tbody/tr[3]/td[1]").contains("Standards Type"),"failed to assert the label -Standards Type");
+			
+			//Assert the Label "Subject"
+			Assert.assertTrue(getText("//*[@id='Table1']/tbody/tr[4]/td[1]").contains("Subject"),"failed to assert the label -Subject");
+			
+			//Assert the Label "Sub-Category"
+			Assert.assertTrue(getText("//*[@id='Table1']/tbody/tr[5]/td[1]").contains("Sub-Category"),"failed to assert the label -Sub-Category");
+			
+			//Assert the Label "Organizer"
+			Assert.assertTrue(getText("//*[@id='Table1']/tbody/tr[6]/td[1]").contains("Organizer"),"failed to assert the label -Organizer");
+			
+			//Assert the Label "Grade"
+			Assert.assertTrue(getText("//*[@id='Table1']/tbody/tr[7]/td[1]").contains("Grade"),"failed to assert the label -Grade");
+			
+			//Assert the Label "Standard Contains"
+			Assert.assertTrue(getText("//*[@id='Table1']/tbody/tr[8]/td[1]").contains("Standard Contains"),"failed to assert the label -Standard Contains");
+		} 
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}
+		
+	}
+	
+	@Test(priority=3)
+	public void TCED16204()
+	{	
+		try
+		{
+			//Application should be in the Apply Standard pop-up
+			
+			//Select Subject Mathematics
+			select("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_cbddlSubject']", "index=3");
+			
+			//Select Sub-Category Functions
+			select("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_cbddlStandard']", "index=8");
+			
+			//Click on Option button 
+			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_SplitButton']");
+			
+			//click Search
+			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_RadContextMenu1_detached']/ul/li[1]/span");
+			
+			//Assert the Search result
+			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00__0']/td[4]/a").contains("M08.B-F.1.1.1"),"failed to assert the label -M08.B-F.1.1.1");
+			
+			//Assert the Label "Search Result"
+			Assert.assertTrue(getText("//*[@id='contextContainer']/tbody/tr[3]/td[1]/table/tbody/tr[1]/td/span").contains("Search Result"),"failed to assert the label -Search Result");
+			
+			//Assert the Label "Code"
+			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00']/thead/tr/th[4]/a").contains("Code"),"failed to assert the label -Code");
+			
+			//Assert the Label "Type"
+			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00']/thead/tr/th[5]/a").contains("Type"),"failed to assert the label -Type");
+			
+			//Assert the Label "Description"
+			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00']/thead/tr/th[6]").contains("Description"),"failed to assert the label -Description");
+		} 
+		
+		catch (Exception e) 
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	
+//	@Test(priority=4)
+	public void TCED16205()
+	{		
+		
+		try
+		{
+
 			
 			//select sub category dropdown		
 			Select drop2=new Select(driver.findElement(By.xpath("//select[@id='ctl00_MainContent_cbddlStandard']")));		
@@ -88,7 +200,7 @@ public class apply_standard extends BaseClassOne
 					
 	}
 	
-	@Test(priority=2)	
+//	@Test(priority=6)	
 	public void TCED16207() throws Exception
 	
 	{
@@ -140,8 +252,7 @@ public class apply_standard extends BaseClassOne
 	         
 	        }
 	     	        
-	      }
-             	     
+	      }             	     
 	   
 		}
 		
@@ -153,6 +264,48 @@ public class apply_standard extends BaseClassOne
 	  	
 			
 	}
+	
+	@Test(priority=7)	
+	public void TCED16208() throws Exception
+	
+	{
+		
+		try
+		{
+			//Application should be in the Apply Standard pop-up	
+			
+			//Click on Option button 
+			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_SplitButton']");
+			
+			//Click on Browse standard tree
+			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_RadContextMenu1_detached']/ul/li[4]/span");
+			
+			//The correspondin page should open in new tab of the browser	Assert the "Standards Type" label
+			 String parent_window=driver.getWindowHandle();		 
+			 Thread.sleep(1000);	 
+			 
+				for(String all_windows:driver.getWindowHandles())
+					
+				{
+					if(!parent_window.equals(all_windows))
+					{
+						
+						driver.switchTo().window(all_windows); 
+						Assert.assertTrue(getText("//*[@id='aspnetForm']/table[2]/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td[1]").contains("Standards Type"),"failed to assert the label -Standards Type");
+						driver.close();
+					}
+				}
+				driver.switchTo().window("parent_window");
+		} 
+		
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());			
+			e.printStackTrace();
+		}
+		
+	}
+	
 	
 	protected String getSaltString() {
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
