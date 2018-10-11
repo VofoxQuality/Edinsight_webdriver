@@ -18,11 +18,12 @@ public class Copy_assessment_vendor extends BaseClassOne
 	
 	String URL="http://192.168.10.201/Edinsight/Login.aspx";
 	
-	@Test
-	
+	@Test	
 	public void TCED15006()
 	{
-		try {
+		try
+		
+		{
 			//Supertent Login
 			login_201(URL,"te$t$uper0nh@nd","password1!");
 			

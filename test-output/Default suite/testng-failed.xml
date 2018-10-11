@@ -1,43 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
-    <classes>
-<<<<<<< HEAD
-      <class name="com.curriculum.View_Print">
-=======
-      <class name="com.Home.Attendance">
->>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
-=======
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.curriculum.Create_New_Map">
->>>>>>> 5247e009002e6a11aeaea0c8e96d741b185afd5c
+      <class name="com.localassessment.apply_standard">
         <methods>
           <include name="setup1"/>
-<<<<<<< HEAD
-          <include name="TCED29605"/>
-          <include name="TCED29603"/>
-          <include name="TCED29604"/>
-          <include name="TCED29601"/>
-=======
->>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
           <include name="tearDown"/>
-<<<<<<< HEAD
-          <include name="TCED29602"/>
+          <include name="TCED16208"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.curriculum.View_Print -->
-=======
-      </class> <!-- com.Home.Attendance -->
->>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
-=======
-          <include name="TCED29138"/>
-        </methods>
-      </class> <!-- com.curriculum.Create_New_Map -->
->>>>>>> 5247e009002e6a11aeaea0c8e96d741b185afd5c
+      </class> <!-- com.localassessment.apply_standard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
