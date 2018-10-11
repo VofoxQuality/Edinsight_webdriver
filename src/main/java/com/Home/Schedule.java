@@ -6,6 +6,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Library.BaseClassOne;
+/**
+ * 
+ * @author sebastian
+ *
+ */
 
 public class Schedule extends BaseClassOne {
 	
