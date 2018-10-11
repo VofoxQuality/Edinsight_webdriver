@@ -297,17 +297,15 @@ public class apply_standard extends BaseClassOne
 	    click("//div[@class='rwDialog rwPromptDialog']//button[@class='rwOkBtn'][contains(text(),'OK')]");
 	  	    
 	    //Assert the text "Please enter the favorite name"
-	  //  Assert.assertEquals(getText("//*[@id='prompt1539249693433_message']"), "Please enter the favorite name","Message -Please enter the favorite name-not found");
-	        
-	    
+	    //Assert.assertEquals(getText("//*[@id='prompt1539249693433_message']"), "Please enter the favorite name","Message -Please enter the favorite name-not found");
+	      
 	    //Enter a Text in the favorite name text box
 	    String favourite=getSaltString();
 	    type("input.rwPromptInput.radPreventDecorate",favourite) ; 
 	    
 	    Thread.sleep(3000);
 	    
-	    //Click OK button 
-        		    
+	   //Click OK button         		    
         click("//div[@class='rwDialog rwPromptDialog']//button[@class='rwOkBtn'][contains(text(),'OK')]"); 
 	    
 	    //Assert the saved favorite name from "Saved Favorites" drop-down
@@ -323,16 +321,16 @@ public class apply_standard extends BaseClassOne
 	         if(text.equals(favourite)) 
 	        
 	        {
-	    	  Assert.assertTrue(true,"favourite not created");
+	    	  Assert.assertTrue(true,"favourite not created");  	  
 	    	  
-	    	  driver.switchTo().defaultContent();
 	    	  break;
 	         
 	        }
 	     	        
 	      } 
 	    
-	    
+	    Thread.sleep(2000);	    
+	    driver.switchTo().defaultContent();
 	    //click close button
 	    click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00_ctl04_btnDelete']");
 	 

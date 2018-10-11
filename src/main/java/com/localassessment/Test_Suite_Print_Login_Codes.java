@@ -100,7 +100,7 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_rtsPrintLoginCode']/div/ul/li[1]/span/span").contains("Building/Teacher/Course"),"failed to assert text"+"Building/Teacher/Course");
 					
 			//Assert the Label Select School
-			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_pvBuilding']/table/tbody/tr[1]/td[1]").contains("Select School"),"failed to assert text"+"Select School");
+			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_pvBuilding']/table/tbody/tr[1]/td[1]").contains("Select School:"),"failed to assert text"+"Select School");
 			
 			//Assert the Label Select Teacher
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_pvBuilding']/table/tbody/tr[2]/td[1]").contains("Select Teacher"),"failed to assert text"+"Select Teacher");
@@ -141,7 +141,7 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_rtsPrintLoginCode']/div/ul/li[3]/span/span").contains("Course Grouped by Teacher"),"failed to assert label "+" Course Grouped By Teacher ");
 						
 			//Assert the Label Select School 
-			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_pvCourseGroup']/table/tbody/tr[1]/td[1]").contains("Select School "),"failed to assert text"+" Select School  ");
+			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_pvCourseGroup']/table/tbody/tr[1]/td[1]").contains("Select School"),"failed to assert text"+" Select School  ");
 			
 			//Assert the Label Subject (optional)
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_pvCourseGroup']/table/tbody/tr[2]/td[1]").contains("Subject (optional)"),"failed to assert text"+" Subject (optional) ");
@@ -163,7 +163,7 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			click("//*[@id='ctl00_ContentPlaceHolder1_rtsPrintLoginCode']/div/ul/li[4]/span/span");
 			
 			//Assert the Label Student Name/ID
-			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_rtsPrintLoginCode']/div/ul/li[4]/span/span").contains("Student Name/ID"),"failed to assert label"+" Student Name/ID ");
+			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_rtsPrintLoginCode']/div/ul/li[4]/span/span").contains("Student Name/Id"),"failed to assert label"+" Student Name/ID ");
 			
 			//Assert the Label First/last name 
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_pvStudentNameOrId']/table/tbody/tr/td/table[1]/tbody/tr[1]/td[1]").contains("First/last name"),"failed to assert label"+" First/last name ");
@@ -172,7 +172,7 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_pvStudentNameOrId']/table/tbody/tr/td/table[1]/tbody/tr[2]/td[1]").contains("Building"),"failed to assert label"+" Building  ");
 			
 			//Assert the Label Student ID 
-			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_pvStudentNameOrId']/table/tbody/tr/td/table[1]/tbody/tr[3]/td[1]").contains("Student ID "),"failed to assert label"+" Student ID ");
+			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_pvStudentNameOrId']/table/tbody/tr/td/table[1]/tbody/tr[3]/td[1]").contains("Student ID"),"failed to assert label"+" Student ID ");
 			
 			//Assert the Label Selected Students 
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_pvStudentNameOrId']/table/tbody/tr/td/table[2]/tbody/tr/td[1]").contains("Selected Students"),"failed to assert label"+" Selected Students  ");
