@@ -69,6 +69,9 @@
 						<suiteXmlFile>VED0086-Print_View_Multiple_Maps.xml</suiteXmlFile>
 						<suiteXmlFile>VED0089-Student_Search.xml</suiteXmlFile>
 						<suiteXmlFile>VED0092-Attendance.xml</suiteXmlFile>
+						<suiteXmlFile>VED0094-Grades.xml</suiteXmlFile>
+						<suiteXmlFile>VED0097-Data_sets.xml</suiteXmlFile>
+						<suiteXmlFile>VED0095-Schedule.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
