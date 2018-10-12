@@ -71,8 +71,9 @@
 						<suiteXmlFile>VED0092-Attendance.xml</suiteXmlFile>
 						<suiteXmlFile>VED0094-Grades.xml</suiteXmlFile>
 						<suiteXmlFile>VED0097-Data_sets.xml</suiteXmlFile>
-						<suiteXmlFile>VED0095-Schedule.xml</suiteXmlFile>
+						<suiteXmlFile>VED0095-Schedule.xml</suiteXmlFile>s
 						<suiteXmlFile>VED0005-Test Suite-Print_Login_Codes.xml</suiteXmlFile>
+						<suiteXmlFile>VED0082-Browse_By_Standard.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
