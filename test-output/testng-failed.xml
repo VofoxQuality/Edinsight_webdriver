@@ -3,13 +3,22 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Home.Data_sets">
+      <class name="com.localassessment.Test_Suite_Print_Login_Codes">
         <methods>
           <include name="setup1"/>
-          <include name="TCED34703"/>
+          <include name="TCED13310"/>
+          <include name="TCED13301"/>
+          <include name="TCED13302"/>
+          <include name="TCED13303"/>
+          <include name="TCED13304"/>
+          <include name="TCED13305"/>
+          <include name="TCED13306"/>
+          <include name="TCED13307"/>
           <include name="tearDown"/>
+          <include name="TCED13308"/>
+          <include name="TCED13309"/>
         </methods>
-      </class> <!-- com.Home.Data_sets -->
+      </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
