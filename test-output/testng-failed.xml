@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.localassessment.Test_Suite_Print_Login_Codes">
+<<<<<<< HEAD
+      <class name="com.ScoreClassResultsOnline.ScoreClassResultsOnline">
         <methods>
           <include name="setup1"/>
-          <include name="TCED13310"/>
-          <include name="TCED13301"/>
-          <include name="TCED13302"/>
-          <include name="TCED13303"/>
-          <include name="TCED13304"/>
-          <include name="TCED13305"/>
-          <include name="TCED13306"/>
-          <include name="TCED13307"/>
+          <include name="TCED13027"/>
+          <include name="TCED13028"/>
+          <include name="TCED13029"/>
+=======
+      <class name="com.localassessment.apply_standard">
+        <methods>
+          <include name="setup1"/>
+>>>>>>> e8bf6196a1017b6dc4649048f94bcb833f312591
           <include name="tearDown"/>
-          <include name="TCED13308"/>
-          <include name="TCED13309"/>
+          <include name="TCED16208"/>
         </methods>
-      </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
+<<<<<<< HEAD
+      </class> <!-- com.ScoreClassResultsOnline.ScoreClassResultsOnline -->
+=======
+      </class> <!-- com.localassessment.apply_standard -->
+>>>>>>> e8bf6196a1017b6dc4649048f94bcb833f312591
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

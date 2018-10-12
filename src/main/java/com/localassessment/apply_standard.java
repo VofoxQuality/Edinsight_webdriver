@@ -166,8 +166,6 @@ public class apply_standard extends BaseClassOne
 			//Store added Standard ID 
 			String Add_std=getText("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00__0']/td[4]/a");
 			
-			System.out.println(Add_std);
-			
 			//Select a Standard 
 			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00_ctl06_CheckboxSelectColumnSelectCheckBox']");
 			
@@ -181,10 +179,8 @@ public class apply_standard extends BaseClassOne
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00_ctl06_btnDelete']")).isDisplayed());
 			
 			//Store added Standard ID 
-			String Add_std1=getText("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00__1']/td[4]/a");
-			
-			System.out.println(Add_std1);
-			
+			String Add_std1=getText("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00__1']/td[4]/a");	
+						
 			//Click on Option Button 
 			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_SplitButton']");
 			
@@ -261,20 +257,10 @@ public class apply_standard extends BaseClassOne
 	{
 		
 		try
-		{
-			
-//		//Hover over main menu local Assignment.
-//		Actions act= new Actions(driver);
-//		act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"))).build().perform();			
-//			
-//		//click on Question bank link		
-//		click("//a[contains(text(),'Question Bank')]");
-//			
-//		//click search question		
-//		click("//a[@id='ctl00_MainContent_lnkSearchQuestions']");
-//			
+		{		
+		
 		driver.navigate().refresh();			
-//		
+		
 		Thread.sleep(3000);
 		
 		if(isAlertPresents())
@@ -292,12 +278,8 @@ public class apply_standard extends BaseClassOne
 	    click("//*[@id='ctl00_ContentPlaceHolder1_ucQuestionStandards_SplitButton']");
 	    
 	    //Click on Make this filter a Favorite
-	    click("//span[contains(text(),'Make this filter a favorite')]");
-	    
-	    click("//div[@class='rwDialog rwPromptDialog']//button[@class='rwOkBtn'][contains(text(),'OK')]");
-	  	    
-	    //Assert the text "Please enter the favorite name"
-	    //Assert.assertEquals(getText("//*[@id='prompt1539249693433_message']"), "Please enter the favorite name","Message -Please enter the favorite name-not found");
+	    click("//span[contains(text(),'Make this filter a favorite')]");	    
+	    click("//div[@class='rwDialog rwPromptDialog']//button[@class='rwOkBtn'][contains(text(),'OK')]");	
 	      
 	    //Enter a Text in the favorite name text box
 	    String favourite=getSaltString();
@@ -315,25 +297,23 @@ public class apply_standard extends BaseClassOne
 	    for(WebElement el : allOptions) 
 	    
 	      {
-	        // So you can get the text like:-
-	        String text = el.getText();	    	        
 	        
-	         if(text.equals(favourite)) 
+	        String text = el.getText(); 	        
 	        
+	        if(text.equals(favourite))	        
 	        {
-	    	  Assert.assertTrue(true,"favourite not created");  	  
-	    	  
-	    	  break;
-	         
+	    	  Assert.assertTrue(true,"favourite not created");   
+	    	  break;	         
 	        }
 	     	        
 	      } 
+	        
 	    
-	    Thread.sleep(2000);	    
-	    driver.switchTo().defaultContent();
+	    Thread.sleep(3000);		
+	    driver.switchTo().parentFrame();
+	  
 	    //click close button
-	    click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00_ctl04_btnDelete']");
-	 
+	    click("//div[@id='RadWindowWrapper_ctl00_MainContent_MassEditStandards']/div/div/ul/li[2]/span");	 
 		}
 		
 		catch(Exception e)
@@ -341,8 +321,7 @@ public class apply_standard extends BaseClassOne
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
 		}
-	  	
-			
+	  				
 	}
 	
 	@Test(priority=7)	
@@ -364,10 +343,10 @@ public class apply_standard extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_grdQuestion_ctl03_chkQuestion']");			
 			
 			//Click on Apply Standards button
-			click("//*[@id='ctl00_MainContent_btnApplyStandards']");
+			click("//*[@id='ctl00_MainContent_btnApplyStandards']");	
 			
-//			WebDriverWait wt=new WebDriverWait(driver, 60);
-//			wt.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_SplitButton']"))));
+			// switch to frame 
+			driver.switchTo().frame("MassEditStandards");
 			
 			//Click on Option button 
 			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_SplitButton']");
@@ -383,15 +362,25 @@ public class apply_standard extends BaseClassOne
 					
 				{
 					if(!parent_window.equals(all_windows))
-					{
-						
+					{						
 						driver.switchTo().window(all_windows); 
 						Assert.assertTrue(getText("//*[@id='aspnetForm']/table[2]/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td[1]").contains("Standards Type"),"failed to assert the label -Standards Type");
-						Thread.sleep(2000);
-						driver.close();
+											
 					}
 				}
-				driver.switchTo().window("parent_window");
+				
+				driver.close();
+				Thread.sleep(2000);				
+				driver.switchTo().window(parent_window);							
+			    driver.switchTo().parentFrame();				  
+			    //click close button
+			    click("//div[@id='RadWindowWrapper_ctl00_MainContent_MassEditStandards']/div/div/ul/li[2]/span");
+			    
+				//click on Logout button		 
+				click("//*[@id='ctl00_A3']/img");
+				
+				//Assert the page Header as "Edinsight Login"					
+				Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));				
 		} 
 		
 		catch (Exception e)

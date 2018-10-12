@@ -1,666 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="10" failed="0" ignored="0" total="10" passed="0">
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28438" started-at="2018-10-11T14:52:08Z" finished-at="2018-10-11T14:52:37Z">
+  <suite name="Default suite" duration-ms="40054" started-at="2018-10-12T05:39:31Z" finished-at="2018-10-12T05:40:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28438" started-at="2018-10-11T14:52:08Z" finished-at="2018-10-11T14:52:37Z">
-      <class name="com.localassessment.Test_Suite_Print_Login_Codes">
-        <test-method status="FAIL" signature="setup1()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="setup1" is-config="true" duration-ms="28337" started-at="2018-10-11T14:52:08Z" finished-at="2018-10-11T14:52:37Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at Library.BaseClassOne.setup1(BaseClassOne.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+    <test name="Default test" duration-ms="40054" started-at="2018-10-12T05:39:31Z" finished-at="2018-10-12T05:40:11Z">
+      <class name="com.ScoreClassResultsOnline.ScoreClassResultsOnline">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.ScoreClassResultsOnline.ScoreClassResultsOnline@271053e1]" name="setup1" is-config="true" duration-ms="13745" started-at="2018-10-12T11:09:31Z" finished-at="2018-10-12T11:09:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="SKIP" signature="TCED13301()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="TCED13301" duration-ms="0" started-at="2018-10-11T14:52:37Z" finished-at="2018-10-11T14:52:37Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at Library.BaseClassOne.setup1(BaseClassOne.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="TCED13022()[pri:1, instance:com.ScoreClassResultsOnline.ScoreClassResultsOnline@271053e1]" name="TCED13022" duration-ms="11920" started-at="2018-10-12T11:09:45Z" finished-at="2018-10-12T11:09:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13301 -->
-        <test-method status="SKIP" signature="TCED13302()[pri:1, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="TCED13302" duration-ms="0" started-at="2018-10-11T14:52:37Z" finished-at="2018-10-11T14:52:37Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at Library.BaseClassOne.setup1(BaseClassOne.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TCED13022 -->
+        <test-method status="PASS" signature="TCED13023()[pri:2, instance:com.ScoreClassResultsOnline.ScoreClassResultsOnline@271053e1]" name="TCED13023" duration-ms="162" started-at="2018-10-12T11:09:57Z" finished-at="2018-10-12T11:09:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13302 -->
-        <test-method status="SKIP" signature="TCED13303()[pri:2, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="TCED13303" duration-ms="0" started-at="2018-10-11T14:52:37Z" finished-at="2018-10-11T14:52:37Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at Library.BaseClassOne.setup1(BaseClassOne.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TCED13023 -->
+        <test-method status="PASS" signature="TCED13024()[pri:3, instance:com.ScoreClassResultsOnline.ScoreClassResultsOnline@271053e1]" name="TCED13024" duration-ms="629" started-at="2018-10-12T11:09:57Z" finished-at="2018-10-12T11:09:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13303 -->
-        <test-method status="SKIP" signature="TCED13304()[pri:3, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="TCED13304" duration-ms="0" started-at="2018-10-11T14:52:37Z" finished-at="2018-10-11T14:52:37Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at Library.BaseClassOne.setup1(BaseClassOne.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TCED13024 -->
+        <test-method status="PASS" signature="TCED13025()[pri:4, instance:com.ScoreClassResultsOnline.ScoreClassResultsOnline@271053e1]" name="TCED13025" duration-ms="852" started-at="2018-10-12T11:09:58Z" finished-at="2018-10-12T11:09:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13304 -->
-        <test-method status="SKIP" signature="TCED13306()[pri:5, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="TCED13306" duration-ms="0" started-at="2018-10-11T14:52:37Z" finished-at="2018-10-11T14:52:37Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at Library.BaseClassOne.setup1(BaseClassOne.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TCED13025 -->
+        <test-method status="PASS" signature="TCED13026()[pri:5, instance:com.ScoreClassResultsOnline.ScoreClassResultsOnline@271053e1]" name="TCED13026" duration-ms="1920" started-at="2018-10-12T11:09:58Z" finished-at="2018-10-12T11:10:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13306 -->
-        <test-method status="SKIP" signature="TCED13305()[pri:4, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="TCED13305" duration-ms="0" started-at="2018-10-11T14:52:37Z" finished-at="2018-10-11T14:52:37Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at Library.BaseClassOne.setup1(BaseClassOne.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TCED13026 -->
+        <test-method status="PASS" signature="TCED13027()[pri:6, instance:com.ScoreClassResultsOnline.ScoreClassResultsOnline@271053e1]" name="TCED13027" duration-ms="3592" started-at="2018-10-12T11:10:00Z" finished-at="2018-10-12T11:10:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13305 -->
-        <test-method status="SKIP" signature="TCED13310()[pri:9, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="TCED13310" duration-ms="0" started-at="2018-10-11T14:52:37Z" finished-at="2018-10-11T14:52:37Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at Library.BaseClassOne.setup1(BaseClassOne.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TCED13027 -->
+        <test-method status="PASS" signature="TCED13028()[pri:7, instance:com.ScoreClassResultsOnline.ScoreClassResultsOnline@271053e1]" name="TCED13028" duration-ms="2708" started-at="2018-10-12T11:10:04Z" finished-at="2018-10-12T11:10:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13310 -->
-        <test-method status="SKIP" signature="TCED13309()[pri:8, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="TCED13309" duration-ms="0" started-at="2018-10-11T14:52:37Z" finished-at="2018-10-11T14:52:37Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at Library.BaseClassOne.setup1(BaseClassOne.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TCED13028 -->
+        <test-method status="PASS" signature="TCED13029()[pri:8, instance:com.ScoreClassResultsOnline.ScoreClassResultsOnline@271053e1]" name="TCED13029" duration-ms="843" started-at="2018-10-12T11:10:07Z" finished-at="2018-10-12T11:10:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13309 -->
-        <test-method status="SKIP" signature="TCED13307()[pri:6, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="TCED13307" duration-ms="0" started-at="2018-10-11T14:52:37Z" finished-at="2018-10-11T14:52:37Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at Library.BaseClassOne.setup1(BaseClassOne.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- TCED13029 -->
+        <test-method status="PASS" signature="TCED13030()[pri:9, instance:com.ScoreClassResultsOnline.ScoreClassResultsOnline@271053e1]" name="TCED13030" duration-ms="3648" started-at="2018-10-12T11:10:07Z" finished-at="2018-10-12T11:10:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13307 -->
-        <test-method status="SKIP" signature="TCED13308()[pri:7, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="TCED13308" duration-ms="0" started-at="2018-10-11T14:52:37Z" finished-at="2018-10-11T14:52:37Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'VOFOX-SEBASTIAN', ip: '192.168.10.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3612, moz:profile: C:\Users\sebastian.VOFOX\Ap..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 85984a93-0b50-4a0d-9056-3b0fba95beaf
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at Library.BaseClassOne.setup1(BaseClassOne.java:107)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED13308 -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@3ecd23d9]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-11T14:52:37Z" finished-at="2018-10-11T14:52:37Z">
+        </test-method> <!-- TCED13030 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ScoreClassResultsOnline.ScoreClassResultsOnline@271053e1]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-12T11:10:11Z" finished-at="2018-10-12T11:10:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
+      </class> <!-- com.ScoreClassResultsOnline.ScoreClassResultsOnline -->
+=======
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="84796" started-at="2018-10-12T05:30:14Z" finished-at="2018-10-12T05:31:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="84796" started-at="2018-10-12T05:30:14Z" finished-at="2018-10-12T05:31:39Z">
+      <class name="com.localassessment.apply_standard">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.apply_standard@1686d1f]" name="setup1" is-config="true" duration-ms="17161" started-at="2018-10-12T11:00:14Z" finished-at="2018-10-12T11:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup1 -->
+        <test-method status="PASS" signature="TCED16201()[pri:0, instance:com.localassessment.apply_standard@1686d1f]" name="TCED16201" duration-ms="6343" started-at="2018-10-12T11:00:31Z" finished-at="2018-10-12T11:00:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED16201 -->
+        <test-method status="PASS" signature="TCED16202()[pri:1, instance:com.localassessment.apply_standard@1686d1f]" name="TCED16202" duration-ms="7320" started-at="2018-10-12T11:00:37Z" finished-at="2018-10-12T11:00:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED16202 -->
+        <test-method status="PASS" signature="TCED16203()[pri:2, instance:com.localassessment.apply_standard@1686d1f]" name="TCED16203" duration-ms="690" started-at="2018-10-12T11:00:45Z" finished-at="2018-10-12T11:00:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED16203 -->
+        <test-method status="PASS" signature="TCED16204()[pri:3, instance:com.localassessment.apply_standard@1686d1f]" name="TCED16204" duration-ms="2625" started-at="2018-10-12T11:00:45Z" finished-at="2018-10-12T11:00:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED16204 -->
+        <test-method status="PASS" signature="TCED16205()[pri:4, instance:com.localassessment.apply_standard@1686d1f]" name="TCED16205" duration-ms="10608" started-at="2018-10-12T11:00:48Z" finished-at="2018-10-12T11:00:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED16205 -->
+        <test-method status="PASS" signature="TCED16206()[pri:5, instance:com.localassessment.apply_standard@1686d1f]" name="TCED16206" duration-ms="11444" started-at="2018-10-12T11:00:59Z" finished-at="2018-10-12T11:01:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED16206 -->
+        <test-method status="PASS" signature="TCED16207()[pri:6, instance:com.localassessment.apply_standard@1686d1f]" name="TCED16207" duration-ms="16937" started-at="2018-10-12T11:01:10Z" finished-at="2018-10-12T11:01:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED16207 -->
+        <test-method status="PASS" signature="TCED16208()[pri:7, instance:com.localassessment.apply_standard@1686d1f]" name="TCED16208" duration-ms="11613" started-at="2018-10-12T11:01:27Z" finished-at="2018-10-12T11:01:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED16208 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.apply_standard@1686d1f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-12T11:01:39Z" finished-at="2018-10-12T11:01:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.localassessment.apply_standard -->
+>>>>>>> e8bf6196a1017b6dc4649048f94bcb833f312591
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
