@@ -278,12 +278,8 @@ public class apply_standard extends BaseClassOne
 	    click("//*[@id='ctl00_ContentPlaceHolder1_ucQuestionStandards_SplitButton']");
 	    
 	    //Click on Make this filter a Favorite
-	    click("//span[contains(text(),'Make this filter a favorite')]");
-	    
-	    click("//div[@class='rwDialog rwPromptDialog']//button[@class='rwOkBtn'][contains(text(),'OK')]");
-	  	    
-	    //Assert the text "Please enter the favorite name"
-	    //Assert.assertEquals(getText("//*[@id='prompt1539249693433_message']"), "Please enter the favorite name","Message -Please enter the favorite name-not found");
+	    click("//span[contains(text(),'Make this filter a favorite')]");	    
+	    click("//div[@class='rwDialog rwPromptDialog']//button[@class='rwOkBtn'][contains(text(),'OK')]");	
 	      
 	    //Enter a Text in the favorite name text box
 	    String favourite=getSaltString();
@@ -375,9 +371,8 @@ public class apply_standard extends BaseClassOne
 				
 				driver.close();
 				Thread.sleep(2000);				
-				driver.switchTo().window("parent_window");				
-			    driver.switchTo().parentFrame();
-				  
+				driver.switchTo().window(parent_window);							
+			    driver.switchTo().parentFrame();				  
 			    //click close button
 			    click("//div[@id='RadWindowWrapper_ctl00_MainContent_MassEditStandards']/div/div/ul/li[2]/span");
 			    
