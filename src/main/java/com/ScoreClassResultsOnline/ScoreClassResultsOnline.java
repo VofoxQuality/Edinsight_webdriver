@@ -103,7 +103,7 @@ public class ScoreClassResultsOnline extends BaseClassOne {
 	public void TCED13024() 
 	{
 		try
-		{
+		{      // To Assert the Validation Messages
 			click("//*[@id='ctl00_MainContent_btnDisplayGrid']");
 			
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_lblMsg']").contains("Please select a teacher and class to enter scores"), "failed to assert alert"+"Please select a teacher and class to enter scores");
@@ -150,7 +150,7 @@ public class ScoreClassResultsOnline extends BaseClassOne {
 			click("//*[@id='ctl00_MainContent_btnDisplayGrid']");
 			
 			Scroll_DowntoEnd();
-	/*		
+			
 			 // To  Assert the Available Labels 
 			Assert.assertTrue(getText("//b[contains(text(),'Highlight for bad answers')]").contains("Highlight for bad answers"), "failed to assert alert"+"Highlight for bad answers");
 
@@ -175,7 +175,7 @@ public class ScoreClassResultsOnline extends BaseClassOne {
 			
 			Assert.assertTrue(getText("//th[contains(text(),'Total Score')]").contains("Total Score"), "failed to assert alert"+"Total Score");
 			
-			*/
+			
 			
 			
 		}catch(Exception e) 
@@ -192,11 +192,11 @@ public class ScoreClassResultsOnline extends BaseClassOne {
 	{
 		try
 		{
-	
+			// To Assert the labels & Buttons
 		click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_popupStud16004187']");
 		
 		Assert.assertEquals( "Online Answers and Scoring Rubric", getText("//h6[@class='rwTitle']"));
-		
+		// TO Switch to child frame
 		SwitchFrameName("splitterPopup");
 		
 		Thread.sleep(1000);
@@ -204,7 +204,7 @@ public class ScoreClassResultsOnline extends BaseClassOne {
 		Assert.assertEquals( "Teacher comment", getValue("#ctl00_ContentPlaceHolder1_btnTeacherComment"));
 		
 		click("//*[@id='ctl00_ContentPlaceHolder1_rgScoringRubric_ctl00_ctl06_btnSelectRubric']");
-		
+		// TO Switch to parent frame
 		driver.switchTo().defaultContent();
 		
 		driver.findElement(By.id("ctl00_MainContent_rgSearch_ctl00_ctl04_popupStud16004189")).click();
@@ -242,7 +242,7 @@ public class ScoreClassResultsOnline extends BaseClassOne {
 	public void TCED13028() 
 	{
 		try
-		{
+		{     // To Assert the Validation message
 			driver.switchTo().defaultContent();
 			
 			click("//*[@id='ctl00_MainContent_btnSave']");
@@ -273,7 +273,7 @@ public class ScoreClassResultsOnline extends BaseClassOne {
 		try
 		{
 
-			
+			 // To Assert the Validation message
 			click("//*[@id='ctl00_MainContent_btnCalculateScore']");
 				
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_lblErrorMsg']").contains("Bad answers are not included in total score calculation."), "failed to assert alert"+"Bad answers are not included in total score calculation.");
@@ -293,7 +293,7 @@ public class ScoreClassResultsOnline extends BaseClassOne {
 		try
 		{
 
-			
+			 // To Assert the Button
 			click("//*[@id='ctl00_MainContent_btnDisplayGrid']");
 			
 			Thread.sleep(3000);
