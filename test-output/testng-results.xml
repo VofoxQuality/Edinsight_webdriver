@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49267" started-at="2018-10-12T09:10:35Z" finished-at="2018-10-12T09:11:24Z">
+  <suite name="Default suite" duration-ms="111350" started-at="2018-10-12T10:30:03Z" finished-at="2018-10-12T10:31:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49267" started-at="2018-10-12T09:10:35Z" finished-at="2018-10-12T09:11:24Z">
-      <class name="com.curriculum.Batch_Print">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="setup1" is-config="true" duration-ms="10784" started-at="2018-10-12T14:40:35Z" finished-at="2018-10-12T14:40:45Z">
+    <test name="Default test" duration-ms="111350" started-at="2018-10-12T10:30:03Z" finished-at="2018-10-12T10:31:55Z">
+      <class name="com.curriculum.Custom_Reports">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Custom_Reports@f777e8]" name="setup1" is-config="true" duration-ms="8491" started-at="2018-10-12T16:00:03Z" finished-at="2018-10-12T16:00:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED28101()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28101" duration-ms="7671" started-at="2018-10-12T14:40:45Z" finished-at="2018-10-12T14:40:53Z">
+        <test-method status="PASS" signature="TCED30601()[pri:0, instance:com.curriculum.Custom_Reports@f777e8]" name="TCED30601" duration-ms="8360" started-at="2018-10-12T16:00:12Z" finished-at="2018-10-12T16:00:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED28101 -->
-        <test-method status="PASS" signature="TCED28102()[pri:1, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28102" duration-ms="1288" started-at="2018-10-12T14:40:53Z" finished-at="2018-10-12T14:40:54Z">
+        </test-method> <!-- TCED30601 -->
+        <test-method status="PASS" signature="TCED30602()[pri:1, instance:com.curriculum.Custom_Reports@f777e8]" name="TCED30602" duration-ms="2038" started-at="2018-10-12T16:00:20Z" finished-at="2018-10-12T16:00:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED28102 -->
-        <test-method status="PASS" signature="TCED28103()[pri:2, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28103" duration-ms="5518" started-at="2018-10-12T14:40:54Z" finished-at="2018-10-12T14:41:00Z">
+        </test-method> <!-- TCED30602 -->
+        <test-method status="PASS" signature="TCED30603()[pri:2, instance:com.curriculum.Custom_Reports@f777e8]" name="TCED30603" duration-ms="1320" started-at="2018-10-12T16:00:22Z" finished-at="2018-10-12T16:00:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED28103 -->
-        <test-method status="PASS" signature="TCED28104()[pri:3, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28104" duration-ms="23448" started-at="2018-10-12T14:41:00Z" finished-at="2018-10-12T14:41:23Z">
+        </test-method> <!-- TCED30603 -->
+        <test-method status="PASS" signature="TCED30604()[pri:3, instance:com.curriculum.Custom_Reports@f777e8]" name="TCED30604" duration-ms="45278" started-at="2018-10-12T16:00:23Z" finished-at="2018-10-12T16:01:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED28104 -->
-        <test-method status="PASS" signature="TCED28105()[pri:4, instance:com.curriculum.Batch_Print@1ee9989]" name="TCED28105" duration-ms="522" started-at="2018-10-12T14:41:23Z" finished-at="2018-10-12T14:41:24Z">
+        </test-method> <!-- TCED30604 -->
+        <test-method status="PASS" signature="TCED30605()[pri:4, instance:com.curriculum.Custom_Reports@f777e8]" name="TCED30605" duration-ms="45831" started-at="2018-10-12T16:01:09Z" finished-at="2018-10-12T16:01:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED28105 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Batch_Print@1ee9989]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-12T14:41:24Z" finished-at="2018-10-12T14:41:24Z">
+        </test-method> <!-- TCED30605 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Custom_Reports@f777e8]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-12T16:01:55Z" finished-at="2018-10-12T16:01:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.curriculum.Batch_Print -->
+      </class> <!-- com.curriculum.Custom_Reports -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
