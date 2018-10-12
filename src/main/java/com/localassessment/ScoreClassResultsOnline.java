@@ -1,4 +1,4 @@
-package com.ScoreClassResultsOnline;
+package com.localassessment;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import Library.BaseClassOne;
-public class apply_standard extends BaseClassOne
+public class Question_Bank_Apply_Standards extends BaseClassOne
 {
 	
 	@Test(priority=0)
