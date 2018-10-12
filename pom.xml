@@ -74,6 +74,7 @@
 						<suiteXmlFile>VED0095-Schedule.xml</suiteXmlFile>s
 						<suiteXmlFile>VED0005-Test Suite-Print_Login_Codes.xml</suiteXmlFile>
 						<suiteXmlFile>VED0082-Browse_By_Standard.xml</suiteXmlFile>
+						<suiteXmlFile></suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
