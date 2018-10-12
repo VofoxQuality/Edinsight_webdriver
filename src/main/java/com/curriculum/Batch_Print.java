@@ -14,14 +14,11 @@ public class Batch_Print extends BaseClassOne
 
 {
 	
-	@Test(priority=0)
-	
+	@Test(priority=0)	
 	public void TCED28101()
 	
-	{
-		
-		try 
-		
+	{		
+		try 		
 		{
 			//Superintent Login
 			login(Supertent_Login_id,Supertent_Login_Password);	
@@ -32,23 +29,18 @@ public class Batch_Print extends BaseClassOne
 			//Click on Batch Print		
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/div/div[4]/div/a");
 			
-			//Assert the label "Batch Print"
-			
+			//Assert the label "Batch Print"			
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[1]/td")).getText().contains("Batch Print"));
-		}
-		
-		catch (Exception e) 
-		
-		{
-			
+		}		
+		catch (Exception e) 		
+		{			
 			e.printStackTrace();			
 			Assert.fail(e.getMessage());
 		}
 				
 	}
 	
-@Test(priority=1)
-	
+    @Test(priority=1)	
 	public void TCED28102()
 	
 	{
@@ -109,6 +101,8 @@ public class Batch_Print extends BaseClassOne
 			
            //Assert the Label "Put a divider sheet between teachers"
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_cblDividerType']/tbody/tr[2]/td/label")).getText().contains("Put a divider sheet between teachers"),"failed to assert text"+"Put a divider sheet between teachers");
+		
+		
 		} 
 		
 		catch (Exception e)
@@ -119,8 +113,7 @@ public class Batch_Print extends BaseClassOne
 		}
 	}
 	
-@Test(priority=2)
-	
+    @Test(priority=2)	
 	public void TCED28103() 
 	
 	{
@@ -128,100 +121,67 @@ public class Batch_Print extends BaseClassOne
 		
 		{
 			driver.navigate().refresh();
-			
-			
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			
-			js.executeScript("scroll(0,document.body.scrollHeight)");			
+			Thread.sleep(2000);	
 			
 			if(isAlertPresents())
+				
 			{			
 			driver.switchTo().alert().dismiss();	
 			}
 			
-			//Click on "Click Here to Dowload Lesson plans" 
+			JavascriptExecutor js=(JavascriptExecutor)driver;			
+			js.executeScript("scroll(0,document.body.scrollHeight)");							
 			
+			//Click on "Click Here to Dowload Lesson plans" 			
 			click("//*[@id='ctl00_MainContent_btnDownloadPDF']");
 			
-			//Click on Print PDF
-			
-			click("//*[@id='ctl00_MainContent_linkPdf']");
-			
-			System.out.println(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_lblMsg']")).getText());
+			//Click on Print PDF			
+			click("//*[@id='ctl00_MainContent_linkPdf']");			
 			
 			//Assert the message "You must select at least one teacher."
-				
-			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_lblMsg']")).getText().contains("You must select at least one teacher"));
-			
-			//Assert the message "You must select at least one Period."
-			
-			//Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_lblMsg']")).getText().contains("You must select at least one Period"));
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblMsg']"), "You must select at least one teacher." ,"Message-You must select at least one teacher-not found");
 			
 			js.executeScript("scroll(0,document.body.scrollHeight)");
 			
-			//Click on "Click Here to Dowload Lesson plans" 
-			
+			//Click on "Click Here to Dowload Lesson plans" 			
             click("//*[@id='ctl00_MainContent_btnDownloadPDF']");
             
-          //Click on Print word
-			
+            //Click on Print word			
 			click("//*[@id='ctl00_MainContent_linkWord']");		
 			
-			//Assert the message "You must select at least one teacher."
-			
-            Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_lblMsg']")).getText().contains("You must select at least one teacher"));
-            
-            //Assert the message "You must select at least one Period."
-			
-			//Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_lblMsg']")).getText().contains("You must select at least one Period"));            
-           
-			
+			//Assert the message "You must select at least one teacher."			
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblMsg']"), "You must select at least one teacher." ,"Message-You must select at least one teacher-not found");
+
 		} 
 		
 		catch (Exception e)
-		{
-			
+		{			
 			e.printStackTrace();
-		    Assert.fail(e.getMessage());
-
-			
-		}
-		
+		    Assert.fail(e.getMessage());			
+		}	
 
 	}
 	
-@Test(priority=3)
-	
+    @Test(priority=3)	
 	public void TCED28104()	
 	{
 		try 
-		{			
-
-			driver.navigate().refresh();
+		{		
 			
-			Thread.sleep(6000);		
-										
-			
-			if(isAlertPresents())
-			{			
-			driver.switchTo().alert().dismiss();	
-			}
-			
-			//select Teacher = Ableton, A - 10
-			
+			//select Teacher = Ableton, A - 10			
 			click("//*[@id='ctl00_MainContent_cblTeachers_0']");			
 		
 			FileDelete();
 			
-			//Click on "Click Here to Dowload Lesson plans" 
-			
+			//Click on "Click Here to Dowload Lesson plans" 			
 			click("//*[@id='ctl00_MainContent_btnDownloadPDF']");	
 			
-			//click on Print PDF
-			
+			//click on Print PDF			
 			click("//*[@id='ctl00_MainContent_linkPdf']");			
 			
-			Thread.sleep(6000);		
+			Thread.sleep(6000);	
+			
+			//Assert the downloaded PDf file
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			
 			//Click on "Click Here to Dowload Lesson plans" 
@@ -229,56 +189,40 @@ public class Batch_Print extends BaseClassOne
             
             FileDelete();
             
-            ////click on Print Word
-			
+            //click on Print Word			
 			click("//*[@id='ctl00_MainContent_linkWord']");					
 			
-			Thread.sleep(6000);		
+			Thread.sleep(6000);	
+			
+			//Assert the downloaded WORD file
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 			
 		} 	
 				
 		catch (Exception e) 
-		{
-					
-						
+		{			
 			e.printStackTrace();			
 			Assert.fail(e.getMessage());
-		}
-						
+		}						
 	}
-@Test(priority=4)
-	
-public void TCED28105()
-	{
-	
+    
+ //  @Test(priority=4)	
+   public void TCED28105()
+	{	
 		try 
-		{
-			
-			
-			driver.navigate().refresh(); 
-			
-   		    Thread.sleep(2000);
-   		    
-   			if(isAlertPresents())
-			{			
-			driver.switchTo().alert().dismiss();	
-			}
+		{	
    			
    			//click on Logout button			 
 			click("//*[@id='ctl00_A3']/img");
 			
 			//Assert the page Header as "Edinsight Login"						
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
-		} 
-					
+		} 					
 		
 		catch (Exception e)		
-		{
-			
+		{			
 			e.printStackTrace();			
-			Assert.fail(e.getMessage());
-			
+			Assert.fail(e.getMessage());			
 		}
 	   
 	}

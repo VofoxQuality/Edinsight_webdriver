@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.localassessment.apply_standard"/>
+      <class name="com.localassessment.Question_Bank_Apply_Standards"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

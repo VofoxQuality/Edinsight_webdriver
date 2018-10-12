@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.localassessment.apply_standard">
+      <class name="com.localassessment.Test_Suite_Print_Login_Codes">
         <methods>
           <include name="setup1"/>
+          <include name="TCED13306"/>
+          <include name="TCED13307"/>
           <include name="tearDown"/>
-          <include name="TCED16208"/>
+          <include name="TCED13308"/>
+          <include name="TCED13309"/>
         </methods>
-      </class> <!-- com.localassessment.apply_standard -->
+      </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
