@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29804" started-at="2018-10-05T04:46:23Z" finished-at="2018-10-05T04:46:53Z">
+  <suite name="Suite" duration-ms="28049" started-at="2018-10-11T13:54:09Z" finished-at="2018-10-11T13:54:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29804" started-at="2018-10-05T04:46:23Z" finished-at="2018-10-05T04:46:53Z">
-      <class name="com.Home.Student_Search">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Student_Search@42eca56e]" name="setup1" is-config="true" duration-ms="9120" started-at="2018-10-05T04:46:23Z" finished-at="2018-10-05T04:46:32Z">
+    <test name="Test" duration-ms="28049" started-at="2018-10-11T13:54:09Z" finished-at="2018-10-11T13:54:37Z">
+      <class name="com.Home.Data_sets">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Data_sets@66d1af89]" name="setup1" is-config="true" duration-ms="7541" started-at="2018-10-11T13:54:09Z" finished-at="2018-10-11T13:54:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED33106()[pri:1, instance:com.Home.Student_Search@42eca56e]" name="TCED33106" duration-ms="20657" started-at="2018-10-05T04:46:32Z" finished-at="2018-10-05T04:46:53Z">
+        <test-method status="PASS" signature="TCED34703()[pri:1, instance:com.Home.Data_sets@66d1af89]" name="TCED34703" duration-ms="20479" started-at="2018-10-11T13:54:17Z" finished-at="2018-10-11T13:54:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED33106 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Student_Search@42eca56e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-05T04:46:53Z" finished-at="2018-10-05T04:46:53Z">
+        </test-method> <!-- TCED34703 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Data_sets@66d1af89]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-11T13:54:37Z" finished-at="2018-10-11T13:54:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Home.Student_Search -->
+      </class> <!-- com.Home.Data_sets -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
