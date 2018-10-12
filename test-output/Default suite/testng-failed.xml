@@ -3,16 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.localassessment.Test_Suite_Print_Login_Codes">
+      <class name="com.curriculum.Batch_Print">
         <methods>
           <include name="setup1"/>
-          <include name="TCED13306"/>
-          <include name="TCED13307"/>
-          <include name="tearDown"/>
-          <include name="TCED13308"/>
-          <include name="TCED13309"/>
+          <include name="TCED28103"/>
+          <include name="TCED28101"/>
+          <include name="TCED28102"/>
         </methods>
-      </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
+      </class> <!-- com.curriculum.Batch_Print -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

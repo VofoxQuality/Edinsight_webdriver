@@ -72,6 +72,7 @@
 						<suiteXmlFile>VED0094-Grades.xml</suiteXmlFile>
 						<suiteXmlFile>VED0097-Data_sets.xml</suiteXmlFile>
 						<suiteXmlFile>VED0095-Schedule.xml</suiteXmlFile>
+						<suiteXmlFile>VED0005-Test Suite-Print_Login_Codes.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

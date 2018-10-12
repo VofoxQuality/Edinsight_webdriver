@@ -206,12 +206,11 @@ public class Batch_Print extends BaseClassOne
 		}						
 	}
     
- //  @Test(priority=4)	
+   @Test(priority=4)	
    public void TCED28105()
 	{	
 		try 
-		{	
-   			
+		{	   			
    			//click on Logout button			 
 			click("//*[@id='ctl00_A3']/img");
 			
