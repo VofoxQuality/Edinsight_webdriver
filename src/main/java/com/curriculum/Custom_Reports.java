@@ -173,7 +173,7 @@ public class Custom_Reports extends BaseClassOne
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnWord']");
 			
 			Thread.sleep(40000);		
-			//Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 			
 			String parent_wind=driver.getWindowHandle();
 			driver.close();	

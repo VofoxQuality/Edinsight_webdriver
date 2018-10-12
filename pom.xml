@@ -76,6 +76,7 @@
 						<suiteXmlFile>VED0082-Browse_By_Standard.xml</suiteXmlFile>
 						<suiteXmlFile>VED0008-Question_Bank_Apply_Standards.xml</suiteXmlFile>
 						<suiteXmlFile>VED0071-Batch_Print.xml</suiteXmlFile>
+						<suiteXmlFile>VED0087-Custom_Reports.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
