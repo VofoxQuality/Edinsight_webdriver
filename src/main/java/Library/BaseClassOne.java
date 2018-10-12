@@ -75,6 +75,9 @@ public class BaseClassOne	{
 		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		//Manoj
 		System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
+		//Ans
+		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		
 		
 		
 		FirefoxProfile profile = new FirefoxProfile();
