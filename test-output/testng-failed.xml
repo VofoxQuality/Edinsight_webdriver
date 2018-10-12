@@ -3,20 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.localassessment.ScoreClassResultsOnline">
+      <class name="com.curriculum.Custom_Reports">
         <methods>
-          <include name="TCED13022"/>
-          <include name="TCED13025"/>
-          <include name="TCED13028"/>
+          <include name="TCED30603"/>
           <include name="setup1"/>
-          <include name="TCED13023"/>
-          <include name="TCED13026"/>
-          <include name="TCED13029"/>
-          <include name="TCED13027"/>
-          <include name="TCED13024"/>
-          <include name="TCED13030"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.localassessment.ScoreClassResultsOnline -->
+      </class> <!-- com.curriculum.Custom_Reports -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

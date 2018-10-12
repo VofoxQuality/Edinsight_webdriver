@@ -51,7 +51,7 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			select("//*[@id='ctl00_MainContent_ddlAssessments']","index=2");
 			
 			//select administration -For Automation- do not edit (Admin)(2017-2018)- in the dropdown
-			select("//*[@id='ctl00_MainContent_ddlTestAdministration']","index=2");
+			select("//*[@id='ctl00_MainContent_ddlTestAdministration']","label=For Automation- do not edit (Admin)(2017-2018)");
 			
 			//Assert the Label Print Login Codes
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_lnlPrintLoginCodes']").contains("Print Login Codes"),"failed to assert text"+"Print Login Codes");

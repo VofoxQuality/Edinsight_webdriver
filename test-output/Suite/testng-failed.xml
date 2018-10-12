@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.curriculum.Copy_Current_Map">
-        <methods>
-          <include name="setup1"/>
-          <include name="TCED29505"/>
-          <include name="TCED29503"/>
-          <include name="TCED29502"/>
-          <include name="TCED29504"/>
-          <include name="TCED29501"/>
-        </methods>
-      </class> <!-- com.curriculum.Copy_Current_Map -->
-=======
       <class name="com.localassessment.Test_Suite_Print_Login_Codes">
         <methods>
           <include name="setup1"/>
+          <include name="TCED13310"/>
+          <include name="TCED13301"/>
+          <include name="TCED13302"/>
+          <include name="TCED13303"/>
           <include name="TCED13304"/>
+          <include name="TCED13305"/>
+          <include name="TCED13306"/>
+          <include name="TCED13307"/>
           <include name="tearDown"/>
+          <include name="TCED13308"/>
+          <include name="TCED13309"/>
         </methods>
       </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
->>>>>>> e8bf6196a1017b6dc4649048f94bcb833f312591
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
