@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.localassessment.ScoreClassResultsOnline">
+      <class name="com.curriculum.Browse_By_Standard">
         <methods>
-          <include name="TCED13022"/>
-          <include name="TCED13025"/>
-          <include name="TCED13028"/>
+          <include name="TCED30201"/>
           <include name="setup1"/>
-          <include name="TCED13023"/>
-          <include name="TCED13026"/>
-          <include name="TCED13029"/>
-          <include name="TCED13027"/>
-          <include name="TCED13024"/>
-          <include name="TCED13030"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.localassessment.ScoreClassResultsOnline -->
+      </class> <!-- com.curriculum.Browse_By_Standard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
