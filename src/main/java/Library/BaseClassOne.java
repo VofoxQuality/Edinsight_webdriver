@@ -65,7 +65,7 @@ public class BaseClassOne	{
 	 protected String Supertent_Login_Password="password1!"; 
 	 
 	@BeforeTest
-	 public void setup1() throws Exception
+	 public void setup1() 
 	 { 
 		//FirefoxProfile profile=Browser_Preference();
 		

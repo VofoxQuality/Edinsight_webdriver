@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.curriculum.Create_New_Map">
+      <class name="com.ScoreClassResultsOnline.ScoreClassResultsOnline">
         <methods>
           <include name="setup1"/>
-          <include name="TCED29107"/>
+          <include name="TCED13027"/>
+          <include name="TCED13028"/>
+          <include name="TCED13029"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.curriculum.Create_New_Map -->
+      </class> <!-- com.ScoreClassResultsOnline.ScoreClassResultsOnline -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

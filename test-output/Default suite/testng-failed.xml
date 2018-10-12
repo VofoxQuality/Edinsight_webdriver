@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Home.Attendance">
+      <class name="com.ScoreClassResultsOnline.ScoreClassResultsOnline">
         <methods>
-          <include name="TCED34305"/>
           <include name="setup1"/>
+          <include name="TCED13027"/>
+          <include name="TCED13028"/>
+          <include name="TCED13029"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Home.Attendance -->
+      </class> <!-- com.ScoreClassResultsOnline.ScoreClassResultsOnline -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
