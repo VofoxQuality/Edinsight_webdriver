@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.curriculum.Copy_Current_Map">
         <methods>
           <include name="setup1"/>
@@ -13,6 +14,15 @@
           <include name="TCED29501"/>
         </methods>
       </class> <!-- com.curriculum.Copy_Current_Map -->
+=======
+      <class name="com.localassessment.Test_Suite_Print_Login_Codes">
+        <methods>
+          <include name="setup1"/>
+          <include name="TCED13304"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
+>>>>>>> e8bf6196a1017b6dc4649048f94bcb833f312591
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

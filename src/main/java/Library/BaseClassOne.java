@@ -54,9 +54,9 @@ public class BaseClassOne	{
 	 public static WebDriver driver;
 	 public String  baseUrl = "http://192.168.10.124/Edinsight/Login.aspx";
 	 //Sebastian
-	 protected  String downloadPath="D:\\selenium_downloads";
+	// protected  String downloadPath="D:\\selenium_downloads";
 	 //Manoj
-	 //protected  String downloadPath="E:\\selenium_downloads";
+	protected  String downloadPath="E:\\selenium_downloads";
 	 
 	 int i=0;
 	
@@ -74,7 +74,7 @@ public class BaseClassOne	{
 		//Akhil 
 		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		//Manoj
-		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 		
 		
 		FirefoxProfile profile = new FirefoxProfile();
@@ -449,6 +449,54 @@ public class BaseClassOne	{
 				select.selectByVisibleText(optionLocator);
 		}
 	}
+	public String DropselectedValue(String locator)
+	{
+		Select selectElement = new Select(find(locator));
+		WebElement Value=selectElement.getFirstSelectedOption();
+		return Value.getText();
+	}
+	
+	public boolean dropelementfinder(String locator,String[] Listlabels)
+	{
+		Boolean found = true; 
+		WebElement sst=driver.findElement(By.xpath("//select[@id='ctl00_ContentPlaceHolder1_gvCurriculumMaps_ctl02_ddlCopyTo']"));
+        Select select = new Select(sst);  
+
+        List<WebElement> options = select.getOptions();  
+        for(WebElement we:options)  
+        {  
+         for (int i=0; i<Listlabels.length; i++){
+        	// Assert.assertEquals(actual, expected);
+        	 
+        	 System.out.println("myList"+i+Listlabels[i]);
+        	 System.out.println("WebList"+i+we.getText());
+        	 
+             if (we.getText().equals(Listlabels[i])){
+            	 
+            	//Assert.assertEquals(true, "Expected label is not found in the list");
+            	System.out.println(Listlabels[i]);
+            	break;
+             } 
+             else
+             {
+            	 found = false;
+            	 break;
+            	 //break;
+            	 //Assert.assertEquals(false, "Expected label is not found in the list");
+             }
+           }
+         }
+        if(found)
+        {
+        	return true;
+        			
+        }
+        else
+        {
+        	return false;
+        }
+
+	}  
 	
 	public void Handle_windows_Popup() throws Exception 
 	{
