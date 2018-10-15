@@ -137,7 +137,7 @@ public class Batch_Print extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_linkPdf']");			
 			
 			//Assert the message "You must select at least one teacher."
-			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblMsg']"), "You must select at least one teacher." ,"Message-You must select at least one teacher-not found");
+			Assert.assertEquals("You must select at least one teacher.",getText("//*[@id='ctl00_MainContent_lblMsg']"),"Message-You must select at least one teacher-not found");
 			
 			js.executeScript("scroll(0,document.body.scrollHeight)");
 			
@@ -148,7 +148,7 @@ public class Batch_Print extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_linkWord']");		
 			
 			//Assert the message "You must select at least one teacher."			
-			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblMsg']"), "You must select at least one teacher." ,"Message-You must select at least one teacher-not found");
+			Assert.assertEquals("You must select at least one teacher.",getText("//*[@id='ctl00_MainContent_lblMsg']"),"Message-You must select at least one teacher-not found");
 
 		} 
 		

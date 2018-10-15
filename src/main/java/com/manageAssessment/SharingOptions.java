@@ -6,6 +6,12 @@ import org.testng.annotations.Test;
 
 import Library.BaseClassOne;
 
+/**
+ * 
+ * @author sebastian
+ *
+ */
+
 public class SharingOptions extends BaseClassOne{
 	
 	@Test(priority=1)
@@ -23,7 +29,7 @@ public class SharingOptions extends BaseClassOne{
 			click("//a[contains(.,'Manage Assessments')]");
 			
 			//type Test id search
-			type("//input[@id='ctl00_MainContent_txtTestId']","257");
+			type("//input[@id='ctl00_MainContent_txtTestId']","256");
 			
 			//To click on the search button
 			click("//input[@id='ctl00_MainContent_btnTestIdSearch']");
