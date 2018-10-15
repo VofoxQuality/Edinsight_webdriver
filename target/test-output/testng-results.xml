@@ -1,61 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="127297" started-at="2018-10-12T11:14:17Z" finished-at="2018-10-12T11:16:24Z">
+  <suite name="Suite" duration-ms="73606" started-at="2018-10-12T12:30:30Z" finished-at="2018-10-12T12:31:43Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="127297" started-at="2018-10-12T11:14:17Z" finished-at="2018-10-12T11:16:24Z">
-      <class name="com.localassessment.Test_Suite_Print_Login_Codes">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="setup1" is-config="true" duration-ms="26137" started-at="2018-10-12T11:14:17Z" finished-at="2018-10-12T11:14:43Z">
+    <test name="Test" duration-ms="73606" started-at="2018-10-12T12:30:30Z" finished-at="2018-10-12T12:31:43Z">
+      <class name="com.localassessment.Question_Bank_Apply_Standards">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="setup1" is-config="true" duration-ms="12455" started-at="2018-10-12T12:30:30Z" finished-at="2018-10-12T12:30:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED13301()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="TCED13301" duration-ms="8022" started-at="2018-10-12T11:14:43Z" finished-at="2018-10-12T11:14:51Z">
+        <test-method status="PASS" signature="TCED16201()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16201" duration-ms="6608" started-at="2018-10-12T12:30:42Z" finished-at="2018-10-12T12:30:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13301 -->
-        <test-method status="PASS" signature="TCED13302()[pri:1, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="TCED13302" duration-ms="4704" started-at="2018-10-12T11:14:51Z" finished-at="2018-10-12T11:14:56Z">
+        </test-method> <!-- TCED16201 -->
+        <test-method status="PASS" signature="TCED16202()[pri:1, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16202" duration-ms="6782" started-at="2018-10-12T12:30:49Z" finished-at="2018-10-12T12:30:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13302 -->
-        <test-method status="PASS" signature="TCED13303()[pri:2, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="TCED13303" duration-ms="418" started-at="2018-10-12T11:14:56Z" finished-at="2018-10-12T11:14:56Z">
+        </test-method> <!-- TCED16202 -->
+        <test-method status="PASS" signature="TCED16203()[pri:2, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16203" duration-ms="653" started-at="2018-10-12T12:30:55Z" finished-at="2018-10-12T12:30:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13303 -->
-        <test-method status="PASS" signature="TCED13304()[pri:3, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="TCED13304" duration-ms="1973" started-at="2018-10-12T11:14:56Z" finished-at="2018-10-12T11:14:58Z">
+        </test-method> <!-- TCED16203 -->
+        <test-method status="PASS" signature="TCED16204()[pri:3, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16204" duration-ms="2468" started-at="2018-10-12T12:30:56Z" finished-at="2018-10-12T12:30:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13304 -->
-        <test-method status="PASS" signature="TCED13305()[pri:4, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="TCED13305" duration-ms="4091" started-at="2018-10-12T11:14:58Z" finished-at="2018-10-12T11:15:02Z">
+        </test-method> <!-- TCED16204 -->
+        <test-method status="PASS" signature="TCED16205()[pri:4, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16205" duration-ms="8442" started-at="2018-10-12T12:30:59Z" finished-at="2018-10-12T12:31:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13305 -->
-        <test-method status="PASS" signature="TCED13306()[pri:5, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="TCED13306" duration-ms="22942" started-at="2018-10-12T11:15:02Z" finished-at="2018-10-12T11:15:25Z">
+        </test-method> <!-- TCED16205 -->
+        <test-method status="PASS" signature="TCED16206()[pri:5, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16206" duration-ms="10064" started-at="2018-10-12T12:31:07Z" finished-at="2018-10-12T12:31:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13306 -->
-        <test-method status="PASS" signature="TCED13307()[pri:6, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="TCED13307" duration-ms="22938" started-at="2018-10-12T11:15:25Z" finished-at="2018-10-12T11:15:48Z">
+        </test-method> <!-- TCED16206 -->
+        <test-method status="PASS" signature="TCED16207()[pri:6, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16207" duration-ms="15158" started-at="2018-10-12T12:31:17Z" finished-at="2018-10-12T12:31:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13307 -->
-        <test-method status="PASS" signature="TCED13308()[pri:7, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="TCED13308" duration-ms="23271" started-at="2018-10-12T11:15:48Z" finished-at="2018-10-12T11:16:12Z">
+        </test-method> <!-- TCED16207 -->
+        <test-method status="PASS" signature="TCED16208()[pri:7, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16208" duration-ms="10929" started-at="2018-10-12T12:31:32Z" finished-at="2018-10-12T12:31:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED13308 -->
-        <test-method status="PASS" signature="TCED13309()[pri:8, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="TCED13309" duration-ms="12084" started-at="2018-10-12T11:16:12Z" finished-at="2018-10-12T11:16:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED13309 -->
-        <test-method status="PASS" signature="TCED13310()[pri:9, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="TCED13310" duration-ms="686" started-at="2018-10-12T11:16:24Z" finished-at="2018-10-12T11:16:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED13310 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Test_Suite_Print_Login_Codes@4671e53b]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-12T11:16:24Z" finished-at="2018-10-12T11:16:24Z">
+        </test-method> <!-- TCED16208 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-12T12:31:43Z" finished-at="2018-10-12T12:31:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
+      </class> <!-- com.localassessment.Question_Bank_Apply_Standards -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
