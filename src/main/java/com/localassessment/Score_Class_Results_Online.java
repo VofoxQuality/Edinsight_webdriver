@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import Library.BaseClassOne;
 
-public class ScoreClassResultsOnline extends BaseClassOne {
+public class Score_Class_Results_Online extends BaseClassOne {
 	
 	@Test(priority=0)
 	public void TCED13021() 
