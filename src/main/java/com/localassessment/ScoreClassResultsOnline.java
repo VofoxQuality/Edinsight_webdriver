@@ -11,6 +11,26 @@ import Library.BaseClassOne;
 
 public class ScoreClassResultsOnline extends BaseClassOne {
 	
+	@Test(priority=0)
+	public void TCED13021() 
+	{
+			try
+			{
+				//Superintent Login
+				login(Supertent_Login_id,Supertent_Login_Password);	
+				
+				//Assert logout button is displayed in the dashboard page
+				Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_A3']/img")).isDisplayed());
+			}
+			catch (Exception e)
+			{
+				Assert.fail(e.getMessage());
+				e.printStackTrace();
+			}
+	  
+	
+	}
+	
 	@Test(priority=1)
 	public void TCED13022() 
 	{
