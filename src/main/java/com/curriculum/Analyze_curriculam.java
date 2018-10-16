@@ -17,92 +17,68 @@ import org.testng.internal.GroupsHelper;
 import Library.BaseClassOne;
 
 public class Analyze_curriculam extends BaseClassOne
-
-{
-	
-	@Test(priority=0)
-	
+ {	
+	@Test(priority=0)	
 	public void TCED29701()
-    {
-		
-	 try
-		
+    {		
+	 try		
 		{
 			//Superintent Login
 			login(Supertent_Login_id,Supertent_Login_Password);	
 			
-			//hover over curriculum link
-			
-			Actions act=new Actions(driver);
-					
+			//hover over curriculum link			
+			Actions act=new Actions(driver);					
 			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/a"))).build().perform();	
 			
 			//Click Edit Curriculum Menu	
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/div/div[7]/div/a");
 			
-			//Enter "For Automation [Do not Edit and Delete]" in the Title filter text box 
-			
+			//Enter "For Automation [Do not Edit and Delete]" in the Title filter text box 			
 			type("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title']", "For Automation [Do not Edit and Delete]");		
 			
-			// Click on the filter button
-			
+			// Click on the filter button			
 			 driver.findElement(By.id("ctl00_MainContent_rgAttendanceData_ctl00_ctl02_ctl02_FilterTextBox_Title")).click();
 			 
-		    Thread.sleep(2000);
-			
-		    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::span[2]")).click();
-				    
-			Thread.sleep(2000);
-					
+		    Thread.sleep(2000);			
+		    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::span[2]")).click();				    
+			Thread.sleep(2000);					
 			driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='NoFilter'])[1]/following::span[1]")).click();
 			
 			//Click on Build/Edit 
 			click("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00__0']/td[2]/a");			
 			
 			//Click on Analyze Curriculum
-			click("//*[@id='lnkAnalyzeSubmenu']");
-			
+			click("//*[@id='lnkAnalyzeSubmenu']");			
 			
 			//Assert the label "Analyze Curriculum"
 			Assert.assertTrue(getText("//*[@id='lnkAnalyzeSubmenu']").contains("Analyze Curriculum"),"failed to assert text"+"Analyze Curriculum");
 			
-			Thread.sleep(2000);
-			
+			Thread.sleep(2000);		
 			
 			//Click on Analyze Curriculum				
 			click("//*[@id='lnkAnalyzeSubmenu']");
       		Thread.sleep(3000);
-
-			
+      		
 			//Assert the label "Standards Coverage"
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapEditMenu1_hlkCoverage']")).getAttribute("innerText").contains("Standards Coverage"),"failed to assert text"+"Standards Coverage");
 			
 			//Assert the label "Timeline"
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapEditMenu1_hlkTimeline']")).getAttribute("innerText").contains("Timeline"),"failed to assert text"+"Timeline");
-			
-			
+						
 			//Assert the label "Browse by Standards"
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapEditMenu1_hlkBrowse']")).getAttribute("innerText").contains("Browse by Standards"),"failed to assert text"+"Browse by Standards");
-			
-			
-		}
-		
-		catch (Exception e)
-		
+					
+		}		
+		catch (Exception e)		
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}	 
+		}		
 		
-		
-	}
-	
-@Test(priority=1)
-	
+	}	
+    @Test(priority=1)	
 	public void TCED29702()
-    {
-		
-		
+    {				
 		try		
 		{
 			//Click on Analyze Curriculum
@@ -114,24 +90,19 @@ public class Analyze_curriculam extends BaseClassOne
 			
 			//Assert the heading "Standards Coverage Report"
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_pnlStandardsCoverage']/table[1]/tbody/tr/td[2]/h3").contains("Standards Coverage Report"),"failed to assert text"+"Standards Coverage Report");
-		}
-		
-		catch (Exception e)
-		
+		}		
+		catch (Exception e)		
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-    
-    }
-	
-@Test(priority=2)
-	
-	public void TCED29703()
-   
-	{
+		}    
+    }	
+    @Test(priority=2)	
+	public void TCED29703()   
+	 {
 		
-		try {
+		try
+		 {
 			//Application should be in the Standards Coverage Report			
 			
 			//Click on STEP 1: Select the Curriculum to report on
@@ -142,19 +113,16 @@ public class Analyze_curriculam extends BaseClassOne
 			
 			//Assert the label "Maps selected: For Automation [Do not Edit and Delete]"
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_tblMapSelect']/tbody/tr[1]/td").contains("Maps selected: For Automation [Do not Edit and Delete]"),"failed to assert text"+"Maps selected: For Automation [Do not Edit and Delete]");
-			
-			
+						
 			//Assert the label "Subject"
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_tblMapSelect']/tbody/tr[2]/td").contains("Subject"),"failed to assert text"+"Subject");
 			
 			//Assert the label "Active Maps Only"
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_tblMapSelect']/tbody/tr[2]/td/label").contains("Active Maps Only"),"failed to assert text"+"Active Maps Only");
-			
-			
+						
 			//Assert the label "Available Maps"
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_lblMapsToSelect']").contains("Available Maps"),"failed to assert text"+"Available Maps");
-			
-			
+						
 			//Assert the all available items in the Subject Drop-down		
 			Select sel=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_ddlSubject']")));		
 			List<WebElement> sub=sel.getOptions();
@@ -175,58 +143,44 @@ public class Analyze_curriculam extends BaseClassOne
 			Assert.assertTrue(sub.get(14).getText().contains("Technology"),"failed to assert"+"  Technology ");
 			Assert.assertTrue(sub.get(15).getText().contains("Uncategorized"),"failed to assert"+"  Uncategorized ");
 			Assert.assertTrue(sub.get(16).getText().contains("World Languages"),"failed to assert"+"  World Languages ");
-		} 
-		
-		catch (Exception e)
-		
+		}		
+		catch (Exception e)		
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
-    }
-	
-	@Test(priority=3)
-	
+		}		
+    }	
+	@Test(priority=3)	
 	public void TCED29704()
 	   
 	{
-		try
-		
+		try		
 		{
 			//Application should be in the Standards Coverage Report			
-			driver.navigate().refresh();
-			
+			driver.navigate().refresh();			
 			Thread.sleep(2000);
 			if(isAlertPresents())
 			{			
 			driver.switchTo().alert().dismiss();	
-			}
-			
+			}			
 			//Click on Run Report button
 			click("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_btnRunReport']");
 			
 			//The Corresponding report should be shown Assert the label "Topic Standards Aligned for selected Maps:"
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_AlignedHeading']").contains("Topic Standards Aligned for selected Maps:"),"failed to assert text"+" Topic Standards Aligned for selected Maps:");
-		}
-		
-		catch (Exception e)
-		
+		}		
+		catch (Exception e)		
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}			
+		}	
 
-	}
-	
-	@Test(priority=4)
-	
+	}	
+	@Test(priority=4)	
 	public void TCED29705()	   
-	{
-		
-	  try 
-		
-		{
+	 {		
+	   try 		
+		 {
 			//Application should be in the Standards Coverage Report	
 					
 			//Assert the label "Selected Maps For Automation [Do not Edit and Delete]"
@@ -237,8 +191,7 @@ public class Analyze_curriculam extends BaseClassOne
 
 			//Assert grid headings "Standard Code"
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_rgMapStandardsNew_ctl00']/thead/tr/th[3]/a").contains("Standard Code"),"failed to assert text"+"  Standard Code");
-			
-			
+						
 			//Assert grid headings "Description"
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_rgMapStandardsNew_ctl00']/thead/tr/th[4]").contains("Description"),"failed to assert text"+"  Description");
 			
@@ -250,36 +203,25 @@ public class Analyze_curriculam extends BaseClassOne
 			
 			//Assert grid headings "Minutes from Topics"
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_rgMapStandardsNew_ctl00']/thead/tr/th[7]").contains("Minutes from Topics"),"failed to assert text"+"  Minutes from Topics");
-		
-		
-		} 
-	  
-	  catch (Exception e) 
+		} 	  
+	    catch (Exception e) 
 	    {
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-	
-	}
-	
-	
-  @Test(priority=5)
-	
-	public void TCED29706()	   
-	{
-	   
-	   try
-	    
+		}	
+	 }	
+     @Test(priority=5)	
+	 public void TCED29706()	   
+	 {	   
+	   try	    
 	   {
 		   //click  STEP 2: Select the report type	   
 		   click("//*[@id='lnkReportType']");
 		   
-		   //Select "Show Standards Coverage Only (with standards filtering)" from STEP 2
-		   
+		   //Select "Show Standards Coverage Only (with standards filtering)" from STEP 2		   
 		   if (driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_rdoCoverageOnly']")).isSelected()==false)
 		   {
-			  click("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_rdoCoverageOnly']"); 
-			   
+			  click("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_rdoCoverageOnly']"); 			   
 		   }	  
 		   
 		   //> Click on Run Report button	   
@@ -287,25 +229,20 @@ public class Analyze_curriculam extends BaseClassOne
 		   
 		   //Assert the label "Topic Standards Coverage for selected Maps:"
 		   Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_CoverageHeading']").contains("Topic Standards Coverage for selected Maps:"),"failed to assert text"+"  Topic Standards Coverage for selected Maps:");
-	} 
-	   
-	catch (Exception e)
-	   
-	{
+	   } 	   
+	  catch (Exception e)	   
+	   {
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
-	}
-	   			
+	   }	   			
 	}
 	
- @Test(priority=6)
-	
+    @Test(priority=6)	
 	public void TCED29707()	   
-	{
-	   
-	   try {
-		   
-		    //Application should be in the  Standards Coverage Report page
+	 {	   
+	   try
+	    {	   
+		   //Application should be in the  Standards Coverage Report page
 		   
 		   //Assert the label "Selected Maps
 		   Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_CoverageLabel']/table/tbody/tr[1]/td[1]/b").contains("Selected Maps"),"failed to assert text"+"  Selected Maps");
@@ -325,19 +262,16 @@ public class Analyze_curriculam extends BaseClassOne
 		   
 		   //Assert grid headings "Covered"
 		   Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_rgStandardsNew_ctl00']/thead/tr/th[4]/a").contains("Covered"),"failed to assert text"+"  Covered");
-	} 
-	   
-	 catch (Exception e) 
-	   
-	{
+	  } 	   
+	 catch (Exception e) 	   
+	  {
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
-	}
+	  }
 	
 	}
 	
- @Test(priority=7)
-	
+    @Test(priority=7)	
 	public void TCED29708()	   
 	{
 		
@@ -357,17 +291,13 @@ public class Analyze_curriculam extends BaseClassOne
 	    {
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-	
+		}	
 	}
 
-@Test(priority=8)
-
-public void TCED29709()	   
-
-  {
-	
-  try
+  @Test(priority=8)
+  public void TCED29709()  
+  {	
+   try
 	{
 		//Application should be in the Standards Coverage Report		
 		FileDelete();
@@ -384,21 +314,16 @@ public void TCED29709()
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
 	}
+  }
 
-}
+    @Test(priority=9)
+   public void TCED29710()	   
+    { 
+	try	
+	  {
+		//Application should be in the 	Standards Coverage Report		
+		 driver.navigate().refresh();
 
-
-@Test(priority=9)
-
-public void TCED29710()	   
-{
-	try
-	
-	{
-		//Application should be in the 	Standards Coverage Report
-		
-		driver.navigate().refresh();
-		
 		//Click on Analyze Curriculum				
 		click("//*[@id='lnkAnalyzeSubmenu']");
 		Thread.sleep(3000);
@@ -409,25 +334,18 @@ public void TCED29710()
 		//Assert the label "Curriculum Map Timeline Report"
 		Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapTimelineDtl1_tblTitle']/tbody/tr/td[2]/h3").contains("Curriculum Map Timeline Report"),"failed to assert text"+" Curriculum Map Timeline Report");
 		
-	}
-	
-	catch (InterruptedException e)
-	
+	}	
+	catch (Exception e)	
 	{
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
-	}
-	
-}
-
-@Test(priority=10)
-
-public void TCED29711()	   
-{
-	
+	}	
+  }
+  @Test(priority=10)
+  public void TCED29711()	   
+  {	
 	try 
-	{
-		
+	{		
 		//Application should be in the Timeline Report
 		
 		//"Assert the label ""Please enter a school year begin date for time calculations!
@@ -486,11 +404,8 @@ public void TCED29711()
 		Assert.assertTrue(sub.get(13).getText().contains("Social Studies"),"failed to assert"+"  Social Studies ");
 		Assert.assertTrue(sub.get(14).getText().contains("Technology"),"failed to assert"+"  Technology ");
 		Assert.assertTrue(sub.get(15).getText().contains("Uncategorized"),"failed to assert"+"  Uncategorized ");
-		Assert.assertTrue(sub.get(16).getText().contains("World Languages"),"failed to assert"+"  World Languages ");
-		
-		
-		
-		
+		Assert.assertTrue(sub.get(16).getText().contains("World Languages"),"failed to assert"+"  World Languages ");	
+				
 		//Assert the dropdown values of School Type drop-down
 		Select sel1=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapTimelineDtl1_ddlSchoolType']")));		
 		List<WebElement> sub1=sel1.getOptions();
@@ -530,23 +445,18 @@ public void TCED29711()
 		Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapTimelineDtl1_tblReportType']/tbody/tr[2]/td/table/tbody/tr/td[3]/label").contains("Shorten Unit YAxis Labels"),"failed to assert text"+"   Shorten Unit YAxis Labels");
 	} 
 	
-	catch (Exception e)
-	
+	catch (Exception e)	
 	{
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
 	}	
+ }
 
-}
-
-@Test(priority=11)
-
-public void TCED29712()	   
-{
-	try 
-	
-	{
-		
+ @Test(priority=11)
+ public void TCED29712()	   
+ {
+	try 	
+	{		
 		//Application should be in the Timeline Report
 		driver.navigate().refresh();
 		
@@ -597,25 +507,19 @@ public void TCED29712()
 		File src= ts.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File(".//Screenshots//No_data.png"));		
 		//Assert the label "No Data"	
-	} 
-	
-	
-	catch (Exception e)
-	
+	} 	
+	catch (Exception e)	
 	{
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
 	}
+  }
 
-}
-
-@Test(priority=12)
-
-public void TCED29713()	   
-{
-	
-	try
-	{
+ @Test(priority=12)
+ public void TCED29713()	   
+   {	
+	 try
+	  {
 		//Application should be in the  Timeline Report	
 		FileDelete();
 		
@@ -624,25 +528,20 @@ public void TCED29713()
 		
 		Thread.sleep(6000);			
 		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-	} 
-	
-	catch (InterruptedException e)
-	
-	{
+	  } 	
+	catch (Exception e)	
+	  {
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
-	}
+	  }
+   }
 
-}
-
-@Test(priority=13)
-
-public void TCED29714()	   
-{	
-	
+ @Test(priority=13)
+ public void TCED29714()	   
+   {	
 	try 
-	{
-		driver.navigate().refresh();
+	  {
+		//driver.navigate().refresh();
 		
 		//Click on Browse by Standards link Under Analyze by Curriculum section
 		
@@ -650,25 +549,19 @@ public void TCED29714()
 		
 		//	Assert the heading "Search Curriculum by Standards"
 		Assert.assertTrue(getText("//*[@id='ctl00_MainContent_pnlBrowseByStandard']/table[1]/tbody/tr/td[2]/h4").contains("Search Curriculum by Standards"),"failed to assert text"+"   Search Curriculum by Standards");
-	 } 
-	
-	catch (Exception e)
-	
-	{
+	  } 	
+	catch (Exception e)	
+	 {	
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
-	}
+	 }
+  }
 
-}
-
-@Test(priority=14)
-
-public void TCED29715()	   
-{	
-	
-	try
-	
-	{
+  @Test(priority=14)
+  public void TCED29715()	   
+   {	
+	try	
+	 {
 		//Assert the Label "Standards Type"
 		Assert.assertTrue(getText("//*[@id='ctl00_MainContent_pnlBrowseByStandard']/table[2]/tbody/tr[1]/td").contains("Standards Type"),"failed to assert text"+"   Standards Type");
 		
@@ -691,16 +584,14 @@ public void TCED29715()
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
 	}
+  }
 
-}
-
-@Test(priority=15)
-
-public void TCED29716()	 
-{
+    @Test(priority=15)
+    public void TCED29716()	 
+      {
 	
-    try 
-        {
+        try 
+          {
     	    //expand standards tree view
 			click("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/div/span");
 			click("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_rdStandards']/ul/li/ul/li[2]/ul/li[1]/div/span");
@@ -731,23 +622,18 @@ public void TCED29716()
 		    
 		    //Assert the label "M05.A-T.1.1.1 - Demonstrate an understanding that in a multi-digit number, (STATE: PA Core Anchors and Eligible Content (2014))"
 		    Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_lblStandard']/ul/li").contains("M05.A-T.1.1.1 - Demonstrate an understanding that in a multi-digit number, (STATE: PA Core Anchors and Eligible Content (2014))"),"failed to assert text"+" M05.A-T.1.1.1 - Demonstrate an understanding that in a multi-digit number, (STATE: PA Core Anchors and Eligible Content (2014))");
-        
-        } 
+         } 
 
-catch (Exception e) 
-
- {
+  catch (Exception e) 
+   {
 	Assert.fail(e.getMessage());
 	e.printStackTrace();
-  }
-	
-}
+   }	
+ }
 
-@Test(priority=16)
-
-public void TCED29717()	 
-{
-	
+ @Test(priority=16)
+ public void TCED29717()	 
+  {	
 	try
 	
 	{
@@ -777,28 +663,22 @@ public void TCED29717()
 		
 		////assert CSV generated 
 		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
-	} 
-	
-	catch (InterruptedException e)
-	
+	} 	
+	catch (Exception e)	
 	{
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
 	}
+ }
 
-}
-
-@Test(priority=17)
-
-public void TCED29718()	 
-{
+ @Test(priority=17)
+ public void TCED29718()	 
+ {
 	
-	//Application should be in the  Search Curriculum by Standards page
-	
+	//Application should be in the  Search Curriculum by Standards page	
 	try
 	{
-		//Click on Clear Print list button
-		
+		//Click on Clear Print list button		
 		click("//*[@id='ctl00_MainContent_CurriculumReportByStandards1_btnClearPrintList']");
 		
 		Thread.sleep(500);
@@ -810,18 +690,11 @@ public void TCED29718()
 		
 		//Assert the page Header as "Edinsight Login"					
 		Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
-	
-	
-	} 
-	
-	catch (InterruptedException e)
+	} 	
+	catch (Exception e)
 	{
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
-	}
-	 
-
+	}	 
 }
-
-
 }
