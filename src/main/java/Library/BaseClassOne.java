@@ -291,6 +291,32 @@ public class BaseClassOne	{
 		}
 			 
 		 }
+		 public void waitForElementPresent(String Locator)
+		 {
+			 try
+			 {
+				 new WebDriverWait(driver, (TIMEOUT / 1000), 200)
+                 .until(ExpectedConditions.presenceOfElementLocated(parseLocator(Locator)));
+				 
+			 
+		 } catch (TimeoutException e) { // from org.openqa.selenium.TimeoutException 
+             throw new AssertionError("Timeout during waiting for element: '" + Locator + "'");
+		}
+			 
+		 }
+		 public void waitForAlert(String Locator)
+		 {
+			 try
+			 {
+				 new WebDriverWait(driver, (TIMEOUT / 1000), 200)
+                 .until(ExpectedConditions.alertIsPresent());
+				 
+			 
+		 } catch (TimeoutException e) { // from org.openqa.selenium.TimeoutException 
+             throw new AssertionError("Timeout during waiting for element: '" + Locator + "'");
+		}
+			 
+		 }
 		 
 		 public void waitForvalue(String locator)
 		 {
@@ -303,6 +329,7 @@ public class BaseClassOne	{
 	             throw new AssertionError("Timeout during waiting for element: '" + locator + "'");
 			}
 		 }
+		 
 
 		public void SwitchFrame(String locator) {
 			WebElement frameElement = driver.findElement(By.id(locator));

@@ -78,6 +78,7 @@
 						<suiteXmlFile>VED0071-Batch_Print.xml</suiteXmlFile>
 						<suiteXmlFile>VED0087-Custom_Reports.xml</suiteXmlFile>
 						<suiteXmlFile>VED0016-Score_Class_Results_Online.xml</suiteXmlFile>
+						<suiteXmlFile>VED0078-Analyze_Curriculum.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

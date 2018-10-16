@@ -1,127 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="18" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="79037" started-at="2018-10-16T11:23:03Z" finished-at="2018-10-16T11:24:23Z">
+  <suite name="Suite" duration-ms="141303" started-at="2018-10-16T15:20:24Z" finished-at="2018-10-16T15:22:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="79037" started-at="2018-10-16T11:23:03Z" finished-at="2018-10-16T11:24:23Z">
-      <class name="com.analyzeByScore.AdministrationComparisonbyStudent">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.AdministrationComparisonbyStudent@192d3247]" name="setup1" is-config="true" duration-ms="8367" started-at="2018-10-16T11:23:03Z" finished-at="2018-10-16T11:23:12Z">
+    <test name="Test" duration-ms="141303" started-at="2018-10-16T15:20:24Z" finished-at="2018-10-16T15:22:46Z">
+      <class name="com.curriculum.Analyze_curriculam">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Analyze_curriculam@4e718207]" name="setup1" is-config="true" duration-ms="8376" started-at="2018-10-16T15:20:24Z" finished-at="2018-10-16T15:20:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="FAIL" signature="TCED14291()[pri:1, instance:com.analyzeByScore.AdministrationComparisonbyStudent@192d3247]" name="TCED14291" duration-ms="10186" started-at="2018-10-16T11:23:12Z" finished-at="2018-10-16T11:23:22Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Test Administration Comparison Report] but found [Administration Comparison by Student]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Test Administration Comparison Report] but found [Administration Comparison by Student]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.analyzeByScore.AdministrationComparisonbyStudent.TCED14291(AdministrationComparisonbyStudent.java:29)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="TCED29701()[pri:0, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29701" duration-ms="23893" started-at="2018-10-16T15:20:33Z" finished-at="2018-10-16T15:20:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14291 -->
-        <test-method status="PASS" signature="TCED14292()[pri:2, instance:com.analyzeByScore.AdministrationComparisonbyStudent@192d3247]" name="TCED14292" duration-ms="1087" started-at="2018-10-16T11:23:22Z" finished-at="2018-10-16T11:23:23Z">
+        </test-method> <!-- TCED29701 -->
+        <test-method status="PASS" signature="TCED29702()[pri:1, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29702" duration-ms="5678" started-at="2018-10-16T15:20:57Z" finished-at="2018-10-16T15:21:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14292 -->
-        <test-method status="PASS" signature="TCED14293()[pri:3, instance:com.analyzeByScore.AdministrationComparisonbyStudent@192d3247]" name="TCED14293" duration-ms="6281" started-at="2018-10-16T11:23:23Z" finished-at="2018-10-16T11:23:29Z">
+        </test-method> <!-- TCED29702 -->
+        <test-method status="PASS" signature="TCED29703()[pri:2, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29703" duration-ms="717" started-at="2018-10-16T15:21:02Z" finished-at="2018-10-16T15:21:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14293 -->
-        <test-method status="PASS" signature="TCED14294()[pri:4, instance:com.analyzeByScore.AdministrationComparisonbyStudent@192d3247]" name="TCED14294" duration-ms="1885" started-at="2018-10-16T11:23:29Z" finished-at="2018-10-16T11:23:31Z">
+        </test-method> <!-- TCED29703 -->
+        <test-method status="PASS" signature="TCED29704()[pri:3, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29704" duration-ms="4132" started-at="2018-10-16T15:21:03Z" finished-at="2018-10-16T15:21:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14294 -->
-        <test-method status="PASS" signature="TCED14295()[pri:5, instance:com.analyzeByScore.AdministrationComparisonbyStudent@192d3247]" name="TCED14295" duration-ms="29981" started-at="2018-10-16T11:23:31Z" finished-at="2018-10-16T11:24:01Z">
+        </test-method> <!-- TCED29704 -->
+        <test-method status="PASS" signature="TCED29705()[pri:4, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29705" duration-ms="137" started-at="2018-10-16T15:21:07Z" finished-at="2018-10-16T15:21:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14295 -->
-        <test-method status="PASS" signature="TCED14296()[pri:6, instance:com.analyzeByScore.AdministrationComparisonbyStudent@192d3247]" name="TCED14296" duration-ms="215" started-at="2018-10-16T11:24:01Z" finished-at="2018-10-16T11:24:02Z">
+        </test-method> <!-- TCED29705 -->
+        <test-method status="PASS" signature="TCED29706()[pri:5, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29706" duration-ms="2432" started-at="2018-10-16T15:21:07Z" finished-at="2018-10-16T15:21:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14296 -->
-        <test-method status="FAIL" signature="TCED14297()[pri:7, instance:com.analyzeByScore.AdministrationComparisonbyStudent@192d3247]" name="TCED14297" duration-ms="20997" started-at="2018-10-16T11:24:02Z" finished-at="2018-10-16T11:24:23Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Timeout during waiting for element: '//span[contains(text(),'Print to PDF')]']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Timeout during waiting for element: '//span[contains(text(),'Print to PDF')]'
-at Library.BaseClassOne.waitFor(BaseClassOne.java:267)
-at Library.BaseClassOne.click(BaseClassOne.java:179)
-at com.analyzeByScore.AdministrationComparisonbyStudent.TCED14297(AdministrationComparisonbyStudent.java:306)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- TCED29706 -->
+        <test-method status="PASS" signature="TCED29707()[pri:6, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29707" duration-ms="136" started-at="2018-10-16T15:21:10Z" finished-at="2018-10-16T15:21:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14297 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.AdministrationComparisonbyStudent@192d3247]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-16T11:24:23Z" finished-at="2018-10-16T11:24:23Z">
+        </test-method> <!-- TCED29707 -->
+        <test-method status="PASS" signature="TCED29708()[pri:7, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29708" duration-ms="11310" started-at="2018-10-16T15:21:10Z" finished-at="2018-10-16T15:21:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED29708 -->
+        <test-method status="PASS" signature="TCED29709()[pri:8, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29709" duration-ms="11318" started-at="2018-10-16T15:21:21Z" finished-at="2018-10-16T15:21:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED29709 -->
+        <test-method status="PASS" signature="TCED29710()[pri:9, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29710" duration-ms="4585" started-at="2018-10-16T15:21:33Z" finished-at="2018-10-16T15:21:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED29710 -->
+        <test-method status="PASS" signature="TCED29711()[pri:10, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29711" duration-ms="13531" started-at="2018-10-16T15:21:37Z" finished-at="2018-10-16T15:21:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED29711 -->
+        <test-method status="PASS" signature="TCED29712()[pri:11, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29712" duration-ms="11424" started-at="2018-10-16T15:21:51Z" finished-at="2018-10-16T15:22:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED29712 -->
+        <test-method status="PASS" signature="TCED29713()[pri:12, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29713" duration-ms="11290" started-at="2018-10-16T15:22:02Z" finished-at="2018-10-16T15:22:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED29713 -->
+        <test-method status="PASS" signature="TCED29714()[pri:13, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29714" duration-ms="1026" started-at="2018-10-16T15:22:13Z" finished-at="2018-10-16T15:22:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED29714 -->
+        <test-method status="PASS" signature="TCED29715()[pri:14, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29715" duration-ms="273" started-at="2018-10-16T15:22:14Z" finished-at="2018-10-16T15:22:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED29715 -->
+        <test-method status="PASS" signature="TCED29716()[pri:15, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29716" duration-ms="6186" started-at="2018-10-16T15:22:15Z" finished-at="2018-10-16T15:22:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED29716 -->
+        <test-method status="PASS" signature="TCED29717()[pri:16, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29717" duration-ms="23442" started-at="2018-10-16T15:22:21Z" finished-at="2018-10-16T15:22:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED29717 -->
+        <test-method status="PASS" signature="TCED29718()[pri:17, instance:com.curriculum.Analyze_curriculam@4e718207]" name="TCED29718" duration-ms="1348" started-at="2018-10-16T15:22:44Z" finished-at="2018-10-16T15:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED29718 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Analyze_curriculam@4e718207]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-16T15:22:46Z" finished-at="2018-10-16T15:22:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.analyzeByScore.AdministrationComparisonbyStudent -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.curriculum.Analyze_curriculam -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
