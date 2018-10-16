@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.localassessment.ScoreClassResultsOnline"/>
+      <class name="com.localassessment.Score_Class_Results_Online"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
