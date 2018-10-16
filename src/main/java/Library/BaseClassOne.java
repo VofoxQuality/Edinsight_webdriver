@@ -82,6 +82,9 @@ public class BaseClassOne	{
 		
 		FirefoxProfile profile = new FirefoxProfile();
 		profile.setPreference("browser.download.folderList", 2);
+		profile.setPreference("browser.download.panel.shown", false);
+		profile.setPreference("browser.download.forbid_open_with", false);
+		profile.setPreference("browser.download.animateNotifications", false);
 		profile.setPreference("browser.download.dir",downloadPath);
 		profile.setPreference("browser.download.manager.alertOnEXEOpen", false);
 		profile.setPreference("browser.helperApps.neverAsk.openFile", false);
