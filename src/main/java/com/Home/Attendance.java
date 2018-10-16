@@ -144,8 +144,7 @@ public class Attendance extends BaseClassOne
 		    JavascriptExecutor js=(JavascriptExecutor)driver;
 		    js.executeScript("scroll(0,380)");
 		    
-		    //Taking screenshot of the Attendance_Totals_by_Type chart and saving in the screenshot folder under the project root folder
-		    
+		    //Taking screenshot of the Attendance_Totals_by_Type chart and saving in the screenshot folder under the project root folder		    
 		    TakesScreenshot ts=	(TakesScreenshot)driver;
 		    File src= ts.getScreenshotAs(OutputType.FILE);	  
 		    FileUtils.copyFile(src, new File("./Screenshots/Attendance_Totals_by_Type.png"));

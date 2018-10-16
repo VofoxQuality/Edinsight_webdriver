@@ -11,6 +11,7 @@
     <classes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.curriculum.CTE_Competency_List">
 =======
       <class name="com.curriculum.Custom_Reports">
@@ -45,6 +46,15 @@
         </methods>
       </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
 >>>>>>> a8f36b0b59f0ed8b2999846678bd1e912e7a754b
+=======
+      <class name="com.Home.Assessments">
+        <methods>
+          <include name="setup1"/>
+          <include name="TCED34213"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Home.Assessments -->
+>>>>>>> de8b4e81669758e5d39860150bb05f319d9fd202
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -21,10 +21,8 @@ public class Custom_Reports extends BaseClassOne
 			//Superintent Login
 			login(Supertent_Login_id,Supertent_Login_Password);	
 			
-			//hover over curriculum link
-			
-			Actions act=new Actions(driver);
-					
+			//hover over curriculum link			
+			Actions act=new Actions(driver);					
 			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/a"))).build().perform();	
 			
 			//Click Reports Menu 
@@ -111,7 +109,7 @@ public class Custom_Reports extends BaseClassOne
 	   
 	   }
 	
-@Test(priority=2)	
+    @Test(priority=2)	
 	public void TCED30603()
 	   {
 		
@@ -127,10 +125,8 @@ public class Custom_Reports extends BaseClassOne
 			
 			//Assert the selected Map name as "For Automation [Do not Edit and Delete]"
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_divDisplay']/table[2]/tbody/tr[1]/td").contains("For Automation [Do not Edit and Delete]"),"failed to assert text"+"For Automation [Do not Edit and Delete]");
-					
-			//Assert the label "IE COSMETOLOGY"
-			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_divDisplay']/table[2]/tbody/tr[2]/td").contains("IE COSMETOLOGY"),"failed to assert text"+"IE COSMETOLOGY");
-		  } 
+			
+			} 
 		
 		   catch (Exception e)
 		  {
@@ -139,7 +135,7 @@ public class Custom_Reports extends BaseClassOne
 		  }
 	   
 	   }
-@Test(priority=3)
+    @Test(priority=3)
 	public void TCED30604()
 	   {
 		
@@ -165,7 +161,7 @@ public class Custom_Reports extends BaseClassOne
 		}
 	   
 	   }
-@Test(priority=4)
+    @Test(priority=4)
 	public void TCED30605()
 	   {
 		try 
@@ -177,7 +173,7 @@ public class Custom_Reports extends BaseClassOne
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnWord']");
 			
 			Thread.sleep(40000);		
-			//Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 			
 			String parent_wind=driver.getWindowHandle();
 			driver.close();	
@@ -189,7 +185,7 @@ public class Custom_Reports extends BaseClassOne
 					driver.switchTo().window(child);
 				}
 			}
-						
+				
 		
 			
    			//click on Logout button			 
