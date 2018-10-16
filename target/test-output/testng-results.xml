@@ -1,53 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="73606" started-at="2018-10-12T12:30:30Z" finished-at="2018-10-12T12:31:43Z">
+  <suite name="Suite" duration-ms="108755" started-at="2018-10-15T09:42:05Z" finished-at="2018-10-15T09:43:54Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="73606" started-at="2018-10-12T12:30:30Z" finished-at="2018-10-12T12:31:43Z">
-      <class name="com.localassessment.Question_Bank_Apply_Standards">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="setup1" is-config="true" duration-ms="12455" started-at="2018-10-12T12:30:30Z" finished-at="2018-10-12T12:30:42Z">
+    <test name="Test" duration-ms="108755" started-at="2018-10-15T09:42:05Z" finished-at="2018-10-15T09:43:54Z">
+      <class name="com.curriculum.Custom_Reports">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Custom_Reports@42eca56e]" name="setup1" is-config="true" duration-ms="6566" started-at="2018-10-15T09:42:05Z" finished-at="2018-10-15T09:42:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED16201()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16201" duration-ms="6608" started-at="2018-10-12T12:30:42Z" finished-at="2018-10-12T12:30:49Z">
+        <test-method status="PASS" signature="TCED30601()[pri:0, instance:com.curriculum.Custom_Reports@42eca56e]" name="TCED30601" duration-ms="8871" started-at="2018-10-15T09:42:12Z" finished-at="2018-10-15T09:42:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED16201 -->
-        <test-method status="PASS" signature="TCED16202()[pri:1, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16202" duration-ms="6782" started-at="2018-10-12T12:30:49Z" finished-at="2018-10-12T12:30:55Z">
+        </test-method> <!-- TCED30601 -->
+        <test-method status="PASS" signature="TCED30602()[pri:1, instance:com.curriculum.Custom_Reports@42eca56e]" name="TCED30602" duration-ms="1014" started-at="2018-10-15T09:42:20Z" finished-at="2018-10-15T09:42:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED16202 -->
-        <test-method status="PASS" signature="TCED16203()[pri:2, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16203" duration-ms="653" started-at="2018-10-12T12:30:55Z" finished-at="2018-10-12T12:30:56Z">
+        </test-method> <!-- TCED30602 -->
+        <test-method status="PASS" signature="TCED30603()[pri:2, instance:com.curriculum.Custom_Reports@42eca56e]" name="TCED30603" duration-ms="1201" started-at="2018-10-15T09:42:21Z" finished-at="2018-10-15T09:42:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED16203 -->
-        <test-method status="PASS" signature="TCED16204()[pri:3, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16204" duration-ms="2468" started-at="2018-10-12T12:30:56Z" finished-at="2018-10-12T12:30:59Z">
+        </test-method> <!-- TCED30603 -->
+        <test-method status="PASS" signature="TCED30604()[pri:3, instance:com.curriculum.Custom_Reports@42eca56e]" name="TCED30604" duration-ms="45273" started-at="2018-10-15T09:42:23Z" finished-at="2018-10-15T09:43:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED16204 -->
-        <test-method status="PASS" signature="TCED16205()[pri:4, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16205" duration-ms="8442" started-at="2018-10-12T12:30:59Z" finished-at="2018-10-12T12:31:07Z">
+        </test-method> <!-- TCED30604 -->
+        <test-method status="PASS" signature="TCED30605()[pri:4, instance:com.curriculum.Custom_Reports@42eca56e]" name="TCED30605" duration-ms="45799" started-at="2018-10-15T09:43:08Z" finished-at="2018-10-15T09:43:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED16205 -->
-        <test-method status="PASS" signature="TCED16206()[pri:5, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16206" duration-ms="10064" started-at="2018-10-12T12:31:07Z" finished-at="2018-10-12T12:31:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED16206 -->
-        <test-method status="PASS" signature="TCED16207()[pri:6, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16207" duration-ms="15158" started-at="2018-10-12T12:31:17Z" finished-at="2018-10-12T12:31:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED16207 -->
-        <test-method status="PASS" signature="TCED16208()[pri:7, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="TCED16208" duration-ms="10929" started-at="2018-10-12T12:31:32Z" finished-at="2018-10-12T12:31:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED16208 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@52f759d7]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-12T12:31:43Z" finished-at="2018-10-12T12:31:43Z">
+        </test-method> <!-- TCED30605 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Custom_Reports@42eca56e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-15T09:43:54Z" finished-at="2018-10-15T09:43:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.localassessment.Question_Bank_Apply_Standards -->
+      </class> <!-- com.curriculum.Custom_Reports -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
