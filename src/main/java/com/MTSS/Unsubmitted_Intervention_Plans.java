@@ -302,17 +302,8 @@ public class Unsubmitted_Intervention_Plans extends BaseClassOne
 			click("#ctl00_MainContent_btnAddToFavorite");
 			
 			//Assert the label "Unsubmitted Intervention Plan Report "
-			Assert.assertEquals(getText("//span[@class='subheading']"),"Unsubmitted Intervention Plan Report");		
+			Assert.assertEquals(getText("//span[@class='subheading']"),"Unsubmitted Intervention Plan Report");				
 			
-			FileDelete();			
-			
-			//Click on Print to PDF		
-			click("#ctl00_MainContent_btnPrintToPDF");			
-			
-			Thread.sleep(6000);	
-			
-			//Assert the downloaded PDF file
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 		} 
 		catch (Exception e)
 		{
