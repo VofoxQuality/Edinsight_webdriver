@@ -23,12 +23,10 @@ public class Configure_Settings extends BaseClassOne
 			Actions act=new Actions(driver);
 			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
 			
-			//Click Configure Settings
-			
+			//Click Configure Settings			
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
 			
-			//Assert the Heading "Configure MTSS"
-					
+			//Assert the Heading "Configure MTSS"					
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/h3")).getText().contains("Configure MTSS"));
 		} 
 		

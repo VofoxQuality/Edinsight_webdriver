@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.analyzeByScore.ItemAnalysisbyStudent">
+      <class name="com.MTSS.Unsubmitted_Intervention_Plans">
         <methods>
+          <include name="TCED221004"/>
           <include name="setup1"/>
-          <include name="TCED14128"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.analyzeByScore.ItemAnalysisbyStudent -->
+      </class> <!-- com.MTSS.Unsubmitted_Intervention_Plans -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

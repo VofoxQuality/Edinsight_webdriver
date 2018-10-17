@@ -54,11 +54,11 @@ public class BaseClassOne	{
 	 public static WebDriver driver;
 	 public String  baseUrl = "http://192.168.10.124/Edinsight/Login.aspx";
 	 //Sebastian
-	// protected  String downloadPath="D:\\selenium_downloads";
+	 protected  String downloadPath="D:\\selenium_downloads";
 	 //Manoj
 	//protected  String downloadPath="E:\\selenium_downloads";
 	 //Ans
-		protected  String downloadPath="E:\\selenium_downloads";
+		//protected  String downloadPath="E:\\selenium_downloads";
 	
 	 
 	 int i=0;
@@ -73,18 +73,21 @@ public class BaseClassOne	{
 		//FirefoxProfile profile=Browser_Preference();
 		
 		//Sebastian
-		//System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
 		//Akhil 
 		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		//Manoj
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 		//Ans
-		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		
 		
 		
 		FirefoxProfile profile = new FirefoxProfile();
 		profile.setPreference("browser.download.folderList", 2);
+		profile.setPreference("browser.download.panel.shown", false);
+		profile.setPreference("browser.download.forbid_open_with", false);
+		profile.setPreference("browser.download.animateNotifications", false);
 		profile.setPreference("browser.download.dir",downloadPath);
 		profile.setPreference("browser.download.manager.alertOnEXEOpen", false);
 		profile.setPreference("browser.helperApps.neverAsk.openFile", false);
@@ -288,6 +291,32 @@ public class BaseClassOne	{
 		}
 			 
 		 }
+		 public void waitForElementPresent(String Locator)
+		 {
+			 try
+			 {
+				 new WebDriverWait(driver, (TIMEOUT / 1000), 200)
+                 .until(ExpectedConditions.presenceOfElementLocated(parseLocator(Locator)));
+				 
+			 
+		 } catch (TimeoutException e) { // from org.openqa.selenium.TimeoutException 
+             throw new AssertionError("Timeout during waiting for element: '" + Locator + "'");
+		}
+			 
+		 }
+		 public void waitForAlert(String Locator)
+		 {
+			 try
+			 {
+				 new WebDriverWait(driver, (TIMEOUT / 1000), 200)
+                 .until(ExpectedConditions.alertIsPresent());
+				 
+			 
+		 } catch (TimeoutException e) { // from org.openqa.selenium.TimeoutException 
+             throw new AssertionError("Timeout during waiting for element: '" + Locator + "'");
+		}
+			 
+		 }
 		 
 		 public void waitForvalue(String locator)
 		 {
@@ -300,6 +329,7 @@ public class BaseClassOne	{
 	             throw new AssertionError("Timeout during waiting for element: '" + locator + "'");
 			}
 		 }
+		 
 
 		public void SwitchFrame(String locator) {
 			WebElement frameElement = driver.findElement(By.id(locator));

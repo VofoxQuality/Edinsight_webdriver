@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.localassessment.ScoreClassResultsOnline"/>
+      <class name="com.MTSS.Unsubmitted_Intervention_Plans"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
