@@ -3,17 +3,21 @@ package Library;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -59,6 +63,8 @@ public class BaseClassOne	{
 	//protected  String downloadPath="E:\\selenium_downloads";
 	 //Ans
 		//protected  String downloadPath="E:\\selenium_downloads";
+	 
+	 
 	
 	 
 	 int i=0;
@@ -629,6 +635,17 @@ public class BaseClassOne	{
 	}
 	
 	//*****************************************Test Listner *********************************	
+	public void Takescreenshot(String ScreenshotName)
+	{
+		TakesScreenshot ts=	(TakesScreenshot)driver;
+		File src= ts.getScreenshotAs(OutputType.FILE);	  
+		try {
+			FileUtils.copyFile(src, new File("./Screenshots/"+ScreenshotName+".png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+	}
 	
 
 }
