@@ -1,7 +1,10 @@
 package com.analyzeByScore;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -113,7 +116,7 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
 
-
+			// To Assert the Validation Messages
 			Assert.assertEquals( "You must select at least two administrations.", getText("//*[@id='ctl00_MainContent_lblMsg']"));	
 
 
@@ -225,31 +228,34 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 			
 			//To click on the Add selected students to group
 			click("//span[contains(text(),'Add selected students to group')]");
-			
+			// To switch to frame
 			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
 			
 			Thread.sleep(2000);
-			
+			// To Assert the Validation Messages
 			Assert.assertEquals( "Add Students to Group:", getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"));	
 
 			Assert.assertEquals( "Create New Group:", getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"));	
-			
+			// To switch to default frame
 			driver.switchTo().defaultContent();
-			
+			// To close popup
 			click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Session Timeout'])[1]/preceding::span[2]");
-			
+			Thread.sleep(2000);
 			
 			//To click on the options
 			click("//*[@id='ctl00_MainContent_rSplitButton']");
 			
 			//To click on the Add all students to group
+			WebDriverWait wait = new WebDriverWait(driver,30);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Add all students to group')]")));
 			
 			click("//span[contains(text(),'Add all students to group')]");
-			
+			Thread.sleep(2000);
+			// To switch to frame
 			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
-				
+			// Add new grp with Auto generatednumber	
 			type("//*[@id='ctl00_ContentPlaceHolder1_txtCreateNewGroup']","AutomationGRP"+ generateRandomNumber());
-			
+			//To click on the grp
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnCreateGroup']");
 			
 			Thread.sleep(4000);
@@ -267,11 +273,12 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 	{
 		try
 		{
-			
+			// To switch to default frame
 			driver.switchTo().defaultContent();
 			
 			//To click on the performance button
 			JavaScriptclick("//*[@id='ctl00_MainContent_rbtPerformance']");
+			Thread.sleep(2000);
 			
 			
 			//To  Assert Grid labels
@@ -301,9 +308,14 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 
 			//To click on the Options
 			click("//*[@id='ctl00_MainContent_rSplitButton']");
-
+			Thread.sleep(2000);
+			
+			//To delete all the files in the directory
+			FileDelete();
+			
 			//To click on the print to PDF button
-			click("//span[contains(text(),'Print to PDF')]");
+			click("//*[@id='ctl00_MainContent_rcMenu_detached']/ul/li[3]/span");	
+				
 
 			//To assert whether the PDF document is download or not 
 			Thread.sleep(4000);
@@ -312,9 +324,9 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 
 			//To click on the Options
 			click("//*[@id='ctl00_MainContent_rSplitButton']");
-
+			
 			//To click on the print to CSV button
-			click("//span[contains(text(),'Print to CSV')]");
+			click("//*[@id='ctl00_MainContent_rcMenu_detached']/ul/li[4]/span");
 
 			//To assert whether the PDF document is download or not 
 			Thread.sleep(4000);
@@ -323,9 +335,10 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 			//To click on the Options
 			click("//*[@id='ctl00_MainContent_rSplitButton']");
 			
+			
 			//To click on the Add selected students to group
 			click("//span[contains(text(),'Add selected students to group')]");
-			
+			Thread.sleep(2000);
 			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
 			
 			Thread.sleep(2000);
@@ -333,27 +346,30 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 			Assert.assertEquals( "Add Students to Group:", getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"));	
 
 			Assert.assertEquals( "Create New Group:", getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"));	
-			
+			// To switch to default frame
 			driver.switchTo().defaultContent();
 			
 			click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Session Timeout'])[1]/preceding::span[2]");
 			
-			Thread.sleep(1000);
+			
 			//To click on the options
 			click("//*[@id='ctl00_MainContent_rSplitButton']");
+			Thread.sleep(1000);
 			
 			//To click on the Add all students to group
-			
+			WebDriverWait wait = new WebDriverWait(driver,30);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Add all students to group')]")));
 			click("//span[contains(text(),'Add all students to group')]");
-			
+			// To switch new frame
 			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
-				
+			// Add new grp with Auto generatednumber	
 			type("//*[@id='ctl00_ContentPlaceHolder1_txtCreateNewGroup']","AutomationGRP"+ generateRandomNumber());
-			
-			click("//*[@id='ctl00_ContentPlaceHolder1_btnCreateGroup']");
-			
+			//To click on the grp
+			click("//*[@id='ctl00_ContentPlaceHolder1_btnCreateGroup']");	
 			Thread.sleep(4000);
+			// To switch to default frame
 			driver.switchTo().defaultContent();	
+			// To scroll end
 			Scroll_DowntoEnd();
 			
 

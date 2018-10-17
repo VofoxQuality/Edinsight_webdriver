@@ -32,7 +32,7 @@ public class BuildingComparisonReportbyAdministration extends BaseClassOne {
 			click("//*[@id='ctl00_MainContent_hlinkBuildingComparisonParams']");
 			
 			//To fill the the Test ID Search 
-			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "257");
+			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
 			
 			//To click on the search button
 			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
