@@ -28,7 +28,7 @@ public class ItemAnalysisbyStudent extends BaseClassOne{
 			click("//a[@id='ctl00_MainContent_hlnkBenchmarkAnalysis']");
 			
 			//To fill the the Test ID Search 
-			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "257");
+			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
 			
 			//To click on the search button
 			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
@@ -37,7 +37,7 @@ public class ItemAnalysisbyStudent extends BaseClassOne{
 			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
 			
 			//To select the Administrations
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation- do not edit (Admin)(2017-2018)");
 			
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
