@@ -8,13 +8,13 @@ import Library.BaseClassOne;
 public class TestingSummary extends BaseClassOne{
 	
 	@Test(priority=1)
-	public void TestingSummarypopup() throws InterruptedException 
+	public void TestingSummarypopup(String xpath) throws InterruptedException 
 	{
 	
 	//To click on the Testing Summary			
 	
-	click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[7]/a");
-	
+	click(xpath);	
+		
 	Thread.sleep(2000);
 	// To switch to frame
 	driver.switchTo().frame("rwTestSummery");
