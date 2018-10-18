@@ -10,6 +10,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.generalMethods.AssessmentPrint;
+import com.generalMethods.TestingSummary;
+
 import Library.BaseClassOne;
 
 public class ItemAnalysisbyQuestion extends BaseClassOne {
@@ -224,7 +227,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		{
 			// TO click the link
 			click("//a[contains(text(),'4')]");
-
+			
 			AssertStudentdetailHeaders();
 		}catch(Exception e) 
 		{
