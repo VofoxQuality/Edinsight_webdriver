@@ -1,6 +1,8 @@
 package com.analyzeByScore;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -45,7 +47,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnAnalyse']");
-
+			// Assert Header
 			Assert.assertEquals( "Item Analysis by Question", getText("//span[@class='administitle']"));	
 
 		}catch(Exception e) 
@@ -96,9 +98,9 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	public void TCED14083() 
 	{
 		try
-		{
+		{	// TO click the link
 			click("//input[@id='ctl00_MainContent_btnFilter']");
-
+			// To Assert the label
 			Assert.assertEquals( "Question Standards", getText("//*[@id='ctl00_MainContent_grdQuestions_ctl02_trQuestionStandardHeading']/td/span"));	
 
 		}catch(Exception e) 
@@ -114,8 +116,10 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// TO click the link
 			click("//a[contains(text(),'8')]");
+			
+			// To Assert the Validation Messages
 
 			Assert.assertEquals( "Assessment Students List", getText("//span[@class='subheading']"));	
 
@@ -440,7 +444,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			//To click on the run report
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 
-
+			// To Assert the header
 			Assert.assertEquals( "Question Standards", getText("//*[@id='ctl00_MainContent_grdQuestions_ctl02_trQuestionStandardHeading']/td/span"));	
 
 		}catch(Exception e) 
@@ -458,9 +462,9 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// TO click the link
 			click("//a[contains(text(),'4')]");
-
+			// To Assert the Validation Messages
 			Assert.assertEquals( "Assessment Students List", getText("//span[@class='subheading']"));	
 
 			Assert.assertEquals( "Student ID", getText("//a[contains(text(),'Student ID')]"));
@@ -843,9 +847,9 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// TO click the link
 			click("//a[contains(text(),'8')]");
-
+			// To Assert the Validation Messages
 			Assert.assertEquals( "Assessment Students List", getText("//span[@class='subheading']"));	
 
 			Assert.assertEquals( "Student ID", getText("//a[contains(text(),'Student ID')]"));
@@ -1197,10 +1201,11 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			//To click on run report in param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 			
+			//To delete all the files in the directory
+			FileDelete();
 			//To click on the Print on PDF
 			click("//input[@id='ctl00_MainContent_btnPrintToPDF1']");
-			Thread.sleep(4000);
-			
+			Thread.sleep(4000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");		
 				
 		}catch(Exception e) 
@@ -1247,8 +1252,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			
 			//To click on the Print on CSV
 			click("//input[@id='ctl00_MainContent_btnExportToCSV']");
-			Thread.sleep(4000);
-			
+			Thread.sleep(4000);	
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
 			
 				
@@ -1294,16 +1298,14 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			//To click on run report in param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 			
-			//To click on the Testing Summary
+			//To click on the Testing Summary			
 			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[7]/a");
 			Thread.sleep(2000);
-			// To maximise the page
-			click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Session Timeout'])[1]/preceding::span[4]");
-			
+			// To switch to frame
 			driver.switchTo().frame("rwTestSummery");
-				Thread.sleep(2000);
-		
 			
+			Thread.sleep(2000);
+			//To Assert the Grid labels
 			Assert.assertEquals("Testing Summary", getText("xpath=(.//*[normalize-space(text()) and normalize-space(.)='##LOC[Cancel]##'])[2]/following::span[1]"));
 						
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_lblSchoolHCompletionRate']").contains("School with the highest completion rate"),"failed to assert text"+"School with the highest completion rate");
@@ -1322,6 +1324,9 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			//To click on the options button
 			click("//*[@id='ctl00_ContentPlaceHolder1_RadButton1']");
 			
+			//To delete all the files in the directory
+			FileDelete();
+			
 			
 			//To click on the print PDF to button
 			click("//*[@id='ctl00_ContentPlaceHolder1_RadContextMenu2_detached']/ul/li[1]/span");
@@ -1338,14 +1343,13 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			Thread.sleep(3000);
 			
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
-		
+			Thread.sleep(3000);
+			// To switch to parent 
 			driver.switchTo().parentFrame();
 			
-			// To maximise the page
-			click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Session Timeout'])[1]/preceding::span[4]");
-			
+			// To close the page
 			click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Session Timeout'])[1]/preceding::span[3]");
-			
+			Thread.sleep(3000);
 				
 		}catch(Exception e) 
 		{
@@ -1371,62 +1375,64 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			FileDelete();
 			
 			//To click print pdf
+	/*		
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
+			Thread.sleep(10000);
 			
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-			
+			*/
 			//To click on the print word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']");
-			
+			Thread.sleep(10000);
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 			
 			//To delete all the files in the directory
 			FileDelete();
-			
+		/*	
 			//To click on the Print OE to PDF
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkOePdfQuestions']");
-			
+			Thread.sleep(6000);
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 
-			
+			*/
 			//To click on the OE to Word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkOeWordQuestions']");
-			
+			Thread.sleep(6000);
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 
 			//*******Print answer Key**********************
 			
 			//To delete all the files in the directory
 			FileDelete();
-			
+		/*	
 			//To click print pdf
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfAnswer']");
-			
+			Thread.sleep(6000);
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-			
+			*/
 			//To click on the print word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordAnswer']");
-			
+			Thread.sleep(6000);
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 			
 			//To delete all the files in the directory
 			FileDelete();
 			
-			//To click on the Print OE to PDF
+			//To click on the Print condensed PDF
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedPDF']");
-			
+			Thread.sleep(6000);
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-
+			
 			
 			//To click on the OE to Word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedWord']");
-			
+			Thread.sleep(6000);
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 			
 		}catch(Exception e) 

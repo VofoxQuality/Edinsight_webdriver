@@ -57,7 +57,8 @@ public class ItemAnalysisbyStudent extends BaseClassOne{
 			
 			//To click on the Print on CSV
 			click("//input[@id='ctl00_MainContent_btnExportCSV']");
-			Thread.sleep(4000);
+			
+			Thread.sleep(6000);
 			
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
 			
