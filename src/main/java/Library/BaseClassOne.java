@@ -3,17 +3,21 @@ package Library;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -75,7 +79,7 @@ public class BaseClassOne	{
 		//Sebastian
 		System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
 		//Akhil 
-		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		//Manoj
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 		//Ans
@@ -599,6 +603,19 @@ public class BaseClassOne	{
 		WebElement element = find(locator);
 		((JavascriptExecutor) driver).executeScript(
 		"arguments[0].scrollIntoView();", element);
+	}
+	//To tkae the screen shot
+	public void Takescreenshot(String ScreenshotName)
+	{
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		TakesScreenshot ts=	(TakesScreenshot)driver;
+		File src= ts.getScreenshotAs(OutputType.FILE);	  
+		try {
+			FileUtils.copyFile(src, new File("./Screenshots/"+ScreenshotName+".png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	//*****************************************Test Listner *********************************	
