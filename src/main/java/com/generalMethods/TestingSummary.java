@@ -1,4 +1,4 @@
-package com.analyzeByScore;
+package com.generalMethods;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
