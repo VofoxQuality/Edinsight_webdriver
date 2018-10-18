@@ -548,7 +548,9 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			//To click on run report in param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 			//To check the Testing Summary page
-		//	objTestingSummary.TestingSummarypopup();
+			
+			String xpath = "//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[7]/a";
+			objTestingSummary.TestingSummarypopup(xpath);
 
 		}catch(Exception e) 
 		{
