@@ -3,27 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.analyzeByScore.ItemAnalysisbyQuestion">
+      <class name="com.analyzeByScore.ItemAnalysisbyStudent">
         <methods>
-          <include name="TCED14104"/>
-          <include name="TCED14100"/>
-          <include name="TCED14103"/>
-          <include name="TCED14102"/>
-          <include name="tearDown"/>
-          <include name="TCED14091"/>
           <include name="setup1"/>
-          <include name="TCED14093"/>
-          <include name="TCED14096"/>
-          <include name="TCED14099"/>
-          <include name="TCED14098"/>
-          <include name="TCED14101"/>
-          <include name="TCED14092"/>
-          <include name="TCED14084"/>
-          <include name="TCED14095"/>
-          <include name="TCED14094"/>
-          <include name="TCED14097"/>
+          <include name="TCED14128"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.analyzeByScore.ItemAnalysisbyQuestion -->
+      </class> <!-- com.analyzeByScore.ItemAnalysisbyStudent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
