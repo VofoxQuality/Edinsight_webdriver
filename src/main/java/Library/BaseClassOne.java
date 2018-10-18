@@ -3,21 +3,17 @@ package Library;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -63,8 +59,6 @@ public class BaseClassOne	{
 	//protected  String downloadPath="E:\\selenium_downloads";
 	 //Ans
 		//protected  String downloadPath="E:\\selenium_downloads";
-	 
-	 
 	
 	 
 	 int i=0;
@@ -79,13 +73,13 @@ public class BaseClassOne	{
 		//FirefoxProfile profile=Browser_Preference();
 		
 		//Sebastian
-	//	System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
 		//Akhil 
-		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		//Manoj
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 		//Ans
-		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		
 		
 		
@@ -297,32 +291,6 @@ public class BaseClassOne	{
 		}
 			 
 		 }
-		 public void waitForElementPresent(String Locator)
-		 {
-			 try
-			 {
-				 new WebDriverWait(driver, (TIMEOUT / 1000), 200)
-                 .until(ExpectedConditions.presenceOfElementLocated(parseLocator(Locator)));
-				 
-			 
-		 } catch (TimeoutException e) { // from org.openqa.selenium.TimeoutException 
-             throw new AssertionError("Timeout during waiting for element: '" + Locator + "'");
-		}
-			 
-		 }
-		 public void waitForAlert(String Locator)
-		 {
-			 try
-			 {
-				 new WebDriverWait(driver, (TIMEOUT / 1000), 200)
-                 .until(ExpectedConditions.alertIsPresent());
-				 
-			 
-		 } catch (TimeoutException e) { // from org.openqa.selenium.TimeoutException 
-             throw new AssertionError("Timeout during waiting for element: '" + Locator + "'");
-		}
-			 
-		 }
 		 
 		 public void waitForvalue(String locator)
 		 {
@@ -335,7 +303,6 @@ public class BaseClassOne	{
 	             throw new AssertionError("Timeout during waiting for element: '" + locator + "'");
 			}
 		 }
-		 
 
 		public void SwitchFrame(String locator) {
 			WebElement frameElement = driver.findElement(By.id(locator));
@@ -635,17 +602,6 @@ public class BaseClassOne	{
 	}
 	
 	//*****************************************Test Listner *********************************	
-	public void Takescreenshot(String ScreenshotName)
-	{
-		TakesScreenshot ts=	(TakesScreenshot)driver;
-		File src= ts.getScreenshotAs(OutputType.FILE);	  
-		try {
-			FileUtils.copyFile(src, new File("./Screenshots/"+ScreenshotName+".png"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
-	}
 	
 
 }
