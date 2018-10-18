@@ -13,7 +13,7 @@ public class TestingSummary extends BaseClassOne{
 	
 	//To click on the Testing Summary			
 	
-	click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[7]/a");
+	click("//a[@onclick='return ShowTestSummeryPopUp('1268');']");
 	
 	Thread.sleep(2000);
 	// To switch to frame
