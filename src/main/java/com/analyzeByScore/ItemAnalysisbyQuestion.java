@@ -24,7 +24,9 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	public void TCED14081() 
 	{
 		try
-		{	// Method for Report param pages
+		{	//Supertent Login
+			login(Supertent_Login_id,Supertent_Login_Password);
+			// Method for Report param pages
 			ReportParam ();
 			// Assert Header
 			Assert.assertEquals( "Item Analysis by Question", getText("//span[@class='administitle']"));	
@@ -579,9 +581,10 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 
 	{
 
-		//Supertent Login
-		login(Supertent_Login_id,Supertent_Login_Password);
-
+		WebElement element = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"));
+		Actions action = new Actions(driver);
+		action.moveToElement(element).click().build().perform();
+	
 		//Click on main menu local Assesment.
 		click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
 
@@ -658,7 +661,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 
 		//To select the Student Grp  
 		select("//select[@id='ctl00_MainContent_ddlStudentGroup']","00 123 MR");
-
+		//To click on the run report
 		click("//input[@id='ctl00_MainContent_btnFilter']");
 	}
 }
