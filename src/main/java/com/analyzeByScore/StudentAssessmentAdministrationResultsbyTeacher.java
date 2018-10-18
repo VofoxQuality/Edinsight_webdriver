@@ -49,7 +49,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			//Supertent Login
 			login(Supertent_Login_id,Supertent_Login_Password);
 			
-			//Click on main menu local Assignment.
+			//Click on main menu local Assessment.
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
 			
 			//To click on the analyze by Score
