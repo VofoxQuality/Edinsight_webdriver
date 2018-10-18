@@ -16,7 +16,7 @@ import com.generalMethods.TestingSummary;
 import Library.BaseClassOne;
 
 public class ItemAnalysisbyQuestion extends BaseClassOne {
-	
+
 	TestingSummary objTestingSummary = new TestingSummary();
 	AssessmentPrint objAssessmentPrint = new AssessmentPrint();
 
@@ -24,7 +24,9 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	public void TCED14081() 
 	{
 		try
-		{	
+		{	//Supertent Login
+			login(Supertent_Login_id,Supertent_Login_Password);
+			// Method for Report param pages
 			ReportParam ();
 			// Assert Header
 			Assert.assertEquals( "Item Analysis by Question", getText("//span[@class='administitle']"));	
@@ -97,6 +99,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		{
 			// To click the Studentcountlink
 			click("//a[contains(text(),'8')]");
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -111,14 +114,14 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	public void TCED14085() 
 	{
 		try
-		{
+		{	// Method for Report param pages
 			ReportParam ();
 
 			//To click on the run report param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 			// To click the Studentcountlink
 			click("//a[contains(text(),'6(75%)')]");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -134,14 +137,14 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
 
 			//To click on the run report param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 			// To click the Studentcountlink
 			click("//a[contains(text(),'1(12.5%)')]");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -157,14 +160,14 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
 
 			//To click on the run report param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 			// To click the Studentcount
 			click("//*[@id='ctl00_MainContent_grdQuestions_ctl02_grdQuestionDetails_ctl02_lblStudentNumber']/a");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -180,14 +183,14 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
 
 			//To click on the run report param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 			// To click the Studentcountpercentage
 			click("//*[@id='ctl00_MainContent_grdQuestions_ctl02_grdQuestionDetails_ctl02_lblPercentage']/a");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -202,9 +205,10 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
 			Thread.sleep(1000);
+			// Method for Buildingfilters
 			BuildingFiltersParamPage();		
 
 			// To Assert the header
@@ -227,7 +231,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		{
 			// TO click the link
 			click("//a[contains(text(),'4')]");
-			
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 		}catch(Exception e) 
 		{
@@ -241,7 +245,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
 			Thread.sleep(1000);
 			//To select the building  
@@ -256,7 +260,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 
 			click("//a[contains(text(),'2(50%)')]");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -272,7 +276,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
 			Thread.sleep(1000);
 			//To select the building  
@@ -287,7 +291,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 
 			click("//a[contains(text(),'1(25%)')]");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -303,7 +307,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
 			Thread.sleep(1000);
 			//To select the building  
@@ -313,12 +317,11 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			Thread.sleep(2000);
 			select("//*[@id='ctl00_MainContent_ddlStaff']","Ableton, A - 10");
 
-
 			//To click on the run report param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 
 			click("//*[@id='ctl00_MainContent_grdQuestions_ctl02_grdQuestionDetails_ctl02_lblStudentNumber']/a");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -333,13 +336,14 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
 			Thread.sleep(1000);
+			// Method for Buildingfilters
 			BuildingFiltersParamPage();	
 
 			click("//*[@id='ctl00_MainContent_grdQuestions_ctl02_grdQuestionDetails_ctl02_lblPercentage']/a");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 
@@ -357,9 +361,9 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
-
+			// Method for StudentFilters
 			StudentFiltersParampage();
 
 			Assert.assertEquals( "Question Standards", getText("//*[@id='ctl00_MainContent_grdQuestions_ctl02_trQuestionStandardHeading']/td/span"));			
@@ -381,7 +385,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		{
 			// TO click the link
 			click("//a[contains(text(),'8')]");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -400,13 +404,14 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
 			Thread.sleep(1000);
+			// Method for StudentFilters
 			StudentFiltersParampage();
 
 			click("//a[contains(text(),'6(75%)')]");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -423,12 +428,13 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
 			Thread.sleep(1000);
+			// Method for StudentFilters
 			StudentFiltersParampage();
 			click("//a[contains(text(),'1(12.5%)')]");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -444,14 +450,14 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
-
 			Thread.sleep(1000);
+			// Method for StudentFilters
 			StudentFiltersParampage();
 
 			click("//*[@id='ctl00_MainContent_grdQuestions_ctl02_grdQuestionDetails_ctl02_lblStudentNumber']/a");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -466,14 +472,14 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
-
+			// Method for Report param pages
 			ReportParam ();
-
 			Thread.sleep(1000);
+			// Method for StudentFilters
 			StudentFiltersParampage();
 
 			click("//*[@id='ctl00_MainContent_grdQuestions_ctl02_grdQuestionDetails_ctl02_lblPercentage']/a");
-
+			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
 		}catch(Exception e) 
@@ -488,7 +494,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	public void TCED14101() 
 	{
 		try
-		{
+		{	// Method for Report param pages
 			ReportParam ();
 			//To click on run report in param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
@@ -512,7 +518,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	public void TCED14102() 
 	{
 		try
-		{
+		{	// Method for Report param pages
 			ReportParam ();
 
 			//To click on run report in param page
@@ -536,67 +542,14 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 
 	{
 		try
-		{
+		{	// Method for Report param pages
 			ReportParam ();
 
 			//To click on run report in param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
-			
+			//To check the Testing Summary page
 			objTestingSummary.TestingSummarypopup();
-/*
-			//To click on the Testing Summary			
-			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[7]/a");
-			Thread.sleep(2000);
-			// To switch to frame
-			driver.switchTo().frame("rwTestSummery");
 
-			Thread.sleep(2000);
-			//To Assert the Grid labels
-			Assert.assertEquals("Testing Summary", getText("xpath=(.//*[normalize-space(text()) and normalize-space(.)='##LOC[Cancel]##'])[2]/following::span[1]"));
-
-			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_lblSchoolHCompletionRate']").contains("School with the highest completion rate"),"failed to assert text"+"School with the highest completion rate");
-
-			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_lblSchoolLCompletetionRate']").contains("School with the lowest completion rate"),"failed to assert text"+"School with the lowest completion rate");
-
-			Assert.assertEquals("School/Building", getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[1]/a"));
-
-			Assert.assertEquals("Scheduled Students", getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[5]/a"));
-
-			Assert.assertEquals("Completed", getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[6]/a"));
-
-			Assert.assertEquals("Not Completed", getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[7]/a"));
-
-
-			//To click on the options button
-			click("//*[@id='ctl00_ContentPlaceHolder1_RadButton1']");
-
-			//To delete all the files in the directory
-			FileDelete();
-
-
-			//To click on the print PDF to button
-			click("//*[@id='ctl00_ContentPlaceHolder1_RadContextMenu2_detached']/ul/li[1]/span");
-
-			Thread.sleep(3000);
-
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-
-			//To click on the options button
-			click("//*[@id='ctl00_ContentPlaceHolder1_RadButton1']");
-
-			//To click on the print PDF to button
-			click("//*[@id='ctl00_ContentPlaceHolder1_RadContextMenu2_detached']/ul/li[2]/span");
-			Thread.sleep(3000);
-
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
-			Thread.sleep(3000);
-			// To switch to parent 
-			driver.switchTo().parentFrame();
-
-			// To close the page
-			click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Session Timeout'])[1]/preceding::span[3]");
-			Thread.sleep(3000);
-	                                  */
 		}catch(Exception e) 
 		{
 			e.printStackTrace();
@@ -609,80 +562,10 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	public void TCED14104() 
 	{
 		try
-		{
+		{	//To check the Assessment print reports
 			objAssessmentPrint.AssessmentPrintReports();
-		
-	/*		//To click here to see the test
-			click("//a[@id='ctl00_MainContent_lnkassessmentPDF']");
-
-			//To select the frame
-			SwitchFrameName("Assessment Print");
-
-			//To delete all the files in the directory
-			FileDelete();
-
-			//To click print pdf
-					
-			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
-			Thread.sleep(10000);
-
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-			 
-			//To click on the print word
-			Thread.sleep(3000);
-			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']");
-			Thread.sleep(10000);
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
-
-			//To delete all the files in the directory
-			FileDelete();
-				
-			//To click on the Print OE to PDF
-			Thread.sleep(3000);
-			click("//*[@id='ctl00_ContentPlaceHolder1_linkOePdfQuestions']");
-			Thread.sleep(6000);
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-
-			 
-			//To click on the OE to Word
-			Thread.sleep(3000);
-			click("//*[@id='ctl00_ContentPlaceHolder1_linkOeWordQuestions']");
-			Thread.sleep(6000);
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC"); 
-
-			//*******Print answer Key**********************
-
-			//To delete all the files in the directory
-			FileDelete();
-				
-			//To click print pdf
-			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfAnswer']");
-			Thread.sleep(6000);
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-			 
-			//To click on the print word
-			Thread.sleep(3000);
-			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordAnswer']");
-			Thread.sleep(6000);
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
-
-			//To delete all the files in the directory
-			FileDelete();
-
-			//To click on the Print condensed PDF
-			Thread.sleep(3000);
-			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedPDF']");
-			Thread.sleep(6000);
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 
 
-			//To click on the OE to Word
-			Thread.sleep(3000);
-			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedWord']");
-			Thread.sleep(6000);
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");  
-			
-*/
 		}catch(Exception e) 
 		{
 			e.printStackTrace();
@@ -698,9 +581,10 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 
 	{
 
-		//Supertent Login
-		login(Supertent_Login_id,Supertent_Login_Password);
-
+		WebElement element = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"));
+		Actions action = new Actions(driver);
+		action.moveToElement(element).click().build().perform();
+	
 		//Click on main menu local Assesment.
 		click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
 
@@ -734,7 +618,6 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 
 	{
 		// To Assert the Validation Messages
-
 		Assert.assertEquals( "Assessment Students List", getText("//span[@class='subheading']"));	
 
 		Assert.assertEquals( "Student ID", getText("//a[contains(text(),'Student ID')]"));
@@ -756,12 +639,9 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		Assert.assertEquals( "Ec. Disadvantaged", getText("//a[contains(text(),'Ec. Disadvantaged')]"));
 	}
 
-	
-	
 	public void BuildingFiltersParamPage() throws InterruptedException
-	
+
 	{
-		
 		//To select the building  
 		select("//*[@id='ctl00_MainContent_ddlSchool']","Ashley High School");
 
@@ -772,18 +652,16 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		//To click on the run report
 		click("//input[@id='ctl00_MainContent_btnFilter']");
 	}
-	
-	
+
 	public void StudentFiltersParampage() throws InterruptedException
-	
+
 	{
-		
 		click("//input[@id='ctl00_MainContent_rbStudentGroup']");
 		Thread.sleep(1000);
 
 		//To select the Student Grp  
 		select("//select[@id='ctl00_MainContent_ddlStudentGroup']","00 123 MR");
-
+		//To click on the run report
 		click("//input[@id='ctl00_MainContent_btnFilter']");
 	}
 }
