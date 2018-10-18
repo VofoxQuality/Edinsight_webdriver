@@ -244,10 +244,11 @@ public class Local_Assessment_Item_Analysisby_Student extends BaseClassOne
 		
 		try
 		{
+			//Application should be in the  Item Analysis by Student  Report Report page
 			
+			//Xpath of the testing summary link
 			String xpath="//*[@id='ctl00_MainContent_pnlReport']/table[2]/tbody/tr[1]/td[3]/a";
 			
-			//Application should be in the  Item Analysis by Student  Report Report page
 			//call TestingSummarypopup(); to check the Testing Summary pop-up functionality.
 			TestingSummary ob=new TestingSummary();
 			ob.TestingSummarypopup(xpath);	
