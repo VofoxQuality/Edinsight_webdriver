@@ -11,6 +11,35 @@ import Library.BaseClassOne;
 
 public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOne{
 	
+	
+	@Test(priority=1)
+	public void TCED14151() 
+	{
+		try
+		{
+	
+			
+	
+	
+	
+		}catch(Exception e) 
+		{
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@Test(priority=1)
 	public void TCED14124() 
 	{
@@ -20,7 +49,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			//Supertent Login
 			login(Supertent_Login_id,Supertent_Login_Password);
 			
-			//Click on main menu local Assignment.
+			//Click on main menu local Assessment.
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
 			
 			//To click on the analyze by Score
@@ -48,7 +77,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlSchool']"))).selectByVisibleText("Ashley High School");
 			
 			//To select the Teacher
-			new Select(driver.findElement(By.xpath("//input[@id='ctl00_MainContent_cmbStaff_Input']"))).selectByVisibleText("Ableton, A - 10");
+			new Select(driver.findElement(By.xpath("//select[@id='ctl00_MainContent_cmbStaff_Input']"))).selectByVisibleText("Ableton, A - 10");
 			
 			//To click on the run report
 			click("//*[@id='ctl00_MainContent_btnGenerateReport']");

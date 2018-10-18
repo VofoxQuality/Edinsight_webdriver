@@ -1,10 +1,12 @@
-package com.localassessment;
+package com.analyzeByScore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import Library.BaseClassOne;
+import com.generalMethods.AssessmentPrint;
+import com.generalMethods.TestingSummary;
 
+import Library.BaseClassOne;
 public class Local_Assessment_Item_Analysisby_Student extends BaseClassOne
 
 {
@@ -238,28 +240,112 @@ public class Local_Assessment_Item_Analysisby_Student extends BaseClassOne
 	}
 	@Test(priority=6)
 	public void TCED14127()
-	{	
-		//Application should be in the  Item Analysis by Student  Report Report page
+	{
 		
-		//Click on Testing Summary Link
-		click("//*[@id='ctl00_MainContent_pnlReport']/table[2]/tbody/tr[1]/td[3]/a");
-		
-		//Assert the Label Testing Summary
-		click("//*[@id='RadWindowWrapper_rwTestSummery']/div[1]/div/ul/li[4]");   
-		Assert.assertEquals(getText("//*[@id='aspnetForm']/div[4]/div[2]/table/tbody/tr[1]/td/span[1]"),"Testing Summary");
-		
-		//Assert the Label School with the highest completion rate
-		Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_lblSchoolHCompletionRate']").contains("School with the highest completion rate"),"failed to assert text-School with the highest completion rate");
-		
-		//Assert the label School with the lowest completion rate
-		Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_lblSchoolLCompletetionRate']").contains("School with the lowest completion rate"),"failed to assert text-School with the lowest completion rate");
-		
-		//Assert the Grid heading School/Building 
-		Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[1]/a"),"School/Building");
-		
-//		Assert the Grid heading SScheduled Students 
-//		Assert the Grid heading SCompleted 
-//		Assert the Grid heading SNot Completed
+		try
+		{
+			//Application should be in the  Item Analysis by Student  Report Report page
+			
+			//Xpath of the testing summary link
+			String xpath="//*[@id='ctl00_MainContent_pnlReport']/table[2]/tbody/tr[1]/td[3]/a";
+			
+			//call TestingSummarypopup(); to check the Testing Summary pop-up functionality.
+			TestingSummary ob=new TestingSummary();
+			ob.TestingSummarypopup(xpath);	
+
+		} 
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}		
+	}
+	@Test(priority=7)
+	public void TCED14128()
+	{
+		try {
+			
+			AssessmentPrint ob=new AssessmentPrint();
+			ob.AssessmentPrintReports();
+//			//Application should be in the  Item Analysis by Question  Report Report page
+//			
+//			//To click here to see the test
+//			click("//a[@id='ctl00_MainContent_lnkassessmentPDF']");
+//			
+//			//To select the frame
+//			SwitchFrameName("Assessment Print");
+//			
+//			//To delete all the files in the directory
+//			FileDelete();
+//			
+//			//To click print pdf
+//			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
+//			
+//			Thread.sleep(4000);
+//			//Assert the generated Pdf file
+//			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+//			
+//			//To click on the print word		
+//			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']");
+//			
+//			//Assert the generated word file
+//			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+//			
+//			//To delete all the files in the directory
+//			FileDelete();
+//			
+//			//To click on the Print OE to PDF		
+//			click("//*[@id='ctl00_ContentPlaceHolder1_linkOePdfQuestions']");
+//			
+//			//Assert the generated pdf file
+//			Thread.sleep(4000);
+//			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");	
+//			
+//			//To click on the OE to Word		
+//			click("//*[@id='ctl00_ContentPlaceHolder1_linkOeWordQuestions']");
+//			
+//			//Assert the generated doc file
+//			Thread.sleep(4000);
+//			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+//
+//			//*******Print answer Key**********************
+//			
+//			//To delete all the files in the directory
+//			FileDelete();
+//			
+//			//To click print pdf
+//			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfAnswer']");
+//			Thread.sleep(4000);
+//			//Assert the generated pdf file
+//			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+//			
+//			//To click on the print word		
+//			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordAnswer']");
+//			
+//			//Assert the generated doc file
+//			Thread.sleep(4000);
+//			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+//			
+//			//To delete all the files in the directory
+//			FileDelete();
+//			
+//			//To click on the Print OE to PDF
+//			Thread.sleep(3000);
+//			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedPDF']");
+//			
+//			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+//			
+//			//To click on the OE to Word
+//			Thread.sleep(3000);
+//			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedWord']");
+//			
+//			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+		} 
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}
 		
 	}
 

@@ -529,6 +529,7 @@ public class Assessments extends BaseClassOne
 			js.executeScript("scroll(0,50)");
 			Takescreenshot("Biology_CDT_2015-16_graph");
 			
+			
 			//Select Testing Subject as Reading/Lit grades 6-HS
 			js.executeScript("scroll(0,0)");	
 			sel1.selectByIndex(1);
