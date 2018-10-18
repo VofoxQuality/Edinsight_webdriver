@@ -4,8 +4,8 @@ import org.testng.Assert;
 
 import Library.BaseClassOne;
 
-public class AssessmentPrint extends BaseClassOne{
-
+public class AssessmentPrint extends BaseClassOne
+{
 	
 	public void AssessmentPrintReports() throws InterruptedException
 	
