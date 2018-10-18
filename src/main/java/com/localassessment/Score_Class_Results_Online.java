@@ -322,3 +322,4 @@ public class Score_Class_Results_Online extends BaseClassOne {
 			}
 		  }	
 }
+

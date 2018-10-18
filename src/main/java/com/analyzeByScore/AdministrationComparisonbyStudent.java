@@ -228,14 +228,17 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 			
 			//To click on the Add selected students to group
 			click("//span[contains(text(),'Add selected students to group')]");
+			
 			// To switch to frame
 			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
 			
 			Thread.sleep(2000);
+			
 			// To Assert the Validation Messages
 			Assert.assertEquals( "Add Students to Group:", getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"));	
 
-			Assert.assertEquals( "Create New Group:", getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"));	
+			Assert.assertEquals( "Create New Group:", getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"));
+			
 			// To switch to default frame
 			driver.switchTo().defaultContent();
 			// To close popup
@@ -359,6 +362,7 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 			//To click on the Add all students to group
 			WebDriverWait wait = new WebDriverWait(driver,30);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Add all students to group')]")));
+			
 			click("//span[contains(text(),'Add all students to group')]");
 			// To switch new frame
 			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
