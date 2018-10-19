@@ -1,33 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="16" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25908" started-at="2018-10-19T09:15:21Z" finished-at="2018-10-19T09:15:47Z">
+  <suite name="Default suite" duration-ms="99537" started-at="2018-10-19T13:28:04Z" finished-at="2018-10-19T13:29:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25908" started-at="2018-10-19T09:15:21Z" finished-at="2018-10-19T09:15:47Z">
-      <class name="com.administerAssessment.Create_New_Administration">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.administerAssessment.Create_New_Administration@17d0008]" name="setup1" is-config="true" duration-ms="13663" started-at="2018-10-19T14:45:21Z" finished-at="2018-10-19T14:45:35Z">
+    <test name="Default test" duration-ms="99537" started-at="2018-10-19T13:28:04Z" finished-at="2018-10-19T13:29:44Z">
+      <class name="com.Home.Assessments">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Assessments@149dace]" name="setup1" is-config="true" duration-ms="7975" started-at="2018-10-19T18:58:04Z" finished-at="2018-10-19T18:58:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED11001()[pri:1, instance:com.administerAssessment.Create_New_Administration@17d0008]" name="TCED11001" duration-ms="6782" started-at="2018-10-19T14:45:35Z" finished-at="2018-10-19T14:45:42Z">
+        <test-method status="PASS" signature="TCED34201()[pri:0, instance:com.Home.Assessments@149dace]" name="TCED34201" duration-ms="13795" started-at="2018-10-19T18:58:12Z" finished-at="2018-10-19T18:58:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED11001 -->
-        <test-method status="PASS" signature="TCED11002()[pri:2, instance:com.administerAssessment.Create_New_Administration@17d0008]" name="TCED11002" duration-ms="5424" started-at="2018-10-19T14:45:42Z" finished-at="2018-10-19T14:45:47Z">
+        </test-method> <!-- TCED34201 -->
+        <test-method status="PASS" signature="TCED34202()[pri:1, instance:com.Home.Assessments@149dace]" name="TCED34202" duration-ms="152" started-at="2018-10-19T18:58:26Z" finished-at="2018-10-19T18:58:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED11002 -->
-        <test-method status="PASS" signature="TCED11003()[pri:3, instance:com.administerAssessment.Create_New_Administration@17d0008]" name="TCED11003" duration-ms="2" started-at="2018-10-19T14:45:47Z" finished-at="2018-10-19T14:45:47Z">
+        </test-method> <!-- TCED34202 -->
+        <test-method status="PASS" signature="TCED34203()[pri:2, instance:com.Home.Assessments@149dace]" name="TCED34203" duration-ms="2032" started-at="2018-10-19T18:58:26Z" finished-at="2018-10-19T18:58:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED11003 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.administerAssessment.Create_New_Administration@17d0008]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-19T14:45:47Z" finished-at="2018-10-19T14:45:47Z">
+        </test-method> <!-- TCED34203 -->
+        <test-method status="PASS" signature="TCED34204()[pri:3, instance:com.Home.Assessments@149dace]" name="TCED34204" duration-ms="227" started-at="2018-10-19T18:58:28Z" finished-at="2018-10-19T18:58:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34204 -->
+        <test-method status="PASS" signature="TCED34205()[pri:4, instance:com.Home.Assessments@149dace]" name="TCED34205" duration-ms="11370" started-at="2018-10-19T18:58:29Z" finished-at="2018-10-19T18:58:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34205 -->
+        <test-method status="PASS" signature="TCED34206()[pri:5, instance:com.Home.Assessments@149dace]" name="TCED34206" duration-ms="6370" started-at="2018-10-19T18:58:40Z" finished-at="2018-10-19T18:58:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34206 -->
+        <test-method status="PASS" signature="TCED34207()[pri:6, instance:com.Home.Assessments@149dace]" name="TCED34207" duration-ms="351" started-at="2018-10-19T18:58:46Z" finished-at="2018-10-19T18:58:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34207 -->
+        <test-method status="PASS" signature="TCED34208()[pri:7, instance:com.Home.Assessments@149dace]" name="TCED34208" duration-ms="3250" started-at="2018-10-19T18:58:47Z" finished-at="2018-10-19T18:58:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34208 -->
+        <test-method status="PASS" signature="TCED34209()[pri:8, instance:com.Home.Assessments@149dace]" name="TCED34209" duration-ms="11301" started-at="2018-10-19T18:58:50Z" finished-at="2018-10-19T18:59:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34209 -->
+        <test-method status="PASS" signature="TCED34210()[pri:9, instance:com.Home.Assessments@149dace]" name="TCED34210" duration-ms="5259" started-at="2018-10-19T18:59:01Z" finished-at="2018-10-19T18:59:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34210 -->
+        <test-method status="PASS" signature="TCED34211()[pri:10, instance:com.Home.Assessments@149dace]" name="TCED34211" duration-ms="1481" started-at="2018-10-19T18:59:07Z" finished-at="2018-10-19T18:59:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34211 -->
+        <test-method status="PASS" signature="TCED34212()[pri:11, instance:com.Home.Assessments@149dace]" name="TCED34212" duration-ms="6740" started-at="2018-10-19T18:59:08Z" finished-at="2018-10-19T18:59:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34212 -->
+        <test-method status="PASS" signature="TCED34213()[pri:12, instance:com.Home.Assessments@149dace]" name="TCED34213" duration-ms="11281" started-at="2018-10-19T18:59:15Z" finished-at="2018-10-19T18:59:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34213 -->
+        <test-method status="PASS" signature="TCED34214()[pri:13, instance:com.Home.Assessments@149dace]" name="TCED34214" duration-ms="5897" started-at="2018-10-19T18:59:26Z" finished-at="2018-10-19T18:59:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34214 -->
+        <test-method status="PASS" signature="TCED34215()[pri:14, instance:com.Home.Assessments@149dace]" name="TCED34215" duration-ms="297" started-at="2018-10-19T18:59:32Z" finished-at="2018-10-19T18:59:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34215 -->
+        <test-method status="PASS" signature="TCED34216()[pri:15, instance:com.Home.Assessments@149dace]" name="TCED34216" duration-ms="11703" started-at="2018-10-19T18:59:32Z" finished-at="2018-10-19T18:59:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED34216 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Assessments@149dace]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-19T18:59:44Z" finished-at="2018-10-19T18:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.administerAssessment.Create_New_Administration -->
+      </class> <!-- com.Home.Assessments -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

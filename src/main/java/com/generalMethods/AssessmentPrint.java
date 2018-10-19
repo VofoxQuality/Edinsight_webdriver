@@ -11,7 +11,7 @@ public class AssessmentPrint extends BaseClassOne
 	
 	{
 		//To click here to see the test
-		click("//a[@id='ctl00_MainContent_lnkassessmentPDF']");
+		//click("//a[@id='ctl00_MainContent_lnkassessmentPDF']");
 
 		//To select the frame
 		SwitchFrameName("Assessment Print");
