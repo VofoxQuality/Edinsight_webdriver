@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Home.Data_sets">
+      <class name="com.curriculum.Batch_Print">
         <methods>
+          <include name="TCED28104"/>
           <include name="setup1"/>
-          <include name="TCED34703"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Home.Data_sets -->
+      </class> <!-- com.curriculum.Batch_Print -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

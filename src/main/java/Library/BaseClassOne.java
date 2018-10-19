@@ -3,21 +3,17 @@ package Library;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -58,12 +54,9 @@ public class BaseClassOne	{
 	 public static WebDriver driver;
 	 public String  baseUrl = "http://192.168.10.124/Edinsight/Login.aspx";
 	 //Sebastian
-	 protected  String downloadPath="D:\\selenium_downloads";
+	// protected  String downloadPath="D:\\selenium_downloads";
 	 //Manoj
-	//protected  String downloadPath="E:\\selenium_downloads";
-	 //Ans
-		//protected  String downloadPath="E:\\selenium_downloads";
-	
+	 protected  String downloadPath="E:\\selenium_downloads";
 	 
 	 int i=0;
 	
@@ -72,26 +65,20 @@ public class BaseClassOne	{
 	 protected String Supertent_Login_Password="password1!"; 
 	 
 	@BeforeTest
-	 public void setup1() 
+	 public void setup1() throws Exception
 	 { 
 		//FirefoxProfile profile=Browser_Preference();
 		
 		//Sebastian
-		//System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
 		//Akhil 
-		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		//Manoj
-		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
-		//Ans
-		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
-		
+		System.setProperty("webdriver.gecko.driver", "E:\\Jars\\geckodriver.exe");
 		
 		
 		FirefoxProfile profile = new FirefoxProfile();
 		profile.setPreference("browser.download.folderList", 2);
-		profile.setPreference("browser.download.panel.shown", false);
-		profile.setPreference("browser.download.forbid_open_with", false);
-		profile.setPreference("browser.download.animateNotifications", false);
 		profile.setPreference("browser.download.dir",downloadPath);
 		profile.setPreference("browser.download.manager.alertOnEXEOpen", false);
 		profile.setPreference("browser.helperApps.neverAsk.openFile", false);
@@ -122,7 +109,7 @@ public class BaseClassOne	{
 	 } 
 	 @AfterTest
     public void tearDown() throws Exception { 
-	//driver.close();	 
+	driver.close();	 
 	//driver.quit();
     
 	 }
@@ -595,7 +582,8 @@ public class BaseClassOne	{
 	//To scroll Down to the end of the page
 	public void Scroll_DowntoEnd()
 	{
-		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		((JavascriptExecutor) driver)
+	     .executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	}
 	//To scroll to a specific location.
 	public void ScrollTo_Location(String locator)
@@ -603,19 +591,6 @@ public class BaseClassOne	{
 		WebElement element = find(locator);
 		((JavascriptExecutor) driver).executeScript(
 		"arguments[0].scrollIntoView();", element);
-	}
-	//To tkae the screen shot
-	public void Takescreenshot(String ScreenshotName)
-	{
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		TakesScreenshot ts=	(TakesScreenshot)driver;
-		File src= ts.getScreenshotAs(OutputType.FILE);	  
-		try {
-			FileUtils.copyFile(src, new File("./Screenshots/"+ScreenshotName+".png"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 	
 	//*****************************************Test Listner *********************************	

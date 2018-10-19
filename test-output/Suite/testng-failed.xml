@@ -1,16 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.curriculum.Copy_Current_Map">
+=======
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.curriculum.CTE_Competency_List">
+=======
+      <class name="com.curriculum.Custom_Reports">
+>>>>>>> 6cd676a43c8e0574ac199e42d03a170d6276e447
+>>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
+=======
+      <class name="com.localassessment.Test_Suite_Print_Login_Codes">
+>>>>>>> a8f36b0b59f0ed8b2999846678bd1e912e7a754b
+        <methods>
+          <include name="setup1"/>
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <include name="TCED29505"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.curriculum.Copy_Current_Map -->
+=======
+<<<<<<< HEAD
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.curriculum.CTE_Competency_List -->
+=======
+          <include name="TCED30604"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.curriculum.Custom_Reports -->
+>>>>>>> 6cd676a43c8e0574ac199e42d03a170d6276e447
+>>>>>>> 1677a849cef6f166f07d7cff915d71cdce9127a2
+=======
+          <include name="TCED13304"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.localassessment.Test_Suite_Print_Login_Codes -->
+>>>>>>> a8f36b0b59f0ed8b2999846678bd1e912e7a754b
+=======
+      <class name="com.Home.Assessments">
+=======
       <class name="com.analyzeByScore.Local_Assessment_Item_Analysisby_Student">
+>>>>>>> 572698dd5b4f4704a10e18a1dbead191e8485a3c
         <methods>
           <include name="TCED14128"/>
           <include name="TCED14127"/>
           <include name="setup1"/>
           <include name="tearDown"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.Home.Assessments -->
+>>>>>>> de8b4e81669758e5d39860150bb05f319d9fd202
+=======
       </class> <!-- com.analyzeByScore.Local_Assessment_Item_Analysisby_Student -->
+>>>>>>> 572698dd5b4f4704a10e18a1dbead191e8485a3c
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
