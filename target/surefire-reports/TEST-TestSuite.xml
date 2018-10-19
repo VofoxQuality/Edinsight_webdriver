@@ -1,58 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="39.969" tests="3" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="29.67" tests="5" errors="0" skipped="4" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\bin"/>
-    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
+    <property name="java.vm.version" value="25.181-b13"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="E:\EdignSight Webdriver"/>
+    <property name="maven.multiModuleProjectDirectory" value="F:\Vofox-Webdriver\Edinsight"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="IN"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="E:\EdignSight Webdriver"/>
-    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="user.dir" value="F:\Vofox-Webdriver\Edinsight"/>
+    <property name="java.runtime.version" value="1.8.0_181-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\SEBAST~1.VOF\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\WINDOWS\TEMP\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="E:\Git Work Space\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1854066877743467108.tmp"/>
+    <property name="classworlds.conf" value="E:\apache-maven-3.5.4\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_121/bin/server;C:/Program Files/Java/jre1.8.0_121/bin;C:/Program Files/Java/jre1.8.0_121/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Windows Live\Shared;D:\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Users\sebastian.VOFOX\AppData\Local\Microsoft\WindowsApps;C:\Users\sebastian.VOFOX\AppData\Local\Programs\Git\cmd;C:\Users\sebastian.VOFOX\AppData\Roaming\npm;;D:\eclipse-jee-neon-3-win32-x86_64\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_181/bin;C:\Program Files\Java\jdk1.8.0_181/bin;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;E:\apache-maven-3.5.4\bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="maven.conf" value="E:\apache-maven-3.5.4\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\sebastian.VOFOX"/>
+    <property name="library.jansi.path" value="E:\apache-maven-3.5.4\bin\..\lib\jansi-native"/>
+    <property name="surefire.suiteXmlFiles" value="VED0054-Tier_History_Report.xml"/>
+    <property name="user.home" value="C:\WINDOWS\system32\config\systemprofile"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="sebastian"/>
-    <property name="java.class.path" value="/D:/eclipse-jee-neon-3-win32-x86_64/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="user.name" value="QA-SCHEDULER$"/>
+    <property name="java.class.path" value="E:\apache-maven-3.5.4\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_111\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dsurefire.suiteXmlFiles=VED0054-Tier_History_Report.xml"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_111"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_111\jre\classes"/>
+    <property name="java.version" value="1.8.0_181"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="E:\EdignSight Webdriver\EMBEDDED"/>
+    <property name="maven.home" value="E:\apache-maven-3.5.4\bin\.."/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -60,7 +63,204 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TCED22706" classname="com.MTSS.TierHistoryReport" time="21.339"/>
-  <testcase name="TCED22707" classname="com.MTSS.TierHistoryReport" time="9.327"/>
-  <testcase name="TCED22711" classname="com.MTSS.TierHistoryReport" time="9.303"/>
+  <testcase name="setup1" classname="com.MTSS.TierHistoryReport" time="29.67">
+    <failure message="Reached error page: about:neterror?e=netTimeout&amp;u=http%3A//192.168.10.124/Edinsight/Login.aspx&amp;c=UTF-8&amp;f=regular&amp;d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.&#10;Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;&#10;System info: host: &apos;QA-SCHEDULER&apos;, ip: &apos;192.168.10.111&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7024, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}&#10;Session ID: 3b3ca0dc-cfb8-484a-8da7-a8b1a52e2c02" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7024, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3b3ca0dc-cfb8-484a-8da7-a8b1a52e2c02
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
+	at Library.BaseClassOne.setup1(BaseClassOne.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]></failure>
+    <system-err><![CDATA[1539023824801	geckodriver	INFO	geckodriver 0.20.1
+1539023824806	geckodriver	INFO	Listening on 127.0.0.1:32355
+1539023825496	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\WINDOWS\\TEMP\\rust_mozprofile.gQ54BWwAk2ZA"
+1539023825616	addons.manager	DEBUG	Application has been upgraded
+1539023825630	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: ["XPIProvider", "XPIInternal"]
+1539023825634	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: ["LightweightThemeManager"]
+1539023825646	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/GMPProvider.jsm
+1539023825648	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/PluginProvider.jsm
+1539023825649	addons.manager	DEBUG	Starting provider: XPIProvider
+1539023825650	addons.xpi	DEBUG	startup
+1539023825651	addons.xpi	INFO	SystemAddonLocation directory is missing
+1539023825658	addons.xpi	INFO	Removing all system add-on upgrades.
+1539023825659	addons.xpi	DEBUG	checkForChanges
+1539023825659	addons.xpi	DEBUG	Loaded add-on state: ${}
+1539023825660	addons.xpi	DEBUG	New add-on activity-stream@mozilla.org in app-system-defaults
+1539023825660	addons.xpi	DEBUG	New add-on aushelper@mozilla.org in app-system-defaults
+1539023825661	addons.xpi	DEBUG	New add-on firefox@getpocket.com in app-system-defaults
+1539023825661	addons.xpi	DEBUG	New add-on formautofill@mozilla.org in app-system-defaults
+1539023825662	addons.xpi	DEBUG	New add-on onboarding@mozilla.org in app-system-defaults
+1539023825662	addons.xpi	DEBUG	New add-on screenshots@mozilla.org in app-system-defaults
+1539023825663	addons.xpi	DEBUG	New add-on webcompat-reporter@mozilla.org in app-system-defaults
+1539023825663	addons.xpi	DEBUG	New add-on webcompat@mozilla.org in app-system-defaults
+1539023825664	addons.xpi	DEBUG	scanForChanges changed: true, state: {}
+1539023825668	addons.xpi-utils	DEBUG	Error: Synchronously loading the add-ons database (resource://gre/modules/addons/XPIDatabase.jsm:1329:15) JS Stack trace: syncLoadDB@XPIDatabase.jsm:1329:15
+checkForChanges@XPIProvider.jsm:2533:9
+startup@XPIProvider.jsm:2116:25
+callProvider@AddonManager.jsm:206:12
+_startProvider@AddonManager.jsm:654:5
+startup@AddonManager.jsm:813:9
+startup@AddonManager.jsm:2811:5
+observe@addonManager.js:66:9
+1539023825669	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Windows\Temp\rust_mozprofile.gQ54BWwAk2ZA\extensions.json
+1539023825691	addons.xpi-utils	DEBUG	New add-on activity-stream@mozilla.org installed in app-system-defaults
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1539023826014	addons.xpi-utils	DEBUG	New add-on aushelper@mozilla.org installed in app-system-defaults
+1539023826023	addons.xpi-utils	DEBUG	New add-on firefox@getpocket.com installed in app-system-defaults
+1539023826028	addons.xpi-utils	DEBUG	New add-on formautofill@mozilla.org installed in app-system-defaults
+1539023826034	addons.xpi-utils	DEBUG	New add-on onboarding@mozilla.org installed in app-system-defaults
+1539023826039	addons.xpi-utils	DEBUG	New add-on screenshots@mozilla.org installed in app-system-defaults
+1539023826045	addons.xpi-utils	DEBUG	New add-on webcompat-reporter@mozilla.org installed in app-system-defaults
+1539023826048	addons.xpi-utils	DEBUG	New add-on webcompat@mozilla.org installed in app-system-defaults
+1539023826049	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 27
+1539023826130	addons.manager	DEBUG	Registering startup change 'installed' for activity-stream@mozilla.org
+1539023826134	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1539023826136	addons.xpi	DEBUG	Calling bootstrap method install on activity-stream@mozilla.org version 2018.08.22.1219-93becf29
+1539023826136	addons.xpi-utils	DEBUG	Make addon app-system-defaults:activity-stream@mozilla.org visible
+1539023826136	addons.xpi	DEBUG	Updating XPIState for {"id":"activity-stream@mozilla.org","syncGUID":"{1d02e6a9-ba42-4ec3-bea2-586441fda525}","version":"2018.08.22.1219-93becf29","type":"extension","defaultLocale":{"name":"Activity Stream","description":"A rich visual history feed and a reimagined home page make it easier than ever to find exactly what you're looking for in Firefox."},"visible":true,"active":false,"userDisabled":false,"appDisabled":false,"installDate":1535646567086,"updateDate":1535646567086,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\activity-stream@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826137	addons.manager	DEBUG	Registering startup change 'installed' for aushelper@mozilla.org
+1539023826137	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1539023826142	addons.xpi	DEBUG	Calling bootstrap method install on aushelper@mozilla.org version 2.0
+1539023826143	addons.xpi-utils	DEBUG	Make addon app-system-defaults:aushelper@mozilla.org visible
+1539023826149	addons.xpi	DEBUG	Updating XPIState for {"id":"aushelper@mozilla.org","syncGUID":"{4e2756af-e0f1-41d4-9841-6d35e2ff0d75}","version":"2.0","type":"extension","defaultLocale":{"name":"Application Update Service Helper","description":"Sets value(s) in the update url based on custom checks."},"visible":true,"active":false,"userDisabled":false,"appDisabled":false,"installDate":1535646567087,"updateDate":1535646567087,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\aushelper@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826152	addons.manager	DEBUG	Registering startup change 'installed' for firefox@getpocket.com
+1539023826153	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1539023826158	addons.xpi	DEBUG	Calling bootstrap method install on firefox@getpocket.com version 1.0.5
+1539023826158	addons.xpi-utils	DEBUG	Make addon app-system-defaults:firefox@getpocket.com visible
+1539023826159	addons.xpi	DEBUG	Updating XPIState for {"id":"firefox@getpocket.com","syncGUID":"{5b2536ac-2446-48c7-bea1-32a7769826ff}","version":"1.0.5","type":"extension","defaultLocale":{"name":"Pocket","description":"When you find something you want to view later, put it in Pocket."},"visible":true,"active":false,"userDisabled":false,"appDisabled":false,"installDate":1535646567092,"updateDate":1535646567092,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\firefox@getpocket.com.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826162	addons.manager	DEBUG	Registering startup change 'installed' for formautofill@mozilla.org
+1539023826162	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1539023826165	addons.xpi	DEBUG	Calling bootstrap method install on formautofill@mozilla.org version 1.0
+1539023826165	addons.xpi-utils	DEBUG	Make addon app-system-defaults:formautofill@mozilla.org visible
+1539023826166	addons.xpi	DEBUG	Updating XPIState for {"id":"formautofill@mozilla.org","syncGUID":"{723d91cc-d476-4708-ba23-7a5ad71a5d73}","version":"1.0","type":"extension","defaultLocale":{"name":"Form Autofill","description":"Autofill forms with saved profiles"},"visible":true,"active":false,"userDisabled":false,"appDisabled":false,"installDate":1535646567095,"updateDate":1535646567095,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\formautofill@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826168	addons.manager	DEBUG	Registering startup change 'installed' for onboarding@mozilla.org
+1539023826169	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1539023826172	addons.xpi	DEBUG	Calling bootstrap method install on onboarding@mozilla.org version 1.0
+1539023826172	addons.xpi-utils	DEBUG	Make addon app-system-defaults:onboarding@mozilla.org visible
+1539023826173	addons.xpi	DEBUG	Updating XPIState for {"id":"onboarding@mozilla.org","syncGUID":"{24b9053d-ce74-45c7-908c-80b931bf7b2d}","version":"1.0","type":"extension","defaultLocale":{"name":"Photon onboarding","description":"Photon onboarding"},"visible":true,"active":false,"userDisabled":false,"appDisabled":false,"installDate":1535646567099,"updateDate":1535646567099,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\onboarding@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826176	addons.manager	DEBUG	Registering startup change 'installed' for screenshots@mozilla.org
+1539023826176	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1539023826179	addons.xpi	DEBUG	Calling bootstrap method install on screenshots@mozilla.org version 33.0.0
+1539023826179	addons.xpi-utils	DEBUG	Make addon app-system-defaults:screenshots@mozilla.org visible
+1539023826180	addons.xpi	DEBUG	Updating XPIState for {"id":"screenshots@mozilla.org","syncGUID":"{cdfb0055-3ed3-429b-811d-05078c88c7f7}","version":"33.0.0","type":"extension","defaultLocale":{"name":"Firefox Screenshots","homepageURL":"https://screenshots.firefox.com/"},"visible":true,"active":false,"userDisabled":false,"appDisabled":false,"installDate":1535646567105,"updateDate":1535646567105,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\screenshots@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"57.0a1","maxVersion":"*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826183	addons.manager	DEBUG	Registering startup change 'installed' for webcompat-reporter@mozilla.org
+1539023826183	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1539023826186	addons.xpi	DEBUG	Calling bootstrap method install on webcompat-reporter@mozilla.org version 1.0.0
+1539023826186	addons.xpi-utils	DEBUG	Make addon app-system-defaults:webcompat-reporter@mozilla.org visible
+1539023826186	addons.xpi	DEBUG	Updating XPIState for {"id":"webcompat-reporter@mozilla.org","syncGUID":"{c876fa35-74a3-47d9-811a-63e9fba497f4}","version":"1.0.0","type":"extension","defaultLocale":{"name":"WebCompat Reporter","description":"Report site compatibility issues on webcompat.com."},"visible":true,"active":false,"userDisabled":false,"appDisabled":false,"installDate":1535646567106,"updateDate":1535646567106,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\webcompat-reporter@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826189	addons.manager	DEBUG	Registering startup change 'installed' for webcompat@mozilla.org
+1539023826190	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1539023826192	addons.xpi	DEBUG	Calling bootstrap method install on webcompat@mozilla.org version 2.0
+1539023826192	addons.xpi-utils	DEBUG	Make addon app-system-defaults:webcompat@mozilla.org visible
+1539023826193	addons.xpi	DEBUG	Updating XPIState for {"id":"webcompat@mozilla.org","syncGUID":"{ec8f450f-bbbe-4abf-839b-024014b0a8b7}","version":"2.0","type":"extension","defaultLocale":{"name":"Web Compat","description":"Urgent post-release fixes for web compatibility."},"visible":true,"active":false,"userDisabled":false,"appDisabled":false,"installDate":1535646567106,"updateDate":1535646567106,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\webcompat@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"},{"id":"{aa3c5121-dab2-40e2-81ca-7ea25febc110}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":true,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826195	addons.xpi	DEBUG	Updating XPIState for {"id":"activity-stream@mozilla.org","syncGUID":"{1d02e6a9-ba42-4ec3-bea2-586441fda525}","version":"2018.08.22.1219-93becf29","type":"extension","defaultLocale":{"name":"Activity Stream","description":"A rich visual history feed and a reimagined home page make it easier than ever to find exactly what you're looking for in Firefox."},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"installDate":1535646567086,"updateDate":1535646567086,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\activity-stream@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826195	addons.xpi	DEBUG	Updating XPIState for {"id":"aushelper@mozilla.org","syncGUID":"{4e2756af-e0f1-41d4-9841-6d35e2ff0d75}","version":"2.0","type":"extension","defaultLocale":{"name":"Application Update Service Helper","description":"Sets value(s) in the update url based on custom checks."},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"installDate":1535646567087,"updateDate":1535646567087,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\aushelper@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826202	addons.xpi	DEBUG	Updating XPIState for {"id":"firefox@getpocket.com","syncGUID":"{5b2536ac-2446-48c7-bea1-32a7769826ff}","version":"1.0.5","type":"extension","defaultLocale":{"name":"Pocket","description":"When you find something you want to view later, put it in Pocket."},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"installDate":1535646567092,"updateDate":1535646567092,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\firefox@getpocket.com.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826204	addons.xpi	DEBUG	Updating XPIState for {"id":"formautofill@mozilla.org","syncGUID":"{723d91cc-d476-4708-ba23-7a5ad71a5d73}","version":"1.0","type":"extension","defaultLocale":{"name":"Form Autofill","description":"Autofill forms with saved profiles"},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"installDate":1535646567095,"updateDate":1535646567095,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\formautofill@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826208	addons.xpi	DEBUG	Updating XPIState for {"id":"onboarding@mozilla.org","syncGUID":"{24b9053d-ce74-45c7-908c-80b931bf7b2d}","version":"1.0","type":"extension","defaultLocale":{"name":"Photon onboarding","description":"Photon onboarding"},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"installDate":1535646567099,"updateDate":1535646567099,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\onboarding@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826211	addons.xpi	DEBUG	Updating XPIState for {"id":"screenshots@mozilla.org","syncGUID":"{cdfb0055-3ed3-429b-811d-05078c88c7f7}","version":"33.0.0","type":"extension","defaultLocale":{"name":"Firefox Screenshots","homepageURL":"https://screenshots.firefox.com/"},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"installDate":1535646567105,"updateDate":1535646567105,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\screenshots@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"57.0a1","maxVersion":"*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826214	addons.xpi	DEBUG	Updating XPIState for {"id":"webcompat-reporter@mozilla.org","syncGUID":"{c876fa35-74a3-47d9-811a-63e9fba497f4}","version":"1.0.0","type":"extension","defaultLocale":{"name":"WebCompat Reporter","description":"Report site compatibility issues on webcompat.com."},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"installDate":1535646567106,"updateDate":1535646567106,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\webcompat-reporter@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826217	addons.xpi	DEBUG	Updating XPIState for {"id":"webcompat@mozilla.org","syncGUID":"{ec8f450f-bbbe-4abf-839b-024014b0a8b7}","version":"2.0","type":"extension","defaultLocale":{"name":"Web Compat","description":"Urgent post-release fixes for web compatibility."},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"installDate":1535646567106,"updateDate":1535646567106,"applyBackgroundUpdates":1,"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\webcompat@mozilla.org.xpi","skinnable":false,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"62.0","maxVersion":"62.*"},{"id":"{aa3c5121-dab2-40e2-81ca-7ea25febc110}","minVersion":"62.0","maxVersion":"62.*"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":true,"userPermissions":null,"icons":{},"blocklistState":0,"blocklistURL":null,"startupData":null,"location":"app-system-defaults"}
+1539023826220	addons.xpi-utils	DEBUG	Updating add-on states
+1539023826223	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1539023826224	addons.xpi	DEBUG	Calling bootstrap method startup on activity-stream@mozilla.org version 2018.08.22.1219-93becf29
+1539023826225	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1539023826227	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1539023826228	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1539023826229	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1539023826234	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1539023826236	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1539023826237	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1539023826238	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1539023826239	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1539023826240	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 33.0.0
+1539023826241	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1539023826242	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1539023826243	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1539023826244	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0
+1539023826246	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1539023826246	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1539023826247	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1539023826247	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1539023826247	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1539023826248	addons.manager	DEBUG	Starting provider: GMPProvider
+1539023826250	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1539023826250	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1539023826251	addons.manager	DEBUG	Starting provider: PluginProvider
+1539023826251	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1539023826251	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1539023826253	addons.manager	DEBUG	Completed startup sequence
+1539023828574	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1539023828574	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1539023828574	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1539023828574	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1539023828574	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1539023828574	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1539023828574	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1539023828575	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1539023828575	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+1539023828645	Marionette	INFO	Listening on port 53845
+1539023829133	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539023829156	Marionette	DEBUG	[6442450945] Frame script loaded
+1539023829157	Marionette	DEBUG	[6442450945] Frame script registered
+Oct 09, 2018 12:07:09 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1539023832751	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539023846307	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/62.0/20180830143136/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0.17134.286%20(x64)/default/default/update.xml
+1539023853793	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1539023853800	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1539023853869	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for about:neterror?e=netTimeout&u=http%3A//192.168.10.124/Edinsight/Login.aspx&c=UTF-8&f=regular&d=The%20server%20at%20192.168.10.124%20is%20taking%20too%20long%20to%20respond.
+]]></system-err>
+  </testcase>
+  <testcase name="TCED22706" classname="com.MTSS.TierHistoryReport" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TCED22707" classname="com.MTSS.TierHistoryReport" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TCED22711" classname="com.MTSS.TierHistoryReport" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.MTSS.TierHistoryReport" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

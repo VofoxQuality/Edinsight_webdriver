@@ -17,9 +17,50 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 	{
 		try
 		{
-	
+			//Supertent Login
+			login(Supertent_Login_id,Supertent_Login_Password);
 			
+			//Click on main menu local Assessment.
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			
+			//To click on the analyze by Score
+			click("//a[contains(.,'Analyze Scores')]");
+			
+			//Click on  Studentasssessmentadminstration
+			click("//*[@id='ctl00_MainContent_hlnkAdministrationResults']");
+			// To Assert the header
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Results by Teacher");
+			
+			//To fill the the Test ID Search 
+			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
+			
+			//To click on the search button
+			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
+			
+			//To select the Assessment 
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessment']"))).selectByVisibleText("For Automation- do not edit");
+			
+			//To select the Administrations
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministration']"))).selectByVisibleText("For Automation- do not edit (Admin)(2017-2018)");
+			
+			//To click on the show administration results
+			click("//*[@id='ctl00_MainContent_btnShowResults']");
+			// To Assert the header
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");		
+			
+		}catch(Exception e) 
+		{
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}
+	}
 	
+
+	@Test(priority=2)
+	public void TCED14152() 
+	{
+		try
+		{
 	
 	
 		}catch(Exception e) 
@@ -36,11 +77,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 	
 	
 	
-	
-	
-	
-	
-	@Test(priority=1)
+//	@Test(priority=1)
 	public void TCED14124() 
 	{
 		try
@@ -99,7 +136,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 		}
 	}
 	
-	@Test(priority=2)
+	//@Test(priority=2)
 	public void TCED14157() 
 	{
 		try
@@ -120,7 +157,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Assert.fail(e.getMessage());
 		}
 	}	
-		@Test(priority=3)
+//		@Test(priority=3)
 		public void TCED14159() 
 		{
 			try
@@ -151,7 +188,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			}
 		}
 		
-		@Test(priority=4)
+	//	@Test(priority=4)
 		public void TCED14160() 
 		{
 			try
@@ -172,7 +209,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 				Assert.fail(e.getMessage());
 			}
 		}
-		@Test(priority=4)
+	//	@Test(priority=4)
 		public void TCED14164() 
 		{
 			try
@@ -199,7 +236,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 				Assert.fail(e.getMessage());
 			}
 		}
-		@Test(priority=5)
+	//	@Test(priority=5)
 		public void TCED14165()
 		{
 			try
@@ -280,7 +317,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 				Assert.fail(e.getMessage());
 			}	
 			}
-		@Test(priority=6)
+	//	@Test(priority=6)
 		public void TCED14166()
 		{
 			try

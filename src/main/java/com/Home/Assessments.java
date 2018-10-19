@@ -542,7 +542,7 @@ public class Assessments extends BaseClassOne
 			//Verify the "VOCABULARY ACQUISITION AND USE" graph is exists in the page.
 			js.executeScript("scroll(0,50)");			
 				  
-			Takescreenshot("Reading_Lit grades_6-HSCDT_CDT_2015-16_graph");				
+	    	Takescreenshot("Reading_Lit grades_6-HSCDT_CDT_2015-16_graph");				
 			
 		} 
 		catch (Exception e)
