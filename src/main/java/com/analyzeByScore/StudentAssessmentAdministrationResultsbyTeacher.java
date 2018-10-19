@@ -55,9 +55,20 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 		}
 	}
 	
+
+	@Test(priority=2)
+	public void TCED14152() 
+	{
+		try
+		{
 	
 	
-	
+		}catch(Exception e) 
+		{
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}
+	}
 	
 	
 	
