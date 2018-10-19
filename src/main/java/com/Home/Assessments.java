@@ -527,7 +527,7 @@ public class Assessments extends BaseClassOne
 			//Verify the "CELL GROWTH AND REPRODUCTION/GENETICS " graph is exists in the page.
 			//Verify the "THEORY OF EVOLUTION/ECOLOGY" graph is exists in the page.
 			js.executeScript("scroll(0,50)");
-	//		Takescreenshot("Biology_CDT_2015-16_graph");
+			Takescreenshot("Biology_CDT_2015-16_graph");
 			
 			
 			//Select Testing Subject as Reading/Lit grades 6-HS
@@ -542,7 +542,7 @@ public class Assessments extends BaseClassOne
 			//Verify the "VOCABULARY ACQUISITION AND USE" graph is exists in the page.
 			js.executeScript("scroll(0,50)");			
 				  
-	//		Takescreenshot("Reading_Lit grades_6-HSCDT_CDT_2015-16_graph");				
+	    	Takescreenshot("Reading_Lit grades_6-HSCDT_CDT_2015-16_graph");				
 			
 		} 
 		catch (Exception e)

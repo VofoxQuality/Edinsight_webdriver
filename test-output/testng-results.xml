@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20771" started-at="2018-10-19T08:59:08Z" finished-at="2018-10-19T08:59:29Z">
+  <suite name="Default suite" duration-ms="25908" started-at="2018-10-19T09:15:21Z" finished-at="2018-10-19T09:15:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20771" started-at="2018-10-19T08:59:08Z" finished-at="2018-10-19T08:59:29Z">
-      <class name="com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@4f7d0008]" name="setup1" is-config="true" duration-ms="10800" started-at="2018-10-19T14:29:08Z" finished-at="2018-10-19T14:29:19Z">
+    <test name="Default test" duration-ms="25908" started-at="2018-10-19T09:15:21Z" finished-at="2018-10-19T09:15:47Z">
+      <class name="com.administerAssessment.Create_New_Administration">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.administerAssessment.Create_New_Administration@17d0008]" name="setup1" is-config="true" duration-ms="13663" started-at="2018-10-19T14:45:21Z" finished-at="2018-10-19T14:45:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED14151()[pri:1, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@4f7d0008]" name="TCED14151" duration-ms="9944" started-at="2018-10-19T14:29:19Z" finished-at="2018-10-19T14:29:29Z">
+        <test-method status="PASS" signature="TCED11001()[pri:1, instance:com.administerAssessment.Create_New_Administration@17d0008]" name="TCED11001" duration-ms="6782" started-at="2018-10-19T14:45:35Z" finished-at="2018-10-19T14:45:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14151 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@4f7d0008]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-19T14:29:29Z" finished-at="2018-10-19T14:29:29Z">
+        </test-method> <!-- TCED11001 -->
+        <test-method status="PASS" signature="TCED11002()[pri:2, instance:com.administerAssessment.Create_New_Administration@17d0008]" name="TCED11002" duration-ms="5424" started-at="2018-10-19T14:45:42Z" finished-at="2018-10-19T14:45:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED11002 -->
+        <test-method status="PASS" signature="TCED11003()[pri:3, instance:com.administerAssessment.Create_New_Administration@17d0008]" name="TCED11003" duration-ms="2" started-at="2018-10-19T14:45:47Z" finished-at="2018-10-19T14:45:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED11003 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.administerAssessment.Create_New_Administration@17d0008]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-19T14:45:47Z" finished-at="2018-10-19T14:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher -->
+      </class> <!-- com.administerAssessment.Create_New_Administration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
