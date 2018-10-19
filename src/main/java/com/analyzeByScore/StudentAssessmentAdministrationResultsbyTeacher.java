@@ -17,6 +17,20 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 	{
 		try
 		{
+			//Supertent Login
+			login(Supertent_Login_id,Supertent_Login_Password);
+			
+			//Click on main menu local Assessment.
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			
+			//To click on the analyze by Score
+			click("//a[contains(.,'Analyze Scores')]");
+			
+			//Click on  Studentasssessmentadminstration
+			click("//*[@id='ctl00_MainContent_hlnkAdministrationResults']");
+			
+			
+			
 	
 			
 	
@@ -40,7 +54,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 	
 	
 	
-	@Test(priority=1)
+//	@Test(priority=1)
 	public void TCED14124() 
 	{
 		try
@@ -99,7 +113,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 		}
 	}
 	
-	@Test(priority=2)
+	//@Test(priority=2)
 	public void TCED14157() 
 	{
 		try
@@ -120,7 +134,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Assert.fail(e.getMessage());
 		}
 	}	
-		@Test(priority=3)
+//		@Test(priority=3)
 		public void TCED14159() 
 		{
 			try
@@ -151,7 +165,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			}
 		}
 		
-		@Test(priority=4)
+	//	@Test(priority=4)
 		public void TCED14160() 
 		{
 			try
@@ -172,7 +186,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 				Assert.fail(e.getMessage());
 			}
 		}
-		@Test(priority=4)
+	//	@Test(priority=4)
 		public void TCED14164() 
 		{
 			try
@@ -199,7 +213,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 				Assert.fail(e.getMessage());
 			}
 		}
-		@Test(priority=5)
+	//	@Test(priority=5)
 		public void TCED14165()
 		{
 			try
@@ -280,7 +294,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 				Assert.fail(e.getMessage());
 			}	
 			}
-		@Test(priority=6)
+	//	@Test(priority=6)
 		public void TCED14166()
 		{
 			try
