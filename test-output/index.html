@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>D:\Users\Akhil-TS\AppData\Local\Temp\testng-eclipse--1134263880\testng-customsuite.xml</span>
+                    <span>D:\Users\Akhil-TS\AppData\Local\Temp\testng-eclipse-1867407477\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,16 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.administerAssessment.Create_New_Administration" hash-for-method="TCED11001">TCED11001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.administerAssessment.Create_New_Administration" hash-for-method="TCED11002">TCED11002</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.administerAssessment.Create_New_Administration" hash-for-method="TCED11003">TCED11003</a> <!-- method navigator-link -->
@@ -125,6 +135,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="TCED11001">
+                  </a> <!-- TCED11001 -->
+                  <span class="method-name">TCED11001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCED11002">
+                  </a> <!-- TCED11002 -->
+                  <span class="method-name">TCED11002</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="TCED11003">
                   </a> <!-- TCED11003 -->
                   <span class="method-name">TCED11003</span>
@@ -135,7 +159,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Users\Akhil-TS\AppData\Local\Temp\testng-eclipse--1134263880\testng-customsuite.xml</span>
+            <span class="header-content">D:\Users\Akhil-TS\AppData\Local\Temp\testng-eclipse-1867407477\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,11 +168,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.administerAssessment.Create_New_Administration&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;TCED11003&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.administerAssessment.Create_New_Administration --&gt;
+      &lt;class name=&quot;com.administerAssessment.Create_New_Administration&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -188,16 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TCED11003')
+data.setCell(0, 1, 'TCED11001')
 data.setCell(0, 2, 'com.administerAssessment.Create_New_Administration')
-data.setCell(0, 3, 7);
+data.setCell(0, 3, 6782);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TCED11002')
+data.setCell(1, 2, 'com.administerAssessment.Create_New_Administration')
+data.setCell(1, 3, 5424);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TCED11003')
+data.setCell(2, 2, 'com.administerAssessment.Create_New_Administration')
+data.setCell(2, 3, 2);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 ms</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -212,18 +240,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.administerAssessment.Create_New_Administration</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TCED11001</span>
-                <br/>
-                <span class="ignored-method-name">TCED11002</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -238,12 +257,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <span class="method-name">TCED11001</span>
+                <span class="method-start">13679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TCED11002</span>
+                <span class="method-start">20464 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">TCED11003</span>
-                <span class="method-start">15744 ms</span>
+                <span class="method-start">25896 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15755 ms</span>
+                <span class="method-start">25903 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
