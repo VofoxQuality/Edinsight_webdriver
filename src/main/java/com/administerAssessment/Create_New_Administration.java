@@ -28,15 +28,33 @@ public class Create_New_Administration extends BaseClassOne
     @Test(priority=2)
 	public void TCED11002()
 	{
-		//Click on main menu local assessment.
-		click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-		
-		//Click Manage Assessments menu
-		click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[5]/div/a");
-		
-		//Search a Test
-		type("//*[@id='ctl00_MainContent_txtTestId']",test_id);
-		
+		try
+		{
+			//Click on main menu local assessment.
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			
+			//Click Manage Assessments menu
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[5]/div/a");
+			
+			//Search a Test
+			type("//*[@id='ctl00_MainContent_txtTestId']",test_id);
+			click("//*[@id='ctl00_MainContent_btnTestIdSearch']");
+			
+			//Click on Create New Administration
+			click("//*[@id='ctl00_MainContent_grdMyAssessments_ctl02_lnkCreate']");
+			
+			//Asert the the Header Name as "Assessment Administration Add/Edit"
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[1]/td/span"),"Assessment Administration Add/Edit");
+		}
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}	
+    }
+    @Test(priority=3)
+	public void TCED11003()
+	{
     	
 	}
 }

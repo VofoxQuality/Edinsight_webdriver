@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45441" started-at="2018-10-18T12:18:54Z" finished-at="2018-10-18T12:19:39Z">
+  <suite name="Default suite" duration-ms="15762" started-at="2018-10-19T09:10:17Z" finished-at="2018-10-19T09:10:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45441" started-at="2018-10-18T12:18:54Z" finished-at="2018-10-18T12:19:39Z">
-      <class name="com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits@17d0008]" name="setup1" is-config="true" duration-ms="26963" started-at="2018-10-18T17:48:54Z" finished-at="2018-10-18T17:49:21Z">
+    <test name="Default test" duration-ms="15762" started-at="2018-10-19T09:10:17Z" finished-at="2018-10-19T09:10:32Z">
+      <class name="com.administerAssessment.Create_New_Administration">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.administerAssessment.Create_New_Administration@100df86]" name="setup1" is-config="true" duration-ms="15731" started-at="2018-10-19T14:40:17Z" finished-at="2018-10-19T14:40:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED16501()[pri:1, instance:com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits@17d0008]" name="TCED16501" duration-ms="6716" started-at="2018-10-18T17:49:21Z" finished-at="2018-10-18T17:49:27Z">
+        <test-method status="PASS" signature="TCED11003()[pri:3, instance:com.administerAssessment.Create_New_Administration@100df86]" name="TCED11003" duration-ms="7" started-at="2018-10-19T14:40:32Z" finished-at="2018-10-19T14:40:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED16501 -->
-        <test-method status="PASS" signature="TCED16502()[pri:2, instance:com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits@17d0008]" name="TCED16502" duration-ms="3589" started-at="2018-10-18T17:49:27Z" finished-at="2018-10-18T17:49:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED16502 -->
-        <test-method status="PASS" signature="TCED16503()[pri:3, instance:com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits@17d0008]" name="TCED16503" duration-ms="202" started-at="2018-10-18T17:49:31Z" finished-at="2018-10-18T17:49:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED16503 -->
-        <test-method status="PASS" signature="TCED16504()[pri:4, instance:com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits@17d0008]" name="TCED16504" duration-ms="235" started-at="2018-10-18T17:49:31Z" finished-at="2018-10-18T17:49:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED16504 -->
-        <test-method status="PASS" signature="TCED16505()[pri:5, instance:com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits@17d0008]" name="TCED16505" duration-ms="4411" started-at="2018-10-18T17:49:31Z" finished-at="2018-10-18T17:49:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED16505 -->
-        <test-method status="PASS" signature="TCED16506()[pri:6, instance:com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits@17d0008]" name="TCED16506" duration-ms="1415" started-at="2018-10-18T17:49:36Z" finished-at="2018-10-18T17:49:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED16506 -->
-        <test-method status="PASS" signature="TCED16507()[pri:7, instance:com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits@17d0008]" name="TCED16507" duration-ms="1854" started-at="2018-10-18T17:49:37Z" finished-at="2018-10-18T17:49:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED16507 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits@17d0008]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-18T17:49:39Z" finished-at="2018-10-18T17:49:39Z">
+        </test-method> <!-- TCED11003 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.administerAssessment.Create_New_Administration@100df86]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-19T14:40:32Z" finished-at="2018-10-19T14:40:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits -->
+      </class> <!-- com.administerAssessment.Create_New_Administration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
