@@ -6,6 +6,7 @@
       <class name="com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher">
         <methods>
           <include name="setup1"/>
+          <include name="tearDown"/>
           <include name="TCED14151"/>
         </methods>
       </class> <!-- com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher -->

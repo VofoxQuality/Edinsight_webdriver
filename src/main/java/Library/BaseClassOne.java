@@ -112,7 +112,7 @@ public class BaseClassOne	{
 	 } 
 	 @AfterTest
     public void tearDown() throws Exception { 
-	driver.close();	 
+	//driver.close();	 
 	//driver.quit();
     
 	 }

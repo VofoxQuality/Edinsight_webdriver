@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20749" started-at="2018-10-19T08:34:32Z" finished-at="2018-10-19T08:34:53Z">
+  <suite name="Default suite" duration-ms="20771" started-at="2018-10-19T08:59:08Z" finished-at="2018-10-19T08:59:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20749" started-at="2018-10-19T08:34:32Z" finished-at="2018-10-19T08:34:53Z">
+    <test name="Default test" duration-ms="20771" started-at="2018-10-19T08:59:08Z" finished-at="2018-10-19T08:59:29Z">
       <class name="com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@4f7d0008]" name="setup1" is-config="true" duration-ms="9843" started-at="2018-10-19T14:04:32Z" finished-at="2018-10-19T14:04:42Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@4f7d0008]" name="setup1" is-config="true" duration-ms="10800" started-at="2018-10-19T14:29:08Z" finished-at="2018-10-19T14:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED14151()[pri:1, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@4f7d0008]" name="TCED14151" duration-ms="9391" started-at="2018-10-19T14:04:42Z" finished-at="2018-10-19T14:04:51Z">
+        <test-method status="PASS" signature="TCED14151()[pri:1, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@4f7d0008]" name="TCED14151" duration-ms="9944" started-at="2018-10-19T14:29:19Z" finished-at="2018-10-19T14:29:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED14151 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@4f7d0008]" name="tearDown" is-config="true" duration-ms="1490" started-at="2018-10-19T14:04:51Z" finished-at="2018-10-19T14:04:53Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@4f7d0008]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-19T14:29:29Z" finished-at="2018-10-19T14:29:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

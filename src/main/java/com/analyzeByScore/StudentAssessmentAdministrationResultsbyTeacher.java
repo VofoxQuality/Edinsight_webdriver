@@ -28,14 +28,26 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			
 			//Click on  Studentasssessmentadminstration
 			click("//*[@id='ctl00_MainContent_hlnkAdministrationResults']");
+			// To Assert the header
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Results by Teacher");
 			
+			//To fill the the Test ID Search 
+			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
 			
+			//To click on the search button
+			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
 			
-	
+			//To select the Assessment 
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessment']"))).selectByVisibleText("For Automation- do not edit");
 			
-	
-	
-	
+			//To select the Administrations
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministration']"))).selectByVisibleText("For Automation- do not edit (Admin)(2017-2018)");
+			
+			//To click on the show administration results
+			click("//*[@id='ctl00_MainContent_btnShowResults']");
+			// To Assert the header
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");		
+			
 		}catch(Exception e) 
 		{
 			e.printStackTrace();
