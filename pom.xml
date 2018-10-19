@@ -77,6 +77,11 @@
 						<suiteXmlFile>VED0008-Question_Bank_Apply_Standards.xml</suiteXmlFile>
 						<suiteXmlFile>VED0071-Batch_Print.xml</suiteXmlFile>
 						<suiteXmlFile>VED0087-Custom_Reports.xml</suiteXmlFile>
+						<suiteXmlFile>VED0016-Score_Class_Results_Online.xml</suiteXmlFile>
+						<suiteXmlFile>VED0078-Analyze_Curriculum.xml</suiteXmlFile>
+						<suiteXmlFile>VED0057-Unsubmitted_Intervention_Plans.xml</suiteXmlFile>
+						<suiteXmlFile>VED0041-Track_Student_Interventions.xml</suiteXmlFile>
+						<suiteXmlFile>VED0029-Administration_Comparison_by_Student.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

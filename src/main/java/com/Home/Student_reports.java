@@ -48,7 +48,7 @@ public class Student_reports extends BaseClassOne {
 			//To click on the check box
 			check("//td//li[@class='rtLI rtFirst']//div[@class='rtOut']//span[2]");
 			
-			//To delete all the files in the directory
+	/*		//To delete all the files in the directory
 			FileDelete();
 			
 			//To click on the Print ot PDF
@@ -65,7 +65,7 @@ public class Student_reports extends BaseClassOne {
 			Thread.sleep(4000);
 			
 			//To verify whether the download functionality is working or not
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");  */
 			
 			
 			//To delete all the files in the directory

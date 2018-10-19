@@ -20,15 +20,13 @@ public class Score_Class_Results_Online extends BaseClassOne {
 				login(Supertent_Login_id,Supertent_Login_Password);	
 				
 				//Assert logout button is displayed in the dashboard page
-				Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_A3']/img")).isDisplayed());
+				Assert.assertTrue(isElementPresent("//*[@id='ctl00_A3']/img"),"Element is not displayed ");
 			}
 			catch (Exception e)
 			{
 				Assert.fail(e.getMessage());
 				e.printStackTrace();
 			}
-	  
-	
 	}
 	
 	@Test(priority=1)
@@ -36,10 +34,6 @@ public class Score_Class_Results_Online extends BaseClassOne {
 	{
 		try
 		{
-	
-			//Supertent Login
-			login(Supertent_Login_id,Supertent_Login_Password);
-			
 			//Click on main menu local assessment.
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
 			
@@ -285,8 +279,6 @@ public class Score_Class_Results_Online extends BaseClassOne {
 		  }	
 		
 	
-	
-	
 	@Test(priority=8)
 	public void TCED13029() 
 	{
@@ -329,5 +321,5 @@ public class Score_Class_Results_Online extends BaseClassOne {
 			Assert.fail(e.getMessage());
 			}
 		  }	
-	
 }
+

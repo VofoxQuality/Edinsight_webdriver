@@ -527,9 +527,8 @@ public class Assessments extends BaseClassOne
 			//Verify the "CELL GROWTH AND REPRODUCTION/GENETICS " graph is exists in the page.
 			//Verify the "THEORY OF EVOLUTION/ECOLOGY" graph is exists in the page.
 			js.executeScript("scroll(0,50)");
-			TakesScreenshot ts=	(TakesScreenshot)driver;
-			File src= ts.getScreenshotAs(OutputType.FILE);	  
-			FileUtils.copyFile(src, new File("./Screenshots/Biology_CDT_2015-16_graph.png"));
+			Takescreenshot("Biology_CDT_2015-16_graph");
+			
 			
 			//Select Testing Subject as Reading/Lit grades 6-HS
 			js.executeScript("scroll(0,0)");	
@@ -542,8 +541,8 @@ public class Assessments extends BaseClassOne
 			//Verify the "CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-INFO TEXT" graph is exists in the page.
 			//Verify the "VOCABULARY ACQUISITION AND USE" graph is exists in the page.
 			js.executeScript("scroll(0,50)");			
-			File src1= ts.getScreenshotAs(OutputType.FILE);	  
-			FileUtils.copyFile(src1, new File("./Screenshots/Reading_Lit grades_6-HSCDT_CDT_2015-16_graph.png"));				
+				  
+			Takescreenshot("Reading_Lit grades_6-HSCDT_CDT_2015-16_graph");				
 			
 		} 
 		catch (Exception e)
