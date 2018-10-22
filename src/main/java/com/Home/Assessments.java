@@ -303,51 +303,43 @@ public class Assessments extends BaseClassOne
 			js.executeScript("scroll(0,0)");
 			
 			//Verify the "Percent Correct " graph is exists in the page.
-			//Taking screenshot of the "Percent Correct " graph		    
-			TakesScreenshot ts=	(TakesScreenshot)driver;
-			File src= ts.getScreenshotAs(OutputType.FILE);	  
-			FileUtils.copyFile(src, new File("./Screenshots/Percent Correct.png"));
+			//Taking screenshot of the "Percent Correct " graph	
+			Takescreenshot("Percent Correct");	
 			
 			//Verify the "Multiple Choice/Constructed Response" graph is exists in the page.
 			//Taking screenshot of the "Multiple Choice/Constructed Response" graph
-			js.executeScript("scroll(0,document.body.scrollHeight)");			
-			File src1= ts.getScreenshotAs(OutputType.FILE);	  
-			FileUtils.copyFile(src1, new File("./Screenshots/Multiple Choice_Constructed Response.png"));
+			js.executeScript("scroll(0,document.body.scrollHeight)");
+			Takescreenshot("Multiple Choice_Constructed Response");
 			
 			//Click on View Only Biology link
 			js.executeScript("scroll(0,0)");
 			click("//*[@id='ctl00_MainContent_lnkFilterBiology']/b");
-			//Taking screenshot of the "Percent Correct " graph exists against the Biology  
-			File src2= ts.getScreenshotAs(OutputType.FILE);	  
-			FileUtils.copyFile(src2, new File("./Screenshots/Biology_Percent Correct.png"));
+			//Taking screenshot of the "Percent Correct " graph exists against the Biology 
+			Takescreenshot("Biology_Percent Correct");
 			
 			//Verify the "Multiple Choice/Constructed Response" graph is exists against the Biology Subject in the page.
 			js.executeScript("scroll(0,document.body.scrollHeight)");
-			//Taking screenshot of the "Multiple Choice/Constructed Response" graph			
-			File src3= ts.getScreenshotAs(OutputType.FILE);	  
-			FileUtils.copyFile(src3, new File("./Screenshots/Biology_Multiple Choice_Constructed Response.png"));
+			
+			//Taking screenshot of the "Multiple Choice/Constructed Response" graph	
+			Takescreenshot("Biology_Multiple Choice_Constructed Response");
 			
 			//Click on View Only Literature
 			js.executeScript("scroll(0,0)");
 			click("//*[@id='ctl00_MainContent_lnkFilterLiterature']/b");
 			//Taking screenshot of the "Percent Correct " graph exists against the literature 
-			File src4= ts.getScreenshotAs(OutputType.FILE);	  
-			FileUtils.copyFile(src4, new File("./Screenshots/literature_Percent Correct.png"));
+			Takescreenshot("literature_Percent Correct");
 			
 			//Verify the "Multiple Choice/Constructed Response" graph is exists against the Literature Subject in the page.
 			js.executeScript("scroll(0,document.body.scrollHeight)");
-			//Taking screenshot of the "Multiple Choice/Constructed Response" graph			
-			File src5= ts.getScreenshotAs(OutputType.FILE);	  
-			FileUtils.copyFile(src5, new File("./Screenshots/literature_Multiple Choice_Constructed Response.png"));
+			//Taking screenshot of the "Multiple Choice/Constructed Response" graph	
+			Takescreenshot("literature_Multiple Choice_Constructed Response");
 		}
 		catch (Exception e)
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		} 
-		
-	}
-	
+		} 		
+	}	
 	@Test(priority=8)	
 	public void TCED34209()
 	{
@@ -368,8 +360,7 @@ public class Assessments extends BaseClassOne
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
 		}
-	}
-	
+	}	
 	@Test(priority=9)	
 	public void TCED34210()
 	{
@@ -410,8 +401,7 @@ public class Assessments extends BaseClassOne
 			e.printStackTrace();
 		}
 	
-	}
-	
+	}	
 	@Test(priority=10)	
 	public void TCED34211()
 	{
@@ -522,10 +512,20 @@ public class Assessments extends BaseClassOne
 			sel1.selectByVisibleText("Biology");			
 			
 			//Verify the "TOTAL TEST " graph is exists in the page.
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_ChartTotalScores_Image']")).isDisplayed(),"TOTAL TEST graph-Not found in the page");
+			
 			//Verify the "BASIC BIOLOGICAL PRINCIPALS/CHEMICAL BASIS FOR LIFE" graph is exists in the page.
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat1_Image']")).isDisplayed(),"BASIC BIOLOGICAL PRINCIPALS/CHEMICAL BASIS FOR LIFE graph-Not found in the page");
+			
 			//Verify the "BIOENERGETIC/HOMEOSTASIS AND TRANSPORT" graph is exists in the page.
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat2_Image']")).isDisplayed(),"BIOENERGETIC/HOMEOSTASIS AND TRANSPORT graph-Not found in the page");
+			
 			//Verify the "CELL GROWTH AND REPRODUCTION/GENETICS " graph is exists in the page.
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat3_Image']")).isDisplayed(),"CELL GROWTH AND REPRODUCTION/GENETICS graph-Not found in the page");
+			
 			//Verify the "THEORY OF EVOLUTION/ECOLOGY" graph is exists in the page.
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat4_Image']")).isDisplayed(),"THEORY OF EVOLUTION/ECOLOGY graph-Not found in the page");
+			
 			js.executeScript("scroll(0,50)");
 			Takescreenshot("Biology_CDT_2015-16_graph");
 			
@@ -535,14 +535,25 @@ public class Assessments extends BaseClassOne
 			sel1.selectByIndex(1);
 			
 			//Verify the "TOTAL TEST" graph is exists in the page.
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_ChartTotalScores_Image']")).isDisplayed(),"TOTAL TEST graph-Not found in the page");
+			
 			//Verify the "KEY IDEAS AND DETAILS-LITERATURE TEXT" graph is exists in the page.
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat1_Image']")).isDisplayed(),"KEY IDEAS AND DETAILS-LITERATURE TEXT graph-Not found in the page");
+			
 			//Verify the "KEY IDEAS AND DETAILS-INFORMATIONAL TEXT " graph is exists in the page.
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat2_Image']")).isDisplayed(),"KEY IDEAS AND DETAILS-INFORMATIONAL TEXT graph-Not found in the page");
+			
 			//Verify the "CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-LIT TEXT" graph is exists in the page.
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat3_Image']")).isDisplayed(),"CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-LIT TEXT graph-Not found in the page");
+			
 			//Verify the "CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-INFO TEXT" graph is exists in the page.
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat4_Image']")).isDisplayed(),"CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-INFO TEXT graph-Not found in the page");
+			
 			//Verify the "VOCABULARY ACQUISITION AND USE" graph is exists in the page.
-			js.executeScript("scroll(0,50)");			
-				  
-	    	Takescreenshot("Reading_Lit grades_6-HSCDT_CDT_2015-16_graph");				
+			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat5_Image']")).isDisplayed(),"VOCABULARY ACQUISITION AND USE  graph-Not found in the page");
+			
+			js.executeScript("scroll(0,50)");				  
+	    	Takescreenshot("Reading_Lit grades_6-HSCDT_CDT_2015-16_graph");		
 			
 		} 
 		catch (Exception e)
@@ -575,8 +586,7 @@ public class Assessments extends BaseClassOne
 			e.printStackTrace();
 		}	
 		
-	}
-	
+	}	
 	@Test(priority=13)	
 	public void TCED34214()
 	{
@@ -612,10 +622,8 @@ public class Assessments extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
-	}
-	
+		}		
+	}	
 	@Test(priority=14)	
 	public void TCED34215()
 	{
@@ -652,9 +660,7 @@ public class Assessments extends BaseClassOne
 			Assert.assertEquals(getText("//td[contains(text(),'Projection 1 Prob Advanced')]"),"Projection 1 Prob Advanced");
 			
 			//Verify the "Performance Level" graph is exists in the page.
-			TakesScreenshot ts=	(TakesScreenshot)driver;
-			File src= ts.getScreenshotAs(OutputType.FILE);	  
-			FileUtils.copyFile(src, new File("./Screenshots/PVAAS_Performance_Level_graph.png"));
+			Takescreenshot("PVAAS_Performance_Level_graph");
 			
 		}
 		catch (Exception e)
