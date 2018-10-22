@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.automation</groupId>
+  <artifactId>Edinsight_Maven_Automation</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Edinsight_Maven_Automation</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+   <dependencies>
+   <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.11.0</version>
+    </dependency> 
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-server</artifactId>
+        <version>3.11.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.14.2</version>
+    <scope>compile</scope>
+	</dependency>
+  <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>1.2.17</version>
+</dependency>
+  </dependencies>
+  <build>
+	<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<!-- Compiler plug-in -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+			<!-- Below plug-in is used to execute tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile>VED0054-Tier_History_Report.xml</suiteXmlFile>
+						<suiteXmlFile>VED0075-Enter_Weeks_Minutes.xml</suiteXmlFile>
+						<suiteXmlFile>VED0076-Copy_Current_Map.xml</suiteXmlFile>
+						<suiteXmlFile>VED0077-View_Print.xml</suiteXmlFile>
+						<suiteXmlFile>VED0058-Tiered_Students_With_No_Intervention_Plan.xml</suiteXmlFile>
+						<suiteXmlFile>VED0083-Standards_Coverage_Report.xml</suiteXmlFile>
+						<suiteXmlFile>VED0088-CTE_Competency_List.xml</suiteXmlFile>
+						<suiteXmlFile>VED0090-Contacts.xml</suiteXmlFile>
+						<suiteXmlFile>VED0085-Completion_status_report.xml</suiteXmlFile>
+						<suiteXmlFile>VED0086-Print_View_Multiple_Maps.xml</suiteXmlFile>
+						<suiteXmlFile>VED0089-Student_Search.xml</suiteXmlFile>
+						<suiteXmlFile>VED0092-Attendance.xml</suiteXmlFile>
+						<suiteXmlFile>VED0094-Grades.xml</suiteXmlFile>
+						<suiteXmlFile>VED0097-Data_sets.xml</suiteXmlFile>
+						<suiteXmlFile>VED0095-Schedule.xml</suiteXmlFile>s
+						<suiteXmlFile>VED0005-Test Suite-Print_Login_Codes.xml</suiteXmlFile>
+						<suiteXmlFile>VED0082-Browse_By_Standard.xml</suiteXmlFile>
+						<suiteXmlFile>VED0008-Question_Bank_Apply_Standards.xml</suiteXmlFile>
+						<suiteXmlFile>VED0071-Batch_Print.xml</suiteXmlFile>
+						<suiteXmlFile>VED0087-Custom_Reports.xml</suiteXmlFile>
+						<suiteXmlFile>VED0016-Score_Class_Results_Online.xml</suiteXmlFile>
+						<suiteXmlFile>VED0078-Analyze_Curriculum.xml</suiteXmlFile>
+						<suiteXmlFile>VED0057-Unsubmitted_Intervention_Plans.xml</suiteXmlFile>
+						<suiteXmlFile>VED0041-Track_Student_Interventions.xml</suiteXmlFile>
+						<suiteXmlFile>VED0029-Administration_Comparison_by_Student.xml</suiteXmlFile>
+						<suiteXmlFile>VED0032-Local Assessment - Question_Bank _Add_Edit_or_View_Exhibits.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
