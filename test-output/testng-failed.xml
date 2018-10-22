@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher">
+      <class name="com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits">
         <methods>
           <include name="setup1"/>
+          <include name="TCED16503"/>
+          <include name="TCED16504"/>
+          <include name="TCED16505"/>
+          <include name="TCED16507"/>
           <include name="tearDown"/>
-          <include name="TCED14151"/>
+          <include name="TCED16506"/>
         </methods>
-      </class> <!-- com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher -->
+      </class> <!-- com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

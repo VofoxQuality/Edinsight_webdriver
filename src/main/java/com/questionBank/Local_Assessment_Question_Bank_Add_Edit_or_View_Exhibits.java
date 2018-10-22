@@ -15,6 +15,8 @@ public class Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits extends Ba
 	     {
 			//Superintent Login
 			 login(Supertent_Login_id,Supertent_Login_Password);
+			 
+			 Assert.assertTrue(isElementPresent("//img[@src='../Images/EdInsight-Logo.jpg']"),"Login has some issues");
 		 } 
 	     catch (Exception e)
 	     {
