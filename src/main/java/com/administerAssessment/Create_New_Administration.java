@@ -277,6 +277,8 @@ public class Create_New_Administration extends BaseClassOne
 		{
 			//Application should be in the  Create New Administration page.
 			
+			String print_test="//span[contains(text(),'Print Test')]";
+			
 			//Click on  the Option Button 
 			click("//span[@class='rbText']");
 			
@@ -284,7 +286,7 @@ public class Create_New_Administration extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_rcmAssessmentEditOptions_detached']/ul/li[3]/span");
 			
 			AssessmentPrint ob=new AssessmentPrint();
-			ob.AssessmentPrintReports();
+			ob.AssessmentPrintReports(print_test);
 		}
 		catch (Exception e)
 		{
