@@ -7,6 +7,7 @@
         <methods>
           <include name="setup1"/>
           <include name="TCED11009"/>
+          <include name="TCED11008"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.administerAssessment.Create_New_Administration -->
