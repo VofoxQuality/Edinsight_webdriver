@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.administerAssessment.Create_New_Administration">
+      <class name="com.MTSS.MTSS_Tier_Intervention_Menu">
         <methods>
+          <include name="TCED19102"/>
           <include name="setup1"/>
-          <include name="TCED11009"/>
-          <include name="TCED11008"/>
           <include name="tearDown"/>
+          <include name="TCED19105"/>
         </methods>
-      </class> <!-- com.administerAssessment.Create_New_Administration -->
+      </class> <!-- com.MTSS.MTSS_Tier_Intervention_Menu -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
