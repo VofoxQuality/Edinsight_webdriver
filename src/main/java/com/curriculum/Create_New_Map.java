@@ -8,6 +8,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.server.handler.SwitchToParentFrame;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -1109,7 +1110,7 @@ public class Create_New_Map extends BaseClassOne {
 					Assert.fail(e.getMessage());
 				}
 			}
-			@Test(priority=34)
+			//@Test(priority=34)
 			public void TCED29134() 
 			{
 				try
@@ -1134,7 +1135,7 @@ public class Create_New_Map extends BaseClassOne {
 					Assert.fail(e.getMessage());
 				}
 			}
-			@Test(priority=35)
+			//@Test(priority=35)
 			public void TCED29135() 
 			{
 				try
@@ -1157,7 +1158,7 @@ public class Create_New_Map extends BaseClassOne {
 					Assert.fail(e.getMessage());
 				}
 			}
-			@Test(priority=36)
+			//@Test(priority=36)
 			public void TCED29136() 
 			{
 				try
@@ -1209,6 +1210,84 @@ public class Create_New_Map extends BaseClassOne {
 				try
 				{
 					
+					////To click on the copy from curriculum
+					click("//div[@id='ctl00_MainContent_CurriculumMapUnit1_pnlGeneral']/table[3]/tbody/tr/td[2]/input");
+					
+					Assert.assertEquals(getText("//h6[@class='rwTitle']"), "Copy From Curriculum");
+					
+					SwitchFrameName("CopyCurriculum");
+					
+					//To click on the fill the grid button  
+					click("//input[@id='ctl00_ContentPlaceHolder1_btnFillGrid']");
+					
+					//To click on the select all button
+					click("//input[@id='ctl00_ContentPlaceHolder1_gvCurriculumMaps_ctl01_chkHeader']");
+					
+					//click on the append data
+					click("//input[@id='ctl00_ContentPlaceHolder1_btnAppendData']");
+					
+					Assert.assertEquals(getText("//span[@id='ctl00_ContentPlaceHolder1_lblMsg']"),"The selected fields are updated successfully");
+					
+					//To click on the close button
+					click("//input[@id='ctl00_ContentPlaceHolder1_btnCancel']");
+					
+					driver.switchTo().defaultContent();
+					
+					Assert.assertEquals(getText("//a[contains(text(),'Unit Description')]"),"Unit Description");
+
+						
+				}catch(Exception e) 
+				{
+					e.printStackTrace();
+					Assert.fail(e.getMessage());
+				}
+			}
+			
+			@Test(priority=39)
+			public void TCED29139() 
+			{
+				try
+				{
+					//click on the standared button
+					click("//a[@id='ctl00_MainContent_CurriculumMapUnit1_btnStandards']");
+					
+					Assert.assertEquals(getText("//a[@id='ctl00_MainContent_CurriculumMapUnit1_btnStandards']"),"Standards");
+	
+				}catch(Exception e) 
+				{
+					e.printStackTrace();
+					Assert.fail(e.getMessage());
+				}
+			}
+			@Test(priority=40)
+			public void TCED29140() 
+			{
+				try
+				{
+					
+					//To assert the all the labels in the standards page
+					Assert.assertEquals(getText("//span[contains(text(),'Search for Standards')]"),"Search for Standards");
+					
+					Assert.assertEquals(getText("//span[contains(text(),'Edit Selected Standards')]"),"Edit Selected Standards");
+					
+					Assert.assertEquals(getText("//td[contains(text(),'Saved Favorites:')]"),"Saved Favorites:");
+					
+					Assert.assertEquals(getText("//td[contains(text(),'Standards Type:')]"),"Standards Type:");
+					
+					Assert.assertEquals(getText("//td[contains(text(),'Subject:')]"),"Subject:");
+					
+					Assert.assertEquals(getText("//td[contains(text(),'Sub-Category:')]"),"Sub-Category:");
+					
+					Assert.assertEquals(getText("//td[contains(text(),'Grade:')]"),"Grade:");
+					
+					Assert.assertEquals(getText("//td[contains(text(),'Organizer:')]"),"Organizer:");
+					
+					Assert.assertEquals(getText("//td[contains(text(),'Standard Contains:')]"),"Standard Contains:");
+					
+					Assert.assertEquals(getText("//h3[contains(text(),'Available Standards')]"),"Available Standards");
+					
+					Assert.assertEquals(getText("//h3[contains(text(),'Selected Standards')]"),"Selected Standards");
+					
 					
 				}catch(Exception e) 
 				{
@@ -1216,6 +1295,40 @@ public class Create_New_Map extends BaseClassOne {
 					Assert.fail(e.getMessage());
 				}
 			}
+			@Test(priority=40)
+			public void TCED29141() 
+			{
+				try
+				{
+					//To fill the standard contains
+					type("//input[@id='ctl00_MainContent_CurriculumMapUnit1_StateStandardSearch1_txtStandardContains']"," particular story");
+					
+					
+					//To click on the search button
+					click("//span[@id='ctl00_MainContent_CurriculumMapUnit1_StateStandardSearch1_SplitButton']/span[2]");
+					
+
+					Thread.sleep(2000);
+					
+					//To click on the options
+					click("//span[@class='rmLink'][contains(text(),'Search')]");
+					
+					
+					Assert.assertTrue(driver.getPageSource().contains("Please save your selected standards before moving to the next page!"),"Text Missing:  Please save your selected standards before moving to the next page! ");
+					
+					Assert.assertEquals(getText("//a[contains(text(),'Code')]"),"Code");
+					
+					Assert.assertEquals(getText("//a[contains(text(),'Type')]"),"Type");
+					
+					Assert.assertEquals(getText("//th[@class='rgHeader GridHeaderStyle']"),"Description");
+					
+				}catch(Exception e) 
+				{
+					e.printStackTrace();
+					Assert.fail(e.getMessage());
+				}
+			}
+				
 //*****************************************************Pop up *******************************************************************************		
 		
 		public String saveandcontinue(String Link)
