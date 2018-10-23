@@ -284,7 +284,7 @@ public class Create_New_Administration extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_rcmAssessmentEditOptions_detached']/ul/li[3]/span");
 			
 			AssessmentPrint ob=new AssessmentPrint();
-			ob.AssessmentPrintReports();
+	//		ob.AssessmentPrintReports();
 		}
 		catch (Exception e)
 		{

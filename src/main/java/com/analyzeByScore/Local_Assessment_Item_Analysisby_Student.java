@@ -266,7 +266,7 @@ public class Local_Assessment_Item_Analysisby_Student extends BaseClassOne
 		try {
 			
 			AssessmentPrint ob=new AssessmentPrint();
-			ob.AssessmentPrintReports();
+	//		ob.AssessmentPrintReports();
 //			//Application should be in the  Item Analysis by Question  Report Report page
 //			
 //			//To click here to see the test

@@ -7,7 +7,7 @@
         <methods>
           <include name="setup1"/>
           <include name="tearDown"/>
-          <include name="TCED14154"/>
+          <include name="TCED14164"/>
         </methods>
       </class> <!-- com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher -->
     </classes>
