@@ -1,146 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="22" passed="21">
+<testng-results skipped="0" failed="2" total="9" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="77319" started-at="2018-10-22T16:39:10Z" finished-at="2018-10-22T16:40:27Z">
+  <suite name="Default suite" duration-ms="70848" started-at="2018-10-22T06:24:18Z" finished-at="2018-10-22T06:25:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="77319" started-at="2018-10-22T16:39:10Z" finished-at="2018-10-22T16:40:27Z">
-      <class name="com.curriculum.Create_New_Map">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Create_New_Map@553a3d88]" name="setup1" is-config="true" duration-ms="9745" started-at="2018-10-22T16:39:10Z" finished-at="2018-10-22T16:39:20Z">
+    <test name="Default test" duration-ms="70848" started-at="2018-10-22T06:24:18Z" finished-at="2018-10-22T06:25:29Z">
+      <class name="com.administerAssessment.Create_New_Administration">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.administerAssessment.Create_New_Administration@11053e1]" name="setup1" is-config="true" duration-ms="11668" started-at="2018-10-22T11:54:18Z" finished-at="2018-10-22T11:54:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED29101()[pri:1, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29101" duration-ms="8234" started-at="2018-10-22T16:39:20Z" finished-at="2018-10-22T16:39:28Z">
+        <test-method status="PASS" signature="TCED11001()[pri:1, instance:com.administerAssessment.Create_New_Administration@11053e1]" name="TCED11001" duration-ms="8986" started-at="2018-10-22T11:54:30Z" finished-at="2018-10-22T11:54:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29101 -->
-        <test-method status="PASS" signature="TCED29102()[pri:2, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29102" duration-ms="62" started-at="2018-10-22T16:39:28Z" finished-at="2018-10-22T16:39:28Z">
+        </test-method> <!-- TCED11001 -->
+        <test-method status="PASS" signature="TCED11002()[pri:2, instance:com.administerAssessment.Create_New_Administration@11053e1]" name="TCED11002" duration-ms="7234" started-at="2018-10-22T11:54:39Z" finished-at="2018-10-22T11:54:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29102 -->
-        <test-method status="PASS" signature="TCED29103()[pri:3, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29103" duration-ms="1027" started-at="2018-10-22T16:39:28Z" finished-at="2018-10-22T16:39:29Z">
+        </test-method> <!-- TCED11002 -->
+        <test-method status="PASS" signature="TCED11003()[pri:3, instance:com.administerAssessment.Create_New_Administration@11053e1]" name="TCED11003" duration-ms="992" started-at="2018-10-22T11:54:46Z" finished-at="2018-10-22T11:54:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29103 -->
-        <test-method status="PASS" signature="TCED29104()[pri:4, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29104" duration-ms="571" started-at="2018-10-22T16:39:29Z" finished-at="2018-10-22T16:39:30Z">
+        </test-method> <!-- TCED11003 -->
+        <test-method status="PASS" signature="TCED11004()[pri:4, instance:com.administerAssessment.Create_New_Administration@11053e1]" name="TCED11004" duration-ms="625" started-at="2018-10-22T11:54:47Z" finished-at="2018-10-22T11:54:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29104 -->
-        <test-method status="PASS" signature="TCED29105()[pri:5, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29105" duration-ms="960" started-at="2018-10-22T16:39:30Z" finished-at="2018-10-22T16:39:31Z">
+        </test-method> <!-- TCED11004 -->
+        <test-method status="PASS" signature="TCED11005()[pri:5, instance:com.administerAssessment.Create_New_Administration@11053e1]" name="TCED11005" duration-ms="1857" started-at="2018-10-22T11:54:48Z" finished-at="2018-10-22T11:54:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29105 -->
-        <test-method status="PASS" signature="TCED29106()[pri:6, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29106" duration-ms="3841" started-at="2018-10-22T16:39:31Z" finished-at="2018-10-22T16:39:35Z">
+        </test-method> <!-- TCED11005 -->
+        <test-method status="PASS" signature="TCED11006()[pri:6, instance:com.administerAssessment.Create_New_Administration@11053e1]" name="TCED11006" duration-ms="362" started-at="2018-10-22T11:54:50Z" finished-at="2018-10-22T11:54:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29106 -->
-        <test-method status="PASS" signature="TCED29120()[pri:20, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29120" duration-ms="1255" started-at="2018-10-22T16:39:35Z" finished-at="2018-10-22T16:39:36Z">
+        </test-method> <!-- TCED11006 -->
+        <test-method status="PASS" signature="TCED11007()[pri:7, instance:com.administerAssessment.Create_New_Administration@11053e1]" name="TCED11007" duration-ms="2818" started-at="2018-10-22T11:54:50Z" finished-at="2018-10-22T11:54:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29120 -->
-        <test-method status="PASS" signature="TCED29121()[pri:21, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29121" duration-ms="324" started-at="2018-10-22T16:39:36Z" finished-at="2018-10-22T16:39:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29121 -->
-        <test-method status="PASS" signature="TCED29122()[pri:22, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29122" duration-ms="1161" started-at="2018-10-22T16:39:36Z" finished-at="2018-10-22T16:39:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29122 -->
-        <test-method status="PASS" signature="TCED29123()[pri:23, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29123" duration-ms="437" started-at="2018-10-22T16:39:37Z" finished-at="2018-10-22T16:39:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29123 -->
-        <test-method status="PASS" signature="TCED29124()[pri:24, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29124" duration-ms="313" started-at="2018-10-22T16:39:38Z" finished-at="2018-10-22T16:39:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29124 -->
-        <test-method status="PASS" signature="TCED29125()[pri:25, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29125" duration-ms="4486" started-at="2018-10-22T16:39:38Z" finished-at="2018-10-22T16:39:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29125 -->
-        <test-method status="PASS" signature="TCED29126()[pri:26, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29126" duration-ms="1467" started-at="2018-10-22T16:39:43Z" finished-at="2018-10-22T16:39:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29126 -->
-        <test-method status="PASS" signature="TCED29127()[pri:27, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29127" duration-ms="1248" started-at="2018-10-22T16:39:44Z" finished-at="2018-10-22T16:39:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29127 -->
-        <test-method status="PASS" signature="TCED29128()[pri:28, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29128" duration-ms="162" started-at="2018-10-22T16:39:45Z" finished-at="2018-10-22T16:39:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29128 -->
-        <test-method status="PASS" signature="TCED29129()[pri:29, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29129" duration-ms="1032" started-at="2018-10-22T16:39:46Z" finished-at="2018-10-22T16:39:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29129 -->
-        <test-method status="PASS" signature="TCED29130()[pri:30, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29130" duration-ms="3367" started-at="2018-10-22T16:39:47Z" finished-at="2018-10-22T16:39:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29130 -->
-        <test-method status="PASS" signature="TCED29137()[pri:37, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29137" duration-ms="13059" started-at="2018-10-22T16:39:50Z" finished-at="2018-10-22T16:40:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29137 -->
-        <test-method status="PASS" signature="TCED29138()[pri:38, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29138" duration-ms="2669" started-at="2018-10-22T16:40:03Z" finished-at="2018-10-22T16:40:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29138 -->
-        <test-method status="PASS" signature="TCED29139()[pri:39, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29139" duration-ms="1404" started-at="2018-10-22T16:40:06Z" finished-at="2018-10-22T16:40:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29139 -->
-        <test-method status="PASS" signature="TCED29140()[pri:40, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29140" duration-ms="267" started-at="2018-10-22T16:40:07Z" finished-at="2018-10-22T16:40:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED29140 -->
-        <test-method status="FAIL" signature="TCED29141()[pri:40, instance:com.curriculum.Create_New_Map@553a3d88]" name="TCED29141" duration-ms="20160" started-at="2018-10-22T16:40:07Z" finished-at="2018-10-22T16:40:27Z">
+        </test-method> <!-- TCED11007 -->
+        <test-method status="FAIL" signature="TCED11008()[pri:8, instance:com.administerAssessment.Create_New_Administration@11053e1]" name="TCED11008" duration-ms="15806" started-at="2018-10-22T11:54:53Z" finished-at="2018-10-22T11:55:09Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Timeout during waiting for element: '//span[@class='rmLink'][contains(text(),'Search')]']]>
+              <![CDATA[Unable to locate element: *[name='Assessment Print']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'AKHIL-TS', ip: '192.168.10.122', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3908, moz:profile: D:\Users\Akhil-TS\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 58a91432-ab25-4a13-a8b7-7e336db9b705
+*** Element info: {Using=name, value=Assessment Print}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Timeout during waiting for element: '//span[@class='rmLink'][contains(text(),'Search')]'
-at Library.BaseClassOne.waitFor(BaseClassOne.java:271)
-at Library.BaseClassOne.click(BaseClassOne.java:183)
-at com.curriculum.Create_New_Map.TCED29141(Create_New_Map.java:1307)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+              <![CDATA[java.lang.AssertionError: Unable to locate element: *[name='Assessment Print']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'AKHIL-TS', ip: '192.168.10.122', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3908, moz:profile: D:\Users\Akhil-TS\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 58a91432-ab25-4a13-a8b7-7e336db9b705
+*** Element info: {Using=name, value=Assessment Print}
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.administerAssessment.Create_New_Administration.TCED11008(Create_New_Administration.java:291)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED29141 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Create_New_Map@553a3d88]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-22T16:40:27Z" finished-at="2018-10-22T16:40:27Z">
+        </test-method> <!-- TCED11008 -->
+        <test-method status="FAIL" signature="TCED11009()[pri:9, instance:com.administerAssessment.Create_New_Administration@11053e1]" name="TCED11009" duration-ms="20463" started-at="2018-10-22T11:55:09Z" finished-at="2018-10-22T11:55:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Timeout during waiting for element: '//*[@id='ctl00_MainContent_rcmAssessmentEditOptions_detached']/ul/li[2]/span']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Timeout during waiting for element: '//*[@id='ctl00_MainContent_rcmAssessmentEditOptions_detached']/ul/li[2]/span'
+	at Library.BaseClassOne.waitFor(BaseClassOne.java:271)
+	at Library.BaseClassOne.click(BaseClassOne.java:183)
+	at com.administerAssessment.Create_New_Administration.TCED11009(Create_New_Administration.java:305)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED11009 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.administerAssessment.Create_New_Administration@11053e1]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-22T11:55:29Z" finished-at="2018-10-22T11:55:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.curriculum.Create_New_Map -->
+      </class> <!-- com.administerAssessment.Create_New_Administration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

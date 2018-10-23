@@ -270,7 +270,7 @@ public class Create_New_Administration extends BaseClassOne
 			e.printStackTrace();
 		}    	
 	}
-//    @Test(priority=8)
+    @Test(priority=8)
 	public void TCED11008()
 	{
 		try
