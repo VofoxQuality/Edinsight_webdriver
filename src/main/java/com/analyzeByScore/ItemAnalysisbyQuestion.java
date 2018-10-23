@@ -565,7 +565,10 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{	//To check the Assessment print reports
-			objAssessmentPrint.AssessmentPrintReports();
+			
+			String xpath = "//a[@id='ctl00_MainContent_lnkassessmentPDF']";
+			
+			objAssessmentPrint.AssessmentPrintReports(xpath);
 
 
 		}catch(Exception e) 

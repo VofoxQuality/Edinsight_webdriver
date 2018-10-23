@@ -7,11 +7,12 @@ import Library.BaseClassOne;
 public class AssessmentPrint extends BaseClassOne
 {
 	
-	public void AssessmentPrintReports() throws InterruptedException
+	public void AssessmentPrintReports(String xpath) throws InterruptedException
 	
 	{
 		//To click here to see the test
-		//click("//a[@id='ctl00_MainContent_lnkassessmentPDF']");
+		
+		click(xpath);	
 
 		//To select the frame
 		SwitchFrameName("Assessment Print");
