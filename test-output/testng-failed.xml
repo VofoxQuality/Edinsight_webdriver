@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.localassessment.Copy_assessment_vendor">
+      <class name="com.administerAssessment.Create_New_Administration">
         <methods>
+          <include name="TCED11004"/>
+          <include name="TCED11007"/>
+          <include name="TCED11006"/>
           <include name="setup1"/>
-          <include name="TCED15005"/>
+          <include name="TCED11009"/>
+          <include name="TCED11008"/>
+          <include name="TCED11001"/>
           <include name="tearDown"/>
+          <include name="TCED11003"/>
+          <include name="TCED11002"/>
+          <include name="TCED11005"/>
         </methods>
-      </class> <!-- com.localassessment.Copy_assessment_vendor -->
+      </class> <!-- com.administerAssessment.Create_New_Administration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
