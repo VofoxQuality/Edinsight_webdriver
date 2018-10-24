@@ -1,45 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26247" started-at="2018-10-24T12:32:58Z" finished-at="2018-10-24T12:33:24Z">
+  <suite name="Default suite" duration-ms="23414" started-at="2018-10-24T08:31:41Z" finished-at="2018-10-24T08:32:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26247" started-at="2018-10-24T12:32:58Z" finished-at="2018-10-24T12:33:24Z">
-      <class name="com.localassessment.Copy_assessment_vendor">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Copy_assessment_vendor@f777e8]" name="setup1" is-config="true" duration-ms="6730" started-at="2018-10-24T18:02:58Z" finished-at="2018-10-24T18:03:04Z">
+    <test name="Default test" duration-ms="23414" started-at="2018-10-24T08:31:41Z" finished-at="2018-10-24T08:32:05Z">
+      <class name="com.MTSS.MTSS_Tier_Intervention_Menu">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.MTSS_Tier_Intervention_Menu@52f759d7]" name="setup1" is-config="true" duration-ms="8210" started-at="2018-10-24T08:31:41Z" finished-at="2018-10-24T08:31:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED15001()[pri:1, instance:com.localassessment.Copy_assessment_vendor@f777e8]" name="TCED15001" duration-ms="6476" started-at="2018-10-24T18:03:04Z" finished-at="2018-10-24T18:03:11Z">
+        <test-method status="PASS" signature="TCED19101()[pri:1, instance:com.MTSS.MTSS_Tier_Intervention_Menu@52f759d7]" name="TCED19101" duration-ms="8513" started-at="2018-10-24T08:31:49Z" finished-at="2018-10-24T08:31:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15001 -->
-        <test-method status="PASS" signature="TCED15002()[pri:2, instance:com.localassessment.Copy_assessment_vendor@f777e8]" name="TCED15002" duration-ms="3518" started-at="2018-10-24T18:03:11Z" finished-at="2018-10-24T18:03:14Z">
+        </test-method> <!-- TCED19101 -->
+        <test-method status="PASS" signature="TCED19102()[pri:2, instance:com.MTSS.MTSS_Tier_Intervention_Menu@52f759d7]" name="TCED19102" duration-ms="1076" started-at="2018-10-24T08:31:58Z" finished-at="2018-10-24T08:31:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15002 -->
-        <test-method status="PASS" signature="TCED15003()[pri:3, instance:com.localassessment.Copy_assessment_vendor@f777e8]" name="TCED15003" duration-ms="40" started-at="2018-10-24T18:03:14Z" finished-at="2018-10-24T18:03:14Z">
+        </test-method> <!-- TCED19102 -->
+        <test-method status="PASS" signature="TCED19103()[pri:3, instance:com.MTSS.MTSS_Tier_Intervention_Menu@52f759d7]" name="TCED19103" duration-ms="1964" started-at="2018-10-24T08:31:59Z" finished-at="2018-10-24T08:32:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15003 -->
-        <test-method status="PASS" signature="TCED15004()[pri:4, instance:com.localassessment.Copy_assessment_vendor@f777e8]" name="TCED15004" duration-ms="102" started-at="2018-10-24T18:03:14Z" finished-at="2018-10-24T18:03:15Z">
+        </test-method> <!-- TCED19103 -->
+        <test-method status="PASS" signature="TCED19104()[pri:4, instance:com.MTSS.MTSS_Tier_Intervention_Menu@52f759d7]" name="TCED19104" duration-ms="1758" started-at="2018-10-24T08:32:01Z" finished-at="2018-10-24T08:32:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15004 -->
-        <test-method status="PASS" signature="TCED15005()[pri:5, instance:com.localassessment.Copy_assessment_vendor@f777e8]" name="TCED15005" duration-ms="5336" started-at="2018-10-24T18:03:15Z" finished-at="2018-10-24T18:03:20Z">
+        </test-method> <!-- TCED19104 -->
+        <test-method status="PASS" signature="TCED19105()[pri:5, instance:com.MTSS.MTSS_Tier_Intervention_Menu@52f759d7]" name="TCED19105" duration-ms="1866" started-at="2018-10-24T08:32:03Z" finished-at="2018-10-24T08:32:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15005 -->
-        <test-method status="PASS" signature="TCED15006()[pri:6, instance:com.localassessment.Copy_assessment_vendor@f777e8]" name="TCED15006" duration-ms="4007" started-at="2018-10-24T18:03:20Z" finished-at="2018-10-24T18:03:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED15006 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Copy_assessment_vendor@f777e8]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-24T18:03:24Z" finished-at="2018-10-24T18:03:24Z">
+        </test-method> <!-- TCED19105 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.MTSS_Tier_Intervention_Menu@52f759d7]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-24T08:32:05Z" finished-at="2018-10-24T08:32:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.localassessment.Copy_assessment_vendor -->
+      </class> <!-- com.MTSS.MTSS_Tier_Intervention_Menu -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

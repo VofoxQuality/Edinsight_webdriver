@@ -77,9 +77,9 @@ public class BaseClassOne	{
 		//FirefoxProfile profile=Browser_Preference();
 		
 		//Sebastian
-		//System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
 		//Akhil TS
-		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		//Manoj
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 		//Ans
@@ -597,6 +597,15 @@ public class BaseClassOne	{
 	{
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	}
+	//To scroll to top of the page
+	public void Scroll_toTop()
+	{
+		WebDriver driver = new FirefoxDriver();
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+
+		jse.executeScript("window.scrollBy(0,-250)", "");
+	}
+	
 	//To scroll to a specific location.
 	public void ScrollTo_Location(String locator)
 	{
