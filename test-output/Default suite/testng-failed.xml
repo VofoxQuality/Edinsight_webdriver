@@ -8,6 +8,7 @@
           <include name="setup1"/>
           <include name="TCED15005"/>
           <include name="tearDown"/>
+          <include name="TCED15006"/>
         </methods>
       </class> <!-- com.localassessment.Copy_assessment_vendor -->
     </classes>

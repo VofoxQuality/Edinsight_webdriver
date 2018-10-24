@@ -1,33 +1,22 @@
 package com.localassessment;
-
-import java.util.List;
-import java.util.Random;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Library.BaseClassOne;
-
 public class Copy_assessment_vendor extends BaseClassOne
 
-{
-	Random rnd = new Random();	
-	
-	String Test_id="5354";
-	
-	String URL="http://192.168.10.201/Edinsight/Login.aspx";
+{	
+	String Test_id="417";	
 	
 	@Test(priority=1)
 	public void TCED15001()
 	{
 	     try
-	     {
-			//Supertent Login
-			login_201(URL,"te$t$uper0nh@nd","password1!");
+	     {	    	 
+			//Superintent Login
+			login(Supertent_Login_id,Supertent_Login_Password);
 		 } 
 	     catch (Exception e)
 	     {
@@ -55,7 +44,6 @@ public class Copy_assessment_vendor extends BaseClassOne
 			click("//a[@id='ctl00_MainContent_grdMyAssessments_ctl02_lnkCopyAssessment']");
 			
 			Assert.assertTrue(find("//*[@id='ctl00_MainContent_rwCopyAssessment_C']").isDisplayed(),"Copy assessment pop-up not found");
-
 		} 
 		catch (Exception e)
 		{
@@ -70,7 +58,8 @@ public class Copy_assessment_vendor extends BaseClassOne
 		{
 			//Application should be in the Copy Assessment pop-up
 			
-			driver.switchTo().frame("rwCopyAssessment");				
+			driver.switchTo().frame("rwCopyAssessment");
+			
 			//Assert the label "Copy Assessment"
 			Assert.assertEquals(getText("//*[@id='aspnetForm']/div[4]/div/h3/span"),"Copy Assessment");
 		} 
@@ -148,21 +137,68 @@ public class Copy_assessment_vendor extends BaseClassOne
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_rvQuestionStartingId']"),"Only numeric and between 1 to 2,147,483,647 are allowed");
 			
 			//Enter Existing question id in Question Starting ID
-			type("//*[@id='ctl00_ContentPlaceHolder1_txtQuestionStartingId']","16128134");
+			type("//*[@id='ctl00_ContentPlaceHolder1_txtQuestionStartingId']","501");
+			
+			//Select Test Type 
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcbTestType_Input']");
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcbTestType_DropDown']/div/ul/li[1]");
-
-			select("//*[@id='ctl00_ContentPlaceHolder1_rcbTestType_Input']", "index=1");
-			select("//*[@id='ctl00_ContentPlaceHolder1_rcbTestEdition_Input']", "index=1");
-			select("//*[@id='ctl00_ContentPlaceHolder1_ddlTestingPeriod']", "index=1");
-			select("//*[@id='ctl00_ContentPlaceHolder1_ddlVendorTestType']", "index=1");
+			
+			//Select Test Edition
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcbTestEdition_Arrow']");
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcbTestEdition_DropDown']/div/ul/li[2]");
+			
+			Thread.sleep(2000);	
+			
+			//Select Testing Period					
+			waitForSelectOption("//*[@id='ctl00_ContentPlaceHolder1_ddlTestingPeriod']");
+			
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlTestingPeriod']", "label=Baseline");
+			
+			//Select Vendor Test Type
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlVendorTestType']", "index=2");
 			
 			//Click on the Copy Assessment button
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveAssessment']");
 			
 			// Assert the label The Question Starting ID and number of question is overlapping with existing question range of another test. Please use another question starting ID value
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_lblMsg']"),"The Question Starting ID and number of question is overlapping with existing question range of another test. Please use another question starting ID value");
-		
+		} 
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}		
+	}	
+	@Test(priority=6)
+	public void TCED15006()
+	{
+		try
+		{
+			//Application should be in the Copy Assessment pop-up
+			
+			//Question Starting ID = any numeric entry 		
+			do
+			{	
+			   String Starting_Qid=generateRandomNumber();
+			   type("input#ctl00_ContentPlaceHolder1_txtQuestionStartingId",Starting_Qid);
+			
+			   //Click on the Copy Assessment button
+			   click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveAssessment']");
+			}
+			while (find("span#ctl00_ContentPlaceHolder1_lblMsg").isDisplayed()==false);
+					
+			Thread.sleep(2000);
+			//Assert the label Assessment copied successfully.
+			Assert.assertEquals(getText("span#ctl00_ContentPlaceHolder1_lblMsg"), "Assessment copied successfully...");
+			
+			driver.switchTo().defaultContent();
+			click("//*[@id='RadWindowWrapper_ctl00_MainContent_rwCopyAssessment']/div[1]/div/ul/li[2]/span");
+			
+			//click on Logout button		 
+			click("//*[@id='ctl00_A3']/img");
+			
+			//Assert the page Header as "Edinsight Login"					
+			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
 		} 
 		catch (Exception e)
 		{
@@ -170,68 +206,5 @@ public class Copy_assessment_vendor extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-	
-//	@Test(priority=6)	
-	public void TCED15006()
-	{		
-		
-		try
-		
-		{
-			//Supertent Login
-			login_201(URL,"te$t$uper0nh@nd","password1!");
-			
-			//Click on main menu local Assignment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			
-			//Click on manage assessment
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[5]/div/a");		
-			//type on test id textbox		
-			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_txtTestId']")).sendKeys(Test_id);
-			//type("//*[@id='ctl00_MainContent_txtTestId']", n);
-			
-			driver.findElement(By.cssSelector("input[id=ctl00_MainContent_btnTestIdSearch]")).click();
-			
-			driver.findElement(By.cssSelector("a#ctl00_MainContent_grdMyAssessments_ctl02_lnkCopyAssessment")).click();
-			
-			driver.switchTo().frame("rwCopyAssessment");
-			
-			Select vendor_drop=new Select(driver.findElement(By.cssSelector("select#ctl00_ContentPlaceHolder1_ddlVendorTestType")));
-			
-			vendor_drop.selectByIndex(1);				
-			do
-			{		
-			int n = 100000 + rnd.nextInt(900000);
-			String s=Integer.toString(n);
-			type("input#ctl00_ContentPlaceHolder1_txtQuestionStartingId",s);
-			
-			click("input#ctl00_ContentPlaceHolder1_btnSaveAssessment.button");
-			}
-			while (driver.findElement(By.cssSelector("span#ctl00_ContentPlaceHolder1_lblMsg")).isDisplayed()==false);
-			
-			Assert.assertEquals(driver.findElement(By.cssSelector("span#ctl00_ContentPlaceHolder1_lblMsg")).getText(), "Assessment copied successfully...");
-			
-			driver.switchTo().defaultContent();		
-			
-			click("//*[@id='RadWindowWrapper_ctl00_MainContent_rwCopyAssessment']/div[1]/div/ul/li[2]/span");
-		} 
-		
-		catch (Exception e) 
-		{
-			e.printStackTrace();
-			Assert.fail(e.getMessage());
-		}
-	}
-	
-	//login to 201 for checking vendor mode
-
-	public void login_201(String url,String username,String password)
-	 {
-		driver.get(url);		
-		driver.findElement(By.cssSelector("input#txtUserName.textbox")).sendKeys(username);
-		driver.findElement(By.cssSelector("input#txtPassword.textbox")).sendKeys(password);		
-		click("input#Submit1.name");	
-	 }
 	
 }
