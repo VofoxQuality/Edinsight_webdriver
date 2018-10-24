@@ -58,8 +58,7 @@ public class Assessments extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-	
+		}	
 	}
 	
 	@Test(priority=1)	
@@ -233,10 +232,8 @@ public class Assessments extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
-	}
-	
+		}		
+	}	
 	@Test(priority=6)	
 	public void TCED34207()
 	{
@@ -409,9 +406,8 @@ public class Assessments extends BaseClassOne
 		{
 			//Application should be in the CDT 2015-2016 Assessment Data page
 			
-			//CDT Scores Select Testing Subject as Biolgy
-			Select sel=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlNorms']")));
-			sel.selectByIndex(0);
+			//CDT Scores Select Testing Subject as Biology			
+			select("//*[@id='ctl00_MainContent_ddlNorms']","label=Biology");
 			
 			//Assert the Label "CDT Scores"
 			Assert.assertEquals(getText("//h4[@class='blueheading']"),"CDT Scores");
@@ -420,6 +416,7 @@ public class Assessments extends BaseClassOne
 			Assert.assertEquals(getText("//td[contains(text(),'Select Testing Subject:')]"),"Select Testing Subject:");
 			
 			//Assert the subject dropdown values as Biology and Reading/Lit grades 6-HS
+			Select sel=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlNorms']")));
 			List<WebElement>sub=sel.getOptions();
 			Assert.assertEquals(sub.get(0).getText(),"Biology");
 			Assert.assertEquals(sub.get(1).getText(),"Reading/Lit Grades 6-HS");
@@ -446,8 +443,8 @@ public class Assessments extends BaseClassOne
 			Assert.assertEquals(getText("//a[contains(text(),'THEORY OF EVOLUTION/ECOLOGY')]"),"THEORY OF EVOLUTION/ECOLOGY");		
 						
 			//Select Testing Subject as Reading/Lit grades 6-HS
-			js.executeScript("scroll(0,0)");				
-			sel.selectByIndex(1);
+			js.executeScript("scroll(0,0)");
+			select("//*[@id='ctl00_MainContent_ddlNorms']","label=Reading/Lit Grades 6-HS");			
 			js.executeScript("scroll(0,document.body.scrollHeight)");
 			
 			//Assert the Label "TEST DATE"
@@ -507,9 +504,8 @@ public class Assessments extends BaseClassOne
 			// Click on CDT 2015-2016
 			click("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_egCDT']/tbody/tr[8]/td[1]/a");
 			
-			//Select Testing Subject as Biolgy
-			Select sel1=new Select(driver.findElement(By.cssSelector("#ctl00_MainContent_ddlNorms")));
-			sel1.selectByVisibleText("Biology");			
+			//Select Testing Subject as Biology		
+			select("//*[@id='ctl00_MainContent_ddlNorms']","label=Biology");
 			
 			//Verify the "TOTAL TEST " graph is exists in the page.
 			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_ChartTotalScores_Image']")).isDisplayed(),"TOTAL TEST graph-Not found in the page");
@@ -527,12 +523,11 @@ public class Assessments extends BaseClassOne
 			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat4_Image']")).isDisplayed(),"THEORY OF EVOLUTION/ECOLOGY graph-Not found in the page");
 			
 			js.executeScript("scroll(0,50)");
-			Takescreenshot("Biology_CDT_2015-16_graph");
-			
+			Takescreenshot("Biology_CDT_2015-16_graph");			
 			
 			//Select Testing Subject as Reading/Lit grades 6-HS
-			js.executeScript("scroll(0,0)");	
-			sel1.selectByIndex(1);
+			js.executeScript("scroll(0,0)");
+			select("//*[@id='ctl00_MainContent_ddlNorms']","label=Reading/Lit Grades 6-HS");
 			
 			//Verify the "TOTAL TEST" graph is exists in the page.
 			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_ChartTotalScores_Image']")).isDisplayed(),"TOTAL TEST graph-Not found in the page");
