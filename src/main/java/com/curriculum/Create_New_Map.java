@@ -1295,7 +1295,7 @@ public class Create_New_Map extends BaseClassOne {
 					Assert.fail(e.getMessage());
 				}
 			}
-			@Test(priority=40)
+			@Test(priority=41)
 			public void TCED29141() 
 			{
 				try
@@ -1320,7 +1320,7 @@ public class Create_New_Map extends BaseClassOne {
 					
 					Assert.assertEquals(getText("//a[contains(text(),'Type')]"),"Type");
 					
-					Assert.assertEquals(getText("//th[@class='rgHeader GridHeaderStyle']"),"Description");
+					Assert.assertEquals(getText("//table//td//table//td//div[@id='ctl00_MainContent_CurriculumMapUnit1_StateStandardSearch1_rgStandards']//tr//th[8]"),"Description");
 					
 				}catch(Exception e) 
 				{
@@ -1328,7 +1328,121 @@ public class Create_New_Map extends BaseClassOne {
 					Assert.fail(e.getMessage());
 				}
 			}
-				
+			@Test(priority=42)
+			public void TCED29142() 
+			{
+				try
+				{
+					//To click on the search button
+					click("//a[@id='ctl00_MainContent_CurriculumMapUnit1_StateStandardSearch1_rgStandards_ctl00_ctl04_btnGridSelect']");
+					
+					Assert.assertTrue(isElementPresent("//input[@id='ctl00_MainContent_CurriculumMapUnit1_StateStandardSearch1_rgSelectedStandards_ctl00_ctl04_CheckboxSelectColumnSelectCheckBox']"),"Add standared is not working properly");
+										
+					Assert.assertEquals(getText("//table[@id='ctl00_MainContent_CurriculumMapUnit1_StateStandardSearch1_rgSelectedStandards_ctl00']//a[@title='Click here to sort'][contains(text(),'Code')]"),"Code");
+					
+					Assert.assertEquals(getText("//table//td//table//td//div[@id='ctl00_MainContent_CurriculumMapUnit1_StateStandardSearch1_rgSelectedStandards']//tr//th[7]"),"Description");
+					
+					Assert.assertEquals(getText("//a[contains(text(),'Mastery')]"),"Mastery");
+					
+					Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Minutes')]"),"Minutes");
+					
+				}catch(Exception e) 
+				{
+					e.printStackTrace();
+					Assert.fail(e.getMessage());
+				}
+			}
+			@Test(priority=43)
+			public void TCED29143() 
+			{
+				try
+				{
+					//To click on the delete button
+					click("//a[@id='ctl00_MainContent_CurriculumMapUnit1_StateStandardSearch1_rgSelectedStandards_ctl00_ctl04_btnGridSelect']");
+					
+					//Assert whether the delete function is working or not
+					Assert.assertFalse(isElementPresent("//input[@id='ctl00_MainContent_CurriculumMapUnit1_StateStandardSearch1_rgSelectedStandards_ctl00_ctl04_CheckboxSelectColumnSelectCheckBox']"),"Delete standared is not working properly");
+
+					
+				}catch(Exception e) 
+				{
+					e.printStackTrace();
+					Assert.fail(e.getMessage());
+				}
+			}
+			@Test(priority=44)
+			public void TCED29144() 
+			{
+				try
+				{
+					//To click on the Ruberics link
+					JavaScriptclick("//a[@id='ctl00_MainContent_CurriculumMapUnit1_btnRubrics']");
+					
+					Assert.assertEquals(getText("//a[@id='ctl00_MainContent_CurriculumMapUnit1_btnRubrics']"),"Rubrics");
+					
+				}catch(Exception e) 
+				{
+					e.printStackTrace();
+					Assert.fail(e.getMessage());
+				}
+			}
+			@Test(priority=45)
+			public void TCED29145() 
+			{
+				try
+				{
+					Assert.assertEquals(getText("//a[@id='ctl00_MainContent_CurriculumMapUnit1_CurriculumMapRubric1_hlkRubricEdit']"),"Create or Modify Rubrics");
+					
+					Assert.assertEquals(getText("//div[@id='ctl00_MainContent_CurriculumMapUnit1_pnlRubrics']/table[2]/tbody/tr[3]/td"),"Filter by Subject:");
+					
+					Assert.assertEquals(getText("//div[@id='ctl00_MainContent_CurriculumMapUnit1_pnlRubrics']/table[2]/tbody/tr[4]/td"),"Rubric to Add:");
+					
+					Assert.assertEquals(getText("//a[@id='ctl00_MainContent_CurriculumMapUnit1_CurriculumMapRubric1_btnRefreshRubrics']"),"Refresh List");
+					
+					Assert.assertEquals(getText("//a[contains(text(),'Add Selected Rubric from Drop-down')]"),"Add Selected Rubric from Drop-down");
+					
+					Assert.assertEquals(getText("//table[@id='ctl00_MainContent_CurriculumMapUnit1_CurriculumMapRubric1_rgRubrics_ctl00']/tbody/tr/td/div"),"No records to display.");
+										
+					Assert.assertEquals(getText("//table[@id='ctl00_MainContent_CurriculumMapUnit1_CurriculumMapRubric1_rgRubrics_ctl00']/thead/tr/th[4]"), "Rubric Name");
+					
+					Assert.assertTrue(driver.getPageSource().contains("Dimensions for Rubric: "), "Dimensions for Rubric: is missing from the page");
+					
+					Assert.assertEquals(getText("//span[@id='ctl00_MainContent_CurriculumMapUnit1_CurriculumMapRubric1_lblCurrentRubric']"), "None selected");
+					
+				}catch(Exception e) 
+				{
+					e.printStackTrace();
+					Assert.fail(e.getMessage());
+				}
+			}
+			@Test(priority=46)
+			public void TCED29146() 
+			{
+				try
+				{
+					//To select the subject as Mathematics
+					select("//select[@id='ctl00_MainContent_CurriculumMapUnit1_CurriculumMapRubric1_ddlSubjectFilter']","Mathematics");
+					
+					Thread.sleep(3000);
+					
+					//To select the ruberic add
+					select("//select[@id='ctl00_MainContent_CurriculumMapUnit1_CurriculumMapRubric1_ddlRubrics']","Test Rubric");
+					
+					//click on the add selected ruberic from the drop down
+					click("//a[@id='ctl00_MainContent_CurriculumMapUnit1_CurriculumMapRubric1_btnAddRubric']");
+					
+					//Assert the alert message and accept the alert
+					Alert alert = driver.switchTo().alert();
+					String message = alert.getText();
+					Assert.assertEquals(alert.getText(), "The Unit Rubric has been added or updated");
+					alert.accept();
+					
+				}catch(Exception e) 
+				{
+					e.printStackTrace();
+					Assert.fail(e.getMessage());
+				}
+			}
 //*****************************************************Pop up *******************************************************************************		
 		
 		public String saveandcontinue(String Link)
