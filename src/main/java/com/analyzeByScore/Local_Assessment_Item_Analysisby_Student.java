@@ -265,8 +265,10 @@ public class Local_Assessment_Item_Analysisby_Student extends BaseClassOne
 	{
 		try {
 			
+			String Click_here_to_see_test="//a[@id='ctl00_MainContent_lnkassessmentPDF']";
+			
 			AssessmentPrint ob=new AssessmentPrint();
-			ob.AssessmentPrintReports();
+			ob.AssessmentPrintReports(Click_here_to_see_test);
 //			//Application should be in the  Item Analysis by Question  Report Report page
 //			
 //			//To click here to see the test

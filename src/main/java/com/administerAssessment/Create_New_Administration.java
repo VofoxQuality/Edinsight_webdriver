@@ -11,9 +11,7 @@ import org.testng.annotations.Test;
  */
 
 import com.generalMethods.AssessmentPrint;
-
 import Library.BaseClassOne;
-
 public class Create_New_Administration extends BaseClassOne
 {
 	String test_id="314";	
@@ -131,9 +129,52 @@ public class Create_New_Administration extends BaseClassOne
 			
 			//Asert the label name Allow Straight Edge
 			Assert.assertTrue(getText("//tr[@id='ctl00_MainContent_trHideForSurveyChecksDdls']//td[@colspan='3']").contains("Allow Straight Edge"),"Failed to assert-Allow Straight Edge");
-		} 
+		
+    	    //Online Screen Option Tab
+			click("//span[contains(text(),'Online Screen Options')]");
+			
+			//Assert the Label Name Screen Font For Test
+			Assert.assertEquals(getText("//td[contains(text(),'Screen Font For Test')]"),"Screen Font For Test");
+			
+			//Asert the Label Name Screen Font Size For Test 
+			Assert.assertEquals(getText("//td[contains(text(),'Screen Font Size For Test')]"),"Screen Font Size For Test");
+			
+			//Asert the Label Name Visually Handicappped Screen Font Size
+			Assert.assertEquals(getText("//td[contains(text(),'Visually Handicappped Screen Font Size')]"),"Visually Handicappped Screen Font Size");
+			
+			//Test Print Option
+			click("//*[@id='ctl00_MainContent_rtsEditAdministration']/div/ul/li[4]/span");
+			
+			//Asert the Label Name Print Font For Test
+			Assert.assertEquals(getText("//td[contains(text(),'Print Font For Test')]"),"Print Font For Test");
+			
+			//Asert the Label Name Print Font Size For Test
+			Assert.assertEquals(getText("//td[contains(text(),'Print Font Size For Test')]"),"Print Font Size For Test");
+			
+			//Asert the Label Name Print Word Font For Test 
+			Assert.assertEquals(getText("//td[contains(text(),'Print Word Font For Test')]"),"Print Word Font For Test");
+			
+			//Asert the Label Name Print Word Font Size For Test
+			Assert.assertEquals(getText("//td[contains(text(),'Print Word Font Size For Test')]"),"Print Word Font Size For Test");
+			
+			//Asert the Label Name Visually Handicappped Print Font Size 
+			Assert.assertEquals(getText("//td[contains(text(),'Visually Handicappped Print Font Size')]"),"Visually Handicappped Print Font Size");
+			
+			//Asert the Label Name Strip Embedded Fonts
+			Assert.assertEquals(getText("//td[contains(text(),'Strip Embedded Fonts')]"),"Strip Embedded Fonts");
+			
+			//Asert the Label Name Answer Label Position
+			Assert.assertEquals(getText("//td[contains(text(),'Answer Label Position')]"),"Answer Label Position");
+			
+		    //Asert the Label Name Print Cover Page
+			Assert.assertEquals(getText("//td[contains(text(),'Print Cover Page')]"),"Print Cover Page");
+			
+			//Asert the Label Name Footer Text 
+			Assert.assertEquals(getText("//td[contains(text(),'Footer Text')]"),"Footer Text");
+    	 
+    	 } 
     	 catch (Exception e)
-    	 {
+    	{
     		 Assert.fail(e.getMessage());
 			e.printStackTrace();
 		}    	
@@ -270,21 +311,87 @@ public class Create_New_Administration extends BaseClassOne
 			e.printStackTrace();
 		}    	
 	}
-//    @Test(priority=8)
+    @Test(priority=8)
 	public void TCED11008()
 	{
 		try
 		{
-			//Application should be in the  Create New Administration page.
-			
+			//Application should be in the  Create New Administration page.			
+						
 			//Click on  the Option Button 
 			click("//span[@class='rbText']");
+			
+			//String print_test="//span[contains(text(),'Print Test')]";
 			
 			//Click on Print Test
 			click("//*[@id='ctl00_MainContent_rcmAssessmentEditOptions_detached']/ul/li[3]/span");
 			
-			AssessmentPrint ob=new AssessmentPrint();
-			ob.AssessmentPrintReports();
+			//To select the frame
+			SwitchFrameName("printPopup");
+			
+			//To delete all the files in the directory
+			FileDelete();
+			
+			//To click print pdf
+			/*		
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
+			Thread.sleep(10000);
+
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+			 */
+			//To click on the print word
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']"); 
+			Thread.sleep(10000);
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+
+			//To delete all the files in the directory
+			FileDelete();
+			/*	
+			//To click on the Print OE to PDF
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkOePdfQuestions']");
+			Thread.sleep(6000);
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+
+			 */
+			//To click on the OE to Word
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkOeWordQuestions']");
+			Thread.sleep(6000);
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+
+			//*******Print answer Key**********************
+
+			//To delete all the files in the directory
+			FileDelete();
+			/*	
+			//To click print pdf
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfAnswer']");
+			Thread.sleep(6000);
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+			 */
+			//To click on the print word
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordAnswer']");
+			Thread.sleep(6000);
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+
+			//To delete all the files in the directory
+			FileDelete();
+
+			//To click on the Print condensed PDF
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedPDF']");
+			Thread.sleep(6000);
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+
+
+			//To click on the OE to Word
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedWord']");
+			Thread.sleep(6000);
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 		}
 		catch (Exception e)
 		{
@@ -298,6 +405,10 @@ public class Create_New_Administration extends BaseClassOne
     	try
     	{
 			//Application should be in the  Create New Administration page.
+    		
+			//To select the frame
+			driver.switchTo().defaultContent();			
+			click("//*[@id='RadWindowWrapper_ctl00_MainContent_printPopup']/div[1]/div/ul/li[2]/span");
 			
 			//Click on  the Option Button 
 			click("//span[@class='rbText']");
@@ -309,6 +420,8 @@ public class Create_New_Administration extends BaseClassOne
 		   
 			// Click on Ok button
 			driver.switchTo().alert().accept();
+			
+			Thread.sleep(2000);
 			
 			// AAssert dministration sholud delete and navigate to Manage Assessment page.
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Manage Assessments");			

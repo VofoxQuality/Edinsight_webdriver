@@ -3,17 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits">
+      <class name="com.analyzeByScore.AdministrationComparisonbyStudent">
         <methods>
           <include name="setup1"/>
-          <include name="TCED16503"/>
-          <include name="TCED16504"/>
-          <include name="TCED16505"/>
-          <include name="TCED16507"/>
+          <include name="TCED14291"/>
           <include name="tearDown"/>
-          <include name="TCED16506"/>
+          <include name="TCED14297"/>
         </methods>
-      </class> <!-- com.questionBank.Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits -->
+      </class> <!-- com.analyzeByScore.AdministrationComparisonbyStudent -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
