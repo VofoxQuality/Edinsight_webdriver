@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\VofoxQA\Edinsight_webdriver\VED0041-Track_Student_Interventions.xml</span>
+                    <span>E:\VofoxQA\Edinsight_webdriver\VED0029-Administration_Comparison_by_Student.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.analyzeByScore.AdministrationComparisonbyStudent" hash-for-method="TCED14291">TCED14291</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.analyzeByScore.AdministrationComparisonbyStudent" hash-for-method="TCED14297">TCED14297</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +121,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.MTSS.Track_Student_Interventions" hash-for-method="TCED19601">TCED19601</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.analyzeByScore.AdministrationComparisonbyStudent" hash-for-method="TCED14292">TCED14292</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.MTSS.Track_Student_Interventions" hash-for-method="TCED19602">TCED19602</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.analyzeByScore.AdministrationComparisonbyStudent" hash-for-method="TCED14293">TCED14293</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.MTSS.Track_Student_Interventions" hash-for-method="TCED19603">TCED19603</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.analyzeByScore.AdministrationComparisonbyStudent" hash-for-method="TCED14294">TCED14294</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.MTSS.Track_Student_Interventions" hash-for-method="TCED19604">TCED19604</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.analyzeByScore.AdministrationComparisonbyStudent" hash-for-method="TCED14295">TCED14295</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.analyzeByScore.AdministrationComparisonbyStudent" hash-for-method="TCED14296">TCED14296</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -132,38 +156,78 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.MTSS.Track_Student_Interventions</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.analyzeByScore.AdministrationComparisonbyStudent</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TCED19601">
-                  </a> <!-- TCED19601 -->
-                  <span class="method-name">TCED19601</span>
+                  <a name="TCED14291">
+                  </a> <!-- TCED14291 -->
+                  <span class="method-name">TCED14291</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Administration Comparison by Student] but found [Test Administration Comparison Report]
+	at com.analyzeByScore.AdministrationComparisonbyStudent.TCED14291(AdministrationComparisonbyStudent.java:37)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TCED19602">
-                  </a> <!-- TCED19602 -->
-                  <span class="method-name">TCED19602</span>
+                  <a name="TCED14297">
+                  </a> <!-- TCED14297 -->
+                  <span class="method-name">TCED14297</span>
+                  <div class="stack-trace">java.lang.AssertionError: No frame element found by name or id StudentGroupWindowUniqueNameToAvoidErrorsIHope2
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;MANOJ-D&apos;, ip: &apos;192.168.200.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: driver.version: unknown
+	at com.analyzeByScore.AdministrationComparisonbyStudent.TCED14297(AdministrationComparisonbyStudent.java:412)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.analyzeByScore.AdministrationComparisonbyStudent</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCED14292">
+                  </a> <!-- TCED14292 -->
+                  <span class="method-name">TCED14292</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TCED19603">
-                  </a> <!-- TCED19603 -->
-                  <span class="method-name">TCED19603</span>
+                  <a name="TCED14293">
+                  </a> <!-- TCED14293 -->
+                  <span class="method-name">TCED14293</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TCED19604">
-                  </a> <!-- TCED19604 -->
-                  <span class="method-name">TCED19604</span>
+                  <a name="TCED14294">
+                  </a> <!-- TCED14294 -->
+                  <span class="method-name">TCED14294</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCED14295">
+                  </a> <!-- TCED14295 -->
+                  <span class="method-name">TCED14295</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCED14296">
+                  </a> <!-- TCED14296 -->
+                  <span class="method-name">TCED14296</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,7 +235,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\VofoxQA\Edinsight_webdriver\VED0041-Track_Student_Interventions.xml</span>
+            <span class="header-content">E:\VofoxQA\Edinsight_webdriver\VED0029-Administration_Comparison_by_Student.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -180,7 +244,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.MTSS.Track_Student_Interventions&quot;/&gt;
+      &lt;class name=&quot;com.analyzeByScore.AdministrationComparisonbyStudent&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -220,28 +284,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TCED19601')
-data.setCell(0, 2, 'com.MTSS.Track_Student_Interventions')
-data.setCell(0, 3, 9286);
+data.setCell(0, 1, 'TCED14297')
+data.setCell(0, 2, 'com.analyzeByScore.AdministrationComparisonbyStudent')
+data.setCell(0, 3, 63109);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TCED19603')
-data.setCell(1, 2, 'com.MTSS.Track_Student_Interventions')
-data.setCell(1, 3, 2466);
+data.setCell(1, 1, 'TCED14295')
+data.setCell(1, 2, 'com.analyzeByScore.AdministrationComparisonbyStudent')
+data.setCell(1, 3, 32496);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TCED19604')
-data.setCell(2, 2, 'com.MTSS.Track_Student_Interventions')
-data.setCell(2, 3, 2314);
+data.setCell(2, 1, 'TCED14291')
+data.setCell(2, 2, 'com.analyzeByScore.AdministrationComparisonbyStudent')
+data.setCell(2, 3, 8974);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TCED19602')
-data.setCell(3, 2, 'com.MTSS.Track_Student_Interventions')
-data.setCell(3, 3, 198);
+data.setCell(3, 1, 'TCED14293')
+data.setCell(3, 2, 'com.analyzeByScore.AdministrationComparisonbyStudent')
+data.setCell(3, 3, 5871);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TCED14296')
+data.setCell(4, 2, 'com.analyzeByScore.AdministrationComparisonbyStudent')
+data.setCell(4, 3, 2130);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TCED14294')
+data.setCell(5, 2, 'com.analyzeByScore.AdministrationComparisonbyStudent')
+data.setCell(5, 3, 1351);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TCED14292')
+data.setCell(6, 2, 'com.analyzeByScore.AdministrationComparisonbyStudent')
+data.setCell(6, 3, 962);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -267,30 +343,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.MTSS.Track_Student_Interventions</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.analyzeByScore.AdministrationComparisonbyStudent</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup1</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">TCED19601</span>
-                <span class="method-start">9206 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TCED14291</span>
+                <span class="method-start">7948 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TCED19602</span>
-                <span class="method-start">18497 ms</span>
+                <span class="method-name">TCED14292</span>
+                <span class="method-start">16927 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TCED19603</span>
-                <span class="method-start">18696 ms</span>
+                <span class="method-name">TCED14293</span>
+                <span class="method-start">17890 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TCED19604</span>
-                <span class="method-start">21163 ms</span>
+                <span class="method-name">TCED14294</span>
+                <span class="method-start">23762 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TCED14295</span>
+                <span class="method-start">25114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TCED14296</span>
+                <span class="method-start">57612 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TCED14297</span>
+                <span class="method-start">59744 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23480 ms</span>
+                <span class="method-start">122869 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

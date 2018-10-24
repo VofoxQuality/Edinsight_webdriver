@@ -9,8 +9,6 @@
           <include name="TCED14291"/>
           <include name="tearDown"/>
           <include name="TCED14297"/>
-          <include name="TCED14296"/>
-          <include name="TCED14295"/>
         </methods>
       </class> <!-- com.analyzeByScore.AdministrationComparisonbyStudent -->
     </classes>
