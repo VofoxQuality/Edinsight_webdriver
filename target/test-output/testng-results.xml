@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="122872" started-at="2018-10-23T05:29:04Z" finished-at="2018-10-23T05:31:07Z">
+  <suite name="Suite" duration-ms="124933" started-at="2018-10-24T12:32:58Z" finished-at="2018-10-24T12:35:03Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="122872" started-at="2018-10-23T05:29:04Z" finished-at="2018-10-23T05:31:07Z">
+    <test name="Test" duration-ms="124933" started-at="2018-10-24T12:32:58Z" finished-at="2018-10-24T12:35:03Z">
       <class name="com.analyzeByScore.AdministrationComparisonbyStudent">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="setup1" is-config="true" duration-ms="7931" started-at="2018-10-23T05:29:04Z" finished-at="2018-10-23T05:29:12Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="setup1" is-config="true" duration-ms="10008" started-at="2018-10-24T12:32:58Z" finished-at="2018-10-24T12:33:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="FAIL" signature="TCED14291()[pri:1, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14291" duration-ms="8974" started-at="2018-10-23T05:29:12Z" finished-at="2018-10-23T05:29:21Z">
+        <test-method status="FAIL" signature="TCED14291()[pri:1, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14291" duration-ms="8908" started-at="2018-10-24T12:33:08Z" finished-at="2018-10-24T12:33:17Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Administration Comparison by Student] but found [Test Administration Comparison Report]]]>
@@ -56,27 +56,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED14291 -->
-        <test-method status="PASS" signature="TCED14292()[pri:2, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14292" duration-ms="962" started-at="2018-10-23T05:29:21Z" finished-at="2018-10-23T05:29:22Z">
+        <test-method status="PASS" signature="TCED14292()[pri:2, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14292" duration-ms="847" started-at="2018-10-24T12:33:17Z" finished-at="2018-10-24T12:33:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED14292 -->
-        <test-method status="PASS" signature="TCED14293()[pri:3, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14293" duration-ms="5871" started-at="2018-10-23T05:29:22Z" finished-at="2018-10-23T05:29:28Z">
+        <test-method status="PASS" signature="TCED14293()[pri:3, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14293" duration-ms="6065" started-at="2018-10-24T12:33:18Z" finished-at="2018-10-24T12:33:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED14293 -->
-        <test-method status="PASS" signature="TCED14294()[pri:4, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14294" duration-ms="1351" started-at="2018-10-23T05:29:28Z" finished-at="2018-10-23T05:29:29Z">
+        <test-method status="PASS" signature="TCED14294()[pri:4, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14294" duration-ms="1278" started-at="2018-10-24T12:33:24Z" finished-at="2018-10-24T12:33:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED14294 -->
-        <test-method status="PASS" signature="TCED14295()[pri:5, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14295" duration-ms="32496" started-at="2018-10-23T05:29:29Z" finished-at="2018-10-23T05:30:01Z">
+        <test-method status="PASS" signature="TCED14295()[pri:5, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14295" duration-ms="32480" started-at="2018-10-24T12:33:25Z" finished-at="2018-10-24T12:33:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED14295 -->
-        <test-method status="PASS" signature="TCED14296()[pri:6, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14296" duration-ms="2130" started-at="2018-10-23T05:30:01Z" finished-at="2018-10-23T05:30:04Z">
+        <test-method status="PASS" signature="TCED14296()[pri:6, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14296" duration-ms="2147" started-at="2018-10-24T12:33:57Z" finished-at="2018-10-24T12:34:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED14296 -->
-        <test-method status="FAIL" signature="TCED14297()[pri:7, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14297" duration-ms="63109" started-at="2018-10-23T05:30:04Z" finished-at="2018-10-23T05:31:07Z">
+        <test-method status="FAIL" signature="TCED14297()[pri:7, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="TCED14297" duration-ms="63154" started-at="2018-10-24T12:34:00Z" finished-at="2018-10-24T12:35:03Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[No frame element found by name or id StudentGroupWindowUniqueNameToAvoidErrorsIHope2
@@ -122,7 +122,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED14297 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-23T05:31:07Z" finished-at="2018-10-23T05:31:07Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.AdministrationComparisonbyStudent@43bd930a]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-24T12:35:03Z" finished-at="2018-10-24T12:35:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
