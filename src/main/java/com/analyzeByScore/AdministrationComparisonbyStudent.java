@@ -392,7 +392,7 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 			click("//span[contains(text(),'Add all students to group')]");
 			
 			// To switch new frame
-			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
+			SwitchFrame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
 			
 			// TO assert the validations
 			Assert.assertEquals( "Add Students to Group:", getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"));	
