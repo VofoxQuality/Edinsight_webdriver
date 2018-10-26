@@ -1,14 +1,14 @@
-package com.localassessment;
+package com.Local_Assessment_Score_Results;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Library.BaseClassOne;
 
 public class Test_Suite_Print_Login_Codes extends BaseClassOne
-
 {
 	String Test_id="314";
 	
@@ -27,10 +27,8 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
-	}
-	
+		}		
+	}	
 	@Test(priority=1)	
 	public void TCED13302()
 	{
@@ -60,11 +58,8 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
-		
-	}
-	
+		}			
+	}	
     @Test(priority=2)	
 	public void TCED13303()
 	{
@@ -83,11 +78,8 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
-		
-	}
-	
+		}		
+	}	
 	@Test(priority=3)	
 	public void TCED13304()
 	{
@@ -185,19 +177,16 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			
 			//Assert the Label 6 Per Page 
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_trCodesPerPage']/td").contains("6 Per Page"),"failed to assert text"+" 6 Per Page ");
-		}
-		
+		}		
 		catch (Exception e) 
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	@Test(priority=4)	
 	public void TCED13305()
-	{
-		
+	{		
 		try
 		{
 			//Click on Course Grouped By Teacher Tab 
@@ -229,10 +218,8 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}  
-	    
-	}
-	
+		}  	    
+	}	
 	@Test(priority=5)	
 	public void TCED13306()
 	{
@@ -262,21 +249,16 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			Thread.sleep(6000);				
             Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
             
-		} 
-		
-		catch (Exception e)
-		
+		} 		
+		catch (Exception e)		
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
+		}		
 	}
-
 	@Test(priority=6)	
 	public void TCED13307()
-	{
-		
+	{		
 		try
 		{
 			//Click on Student Group Tab 
@@ -306,8 +288,7 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
 		}
-	}
-	
+	}	
 	@Test(priority=7)	
 	public void TCED13308()
 	{
@@ -342,10 +323,7 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
 		}
-		
-		
-	}
-	
+	}	
 	@Test(priority=8)	
 	public void TCED13309()
 	{
@@ -385,10 +363,8 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
-	}
-	
+		}		
+	}	
 	@Test(priority=9)	
 	public void TCED13310()
 	{
@@ -400,20 +376,16 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			driver.switchTo().defaultContent();
 			click("//*[@id='RadWindowWrapper_ctl00_MainContent_ViewLoginCodes']/div[1]/div/ul/li/span");
 			
-			//click on Logout button
-			 
+			//click on Logout button			 
 			click("//*[@id='ctl00_A3']/img");
 			
-			//Assert the page Header as "Edinsight Login"
-						
+			//Assert the page Header as "Edinsight Login"						
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
 		} 
 		catch (Exception e)
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-	
-	}
-		
+		}	
+	}		
 }
