@@ -1,47 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="5" passed="4">
+<testng-results skipped="0" failed="1" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65259" started-at="2018-10-23T12:53:03Z" finished-at="2018-10-23T12:54:08Z">
+  <suite name="Default suite" duration-ms="102674" started-at="2018-10-26T06:16:13Z" finished-at="2018-10-26T06:17:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65259" started-at="2018-10-23T12:53:03Z" finished-at="2018-10-23T12:54:08Z">
-      <class name="com.localassessment.Copy_assessment_vendor">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Copy_assessment_vendor@45f292]" name="setup1" is-config="true" duration-ms="43768" started-at="2018-10-23T18:23:03Z" finished-at="2018-10-23T18:23:47Z">
+    <test name="Default test" duration-ms="102674" started-at="2018-10-26T06:16:13Z" finished-at="2018-10-26T06:17:55Z">
+      <class name="com.analyzeByScore.AdministrationComparisonbyStudent">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.AdministrationComparisonbyStudent@5700d6b1]" name="setup1" is-config="true" duration-ms="12440" started-at="2018-10-26T11:46:13Z" finished-at="2018-10-26T11:46:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED15001()[pri:1, instance:com.localassessment.Copy_assessment_vendor@45f292]" name="TCED15001" duration-ms="4448" started-at="2018-10-23T18:23:47Z" finished-at="2018-10-23T18:23:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED15001 -->
-        <test-method status="PASS" signature="TCED15002()[pri:2, instance:com.localassessment.Copy_assessment_vendor@45f292]" name="TCED15002" duration-ms="14404" started-at="2018-10-23T18:23:51Z" finished-at="2018-10-23T18:24:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED15002 -->
-        <test-method status="PASS" signature="TCED15003()[pri:3, instance:com.localassessment.Copy_assessment_vendor@45f292]" name="TCED15003" duration-ms="248" started-at="2018-10-23T18:24:05Z" finished-at="2018-10-23T18:24:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED15003 -->
-        <test-method status="PASS" signature="TCED15004()[pri:4, instance:com.localassessment.Copy_assessment_vendor@45f292]" name="TCED15004" duration-ms="350" started-at="2018-10-23T18:24:06Z" finished-at="2018-10-23T18:24:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED15004 -->
-        <test-method status="FAIL" signature="TCED15005()[pri:5, instance:com.localassessment.Copy_assessment_vendor@45f292]" name="TCED15005" duration-ms="1902" started-at="2018-10-23T18:24:06Z" finished-at="2018-10-23T18:24:08Z">
+        <test-method status="FAIL" signature="TCED14291()[pri:1, instance:com.analyzeByScore.AdministrationComparisonbyStudent@5700d6b1]" name="TCED14291" duration-ms="10452" started-at="2018-10-26T11:46:25Z" finished-at="2018-10-26T11:46:36Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Element should have been "select" but was "input"
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'AKHIL-TS', ip: '192.168.10.122', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_112'
-Driver info: driver.version: unknown]]>
+              <![CDATA[expected [Administration Comparison by Student] but found [Test Administration Comparison Report]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Element should have been "select" but was "input"
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'AKHIL-TS', ip: '192.168.10.122', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_112'
-Driver info: driver.version: unknown
+              <![CDATA[java.lang.AssertionError: expected [Administration Comparison by Student] but found [Test Administration Comparison Report]
 	at org.testng.Assert.fail(Assert.java:94)
-	at com.localassessment.Copy_assessment_vendor.TCED15005(Copy_assessment_vendor.java:169)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.analyzeByScore.AdministrationComparisonbyStudent.TCED14291(AdministrationComparisonbyStudent.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -72,12 +55,36 @@ Driver info: driver.version: unknown
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15005 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Copy_assessment_vendor@45f292]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-23T18:24:08Z" finished-at="2018-10-23T18:24:08Z">
+        </test-method> <!-- TCED14291 -->
+        <test-method status="PASS" signature="TCED14292()[pri:2, instance:com.analyzeByScore.AdministrationComparisonbyStudent@5700d6b1]" name="TCED14292" duration-ms="1168" started-at="2018-10-26T11:46:36Z" finished-at="2018-10-26T11:46:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14292 -->
+        <test-method status="PASS" signature="TCED14293()[pri:3, instance:com.analyzeByScore.AdministrationComparisonbyStudent@5700d6b1]" name="TCED14293" duration-ms="9883" started-at="2018-10-26T11:46:37Z" finished-at="2018-10-26T11:46:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14293 -->
+        <test-method status="PASS" signature="TCED14294()[pri:4, instance:com.analyzeByScore.AdministrationComparisonbyStudent@5700d6b1]" name="TCED14294" duration-ms="2294" started-at="2018-10-26T11:46:47Z" finished-at="2018-10-26T11:46:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14294 -->
+        <test-method status="PASS" signature="TCED14295()[pri:5, instance:com.analyzeByScore.AdministrationComparisonbyStudent@5700d6b1]" name="TCED14295" duration-ms="32592" started-at="2018-10-26T11:46:49Z" finished-at="2018-10-26T11:47:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14295 -->
+        <test-method status="PASS" signature="TCED14296()[pri:6, instance:com.analyzeByScore.AdministrationComparisonbyStudent@5700d6b1]" name="TCED14296" duration-ms="2125" started-at="2018-10-26T11:47:22Z" finished-at="2018-10-26T11:47:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14296 -->
+        <test-method status="PASS" signature="TCED14297()[pri:7, instance:com.analyzeByScore.AdministrationComparisonbyStudent@5700d6b1]" name="TCED14297" duration-ms="31683" started-at="2018-10-26T11:47:24Z" finished-at="2018-10-26T11:47:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14297 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.AdministrationComparisonbyStudent@5700d6b1]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-26T11:47:55Z" finished-at="2018-10-26T11:47:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.localassessment.Copy_assessment_vendor -->
+      </class> <!-- com.analyzeByScore.AdministrationComparisonbyStudent -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
