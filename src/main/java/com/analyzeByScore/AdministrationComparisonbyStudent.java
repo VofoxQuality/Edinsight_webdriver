@@ -85,7 +85,7 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 			Assert.assertEquals( getText("//*[@id='ctl00_MainContent_lblMsg']"),"You must select at least two administrations.");	
 
 			//Scroll to the object location
-	//		ScrollTo_Location("//*[@id='ctl00_MainContent_grdTest_ctl05_chkSelect']");
+			//		ScrollTo_Location("//*[@id='ctl00_MainContent_grdTest_ctl05_chkSelect']");
 
 			//To select the assessment administrations you would like to compare.		
 			JavaScriptclick("//*[@id='ctl00_MainContent_grdTest_ctl125_chkSelect']");
@@ -104,13 +104,13 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblMsg']"),"You can compare maximum four administrations at a time.");	
 			
-		//	Thread.sleep(3000);
+			//	Thread.sleep(3000);
 
 			JavaScriptclick("//*[@id='ctl00_MainContent_chkAll']");
 			JavaScriptclick("//*[@id='ctl00_MainContent_chkAll']");
 			
 			//Scroll to the object location
-	//		ScrollTo_Location("//*[@id='ctl00_MainContent_grdTest_ctl150_chkSelect']");
+			//		ScrollTo_Location("//*[@id='ctl00_MainContent_grdTest_ctl150_chkSelect']");
 			Thread.sleep(3000);
 			// To click the administration
 			click("//span[contains(text(),'For Automation- do not edit (Admin)')]/preceding::input[1]");
@@ -391,13 +391,9 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 			//To click on the options
 			click("//*[@id='ctl00_MainContent_rSplitButton']");
 			
-			//To click on the Add all students to group
-		//	WebDriverWait wait = new WebDriverWait(driver,30);
-	//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Add all students to group')]")));
-			
+		
 			click("//span[contains(text(),'Add all students to group')]");
-		//	Thread.sleep(2000);
-			// To switch to frame
+		
 			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
 			Thread.sleep(2000);
 			// To Assert the Validation Messages
