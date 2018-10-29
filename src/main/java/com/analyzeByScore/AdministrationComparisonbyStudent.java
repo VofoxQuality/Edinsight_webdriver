@@ -1,5 +1,7 @@
 package com.analyzeByScore;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -83,7 +85,7 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 			Assert.assertEquals( getText("//*[@id='ctl00_MainContent_lblMsg']"),"You must select at least two administrations.");	
 
 			//Scroll to the object location
-			ScrollTo_Location("//*[@id='ctl00_MainContent_grdTest_ctl124_chkSelect']");
+			//		ScrollTo_Location("//*[@id='ctl00_MainContent_grdTest_ctl05_chkSelect']");
 
 			//To select the assessment administrations you would like to compare.		
 			JavaScriptclick("//*[@id='ctl00_MainContent_grdTest_ctl125_chkSelect']");
@@ -102,17 +104,17 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblMsg']"),"You can compare maximum four administrations at a time.");	
 			
-		//	Thread.sleep(3000);
+			//	Thread.sleep(3000);
 
 			JavaScriptclick("//*[@id='ctl00_MainContent_chkAll']");
 			JavaScriptclick("//*[@id='ctl00_MainContent_chkAll']");
 			
 			//Scroll to the object location
-			ScrollTo_Location("//*[@id='ctl00_MainContent_grdTest_ctl124_chkSelect']");
-
-			JavaScriptclick("//*[@id='ctl00_MainContent_grdTest_ctl125_chkSelect']");
-
-
+			//		ScrollTo_Location("//*[@id='ctl00_MainContent_grdTest_ctl150_chkSelect']");
+			Thread.sleep(3000);
+			// To click the administration
+			click("//span[contains(text(),'For Automation- do not edit (Admin)')]/preceding::input[1]");
+						
 			Thread.sleep(3000);
 			//To scroll up to the page
 			JavascriptExecutor jse2 = (JavascriptExecutor)driver;
@@ -140,10 +142,9 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 	{
 		try
 		{
-			//Scroll to the object location
-			ScrollTo_Location("//*[@id='ctl00_MainContent_grdTest_ctl124_chkSelect']");
+			
+			click("//span[contains(text(),'Flood - PreAlgebra - Block 1')]/preceding::input[1]");
 
-			JavaScriptclick("//*[@id='ctl00_MainContent_grdTest_ctl126_chkSelect']");
 			
 			//To scroll up to the page
 			JavascriptExecutor jse2 = (JavascriptExecutor)driver;
@@ -342,63 +343,64 @@ public class AdministrationComparisonbyStudent extends BaseClassOne {
 			//To delete all the files in the directory
 			FileDelete();
 			
+			//click on the option button
+			click("//*[@id='ctl00_MainContent_rSplitButton']");
+			
 			//To click on the print to PDF button
-			click("//*[@id='ctl00_MainContent_rcMenu_detached']/ul/li[3]/span");	
-				
+			click("//span[contains(text(),'Print to PDF')]");
 
 			//To assert whether the PDF document is download or not 
 			Thread.sleep(4000);
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-			Thread.sleep(4000);
+
 
 			//To click on the Options
 			click("//*[@id='ctl00_MainContent_rSplitButton']");
-			
-			//To click on the print to CSV button
-			click("//*[@id='ctl00_MainContent_rcMenu_detached']/ul/li[4]/span");
 
-			//To assert whether the CSV document is download or not 
+			//To click on the print to CSV button
+			click("//span[contains(text(),'Print to CSV')]");
+
+			//To assert whether the PDF document is download or not 
 			Thread.sleep(4000);
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
 			
+			click("//*[@id='ctl00_MainContent_rgAdministrationComparisonByStudent_ctl00_ctl02_ctl01_chkSelectUserSelectCheckBox']");
+			
 			//To click on the Options
 			click("//*[@id='ctl00_MainContent_rSplitButton']");
 			
-			
 			//To click on the Add selected students to group
 			click("//span[contains(text(),'Add selected students to group')]");
-			Thread.sleep(2000);
+			
+			// To switch to frame
 			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
 			
 			Thread.sleep(2000);
-			// TO assert the validations
-			Assert.assertEquals( getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"),"Add Students to Group:");	
+			
+			// To Assert the Validation Messages
+			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"),"Add Students to Group:");	
 
-			Assert.assertEquals( getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"),"Create New Group:");	
+			Assert.assertEquals( getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"),"Create New Group:");
 			
 			// To switch to default frame
 			driver.switchTo().defaultContent();
-			// To close the popup
+			// To close popup
 			click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Session Timeout'])[1]/preceding::span[2]");
+			Thread.sleep(2000);
 			
 			//To click on the options
 			click("//*[@id='ctl00_MainContent_rSplitButton']");
-			Thread.sleep(1000);
 			
-			//To click on the Add all students to group
-			WebDriverWait wait = new WebDriverWait(driver,30);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Add all students to group')]")));
-			
+		
 			click("//span[contains(text(),'Add all students to group')]");
-			
-			// To switch new frame
+		
 			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
-			
-			// TO assert the validations
-			Assert.assertEquals( "Add Students to Group:", getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"));	
+			Thread.sleep(2000);
+			// To Assert the Validation Messages
+			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"),"Add Students to Group:");	
 
-			Assert.assertEquals( "Create New Group:", getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"));	
-				
+			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"),"Create New Group:");	
+			
 			// Add new grp with Auto generatednumber	
 			type("//*[@id='ctl00_ContentPlaceHolder1_txtCreateNewGroup']","AutomationGRP"+ generateRandomNumber());
 			
