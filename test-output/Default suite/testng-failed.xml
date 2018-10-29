@@ -3,17 +3,22 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.localassessment.Copy_assessment_vendor">
+      <class name="com.MTSS.Early_Warning_Identification">
         <methods>
+          <include name="TCED22101"/>
           <include name="setup1"/>
-          <include name="TCED15003"/>
-          <include name="TCED15005"/>
-          <include name="TCED15002"/>
+          <include name="TCED22111"/>
+          <include name="TCED22103"/>
+          <include name="TCED22102"/>
+          <include name="TCED22113"/>
+          <include name="TCED22104"/>
+          <include name="TCED22107"/>
+          <include name="TCED22106"/>
+          <include name="TCED22109"/>
+          <include name="TCED22108"/>
           <include name="tearDown"/>
-          <include name="TCED15004"/>
-          <include name="TCED15006"/>
         </methods>
-      </class> <!-- com.localassessment.Copy_assessment_vendor -->
+      </class> <!-- com.MTSS.Early_Warning_Identification -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

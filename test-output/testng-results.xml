@@ -2,60 +2,60 @@
 <testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="136843" started-at="2018-10-29T11:03:31Z" finished-at="2018-10-29T11:05:47Z">
+  <suite name="Suite" duration-ms="143061" started-at="2018-10-29T12:02:28Z" finished-at="2018-10-29T12:04:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="136843" started-at="2018-10-29T11:03:31Z" finished-at="2018-10-29T11:05:47Z">
+    <test name="Test" duration-ms="143061" started-at="2018-10-29T12:02:28Z" finished-at="2018-10-29T12:04:51Z">
       <class name="com.MTSS.Early_Warning_Identification">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="setup1" is-config="true" duration-ms="8614" started-at="2018-10-29T11:03:31Z" finished-at="2018-10-29T11:03:39Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="setup1" is-config="true" duration-ms="12906" started-at="2018-10-29T12:02:28Z" finished-at="2018-10-29T12:02:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED22101()[pri:1, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22101" duration-ms="10123" started-at="2018-10-29T11:03:39Z" finished-at="2018-10-29T11:03:49Z">
+        <test-method status="PASS" signature="TCED22101()[pri:1, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22101" duration-ms="10423" started-at="2018-10-29T12:02:41Z" finished-at="2018-10-29T12:02:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22101 -->
-        <test-method status="PASS" signature="TCED22102()[pri:2, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22102" duration-ms="7819" started-at="2018-10-29T11:03:49Z" finished-at="2018-10-29T11:03:57Z">
+        <test-method status="PASS" signature="TCED22102()[pri:2, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22102" duration-ms="8520" started-at="2018-10-29T12:02:52Z" finished-at="2018-10-29T12:03:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22102 -->
-        <test-method status="PASS" signature="TCED22103()[pri:3, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22103" duration-ms="379" started-at="2018-10-29T11:03:57Z" finished-at="2018-10-29T11:03:58Z">
+        <test-method status="PASS" signature="TCED22103()[pri:3, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22103" duration-ms="399" started-at="2018-10-29T12:03:00Z" finished-at="2018-10-29T12:03:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22103 -->
-        <test-method status="PASS" signature="TCED22104()[pri:4, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22104" duration-ms="169" started-at="2018-10-29T11:03:58Z" finished-at="2018-10-29T11:03:58Z">
+        <test-method status="PASS" signature="TCED22104()[pri:4, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22104" duration-ms="185" started-at="2018-10-29T12:03:01Z" finished-at="2018-10-29T12:03:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22104 -->
-        <test-method status="PASS" signature="TCED22106()[pri:6, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22106" duration-ms="65315" started-at="2018-10-29T11:03:58Z" finished-at="2018-10-29T11:05:03Z">
+        <test-method status="PASS" signature="TCED22106()[pri:6, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22106" duration-ms="65306" started-at="2018-10-29T12:03:01Z" finished-at="2018-10-29T12:04:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22106 -->
-        <test-method status="PASS" signature="TCED22107()[pri:7, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22107" duration-ms="13996" started-at="2018-10-29T11:05:03Z" finished-at="2018-10-29T11:05:17Z">
+        <test-method status="PASS" signature="TCED22107()[pri:7, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22107" duration-ms="14356" started-at="2018-10-29T12:04:06Z" finished-at="2018-10-29T12:04:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22107 -->
-        <test-method status="PASS" signature="TCED22108()[pri:8, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22108" duration-ms="7734" started-at="2018-10-29T11:05:17Z" finished-at="2018-10-29T11:05:25Z">
+        <test-method status="PASS" signature="TCED22108()[pri:8, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22108" duration-ms="7793" started-at="2018-10-29T12:04:20Z" finished-at="2018-10-29T12:04:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22108 -->
-        <test-method status="PASS" signature="TCED22109()[pri:9, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22109" duration-ms="5450" started-at="2018-10-29T11:05:25Z" finished-at="2018-10-29T11:05:30Z">
+        <test-method status="PASS" signature="TCED22109()[pri:9, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22109" duration-ms="5393" started-at="2018-10-29T12:04:28Z" finished-at="2018-10-29T12:04:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22109 -->
-        <test-method status="PASS" signature="TCED22111()[pri:11, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22111" duration-ms="3894" started-at="2018-10-29T11:05:30Z" finished-at="2018-10-29T11:05:34Z">
+        <test-method status="PASS" signature="TCED22111()[pri:11, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22111" duration-ms="4427" started-at="2018-10-29T12:04:34Z" finished-at="2018-10-29T12:04:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22111 -->
-        <test-method status="PASS" signature="TCED22113()[pri:13, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22113" duration-ms="13318" started-at="2018-10-29T11:05:34Z" finished-at="2018-10-29T11:05:47Z">
+        <test-method status="PASS" signature="TCED22113()[pri:13, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="TCED22113" duration-ms="13302" started-at="2018-10-29T12:04:38Z" finished-at="2018-10-29T12:04:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED22113 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-29T11:05:47Z" finished-at="2018-10-29T11:05:47Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Early_Warning_Identification@553a3d88]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-29T12:04:51Z" finished-at="2018-10-29T12:04:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.MTSS.Early_Warning_Identification -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
