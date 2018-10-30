@@ -472,42 +472,42 @@ public class BaseClassOne	{
 	public boolean dropelementfinder(String locator,String[] Listlabels)
 	{
 		Boolean found = true; 
-		WebElement sst=driver.findElement(By.xpath("//select[@id='ctl00_ContentPlaceHolder1_gvCurriculumMaps_ctl02_ddlCopyTo']"));
+		WebElement sst=find(locator);
         Select select = new Select(sst);  
-
-        List<WebElement> options = select.getOptions();  
+        int i=0;
+        int flag=0;
+        List<WebElement> options = select.getOptions();
+        String[] ActualText=new String[options.size()];
         for(WebElement we:options)  
         {  
-         for (int i=0; i<Listlabels.length; i++){
+           
+        	ActualText[i]=we.getText();
+        	i++;
+        	
+        }	
+         for (int j=0; j<Listlabels.length; j++){
         	// Assert.assertEquals(actual, expected);
         	 
-        	 System.out.println("myList"+i+Listlabels[i]);
-        	 System.out.println("WebList"+i+we.getText());
+        	 System.out.println("myList"+i+Listlabels[j]);
         	 
-             if (we.getText().equals(Listlabels[i])){
+             if(Arrays.asList(ActualText).contains(Listlabels[i]))
+            	 
+            		 {
             	 
             	//Assert.assertEquals(true, "Expected label is not found in the list");
             	System.out.println(Listlabels[i]);
-            	break;
+            	flag++;
              } 
-             else
-             {
-            	 found = false;
-            	 break;
-            	 //break;
-            	 //Assert.assertEquals(false, "Expected label is not found in the list");
-             }
+             
            }
+         if(flag==Listlabels.length)
+         {
+        	 return true;
          }
-        if(found)
-        {
-        	return true;
-        			
-        }
-        else
-        {
-        	return false;
-        }
+         else
+         {
+        	 return false;
+         }
 
 	}  
 	

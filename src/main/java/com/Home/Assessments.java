@@ -44,13 +44,13 @@ public class Assessments extends BaseClassOne
 			click("//*[@id='ctl00_plcLeftMenu_MenuStudentLeft1_pnlMenu']/ul/li[2]/a/span[1]");
 			
 			//Assert the label "Standardized Assessment Results"
-			Assert.assertTrue(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr/td/b").contains("Standardized Assessment Results"),"failed to assert text"+"  Standardized Assessment Results");
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr/td/b"),"Standardized Assessment Results");
 							
 			//Assert the label "Student Data Depot"
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rgInputAssessment_ctl00']/thead/tr/th").contains("Student Data Depot"),"failed to assert text"+"  Student Data Depot");
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rgInputAssessment_ctl00']/thead/tr/th"),"Student Data Depot");
 			
 			//Assert the label "PVAAS Results"
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_panPVAASHistory']/b").contains("PVAAS Results"),"failed to assert text"+"  PVAAS Results");
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_panPVAASHistory']/b"),"PVAAS Results");
 		} 
 		catch (Exception e)
 		{
@@ -66,28 +66,28 @@ public class Assessments extends BaseClassOne
 		try
 		{
 			//Assert the Label "Assessment"
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[1]").contains("Assessment"),"failed to assert text"+"  Assessment");
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[1]"),"Assessment");
 			
 			//Assert the Label "Gr"
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[2]").contains("Gr"),"failed to assert text"+"  Gr");
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[2]"),("Gr"));
 			
 			//Assert the Label "Math"
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[3]").contains("Math"),"failed to assert text"+"  Math");
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[3]"),"Math");
 			
 			//Assert the Label "Reading"
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[4]").contains("Reading"),"failed to assert text"+"  Reading");
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[4]"),"Reading");
 			
 			//Assert the Label "Language"
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[5]").contains("Language"),"failed to assert text"+"  Language");
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[5]"),"Language");
 			
 			//Assert the Label "Writing"
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[6]").contains("Writing"),"failed to assert text"+"  Writing");
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[6]"),"Writing");
 			
 			//Assert the Label "Science"
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[7]").contains("Science"),"failed to assert text"+"  Science");
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[7]"),"Science");
 			
 			//Assert the Label "Soc Studies"
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[8]").contains("Soc Studies"),"failed to assert text"+"  Soc Studies");
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[8]"),"Soc Studies");
 			
 			//2nd Grid
 			
@@ -161,7 +161,7 @@ public class Assessments extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[2]/td[1]/a");
 			
 			//Assert the heading "PSSA 2013|2014 Assessment Data "
-			Assert.assertTrue(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/div[1]/table/tbody/tr/td[2]").contains("PSSA 2013|2014 Assessment Data"),"failed to assert text"+"  PSSA 2013|2014 Assessment Data");
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/div[1]/table/tbody/tr/td[2]"),"PSSA 2013|2014 Assessment Data");
 		} 
 		catch (Exception e)
 		{
@@ -563,19 +563,19 @@ public class Assessments extends BaseClassOne
 			select("//*[@id='ctl00_MainContent_ddlNorms']","label=Biology");
 			
 			//Verify the "TOTAL TEST " graph is exists in the page.
-			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_ChartTotalScores_Image']")).isDisplayed(),"TOTAL TEST graph-Not found in the page");
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_ChartTotalScores_Image']"),"TOTAL TEST graph-Not found in the page");
 			
 			//Verify the "BASIC BIOLOGICAL PRINCIPALS/CHEMICAL BASIS FOR LIFE" graph is exists in the page.
-			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat1_Image']")).isDisplayed(),"BASIC BIOLOGICAL PRINCIPALS/CHEMICAL BASIS FOR LIFE graph-Not found in the page");
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat1_Image']"),"BASIC BIOLOGICAL PRINCIPALS/CHEMICAL BASIS FOR LIFE graph-Not found in the page");
 			
 			//Verify the "BIOENERGETIC/HOMEOSTASIS AND TRANSPORT" graph is exists in the page.
-			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat2_Image']")).isDisplayed(),"BIOENERGETIC/HOMEOSTASIS AND TRANSPORT graph-Not found in the page");
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat2_Image']"),"BIOENERGETIC/HOMEOSTASIS AND TRANSPORT graph-Not found in the page");
 			
 			//Verify the "CELL GROWTH AND REPRODUCTION/GENETICS " graph is exists in the page.
-			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat3_Image']")).isDisplayed(),"CELL GROWTH AND REPRODUCTION/GENETICS graph-Not found in the page");
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat3_Image']"),"CELL GROWTH AND REPRODUCTION/GENETICS graph-Not found in the page");
 			
 			//Verify the "THEORY OF EVOLUTION/ECOLOGY" graph is exists in the page.
-			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat4_Image']")).isDisplayed(),"THEORY OF EVOLUTION/ECOLOGY graph-Not found in the page");
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat4_Image']"),"THEORY OF EVOLUTION/ECOLOGY graph-Not found in the page");
 			
 			js.executeScript("scroll(0,50)");
 			Takescreenshot("Biology_CDT_2015-16_graph");			
@@ -735,11 +735,6 @@ public class Assessments extends BaseClassOne
 			Thread.sleep(6000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			
-			//click on Logout button		 
-			click("//*[@id='ctl00_A3']/img");
-			
-			//Assert the page Header as "Edinsight Login"					
-			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
 		} 
 		catch (InterruptedException e)
 		{
