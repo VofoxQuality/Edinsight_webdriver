@@ -106,7 +106,8 @@ public class Early_Warning_Identification extends BaseClassOne {
 	public void TCED22102() throws InterruptedException
 
 	{
-		try {
+		try 
+		{
 			// TO select the parameters
 			select("//*[@id='ctl00_MainContent_ddlRTITierType']","Keystone Spotlight");
 
@@ -214,9 +215,7 @@ public class Early_Warning_Identification extends BaseClassOne {
 		}        
 	}
 
-
 	@Test(priority=6)
-
 	public void TCED22106() throws InterruptedException
 	{
 
@@ -236,7 +235,6 @@ public class Early_Warning_Identification extends BaseClassOne {
 			Assert.fail(e.getMessage());
 		}        
 	}
-
 
 	@Test(priority=7)
 
@@ -267,9 +265,6 @@ public class Early_Warning_Identification extends BaseClassOne {
 			// To Assert Header
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/table/tbody/tr[1]/td[1]/span"), "Early Warning Identification");
 
-
-
-
 		} 
 		catch (Exception e) 
 		{
@@ -277,7 +272,6 @@ public class Early_Warning_Identification extends BaseClassOne {
 			Assert.fail(e.getMessage());
 		}        
 	}
-
 
 	@Test(priority=8)
 	public void TCED22108()
@@ -327,6 +321,7 @@ public class Early_Warning_Identification extends BaseClassOne {
 			// To click on favourites
 			click("//*[@id='ctl00_MainContent_btnAddToFavorite']");
 			Thread.sleep(5000);
+			
 			// To Assert Header
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/table/tbody/tr[1]/td[1]/span"), "Early Warning Identification");
 
@@ -340,7 +335,6 @@ public class Early_Warning_Identification extends BaseClassOne {
 	}
 
 	//	@Test(priority=10)
-
 	public void TCED22110()
 	{
 
@@ -358,7 +352,6 @@ public class Early_Warning_Identification extends BaseClassOne {
 			Assert.fail(e.getMessage());
 		}        
 	}
-
 
 	@Test(priority=11)
 	public void TCED22111()
@@ -385,8 +378,6 @@ public class Early_Warning_Identification extends BaseClassOne {
 			// To Assert Header
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/table/tbody/tr[1]/td[1]/span"), "Early Warning Identification");
 
-
-
 		} 
 		catch (Exception e) 
 		{
@@ -395,8 +386,7 @@ public class Early_Warning_Identification extends BaseClassOne {
 		}        
 	}
 
-//	@Test(priority=12)
-
+	//	@Test(priority=12)
 	public void TCED22112() throws InterruptedException
 
 	{
@@ -438,10 +428,6 @@ public class Early_Warning_Identification extends BaseClassOne {
 			Assert.fail(e.getMessage());
 		}        
 	}
-
-
-
-
 
 }	
 

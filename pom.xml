@@ -84,6 +84,8 @@
 						<suiteXmlFile>VED0029-Administration_Comparison_by_Student.xml</suiteXmlFile>
 						<suiteXmlFile>VED0032-Local Assessment - Question_Bank _Add_Edit_or_View_Exhibits.xml</suiteXmlFile>
 						<suiteXmlFile>VED0036-MTSS_Tier_Intervention_Menu.xml</suiteXmlFile>
+						<suiteXmlFile>VED0001-Copy_Assessment_Vendor_Mode.xml</suiteXmlFile>
+						<suiteXmlFile>VED0048-Early_Warning_Identification.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

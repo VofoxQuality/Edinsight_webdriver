@@ -43,7 +43,7 @@ public class Copy_assessment_vendor extends BaseClassOne
 			//click on Copy Assessment
 			click("//a[@id='ctl00_MainContent_grdMyAssessments_ctl02_lnkCopyAssessment']");
 			
-			Assert.assertTrue(find("//*[@id='ctl00_MainContent_rwCopyAssessment_C']").isDisplayed(),"Copy assessment pop-up not found");
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_rwCopyAssessment_C']"),"Copy assessment pop-up not found");
 		} 
 		catch (Exception e)
 		{

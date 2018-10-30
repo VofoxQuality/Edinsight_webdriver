@@ -11,9 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import Library.BaseClassOne;
-
 public class Assessments extends BaseClassOne
 
 {
@@ -90,13 +88,65 @@ public class Assessments extends BaseClassOne
 			
 			//Assert the Label "Soc Studies"
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptAssessments']/tbody/tr[1]/td[8]").contains("Soc Studies"),"failed to assert text"+"  Soc Studies");
+			
+			//2nd Grid
+			
+			//Assert the Label "Assessment 
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptKeystone']/tbody/tr[1]/td[1]"),"Assessment");
+			
+			//Assert the Label "Gr"
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rptKeystone']/tbody/tr[1]/td[2]"),"Gr");
+			
+			//Assert the Label "Alg Mod1"
+			Assert.assertEquals(getText("//td[contains(text(),'Alg Mod1')]"),"Alg Mod1");
+			
+			//Assert the Label "Alg Mod2"
+			Assert.assertEquals(getText("//td[contains(text(),'Alg Mod2')]"),"Alg Mod2");
+			
+			//Assert the Label "Alg Overall"
+			Assert.assertEquals(getText("//td[contains(text(),'Alg Overall')]"),"Alg Overall");
+			
+			//Assert the Label "Bio Mod1"
+			Assert.assertEquals(getText("//td[contains(text(),'Bio Mod1')]"),"Bio Mod1");
+			
+			//Assert the Label "Bio Mod2"
+			Assert.assertEquals(getText("//td[contains(text(),'Bio Mod2')]"),"Bio Mod2");
+			
+			//Assert the Label "Bio Overall"
+			Assert.assertEquals(getText("//td[contains(text(),'Bio Overall')]"),"Bio Overall");
+			
+			//Assert the Label "Lit Mod1"
+			Assert.assertEquals(getText("//td[contains(text(),'Lit Mod1')]"),"Lit Mod1");
+			
+			//Assert the Label "Lit Mod2"
+			Assert.assertEquals(getText("//td[contains(text(),'Lit Mod2')]"),"Lit Mod2");
+			
+			//Assert the Label "Lit Overall"
+			Assert.assertEquals(getText("//td[contains(text(),'Lit Overall')]"),"Lit Overall");
+			
+			//3rd Grid
+			
+			//Assert the Label "Assessment"
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_egCDT']/tbody/tr[1]/td[1]"),"Assessment");
+			
+			//Assert the Label "Gr"
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_egCDT']/tbody/tr[1]/td[3]"),"Gr");
+			
+			//Assert the Label "Test Date"
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_egCDT']/tbody/tr[1]/td[4]"),"Test Date");
+			
+			//Assert the Label "Scaled Score"
+			Assert.assertEquals(getText("//td[contains(text(),'Scaled Score')]"),"Scaled Score");
+			
+			//Assert the Label "Performance"
+			Assert.assertEquals(getText("//td[contains(text(),'Performance')]"),"Performance");
+			
 		}
        catch (Exception e)
 		{
     	   Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-	
+		}	
 	}
 	
 	@Test(priority=2)	
@@ -164,10 +214,9 @@ public class Assessments extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-	
+		}	
 	}
-
+	
 	@Test(priority=4)	
 	public void TCED34205()
 	{
@@ -190,10 +239,8 @@ public class Assessments extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-	
+		}	
 	}
-
 	@Test(priority=5)	
 	public void TCED34206()
 	{
@@ -300,10 +347,14 @@ public class Assessments extends BaseClassOne
 			js.executeScript("scroll(0,0)");
 			
 			//Verify the "Percent Correct " graph is exists in the page.
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_KeyStoneChart_Image']"));
+			
 			//Taking screenshot of the "Percent Correct " graph	
 			Takescreenshot("Percent Correct");	
 			
 			//Verify the "Multiple Choice/Constructed Response" graph is exists in the page.
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneMultiChoiceChart_Image']"));
+			
 			//Taking screenshot of the "Multiple Choice/Constructed Response" graph
 			js.executeScript("scroll(0,document.body.scrollHeight)");
 			Takescreenshot("Multiple Choice_Constructed Response");
@@ -312,10 +363,12 @@ public class Assessments extends BaseClassOne
 			js.executeScript("scroll(0,0)");
 			click("//*[@id='ctl00_MainContent_lnkFilterBiology']/b");
 			//Taking screenshot of the "Percent Correct " graph exists against the Biology 
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneChart_Image']"));
 			Takescreenshot("Biology_Percent Correct");
 			
 			//Verify the "Multiple Choice/Constructed Response" graph is exists against the Biology Subject in the page.
 			js.executeScript("scroll(0,document.body.scrollHeight)");
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneMultiChoiceChart_Image']"));
 			
 			//Taking screenshot of the "Multiple Choice/Constructed Response" graph	
 			Takescreenshot("Biology_Multiple Choice_Constructed Response");
@@ -323,12 +376,14 @@ public class Assessments extends BaseClassOne
 			//Click on View Only Literature
 			js.executeScript("scroll(0,0)");
 			click("//*[@id='ctl00_MainContent_lnkFilterLiterature']/b");
-			//Taking screenshot of the "Percent Correct " graph exists against the literature 
+			//Taking screenshot of the "Percent Correct " graph exists against the literature
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneChart_Image']"));
 			Takescreenshot("literature_Percent Correct");
 			
 			//Verify the "Multiple Choice/Constructed Response" graph is exists against the Literature Subject in the page.
 			js.executeScript("scroll(0,document.body.scrollHeight)");
 			//Taking screenshot of the "Multiple Choice/Constructed Response" graph	
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneMultiChoiceChart_Image']"));
 			Takescreenshot("literature_Multiple Choice_Constructed Response");
 		}
 		catch (Exception e)

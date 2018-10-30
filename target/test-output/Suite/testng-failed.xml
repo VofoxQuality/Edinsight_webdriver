@@ -8,7 +8,6 @@
           <include name="setup1"/>
           <include name="TCED14291"/>
           <include name="tearDown"/>
-          <include name="TCED14297"/>
         </methods>
       </class> <!-- com.analyzeByScore.AdministrationComparisonbyStudent -->
     </classes>

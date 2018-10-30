@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.localassessment.Test_Suite_Print_Login_Codes"/>
+      <class name="com.MTSS.Fix_and_Delete_intervention_plan"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
