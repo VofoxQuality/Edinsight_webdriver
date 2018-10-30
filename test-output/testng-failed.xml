@@ -7,8 +7,13 @@
         <methods>
           <include name="TCED22511"/>
           <include name="setup1"/>
+          <include name="TCED22514"/>
+          <include name="TCED22516"/>
+          <include name="TCED22517"/>
           <include name="tearDown"/>
+          <include name="TCED22515"/>
           <include name="TCED22512"/>
+          <include name="TCED22513"/>
         </methods>
       </class> <!-- com.MTSS.Meeting_History_Report -->
     </classes>
