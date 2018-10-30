@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.localassessment.Test_Suite_Print_Login_Codes"/>
+      <class name="com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
