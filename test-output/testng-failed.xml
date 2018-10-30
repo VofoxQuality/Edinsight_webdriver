@@ -5,10 +5,10 @@
     <classes>
       <class name="com.MTSS.Meeting_History_Report">
         <methods>
+          <include name="TCED22511"/>
           <include name="setup1"/>
-          <include name="TCED22516"/>
           <include name="tearDown"/>
-          <include name="TCED22515"/>
+          <include name="TCED22512"/>
         </methods>
       </class> <!-- com.MTSS.Meeting_History_Report -->
     </classes>
