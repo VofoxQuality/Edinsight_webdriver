@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.MTSS.Meeting_History_Report">
+      <class name="com.MTSS.Mass_Change_Person_Responsible">
         <methods>
+          <include name="TCED21103"/>
           <include name="setup1"/>
-          <include name="TCED22516"/>
           <include name="tearDown"/>
-          <include name="TCED22515"/>
         </methods>
-      </class> <!-- com.MTSS.Meeting_History_Report -->
+      </class> <!-- com.MTSS.Mass_Change_Person_Responsible -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
