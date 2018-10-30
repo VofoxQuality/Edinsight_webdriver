@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/5</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 26 12:13:51 IST 2018</td>
+<td>Started on:</td><td>Mon Oct 29 19:41:48 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (258 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38928 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,34 +68,34 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.MTSS.Manage_meetings.setup1()'><b>setup1</b><br>Test class: com.MTSS.Manage_meetings</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: f:\Jars\geckodriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:141)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:158)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
-	at Library.BaseClassOne.setup1(BaseClassOne.java:114)
+<td title='com.MTSS.Mass_Change_Person_Responsible.TCED21103()'><b>TCED21103</b><br>Test class: com.MTSS.Mass_Change_Person_Responsible</td>
+<td><div><pre>java.lang.AssertionError: expected [Person Responsible ] but found [Person Responsible]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.MTSS.Mass_Change_Person_Responsible.TCED21103(Mass_Change_Person_Responsible.java:99)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:631)
-	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
@@ -109,27 +109,27 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace574568002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace574568002'><pre>java.lang.IllegalStateException: The driver executable does not exist: f:\Jars\geckodriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:141)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:158)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
-	at Library.BaseClassOne.setup1(BaseClassOne.java:114)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1617838096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1617838096'><pre>java.lang.AssertionError: expected [Person Responsible ] but found [Person Responsible]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.MTSS.Mass_Change_Person_Responsible.TCED21103(Mass_Change_Person_Responsible.java:99)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:631)
-	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
@@ -144,54 +144,36 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>0</td>
-<td>null</td></tr>
+<td>1</td>
+<td>com.MTSS.Mass_Change_Person_Responsible@4cf777e8</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.MTSS.Manage_meetings.tearDown()'><b>tearDown</b><br>Test class: com.MTSS.Manage_meetings</td>
+<td title='com.MTSS.Mass_Change_Person_Responsible.TCED21101()'><b>TCED21101</b><br>Test class: com.MTSS.Mass_Change_Person_Responsible</td>
 <td></td>
-<td>0</td>
-<td>null</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>9</td>
+<td>com.MTSS.Mass_Change_Person_Responsible@4cf777e8</td></tr>
 <tr>
-<td title='com.MTSS.Manage_meetings.TCED20201()'><b>TCED20201</b><br>Test class: com.MTSS.Manage_meetings</td>
+<td title='com.MTSS.Mass_Change_Person_Responsible.TCED21102()'><b>TCED21102</b><br>Test class: com.MTSS.Mass_Change_Person_Responsible</td>
 <td></td>
 <td>0</td>
-<td>com.MTSS.Manage_meetings@4cf777e8</td></tr>
+<td>com.MTSS.Mass_Change_Person_Responsible@4cf777e8</td></tr>
 <tr>
-<td title='com.MTSS.Manage_meetings.TCED20202()'><b>TCED20202</b><br>Test class: com.MTSS.Manage_meetings</td>
+<td title='com.MTSS.Mass_Change_Person_Responsible.TCED21104()'><b>TCED21104</b><br>Test class: com.MTSS.Mass_Change_Person_Responsible</td>
 <td></td>
 <td>0</td>
-<td>com.MTSS.Manage_meetings@4cf777e8</td></tr>
+<td>com.MTSS.Mass_Change_Person_Responsible@4cf777e8</td></tr>
 <tr>
-<td title='com.MTSS.Manage_meetings.TCED20203()'><b>TCED20203</b><br>Test class: com.MTSS.Manage_meetings</td>
+<td title='com.MTSS.Mass_Change_Person_Responsible.TCED21105()'><b>TCED21105</b><br>Test class: com.MTSS.Mass_Change_Person_Responsible</td>
 <td></td>
-<td>0</td>
-<td>com.MTSS.Manage_meetings@4cf777e8</td></tr>
-<tr>
-<td title='com.MTSS.Manage_meetings.TCED20204()'><b>TCED20204</b><br>Test class: com.MTSS.Manage_meetings</td>
-<td></td>
-<td>0</td>
-<td>com.MTSS.Manage_meetings@4cf777e8</td></tr>
-<tr>
-<td title='com.MTSS.Manage_meetings.TCED20205()'><b>TCED20205</b><br>Test class: com.MTSS.Manage_meetings</td>
-<td></td>
-<td>0</td>
-<td>com.MTSS.Manage_meetings@4cf777e8</td></tr>
+<td>18</td>
+<td>com.MTSS.Mass_Change_Person_Responsible@4cf777e8</td></tr>
 </table><p>
 </body>
 </html>
