@@ -3,22 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.MTSS.Manage_meetings">
+      <class name="com.MTSS.Students_Receiving_Interventions_by_Teacher">
         <methods>
-          <include name="TCED20220"/>
-          <include name="TCED20221"/>
           <include name="setup1"/>
-          <include name="TCED20222"/>
-          <include name="TCED20219"/>
+          <include name="TCED221211"/>
           <include name="tearDown"/>
-          <include name="TCED20212"/>
-          <include name="TCED20223"/>
-          <include name="TCED20213"/>
-          <include name="TCED20224"/>
-          <include name="TCED20214"/>
-          <include name="TCED20215"/>
         </methods>
-      </class> <!-- com.MTSS.Manage_meetings -->
+      </class> <!-- com.MTSS.Students_Receiving_Interventions_by_Teacher -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
