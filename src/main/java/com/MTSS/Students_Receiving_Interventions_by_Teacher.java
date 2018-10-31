@@ -121,5 +121,182 @@ public class Students_Receiving_Interventions_by_Teacher extends BaseClassOne
 			e.printStackTrace();
 		  }
 	}
-
+	@Test(priority=5)
+	public void TCED221205()
+	{
+		try
+		  {
+			//Application should be in the Tiered Students by Teacher Report  page
+			
+			//Assert the Labels "School Type"
+			Assert.assertEquals(getText("//span[@id='ctl00_MainContent_lblSchoolType']"),"SchoolType");
+			
+			//Assert the Labels "Building"
+			Assert.assertEquals(getText("//span[@id='ctl00_MainContent_lblBuilding']"),"Building");
+			
+			//Assert the Labels "Area of Need"
+			Assert.assertEquals(getText("//span[@id='ctl00_MainContent_lblAreaOfNeed']"),"Area of Need");
+			
+			//Assert the Labels "Course Subjects"
+			Assert.assertEquals(getText("//span[@id='ctl00_MainContent_lblSubjects']"),"Course Subject(s)");
+		  } 
+		catch (Exception e)
+		  {
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		  }
+	}
+	@Test(priority=6)
+	public void TCED221206()
+	{
+		try
+		  {
+			//Application should be in the Tiered Students by Teacher Report  page
+			
+			//Assert the label "Staff Name
+			Assert.assertEquals(getText("//th[contains(text(),'Staff Name')]"),"Staff Name");
+			
+			//Assert the label "Provider Name"
+			Assert.assertEquals(getText("//a[contains(text(),'Provider Name')]"),"Provider Name");
+			
+			//Assert the label "Total Number of Tiered Students"
+			Assert.assertEquals(getText("//a[contains(text(),'Total Number of Tiered Students')]"),"Total Number of Tiered Students");
+		  } 
+		catch (Exception e)
+		  {
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		  }
+	}
+	@Test(priority=7)
+	public void TCED221207()
+	{
+		try
+		  {
+			//Application should be in the Tiered Students by Teacher Report  page
+			
+			FileDelete();
+			
+            //Click on Export to CSV
+			click("//input[@id='ctl00_MainContent_btnExportCSV']");
+			
+			 Thread.sleep(6000);	
+			 
+			 //Assert the extension of the downloaded file
+			 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
+		  } 
+		catch (Exception e)
+		  {
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		  }
+	}
+	@Test(priority=8)
+	public void TCED221208()
+	{
+		try
+		  {
+			//Application should be in the Tiered Students by Teacher Report  page
+			
+			//Select Some Student
+			click("//*[@id='ctl00_MainContent_rgTieredStudentsDetaildGrid_ctl00_ctl04_GECBtnExpandColumn']/span");
+			click("//*[@id='ctl00_MainContent_rgTieredStudentsDetaildGrid_ctl00_ctl06_Detail10_ctl04_chkSelectUserSelectCheckBox']");
+			click("//*[@id='ctl00_MainContent_rgTieredStudentsDetaildGrid_ctl00_ctl06_Detail10_ctl06_chkSelectUserSelectCheckBox']");		
+			
+			//Click on  Add Selected Student to Group button
+			click("//input[@id='ctl00_MainContent_btnAddToGroup']");
+			
+			 //Assert the label  Add Students to Group
+			 driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
+			 Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"),"Add Students to Group:");
+			 
+			 //Assert the label  Create New Group
+			 Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"),"Create New Group:");
+			 
+			 //Click on Close button
+			 driver.switchTo().parentFrame();			 
+			 click("//*[@id='RadWindowWrapper_ctl00_MainContent_StudentGroupWindowUniqueNameToAvoidErrorsIHope2']/div[1]/div/ul/li/span");
+			 
+			 //Assert the Heading "Tiered Students by Teacher Report"
+			 Assert.assertEquals(getText("//span[@class='subheading']"),"Tiered Students by Teacher Report");
+		  } 
+		catch (Exception e)
+		  {
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		  }
+	}
+	@Test(priority=9)
+	public void TCED221209()
+	{
+		try
+		  {
+			//Application should be in the Tiered Students by Teacher Report  page
+			
+			 //Click on  Add All Student to Group button
+			 click("//*[@id='ctl00_MainContent_btnCheckAll']");
+			 
+			 //Assert the label  Add Students to Group
+			 driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
+			 Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"),"Add Students to Group:");
+			 
+			 //Assert the label  Create New Group
+			 Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"),"Create New Group:");
+			 
+			 //Click on Close button
+			 driver.switchTo().parentFrame();
+			 //click("//*[@id='RadWindowWrapper_ctl00_MainContent_StudentGroupWindowUniqueNameToAvoidErrorsIHope2']/div[1]/div/ul/li/span");
+			 click("//span[@title='Close']");
+			 
+			 //Assert the Heading "Tiered Students by Teacher Report"
+			 Assert.assertEquals(getText("//span[@class='subheading']"),"Tiered Students by Teacher Report");
+		  } 
+		catch (Exception e)
+		  {
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		  }
+	}
+	@Test(priority=10)
+	public void TCED221210()
+	{
+		try
+		  {
+			//Application should be in the Tiered Students by Teacher Report  page
+			
+			// Click on Add report to favorite button
+			 click("//*[@id='ctl00_MainContent_btnAddToFavorite']");
+			 
+			 //Assert the Heading "Tiered Students by Teacher Report"
+			 Assert.assertEquals(getText("//span[@class='subheading']"),"Tiered Students by Teacher Report");
+		  } 
+		catch (Exception e)
+		  {
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		  }
+	}
+	@Test(priority=11)
+	public void TCED221211()
+	{
+		try
+		  {
+			//Application should be in the Tiered Students by Teacher Report  page
+			
+			FileDelete();
+			 
+			//Click on Export to PDF
+			click("//input[@id='ctl00_MainContent_btnPrintToPDF']");
+			 
+			 Thread.sleep(7000);	
+			 
+			//Assert the extension of the downloaded file
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+		  } 
+		  catch (Exception e)
+		  {
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		  }
+	}
 }
