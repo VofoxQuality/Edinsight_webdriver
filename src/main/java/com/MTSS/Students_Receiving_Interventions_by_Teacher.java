@@ -293,7 +293,7 @@ public class Students_Receiving_Interventions_by_Teacher extends BaseClassOne
 			//Assert the extension of the downloaded file
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 		  } 
-		catch (Exception e)
+		  catch (Exception e)
 		  {
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
