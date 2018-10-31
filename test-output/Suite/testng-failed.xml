@@ -3,13 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.analyzeByScore.AdministrationComparisonbyStudent">
+      <class name="com.administerAssessment.Create_New_Administration">
         <methods>
+          <include name="TCED11004"/>
+          <include name="TCED11007"/>
+          <include name="TCED11006"/>
           <include name="setup1"/>
-          <include name="TCED14291"/>
+          <include name="TCED11009"/>
+          <include name="TCED11008"/>
           <include name="tearDown"/>
+          <include name="TCED11003"/>
+          <include name="TCED11002"/>
+          <include name="TCED11005"/>
         </methods>
-      </class> <!-- com.analyzeByScore.AdministrationComparisonbyStudent -->
+      </class> <!-- com.administerAssessment.Create_New_Administration -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

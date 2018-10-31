@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.MTSS.Meeting_History_Report">
+      <class name="com.administerAssessment.Create_New_Administration">
         <methods>
-          <include name="TCED22511"/>
+          <include name="TCED11004"/>
+          <include name="TCED11007"/>
+          <include name="TCED11006"/>
           <include name="setup1"/>
-          <include name="TCED22514"/>
-          <include name="TCED22516"/>
-          <include name="TCED22517"/>
+          <include name="TCED11009"/>
+          <include name="TCED11008"/>
           <include name="tearDown"/>
-          <include name="TCED22515"/>
-          <include name="TCED22512"/>
-          <include name="TCED22513"/>
+          <include name="TCED11003"/>
+          <include name="TCED11002"/>
+          <include name="TCED11005"/>
         </methods>
-      </class> <!-- com.MTSS.Meeting_History_Report -->
+      </class> <!-- com.administerAssessment.Create_New_Administration -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

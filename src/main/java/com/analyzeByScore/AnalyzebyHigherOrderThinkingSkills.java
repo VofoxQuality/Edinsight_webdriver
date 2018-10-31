@@ -1,6 +1,8 @@
 package com.analyzeByScore;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,19 +11,21 @@ import Library.BaseClassOne;
 
 public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	
+	
 	@Test(priority=1)
-	public void TCED14424() 
+	public void TCED14401() 
 	{
 		try
 		{
-			
+	
 			//Supertent Login
 			login(Supertent_Login_id,Supertent_Login_Password);
-			
-			//Click on main menu local Assignment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			
-			
+		
+			//Hover over local Assessment link			
+			Actions actions = new Actions(driver);
+			WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"));
+			actions.moveToElement(mouseHover).build().perform();		
+		
 			//To click on the analyze by Score
 			click("//a[contains(.,'Analyze Scores')]");
 			
@@ -29,7 +33,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByHOTNew']");
 			
 			//To fill the the Test ID Search 
-			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "257");
+			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
 			
 			//To click on the search button
 			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
@@ -38,10 +42,42 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
 			
 			//To select the Administrations
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation- do not edit (Admin)(2017-2018)");
 			
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
+	
+	
+	
+	
+		}catch(Exception e) 
+		{
+		e.printStackTrace();
+		Assert.fail(e.getMessage());
+		}
+	  }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@Test(priority=24)
+	public void TCED14424() 
+	{
+		try
+		{
+			
+			
 			
 			//To delete all the files in the directory
 			FileDelete();
