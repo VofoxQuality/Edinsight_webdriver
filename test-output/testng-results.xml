@@ -1,82 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="5" passed="4">
+<testng-results skipped="0" failed="0" total="17" passed="17">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38928" started-at="2018-10-29T14:11:48Z" finished-at="2018-10-29T14:12:27Z">
+  <suite name="Default suite" duration-ms="161786" started-at="2018-10-30T11:22:54Z" finished-at="2018-10-30T11:25:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38928" started-at="2018-10-29T14:11:48Z" finished-at="2018-10-29T14:12:27Z">
-      <class name="com.MTSS.Mass_Change_Person_Responsible">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Mass_Change_Person_Responsible@4cf777e8]" name="setup1" is-config="true" duration-ms="9036" started-at="2018-10-29T19:41:48Z" finished-at="2018-10-29T19:41:57Z">
+    <test name="Default test" duration-ms="161786" started-at="2018-10-30T11:22:54Z" finished-at="2018-10-30T11:25:36Z">
+      <class name="com.MTSS.TeamDecisionReport">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="setup1" is-config="true" duration-ms="9499" started-at="2018-10-30T16:52:54Z" finished-at="2018-10-30T16:53:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED21101()[pri:1, instance:com.MTSS.Mass_Change_Person_Responsible@4cf777e8]" name="TCED21101" duration-ms="9416" started-at="2018-10-29T19:41:57Z" finished-at="2018-10-29T19:42:07Z">
+        <test-method status="PASS" signature="TCED22601()[pri:1, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22601" duration-ms="9500" started-at="2018-10-30T16:53:04Z" finished-at="2018-10-30T16:53:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21101 -->
-        <test-method status="PASS" signature="TCED21102()[pri:2, instance:com.MTSS.Mass_Change_Person_Responsible@4cf777e8]" name="TCED21102" duration-ms="165" started-at="2018-10-29T19:42:07Z" finished-at="2018-10-29T19:42:07Z">
+        </test-method> <!-- TCED22601 -->
+        <test-method status="PASS" signature="TCED22602()[pri:2, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22602" duration-ms="184" started-at="2018-10-30T16:53:13Z" finished-at="2018-10-30T16:53:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21102 -->
-        <test-method status="FAIL" signature="TCED21103()[pri:3, instance:com.MTSS.Mass_Change_Person_Responsible@4cf777e8]" name="TCED21103" duration-ms="1781" started-at="2018-10-29T19:42:07Z" finished-at="2018-10-29T19:42:09Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Person Responsible ] but found [Person Responsible]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Person Responsible ] but found [Person Responsible]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.MTSS.Mass_Change_Person_Responsible.TCED21103(Mass_Change_Person_Responsible.java:99)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- TCED22602 -->
+        <test-method status="PASS" signature="TCED22603()[pri:3, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22603" duration-ms="2935" started-at="2018-10-30T16:53:14Z" finished-at="2018-10-30T16:53:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21103 -->
-        <test-method status="PASS" signature="TCED21104()[pri:4, instance:com.MTSS.Mass_Change_Person_Responsible@4cf777e8]" name="TCED21104" duration-ms="112" started-at="2018-10-29T19:42:09Z" finished-at="2018-10-29T19:42:09Z">
+        </test-method> <!-- TCED22603 -->
+        <test-method status="PASS" signature="TCED22604()[pri:4, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22604" duration-ms="54" started-at="2018-10-30T16:53:16Z" finished-at="2018-10-30T16:53:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21104 -->
-        <test-method status="PASS" signature="TCED21105()[pri:5, instance:com.MTSS.Mass_Change_Person_Responsible@4cf777e8]" name="TCED21105" duration-ms="18388" started-at="2018-10-29T19:42:09Z" finished-at="2018-10-29T19:42:27Z">
+        </test-method> <!-- TCED22604 -->
+        <test-method status="PASS" signature="TCED22605()[pri:5, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22605" duration-ms="157" started-at="2018-10-30T16:53:17Z" finished-at="2018-10-30T16:53:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21105 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Mass_Change_Person_Responsible@4cf777e8]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-29T19:42:27Z" finished-at="2018-10-29T19:42:27Z">
+        </test-method> <!-- TCED22605 -->
+        <test-method status="PASS" signature="TCED22606()[pri:6, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22606" duration-ms="9252" started-at="2018-10-30T16:53:17Z" finished-at="2018-10-30T16:53:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22606 -->
+        <test-method status="PASS" signature="TCED22607()[pri:7, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22607" duration-ms="9298" started-at="2018-10-30T16:53:26Z" finished-at="2018-10-30T16:53:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22607 -->
+        <test-method status="PASS" signature="TCED22608()[pri:8, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22608" duration-ms="19327" started-at="2018-10-30T16:53:35Z" finished-at="2018-10-30T16:53:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22608 -->
+        <test-method status="PASS" signature="TCED22609()[pri:9, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22609" duration-ms="21417" started-at="2018-10-30T16:53:55Z" finished-at="2018-10-30T16:54:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22609 -->
+        <test-method status="PASS" signature="TCED22610()[pri:10, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22610" duration-ms="4007" started-at="2018-10-30T16:54:16Z" finished-at="2018-10-30T16:54:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22610 -->
+        <test-method status="PASS" signature="TCED22611()[pri:11, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22611" duration-ms="21905" started-at="2018-10-30T16:54:20Z" finished-at="2018-10-30T16:54:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22611 -->
+        <test-method status="PASS" signature="TCED22612()[pri:12, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22612" duration-ms="9253" started-at="2018-10-30T16:54:42Z" finished-at="2018-10-30T16:54:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22612 -->
+        <test-method status="PASS" signature="TCED22613()[pri:13, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22613" duration-ms="9312" started-at="2018-10-30T16:54:51Z" finished-at="2018-10-30T16:55:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22613 -->
+        <test-method status="PASS" signature="TCED22614()[pri:14, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22614" duration-ms="7791" started-at="2018-10-30T16:55:00Z" finished-at="2018-10-30T16:55:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22614 -->
+        <test-method status="PASS" signature="TCED22615()[pri:15, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22615" duration-ms="9263" started-at="2018-10-30T16:55:08Z" finished-at="2018-10-30T16:55:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22615 -->
+        <test-method status="PASS" signature="TCED22616()[pri:16, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22616" duration-ms="9287" started-at="2018-10-30T16:55:18Z" finished-at="2018-10-30T16:55:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22616 -->
+        <test-method status="PASS" signature="TCED22617()[pri:17, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="TCED22617" duration-ms="9287" started-at="2018-10-30T16:55:27Z" finished-at="2018-10-30T16:55:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22617 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.TeamDecisionReport@2f686d1f]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-30T16:55:36Z" finished-at="2018-10-30T16:55:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.Mass_Change_Person_Responsible -->
+      </class> <!-- com.MTSS.TeamDecisionReport -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
