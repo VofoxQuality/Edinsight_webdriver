@@ -102,7 +102,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=4)
+	 @Test(priority=4)
 	 public void TCED22504()
 	 {
 		 try
@@ -124,7 +124,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		 }		 
 	 }
-//	 @Test(priority=5)
+	 @Test(priority=5)
 	 public void TCED22505()
 	 {
 		 //Application should be in the Meeting History Report  page
@@ -184,7 +184,7 @@ public class Meeting_History_Report extends BaseClassOne
 		 Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgHirstoryReport_ctl00']/thead/tr[1]/th[22]/a"),"Submitted");
 		 
 	 }
-//	 @Test(priority=6)
+	 @Test(priority=6)
 	 public void TCED22506()
 	 {
 		 try
@@ -207,7 +207,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=7)
+	 @Test(priority=7)
 	 public void TCED22507()
 	 {
 		 try
@@ -230,7 +230,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=8)
+	 @Test(priority=8)
 	 public void TCED22508()
 	 {
 		 try
@@ -266,7 +266,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=9)
+	 @Test(priority=9)
 	 public void TCED22509()
 	 {
 		 try
@@ -302,7 +302,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=10)
+	 @Test(priority=10)
 	 public void TCED22510()
 	 {
 		 try
@@ -327,6 +327,12 @@ public class Meeting_History_Report extends BaseClassOne
 	 {
 		 try
 		 {
+//			   //click on Logout button		 
+//			    click("//*[@id='ctl00_A3']/img");
+//				
+//			    //Superintent Login
+//				login(Supertent_Login_id,Supertent_Login_Password);
+				  
 			  //hover over MTTS link			
 			   Actions actions = new Actions(driver);
 			   WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
@@ -350,16 +356,24 @@ public class Meeting_History_Report extends BaseClassOne
 			   click("//*[@id='ctl00_MainContent_rdgEnd_dateInput']");
 			   type("//*[@id='ctl00_MainContent_rdgEnd_dateInput']","8/3/2018");   
 			   			   
-			   Thread.sleep(2000);
-			   click("//*[@id='ctl00_MainContent_rdoDateRange']");	
+			   Thread.sleep(4000);
+//			   click("//*[@id='ctl00_MainContent_rdoDateRange']");	
+//			   
+//			   click("//td[contains(text(),'Start Date:')]");
 			   
-			   JavascriptExecutor jse = (JavascriptExecutor) driver;
-			   jse.executeScript("document.getElementById('ctl00_MainContent_btnRunReport').focus();");
-
+			   Actions a1 = new Actions(driver);
+			   a1.keyDown(Keys.LEFT_CONTROL).click();
 			   
-			   //click on Run Report
-			   //JavaScriptclick("//*[@id='ctl00_MainContent_btnRunReport']");
-			   click("//*[@id='ctl00_MainContent_btnRunReport']");
+			   click("//input[@id='ctl00_MainContent_btnRunReport']");
+			   
+			   Actions a2 = new Actions(driver);
+			   a2.keyDown(Keys.LEFT_CONTROL).release();
+			   
+//			   JavascriptExecutor jse = (JavascriptExecutor) driver;
+//			   jse.executeScript("document.getElementById('ctl00_MainContent_btnRunReport').focus();");
+//			   
+//			   //click on Run Report
+//			   click("//*[@id='ctl00_MainContent_btnRunReport']");
 			   
 			  //Assert the label "Meeting History Report "
 			  Assert.assertEquals(getText("//span[@class='subheading']"),"Meeting History Report");
@@ -431,7 +445,7 @@ public class Meeting_History_Report extends BaseClassOne
 	 public void TCED22514()
 	 {
 		 try
-		 {
+		 {			 
 			  //hover over MTTS link			
 			   Actions actions = new Actions(driver);
 			   WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
@@ -444,7 +458,7 @@ public class Meeting_History_Report extends BaseClassOne
 			   click("//*[@id='ctl00_MainContent_rdoStudentGroup']");
 			   
 			   //Select Group :-  00 123 MR
-			   select("//*[@id='ctl00_MainContent_ddlStudentGroup']", "label=00 123 MR");
+			   select("//*[@id='ctl00_MainContent_ddlStudentGroup']", "label=88");
 			   
 			   //click on Run Report
 			   click("//*[@id='ctl00_MainContent_btnRunReport']");
@@ -453,7 +467,7 @@ public class Meeting_History_Report extends BaseClassOne
 			  Assert.assertEquals(getText("//span[@class='subheading']"),"Meeting History Report");
 			  
 			  //Assert the Group as  00 123 MR
-			  Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblProviderLevelDisplay']"),"00 123 MR");
+			  Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblProviderLevelDisplay']"),"88");
 			  
 		} 
 		 catch (Exception e)
@@ -467,8 +481,7 @@ public class Meeting_History_Report extends BaseClassOne
 	 {
 		 try
 		 {
-			//Application should be in the Meeting History Report  page
-			 
+			//Application should be in the Meeting History Report  page			 
 			 FileDelete();
 			 
 			 //Click on Export to CSV
@@ -483,8 +496,7 @@ public class Meeting_History_Report extends BaseClassOne
 		{
 			 Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		 
+		}		 
 	 }
 	 @Test(priority=16)
 	 public void TCED22516()
@@ -502,12 +514,12 @@ public class Meeting_History_Report extends BaseClassOne
 			 
 			 //Assert the extension of the downloaded file
 			 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-		} 
+		 } 
 		 catch (Exception e)
-		{
+		 {
 			 Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}	 
+		 }	 
 	 }
 	 @Test(priority=17)
 	 public void TCED22517()
