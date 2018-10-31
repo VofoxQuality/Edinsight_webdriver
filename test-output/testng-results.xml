@@ -1,65 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="75129" started-at="2018-10-31T08:59:58Z" finished-at="2018-10-31T09:01:13Z">
+  <suite name="Suite" duration-ms="53913" started-at="2018-10-31T11:59:11Z" finished-at="2018-10-31T12:00:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="75129" started-at="2018-10-31T08:59:58Z" finished-at="2018-10-31T09:01:13Z">
-      <class name="com.MTSS.Students_Receiving_Interventions_by_Teacher">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="setup1" is-config="true" duration-ms="25027" started-at="2018-10-31T14:29:58Z" finished-at="2018-10-31T14:30:23Z">
+    <test name="Test" duration-ms="53913" started-at="2018-10-31T11:59:11Z" finished-at="2018-10-31T12:00:05Z">
+      <class name="com.MTSS.Mass_Change_Person_Responsible">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="setup1" is-config="true" duration-ms="8839" started-at="2018-10-31T11:59:11Z" finished-at="2018-10-31T11:59:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED221201()[pri:1, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="TCED221201" duration-ms="8460" started-at="2018-10-31T14:30:23Z" finished-at="2018-10-31T14:30:32Z">
+        <test-method status="PASS" signature="TCED21101()[pri:1, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21101" duration-ms="10184" started-at="2018-10-31T11:59:20Z" finished-at="2018-10-31T11:59:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED221201 -->
-        <test-method status="PASS" signature="TCED221202()[pri:2, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="TCED221202" duration-ms="84" started-at="2018-10-31T14:30:32Z" finished-at="2018-10-31T14:30:32Z">
+        </test-method> <!-- TCED21101 -->
+        <test-method status="PASS" signature="TCED21102()[pri:2, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21102" duration-ms="310" started-at="2018-10-31T11:59:30Z" finished-at="2018-10-31T11:59:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED221202 -->
-        <test-method status="PASS" signature="TCED221203()[pri:3, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="TCED221203" duration-ms="906" started-at="2018-10-31T14:30:32Z" finished-at="2018-10-31T14:30:33Z">
+        </test-method> <!-- TCED21102 -->
+        <test-method status="PASS" signature="TCED21103()[pri:3, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21103" duration-ms="2755" started-at="2018-10-31T11:59:30Z" finished-at="2018-10-31T11:59:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED221203 -->
-        <test-method status="PASS" signature="TCED221204()[pri:4, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="TCED221204" duration-ms="8555" started-at="2018-10-31T14:30:33Z" finished-at="2018-10-31T14:30:41Z">
+        </test-method> <!-- TCED21103 -->
+        <test-method status="PASS" signature="TCED21104()[pri:4, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21104" duration-ms="248" started-at="2018-10-31T11:59:33Z" finished-at="2018-10-31T11:59:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED221204 -->
-        <test-method status="PASS" signature="TCED221205()[pri:5, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="TCED221205" duration-ms="112" started-at="2018-10-31T14:30:41Z" finished-at="2018-10-31T14:30:41Z">
+        </test-method> <!-- TCED21104 -->
+        <test-method status="PASS" signature="TCED21105()[pri:5, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21105" duration-ms="26509" started-at="2018-10-31T11:59:33Z" finished-at="2018-10-31T12:00:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED221205 -->
-        <test-method status="PASS" signature="TCED221206()[pri:6, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="TCED221206" duration-ms="62" started-at="2018-10-31T14:30:41Z" finished-at="2018-10-31T14:30:41Z">
+        </test-method> <!-- TCED21105 -->
+        <test-method status="PASS" signature="TCED21106()[pri:6, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21106" duration-ms="3127" started-at="2018-10-31T12:00:00Z" finished-at="2018-10-31T12:00:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED221206 -->
-        <test-method status="PASS" signature="TCED221207()[pri:7, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="TCED221207" duration-ms="11282" started-at="2018-10-31T14:30:41Z" finished-at="2018-10-31T14:30:53Z">
+        </test-method> <!-- TCED21106 -->
+        <test-method status="PASS" signature="TCED21107()[pri:7, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21107" duration-ms="1911" started-at="2018-10-31T12:00:03Z" finished-at="2018-10-31T12:00:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED221207 -->
-        <test-method status="PASS" signature="TCED221208()[pri:8, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="TCED221208" duration-ms="4366" started-at="2018-10-31T14:30:53Z" finished-at="2018-10-31T14:30:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221208 -->
-        <test-method status="PASS" signature="TCED221209()[pri:9, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="TCED221209" duration-ms="2623" started-at="2018-10-31T14:30:57Z" finished-at="2018-10-31T14:31:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221209 -->
-        <test-method status="PASS" signature="TCED221210()[pri:10, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="TCED221210" duration-ms="1350" started-at="2018-10-31T14:31:00Z" finished-at="2018-10-31T14:31:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221210 -->
-        <test-method status="PASS" signature="TCED221211()[pri:11, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="TCED221211" duration-ms="12267" started-at="2018-10-31T14:31:01Z" finished-at="2018-10-31T14:31:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221211 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Students_Receiving_Interventions_by_Teacher@1686d1f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T14:31:13Z" finished-at="2018-10-31T14:31:13Z">
+        </test-method> <!-- TCED21107 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T12:00:05Z" finished-at="2018-10-31T12:00:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.Students_Receiving_Interventions_by_Teacher -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.MTSS.Mass_Change_Person_Responsible -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
