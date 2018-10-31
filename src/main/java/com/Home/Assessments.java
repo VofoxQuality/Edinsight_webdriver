@@ -451,8 +451,7 @@ public class Assessments extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-	
+		}	
 	}	
 	@Test(priority=10)	
 	public void TCED34211()
@@ -525,7 +524,6 @@ public class Assessments extends BaseClassOne
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
 		}
-		
 	}
 	
 	@Test(priority=11)	
@@ -562,6 +560,21 @@ public class Assessments extends BaseClassOne
 			//Select Testing Subject as Biology		
 			select("//*[@id='ctl00_MainContent_ddlNorms']","label=Biology");
 			
+			//Verify the "TOTAL TEST " graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_ChartTotalScores_Image']"));			
+			
+			//Verify the "BASIC BIOLOGICAL PRINCIPALS/CHEMICAL BASIS FOR LIFE" graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat1_Image']"));
+			
+			//Verify the "BIOENERGETIC/HOMEOSTASIS AND TRANSPORT" graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat2_Image']"));
+			
+			//Verify the "CELL GROWTH AND REPRODUCTION/GENETICS " graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat3_Image']"));
+			
+			//Verify the "THEORY OF EVOLUTION/ECOLOGY" graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat4_Image']"));
+
 			//Verify the "TOTAL TEST " graph is exists in the page.
 			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_ChartTotalScores_Image']"),"TOTAL TEST graph-Not found in the page");
 			
@@ -584,23 +597,23 @@ public class Assessments extends BaseClassOne
 			js.executeScript("scroll(0,0)");
 			select("//*[@id='ctl00_MainContent_ddlNorms']","label=Reading/Lit Grades 6-HS");
 			
-			//Verify the "TOTAL TEST" graph is exists in the page.
-			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_ChartTotalScores_Image']")).isDisplayed(),"TOTAL TEST graph-Not found in the page");
+			//Verify the "TOTAL TEST" graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_ChartTotalScores_Image']"));
 			
-			//Verify the "KEY IDEAS AND DETAILS-LITERATURE TEXT" graph is exists in the page.
-			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat1_Image']")).isDisplayed(),"KEY IDEAS AND DETAILS-LITERATURE TEXT graph-Not found in the page");
+			//Verify the "KEY IDEAS AND DETAILS-LITERATURE TEXT" graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat1_Image']"));
 			
-			//Verify the "KEY IDEAS AND DETAILS-INFORMATIONAL TEXT " graph is exists in the page.
-			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat2_Image']")).isDisplayed(),"KEY IDEAS AND DETAILS-INFORMATIONAL TEXT graph-Not found in the page");
+			//Verify the "KEY IDEAS AND DETAILS-INFORMATIONAL TEXT " graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat2_Image']"));
 			
-			//Verify the "CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-LIT TEXT" graph is exists in the page.
-			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat3_Image']")).isDisplayed(),"CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-LIT TEXT graph-Not found in the page");
+			//Verify the "CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-LIT TEXT" graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat3_Image']"));
 			
-			//Verify the "CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-INFO TEXT" graph is exists in the page.
-			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat4_Image']")).isDisplayed(),"CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-INFO TEXT graph-Not found in the page");
+			//Verify the "CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-INFO TEXT" graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat4_Image']"));
 			
-			//Verify the "VOCABULARY ACQUISITION AND USE" graph is exists in the page.
-			Assert.assertTrue(driver.findElement(By.xpath("//img[@id='ctl00_MainContent_chartCat5_Image']")).isDisplayed(),"VOCABULARY ACQUISITION AND USE  graph-Not found in the page");
+			//Verify the "VOCABULARY ACQUISITION AND USE" graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat5_Image']"));
 			
 			js.executeScript("scroll(0,50)");				  
 	    	Takescreenshot("Reading_Lit grades_6-HSCDT_CDT_2015-16_graph");		
@@ -610,8 +623,7 @@ public class Assessments extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}	
-		
+		}		
 	}
 	@Test(priority=12)	
 	public void TCED34213()
@@ -634,8 +646,7 @@ public class Assessments extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}	
-		
+		}			
 	}	
 	@Test(priority=13)	
 	public void TCED34214()

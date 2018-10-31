@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.Home.Assessments">
+      <class name="com.MTSS.TeamDecisionReport">
         <methods>
-          <include name="TCED34211"/>
           <include name="setup1"/>
+          <include name="TCED22611"/>
+          <include name="TCED22613"/>
+          <include name="TCED22612"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Home.Assessments -->
+      </class> <!-- com.MTSS.TeamDecisionReport -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
