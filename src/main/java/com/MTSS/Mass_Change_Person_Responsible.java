@@ -25,8 +25,7 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 			WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
 			actions.moveToElement(mouseHover).build().perform();		
 			// To click on the meetings
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[4]/div/a");
-			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[4]/div/a");	
 			// To assert the validations
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td"), "Mass Change Person Responsible");		
 
@@ -48,7 +47,7 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 
 	{
 		try {
-			
+			// To assert the fields
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[2]/td/table/tbody/tr[1]/td[1]"), "Tier");		
 
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblAreaOfNeed']"), "Area of Need");		
@@ -89,11 +88,11 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 
 	{
 		try {
-			
+			// select school
 			select("//*[@id='ctl00_MainContent_ddlEducationProvider']", "Ashley High School");
-			
+			// To click on the search
 			click("//*[@id='ctl00_MainContent_btnSearch']");
-			
+			// To assert the fields
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblPersonRespBuilding']"), "Person Responsible Building");		
 
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblPersonResponsible']"), "Person Responsible");		
@@ -115,7 +114,7 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 
 	{
 		try {
-	
+			// To assert the fields
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00']/thead/tr[1]/th[4]/a"), "Student Id");		
 
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00']/thead/tr[1]/th[5]/a"), "Last Name");		
@@ -153,15 +152,16 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 	{
 		try {
 	
-	
+			// To click on the person
 			click("//*[@id='ctl00_MainContent_btnaddAnotherPerson']");
-			
+			// To assert the fields
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblerrorMsg']"), "Select Person Responsible Building");		
 			
 			select("//*[@id='ctl00_MainContent_ddlBuilding']","Ashley High School");
-
+			// To click on the person
 			click("//*[@id='ctl00_MainContent_btnaddAnotherPerson']");
 			Thread.sleep(3000);
+			// To assert the element present
 			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_gridPersonResposible_ctl02_rcmbPersonResponsible_Input']"),"Element is not displayed ");
 			
 			click("//*[@id='ctl00_MainContent_gridPersonResposible_ctl02_btnRemove']");
@@ -188,16 +188,16 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 	{
 		try {
 	
-			
+			// To click on the selected plans
 			click("//*[@id='ctl00_MainContent_btnUpdateSelectedPlans']");
-			
+			// To assert the fields
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblerrorMsg']"), "Please Select at least one Intervention Plan for update");	
 			
 			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_chkSelectUserSelectCheckBox']");
 			
 			click("//*[@id='ctl00_MainContent_btnUpdateSelectedPlans']");
-			
-			Assert.assertEquals(getValue("//*[@id='ctl00_MainContent_rgSearch_ctl00__0']/td[12]"), "1");	
+			// To assert the fields
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00__0']/td[12]"), "Teacher14");	
 
 			
 			
@@ -221,10 +221,14 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 
 	{
 		try {
-		
-			click("//*[@id='ctl00_MainContent_btnUpdateAllPlans']");
-		
-			Assert.assertEquals(getValue("//*[@id='ctl00_MainContent_rgSearch_ctl00__0']/td[12]"), "Please Select at least one Intervention Plan for update");	
+			// To click on the all plans
+			click("//*[@id='ctl00_MainContent_btnUpdateAllPlans']");		
+			// To assert the student fields
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00__0']/td[12]"), "Teacher14");	
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00__1']/td[12]"), "Teacher14");	
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00__2']/td[12]"), "Teacher14");	
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00__3']/td[12]"), "Teacher14");	
+
 
 		} 
 		catch (Exception e) 

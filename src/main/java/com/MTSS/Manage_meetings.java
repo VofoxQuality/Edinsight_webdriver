@@ -1,6 +1,9 @@
 package com.MTSS;
-
+/**
+ * @author Ans-A
+ */
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -491,7 +494,7 @@ public class Manage_meetings extends BaseClassOne {
 
 
 
-	@Test(priority=16)
+	//@Test(priority=16)
 
 	public void TCED20216() throws InterruptedException
 
@@ -562,6 +565,9 @@ public class Manage_meetings extends BaseClassOne {
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_chkListAreasOfNeed']/tbody/tr[2]/td/label"), "Mathematics");		
 
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_chkListAreasOfNeed']/tbody/tr[3]/td/label"), "Behavioral");		
+			
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_trDisclaimer']/td/span"), "* Only intervention plans for tier 2 students can be reviewed using this feature");		
+
 
 		} 
 
@@ -578,13 +584,15 @@ public class Manage_meetings extends BaseClassOne {
 
 	public void TCED20219() throws InterruptedException
 
-	{
+	{  // ONCE student intervention created, TCED20219 script will fail
 		try {
 			// To click on checkboxes
-			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl08_chkSelectUserSelectCheckBox']");
+			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl14_chkSelectUserSelectCheckBox']");
 
-			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl10_chkSelectUserSelectCheckBox']");
-
+			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl16_chkSelectUserSelectCheckBox']");
+			Thread.sleep(3000);	
+			ScrollTo_Location("//*[@id='ctl00_MainContent_trDisclaimer']/td/span");
+			// To click on button
 			click("//*[@id='ctl00_MainContent_btnMassMeeting']");
 			Thread.sleep(3000);			
 			SwitchFrameName("RadWindow1");
@@ -713,6 +721,10 @@ public class Manage_meetings extends BaseClassOne {
 			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl06_ddlStudentResponse']","Goal Attained");
 
 			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl06_ddlTeamDecision']", "Continue this intervention: add new tier 2 intervention");
+
+			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl08_ddlStudentResponse']","Goal Attained");
+
+			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl08_ddlTeamDecision']", "Continue this intervention: add new tier 2 intervention");
 
 
 			Thread.sleep(2000);
