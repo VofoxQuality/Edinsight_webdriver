@@ -363,11 +363,12 @@ public class TeamDecisionReport extends BaseClassOne {
 			//To click on the run report button
 			click("//input[@id='ctl00_MainContent_btnRunReport']");
 
-
 			// To Assert the labels
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td/span[1]"), "Team Decisions :");	
 
-			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td/span[2]"), "Date Range :");							
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td/span[2]"), "Date Range :");			
+			
+			Assert.assertTrue(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td").contains("3/1/2018 - 8/3/2018"), "Failed To Assert the selected dates");
 			
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td/span[3]"), "District :");	
 

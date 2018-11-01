@@ -2,6 +2,7 @@ package com.analyzeByScore;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -37,7 +38,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-//		@Test(priority=2)
+		@Test(priority=2)
 	public void TCED14402() 
 	{
 		try
@@ -68,7 +69,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-//		@Test(priority=3)
+		@Test(priority=3)
 	public void TCED14403() 
 	{
 		try
@@ -87,7 +88,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-//		@Test(priority=4)
+		@Test(priority=4)
 	public void TCED14404() 
 	{
 		try
@@ -108,7 +109,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-	//	@Test(priority=5)
+		@Test(priority=5)
 	public void TCED14405() 
 	{
 		try
@@ -129,7 +130,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-	@Test(priority=6)
+		@Test(priority=6)
 	public void TCED14406() 
 	{
 		try
@@ -152,30 +153,25 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-		@Test(priority=7)
+	@Test(priority=7)
 	public void TCED14407() 
 	{
 		try
-		{	Thread.sleep(2000);
-		// To logout
-		click("//*[@id='ctl00_A3']");
-
-		//Supertent Login
-		login(Supertent_Login_id,Supertent_Login_Password);		
-			// Common header parameters
-			ReportParams();
-			Thread.sleep(3000);
-			ScrollTo_Location("//*[@id='ctl00_MainContent_trDetailedChart']/td/table/tbody/tr[1]/td/h3");
+		{	
 			Thread.sleep(2000);
-			String	xpath1= "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Detailed'])[1]/following::area[9]";
-			// To Click the link & Assert the drilldown labels
-			
-			WebElement Chart = driver.findElement(By.xpath("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Detailed'])[1]/following::area[9]"));
-			
-			 ((JavascriptExecutor)driver).executeScript("arguments[0].fireEvent('onclick');", Chart);
-			 
-					Studentdrilldownlabels2(xpath1);
-
+		// Common header parameters
+		ReportParams();
+		Thread.sleep(3000);
+		ScrollTo_Location("//*[@id='ctl00_MainContent_trDetailedChart']/td/table/tbody/tr[1]/td/h3");
+		Thread.sleep(5000);
+		String	xpath1= "//*[@id='ctl00_MainContent_DetailedAnalyzeChart_Image']";
+		// To Click the link & Assert the drilldown labels
+		int x = 91;
+		int y = 228;
+		Actions action = new Actions(driver);
+		//clicking on the chart based on x coordinate and y coordinate 
+		action.moveByOffset( x, y).click().build().perform();
+		Studentdrilldownlabels2(xpath1);
 
 		}catch(Exception e) 
 		{
@@ -219,7 +215,6 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			// Common header parameters
 			ReportParams();
 			select("//*[@id='ctl00_MainContent_ddlSchool']","Ashley High School");
-
 			select("//*[@id='ctl00_MainContent_ddlStaff']","Ableton, A - 10");
 
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
@@ -322,20 +317,26 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-//	@Test(priority=14)
+		@Test(priority=14)
 	public void TCED14414() 
 	{
 		try
 		{
+			Thread.sleep(2000);
 			// Common header parameters
 			ReportParams();
 			Thread.sleep(3000);
 			ScrollTo_Location("//*[@id='ctl00_MainContent_trDetailedChart']/td/table/tbody/tr[1]/td/h3");
 			Thread.sleep(5000);
-			String	xpath1= "//area[@title='Fill in the Blank(75%)']";		
+			String	xpath1= "//*[@id='ctl00_MainContent_DetailedAnalyzeChart_Image']";
 			// To Click the link & Assert the drilldown labels
+			int x = 91;
+			int y = 228;
+			Actions action = new Actions(driver);
+			//clicking on the chart based on x coordinate and y coordinate 
+			action.moveByOffset( x, y).click().build().perform();
 			Studentdrilldownlabels2(xpath1);
-
+			
 		}catch(Exception e) 
 		{
 			e.printStackTrace();
@@ -478,18 +479,24 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-//	@Test(priority=21)
+		@Test(priority=21)
 	public void TCED14421() 
 	{
 		try
 		{
+			Thread.sleep(2000);
 			// Common header parameters
 			ReportParams();
 			Thread.sleep(3000);
 			ScrollTo_Location("//*[@id='ctl00_MainContent_trDetailedChart']/td/table/tbody/tr[1]/td/h3");
 			Thread.sleep(5000);
-			String	xpath1= "//area[@title='Fill in the Blank(75%)']";		
+			String	xpath1= "//*[@id='ctl00_MainContent_DetailedAnalyzeChart_Image']";
 			// To Click the link & Assert the drilldown labels
+			int x = 91;
+			int y = 228;
+			Actions action = new Actions(driver);
+			//clicking on the chart based on x coordinate and y coordinate 
+			action.moveByOffset( x, y).click().build().perform();
 			Studentdrilldownlabels2(xpath1);
 
 		}catch(Exception e) 
@@ -524,8 +531,8 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		}
 	}
 
-	
-		@Test(priority=23)
+
+	@Test(priority=23)
 	public void TCED14423() 
 	{
 		try
@@ -539,7 +546,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			//To click on the Print ot PDF
 			click("//*[@id='ctl00_MainContent_btnPrintToPDF']");
 			Thread.sleep(4000);
-
+			// TO assert the PDF
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 
 
@@ -550,7 +557,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		}
 	}
 
-		@Test(priority=24)
+	@Test(priority=24)
 	public void TCED14424()
 	{
 		try
@@ -558,7 +565,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			//To click on the Print ot PDF
 			click("//*[@id='ctl00_MainContent_btnCSV']");
 			Thread.sleep(3000);
-
+			// TO assert the CSV
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
 
 
@@ -570,14 +577,14 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-		@Test(priority=25)
+	@Test(priority=25)
 	public void TCED14425()
 	{
 		try
 		{
 
 			String xpath = "//a[contains(.,'Testing Summary')]";
-
+			// TO Click on testing summary and assert it contents
 			TestingSummary t1= new TestingSummary();
 
 			t1.TestingSummarypopup(xpath);
@@ -589,7 +596,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		}
 	}
 
-		@Test(priority=26)
+	@Test(priority=26)
 	public void TCED14426()
 	{
 		try
@@ -597,6 +604,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 
 			String xpath = "//*[@id='ctl00_MainContent_lnkAnswerKey']";
 			Thread.sleep(3000);
+			// TO Click on Assessment Print and assert it contents
 			AssessmentPrintReports12(xpath);
 
 		}catch(Exception e) 
@@ -606,30 +614,30 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		}	
 	}
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	/***************************General Methods*************************************************************/
@@ -767,14 +775,14 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 
 
 	}
-	
 
 
-public void AssessmentPrintReports12(String xpath) throws InterruptedException
-	
+
+	public void AssessmentPrintReports12(String xpath) throws InterruptedException
+
 	{
 		//To click here to see the test
-		
+
 		click(xpath);	
 
 		//To select the frame
@@ -843,7 +851,7 @@ public void AssessmentPrintReports12(String xpath) throws InterruptedException
 		click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedWord']");
 		Thread.sleep(6000);
 		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
-		
-		
+
+
 	}
 }
