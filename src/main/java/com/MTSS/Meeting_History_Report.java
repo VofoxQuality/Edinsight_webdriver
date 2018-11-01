@@ -327,11 +327,11 @@ public class Meeting_History_Report extends BaseClassOne
 	 {
 		 try
 		 {
-//			   //click on Logout button		 
-//			    click("//*[@id='ctl00_A3']/img");
-//				
-//			    //Superintent Login
-//				login(Supertent_Login_id,Supertent_Login_Password);
+			   //click on Logout button		 
+			    click("//*[@id='ctl00_A3']/img");
+				
+			    //Superintent Login
+				login(Supertent_Login_id,Supertent_Login_Password);
 				  
 			  //hover over MTTS link			
 			   Actions actions = new Actions(driver);
@@ -357,23 +357,15 @@ public class Meeting_History_Report extends BaseClassOne
 			   type("//*[@id='ctl00_MainContent_rdgEnd_dateInput']","8/3/2018");   
 			   			   
 			   Thread.sleep(4000);
-//			   click("//*[@id='ctl00_MainContent_rdoDateRange']");	
-//			   
-//			   click("//td[contains(text(),'Start Date:')]");
+			   click("//*[@id='ctl00_MainContent_rdoDateRange']");	
 			   
-			   Actions a1 = new Actions(driver);
-			   a1.keyDown(Keys.LEFT_CONTROL).click();
+			   click("//td[contains(text(),'Start Date:')]");
 			   
-			   click("//input[@id='ctl00_MainContent_btnRunReport']");
+			   JavascriptExecutor jse = (JavascriptExecutor) driver;
+			   jse.executeScript("document.getElementById('ctl00_MainContent_btnRunReport').focus();");
 			   
-			   Actions a2 = new Actions(driver);
-			   a2.keyDown(Keys.LEFT_CONTROL).release();
-			   
-//			   JavascriptExecutor jse = (JavascriptExecutor) driver;
-//			   jse.executeScript("document.getElementById('ctl00_MainContent_btnRunReport').focus();");
-//			   
-//			   //click on Run Report
-//			   click("//*[@id='ctl00_MainContent_btnRunReport']");
+			   //click on Run Report
+			   click("//*[@id='ctl00_MainContent_btnRunReport']");
 			   
 			  //Assert the label "Meeting History Report "
 			  Assert.assertEquals(getText("//span[@class='subheading']"),"Meeting History Report");
@@ -384,8 +376,10 @@ public class Meeting_History_Report extends BaseClassOne
 			  //Assert the label "Building"
 			  Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblBuilding']"),"Building:");
 			  
-			  //Assert the label "Date Range: 2/1/2018 - 8/8/2018 "
-			  Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblDateRange_SchoolYear']"),"Date Range:");
+			  //Assert the label "Date Range: 2/1/2018 - 8/3/2018 "
+			  String date=getText("//*[@id='ctl00_MainContent_lblDateRange_SchoolYear']");
+			  String range=getText("//*[@id='ctl00_MainContent_lblDateRange_SchoolYearDisplay']");			  
+			  Assert.assertEquals(date+range,"Date Range:2/1/2018 - 8/3/2018");
 
 		} 
 		 catch (Exception e)

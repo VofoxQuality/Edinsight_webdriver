@@ -58,9 +58,9 @@ public class BaseClassOne	{
 	 public static WebDriver driver;
 	 public String  baseUrl = "http://192.168.10.124/Edinsight/Login.aspx";
 	 //Sebastian
-	 protected  String downloadPath="D:\\selenium_downloads";
+	// protected  String downloadPath="D:\\selenium_downloads";
 	 //Manoj
-	//protected  String downloadPath="E:\\selenium_downloads";
+	protected  String downloadPath="E:\\selenium_downloads";
 	 //Ans
 		//protected  String downloadPath="E:\\selenium_downloads";
 	
@@ -79,9 +79,9 @@ public class BaseClassOne	{
 		//Sebastian
 		//System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
 		//Akhil TS
-		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		//Manoj
-		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 		//Ans
 		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		
@@ -472,42 +472,42 @@ public class BaseClassOne	{
 	public boolean dropelementfinder(String locator,String[] Listlabels)
 	{
 		Boolean found = true; 
-		WebElement sst=find(locator);
+		WebElement sst=driver.findElement(By.xpath("//select[@id='ctl00_ContentPlaceHolder1_gvCurriculumMaps_ctl02_ddlCopyTo']"));
         Select select = new Select(sst);  
-        int i=0;
-        int flag=0;
-        List<WebElement> options = select.getOptions();
-        String[] ActualText=new String[options.size()];
+
+        List<WebElement> options = select.getOptions();  
         for(WebElement we:options)  
         {  
-           
-        	ActualText[i]=we.getText();
-        	i++;
-        	
-        }	
-         for (int j=0; j<Listlabels.length; j++){
+         for (int i=0; i<Listlabels.length; i++){
         	// Assert.assertEquals(actual, expected);
         	 
-        	 System.out.println("myList"+i+Listlabels[j]);
+        	 System.out.println("myList"+i+Listlabels[i]);
+        	 System.out.println("WebList"+i+we.getText());
         	 
-             if(Arrays.asList(ActualText).contains(Listlabels[i]))
-            	 
-            		 {
+             if (we.getText().equals(Listlabels[i])){
             	 
             	//Assert.assertEquals(true, "Expected label is not found in the list");
             	System.out.println(Listlabels[i]);
-            	flag++;
+            	break;
              } 
-             
+             else
+             {
+            	 found = false;
+            	 break;
+            	 //break;
+            	 //Assert.assertEquals(false, "Expected label is not found in the list");
+             }
            }
-         if(flag==Listlabels.length)
-         {
-        	 return true;
          }
-         else
-         {
-        	 return false;
-         }
+        if(found)
+        {
+        	return true;
+        			
+        }
+        else
+        {
+        	return false;
+        }
 
 	}  
 	
