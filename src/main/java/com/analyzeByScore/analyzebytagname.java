@@ -9,11 +9,13 @@ import Library.BaseClassOne;
 
 
 
-public class AnalyzeByTag extends BaseClassOne{
+public class analyzebytagname extends BaseClassOne
+
+{
 	
 	
 	@Test(priority=1)
-	public void TCED14321() 
+	public void TCED14301() 
 	{
 		try
 		{
@@ -27,7 +29,7 @@ public class AnalyzeByTag extends BaseClassOne{
 		}
 	}
 	@Test(priority=2)
-	public void TCED14322() 
+	public void TCED14302() 
 	{
 		try
 		{
@@ -35,7 +37,7 @@ public class AnalyzeByTag extends BaseClassOne{
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
 			
 			//To click on the analyze by Score
-			click("//a[contains(.,'Analyze Scores')]");
+			click("//a[contains(text(),'Analyze Scores')]");
 			
 			//To click on the Beta Summary reports(Analyze By Tag New)
 			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
@@ -52,8 +54,8 @@ public class AnalyzeByTag extends BaseClassOne{
 			//To select the Assessment 
 			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
 			
-			//To select the Administrations
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
+			//To select the Administrations 
+			select("//*[@id='ctl00_MainContent_ddlAdministrations']", "label=For Automation- do not edit (Admin)(2017-2018)");			
 			
 			//Assert the Label  "All Tags"
 		    Assert.assertEquals(getText("//label[@for='ctl00_MainContent_chkAll']"),"All Tags");
@@ -62,7 +64,7 @@ public class AnalyzeByTag extends BaseClassOne{
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
 			
 			//Assert the the Header Name as Analyze By Tag
-			Assert.assertEquals(getText("//span[@id='ctl00_PlcPageCategory_lblRptName']"),"Analyze by Tag");		
+			Assert.assertEquals(getText("//span[@id='ctl00_PlcPageCategory_lblRptName']"),"Analyze By Tag");		
 			
 		} 
 		catch (Exception e)
@@ -72,7 +74,7 @@ public class AnalyzeByTag extends BaseClassOne{
 		}		
 	}
 	@Test(priority=3)
-	public void TCED14323() 
+	public void TCED14303() 
 	{
 		try
 		{
@@ -124,7 +126,7 @@ public class AnalyzeByTag extends BaseClassOne{
 			Assert.assertEquals(getText("//a[contains(text(),'Question Points Possible')]"),"Question Points Possible");
 			
 			//Assert the Label Total Points Possible 
-			Assert.assertEquals(getText("//a[contains(text(),'Total Points Possible')]"),"Total Points Possible ");
+			Assert.assertEquals(getText("//a[contains(text(),'Total Points Possible')]"),"Total Points Possible");
 			
 			//Assert the Label Question Type
 			Assert.assertEquals(getText("//a[contains(text(),'Question Type')]"),"Question Type");
@@ -137,11 +139,10 @@ public class AnalyzeByTag extends BaseClassOne{
 		}		
 	}
 	@Test(priority=4)
-	public void TCED14324() 
+	public void TCED14304() 
 	{
 		try
-		{
-			
+		{			
 			//Application should be in the Analyze by Tag Report page
 			
 			//Drill down from Total Scheduled Students
@@ -150,12 +151,36 @@ public class AnalyzeByTag extends BaseClassOne{
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
-			//Assert the label  Analyze by Question
+			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
+			//Assert the label student Id   
+			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
 			
+			//Assert the label Last Name 
+			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
 			
+			//Assert the label First Name 
+			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
 			
+			//Assert the label Grade 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
+			
+			//Assert the label   School   
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
+			
+			//Assert the label   Ethnicity    
+			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
+			
+			//Assert the label  IEP  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
+			
+			//Assert the label  ELL  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
+			
+			//Assert the label  Ec. Disadvantaged 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+						
 		} 
 		catch (Exception e)
 		{
@@ -163,9 +188,158 @@ public class AnalyzeByTag extends BaseClassOne{
 			e.printStackTrace();
 		}		
 	}
-	
+	@Test(priority=5)
+	public void TCED14305() 
+	{
+		try
+		{			
+			//Click on main menu local Assignment.
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
+			
+			//To click on the analyze by Score
+			click("//a[contains(.,'Analyze Scores')]");
+			
+			//To click on the Beta Summary reports(Analyze By Tag New)
+			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			
+			//* Assert the header "Analyze by Tag"
+			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
+			
+			//To fill the the Test ID Search 
+			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
+			
+			//To click on the search button
+			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
+			
+			//To select the Assessment 
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
+			
+			//To select the Administrations
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
+			
+			//To click on the run report button
+			click("//*[@id='ctl00_MainContent_btnRunReport']");
+			
+			//Drill down from  Total test completed and scored
+			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[4]/a");
+			
+			//Assert the label Assessment Students List
+			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
+			
+			//Assert the label  Analyze by Tag
+			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			
+			//Assert the label student Id   
+			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
+			
+			//Assert the label Last Name 
+			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
+			
+			//Assert the label First Name 
+			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
+			
+			//Assert the label Grade 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
+			
+			//Assert the label   School   
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
+			
+			//Assert the label   Ethnicity    
+			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
+			
+			//Assert the label  IEP  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
+			
+			//Assert the label  ELL  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
+			
+			//Assert the label  Ec. Disadvantaged 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+						
+		} 
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}		
+	}
+	@Test(priority=6)
+	public void TCED14306() 
+	{
+		try
+		{			
+			//Click on main menu local Assignment.
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
+			
+			//To click on the analyze by Score
+			click("//a[contains(.,'Analyze Scores')]");
+			
+			//To click on the Beta Summary reports(Analyze By Tag New)
+			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			
+			//* Assert the header "Analyze by Tag"
+			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
+			
+			//To fill the the Test ID Search 
+			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
+			
+			//To click on the search button
+			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
+			
+			//To select the Assessment 
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
+			
+			//To select the Administrations
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
+			
+			//To click on the run report button
+			click("//*[@id='ctl00_MainContent_btnRunReport']");
+			
+			//Drill down from  Total test completed and scored
+			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[4]/a");
+			
+			//Assert the label Assessment Students List
+			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
+			
+			//Assert the label  Analyze by Tag
+			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			
+			//Assert the label student Id   
+			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
+			
+			//Assert the label Last Name 
+			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
+			
+			//Assert the label First Name 
+			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
+			
+			//Assert the label Grade 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
+			
+			//Assert the label   School   
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
+			
+			//Assert the label   Ethnicity    
+			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
+			
+			//Assert the label  IEP  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
+			
+			//Assert the label  ELL  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
+			
+			//Assert the label  Ec. Disadvantaged 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+						
+		} 
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}		
+	}
 //	@Test(priority=24)
-//	public void TCED14324() 
+	public void TCED14324() 
 	{
 		try
 		{
@@ -203,7 +377,7 @@ public class AnalyzeByTag extends BaseClassOne{
 	}
   }
 	
-	@Test(priority=2)
+//	@Test(priority=2)
 	public void TCED14325()
 	{
 		try
@@ -220,8 +394,8 @@ public class AnalyzeByTag extends BaseClassOne{
 	e.printStackTrace();
 	Assert.fail(e.getMessage());
 	}
-}
-	@Test(priority=3)
+    }
+ //	@Test(priority=3)
 	public void TCED14326()
 	{
 		try
@@ -261,8 +435,8 @@ public class AnalyzeByTag extends BaseClassOne{
 	e.printStackTrace();
 	Assert.fail(e.getMessage());
 	}
-}
-	@Test(priority=4)
+    }
+//	@Test(priority=4)
 	public void TCED14327()
 	{
 		try
@@ -346,5 +520,6 @@ public class AnalyzeByTag extends BaseClassOne{
 			Assert.fail(e.getMessage());
 		}	
 		}
+	
 }	
 

@@ -1,70 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="17" passed="16">
+<testng-results skipped="0" failed="2" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="128429" started-at="2018-11-01T06:08:35Z" finished-at="2018-11-01T06:10:44Z">
+  <suite name="Default suite" duration-ms="69471" started-at="2018-11-01T12:39:25Z" finished-at="2018-11-01T12:40:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="128429" started-at="2018-11-01T06:08:35Z" finished-at="2018-11-01T06:10:44Z">
-      <class name="com.MTSS.Meeting_History_Report">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="setup1" is-config="true" duration-ms="11774" started-at="2018-11-01T11:38:35Z" finished-at="2018-11-01T11:38:47Z">
+    <test name="Default test" duration-ms="69471" started-at="2018-11-01T12:39:25Z" finished-at="2018-11-01T12:40:34Z">
+      <class name="com.analyzeByScore.analyzebytagname">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.analyzebytagname@17d0008]" name="setup1" is-config="true" duration-ms="13303" started-at="2018-11-01T18:09:25Z" finished-at="2018-11-01T18:09:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED22501()[pri:1, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22501" duration-ms="7871" started-at="2018-11-01T11:38:47Z" finished-at="2018-11-01T11:38:55Z">
+        <test-method status="PASS" signature="TCED14301()[pri:1, instance:com.analyzeByScore.analyzebytagname@17d0008]" name="TCED14301" duration-ms="6469" started-at="2018-11-01T18:09:38Z" finished-at="2018-11-01T18:09:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22501 -->
-        <test-method status="PASS" signature="TCED22502()[pri:2, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22502" duration-ms="199" started-at="2018-11-01T11:38:55Z" finished-at="2018-11-01T11:38:55Z">
+        </test-method> <!-- TCED14301 -->
+        <test-method status="PASS" signature="TCED14302()[pri:2, instance:com.analyzeByScore.analyzebytagname@17d0008]" name="TCED14302" duration-ms="6913" started-at="2018-11-01T18:09:44Z" finished-at="2018-11-01T18:09:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22502 -->
-        <test-method status="PASS" signature="TCED22503()[pri:3, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22503" duration-ms="1216" started-at="2018-11-01T11:38:55Z" finished-at="2018-11-01T11:38:56Z">
+        </test-method> <!-- TCED14302 -->
+        <test-method status="PASS" signature="TCED14303()[pri:3, instance:com.analyzeByScore.analyzebytagname@17d0008]" name="TCED14303" duration-ms="357" started-at="2018-11-01T18:09:51Z" finished-at="2018-11-01T18:09:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22503 -->
-        <test-method status="PASS" signature="TCED22504()[pri:4, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22504" duration-ms="53" started-at="2018-11-01T11:38:56Z" finished-at="2018-11-01T11:38:56Z">
+        </test-method> <!-- TCED14303 -->
+        <test-method status="PASS" signature="TCED14304()[pri:4, instance:com.analyzeByScore.analyzebytagname@17d0008]" name="TCED14304" duration-ms="1602" started-at="2018-11-01T18:09:52Z" finished-at="2018-11-01T18:09:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22504 -->
-        <test-method status="PASS" signature="TCED22505()[pri:5, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22505" duration-ms="297" started-at="2018-11-01T11:38:56Z" finished-at="2018-11-01T11:38:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22505 -->
-        <test-method status="PASS" signature="TCED22506()[pri:6, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22506" duration-ms="11323" started-at="2018-11-01T11:38:57Z" finished-at="2018-11-01T11:39:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22506 -->
-        <test-method status="PASS" signature="TCED22507()[pri:7, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22507" duration-ms="11299" started-at="2018-11-01T11:39:08Z" finished-at="2018-11-01T11:39:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22507 -->
-        <test-method status="PASS" signature="TCED22508()[pri:8, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22508" duration-ms="2216" started-at="2018-11-01T11:39:19Z" finished-at="2018-11-01T11:39:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22508 -->
-        <test-method status="PASS" signature="TCED22509()[pri:9, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22509" duration-ms="1101" started-at="2018-11-01T11:39:22Z" finished-at="2018-11-01T11:39:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22509 -->
-        <test-method status="PASS" signature="TCED22510()[pri:10, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22510" duration-ms="1307" started-at="2018-11-01T11:39:23Z" finished-at="2018-11-01T11:39:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22510 -->
-        <test-method status="FAIL" signature="TCED22511()[pri:11, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22511" duration-ms="18837" started-at="2018-11-01T11:39:24Z" finished-at="2018-11-01T11:39:43Z">
+        </test-method> <!-- TCED14304 -->
+        <test-method status="FAIL" signature="TCED14305()[pri:5, instance:com.analyzeByScore.analyzebytagname@17d0008]" name="TCED14305" duration-ms="20301" started-at="2018-11-01T18:09:53Z" finished-at="2018-11-01T18:10:14Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Date Range: 2/1/2018 - 8/8/2018] but found [Date Range:2/1/2018 - 8/3/2018]]]>
+              <![CDATA[Timeout during waiting for element: '//a[contains(.,'Analyze Scores')]']]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Date Range: 2/1/2018 - 8/8/2018] but found [Date Range:2/1/2018 - 8/3/2018]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.MTSS.Meeting_History_Report.TCED22511(Meeting_History_Report.java:382)
+              <![CDATA[java.lang.AssertionError: Timeout during waiting for element: '//a[contains(.,'Analyze Scores')]'
+	at Library.BaseClassOne.waitFor(BaseClassOne.java:271)
+	at Library.BaseClassOne.click(BaseClassOne.java:183)
+	at com.analyzeByScore.analyzebytagname.TCED14305(analyzebytagname.java:200)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,36 +67,53 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22511 -->
-        <test-method status="PASS" signature="TCED22512()[pri:12, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22512" duration-ms="11274" started-at="2018-11-01T11:39:43Z" finished-at="2018-11-01T11:39:54Z">
+        </test-method> <!-- TCED14305 -->
+        <test-method status="FAIL" signature="TCED14306()[pri:6, instance:com.analyzeByScore.analyzebytagname@17d0008]" name="TCED14306" duration-ms="20467" started-at="2018-11-01T18:10:14Z" finished-at="2018-11-01T18:10:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Timeout during waiting for element: '//a[contains(.,'Analyze Scores')]']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Timeout during waiting for element: '//a[contains(.,'Analyze Scores')]'
+	at Library.BaseClassOne.waitFor(BaseClassOne.java:271)
+	at Library.BaseClassOne.click(BaseClassOne.java:183)
+	at com.analyzeByScore.analyzebytagname.TCED14306(analyzebytagname.java:275)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22512 -->
-        <test-method status="PASS" signature="TCED22513()[pri:13, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22513" duration-ms="11308" started-at="2018-11-01T11:39:54Z" finished-at="2018-11-01T11:40:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22513 -->
-        <test-method status="PASS" signature="TCED22514()[pri:14, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22514" duration-ms="3797" started-at="2018-11-01T11:40:05Z" finished-at="2018-11-01T11:40:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22514 -->
-        <test-method status="PASS" signature="TCED22515()[pri:15, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22515" duration-ms="11280" started-at="2018-11-01T11:40:09Z" finished-at="2018-11-01T11:40:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22515 -->
-        <test-method status="PASS" signature="TCED22516()[pri:16, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22516" duration-ms="11278" started-at="2018-11-01T11:40:21Z" finished-at="2018-11-01T11:40:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22516 -->
-        <test-method status="PASS" signature="TCED22517()[pri:17, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="TCED22517" duration-ms="11760" started-at="2018-11-01T11:40:32Z" finished-at="2018-11-01T11:40:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED22517 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Meeting_History_Report@1686d1f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T11:40:44Z" finished-at="2018-11-01T11:40:44Z">
+        </test-method> <!-- TCED14306 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.analyzebytagname@17d0008]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T18:10:34Z" finished-at="2018-11-01T18:10:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.Meeting_History_Report -->
+      </class> <!-- com.analyzeByScore.analyzebytagname -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
