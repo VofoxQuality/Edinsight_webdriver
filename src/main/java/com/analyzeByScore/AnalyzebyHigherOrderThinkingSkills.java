@@ -193,7 +193,6 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkOePdfQuestions']");
 			
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-
 			
 			//To click on the OE to Word
 			Thread.sleep(3000);

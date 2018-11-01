@@ -44,7 +44,7 @@ public class TeamDecisionReport extends BaseClassOne {
 		}
 	}
 
-	@Test(priority=2)
+//	@Test(priority=2)
 	public void TCED22602() 
 	{
 		try
@@ -81,7 +81,7 @@ public class TeamDecisionReport extends BaseClassOne {
 
 
 
-	@Test(priority=3)
+//	@Test(priority=3)
 	public void TCED22603() 
 	{
 		try
@@ -113,7 +113,7 @@ public class TeamDecisionReport extends BaseClassOne {
 	}
 
 
-	@Test(priority=4)
+//	@Test(priority=4)
 	public void TCED22604() 
 	{
 		try
@@ -135,7 +135,7 @@ public class TeamDecisionReport extends BaseClassOne {
 		}
 	}
 
-	@Test(priority=5)
+//	@Test(priority=5)
 	public void TCED22605() 
 	{
 		try
@@ -184,7 +184,7 @@ public class TeamDecisionReport extends BaseClassOne {
 
 
 
-	@Test(priority=6)
+//	@Test(priority=6)
 	public void TCED22606() 
 	{
 		try
@@ -206,7 +206,7 @@ public class TeamDecisionReport extends BaseClassOne {
 			Assert.fail(e.getMessage());
 		}
 	}
-	@Test(priority=7)
+//	@Test(priority=7)
 	public void TCED22607() 
 	{
 		try
@@ -228,7 +228,7 @@ public class TeamDecisionReport extends BaseClassOne {
 		}
 	}
 
-	@Test(priority=8)
+	//@Test(priority=8)
 	public void TCED22608() 
 	{
 		try
@@ -258,7 +258,7 @@ public class TeamDecisionReport extends BaseClassOne {
 		}
 	}
 
-	@Test(priority=9)
+//	@Test(priority=9)
 	public void TCED22609() 
 	{
 		try
@@ -292,7 +292,7 @@ public class TeamDecisionReport extends BaseClassOne {
 
 
 
-	@Test(priority=10)
+//	@Test(priority=10)
 	public void TCED22610() 
 	{
 		try
@@ -363,15 +363,18 @@ public class TeamDecisionReport extends BaseClassOne {
 			//To click on the run report button
 			click("//input[@id='ctl00_MainContent_btnRunReport']");
 
-
 			// To Assert the labels
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td/span[1]"), "Team Decisions :");	
 
-			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td/span[2]"), "Date Range :");	
-
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td/span[2]"), "Date Range :");			
+			
+			Assert.assertTrue(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td").contains("3/1/2018 - 8/3/2018"), "Failed To Assert the selected dates");
+			
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td/span[3]"), "District :");	
 
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td/span[4]"), "Grade Level(s) :");
+			
+			
 
 		}catch(Exception e) 
 		{
