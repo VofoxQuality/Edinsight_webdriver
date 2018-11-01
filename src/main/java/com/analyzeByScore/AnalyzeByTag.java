@@ -143,6 +143,16 @@ public class AnalyzeByTag extends BaseClassOne{
 			//Application should be in the Analyze by Tag Report page
 			
 			//Drill down from Total Scheduled Students
+			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[2]/a");
+			
+			//Assert the label Assessment Students List
+			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
+			
+			//Assert the label  Analyze by Question
+			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			
+			
+			
 			
 		} 
 		catch (Exception e)
