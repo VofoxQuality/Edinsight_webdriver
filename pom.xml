@@ -90,11 +90,13 @@
 						<suiteXmlFile>VED0023-Local Assessment-Item_Analysis_by_Student.xml</suiteXmlFile>
 						<suiteXmlFile>VED0024-Student_Assessment_Administration_Resultsby_Teacher.xml</suiteXmlFile>
 						<suiteXmlFile>VED0047-Mass Change Person Responsible.xml</suiteXmlFile>
+						<suiteXmlFile>VED0043-Fix_and_Delete_Intervention_Plans.xml</suiteXmlFile>
 						<suiteXmlFile>VED0045-Manage Meetings.xml</suiteXmlFile>
 						<suiteXmlFile>VED0052-Meeting History Report.xml</suiteXmlFile>
 						<suiteXmlFile>VED0053-Team Decision Report.xml</suiteXmlFile>
 						<suiteXmlFile>VED0054-Tier_History_Report.xml</suiteXmlFile>
 						<suiteXmlFile>VED0058-Tiered_Students_With_No_Intervention_Plan.xml</suiteXmlFile>
+						<suiteXmlFile>VED0059-Students Receiving Interventions by Teacher.xml</suiteXmlFile>
 						<suiteXmlFile>VED0082-Browse_By_Standard.xml</suiteXmlFile>
 						<suiteXmlFile>VED0085-Completion_status_report.xml</suiteXmlFile>
 						<suiteXmlFile>VED0086-Print_View_Multiple_Maps.xml</suiteXmlFile>
