@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.analyzeByScore.AdministrationComparisonbyStudent">
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.MTSS.Students_Receiving_Interventions_by_Teacher">
+>>>>>>> 5a6936dced2538851681af0b3be72801beaae16d
         <methods>
+          <include name="TCED221205"/>
+          <include name="TCED221208"/>
           <include name="setup1"/>
+<<<<<<< HEAD
           <include name="TCED14291"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.analyzeByScore.AdministrationComparisonbyStudent -->
+=======
+          <include name="TCED221206"/>
+          <include name="TCED221204"/>
+          <include name="TCED221210"/>
+          <include name="TCED221211"/>
+          <include name="tearDown"/>
+          <include name="TCED221209"/>
+          <include name="TCED221207"/>
+        </methods>
+      </class> <!-- com.MTSS.Students_Receiving_Interventions_by_Teacher -->
+>>>>>>> 5a6936dced2538851681af0b3be72801beaae16d
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
