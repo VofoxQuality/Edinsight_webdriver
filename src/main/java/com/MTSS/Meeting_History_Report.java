@@ -376,8 +376,10 @@ public class Meeting_History_Report extends BaseClassOne
 			  //Assert the label "Building"
 			  Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblBuilding']"),"Building:");
 			  
-			  //Assert the label "Date Range: 2/1/2018 - 8/8/2018 "
-			  Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblDateRange_SchoolYear']"),"Date Range:");
+			  //Assert the label "Date Range: 2/1/2018 - 8/3/2018 "
+			  String date=getText("//*[@id='ctl00_MainContent_lblDateRange_SchoolYear']");
+			  String range=getText("//*[@id='ctl00_MainContent_lblDateRange_SchoolYearDisplay']");			  
+			  Assert.assertEquals(date+range,"Date Range:2/1/2018 - 8/3/2018");
 
 		} 
 		 catch (Exception e)

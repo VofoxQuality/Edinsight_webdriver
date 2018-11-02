@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite (20)]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.curriculum.Standards_Coverage_Report">
+        <methods>
+          <include name="setup1"/>
+          <include name="TCED30204"/>
+          <include name="TCED30202"/>
+          <include name="TCED30201"/>
+          <include name="tearDown"/>
+          <include name="TCED30206"/>
+        </methods>
+      </class> <!-- com.curriculum.Standards_Coverage_Report -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite (20)] -->
