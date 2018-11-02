@@ -3,22 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.MTSS.Manage_meetings">
+      <class name="com.MTSS.TeamDecisionReport">
         <methods>
-          <include name="TCED20220"/>
-          <include name="TCED20221"/>
           <include name="setup1"/>
-          <include name="TCED20222"/>
-          <include name="TCED20219"/>
+          <include name="TCED22611"/>
+          <include name="TCED22615"/>
+          <include name="TCED22614"/>
+          <include name="TCED22613"/>
+          <include name="TCED22612"/>
           <include name="tearDown"/>
-          <include name="TCED20212"/>
-          <include name="TCED20223"/>
-          <include name="TCED20213"/>
-          <include name="TCED20224"/>
-          <include name="TCED20214"/>
-          <include name="TCED20215"/>
+          <include name="TCED22617"/>
+          <include name="TCED22616"/>
         </methods>
-      </class> <!-- com.MTSS.Manage_meetings -->
+      </class> <!-- com.MTSS.TeamDecisionReport -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
