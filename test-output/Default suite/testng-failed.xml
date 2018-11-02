@@ -3,6 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.analyzeByScore.analyzebytagname">
+        <methods>
+          <include name="setup1"/>
+          <include name="TCED14305"/>
+          <include name="tearDown"/>
+          <include name="TCED14306"/>
+        </methods>
+      </class> <!-- com.analyzeByScore.analyzebytagname -->
+=======
       <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
         <methods>
           <include name="TCED14409"/>
@@ -25,6 +35,7 @@
           <include name="setup1"/>
         </methods>
       </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
+>>>>>>> c11612d7a34c467e62cdf195071ed1f709f8a73d
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
