@@ -62,7 +62,7 @@ public class BaseClassOne	{
 	 //Manoj
 	//protected  String downloadPath="E:\\selenium_downloads";
 	 //Ans
-		protected  String downloadPath="E:\\selenium_downloads";
+		//protected  String downloadPath="E:\\selenium_downloads";
 	
 	 
 	 int i=0;
