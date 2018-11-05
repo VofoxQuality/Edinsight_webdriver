@@ -12,7 +12,7 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 
 	@Test(priority=1)
 
-	public void TCED21101() throws InterruptedException
+	public void TCED21101() 
 
 	{
 		try {
@@ -28,8 +28,7 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[4]/div/a");	
 			// To assert the validations
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td"), "Mass Change Person Responsible");		
-
-
+			
 		} 
 		catch (Exception e) 
 		{
@@ -38,12 +37,8 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 		}        
 
 	}
-
-
-	
 	@Test(priority=2)
-
-	public void TCED21102() throws InterruptedException
+	public void TCED21102() 
 
 	{
 		try {
@@ -69,22 +64,16 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_prHead']"), "Person Responsible");		
 
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_trTeachers']/td[1]"), "Teacher");		
-
-			
+	
 		} 
 		catch (Exception e) 
 		{
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
 		}        
-
 	}
-	
-	
-
 	@Test(priority=3)
-
-	public void TCED21103() throws InterruptedException
+	public void TCED21103()
 
 	{
 		try {
@@ -103,14 +92,11 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 				e.printStackTrace();
 				Assert.fail(e.getMessage());
 			}        
-	
-		
 		}
-	
-	
+
 	@Test(priority=4)
 
-	public void TCED21104() throws InterruptedException
+	public void TCED21104() 
 
 	{
 		try {
@@ -140,14 +126,10 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
 		}        
-
-	
 	}
-	
-	
 	@Test(priority=5)
 
-	public void TCED21105() throws InterruptedException
+	public void TCED21105()
 
 	{
 		try {
@@ -167,9 +149,7 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 			click("//*[@id='ctl00_MainContent_gridPersonResposible_ctl02_btnRemove']");
 			Thread.sleep(3000);
 			Assert.assertTrue(!isElementPresent("//*[@id='ctl00_MainContent_gridPersonResposible_ctl02_rcmbPersonResponsible_Input']"),"Element is not displayed ");
-
-			
-			
+	
 		} 
 		catch (Exception e) 
 		{
@@ -183,8 +163,7 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 	
 	@Test(priority=6)
 
-	public void TCED21106() throws InterruptedException
-
+	public void TCED21106()
 	{
 		try {
 	
@@ -198,11 +177,7 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 			click("//*[@id='ctl00_MainContent_btnUpdateSelectedPlans']");
 			// To assert the fields
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00__0']/td[12]"), "Teacher14");	
-
-			
-			
-			
-			
+	
 	
 		} 
 		catch (Exception e) 
@@ -212,12 +187,8 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 		}        
 
 	}
-		
-		
-
 	@Test(priority=7)
-
-	public void TCED21107() throws InterruptedException
+	public void TCED21107()
 
 	{
 		try {
