@@ -3,32 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
+      <class name="com.MTSS.TeamDecisionReport">
         <methods>
-          <include name="TCED14409"/>
-          <include name="TCED14408"/>
-          <include name="TCED14419"/>
-          <include name="TCED14405"/>
-          <include name="TCED14416"/>
-          <include name="TCED14404"/>
-          <include name="TCED14415"/>
-          <include name="TCED14407"/>
-          <include name="TCED14418"/>
-          <include name="TCED14406"/>
-          <include name="TCED14412"/>
-          <include name="TCED14423"/>
-          <include name="TCED14411"/>
-          <include name="TCED14422"/>
-          <include name="TCED14414"/>
-          <include name="TCED14402"/>
-          <include name="TCED14413"/>
-          <include name="TCED14424"/>
-          <include name="tearDown"/>
-          <include name="TCED14421"/>
-          <include name="TCED14420"/>
           <include name="setup1"/>
+          <include name="TCED22611"/>
+          <include name="TCED22615"/>
+          <include name="TCED22614"/>
+          <include name="TCED22613"/>
+          <include name="TCED22601"/>
+          <include name="TCED22612"/>
+          <include name="tearDown"/>
+          <include name="TCED22617"/>
+          <include name="TCED22616"/>
         </methods>
-      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
+      </class> <!-- com.MTSS.TeamDecisionReport -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
