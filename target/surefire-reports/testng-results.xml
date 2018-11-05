@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="57791" started-at="2018-11-02T10:53:35Z" finished-at="2018-11-02T10:54:33Z">
+  <suite name="Suite" duration-ms="18650" started-at="2018-11-02T12:48:17Z" finished-at="2018-11-02T12:48:36Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="57791" started-at="2018-11-02T10:53:35Z" finished-at="2018-11-02T10:54:33Z">
-      <class name="com.MTSS.Unsubmitted_Intervention_Plans">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="setup1" is-config="true" duration-ms="8786" started-at="2018-11-02T10:53:35Z" finished-at="2018-11-02T10:53:44Z">
+    <test name="Test" duration-ms="18650" started-at="2018-11-02T12:48:17Z" finished-at="2018-11-02T12:48:36Z">
+      <class name="com.localassessment.Copy_assessment">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Copy_assessment@3108bc]" name="setup1" is-config="true" duration-ms="9318" started-at="2018-11-02T12:48:17Z" finished-at="2018-11-02T12:48:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED221001()[pri:0, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="TCED221001" duration-ms="7336" started-at="2018-11-02T10:53:44Z" finished-at="2018-11-02T10:53:51Z">
+        <test-method status="PASS" signature="TCED15202()[pri:0, instance:com.localassessment.Copy_assessment@3108bc]" name="TCED15202" duration-ms="9313" started-at="2018-11-02T12:48:27Z" finished-at="2018-11-02T12:48:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED221001 -->
-        <test-method status="PASS" signature="TCED221002()[pri:1, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="TCED221002" duration-ms="25" started-at="2018-11-02T10:53:51Z" finished-at="2018-11-02T10:53:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221002 -->
-        <test-method status="PASS" signature="TCED221003()[pri:2, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="TCED221003" duration-ms="754" started-at="2018-11-02T10:53:51Z" finished-at="2018-11-02T10:53:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221003 -->
-        <test-method status="PASS" signature="TCED221004()[pri:3, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="TCED221004" duration-ms="322" started-at="2018-11-02T10:53:52Z" finished-at="2018-11-02T10:53:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221004 -->
-        <test-method status="PASS" signature="TCED221005()[pri:4, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="TCED221005" duration-ms="13301" started-at="2018-11-02T10:53:52Z" finished-at="2018-11-02T10:54:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221005 -->
-        <test-method status="PASS" signature="TCED221006()[pri:5, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="TCED221006" duration-ms="11301" started-at="2018-11-02T10:54:05Z" finished-at="2018-11-02T10:54:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221006 -->
-        <test-method status="PASS" signature="TCED221007()[pri:6, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="TCED221007" duration-ms="1914" started-at="2018-11-02T10:54:17Z" finished-at="2018-11-02T10:54:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221007 -->
-        <test-method status="PASS" signature="TCED221008()[pri:7, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="TCED221008" duration-ms="1910" started-at="2018-11-02T10:54:18Z" finished-at="2018-11-02T10:54:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221008 -->
-        <test-method status="PASS" signature="TCED221009()[pri:8, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="TCED221009" duration-ms="604" started-at="2018-11-02T10:54:20Z" finished-at="2018-11-02T10:54:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221009 -->
-        <test-method status="PASS" signature="TCED221010()[pri:9, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="TCED221010" duration-ms="11514" started-at="2018-11-02T10:54:21Z" finished-at="2018-11-02T10:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED221010 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Unsubmitted_Intervention_Plans@5f9d02cb]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T10:54:33Z" finished-at="2018-11-02T10:54:33Z">
+        </test-method> <!-- TCED15202 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Copy_assessment@3108bc]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T12:48:36Z" finished-at="2018-11-02T12:48:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.Unsubmitted_Intervention_Plans -->
+      </class> <!-- com.localassessment.Copy_assessment -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
