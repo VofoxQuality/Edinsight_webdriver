@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18650" started-at="2018-11-02T12:48:17Z" finished-at="2018-11-02T12:48:36Z">
+  <suite name="Suite" duration-ms="105959" started-at="2018-11-05T08:37:24Z" finished-at="2018-11-05T08:39:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18650" started-at="2018-11-02T12:48:17Z" finished-at="2018-11-02T12:48:36Z">
-      <class name="com.localassessment.Copy_assessment">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Copy_assessment@3108bc]" name="setup1" is-config="true" duration-ms="9318" started-at="2018-11-02T12:48:17Z" finished-at="2018-11-02T12:48:27Z">
+    <test name="Test" duration-ms="105959" started-at="2018-11-05T08:37:24Z" finished-at="2018-11-05T08:39:10Z">
+      <class name="com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="setup1" is-config="true" duration-ms="8906" started-at="2018-11-05T08:37:24Z" finished-at="2018-11-05T08:37:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED15202()[pri:0, instance:com.localassessment.Copy_assessment@3108bc]" name="TCED15202" duration-ms="9313" started-at="2018-11-02T12:48:27Z" finished-at="2018-11-02T12:48:36Z">
+        <test-method status="PASS" signature="TCED13301()[pri:0, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="TCED13301" duration-ms="5553" started-at="2018-11-05T08:37:33Z" finished-at="2018-11-05T08:37:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15202 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Copy_assessment@3108bc]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T12:48:36Z" finished-at="2018-11-02T12:48:36Z">
+        </test-method> <!-- TCED13301 -->
+        <test-method status="PASS" signature="TCED13302()[pri:1, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="TCED13302" duration-ms="3703" started-at="2018-11-05T08:37:39Z" finished-at="2018-11-05T08:37:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13302 -->
+        <test-method status="PASS" signature="TCED13303()[pri:2, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="TCED13303" duration-ms="294" started-at="2018-11-05T08:37:42Z" finished-at="2018-11-05T08:37:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13303 -->
+        <test-method status="PASS" signature="TCED13304()[pri:3, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="TCED13304" duration-ms="1783" started-at="2018-11-05T08:37:43Z" finished-at="2018-11-05T08:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13304 -->
+        <test-method status="PASS" signature="TCED13305()[pri:4, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="TCED13305" duration-ms="3642" started-at="2018-11-05T08:37:45Z" finished-at="2018-11-05T08:37:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13305 -->
+        <test-method status="PASS" signature="TCED13306()[pri:5, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="TCED13306" duration-ms="22877" started-at="2018-11-05T08:37:48Z" finished-at="2018-11-05T08:38:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13306 -->
+        <test-method status="PASS" signature="TCED13307()[pri:6, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="TCED13307" duration-ms="22927" started-at="2018-11-05T08:38:11Z" finished-at="2018-11-05T08:38:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13307 -->
+        <test-method status="PASS" signature="TCED13308()[pri:7, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="TCED13308" duration-ms="23196" started-at="2018-11-05T08:38:34Z" finished-at="2018-11-05T08:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13308 -->
+        <test-method status="PASS" signature="TCED13309()[pri:8, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="TCED13309" duration-ms="12007" started-at="2018-11-05T08:38:57Z" finished-at="2018-11-05T08:39:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13309 -->
+        <test-method status="PASS" signature="TCED13310()[pri:9, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="TCED13310" duration-ms="1046" started-at="2018-11-05T08:39:09Z" finished-at="2018-11-05T08:39:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13310 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes@5f9d02cb]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-05T08:39:10Z" finished-at="2018-11-05T08:39:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.localassessment.Copy_assessment -->
+      </class> <!-- com.Local_Assessment_Score_Results.Test_Suite_Print_Login_Codes -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
