@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.MTSS.Mass_Change_Person_Responsible">
+        <methods>
+          <include name="TCED21103"/>
+          <include name="setup1"/>
+          <include name="TCED21102"/>
+          <include name="TCED21105"/>
+          <include name="tearDown"/>
+          <include name="TCED21107"/>
+          <include name="TCED21104"/>
+          <include name="TCED21101"/>
+          <include name="TCED21106"/>
+        </methods>
+      </class> <!-- com.MTSS.Mass_Change_Person_Responsible -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

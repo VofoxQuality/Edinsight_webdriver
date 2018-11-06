@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="92619" started-at="2018-11-05T08:54:26Z" finished-at="2018-11-05T08:55:59Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="92619" started-at="2018-11-05T08:54:26Z" finished-at="2018-11-05T08:55:59Z">
+      <class name="com.MTSS.TeamDecisionReport">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.TeamDecisionReport@8646db9]" name="setup1" is-config="true" duration-ms="7219" started-at="2018-11-05T08:54:26Z" finished-at="2018-11-05T08:54:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup1 -->
+        <test-method status="PASS" signature="TCED22601()[pri:1, instance:com.MTSS.TeamDecisionReport@8646db9]" name="TCED22601" duration-ms="8975" started-at="2018-11-05T08:54:33Z" finished-at="2018-11-05T08:54:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22601 -->
+        <test-method status="PASS" signature="TCED22611()[pri:11, instance:com.MTSS.TeamDecisionReport@8646db9]" name="TCED22611" duration-ms="21942" started-at="2018-11-05T08:54:42Z" finished-at="2018-11-05T08:55:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22611 -->
+        <test-method status="PASS" signature="TCED22612()[pri:12, instance:com.MTSS.TeamDecisionReport@8646db9]" name="TCED22612" duration-ms="9265" started-at="2018-11-05T08:55:04Z" finished-at="2018-11-05T08:55:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22612 -->
+        <test-method status="PASS" signature="TCED22613()[pri:13, instance:com.MTSS.TeamDecisionReport@8646db9]" name="TCED22613" duration-ms="9293" started-at="2018-11-05T08:55:14Z" finished-at="2018-11-05T08:55:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22613 -->
+        <test-method status="PASS" signature="TCED22614()[pri:14, instance:com.MTSS.TeamDecisionReport@8646db9]" name="TCED22614" duration-ms="8023" started-at="2018-11-05T08:55:23Z" finished-at="2018-11-05T08:55:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22614 -->
+        <test-method status="PASS" signature="TCED22615()[pri:15, instance:com.MTSS.TeamDecisionReport@8646db9]" name="TCED22615" duration-ms="9252" started-at="2018-11-05T08:55:31Z" finished-at="2018-11-05T08:55:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22615 -->
+        <test-method status="PASS" signature="TCED22616()[pri:16, instance:com.MTSS.TeamDecisionReport@8646db9]" name="TCED22616" duration-ms="9300" started-at="2018-11-05T08:55:40Z" finished-at="2018-11-05T08:55:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22616 -->
+        <test-method status="PASS" signature="TCED22617()[pri:17, instance:com.MTSS.TeamDecisionReport@8646db9]" name="TCED22617" duration-ms="9306" started-at="2018-11-05T08:55:50Z" finished-at="2018-11-05T08:55:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED22617 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.TeamDecisionReport@8646db9]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-05T08:55:59Z" finished-at="2018-11-05T08:55:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.MTSS.TeamDecisionReport -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
