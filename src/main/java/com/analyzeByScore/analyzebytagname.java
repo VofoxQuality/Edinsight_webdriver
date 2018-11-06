@@ -1,13 +1,14 @@
 package com.analyzeByScore;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Library.BaseClassOne;
-
-
 
 public class analyzebytagname extends BaseClassOne
 
@@ -28,7 +29,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}
 	}
-	@Test(priority=2)
+//	@Test(priority=2)
 	public void TCED14302() 
 	{
 		try
@@ -73,7 +74,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-	@Test(priority=3)
+//	@Test(priority=3)
 	public void TCED14303() 
 	{
 		try
@@ -138,7 +139,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-	@Test(priority=4)
+//	@Test(priority=4)
 	public void TCED14304() 
 	{
 		try
@@ -188,16 +189,20 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-	@Test(priority=5)
+//	@Test(priority=5)
 	public void TCED14305() 
 	{
 		try
-		{			
-			//Click on main menu local Assignment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
+		{	
+			Thread.sleep(2000);
+			//Click on main menu local Assignment.			
+			Actions actions = new Actions(driver);
+			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			actions.moveToElement(mouseHover).build().perform();
+			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
 			
 			//To click on the analyze by Score
-			click("//a[contains(text(),'Analyze Scores')]");
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
 			
 			//To click on the Beta Summary reports(Analyze By Tag New)
 			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
@@ -215,7 +220,7 @@ public class analyzebytagname extends BaseClassOne
 			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
 			
 			//To select the Administrations
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
+			select("//*[@id='ctl00_MainContent_ddlAdministrations']", "label=For Automation- do not edit (Admin)(2017-2018)");	
 			
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
@@ -263,16 +268,18 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-	@Test(priority=6)
+//	@Test(priority=6)
 	public void TCED14306() 
 	{
 		try
 		{			
 			//Click on main menu local Assignment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
+			 Actions actions = new Actions(driver);
+			 WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			 actions.moveToElement(mouseHover).build().perform();		
 			
 			//To click on the analyze by Score
-			click("//a[contains(text(),'Analyze Scores')]");
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
 			
 			//To click on the Beta Summary reports(Analyze By Tag New)
 			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
@@ -290,7 +297,7 @@ public class analyzebytagname extends BaseClassOne
 			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
 			
 			//To select the Administrations
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
+			select("//*[@id='ctl00_MainContent_ddlAdministrations']", "label=For Automation- do not edit (Admin)(2017-2018)");	
 			
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
@@ -338,16 +345,17 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-	@Test(priority=7)
+//	@Test(priority=7)
 	public void TCED14307() 
 	{
 		try
 		{			
-			//Click on main menu local Assignment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
+			 Actions actions = new Actions(driver);
+			 WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			 actions.moveToElement(mouseHover).build().perform();		
 			
 			//To click on the analyze by Score
-			click("//a[contains(text(),'Analyze Scores')]");
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
 			
 			//To click on the Beta Summary reports(Analyze By Tag New)
 			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
@@ -365,18 +373,23 @@ public class analyzebytagname extends BaseClassOne
 			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
 			
 			//To select the Administrations
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
+			select("//*[@id='ctl00_MainContent_ddlAdministrations']", "label=For Automation- do not edit (Admin)(2017-2018)");	
 			
 			//To click on the run report button
-			click("//*[@id='ctl00_MainContent_btnRunReport']");
+			click("//*[@id='ctl00_MainContent_btnRunReport']");			
+		
+			//click chart summary 
+			JavascriptExecutor js=(JavascriptExecutor)driver;
+			js.executeScript("scroll(0,500)");
 			
-			//Drill down from  Total test completed and scored
-			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[4]/a");
+			Thread.sleep(2000);
+			click("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]");
 			
-			
-			
-			
-			
+//			int x = 288;
+//			int y = 661;
+//			Actions action = new Actions(driver);
+//			//clicking on the chart based on x coordinate and y coordinate 
+//			action.moveByOffset( x, y).click().build().perform();			
 			
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
@@ -418,13 +431,15 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-	@Test(priority=8)
+//	@Test(priority=8)
 	public void TCED14308() 
 	{
 		try
 		{			
 			//Click on main menu local Assignment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
+			 Actions actions = new Actions(driver);
+			 WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			 actions.moveToElement(mouseHover).build().perform();			
 			
 			//To click on the analyze by Score
 			click("//a[contains(text(),'Analyze Scores')]");
@@ -445,7 +460,7 @@ public class analyzebytagname extends BaseClassOne
 			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
 			
 			//To select the Administrations
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
+			select("//*[@id='ctl00_MainContent_ddlAdministrations']", "label=For Automation- do not edit (Admin)(2017-2018)");	
 			
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
@@ -493,7 +508,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-	@Test(priority=9)
+//	@Test(priority=9)
 	public void TCED14309() 
 	{
 		try
@@ -595,29 +610,51 @@ public class analyzebytagname extends BaseClassOne
 			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
 			
 			//To select the Administrations
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
+			select("//*[@id='ctl00_MainContent_ddlAdministrations']", "label=For Automation- do not edit (Admin)(2017-2018)");
 			
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
 			
-			//Select School 
+			//Select School
+			select("//*[@id='ctl00_MainContent_ddlSchool']","label=Ashley High School");
+			
+			Thread.sleep(2000);
 			
 			//Select Teacher
+			select("//*[@id='ctl00_MainContent_ddlStaff']","label=Ableton, A - 10");
 			
 			//click on Run Report button
+			click("input[id$=btnRunReport]");
 			
-//			Report should be generated 
-//			Assert the label Summary
-//			Assert the label Detailed
-//
-//			Assert the Label Tag
-//			Assert the Label Question Numbers 
-//			Assert the Label DOK 
-//			Assert the Label % Points Earned 
-//			Assert the Label Points Earned 
-//			Assert the Label Question Points Possible 
-//			Assert the Label Total Points Possible 
-//			Assert the Label Question Type
+			//Assert the label Summary
+			Assert.assertEquals(getText("//h3[contains(text(),'Summary')]"),"Summary");			
+			
+			//Assert the label Detailed
+			Assert.assertEquals(getText("//h3[contains(text(),'Detailed')]"),"Detailed");		
+			
+			//Assert the Label Tag
+			Assert.assertEquals(getText("//th[contains(text(),'Tag')]"),"Tag");	
+			
+			//Assert the Label Question Numbers 
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgTagAnalysis_ctl00']/thead/tr/th[2]"),"Question Numbers");	
+			
+			//Assert the Label DOK 
+			Assert.assertEquals(getText("//a[contains(text(),'DOK')]"),"DOK");	
+			
+			//Assert the Label % Points Earned 
+			Assert.assertEquals(getText("//a[contains(text(),'% Points Earned')]"),"% Points Earned");
+			
+			//Assert the Label Points Earned 
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgTagAnalysis_ctl00']/thead/tr/th[6]/a"),"Points Earned");
+			
+			//Assert the Label Question Points Possible
+			Assert.assertEquals(getText("//a[contains(text(),'Question Points Possible')]"),"Question Points Possible");
+			
+			//Assert the Label Total Points Possible 
+			Assert.assertEquals(getText("//a[contains(text(),'Total Points Possible')]"),"Total Points Possible");
+			
+			//Assert the Label Question Type
+			Assert.assertEquals(getText("//a[contains(text(),'Question Type')]"),"Question Type");
 						
 		} 
 		catch (Exception e)
@@ -626,6 +663,216 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
+	@Test(priority=11)
+	public void TCED14311() 
+	{
+		try
+		{			
+			//Application should be in the Analyze by Tag Report page
+			
+			//Drill down from Total Scheduled Students
+			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[2]/a");
+			
+			//Assert the label Assessment Students List
+			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
+			
+			//Assert the label  Analyze by Tag
+			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			
+			//Assert the label student Id   
+			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
+			
+			//Assert the label Last Name 
+			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
+			
+			//Assert the label First Name 
+			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
+			
+			//Assert the label Grade 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
+			
+			//Assert the label   School   
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
+			
+			//Assert the label   Ethnicity    
+			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
+			
+			//Assert the label  IEP  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
+			
+			//Assert the label  ELL  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
+			
+			//Assert the label  Ec. Disadvantaged 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+						
+		} 
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}		
+	}
+	@Test(priority=12)
+	public void TCED14312() 
+	{
+		try
+		{			
+			//Application should be in the Analyze by Tag Report page
+			//Click on main menu local Assignment.			
+			Actions actions = new Actions(driver);
+			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			actions.moveToElement(mouseHover).build().perform();
+			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
+			
+			//To click on the analyze by Score
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
+			
+			//To click on the Beta Summary reports(Analyze By Tag New)
+			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			
+			//* Assert the header "Analyze by Tag"
+			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
+			
+			//To fill the the Test ID Search 
+			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
+			
+			//To click on the search button
+			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
+			
+			//To select the Assessment 
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
+			
+			//To select the Administrations
+			select("//*[@id='ctl00_MainContent_ddlAdministrations']", "label=For Automation- do not edit (Admin)(2017-2018)");	
+			
+			//To click on the run report button
+			click("//*[@id='ctl00_MainContent_btnRunReport']");
+			
+			//Drill down from  Total test completed and scored
+			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[4]/a");
+			
+			//Assert the label Assessment Students List
+			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
+			
+			//Assert the label  Analyze by Tag
+			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			
+			//Assert the label student Id   
+			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
+			
+			//Assert the label Last Name 
+			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
+			
+			//Assert the label First Name 
+			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
+			
+			//Assert the label Grade 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
+			
+			//Assert the label   School   
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
+			
+			//Assert the label   Ethnicity    
+			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
+			
+			//Assert the label  IEP  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
+			
+			//Assert the label  ELL  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
+			
+			//Assert the label  Ec. Disadvantaged 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+						
+		} 
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}		
+	}
+	@Test(priority=13)
+	public void TCED14313() 
+	{
+		try
+		{			
+			//Application should be in the Analyze by Tag Report page
+			//Click on main menu local Assignment.			
+			Actions actions = new Actions(driver);
+			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			actions.moveToElement(mouseHover).build().perform();
+			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
+			
+			//To click on the analyze by Score
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
+			
+			//To click on the Beta Summary reports(Analyze By Tag New)
+			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			
+			//* Assert the header "Analyze by Tag"
+			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
+			
+			//To fill the the Test ID Search 
+			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
+			
+			//To click on the search button
+			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
+			
+			//To select the Assessment 
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
+			
+			//To select the Administrations
+			select("//*[@id='ctl00_MainContent_ddlAdministrations']", "label=For Automation- do not edit (Admin)(2017-2018)");	
+			
+			//To click on the run report button
+			click("//*[@id='ctl00_MainContent_btnRunReport']");
+			
+			//Drill down from  Total tests started but not completed
+			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[6]/a");
+			
+			//Assert the label Assessment Students List
+			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
+			
+			//Assert the label  Analyze by Tag
+			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			
+			//Assert the label student Id   
+			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
+			
+			//Assert the label Last Name 
+			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
+			
+			//Assert the label First Name 
+			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
+			
+			//Assert the label Grade 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
+			
+			//Assert the label   School   
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
+			
+			//Assert the label   Ethnicity    
+			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
+			
+			//Assert the label  IEP  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
+			
+			//Assert the label  ELL  
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
+			
+			//Assert the label  Ec. Disadvantaged 
+			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+						
+		} 
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}		
+	}
+	
+	
 //	@Test(priority=24)
 	public void TCED14324() 
 	{
