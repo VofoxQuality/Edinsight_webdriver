@@ -751,7 +751,7 @@ public void TCED25125() throws Exception
 		
 		 FileDelete();
 		
-		  click("input#ctl00_ContentPlaceHolder1_btnPrint.buttontext");
+		 click("input#ctl00_ContentPlaceHolder1_btnPrint.buttontext");
 			
 		 Thread.sleep(8000);			
 		 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
