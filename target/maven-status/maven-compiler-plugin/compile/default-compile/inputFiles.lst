@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\curriculum\Aligned_Standards.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\Functions\CreateRuberic.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\analyzeByScore\AnalyzebyHigherOrderThinkingSkills.java
@@ -28,7 +27,6 @@ F:\Vofox-Webdriver\Edinsight\src\main\java\com\questionBank\Local_Assessment_Que
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\curriculum\Copy_Current_Map.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\Home\Student_reports.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\analyzeByScore\Local_Assessment_Item_Analysisby_Student.java
-F:\Vofox-Webdriver\Edinsight\src\main\java\com\analyzeByScore\AnalyzeByTag.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\MTSS\Test_Suite_MTSS_Tier_Students_plan_interventions.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\curriculum\Print_View_Multiple_Maps.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\administerAssessment\SelectStudentsForTestAdministrationpage.java
@@ -44,6 +42,7 @@ F:\Vofox-Webdriver\Edinsight\src\main\java\Functions\DeleteorUnlinkQustions.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\curriculum\Browse_By_Standard.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\CheckList\QuestionBuilder.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\manageAssessment\EditAssessment.java
+F:\Vofox-Webdriver\Edinsight\src\main\java\com\analyzeByScore\analyzebytagname.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\Home\Data_sets.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\Functions\Create_New_Assessment_Survay.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\curriculum\My_lesson_plans_calendar.java
@@ -86,92 +85,3 @@ F:\Vofox-Webdriver\Edinsight\src\main\java\com\curriculum\Batch_Print.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\MTSS\Early_Warning_Identification.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\MTSS\InterventionEffectivenessBySkill.java
 F:\Vofox-Webdriver\Edinsight\src\main\java\com\MTSS\Meeting_History_Report.java
-=======
-E:\EdignSight Webdriver\src\main\java\com\manageAssessment\EditAssessment.java
-E:\EdignSight Webdriver\src\main\java\Functions\addStandard.java
-E:\EdignSight Webdriver\src\main\java\com\analyzeByScore\StandardMasteryReportbyClass.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\TeamDecisionReport.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Configure_Settings.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Test_Suite_MTSS_Tier_Students_plan_interventions.java
-E:\EdignSight Webdriver\src\main\java\Functions\addExhibit.java
-E:\EdignSight Webdriver\src\main\java\com\Home\Assessments.java
-E:\EdignSight Webdriver\src\main\java\com\Home\Student_reports.java
-E:\EdignSight Webdriver\src\main\java\com\Home\Grades.java
-E:\EdignSight Webdriver\src\main\java\Library\objectData.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\TierHistoryReport.java
-E:\EdignSight Webdriver\src\main\java\com\generalMethods\AssessmentPrint.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Batch_Print.java
-E:\EdignSight Webdriver\src\main\java\com\analyzeByScore\AnalyzeByQuestion.java
-E:\EdignSight Webdriver\src\main\java\com\analyzeByScore\AnalyzeByStandard.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Print_View_Multiple_Maps.java
-E:\EdignSight Webdriver\src\main\java\Functions\applayAttributes.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Mtss_track_student_interventions.java
-E:\EdignSight Webdriver\src\main\java\com\Home\Contacts.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\MTSS_Tier_Intervention_Menu.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\View_Print.java
-E:\EdignSight Webdriver\src\main\java\com\Home\Schedule.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Fix_and_Delete_intervention_plan.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Custom_Reports.java
-E:\EdignSight Webdriver\src\main\java\com\Local_Assessment_Score_Results\Test_Suite_Print_Login_Codes.java
-E:\EdignSight Webdriver\src\main\java\com\localassessment\Copy_assessment.java
-E:\EdignSight Webdriver\src\main\java\com\analyzeByScore\ItemAnalysisbyQuestion.java
-E:\EdignSight Webdriver\src\main\java\Report\ReportInBrowser.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\My_lesson_plans_calendar.java
-E:\EdignSight Webdriver\src\main\java\com\Home\Misconduct.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Print_Lessons.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Aligned_Standards.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Create_New_Map.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Mass_Change_Person_Responsible.java
-E:\EdignSight Webdriver\src\main\java\com\Home\Data_sets.java
-E:\EdignSight Webdriver\src\main\java\Functions\DeleteorUnlinkQustions.java
-E:\EdignSight Webdriver\src\main\java\com\analyzeByScore\TestAdministrationComparisonReport.java
-E:\EdignSight Webdriver\src\main\java\com\Home\Attendance.java
-E:\EdignSight Webdriver\src\main\java\Library\BaseClassOne.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Browse_By_Standard.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Test_Suite_MTSS_T1_Interventions.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Manage_meetings.java
-E:\EdignSight Webdriver\src\main\java\com\generalMethods\TestingSummary.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Track_Student_Interventions.java
-E:\EdignSight Webdriver\src\main\java\com\manageAssessment\SharingOptions.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\CompletionStatusReport.java
-E:\EdignSight Webdriver\src\main\java\com\analyzeByScore\Local_Assessment_Item_Analysisby_Student.java
-E:\EdignSight Webdriver\src\main\java\com\questionBank\Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits.java
-E:\EdignSight Webdriver\src\main\java\com\administerAssessment\SelectStudentsForTestAdministrationpage.java
-E:\EdignSight Webdriver\src\main\java\com\analyzeByScore\AdministrationComparisonbyStudent.java
-E:\EdignSight Webdriver\src\main\java\com\analyzeByScore\AnalyzeByTag.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Students_Receiving_Interventions_by_Teacher.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\FacilitatorPersonResponsibleList.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Copy_Current_Map.java
-E:\EdignSight Webdriver\src\main\java\com\analyzeByScore\AnalyzebyHigherOrderThinkingSkills.java
-E:\EdignSight Webdriver\src\main\java\Functions\Create_New_Assessment_Rubric.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\TieredStudentsWithNoInterventionPlan.java
-E:\EdignSight Webdriver\src\main\java\com\localassessment\Question_Bank_Apply_Standards.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Edit_Curriculum.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Enter_weeks_minutes.java
-E:\EdignSight Webdriver\src\main\java\com\localassessment\Copy_assessment_vendor.java
-E:\EdignSight Webdriver\src\main\java\com\administerAssessment\Create_New_Administration.java
-E:\EdignSight Webdriver\src\main\java\com\analyzeByScore\BuildingComparisonReportbyAdministration.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Analyze_curriculam.java
-E:\EdignSight Webdriver\src\main\java\com\localassessment\Score_Class_Results_Online.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\CTE_Competency_List.java
-E:\EdignSight Webdriver\src\main\java\Functions\Assessment_Finalize.java
-E:\EdignSight Webdriver\src\main\java\Functions\Create_New_Assessment_Survay.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Report_By_Standard.java
-E:\EdignSight Webdriver\src\main\java\VendorMode\Vendor_Mode_Create_New_Assessment.java
-E:\EdignSight Webdriver\src\main\java\com\Home\Student_Search.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Unsubmitted_Intervention_Plans.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Early_Warning_Identification.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Standards_Coverage_Report.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\Meeting_History_Report.java
-E:\EdignSight Webdriver\src\main\java\com\curriculum\Submitted_Lesson_Plans.java
-E:\EdignSight Webdriver\src\main\java\Functions\addAdministrator.java
-E:\EdignSight Webdriver\src\main\java\Functions\CreateANew_Assessment.java
-E:\EdignSight Webdriver\src\main\java\CheckList\Create_New_Assessment.java
-E:\EdignSight Webdriver\src\main\java\CheckList\QuestionBuilder.java
-E:\EdignSight Webdriver\src\main\java\Functions\Report.java
-E:\EdignSight Webdriver\src\main\java\Functions\CreateRuberic.java
-E:\EdignSight Webdriver\src\main\java\com\MTSS\InterventionEffectivenessBySkill.java
-E:\EdignSight Webdriver\src\main\java\com\analyzeByScore\StudentAssessmentAdministrationResultsbyTeacher.java
-E:\EdignSight Webdriver\src\main\java\com\questionBank\SearchQuestion.java
-E:\EdignSight Webdriver\src\main\java\com\generalMethods\Edinsight_common_login.java
->>>>>>> 843e4f0764a67c2d23102d183f8c51790065e09a
