@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.MTSS.Mass_Change_Person_Responsible"/>
+      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
