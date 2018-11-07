@@ -47,19 +47,16 @@ public class Standards_Coverage_Report extends BaseClassOne
 			click("//*[@id='lnkMapSelect']");
 			
 			//Select Subject as Career and Technical
-			select("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_ddlSubject']","index=4");
+			select("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_ddlSubject']","label=Music");
 			
 			Thread.sleep(3000);	
-			
-		    Actions action = new Actions(driver);
-		    action.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_cblstMaps']/tbody/tr[22]/td/label")));
 		    
 			//Tick curriculum "For Automation [Do not Edit and Delete]"
-			click("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_cblstMaps']/tbody/tr[22]/td");
+			click("//label[contains(text(),'For Automation [Do not Edit and Delete]')]//preceding::input[1]");
 			
 			//Assert the selected subject as Career and Technical 
 			Select sel=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_ddlSubject']")));
-			Assert.assertTrue(sel.getFirstSelectedOption().getText().contains("Career and Technical"));
+			Assert.assertTrue(sel.getFirstSelectedOption().getText().contains("Music"));
 			
 			//Assert the selected curriculum as "For Automation [Do not Edit and Delete]"			
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapStandardsCoverageDtl1_lblCheckedMaps']").contains("For Automation [Do not Edit and Delete]"),"failed to assert text"+"  For Automation [Do not Edit and Delete]");
@@ -70,7 +67,7 @@ public class Standards_Coverage_Report extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}		
+		}	
 				
 	}
 	
