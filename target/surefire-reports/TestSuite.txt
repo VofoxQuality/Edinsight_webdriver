@@ -1,18 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 28, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 160.799 sec <<< FAILURE! - in TestSuite
-TCED25125(com.curriculum.Print_Lessons)  Time elapsed: 7.742 sec  <<< FAILURE!
-java.lang.AssertionError: Failed to download document which has extension .PDF expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.curriculum.Print_Lessons.TCED25125(Print_Lessons.java:757)
-
-TCED25126(com.curriculum.Print_Lessons)  Time elapsed: 7.613 sec  <<< FAILURE!
-java.lang.AssertionError: Failed to download document which has extension .DOC expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.curriculum.Print_Lessons.TCED25126(Print_Lessons.java:794)
-
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.695 sec - in TestSuite
