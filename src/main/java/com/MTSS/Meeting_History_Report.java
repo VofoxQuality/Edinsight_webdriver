@@ -24,7 +24,7 @@ public class Meeting_History_Report extends BaseClassOne
 			  
 			  //hover over MTTS link			
 			   Actions actions = new Actions(driver);
-			   WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
+			   WebElement mouseHover =find("//a[contains(text(),'MTSS')]");
 			   actions.moveToElement(mouseHover).build().perform();
 			   
 			   //Click Meeting History Report 
@@ -253,12 +253,10 @@ public class Meeting_History_Report extends BaseClassOne
 			 
 			 //Click on Close button
 			 driver.switchTo().parentFrame();
-			 //click("//*[@id='RadWindowWrapper_ctl00_MainContent_StudentGroupWindowUniqueNameToAvoidErrorsIHope2']/div[1]/div/ul/li/span");
 			 click("//span[@title='Close']");
 			 
 			 //Assert the label "Meeting History Report "
 			 Assert.assertEquals(getText("//span[@class='subheading']"),"Meeting History Report");
-
 		} 
 		 catch (Exception e)
 		{
@@ -289,12 +287,10 @@ public class Meeting_History_Report extends BaseClassOne
 			 
 			 //Click on Close button
 			 driver.switchTo().parentFrame();
-			 //click("//*[@id='RadWindowWrapper_ctl00_MainContent_StudentGroupWindowUniqueNameToAvoidErrorsIHope2']/div[1]/div/ul/li/span");
 			 click("//span[@title='Close']");
 			 
 			 //Assert the label "Meeting History Report "
 			 Assert.assertEquals(getText("//span[@class='subheading']"),"Meeting History Report");
-
 		} 
 		 catch (Exception e)
 		{
@@ -328,14 +324,14 @@ public class Meeting_History_Report extends BaseClassOne
 		 try
 		 {
 			   //click on Logout button		 
-			    click("//*[@id='ctl00_A3']/img");
+			   click("//*[@id='ctl00_A3']/img");
 				
-			    //Superintent Login
-				login(Supertent_Login_id,Supertent_Login_Password);
+			   //Superintent Login
+			   login(Supertent_Login_id,Supertent_Login_Password);
 				  
 			  //hover over MTTS link			
 			   Actions actions = new Actions(driver);
-			   WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
+			   WebElement mouseHover = find("//a[contains(text(),'MTSS')]");
 			   actions.moveToElement(mouseHover).build().perform();
 			   
 			   //Click Meeting History Report 
@@ -344,9 +340,6 @@ public class Meeting_History_Report extends BaseClassOne
 			   //Click on Run Report by Date Range
 			   click("//*[@id='ctl00_MainContent_rdoDateRange']");
 			   Thread.sleep(2000);
-			   
-			   //Select Start Date :- 2/1/2018 
-			  // click("//*[@id='ctl00_MainContent_rdpStart_dateInput']");
 			   
 			   type("//*[@id='ctl00_MainContent_rdpStart_dateInput']","2/1/2018");
 			   Thread.sleep(2000);
@@ -442,7 +435,7 @@ public class Meeting_History_Report extends BaseClassOne
 		 {			 
 			  //hover over MTTS link			
 			   Actions actions = new Actions(driver);
-			   WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
+			   WebElement mouseHover =find("//a[contains(text(),'MTSS')]");
 			   actions.moveToElement(mouseHover).build().perform();
 			   
 			   //Click Meeting History Report 
