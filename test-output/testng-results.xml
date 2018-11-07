@@ -1,49 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="54458" started-at="2018-11-05T08:33:04Z" finished-at="2018-11-05T08:33:59Z">
+  <suite name="Suite" duration-ms="98799" started-at="2018-11-05T11:44:11Z" finished-at="2018-11-05T11:45:50Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="54458" started-at="2018-11-05T08:33:04Z" finished-at="2018-11-05T08:33:59Z">
-      <class name="com.MTSS.Mass_Change_Person_Responsible">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="setup1" is-config="true" duration-ms="11004" started-at="2018-11-05T08:33:04Z" finished-at="2018-11-05T08:33:15Z">
+    <test name="Test" duration-ms="98799" started-at="2018-11-05T11:44:11Z" finished-at="2018-11-05T11:45:50Z">
+      <class name="com.administerAssessment.Create_New_Administration">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.administerAssessment.Create_New_Administration@7cbd213e]" name="setup1" is-config="true" duration-ms="8346" started-at="2018-11-05T11:44:11Z" finished-at="2018-11-05T11:44:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED21101()[pri:1, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21101" duration-ms="10243" started-at="2018-11-05T08:33:15Z" finished-at="2018-11-05T08:33:26Z">
+        <test-method status="PASS" signature="TCED11001()[pri:1, instance:com.administerAssessment.Create_New_Administration@7cbd213e]" name="TCED11001" duration-ms="6315" started-at="2018-11-05T11:44:19Z" finished-at="2018-11-05T11:44:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21101 -->
-        <test-method status="PASS" signature="TCED21102()[pri:2, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21102" duration-ms="255" started-at="2018-11-05T08:33:26Z" finished-at="2018-11-05T08:33:26Z">
+        </test-method> <!-- TCED11001 -->
+        <test-method status="PASS" signature="TCED11002()[pri:2, instance:com.administerAssessment.Create_New_Administration@7cbd213e]" name="TCED11002" duration-ms="4756" started-at="2018-11-05T11:44:25Z" finished-at="2018-11-05T11:44:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21102 -->
-        <test-method status="PASS" signature="TCED21103()[pri:3, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21103" duration-ms="2349" started-at="2018-11-05T08:33:26Z" finished-at="2018-11-05T08:33:28Z">
+        </test-method> <!-- TCED11002 -->
+        <test-method status="PASS" signature="TCED11003()[pri:3, instance:com.administerAssessment.Create_New_Administration@7cbd213e]" name="TCED11003" duration-ms="1710" started-at="2018-11-05T11:44:30Z" finished-at="2018-11-05T11:44:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21103 -->
-        <test-method status="PASS" signature="TCED21104()[pri:4, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21104" duration-ms="201" started-at="2018-11-05T08:33:28Z" finished-at="2018-11-05T08:33:28Z">
+        </test-method> <!-- TCED11003 -->
+        <test-method status="PASS" signature="TCED11004()[pri:4, instance:com.administerAssessment.Create_New_Administration@7cbd213e]" name="TCED11004" duration-ms="612" started-at="2018-11-05T11:44:32Z" finished-at="2018-11-05T11:44:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21104 -->
-        <test-method status="PASS" signature="TCED21105()[pri:5, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21105" duration-ms="25118" started-at="2018-11-05T08:33:28Z" finished-at="2018-11-05T08:33:54Z">
+        </test-method> <!-- TCED11004 -->
+        <test-method status="PASS" signature="TCED11005()[pri:5, instance:com.administerAssessment.Create_New_Administration@7cbd213e]" name="TCED11005" duration-ms="1834" started-at="2018-11-05T11:44:33Z" finished-at="2018-11-05T11:44:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21105 -->
-        <test-method status="PASS" signature="TCED21106()[pri:6, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21106" duration-ms="2823" started-at="2018-11-05T08:33:54Z" finished-at="2018-11-05T08:33:56Z">
+        </test-method> <!-- TCED11005 -->
+        <test-method status="PASS" signature="TCED11006()[pri:6, instance:com.administerAssessment.Create_New_Administration@7cbd213e]" name="TCED11006" duration-ms="364" started-at="2018-11-05T11:44:34Z" finished-at="2018-11-05T11:44:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21106 -->
-        <test-method status="PASS" signature="TCED21107()[pri:7, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="TCED21107" duration-ms="2149" started-at="2018-11-05T08:33:56Z" finished-at="2018-11-05T08:33:59Z">
+        </test-method> <!-- TCED11006 -->
+        <test-method status="PASS" signature="TCED11007()[pri:7, instance:com.administerAssessment.Create_New_Administration@7cbd213e]" name="TCED11007" duration-ms="2869" started-at="2018-11-05T11:44:35Z" finished-at="2018-11-05T11:44:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21107 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Mass_Change_Person_Responsible@64f6106c]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-05T08:33:59Z" finished-at="2018-11-05T08:33:59Z">
+        </test-method> <!-- TCED11007 -->
+        <test-method status="PASS" signature="TCED11008()[pri:8, instance:com.administerAssessment.Create_New_Administration@7cbd213e]" name="TCED11008" duration-ms="68598" started-at="2018-11-05T11:44:38Z" finished-at="2018-11-05T11:45:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED11008 -->
+        <test-method status="PASS" signature="TCED11009()[pri:9, instance:com.administerAssessment.Create_New_Administration@7cbd213e]" name="TCED11009" duration-ms="3345" started-at="2018-11-05T11:45:46Z" finished-at="2018-11-05T11:45:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED11009 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.administerAssessment.Create_New_Administration@7cbd213e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-05T11:45:50Z" finished-at="2018-11-05T11:45:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.Mass_Change_Person_Responsible -->
+      </class> <!-- com.administerAssessment.Create_New_Administration -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

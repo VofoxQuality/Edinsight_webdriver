@@ -119,7 +119,6 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00']/thead/tr[1]/th[12]/a"), "Person(s) Responsible");		
 
-
 		} 
 		catch (Exception e) 
 		{
@@ -156,10 +155,7 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
 		}        
-
-	
 	}
-	
 	
 	@Test(priority=6)
 
@@ -177,8 +173,6 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 			click("//*[@id='ctl00_MainContent_btnUpdateSelectedPlans']");
 			// To assert the fields
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00__0']/td[12]"), "Teacher14");	
-	
-	
 		} 
 		catch (Exception e) 
 		{
@@ -199,7 +193,6 @@ public class Mass_Change_Person_Responsible extends BaseClassOne {
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00__1']/td[12]"), "Teacher14");	
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00__2']/td[12]"), "Teacher14");	
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00__3']/td[12]"), "Teacher14");	
-
 
 		} 
 		catch (Exception e) 
