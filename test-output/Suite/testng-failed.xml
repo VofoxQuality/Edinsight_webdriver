@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.MTSS.Manage_meetings">
+      <class name="com.curriculum.Analyze_curriculam">
         <methods>
-          <include name="TCED20220"/>
-          <include name="TCED20221"/>
           <include name="setup1"/>
-          <include name="TCED20222"/>
-          <include name="TCED20219"/>
+          <include name="TCED29703"/>
           <include name="tearDown"/>
-          <include name="TCED20212"/>
-          <include name="TCED20223"/>
-          <include name="TCED20213"/>
-          <include name="TCED20224"/>
-          <include name="TCED20214"/>
-          <include name="TCED20215"/>
+          <include name="TCED29711"/>
         </methods>
-      </class> <!-- com.MTSS.Manage_meetings -->
+      </class> <!-- com.curriculum.Analyze_curriculam -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -132,17 +132,18 @@ public class Analyze_curriculam extends BaseClassOne
 			Assert.assertTrue(sub.get(3).getText().contains("Career and Technical"),"failed to assert"+"  Career and Technical ");
 			Assert.assertTrue(sub.get(4).getText().contains("Career Education"),"failed to assert"+"  Career Education ");
 			Assert.assertTrue(sub.get(5).getText().contains("Computer Skills"),"failed to assert"+"  Computer Skills");
-			Assert.assertTrue(sub.get(6).getText().contains("Health"),"failed to assert"+"  Health");
-			Assert.assertTrue(sub.get(7).getText().contains("Language Arts"),"failed to assert"+"  Language Arts ");
-			Assert.assertTrue(sub.get(8).getText().contains("Library Media"),"failed to assert"+"  Library Media");
-			Assert.assertTrue(sub.get(9).getText().contains("Mathematics"),"failed to assert"+"  Mathematics ");
-			Assert.assertTrue(sub.get(10).getText().contains("Music"),"failed to assert"+"  Music ");
-			Assert.assertTrue(sub.get(11).getText().contains("Physical Education"),"failed to assert"+"  Physical Education ");
-			Assert.assertTrue(sub.get(12).getText().contains("Science"),"failed to assert"+"  Science ");
-			Assert.assertTrue(sub.get(13).getText().contains("Social Studies"),"failed to assert"+"  Social Studies ");
-			Assert.assertTrue(sub.get(14).getText().contains("Technology"),"failed to assert"+"  Technology ");
-			Assert.assertTrue(sub.get(15).getText().contains("Uncategorized"),"failed to assert"+"  Uncategorized ");
-			Assert.assertTrue(sub.get(16).getText().contains("World Languages"),"failed to assert"+"  World Languages ");
+			Assert.assertTrue(sub.get(6).getText().contains("Family & Consumer Science"),"failed to assert"+"  Family & Consumer Science");
+			Assert.assertTrue(sub.get(7).getText().contains("Health"),"failed to assert"+"  Health");
+			Assert.assertTrue(sub.get(8).getText().contains("Language Arts"),"failed to assert"+"  Language Arts ");
+			Assert.assertTrue(sub.get(9).getText().contains("Library Media"),"failed to assert"+"  Library Media");
+			Assert.assertTrue(sub.get(10).getText().contains("Mathematics"),"failed to assert"+"  Mathematics ");
+			Assert.assertTrue(sub.get(11).getText().contains("Music"),"failed to assert"+"  Music ");
+			Assert.assertTrue(sub.get(12).getText().contains("Physical Education"),"failed to assert"+"  Physical Education ");
+			Assert.assertTrue(sub.get(13).getText().contains("Science"),"failed to assert"+"  Science ");
+			Assert.assertTrue(sub.get(14).getText().contains("Social Studies"),"failed to assert"+"  Social Studies ");
+			Assert.assertTrue(sub.get(15).getText().contains("Technology"),"failed to assert"+"  Technology ");
+			Assert.assertTrue(sub.get(16).getText().contains("Uncategorized"),"failed to assert"+"  Uncategorized ");
+			Assert.assertTrue(sub.get(17).getText().contains("World Languages"),"failed to assert"+"  World Languages ");
 		}		
 		catch (Exception e)		
 		{
@@ -394,17 +395,18 @@ public class Analyze_curriculam extends BaseClassOne
 		Assert.assertTrue(sub.get(3).getText().contains("Career and Technical"),"failed to assert"+"  Career and Technical ");
 		Assert.assertTrue(sub.get(4).getText().contains("Career Education"),"failed to assert"+"  Career Education ");
 		Assert.assertTrue(sub.get(5).getText().contains("Computer Skills"),"failed to assert"+"  Computer Skills");
-		Assert.assertTrue(sub.get(6).getText().contains("Health"),"failed to assert"+"  Health");
-		Assert.assertTrue(sub.get(7).getText().contains("Language Arts"),"failed to assert"+"  Language Arts ");
-		Assert.assertTrue(sub.get(8).getText().contains("Library Media"),"failed to assert"+"  Library Media");
-		Assert.assertTrue(sub.get(9).getText().contains("Mathematics"),"failed to assert"+"  Mathematics ");
-		Assert.assertTrue(sub.get(10).getText().contains("Music"),"failed to assert"+"  Music ");
-		Assert.assertTrue(sub.get(11).getText().contains("Physical Education"),"failed to assert"+"  Physical Education ");
-		Assert.assertTrue(sub.get(12).getText().contains("Science"),"failed to assert"+"  Science ");
-		Assert.assertTrue(sub.get(13).getText().contains("Social Studies"),"failed to assert"+"  Social Studies ");
-		Assert.assertTrue(sub.get(14).getText().contains("Technology"),"failed to assert"+"  Technology ");
-		Assert.assertTrue(sub.get(15).getText().contains("Uncategorized"),"failed to assert"+"  Uncategorized ");
-		Assert.assertTrue(sub.get(16).getText().contains("World Languages"),"failed to assert"+"  World Languages ");	
+		Assert.assertTrue(sub.get(6).getText().contains("Family & Consumer Science"),"failed to assert"+"  Family & Consumer Science");
+		Assert.assertTrue(sub.get(7).getText().contains("Health"),"failed to assert"+"  Health");
+		Assert.assertTrue(sub.get(8).getText().contains("Language Arts"),"failed to assert"+"  Language Arts ");
+		Assert.assertTrue(sub.get(9).getText().contains("Library Media"),"failed to assert"+"  Library Media");
+		Assert.assertTrue(sub.get(10).getText().contains("Mathematics"),"failed to assert"+"  Mathematics ");
+		Assert.assertTrue(sub.get(11).getText().contains("Music"),"failed to assert"+"  Music ");
+		Assert.assertTrue(sub.get(12).getText().contains("Physical Education"),"failed to assert"+"  Physical Education ");
+		Assert.assertTrue(sub.get(13).getText().contains("Science"),"failed to assert"+"  Science ");
+		Assert.assertTrue(sub.get(14).getText().contains("Social Studies"),"failed to assert"+"  Social Studies ");
+		Assert.assertTrue(sub.get(15).getText().contains("Technology"),"failed to assert"+"  Technology ");
+		Assert.assertTrue(sub.get(16).getText().contains("Uncategorized"),"failed to assert"+"  Uncategorized ");
+		Assert.assertTrue(sub.get(17).getText().contains("World Languages"),"failed to assert"+"  World Languages ");	
 				
 		//Assert the dropdown values of School Type drop-down
 		Select sel1=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapTimelineDtl1_ddlSchoolType']")));		

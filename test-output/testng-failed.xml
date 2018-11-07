@@ -4,38 +4,24 @@
   <test name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
-      <class name="com.analyzeByScore.analyzebytagname">
+      <class name="com.curriculum.Analyze_curriculam">
         <methods>
           <include name="setup1"/>
-          <include name="TCED14305"/>
-          <include name="tearDown"/>
-          <include name="TCED14306"/>
-        </methods>
-      </class> <!-- com.analyzeByScore.analyzebytagname -->
+          <include name="TCED29703"/>
 =======
-      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
+      <class name="com.curriculum.Edit_Curriculum">
         <methods>
-          <include name="TCED14409"/>
-          <include name="TCED14408"/>
-          <include name="TCED14419"/>
-          <include name="TCED14416"/>
-          <include name="TCED14415"/>
-          <include name="TCED14426"/>
-          <include name="TCED14418"/>
-          <include name="TCED14417"/>
-          <include name="TCED14412"/>
-          <include name="TCED14423"/>
-          <include name="TCED14411"/>
-          <include name="TCED14422"/>
-          <include name="TCED14425"/>
-          <include name="TCED14413"/>
-          <include name="tearDown"/>
-          <include name="TCED14410"/>
-          <include name="TCED14420"/>
           <include name="setup1"/>
+          <include name="TCED29213"/>
+>>>>>>> bdc0d566e812a87ef8ad5c213d22f5917c9e764c
+          <include name="tearDown"/>
+          <include name="TCED29711"/>
         </methods>
-      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
->>>>>>> c11612d7a34c467e62cdf195071ed1f709f8a73d
+<<<<<<< HEAD
+      </class> <!-- com.curriculum.Analyze_curriculam -->
+=======
+      </class> <!-- com.curriculum.Edit_Curriculum -->
+>>>>>>> bdc0d566e812a87ef8ad5c213d22f5917c9e764c
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1008,8 +1008,7 @@ public void TCED29204()
 								 
 				//Click on Copy link
 					
-				click("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00__0']/td[3]/a");
-						
+				click("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00__0']/td[3]/a");						
 				
 				//Subject = Mathematics
 				Select sub_drop=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlSubjects']")));
@@ -1045,21 +1044,18 @@ public void TCED29204()
 				driver.switchTo().alert().accept();
 				
 				//Click on "Return to Current Map" link 
-				click("//*[@id='ctl00_MainContent_LinkButton2']");		
-						
+				click("//*[@id='ctl00_MainContent_LinkButton2']");				
 				
 				// Click on "Test Unit 01"
-				click("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[7]/td/a");
+				click("//a[@title='Test Unit 01']");
 				
 				//Assert the newly copied Topic as "Topic1"
-				Assert.assertEquals(getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[18]/td/a"),"Topic1");
+				Assert.assertEquals( getText("//a[contains(text(),'Add Topic...')]//preceding::a[1]"),"Topic1");
 				
-				//Click on Topic1 
+				//Click on Topic1 			
+				click("//a[contains(text(),'Add Topic...')]//preceding::a[1]");
 				
-				click("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[10]/td/a");
-				
-				// Click on Delete this topic button
-				
+				// Click on Delete this topic button				
 				click("//*[@id='ctl00_MainContent_CurriculumMapUnitTopic1_btnDeleteTopic']");
 				
 				//Assert the message "Are you sure you want to delete the selected Topic?"

@@ -13,8 +13,7 @@ public class Copy_Current_Map extends BaseClassOne
 {
 	
 	@Test
-	(priority=0)
-	
+	(priority=0)	
 	public void TCED29501()
 	{
 		  try 
@@ -73,8 +72,7 @@ public class Copy_Current_Map extends BaseClassOne
 		        {
 					Assert.fail(e.getMessage());
 					e.printStackTrace();
-				}
-		
+				}		
 		
 	}
 	
@@ -150,11 +148,9 @@ public class Copy_Current_Map extends BaseClassOne
 			
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
-		}
-				
+		}				
 		
-	}
-	
+	}	
 	@Test
 	(priority=2)
 	
@@ -179,23 +175,15 @@ public class Copy_Current_Map extends BaseClassOne
 			driver.switchTo().alert().accept();
 		} 
 		
-		catch (Exception e)
-		
+		catch (Exception e)		
 		{		
 			e.printStackTrace();
-			Assert.fail(e.getMessage());
-			
-		}
-		
+			Assert.fail(e.getMessage());			
+		}	
 	
-	}
-	
-	
-	
-	
+	}		
 	@Test
-	(priority=3)
-	
+	(priority=3)	
 	public void TCED29504()
 	{
 		
@@ -236,10 +224,8 @@ public class Copy_Current_Map extends BaseClassOne
 		{			
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
-		}
-		
-		
-		
+		}	
+			
 		
 	}
 	
@@ -290,8 +276,7 @@ public class Copy_Current_Map extends BaseClassOne
 			sub_map_un.selectByVisibleText("Test Unit 01");
 			
 			//Click on Copy to Current Map button
-			click("//*[@id='ctl00_MainContent_btnCopyFrom']");
-			
+			click("//*[@id='ctl00_MainContent_btnCopyFrom']");			
 			
 			//Assert the message "Topic Topic1 has been successfully added to the current map!"
 			String success=driver.switchTo().alert().getText();
@@ -301,18 +286,16 @@ public class Copy_Current_Map extends BaseClassOne
 			driver.switchTo().alert().accept();
 			
 			//Click on "Return to Current Map" link 
-			click("//*[@id='ctl00_MainContent_LinkButton2']");		
-					
+			click("//*[@id='ctl00_MainContent_LinkButton2']");			
 			
 			// Click on "Test Unit 01"
-			click("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[6]/td/a");
+			click("//a[@title='Test Unit 01']");
 			
 			//Assert the newly copied Topic as "Topic1"
-			Assert.assertEquals("Topic1", getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[10]/td/a"));
+			Assert.assertEquals( getText("//a[contains(text(),'Add Topic...')]//preceding::a[1]"),"Topic1");
 			
-			//Click on Topic1 
-			
-			click("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[10]/td/a");
+			//Click on Topic1 			
+			click("//a[contains(text(),'Add Topic...')]//preceding::a[1]");
 			
 			// Click on Delete this topic button
 			
