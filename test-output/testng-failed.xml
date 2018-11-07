@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.curriculum.Analyze_curriculam">
+      <class name="com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher">
         <methods>
+          <include name="TCED14157"/>
+          <include name="TCED14155"/>
+          <include name="TCED14158"/>
+          <include name="TCED14159"/>
           <include name="setup1"/>
-          <include name="TCED29703"/>
-=======
-      <class name="com.curriculum.Edit_Curriculum">
-        <methods>
-          <include name="setup1"/>
-          <include name="TCED29213"/>
->>>>>>> bdc0d566e812a87ef8ad5c213d22f5917c9e764c
-          <include name="tearDown"/>
-          <include name="TCED29711"/>
+          <include name="TCED14160"/>
+          <include name="TCED14152"/>
+          <include name="TCED14163"/>
+          <include name="TCED14161"/>
+          <include name="TCED14153"/>
+          <include name="TCED14164"/>
+          <include name="TCED14156"/>
+          <include name="TCED14151"/>
+          <include name="TCED14162"/>
+          <include name="TCED14154"/>
+          <include name="TCED14165"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.curriculum.Analyze_curriculam -->
-=======
-      </class> <!-- com.curriculum.Edit_Curriculum -->
->>>>>>> bdc0d566e812a87ef8ad5c213d22f5917c9e764c
+      </class> <!-- com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
