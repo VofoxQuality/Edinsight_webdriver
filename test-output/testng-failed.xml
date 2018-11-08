@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.curriculum.Analyze_curriculam">
+      <class name="com.curriculum.Standards_Coverage_Report">
         <methods>
           <include name="setup1"/>
-          <include name="TCED29703"/>
-=======
-      <class name="com.curriculum.Edit_Curriculum">
-        <methods>
-          <include name="setup1"/>
-          <include name="TCED29213"/>
->>>>>>> bdc0d566e812a87ef8ad5c213d22f5917c9e764c
+          <include name="TCED30204"/>
+          <include name="TCED30202"/>
+          <include name="TCED30201"/>
           <include name="tearDown"/>
-          <include name="TCED29711"/>
+          <include name="TCED30206"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.curriculum.Analyze_curriculam -->
-=======
-      </class> <!-- com.curriculum.Edit_Curriculum -->
->>>>>>> bdc0d566e812a87ef8ad5c213d22f5917c9e764c
+      </class> <!-- com.curriculum.Standards_Coverage_Report -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

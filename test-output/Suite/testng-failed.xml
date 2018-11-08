@@ -3,14 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.curriculum.Analyze_curriculam">
+      <class name="com.curriculum.Standards_Coverage_Report">
         <methods>
           <include name="setup1"/>
-          <include name="TCED29703"/>
+          <include name="TCED30204"/>
+          <include name="TCED30202"/>
+          <include name="TCED30201"/>
           <include name="tearDown"/>
-          <include name="TCED29711"/>
+          <include name="TCED30206"/>
         </methods>
-      </class> <!-- com.curriculum.Analyze_curriculam -->
+      </class> <!-- com.curriculum.Standards_Coverage_Report -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
