@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.util.regex.Pattern;
 import Library.BaseClassOne;
 
-public class analyzebytagname extends BaseClassOne
+public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 
 {
 	
@@ -29,7 +29,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}
 	}
-//	@Test(priority=2)
+	@Test(priority=2)
 	public void TCED14302() 
 	{
 		try
@@ -74,7 +74,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=3)
+	@Test(priority=3)
 	public void TCED14303() 
 	{
 		try
@@ -139,7 +139,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=4)
+	@Test(priority=4)
 	public void TCED14304() 
 	{
 		try
@@ -189,7 +189,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=5)
+	@Test(priority=5)
 	public void TCED14305() 
 	{
 		try
@@ -268,7 +268,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=6)
+	@Test(priority=6)
 	public void TCED14306() 
 	{
 		try
@@ -345,7 +345,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=7)
+	@Test(priority=7)
 	public void TCED14307() 
 	{
 		try
@@ -425,7 +425,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=8)
+	@Test(priority=8)
 	public void TCED14308() 
 	{
 		try
@@ -587,7 +587,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=10)
+	@Test(priority=10)
 	public void TCED14310() 
 	{
 		try
@@ -669,7 +669,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=11)
+	@Test(priority=11)
 	public void TCED14311() 
 	{
 		try
@@ -719,7 +719,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=12)
+	@Test(priority=12)
 	public void TCED14312() 
 	{
 		try
@@ -798,7 +798,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=13)
+	@Test(priority=13)
 	public void TCED14313() 
 	{
 		try
@@ -888,7 +888,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=14)
+	@Test(priority=14)
 	public void TCED14314() 
 	{
 		try
