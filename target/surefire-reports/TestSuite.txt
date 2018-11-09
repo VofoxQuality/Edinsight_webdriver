@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 48.868 sec <<< FAILURE! - in TestSuite
-TCED29404(com.curriculum.Enter_weeks_minutes)  Time elapsed: 18.643 sec  <<< FAILURE!
-java.lang.AssertionError: Unable to locate element: //*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10344, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: bfa1a98c-1b83-4452-ba08-6e97fe6648d9
-*** Element info: {Using=xpath, value=//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']}
-	at org.testng.Assert.fail(Assert.java:96)
-	at com.curriculum.Enter_weeks_minutes.TCED29404(Enter_weeks_minutes.java:375)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.701 sec - in TestSuite
