@@ -79,12 +79,12 @@ public class BaseClassOne	{
 		//Sebastian
 		//System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
 		//Akhil TS
-		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		//Manoj
 
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 		//Server
-		System.setProperty("webdriver.gecko.driver", "e:\\Jars\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "e:\\Jars\\geckodriver.exe");
 
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 
