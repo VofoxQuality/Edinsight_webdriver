@@ -9,7 +9,6 @@
       <class name="com.analyzeByScore.analyzebytagname">
 >>>>>>> 7614e8ce5926c26ec0fe782b72ef336386af5d6b
         <methods>
-          <include name="TCED14314"/>
           <include name="setup1"/>
 <<<<<<< HEAD
           <include name="TCED30204"/>
@@ -21,6 +20,7 @@
       </class> <!-- com.curriculum.Standards_Coverage_Report -->
 =======
           <include name="tearDown"/>
+          <include name="TCED14318"/>
         </methods>
       </class> <!-- com.analyzeByScore.analyzebytagname -->
 >>>>>>> 7614e8ce5926c26ec0fe782b72ef336386af5d6b

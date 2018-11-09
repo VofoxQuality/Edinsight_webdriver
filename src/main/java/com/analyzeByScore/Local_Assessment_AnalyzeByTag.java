@@ -7,10 +7,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
+import java.util.regex.Pattern;
 import Library.BaseClassOne;
 
-public class analyzebytagname extends BaseClassOne
+public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 
 {
 	
@@ -29,7 +29,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}
 	}
-//	@Test(priority=2)
+	@Test(priority=2)
 	public void TCED14302() 
 	{
 		try
@@ -74,7 +74,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=3)
+	@Test(priority=3)
 	public void TCED14303() 
 	{
 		try
@@ -139,7 +139,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=4)
+	@Test(priority=4)
 	public void TCED14304() 
 	{
 		try
@@ -189,7 +189,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=5)
+	@Test(priority=5)
 	public void TCED14305() 
 	{
 		try
@@ -268,7 +268,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=6)
+	@Test(priority=6)
 	public void TCED14306() 
 	{
 		try
@@ -345,7 +345,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=7)
+	@Test(priority=7)
 	public void TCED14307() 
 	{
 		try
@@ -376,26 +376,20 @@ public class analyzebytagname extends BaseClassOne
 			select("//*[@id='ctl00_MainContent_ddlAdministrations']", "label=For Automation- do not edit (Admin)(2017-2018)");	
 			
 			//To click on the run report button
-			click("//*[@id='ctl00_MainContent_btnRunReport']");			
-		
-			//click chart summary 
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("scroll(0,500)");
+			click("//*[@id='ctl00_MainContent_btnRunReport']");
 			
-			Thread.sleep(2000);
-			click("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]");
-			
-//			int x = 288;
-//			int y = 661;
-//			Actions action = new Actions(driver);
-//			//clicking on the chart based on x coordinate and y coordinate 
-//			action.moveByOffset( x, y).click().build().perform();			
+			//click on chart summary
+			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
+				
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]");
+			Thread.sleep(3000);
 			
 			//Assert the label Assessment Students List
-			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
+			Assert.assertEquals(getText("//span[contains(text(),'Assessment Students List')]"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -431,7 +425,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=8)
+	@Test(priority=8)
 	public void TCED14308() 
 	{
 		try
@@ -465,14 +459,19 @@ public class analyzebytagname extends BaseClassOne
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
 			
-			//Drill down from  Total test completed and scored
-			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[4]/a");
+			Thread.sleep(2000);
+			
+			//click chart detailed
+			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Detailed'])[1]/following::area[14]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);				
+
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Detailed'])[1]/following::area[14]");	
 			
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -508,13 +507,15 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=9)
+	@Test(priority=9)
 	public void TCED14309() 
 	{
 		try
 		{			
 			//Click on main menu local Assignment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
+			 Actions actions = new Actions(driver);
+			 WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			 actions.moveToElement(mouseHover).build().perform();	
 			
 			//To click on the analyze by Score
 			click("//a[contains(text(),'Analyze Scores')]");
@@ -534,20 +535,23 @@ public class analyzebytagname extends BaseClassOne
 			//To select the Assessment 
 			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
 			
+			Thread.sleep(2000);
+			
 			//To select the Administrations
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
+			select("//*[@id='ctl00_MainContent_ddlAdministrations']", "label=For Automation- do not edit (Admin)(2017-2018)");	
 			
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
+
+			((JavascriptExecutor) driver).executeScript("scroll(0,900)");
+			Thread.sleep(3000);
 			
-			//Drill down from  Total test completed and scored
-			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[4]/a");
-			
+			click("//*[@id='ctl00_MainContent_rgTagAnalysis_ctl00__0']/td[5]/a");
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -583,13 +587,15 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=10)
+	@Test(priority=10)
 	public void TCED14310() 
 	{
 		try
 		{			
 			//Click on main menu local Assignment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
+			 Actions actions = new Actions(driver);
+			 WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			 actions.moveToElement(mouseHover).build().perform();		
 			
 			//To click on the analyze by Score
 			click("//a[contains(text(),'Analyze Scores')]");
@@ -663,7 +669,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=11)
+	@Test(priority=11)
 	public void TCED14311() 
 	{
 		try
@@ -671,13 +677,13 @@ public class analyzebytagname extends BaseClassOne
 			//Application should be in the Analyze by Tag Report page
 			
 			//Drill down from Total Scheduled Students
-			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[2]/a");
+			click("//td[contains(text(),'Total Scheduled Students:')]//following::a[1]");
 			
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
 			
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -713,7 +719,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=12)
+	@Test(priority=12)
 	public void TCED14312() 
 	{
 		try
@@ -750,13 +756,13 @@ public class analyzebytagname extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
 			
 			//Drill down from  Total test completed and scored
-			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[4]/a");
+			click("//td[contains(text(),'Total test completed and scored:')]//following::a[1]");
 			
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
 			
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -792,7 +798,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=13)
+	@Test(priority=13)
 	public void TCED14313() 
 	{
 		try
@@ -840,13 +846,13 @@ public class analyzebytagname extends BaseClassOne
 			click("input[id$=btnRunReport]");		
 						
 			//Drill down from  Total tests started but not completed
-			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[6]/a");
+			click("//td[contains(text(),'Total tests started but not completed:')]//following::a[1]");
 			
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
 			
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -930,25 +936,17 @@ public class analyzebytagname extends BaseClassOne
 			click("input[id$=btnRunReport]");	
 			
 			// click chart summary
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("scroll(0,200)");
-			
-			Thread.sleep(3000);
-			
-			int x = 210;
-			int y = 726;
-			Actions action = new Actions(driver);
-			
-			//clicking on the chart based on x coordinate and y coordinate 		
-			 action.moveByOffset(x,y).click().build().perform();	
-			//action.moveToElement(find("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"), x, y).click().build().perform();
+			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
+				
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]");
 			
 			
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -984,7 +982,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=15)
+	@Test(priority=15)
 	public void TCED14315() 
 	{
 		try
@@ -1030,24 +1028,22 @@ public class analyzebytagname extends BaseClassOne
 			
 			//click on Run Report button
 			click("input[id$=btnRunReport]");	
-			
-			// click chart summary
+
 			JavascriptExecutor js=(JavascriptExecutor)driver;
 			js.executeScript("scroll(0,800)");
-			
 			Thread.sleep(2000);
 			
-			//click chart detailed based on x coordinate and y coordinate 			
-			int x = 84;
-			int y = 523;
-			Actions action = new Actions(driver);	
-			action.moveByOffset( x, y).click().build().perform();				
+			//click chart detailed
+			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Detailed'])[1]/following::area[14]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);				
+
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Detailed'])[1]/following::area[14]");			
 			
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -1083,7 +1079,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=16)
+	@Test(priority=16)
 	public void TCED14316() 
 	{
 		try
@@ -1131,16 +1127,16 @@ public class analyzebytagname extends BaseClassOne
 			click("input[id$=btnRunReport]");	
 
 			//click % points earned for any of the questions
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("scroll(0,800)");	
-
-			click("//a[contains(text(),'% Points Earned')]//following::a[1]");
+			((JavascriptExecutor) driver).executeScript("scroll(0,900)");
+			Thread.sleep(3000);
+			
+			click("//*[@id='ctl00_MainContent_rgTagAnalysis_ctl00__0']/td[5]/a");
 			
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -1176,7 +1172,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=17)
+	@Test(priority=17)
 	public void TCED14317() 
 	{
 		try
@@ -1256,17 +1252,20 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=18)
+	@Test(priority=18)
 	public void TCED14318() 
 	{
 		try
-		{			
+		{	
+			
+			//Drill down from Total Scheduled Students
+			click("//td[contains(text(),'Total Scheduled Students:')]//following::a[1]");
 						
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
 			
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -1301,7 +1300,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}	
 	}
-//	@Test(priority=19)
+	@Test(priority=19)
 	public void TCED14319() 
 	{
 		try
@@ -1388,7 +1387,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}	
 	}
-//	@Test(priority=20)
+	@Test(priority=20)
 	public void TCED14320() 
 	{
 		try
@@ -1475,7 +1474,7 @@ public class analyzebytagname extends BaseClassOne
 			e.printStackTrace();
 		}	
 	}
-//	@Test(priority=21)
+	@Test(priority=21)
 	public void TCED14321() 
 	{
 		try
@@ -1521,21 +1520,16 @@ public class analyzebytagname extends BaseClassOne
 			click("input[id$=btnRunReport]");
 			
 			// click chart summary
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("scroll(0,800)");
-						
-			int x = 84;
-			int y = 523;
-			Actions action = new Actions(driver);
-			//clicking on the chart based on x coordinate and y coordinate 
-					
-			action.moveByOffset( x, y).click().build().perform();							
+			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
+				
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]");							
 						
 			//Assert the label Assessment Students List
 		    Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 						
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+		    Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 						
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -1571,7 +1565,7 @@ public class analyzebytagname extends BaseClassOne
 		 e.printStackTrace();
 		}		
 	}
-//	@Test(priority=22)
+	@Test(priority=22)
 	public void TCED14322() 
 	{
 		try
@@ -1617,21 +1611,16 @@ public class analyzebytagname extends BaseClassOne
 			click("input[id$=btnRunReport]");
 			
 			//click chart detailed
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("scroll(0,800)");
-						
-			int x = 84;
-			int y = 523;
-			Actions action = new Actions(driver);
-			//clicking on the chart based on x coordinate and y coordinate 
-					
-			action.moveByOffset( x, y).click().build().perform();							
+			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Detailed'])[1]/following::area[14]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);				
+
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Detailed'])[1]/following::area[14]");							
 						
 			//Assert the label Assessment Students List
 		    Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 						
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+		    Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 						
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -1667,7 +1656,7 @@ public class analyzebytagname extends BaseClassOne
 		 e.printStackTrace();
 		}		
 	}
-//	@Test(priority=23)
+	@Test(priority=23)
 	public void TCED14323() 
 	{
 		try
@@ -1713,16 +1702,16 @@ public class analyzebytagname extends BaseClassOne
 			click("input[id$=btnRunReport]");
 			
 			//click % points earned for any of the questions
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("scroll(0,800)");	
-
-			click("//a[contains(text(),'% Points Earned')]//following::a[1]");							
+			((JavascriptExecutor) driver).executeScript("scroll(0,900)");
+			Thread.sleep(3000);
+			
+			click("//*[@id='ctl00_MainContent_rgTagAnalysis_ctl00__0']/td[5]/a");							
 						
 			//Assert the label Assessment Students List
 		    Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 						
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+		    Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 						
 			//Assert the label student Id   
 			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
@@ -1760,26 +1749,14 @@ public class analyzebytagname extends BaseClassOne
 	}
 	
 	
-//	@Test(priority=24)
+	@Test(priority=24)
 	public void TCED14324() 
 	{
 		try
 		{
+			driver.navigate().back();
 
-			//To fill the the Test ID Search 
-			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "257");
-			
-			//To click on the search button
-			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
-			
-			//To select the Assessment 
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
-			
-			//To select the Administrations
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation(2017-2018)");
-			
-			//To click on the run report button
-			click("//*[@id='ctl00_MainContent_btnRunReport']");
+			Thread.sleep(2000);
 			
 			//To delete all the files in the directory
 			FileDelete();
@@ -1799,7 +1776,7 @@ public class analyzebytagname extends BaseClassOne
 	}
   }
 	
-//	@Test(priority=2)
+	@Test(priority=25)
 	public void TCED14325()
 	{
 		try
@@ -1817,7 +1794,7 @@ public class analyzebytagname extends BaseClassOne
 	Assert.fail(e.getMessage());
 	}
     }
- //	@Test(priority=3)
+ 	@Test(priority=26)
 	public void TCED14326()
 	{
 		try
@@ -1858,7 +1835,7 @@ public class analyzebytagname extends BaseClassOne
 	Assert.fail(e.getMessage());
 	}
     }
-//	@Test(priority=4)
+	@Test(priority=27)
 	public void TCED14327()
 	{
 		try
