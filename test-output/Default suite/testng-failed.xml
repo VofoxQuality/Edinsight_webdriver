@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.analyzeByScore.analyzebytagname">
+      <class name="com.Home.Student_Building_Grade_Lists">
         <methods>
+          <include name="TCED33205"/>
           <include name="setup1"/>
           <include name="tearDown"/>
-          <include name="TCED14318"/>
         </methods>
-      </class> <!-- com.analyzeByScore.analyzebytagname -->
+      </class> <!-- com.Home.Student_Building_Grade_Lists -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
