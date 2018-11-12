@@ -1,4 +1,5 @@
 com\Home\Student_reports.class
+com\analyzeByScore\Local_Assessment_AnalyzeByTag.class
 com\MTSS\Test_Suite_MTSS_Tier_Students_plan_interventions.class
 com\curriculum\Browse_By_Standard.class
 com\curriculum\Aligned_Standards.class
@@ -73,7 +74,6 @@ Functions\CreateANew_Assessment.class
 CheckList\Create_New_Assessment.class
 com\analyzeByScore\AdministrationComparisonbyStudent.class
 Functions\addExhibit.class
-com\analyzeByScore\analyzebytagname.class
 Functions\CreateRuberic.class
 com\questionBank\SearchQuestion.class
 com\MTSS\InterventionEffectivenessBySkill.class

@@ -1,35 +1,49 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Default suite</th></tr><tr><td><a href="#t0">Default test</a></td><td class="num">14</td><td class="num">0</td><td class="num attn">1</td><td class="num">207,553</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.analyzeByScore.analyzebytagname</td><td><a href="#m0">TCED14318</a></td><td rowspan="1">1541677565581</td><td rowspan="1">954</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="14">com.analyzeByScore.analyzebytagname</td><td><a href="#m1">TCED14301</a></td><td rowspan="1">1541677509352</td><td rowspan="1">6978</td></tr><tr class="passedeven"><td><a href="#m2">TCED14309</a></td><td rowspan="1">1541677516333</td><td rowspan="1">12120</td></tr><tr class="passedeven"><td><a href="#m3">TCED14315</a></td><td rowspan="1">1541677528455</td><td rowspan="1">15100</td></tr><tr class="passedeven"><td><a href="#m4">TCED14316</a></td><td rowspan="1">1541677543556</td><td rowspan="1">14114</td></tr><tr class="passedeven"><td><a href="#m5">TCED14317</a></td><td rowspan="1">1541677557671</td><td rowspan="1">7909</td></tr><tr class="passedeven"><td><a href="#m6">TCED14319</a></td><td rowspan="1">1541677566580</td><td rowspan="1">8730</td></tr><tr class="passedeven"><td><a href="#m7">TCED14320</a></td><td rowspan="1">1541677575311</td><td rowspan="1">9223</td></tr><tr class="passedeven"><td><a href="#m8">TCED14321</a></td><td rowspan="1">1541677584535</td><td rowspan="1">8721</td></tr><tr class="passedeven"><td><a href="#m9">TCED14322</a></td><td rowspan="1">1541677593257</td><td rowspan="1">8521</td></tr><tr class="passedeven"><td><a href="#m10">TCED14323</a></td><td rowspan="1">1541677601779</td><td rowspan="1">12287</td></tr><tr class="passedeven"><td><a href="#m11">TCED14324</a></td><td rowspan="1">1541677614067</td><td rowspan="1">14392</td></tr><tr class="passedeven"><td><a href="#m12">TCED14325</a></td><td rowspan="1">1541677628465</td><td rowspan="1">8797</td></tr><tr class="passedeven"><td><a href="#m13">TCED14326</a></td><td rowspan="1">1541677637263</td><td rowspan="1">17859</td></tr><tr class="passedeven"><td><a href="#m14">TCED14327</a></td><td rowspan="1">1541677655124</td><td rowspan="1">54817</td></tr></tbody></table><h2>Default test</h2><h3 id="m0">com.analyzeByScore.analyzebytagname#TCED14318</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Analyze by Tag] but found [Analyze By Tag]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.analyzeByScore.analyzebytagname.TCED14318(analyzebytagname.java:1268)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.analyzeByScore.analyzebytagname#TCED14301</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.analyzeByScore.analyzebytagname#TCED14309</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.analyzeByScore.analyzebytagname#TCED14315</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.analyzeByScore.analyzebytagname#TCED14316</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.analyzeByScore.analyzebytagname#TCED14317</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.analyzeByScore.analyzebytagname#TCED14319</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.analyzeByScore.analyzebytagname#TCED14320</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">com.analyzeByScore.analyzebytagname#TCED14321</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">com.analyzeByScore.analyzebytagname#TCED14322</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">com.analyzeByScore.analyzebytagname#TCED14323</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m11">com.analyzeByScore.analyzebytagname#TCED14324</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m12">com.analyzeByScore.analyzebytagname#TCED14325</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m13">com.analyzeByScore.analyzebytagname#TCED14326</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m14">com.analyzeByScore.analyzebytagname#TCED14327</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">4</td><td class="num">65,104</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.localassessment.Copy_assessment_vendor</td><td><a href="#m0">TCED15003</a></td><td rowspan="1">1541760311228</td><td rowspan="1">30043</td></tr><tr class="failedeven"><td><a href="#m1">TCED15004</a></td><td rowspan="1">1541760341278</td><td rowspan="1">15024</td></tr><tr class="failedeven"><td><a href="#m2">TCED15005</a></td><td rowspan="1">1541760356307</td><td rowspan="1">5024</td></tr><tr class="failedeven"><td><a href="#m3">TCED15006</a></td><td rowspan="1">1541760361332</td><td rowspan="1">984</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.localassessment.Copy_assessment_vendor</td><td><a href="#m4">TCED15001</a></td><td rowspan="1">1541760302654</td><td rowspan="1">5735</td></tr><tr class="passedeven"><td><a href="#m5">TCED15002</a></td><td rowspan="1">1541760308391</td><td rowspan="1">2835</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.localassessment.Copy_assessment_vendor#TCED15003</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: No frame element found by name or id rwCopyAssessment
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;QA-SCHEDULER&apos;, ip: &apos;192.168.10.111&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: driver.version: unknown
+	at com.localassessment.Copy_assessment_vendor.TCED15003(Copy_assessment_vendor.java:68)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.localassessment.Copy_assessment_vendor#TCED15004</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Could not find any element matching &apos;//*[@id=&apos;aspnetForm&apos;]/div[4]/div/table/tbody/tr[2]/td/table/tbody/tr[1]/td[1]&apos;
+	at Library.BaseClassOne.find(BaseClassOne.java:225)
+	at Library.BaseClassOne.getText(BaseClassOne.java:395)
+	at Library.BaseClassOne.getText(BaseClassOne.java:345)
+	at com.localassessment.Copy_assessment_vendor.TCED15004(Copy_assessment_vendor.java:80)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.localassessment.Copy_assessment_vendor#TCED15005</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Browsing context has been discarded
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;QA-SCHEDULER&apos;, ip: &apos;192.168.10.111&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20256, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 7687e473-619d-46e1-8950-9550b2e5c6fb
+*** Element info: {Using=xpath, value=//*[@id=&apos;aspnetForm&apos;]/div[4]/div/table/tbody/tr[2]/td/table/tbody/tr[7]/td[3]/div[2]/span}
+	at com.localassessment.Copy_assessment_vendor.TCED15005(Copy_assessment_vendor.java:168)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.localassessment.Copy_assessment_vendor#TCED15006</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failed to decode response from marionette
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;QA-SCHEDULER&apos;, ip: &apos;192.168.10.111&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 20256, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 7687e473-619d-46e1-8950-9550b2e5c6fb
+*** Element info: {Using=css selector, value=input#ctl00_ContentPlaceHolder1_txtQuestionStartingId}
+	at com.localassessment.Copy_assessment_vendor.TCED15006(Copy_assessment_vendor.java:205)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.localassessment.Copy_assessment_vendor#TCED15001</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.localassessment.Copy_assessment_vendor#TCED15002</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
