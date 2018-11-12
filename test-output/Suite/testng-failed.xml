@@ -3,14 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.curriculum.Analyze_curriculam">
+      <class name="com.localassessment.Copy_assessment_vendor">
         <methods>
           <include name="setup1"/>
-          <include name="TCED29703"/>
+          <include name="TCED15003"/>
+          <include name="TCED15005"/>
           <include name="tearDown"/>
-          <include name="TCED29711"/>
+          <include name="TCED15004"/>
+          <include name="TCED15006"/>
         </methods>
-      </class> <!-- com.curriculum.Analyze_curriculam -->
+      </class> <!-- com.localassessment.Copy_assessment_vendor -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

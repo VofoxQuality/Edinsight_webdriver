@@ -1,49 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="46305" started-at="2018-11-06T12:57:22Z" finished-at="2018-11-06T12:58:08Z">
+  <suite name="Suite" duration-ms="32718" started-at="2018-11-09T09:27:05Z" finished-at="2018-11-09T09:27:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="46305" started-at="2018-11-06T12:57:22Z" finished-at="2018-11-06T12:58:08Z">
-      <class name="com.MTSS.Mass_Change_Person_Responsible">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="setup1" is-config="true" duration-ms="9085" started-at="2018-11-06T12:57:22Z" finished-at="2018-11-06T12:57:31Z">
+    <test name="Test" duration-ms="32718" started-at="2018-11-09T09:27:05Z" finished-at="2018-11-09T09:27:37Z">
+      <class name="com.MTSS.Configure_Settings">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="setup1" is-config="true" duration-ms="5974" started-at="2018-11-09T09:27:05Z" finished-at="2018-11-09T09:27:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED21101()[pri:1, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21101" duration-ms="8305" started-at="2018-11-06T12:57:31Z" finished-at="2018-11-06T12:57:39Z">
+        <test-method status="PASS" signature="TCED23101()[pri:0, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23101" duration-ms="6510" started-at="2018-11-09T09:27:11Z" finished-at="2018-11-09T09:27:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21101 -->
-        <test-method status="PASS" signature="TCED21102()[pri:2, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21102" duration-ms="138" started-at="2018-11-06T12:57:39Z" finished-at="2018-11-06T12:57:39Z">
+        </test-method> <!-- TCED23101 -->
+        <test-method status="PASS" signature="TCED23102()[pri:1, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23102" duration-ms="624" started-at="2018-11-09T09:27:17Z" finished-at="2018-11-09T09:27:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21102 -->
-        <test-method status="PASS" signature="TCED21103()[pri:3, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21103" duration-ms="1785" started-at="2018-11-06T12:57:39Z" finished-at="2018-11-06T12:57:41Z">
+        </test-method> <!-- TCED23102 -->
+        <test-method status="PASS" signature="TCED23103()[pri:2, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23103" duration-ms="1685" started-at="2018-11-09T09:27:18Z" finished-at="2018-11-09T09:27:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21103 -->
-        <test-method status="PASS" signature="TCED21104()[pri:4, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21104" duration-ms="95" started-at="2018-11-06T12:57:41Z" finished-at="2018-11-06T12:57:41Z">
+        </test-method> <!-- TCED23103 -->
+        <test-method status="PASS" signature="TCED23104()[pri:3, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23104" duration-ms="1356" started-at="2018-11-09T09:27:19Z" finished-at="2018-11-09T09:27:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21104 -->
-        <test-method status="PASS" signature="TCED21105()[pri:5, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21105" duration-ms="23837" started-at="2018-11-06T12:57:41Z" finished-at="2018-11-06T12:58:05Z">
+        </test-method> <!-- TCED23104 -->
+        <test-method status="PASS" signature="TCED23105()[pri:4, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23105" duration-ms="2092" started-at="2018-11-09T09:27:21Z" finished-at="2018-11-09T09:27:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21105 -->
-        <test-method status="PASS" signature="TCED21106()[pri:6, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21106" duration-ms="1781" started-at="2018-11-06T12:58:05Z" finished-at="2018-11-06T12:58:07Z">
+        </test-method> <!-- TCED23105 -->
+        <test-method status="PASS" signature="TCED23106()[pri:5, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23106" duration-ms="1683" started-at="2018-11-09T09:27:23Z" finished-at="2018-11-09T09:27:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21106 -->
-        <test-method status="PASS" signature="TCED21107()[pri:7, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21107" duration-ms="1264" started-at="2018-11-06T12:58:07Z" finished-at="2018-11-06T12:58:08Z">
+        </test-method> <!-- TCED23106 -->
+        <test-method status="PASS" signature="TCED23107()[pri:6, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23107" duration-ms="1452" started-at="2018-11-09T09:27:25Z" finished-at="2018-11-09T09:27:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21107 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-06T12:58:08Z" finished-at="2018-11-06T12:58:08Z">
+        </test-method> <!-- TCED23107 -->
+        <test-method status="PASS" signature="TCED23108()[pri:7, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23108" duration-ms="1486" started-at="2018-11-09T09:27:26Z" finished-at="2018-11-09T09:27:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED23108 -->
+        <test-method status="PASS" signature="TCED23109()[pri:8, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23109" duration-ms="1330" started-at="2018-11-09T09:27:27Z" finished-at="2018-11-09T09:27:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED23109 -->
+        <test-method status="PASS" signature="TCED23110()[pri:9, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23110" duration-ms="1445" started-at="2018-11-09T09:27:29Z" finished-at="2018-11-09T09:27:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED23110 -->
+        <test-method status="PASS" signature="TCED23111()[pri:10, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23111" duration-ms="1293" started-at="2018-11-09T09:27:30Z" finished-at="2018-11-09T09:27:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED23111 -->
+        <test-method status="PASS" signature="TCED23112()[pri:10, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23112" duration-ms="1254" started-at="2018-11-09T09:27:32Z" finished-at="2018-11-09T09:27:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED23112 -->
+        <test-method status="PASS" signature="TCED23113()[pri:12, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23113" duration-ms="1230" started-at="2018-11-09T09:27:33Z" finished-at="2018-11-09T09:27:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED23113 -->
+        <test-method status="PASS" signature="TCED23114()[pri:13, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23114" duration-ms="1766" started-at="2018-11-09T09:27:34Z" finished-at="2018-11-09T09:27:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED23114 -->
+        <test-method status="PASS" signature="TCED23115()[pri:14, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="TCED23115" duration-ms="1514" started-at="2018-11-09T09:27:36Z" finished-at="2018-11-09T09:27:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED23115 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Configure_Settings@5f9d02cb]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-09T09:27:37Z" finished-at="2018-11-09T09:27:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.Mass_Change_Person_Responsible -->
+      </class> <!-- com.MTSS.Configure_Settings -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
