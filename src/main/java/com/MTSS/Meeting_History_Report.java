@@ -40,7 +40,7 @@ public class Meeting_History_Report extends BaseClassOne
 		  }	
 	   
 	 }
-	 @Test(priority=2)
+//	 @Test(priority=2)
 	 public void TCED22502()
 	 {
 		 try
@@ -83,7 +83,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-	 @Test(priority=3)
+//	 @Test(priority=3)
 	 public void TCED22503()
 	 {
 		 try
@@ -102,7 +102,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-	 @Test(priority=4)
+//	 @Test(priority=4)
 	 public void TCED22504()
 	 {
 		 try
@@ -124,7 +124,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		 }		 
 	 }
-	 @Test(priority=5)
+//	 @Test(priority=5)
 	 public void TCED22505()
 	 {
 		 //Application should be in the Meeting History Report  page
@@ -184,7 +184,7 @@ public class Meeting_History_Report extends BaseClassOne
 		 Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgHirstoryReport_ctl00']/thead/tr[1]/th[22]/a"),"Submitted");
 		 
 	 }
-	 @Test(priority=6)
+//	 @Test(priority=6)
 	 public void TCED22506()
 	 {
 		 try
@@ -207,7 +207,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-	 @Test(priority=7)
+//	 @Test(priority=7)
 	 public void TCED22507()
 	 {
 		 try
@@ -230,7 +230,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-	 @Test(priority=8)
+//	 @Test(priority=8)
 	 public void TCED22508()
 	 {
 		 try
@@ -264,7 +264,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-	 @Test(priority=9)
+//	 @Test(priority=9)
 	 public void TCED22509()
 	 {
 		 try
@@ -298,7 +298,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-	 @Test(priority=10)
+//	 @Test(priority=10)
 	 public void TCED22510()
 	 {
 		 try
@@ -323,11 +323,6 @@ public class Meeting_History_Report extends BaseClassOne
 	 {
 		 try
 		 {
-			   //click on Logout button		 
-			   click("//*[@id='ctl00_A3']/img");
-				
-			   //Superintent Login
-			   login(Supertent_Login_id,Supertent_Login_Password);
 				  
 			  //hover over MTTS link			
 			   Actions actions = new Actions(driver);
@@ -339,23 +334,12 @@ public class Meeting_History_Report extends BaseClassOne
 			   
 			   //Click on Run Report by Date Range
 			   click("//*[@id='ctl00_MainContent_rdoDateRange']");
-			   Thread.sleep(2000);
 			   
-			   type("//*[@id='ctl00_MainContent_rdpStart_dateInput']","2/1/2018");
-			   Thread.sleep(2000);
-			   find("//*[@id='ctl00_MainContent_rdpStart_dateInput']").sendKeys(Keys.TAB);
+			   //Select End Date :-  2/1/2018
+			   find("//*[@id='ctl00_MainContent_rdpStart_dateInput']").sendKeys("2/1/2018");
 			   
 			   //Select End Date :-  8/3/2018
-			   click("//*[@id='ctl00_MainContent_rdgEnd_dateInput']");
-			   type("//*[@id='ctl00_MainContent_rdgEnd_dateInput']","8/3/2018");   
-			   			   
-			   Thread.sleep(4000);
-			   click("//*[@id='ctl00_MainContent_rdoDateRange']");	
-			   
-			   click("//td[contains(text(),'Start Date:')]");
-			   
-			   JavascriptExecutor jse = (JavascriptExecutor) driver;
-			   jse.executeScript("document.getElementById('ctl00_MainContent_btnRunReport').focus();");
+			   find("//*[@id='ctl00_MainContent_rdgEnd_dateInput']").sendKeys("8/3/2018");
 			   
 			   //click on Run Report
 			   click("//*[@id='ctl00_MainContent_btnRunReport']");
@@ -444,7 +428,7 @@ public class Meeting_History_Report extends BaseClassOne
                //Click on Run Report by Student Group option
 			   click("//*[@id='ctl00_MainContent_rdoStudentGroup']");
 			   
-			   //Select Group :-  00 123 MR
+			   //Select Group :88
 			   select("//*[@id='ctl00_MainContent_ddlStudentGroup']", "label=88");
 			   
 			   //click on Run Report
@@ -453,7 +437,7 @@ public class Meeting_History_Report extends BaseClassOne
 			  //Assert the label "Meeting History Report "
 			  Assert.assertEquals(getText("//span[@class='subheading']"),"Meeting History Report");
 			  
-			  //Assert the Group as  00 123 MR
+			  //Assert the Group as  88
 			  Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblProviderLevelDisplay']"),"88");
 			  
 		} 
