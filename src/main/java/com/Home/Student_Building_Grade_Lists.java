@@ -292,7 +292,7 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-//	@Test(priority=9)
+	@Test(priority=9)
 	public void TCED33209()
 	{
 		try

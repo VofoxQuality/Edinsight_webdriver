@@ -64,7 +64,7 @@ public class Attendance extends BaseClassOne
 		
 	}
 	
-	@Test(priority=1)
+	@Test(dependsOnMethods={"TCED34301"})
 	public void TCED34302()	
 	{ 
 		try
