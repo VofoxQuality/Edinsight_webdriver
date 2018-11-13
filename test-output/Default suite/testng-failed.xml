@@ -1,40 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.curriculum.Print_Lessons">
+      <class name="com.MTSS.Fix_and_Delete_intervention_plan">
         <methods>
-          <include name="TCED25120"/>
-          <include name="TCED25121"/>
-          <include name="TCED25113"/>
-          <include name="TCED25112"/>
+          <include name="TCED19805"/>
           <include name="setup1"/>
-          <include name="TCED25114"/>
-          <include name="TCED25117"/>
-          <include name="TCED25116"/>
-          <include name="TCED25111"/>
-          <include name="TCED25118"/>
-          <include name="TCED25115"/>
-          <include name="TCED25119"/>
           <include name="tearDown"/>
-          <include name="TCED25110"/>
-          <include name="TCED25102"/>
-          <include name="TCED25124"/>
-          <include name="TCED25101"/>
-          <include name="TCED25123"/>
-          <include name="TCED25103"/>
-          <include name="TCED25125"/>
-          <include name="TCED25106"/>
-          <include name="TCED25105"/>
-          <include name="TCED25122"/>
-          <include name="TCED25107"/>
-          <include name="TCED25109"/>
-          <include name="TCED25104"/>
-          <include name="TCED25126"/>
-          <include name="TCED25108"/>
+          <include name="TCED19806"/>
         </methods>
-      </class> <!-- com.curriculum.Print_Lessons -->
+      </class> <!-- com.MTSS.Fix_and_Delete_intervention_plan -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

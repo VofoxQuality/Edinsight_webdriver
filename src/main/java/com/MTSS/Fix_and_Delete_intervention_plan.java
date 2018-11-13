@@ -168,10 +168,16 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 		try
 		{
 			//Application should be in the Track Student Interventions page
-			waitFor("//input[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnTrackingForm']");
+			JavascriptExecutor js=(JavascriptExecutor)driver;
+			js.executeScript("scroll(0,0)");
+			js.executeScript("arguments[0].scrollIntoView();",find("//a[contains(text(),'103569')]//following::input[2]"));
+			
+			
+			//waitFor("//input[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnTrackingForm']");
 			
 			//Click on Tacking form button for a selected student
-			click("//input[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnTrackingForm']");
+			click("//a[contains(text(),'103569')]//following::input[2]");
+			//click("//input[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnTrackingForm']");
 			
 			driver.switchTo().frame("RadWindow1");
 			
@@ -193,6 +199,12 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			//Application should be in the  Intervention Tracking form  pop-up
 			
 			//Assert the Label "Student ID"
+			String Std_id=getText("//*[@id='ctl00_ContentPlaceHolder1_divContents']/table[1]/tbody/tr[1]/td[1]/table/tbody/tr[3]/td[3]");
+			String[]std=Std_id.split(" ",3);
+			System.out.println(std[0]);
+			
+			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_divContents']/div[3]"),"Intervention Tracking Form");
+			
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_divContents']/table[1]/tbody/tr[1]/td[1]/table/tbody/tr[3]/td[3]").contains("Student ID"),"failed to assert the label-Student ID");
 			
 			//Assert the Label "State Student ID"
@@ -232,7 +244,7 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 		}
 	}
 	
-	@Test(priority=7)
+//	@Test(priority=7)
 	public void TCED19807()
 	{
 		
@@ -313,7 +325,7 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			e.printStackTrace();
 		}			
 	}	
-    @Test(priority=8)	
+//    @Test(priority=8)	
 	public void TCED19808()	
 	{					
 		try 
@@ -364,7 +376,7 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 		}		
 	}
 	
-	@Test(priority=9)	
+//	@Test(priority=9)	
 	public void TCED19809()
 	
 	{			
@@ -421,7 +433,7 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 		}		
 		
 	}
-	@Test(priority=10)	
+//	@Test(priority=10)	
 	public void TCED19810()
 	{
 		try
@@ -443,7 +455,7 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 		}
 		
 	}
-	@Test(priority=11)	
+//	@Test(priority=11)	
 	public void TCED19811()
 	{
 		
@@ -482,7 +494,7 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}	
-    @Test(priority=12)	
+ //   @Test(priority=12)	
 	public void TCED19812()	
 	{
 		try 
