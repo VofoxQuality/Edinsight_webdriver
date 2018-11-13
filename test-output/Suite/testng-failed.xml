@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.localassessment.Copy_assessment_vendor">
+      <class name="com.Home.Notes_Tracking_Summary">
         <methods>
+          <include name="TCED33604"/>
+          <include name="TCED33606"/>
           <include name="setup1"/>
-          <include name="TCED15003"/>
-          <include name="TCED15005"/>
+          <include name="TCED33603"/>
+          <include name="TCED33602"/>
+          <include name="TCED33605"/>
+          <include name="TCED33601"/>
           <include name="tearDown"/>
-          <include name="TCED15004"/>
-          <include name="TCED15006"/>
         </methods>
-      </class> <!-- com.localassessment.Copy_assessment_vendor -->
+      </class> <!-- com.Home.Notes_Tracking_Summary -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
