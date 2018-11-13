@@ -8,6 +8,7 @@ Functions\Report.class
 com\curriculum\Batch_Print.class
 VendorMode\Vendor_Mode_Create_New_Assessment.class
 com\Home\Assessments.class
+com\Home\Notes_Tracking_Summary.class
 com\localassessment\Score_Class_Results_Online.class
 Functions\applayAttributes.class
 com\Home\Attendance.class
@@ -60,6 +61,7 @@ com\Home\Contacts.class
 com\analyzeByScore\TestAdministrationComparisonReport.class
 com\Home\Student_Search.class
 com\MTSS\Mtss_track_student_interventions.class
+com\Home\Student_Building_Grade_Lists.class
 com\MTSS\Unsubmitted_Intervention_Plans.class
 com\curriculum\Custom_Reports.class
 com\curriculum\Copy_Current_Map.class
