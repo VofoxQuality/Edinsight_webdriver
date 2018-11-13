@@ -753,7 +753,7 @@ public void TCED25125() throws Exception
 		
 		 click("input#ctl00_ContentPlaceHolder1_btnPrint.buttontext");
 			
-		 Thread.sleep(8000);			
+		 Thread.sleep(12000);			
 		 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 	} 
 	
@@ -786,11 +786,11 @@ public void TCED25126() throws Exception
 		
 		driver.findElement(By.xpath("//*[@id='ctl00_ContentPlaceHolder1_radEndingLessonDate_dateInput']")).sendKeys("8/30/2018");
 		
-		 FileDelete();
+		 //FileDelete();
 		
 		 click("//*[@id='ctl00_ContentPlaceHolder1_btnPrintWord']");
 			
-		 Thread.sleep(8000);			
+		 Thread.sleep(12000);			
 		 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 	} 
 	

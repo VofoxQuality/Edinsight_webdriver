@@ -1,4 +1,5 @@
 com\Home\Student_reports.class
+com\analyzeByScore\Local_Assessment_AnalyzeByTag.class
 com\MTSS\Test_Suite_MTSS_Tier_Students_plan_interventions.class
 com\curriculum\Browse_By_Standard.class
 com\curriculum\Aligned_Standards.class
@@ -7,6 +8,7 @@ Functions\Report.class
 com\curriculum\Batch_Print.class
 VendorMode\Vendor_Mode_Create_New_Assessment.class
 com\Home\Assessments.class
+com\Home\Notes_Tracking_Summary.class
 com\localassessment\Score_Class_Results_Online.class
 Functions\applayAttributes.class
 com\Home\Attendance.class
@@ -59,6 +61,7 @@ com\Home\Contacts.class
 com\analyzeByScore\TestAdministrationComparisonReport.class
 com\Home\Student_Search.class
 com\MTSS\Mtss_track_student_interventions.class
+com\Home\Student_Building_Grade_Lists.class
 com\MTSS\Unsubmitted_Intervention_Plans.class
 com\curriculum\Custom_Reports.class
 com\curriculum\Copy_Current_Map.class
@@ -73,7 +76,6 @@ Functions\CreateANew_Assessment.class
 CheckList\Create_New_Assessment.class
 com\analyzeByScore\AdministrationComparisonbyStudent.class
 Functions\addExhibit.class
-com\analyzeByScore\analyzebytagname.class
 Functions\CreateRuberic.class
 com\questionBank\SearchQuestion.class
 com\MTSS\InterventionEffectivenessBySkill.class

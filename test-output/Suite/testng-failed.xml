@@ -1,42 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.curriculum.Standards_Coverage_Report">
-=======
-      <class name="com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher">
->>>>>>> 7614e8ce5926c26ec0fe782b72ef336386af5d6b
+      <class name="com.Home.Notes_Tracking_Summary">
         <methods>
-          <include name="TCED14157"/>
-          <include name="TCED14155"/>
-          <include name="TCED14158"/>
-          <include name="TCED14159"/>
+          <include name="TCED33604"/>
+          <include name="TCED33606"/>
           <include name="setup1"/>
-<<<<<<< HEAD
-          <include name="TCED30204"/>
-          <include name="TCED30202"/>
-          <include name="TCED30201"/>
+          <include name="TCED33603"/>
+          <include name="TCED33602"/>
+          <include name="TCED33605"/>
+          <include name="TCED33601"/>
           <include name="tearDown"/>
-          <include name="TCED30206"/>
         </methods>
-      </class> <!-- com.curriculum.Standards_Coverage_Report -->
-=======
-          <include name="TCED14160"/>
-          <include name="TCED14152"/>
-          <include name="TCED14163"/>
-          <include name="TCED14161"/>
-          <include name="TCED14153"/>
-          <include name="TCED14164"/>
-          <include name="TCED14156"/>
-          <include name="TCED14151"/>
-          <include name="TCED14162"/>
-          <include name="TCED14154"/>
-          <include name="TCED14165"/>
-        </methods>
-      </class> <!-- com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher -->
->>>>>>> 7614e8ce5926c26ec0fe782b72ef336386af5d6b
+      </class> <!-- com.Home.Notes_Tracking_Summary -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
