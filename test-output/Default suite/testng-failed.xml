@@ -5,10 +5,9 @@
     <classes>
       <class name="com.MTSS.Fix_and_Delete_intervention_plan">
         <methods>
-          <include name="TCED19805"/>
           <include name="setup1"/>
+          <include name="TCED19812"/>
           <include name="tearDown"/>
-          <include name="TCED19806"/>
         </methods>
       </class> <!-- com.MTSS.Fix_and_Delete_intervention_plan -->
     </classes>
