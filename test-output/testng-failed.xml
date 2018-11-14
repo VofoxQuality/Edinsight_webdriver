@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.MTSS.Manage_meetings">
         <methods>
           <include name="setup1"/>
@@ -10,6 +11,15 @@
           <include name="TCED20224"/>
         </methods>
       </class> <!-- com.MTSS.Manage_meetings -->
+=======
+      <class name="com.MTSS.Fix_and_Delete_intervention_plan">
+        <methods>
+          <include name="setup1"/>
+          <include name="TCED19812"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.MTSS.Fix_and_Delete_intervention_plan -->
+>>>>>>> 00662f08e5c4eeb716dc3f0c8a44f6b3dc135cc0
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

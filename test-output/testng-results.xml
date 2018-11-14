@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="23" passed="23">
   <reporter-output>
   </reporter-output>
@@ -108,6 +109,73 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.MTSS.Manage_meetings -->
+=======
+<testng-results skipped="0" failed="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="97610" started-at="2018-11-14T08:59:43Z" finished-at="2018-11-14T09:01:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="97610" started-at="2018-11-14T08:59:43Z" finished-at="2018-11-14T09:01:21Z">
+      <class name="com.MTSS.Fix_and_Delete_intervention_plan">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="setup1" is-config="true" duration-ms="26056" started-at="2018-11-14T14:29:43Z" finished-at="2018-11-14T14:30:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup1 -->
+        <test-method status="PASS" signature="TCED19801()[pri:1, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19801" duration-ms="8736" started-at="2018-11-14T14:30:09Z" finished-at="2018-11-14T14:30:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19801 -->
+        <test-method status="PASS" signature="TCED19802()[pri:2, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19802" duration-ms="201" started-at="2018-11-14T14:30:18Z" finished-at="2018-11-14T14:30:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19802 -->
+        <test-method status="PASS" signature="TCED19803()[pri:3, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19803" duration-ms="1415" started-at="2018-11-14T14:30:18Z" finished-at="2018-11-14T14:30:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19803 -->
+        <test-method status="PASS" signature="TCED19804()[pri:4, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19804" duration-ms="3100" started-at="2018-11-14T14:30:20Z" finished-at="2018-11-14T14:30:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19804 -->
+        <test-method status="PASS" signature="TCED19805()[pri:5, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19805" duration-ms="1419" started-at="2018-11-14T14:30:23Z" finished-at="2018-11-14T14:30:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19805 -->
+        <test-method status="PASS" signature="TCED19806()[pri:6, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19806" duration-ms="450" started-at="2018-11-14T14:30:24Z" finished-at="2018-11-14T14:30:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19806 -->
+        <test-method status="PASS" signature="TCED19807()[pri:7, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19807" duration-ms="7491" started-at="2018-11-14T14:30:25Z" finished-at="2018-11-14T14:30:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19807 -->
+        <test-method status="PASS" signature="TCED19808()[pri:8, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19808" duration-ms="23234" started-at="2018-11-14T14:30:32Z" finished-at="2018-11-14T14:30:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19808 -->
+        <test-method status="PASS" signature="TCED19809()[pri:9, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19809" duration-ms="11493" started-at="2018-11-14T14:30:55Z" finished-at="2018-11-14T14:31:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19809 -->
+        <test-method status="PASS" signature="TCED19810()[pri:10, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19810" duration-ms="1387" started-at="2018-11-14T14:31:07Z" finished-at="2018-11-14T14:31:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19810 -->
+        <test-method status="PASS" signature="TCED19811()[pri:11, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19811" duration-ms="10914" started-at="2018-11-14T14:31:08Z" finished-at="2018-11-14T14:31:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19811 -->
+        <test-method status="PASS" signature="TCED19812()[pri:12, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19812" duration-ms="1483" started-at="2018-11-14T14:31:19Z" finished-at="2018-11-14T14:31:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED19812 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-14T14:31:21Z" finished-at="2018-11-14T14:31:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.MTSS.Fix_and_Delete_intervention_plan -->
+>>>>>>> 00662f08e5c4eeb716dc3f0c8a44f6b3dc135cc0
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

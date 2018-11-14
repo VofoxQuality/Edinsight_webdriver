@@ -1,49 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="46305" started-at="2018-11-06T12:57:22Z" finished-at="2018-11-06T12:58:08Z">
+  <suite name="Suite" duration-ms="43925" started-at="2018-11-13T10:24:58Z" finished-at="2018-11-13T10:25:42Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="46305" started-at="2018-11-06T12:57:22Z" finished-at="2018-11-06T12:58:08Z">
-      <class name="com.MTSS.Mass_Change_Person_Responsible">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="setup1" is-config="true" duration-ms="9085" started-at="2018-11-06T12:57:22Z" finished-at="2018-11-06T12:57:31Z">
+    <test name="Test" duration-ms="43925" started-at="2018-11-13T10:24:58Z" finished-at="2018-11-13T10:25:42Z">
+      <class name="com.curriculum.Report_By_Standard">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.Report_By_Standard@3108bc]" name="setup1" is-config="true" duration-ms="5384" started-at="2018-11-13T10:24:58Z" finished-at="2018-11-13T10:25:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED21101()[pri:1, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21101" duration-ms="8305" started-at="2018-11-06T12:57:31Z" finished-at="2018-11-06T12:57:39Z">
+        <test-method status="PASS" signature="TCED26101()[pri:0, instance:com.curriculum.Report_By_Standard@3108bc]" name="TCED26101" duration-ms="8660" started-at="2018-11-13T10:25:03Z" finished-at="2018-11-13T10:25:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21101 -->
-        <test-method status="PASS" signature="TCED21102()[pri:2, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21102" duration-ms="138" started-at="2018-11-06T12:57:39Z" finished-at="2018-11-06T12:57:39Z">
+        </test-method> <!-- TCED26101 -->
+        <test-method status="PASS" signature="TCED26102()[pri:1, instance:com.curriculum.Report_By_Standard@3108bc]" name="TCED26102" duration-ms="937" started-at="2018-11-13T10:25:12Z" finished-at="2018-11-13T10:25:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21102 -->
-        <test-method status="PASS" signature="TCED21103()[pri:3, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21103" duration-ms="1785" started-at="2018-11-06T12:57:39Z" finished-at="2018-11-06T12:57:41Z">
+        </test-method> <!-- TCED26102 -->
+        <test-method status="PASS" signature="TCED26103()[pri:2, instance:com.curriculum.Report_By_Standard@3108bc]" name="TCED26103" duration-ms="1469" started-at="2018-11-13T10:25:13Z" finished-at="2018-11-13T10:25:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21103 -->
-        <test-method status="PASS" signature="TCED21104()[pri:4, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21104" duration-ms="95" started-at="2018-11-06T12:57:41Z" finished-at="2018-11-06T12:57:41Z">
+        </test-method> <!-- TCED26103 -->
+        <test-method status="PASS" signature="TCED26104()[pri:3, instance:com.curriculum.Report_By_Standard@3108bc]" name="TCED26104" duration-ms="24970" started-at="2018-11-13T10:25:14Z" finished-at="2018-11-13T10:25:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21104 -->
-        <test-method status="PASS" signature="TCED21105()[pri:5, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21105" duration-ms="23837" started-at="2018-11-06T12:57:41Z" finished-at="2018-11-06T12:58:05Z">
+        </test-method> <!-- TCED26104 -->
+        <test-method status="PASS" signature="TCED26105()[pri:4, instance:com.curriculum.Report_By_Standard@3108bc]" name="TCED26105" duration-ms="1373" started-at="2018-11-13T10:25:39Z" finished-at="2018-11-13T10:25:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21105 -->
-        <test-method status="PASS" signature="TCED21106()[pri:6, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21106" duration-ms="1781" started-at="2018-11-06T12:58:05Z" finished-at="2018-11-06T12:58:07Z">
+        </test-method> <!-- TCED26105 -->
+        <test-method status="PASS" signature="TCED26106()[pri:5, instance:com.curriculum.Report_By_Standard@3108bc]" name="TCED26106" duration-ms="1091" started-at="2018-11-13T10:25:41Z" finished-at="2018-11-13T10:25:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED21106 -->
-        <test-method status="PASS" signature="TCED21107()[pri:7, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="TCED21107" duration-ms="1264" started-at="2018-11-06T12:58:07Z" finished-at="2018-11-06T12:58:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED21107 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Mass_Change_Person_Responsible@3108bc]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-06T12:58:08Z" finished-at="2018-11-06T12:58:08Z">
+        </test-method> <!-- TCED26106 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.Report_By_Standard@3108bc]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-13T10:25:42Z" finished-at="2018-11-13T10:25:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.Mass_Change_Person_Responsible -->
+      </class> <!-- com.curriculum.Report_By_Standard -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
