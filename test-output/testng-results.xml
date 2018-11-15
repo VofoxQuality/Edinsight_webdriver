@@ -1,181 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="23" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="245444" started-at="2018-11-14T10:13:33Z" finished-at="2018-11-14T10:17:39Z">
+  <suite name="Default suite" duration-ms="241365" started-at="2018-11-15T08:38:00Z" finished-at="2018-11-15T08:42:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="245444" started-at="2018-11-14T10:13:33Z" finished-at="2018-11-14T10:17:39Z">
+    <test name="Default test" duration-ms="241365" started-at="2018-11-15T08:38:00Z" finished-at="2018-11-15T08:42:01Z">
       <class name="com.MTSS.Manage_meetings">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Manage_meetings@73ad2d6]" name="setup1" is-config="true" duration-ms="11098" started-at="2018-11-14T15:43:33Z" finished-at="2018-11-14T15:43:44Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Manage_meetings@73ad2d6]" name="setup1" is-config="true" duration-ms="9827" started-at="2018-11-15T14:08:00Z" finished-at="2018-11-15T14:08:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED20201()[pri:1, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20201" duration-ms="90664" started-at="2018-11-14T15:43:44Z" finished-at="2018-11-14T15:45:15Z">
+        <test-method status="PASS" signature="TCED20201()[pri:1, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20201" duration-ms="88802" started-at="2018-11-15T14:08:10Z" finished-at="2018-11-15T14:09:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20201 -->
-        <test-method status="PASS" signature="TCED20202()[pri:2, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20202" duration-ms="119" started-at="2018-11-14T15:45:15Z" finished-at="2018-11-14T15:45:15Z">
+        <test-method status="PASS" signature="TCED20202()[pri:2, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20202" duration-ms="109" started-at="2018-11-15T14:09:39Z" finished-at="2018-11-15T14:09:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20202 -->
-        <test-method status="PASS" signature="TCED20203()[pri:3, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20203" duration-ms="2649" started-at="2018-11-14T15:45:15Z" finished-at="2018-11-14T15:45:18Z">
+        <test-method status="PASS" signature="TCED20203()[pri:3, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20203" duration-ms="2570" started-at="2018-11-15T14:09:39Z" finished-at="2018-11-15T14:09:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20203 -->
-        <test-method status="PASS" signature="TCED20204()[pri:4, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20204" duration-ms="2171" started-at="2018-11-14T15:45:18Z" finished-at="2018-11-14T15:45:20Z">
+        <test-method status="PASS" signature="TCED20204()[pri:4, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20204" duration-ms="2096" started-at="2018-11-15T14:09:41Z" finished-at="2018-11-15T14:09:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20204 -->
-        <test-method status="PASS" signature="TCED20205()[pri:5, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20205" duration-ms="85" started-at="2018-11-14T15:45:20Z" finished-at="2018-11-14T15:45:20Z">
+        <test-method status="PASS" signature="TCED20205()[pri:5, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20205" duration-ms="95" started-at="2018-11-15T14:09:44Z" finished-at="2018-11-15T14:09:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20205 -->
-        <test-method status="PASS" signature="TCED20206()[pri:6, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20206" duration-ms="6359" started-at="2018-11-14T15:45:20Z" finished-at="2018-11-14T15:45:26Z">
+        <test-method status="PASS" signature="TCED20206()[pri:6, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20206" duration-ms="6378" started-at="2018-11-15T14:09:44Z" finished-at="2018-11-15T14:09:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20206 -->
-        <test-method status="PASS" signature="TCED20207()[pri:7, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20207" duration-ms="55" started-at="2018-11-14T15:45:26Z" finished-at="2018-11-14T15:45:26Z">
+        <test-method status="PASS" signature="TCED20207()[pri:7, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20207" duration-ms="61" started-at="2018-11-15T14:09:50Z" finished-at="2018-11-15T14:09:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20207 -->
-        <test-method status="PASS" signature="TCED20208()[pri:8, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20208" duration-ms="7316" started-at="2018-11-14T15:45:26Z" finished-at="2018-11-14T15:45:34Z">
+        <test-method status="PASS" signature="TCED20208()[pri:8, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20208" duration-ms="7315" started-at="2018-11-15T14:09:50Z" finished-at="2018-11-15T14:09:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20208 -->
-        <test-method status="PASS" signature="TCED20209()[pri:9, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20209" duration-ms="4169" started-at="2018-11-14T15:45:34Z" finished-at="2018-11-14T15:45:38Z">
+        <test-method status="PASS" signature="TCED20209()[pri:9, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20209" duration-ms="4181" started-at="2018-11-15T14:09:57Z" finished-at="2018-11-15T14:10:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20209 -->
-        <test-method status="PASS" signature="TCED20210()[pri:10, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20210" duration-ms="7962" started-at="2018-11-14T15:45:38Z" finished-at="2018-11-14T15:45:46Z">
+        <test-method status="PASS" signature="TCED20210()[pri:10, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20210" duration-ms="7900" started-at="2018-11-15T14:10:02Z" finished-at="2018-11-15T14:10:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20210 -->
-        <test-method status="PASS" signature="TCED20211()[pri:11, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20211" duration-ms="10920" started-at="2018-11-14T15:45:46Z" finished-at="2018-11-14T15:45:57Z">
+        <test-method status="PASS" signature="TCED20211()[pri:11, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20211" duration-ms="10815" started-at="2018-11-15T14:10:09Z" finished-at="2018-11-15T14:10:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20211 -->
-        <test-method status="PASS" signature="TCED20212()[pri:12, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20212" duration-ms="10727" started-at="2018-11-14T15:45:57Z" finished-at="2018-11-14T15:46:07Z">
+        <test-method status="PASS" signature="TCED20212()[pri:12, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20212" duration-ms="10705" started-at="2018-11-15T14:10:20Z" finished-at="2018-11-15T14:10:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20212 -->
-        <test-method status="PASS" signature="TCED20213()[pri:13, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20213" duration-ms="68" started-at="2018-11-14T15:46:07Z" finished-at="2018-11-14T15:46:07Z">
+        <test-method status="PASS" signature="TCED20213()[pri:13, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20213" duration-ms="31" started-at="2018-11-15T14:10:31Z" finished-at="2018-11-15T14:10:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20213 -->
-        <test-method status="PASS" signature="TCED20214()[pri:14, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20214" duration-ms="13866" started-at="2018-11-14T15:46:07Z" finished-at="2018-11-14T15:46:21Z">
+        <test-method status="PASS" signature="TCED20214()[pri:14, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20214" duration-ms="13731" started-at="2018-11-15T14:10:31Z" finished-at="2018-11-15T14:10:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20214 -->
-        <test-method status="PASS" signature="TCED20215()[pri:15, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20215" duration-ms="13318" started-at="2018-11-14T15:46:21Z" finished-at="2018-11-14T15:46:35Z">
+        <test-method status="PASS" signature="TCED20215()[pri:15, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20215" duration-ms="13301" started-at="2018-11-15T14:10:45Z" finished-at="2018-11-15T14:10:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20215 -->
-        <test-method status="PASS" signature="TCED20217()[pri:17, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20217" duration-ms="9585" started-at="2018-11-14T15:46:35Z" finished-at="2018-11-14T15:46:44Z">
+        <test-method status="PASS" signature="TCED20217()[pri:17, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20217" duration-ms="9677" started-at="2018-11-15T14:10:58Z" finished-at="2018-11-15T14:11:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20217 -->
-        <test-method status="PASS" signature="TCED20218()[pri:18, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20218" duration-ms="104" started-at="2018-11-14T15:46:44Z" finished-at="2018-11-14T15:46:44Z">
+        <test-method status="PASS" signature="TCED20218()[pri:18, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20218" duration-ms="74" started-at="2018-11-15T14:11:08Z" finished-at="2018-11-15T14:11:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20218 -->
-        <test-method status="PASS" signature="TCED20219()[pri:19, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20219" duration-ms="12093" started-at="2018-11-14T15:46:44Z" finished-at="2018-11-14T15:46:56Z">
+        <test-method status="PASS" signature="TCED20219()[pri:19, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20219" duration-ms="11875" started-at="2018-11-15T14:11:08Z" finished-at="2018-11-15T14:11:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20219 -->
-        <test-method status="PASS" signature="TCED20220()[pri:20, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20220" duration-ms="145" started-at="2018-11-14T15:46:56Z" finished-at="2018-11-14T15:46:57Z">
+        <test-method status="PASS" signature="TCED20220()[pri:20, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20220" duration-ms="150" started-at="2018-11-15T14:11:20Z" finished-at="2018-11-15T14:11:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20220 -->
-        <test-method status="PASS" signature="TCED20221()[pri:21, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20221" duration-ms="8177" started-at="2018-11-14T15:46:57Z" finished-at="2018-11-14T15:47:05Z">
+        <test-method status="PASS" signature="TCED20221()[pri:21, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20221" duration-ms="7980" started-at="2018-11-15T14:11:20Z" finished-at="2018-11-15T14:11:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20221 -->
-        <test-method status="PASS" signature="TCED20222()[pri:22, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20222" duration-ms="30515" started-at="2018-11-14T15:47:05Z" finished-at="2018-11-14T15:47:35Z">
+        <test-method status="PASS" signature="TCED20222()[pri:22, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20222" duration-ms="30617" started-at="2018-11-15T14:11:28Z" finished-at="2018-11-15T14:11:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20222 -->
-        <test-method status="PASS" signature="TCED20223()[pri:23, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20223" duration-ms="44" started-at="2018-11-14T15:47:35Z" finished-at="2018-11-14T15:47:35Z">
+        <test-method status="PASS" signature="TCED20223()[pri:23, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20223" duration-ms="41" started-at="2018-11-15T14:11:58Z" finished-at="2018-11-15T14:11:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20223 -->
-        <test-method status="PASS" signature="TCED20224()[pri:24, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20224" duration-ms="3150" started-at="2018-11-14T15:47:35Z" finished-at="2018-11-14T15:47:39Z">
+        <test-method status="PASS" signature="TCED20224()[pri:24, instance:com.MTSS.Manage_meetings@73ad2d6]" name="TCED20224" duration-ms="2954" started-at="2018-11-15T14:11:58Z" finished-at="2018-11-15T14:12:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED20224 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Manage_meetings@73ad2d6]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-14T15:47:39Z" finished-at="2018-11-14T15:47:39Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Manage_meetings@73ad2d6]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-15T14:12:01Z" finished-at="2018-11-15T14:12:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.MTSS.Manage_meetings -->
-=======
-<testng-results skipped="0" failed="0" total="12" passed="12">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="97610" started-at="2018-11-14T08:59:43Z" finished-at="2018-11-14T09:01:21Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="97610" started-at="2018-11-14T08:59:43Z" finished-at="2018-11-14T09:01:21Z">
-      <class name="com.MTSS.Fix_and_Delete_intervention_plan">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="setup1" is-config="true" duration-ms="26056" started-at="2018-11-14T14:29:43Z" finished-at="2018-11-14T14:30:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED19801()[pri:1, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19801" duration-ms="8736" started-at="2018-11-14T14:30:09Z" finished-at="2018-11-14T14:30:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19801 -->
-        <test-method status="PASS" signature="TCED19802()[pri:2, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19802" duration-ms="201" started-at="2018-11-14T14:30:18Z" finished-at="2018-11-14T14:30:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19802 -->
-        <test-method status="PASS" signature="TCED19803()[pri:3, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19803" duration-ms="1415" started-at="2018-11-14T14:30:18Z" finished-at="2018-11-14T14:30:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19803 -->
-        <test-method status="PASS" signature="TCED19804()[pri:4, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19804" duration-ms="3100" started-at="2018-11-14T14:30:20Z" finished-at="2018-11-14T14:30:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19804 -->
-        <test-method status="PASS" signature="TCED19805()[pri:5, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19805" duration-ms="1419" started-at="2018-11-14T14:30:23Z" finished-at="2018-11-14T14:30:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19805 -->
-        <test-method status="PASS" signature="TCED19806()[pri:6, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19806" duration-ms="450" started-at="2018-11-14T14:30:24Z" finished-at="2018-11-14T14:30:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19806 -->
-        <test-method status="PASS" signature="TCED19807()[pri:7, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19807" duration-ms="7491" started-at="2018-11-14T14:30:25Z" finished-at="2018-11-14T14:30:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19807 -->
-        <test-method status="PASS" signature="TCED19808()[pri:8, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19808" duration-ms="23234" started-at="2018-11-14T14:30:32Z" finished-at="2018-11-14T14:30:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19808 -->
-        <test-method status="PASS" signature="TCED19809()[pri:9, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19809" duration-ms="11493" started-at="2018-11-14T14:30:55Z" finished-at="2018-11-14T14:31:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19809 -->
-        <test-method status="PASS" signature="TCED19810()[pri:10, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19810" duration-ms="1387" started-at="2018-11-14T14:31:07Z" finished-at="2018-11-14T14:31:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19810 -->
-        <test-method status="PASS" signature="TCED19811()[pri:11, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19811" duration-ms="10914" started-at="2018-11-14T14:31:08Z" finished-at="2018-11-14T14:31:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19811 -->
-        <test-method status="PASS" signature="TCED19812()[pri:12, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="TCED19812" duration-ms="1483" started-at="2018-11-14T14:31:19Z" finished-at="2018-11-14T14:31:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED19812 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Fix_and_Delete_intervention_plan@13ad2d6]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-14T14:31:21Z" finished-at="2018-11-14T14:31:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.Fix_and_Delete_intervention_plan -->
->>>>>>> 00662f08e5c4eeb716dc3f0c8a44f6b3dc135cc0
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
