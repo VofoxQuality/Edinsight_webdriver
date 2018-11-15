@@ -1,45 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42255" started-at="2018-11-13T09:00:23Z" finished-at="2018-11-13T09:01:05Z">
+  <suite started-at="2018-11-14T11:31:03Z" name="Suite" finished-at="2018-11-14T11:31:33Z" duration-ms="30261">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42255" started-at="2018-11-13T09:00:23Z" finished-at="2018-11-13T09:01:05Z">
-      <class name="com.Home.Notes_Tracking_Summary">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Notes_Tracking_Summary@52f759d7]" name="setup1" is-config="true" duration-ms="15826" started-at="2018-11-13T09:00:23Z" finished-at="2018-11-13T09:00:39Z">
+    <test started-at="2018-11-14T11:31:03Z" name="Test" finished-at="2018-11-14T11:31:33Z" duration-ms="30261">
+      <class name="com.localassessment.Score_Class_Results_Online">
+        <test-method is-config="true" signature="setup1()[pri:0, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:03Z" name="setup1" finished-at="2018-11-14T11:31:08Z" duration-ms="5347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED33601()[pri:1, instance:com.Home.Notes_Tracking_Summary@52f759d7]" name="TCED33601" duration-ms="10103" started-at="2018-11-13T09:00:39Z" finished-at="2018-11-13T09:00:49Z">
+        <test-method signature="TCED13021()[pri:0, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:08Z" name="TCED13021" finished-at="2018-11-14T11:31:14Z" duration-ms="5788" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED33601 -->
-        <test-method status="PASS" signature="TCED33602()[pri:2, instance:com.Home.Notes_Tracking_Summary@52f759d7]" name="TCED33602" duration-ms="153" started-at="2018-11-13T09:00:49Z" finished-at="2018-11-13T09:00:49Z">
+        </test-method> <!-- TCED13021 -->
+        <test-method signature="TCED13022()[pri:1, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:14Z" name="TCED13022" finished-at="2018-11-14T11:31:19Z" duration-ms="5054" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED33602 -->
-        <test-method status="PASS" signature="TCED33603()[pri:3, instance:com.Home.Notes_Tracking_Summary@52f759d7]" name="TCED33603" duration-ms="3907" started-at="2018-11-13T09:00:49Z" finished-at="2018-11-13T09:00:53Z">
+        </test-method> <!-- TCED13022 -->
+        <test-method signature="TCED13023()[pri:2, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:19Z" name="TCED13023" finished-at="2018-11-14T11:31:19Z" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED33603 -->
-        <test-method status="PASS" signature="TCED33604()[pri:4, instance:com.Home.Notes_Tracking_Summary@52f759d7]" name="TCED33604" duration-ms="11361" started-at="2018-11-13T09:00:53Z" finished-at="2018-11-13T09:01:04Z">
+        </test-method> <!-- TCED13023 -->
+        <test-method signature="TCED13024()[pri:3, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:19Z" name="TCED13024" finished-at="2018-11-14T11:31:20Z" duration-ms="674" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED33604 -->
-        <test-method status="PASS" signature="TCED33605()[pri:5, instance:com.Home.Notes_Tracking_Summary@52f759d7]" name="TCED33605" duration-ms="231" started-at="2018-11-13T09:01:04Z" finished-at="2018-11-13T09:01:04Z">
+        </test-method> <!-- TCED13024 -->
+        <test-method signature="TCED13025()[pri:4, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:20Z" name="TCED13025" finished-at="2018-11-14T11:31:21Z" duration-ms="1018" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED33605 -->
-        <test-method status="PASS" signature="TCED33606()[pri:6, instance:com.Home.Notes_Tracking_Summary@52f759d7]" name="TCED33606" duration-ms="635" started-at="2018-11-13T09:01:04Z" finished-at="2018-11-13T09:01:05Z">
+        </test-method> <!-- TCED13025 -->
+        <test-method signature="TCED13026()[pri:5, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:21Z" name="TCED13026" finished-at="2018-11-14T11:31:23Z" duration-ms="2140" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED33606 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Notes_Tracking_Summary@52f759d7]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-13T09:01:05Z" finished-at="2018-11-13T09:01:05Z">
+        </test-method> <!-- TCED13026 -->
+        <test-method signature="TCED13027()[pri:6, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:23Z" name="TCED13027" finished-at="2018-11-14T11:31:26Z" duration-ms="3072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13027 -->
+        <test-method signature="TCED13028()[pri:7, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:26Z" name="TCED13028" finished-at="2018-11-14T11:31:29Z" duration-ms="2414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13028 -->
+        <test-method signature="TCED13029()[pri:8, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:29Z" name="TCED13029" finished-at="2018-11-14T11:31:29Z" duration-ms="787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13029 -->
+        <test-method signature="TCED13030()[pri:9, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:29Z" name="TCED13030" finished-at="2018-11-14T11:31:33Z" duration-ms="3683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED13030 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.localassessment.Score_Class_Results_Online@272113c4]" started-at="2018-11-14T11:31:33Z" name="tearDown" finished-at="2018-11-14T11:31:33Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Home.Notes_Tracking_Summary -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.localassessment.Score_Class_Results_Online -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
