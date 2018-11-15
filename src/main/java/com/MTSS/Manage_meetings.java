@@ -25,6 +25,141 @@ public class Manage_meetings extends BaseClassOne {
 			Thread.sleep(2000);	
 
 			//Hover over MTTS link			
+			Actions actions1 = new Actions(driver);
+			WebElement mouseHover1 = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
+			actions1.moveToElement(mouseHover1).build().perform();	
+
+			// To click in tier intervention
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[3]/div/a");		
+			// To click in intervention plans
+			click("//*[@id='ctl00_MainContent_trTierStudentsPlanInterventions']/td[2]/a");
+
+
+			select("//*[@id='ctl00_MainContent_ddlEducationProvider']","Bird-in-Hand Elementary School");
+
+			select("//*[@id='ctl00_MainContent_ddlCurrentGradeLevel']","Fourth Grade");
+
+			// To click on search
+			click("//*[@id='ctl00_MainContent_btnSearch']");
+
+			Thread.sleep(2000);
+
+			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_chkSelectUserSelectCheckBox']");
+
+			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl06_chkSelectUserSelectCheckBox']");
+
+			select("//*[@id='ctl00_MainContent_RTIMassTieringControl1_ddlTierMulti']","Tier 2");
+
+			click("//*[@id='ctl00_MainContent_RTIMassTieringControl1_btnTier']");
+
+			Thread.sleep(7000);
+
+			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnIntervention']");
+
+			Thread.sleep(4000);
+
+			SwitchFrameName("RadWindow1");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_ctl00_ctl00_gridInvervention_ctl02_btnAddIntervention']");		
+
+			SwitchFrameName("RadWindow2");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
+			Thread.sleep(4000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_DropDown']/div/ul/li[1]/label/input");
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
+
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
+
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_trMeasureAssmnt']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Arrow']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_DropDown']/div/ul/li[2]");
+
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlDuration']","2");
+
+			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_lblPersonResponsible']");
+			Thread.sleep(3000);
+
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyTPR']","2");
+
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyMPS']","10");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_DropDown']/div/ul/li[2]/label/input");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveSubmit']");
+
+			Thread.sleep(3000);
+			driver.switchTo().defaultContent();	
+			Thread.sleep(3000);
+			click("//*[@id='RadWindowWrapper_ctl00_MainContent_RadWindow1']/div[1]/div/ul/li[2]/span");
+			Thread.sleep(4000);
+/***********************/
+
+			Thread.sleep(4000);
+
+			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl06_btnIntervention']");
+
+			Thread.sleep(4000);
+
+			SwitchFrameName("RadWindow1");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_ctl00_ctl00_gridInvervention_ctl02_btnAddIntervention']");		
+
+			SwitchFrameName("RadWindow2");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
+			Thread.sleep(4000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_DropDown']/div/ul/li[1]/label/input");
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
+
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
+
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_trMeasureAssmnt']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Arrow']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_DropDown']/div/ul/li[2]");
+
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlDuration']","2");
+
+			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_lblPersonResponsible']");
+			Thread.sleep(3000);
+
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyTPR']","2");
+
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyMPS']","10");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_DropDown']/div/ul/li[2]/label/input");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveSubmit']");
+
+			Thread.sleep(3000);
+			driver.switchTo().defaultContent();	
+			Thread.sleep(3000);
+			click("//*[@id='RadWindowWrapper_ctl00_MainContent_RadWindow1']/div[1]/div/ul/li[2]/span");
+			Thread.sleep(4000);
+
+			//Hover over MTTS link			
 			Actions actions = new Actions(driver);
 			WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
 			actions.moveToElement(mouseHover).build().perform();		
@@ -115,9 +250,10 @@ public class Manage_meetings extends BaseClassOne {
 	{
 		try {
 			//  To select the parameters
-			select("//*[@id='ctl00_MainContent_ddlEducationProvider']","Ashley High School");
 
-			select("//*[@id='ctl00_MainContent_ddlCurrentGradeLevel']","Ninth Grade");
+			select("//*[@id='ctl00_MainContent_ddlEducationProvider']","Bird-in-Hand Elementary School");
+
+			select("//*[@id='ctl00_MainContent_ddlCurrentGradeLevel']","Fourth Grade");
 
 			click("//*[@id='ctl00_MainContent_btnSearch']");
 			// To assert the validations
@@ -179,7 +315,7 @@ public class Manage_meetings extends BaseClassOne {
 	{
 		try {
 
-			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl06_btnMeetings']");	
+			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnMeetings']");	
 			Thread.sleep(2000);
 			// To assert the label
 			Assert.assertEquals(getText("//*[@id='RadWindowWrapper_ctl00_MainContent_RadWindow1']/div[1]/div/h6"), "Select Meetings Type");		
@@ -255,7 +391,7 @@ public class Manage_meetings extends BaseClassOne {
 
 	{
 		try {	
-			Thread.sleep(2000);	
+			Thread.sleep(4000);	
 			// To assert the labels
 			Assert.assertEquals(getText("//*[@id='aspnetForm']/div[4]/div[2]/div[1]/table/tbody/tr[1]/td[1]/b"), "Student Name:");		
 
@@ -380,7 +516,7 @@ public class Manage_meetings extends BaseClassOne {
 
 			Thread.sleep(2000);
 			SwitchFrameName("RadWindow1");
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			Assert.assertEquals(getText("//*[@id='aspnetForm']/div[4]/div/table/tbody/tr[1]/td/span"), "Your meeting has been submitted successfully!");	
 
 
@@ -565,7 +701,7 @@ public class Manage_meetings extends BaseClassOne {
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_chkListAreasOfNeed']/tbody/tr[2]/td/label"), "Mathematics");		
 
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_chkListAreasOfNeed']/tbody/tr[3]/td/label"), "Behavioral");		
-			
+
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_trDisclaimer']/td/span"), "* Only intervention plans for tier 2 students can be reviewed using this feature");		
 
 
@@ -584,12 +720,12 @@ public class Manage_meetings extends BaseClassOne {
 
 	public void TCED20219() throws InterruptedException
 
-	{  // ONCE student intervention created, TCED20219 script will fail
+	{ 
 		try {
 			// To click on checkboxes
-			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl14_chkSelectUserSelectCheckBox']");
+			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_chkSelectUserSelectCheckBox']");
 
-			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl16_chkSelectUserSelectCheckBox']");
+			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl06_chkSelectUserSelectCheckBox']");
 			Thread.sleep(3000);	
 			ScrollTo_Location("//*[@id='ctl00_MainContent_trDisclaimer']/td/span");
 			// To click on button
@@ -677,8 +813,6 @@ public class Manage_meetings extends BaseClassOne {
 			Thread.sleep(2000);
 			// To assert the validations
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_lblMessageBottom']"), "Meeting form has been saved successfully..!");	
-
-
 		} 
 
 		catch (Exception e) 
@@ -688,9 +822,6 @@ public class Manage_meetings extends BaseClassOne {
 		}        
 
 	}
-
-
-
 
 	@Test(priority=22)
 
@@ -713,21 +844,17 @@ public class Manage_meetings extends BaseClassOne {
 			Thread.sleep(3000);	
 			// To assert the validations
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_lblMessageTop']"), "You must select a student response and team decision for each intervention.");	
+			Thread.sleep(2000);	
 			// to select the details
 			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl04_ddlStudentResponse']","Goal Attained");
 
-			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl04_ddlTeamDecision']", "Continue this intervention: add new tier 2 intervention");
+			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl04_ddlTeamDecision']", "Discontinue intervention: no further intervention required");
 
 			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl06_ddlStudentResponse']","Goal Attained");
 
-			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl06_ddlTeamDecision']", "Continue this intervention: add new tier 2 intervention");
+			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl06_ddlTeamDecision']", "Discontinue intervention: no further intervention required");
 
-			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl08_ddlStudentResponse']","Goal Attained");
-
-			select("//*[@id='ctl00_ContentPlaceHolder1_rgPlans_ctl00_ctl08_ddlTeamDecision']", "Continue this intervention: add new tier 2 intervention");
-
-
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveSubmit']");
 
 			Thread.sleep(4000);	
@@ -762,7 +889,7 @@ public class Manage_meetings extends BaseClassOne {
 
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_spanTier']"), "The following students were discussed at this meeting");
 
-			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_divInterventions']/span"), "EdInsight has auto-generated the following intervention plans as a result of this meeting. Please complete, review, and submit these plans.");
+	//		Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_divInterventions']/span"), "EdInsight has auto-generated the following intervention plans as a result of this meeting. Please complete, review, and submit these plans.");
 
 		} 
 
@@ -773,27 +900,63 @@ public class Manage_meetings extends BaseClassOne {
 		}        
 
 	}
-
-
 	@Test(priority=24)
 
 	public void TCED20224() throws InterruptedException
 
 	{
 		try {
-
-			driver.switchTo().defaultContent();
-
-			click("//*[@id='adWindowWrapper_ctl00_MainContent_RadWindow1']/div[1]/div/ul/li[2]/span");
+			
+			click("//*[@id='ctl00_ContentPlaceHolder1_btnClose']");
+			
 			// To assert the validations	
-			Assert.assertEquals((readAlertMessageText()), "There are still unsubmitted intervention plans.  Are you sure you want to close this window?");		
+	//		Assert.assertEquals((readAlertMessageText()), "There are still unsubmitted intervention plans.  Are you sure you want to close this window?");		
 			// To accept the alert
-			AcceptAlert();		
-			Thread.sleep(7000);
+		//	AcceptAlert();		
+			
+			driver.switchTo().defaultContent();
+			Thread.sleep(2000);
 			// To assert the validations		
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/table/tbody/tr[1]/td"), "Meetings");		
 
+/*			//Hover over MTTS link			
+			Actions actions11 = new Actions(driver);
+			WebElement mouseHover11 = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
+			actions11.moveToElement(mouseHover11).build().perform();	
 
+			// To click in tier intervention
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[3]/div/a");		
+			// To click in intervention plans
+			click("//*[@id='ctl00_MainContent_trTierStudentsPlanInterventions']/td[2]/a");
+
+
+			select("//*[@id='ctl00_MainContent_ddlEducationProvider']","Bird-in-Hand Elementary School");
+
+			select("//*[@id='ctl00_MainContent_ddlCurrentGradeLevel']","Fourth Grade");
+
+			// To click on search
+			click("//*[@id='ctl00_MainContent_btnSearch']");
+
+			Thread.sleep(2000);
+
+			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnIntervention']");
+
+			Thread.sleep(4000);
+
+			SwitchFrameName("RadWindow1");
+
+			click("//*[@id='ctl00_ContentPlaceHolder1_ctl00_ctl00_gridInvervention_ctl02_btnEditIntervention']");
+
+			SwitchFrameName("RadWindow2");
+			
+			click("//*[@id='ctl00_ContentPlaceHolder1_btnDelete']");
+			
+			AcceptAlert();
+			
+			SwitchFrameName("RadWindow1");
+			
+			click("//*[@id='ctl00_ContentPlaceHolder1_btnClose']");
+*/
 		} 
 
 		catch (Exception e) 

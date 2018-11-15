@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <test name="Test(failed)">
     <classes>
-      <class name="com.Home.Notes_Tracking_Summary">
+      <class name="com.Home.Student_Building_Grade_Lists">
         <methods>
-          <include name="TCED33604"/>
-          <include name="TCED33606"/>
           <include name="setup1"/>
-          <include name="TCED33603"/>
-          <include name="TCED33602"/>
-          <include name="TCED33605"/>
-          <include name="TCED33601"/>
+          <include name="TCED33215"/>
+          <include name="TCED33209"/>
           <include name="tearDown"/>
+          <include name="TCED33212"/>
+          <include name="TCED33211"/>
         </methods>
-      </class> <!-- com.Home.Notes_Tracking_Summary -->
+      </class> <!-- com.Home.Student_Building_Grade_Lists -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

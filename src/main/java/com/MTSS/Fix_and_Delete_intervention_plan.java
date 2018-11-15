@@ -169,15 +169,12 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 		{
 			//Application should be in the Track Student Interventions page
 			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("scroll(0,0)");
-			js.executeScript("arguments[0].scrollIntoView();",find("//a[contains(text(),'103569')]//following::input[2]"));
-			
-			
-			//waitFor("//input[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnTrackingForm']");
+			js.executeScript("scroll(0,100)");
+			//js.executeScript("arguments[0].scrollIntoView();",find("//a[contains(text(),'103569')]//following::input[2]"));
 			
 			//Click on Tacking form button for a selected student
 			click("//a[contains(text(),'103569')]//following::input[2]");
-			//click("//input[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnTrackingForm']");
+			
 			
 			driver.switchTo().frame("RadWindow1");
 			
@@ -201,14 +198,12 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			//Assert the Label "Student ID"
 			String Std_id=getText("//*[@id='ctl00_ContentPlaceHolder1_divContents']/table[1]/tbody/tr[1]/td[1]/table/tbody/tr[3]/td[3]");
 			String[]std=Std_id.split(" ",3);
-			System.out.println(std[0]);
-			
-			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_divContents']/div[3]"),"Intervention Tracking Form");
-			
-			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_divContents']/table[1]/tbody/tr[1]/td[1]/table/tbody/tr[3]/td[3]").contains("Student ID"),"failed to assert the label-Student ID");
+			Assert.assertEquals(std[0]+" "+std[1],"Student ID:");	
 			
 			//Assert the Label "State Student ID"
-			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_HeaderStudentTop1_lblStateSecureId']").contains("State Student ID"),"failed to assert the label-State Student ID");
+			String State_id=getText("//*[@id='ctl00_ContentPlaceHolder1_HeaderStudentTop1_lblStateSecureId']");
+			String[]stid=State_id.split(" ",4);
+			Assert.assertEquals(stid[0]+" "+stid[1]+" "+stid[2],"State Student ID:");
 			
 			//Assert the Label "Student Demographics"
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_divContents']/table[1]/tbody/tr[2]/td/table/tbody/tr[1]/td[3]"),"Student Demographics");
@@ -244,12 +239,10 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 		}
 	}
 	
-//	@Test(priority=7)
+	@Test(priority=7)
 	public void TCED19807()
-	{
-		
-		try 
-		
+	{		
+		try 		
 		{	
 			//Application should be in the  Intervention Tracking form  pop-up
 			
@@ -274,21 +267,7 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
             }
             Thread.sleep(3000);
             
-            type("//*[@id='ctl00_ContentPlaceHolder1_rgData_ctl00_ctl03_ctl01_rdTrackingDate_dateInput']","8/25/2018");
-//			List<WebElement> allDates=driver.findElements(By.xpath("//*[@id='ctl00_ContentPlaceHolder1_rgData_ctl00_ctl03_ctl01_rdTrackingDate_calendar_Top']//td"));
-//			
-//			for(WebElement ele:allDates)
-//			{
-//				
-//				String date=ele.getText();
-//				if(date.equalsIgnoreCase("25"))
-//				{
-//									
-//					Thread.sleep(2000);				
-//					ele.click();
-//					break;
-//				}				
-//			}				
+            type("//*[@id='ctl00_ContentPlaceHolder1_rgData_ctl00_ctl03_ctl01_rdTrackingDate_dateInput']","8/25/2018");				
 						
 			type("input#ctl00_ContentPlaceHolder1_rgData_ctl00_ctl03_ctl01_rtxtStudentScore",std_score);
 			
@@ -325,23 +304,30 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			e.printStackTrace();
 		}			
 	}	
-//    @Test(priority=8)	
+    @Test(priority=8)	
 	public void TCED19808()	
 	{					
 		try 
-		{
-			driver.navigate().to("http://192.168.10.124/Edinsight/Form/RTI/FixInterventionPlans.aspx?args=fPCcek9X3JyzRdS9nDE+7KD3NBSoLWFnR+sq1TMwYPs=");
-			//click Intervention tracking button		
-			click("input#ctl00_MainContent_btnSearch.button");			
-			//click Intervention tracking button		
-			click("input#ctl00_MainContent_btnSearch.button");
+		{			
+            driver.switchTo().parentFrame();                  
+            
+            click("//*[@id='RadWindowWrapper_ctl00_MainContent_RadWindow1']/div[1]/div/ul/li[2]/span");            
+            if(isAlertPresents())
+            {
+            	driver.switchTo().alert().accept();
+            }
+            Thread.sleep(2000);
 			
-			//click Intervention tracking button	
-			click("input#ctl00_MainContent_rgSearch_ctl00_ctl04_btnTrackingForm.button");
+			//click Intervention tracking button
+			JavascriptExecutor js=(JavascriptExecutor)driver;
+			js.executeScript("scroll(0,100)");
+			//js.executeScript("arguments[0].scrollIntoView();",find("//a[contains(text(),'103569')]//following::input[2]"));
 			
-			driver.switchTo().frame("RadWindow1");
+			//Click on Tacking form button for a selected student
+			click("//a[contains(text(),'103569')]//following::input[2]");
 			
-			JavascriptExecutor js = (JavascriptExecutor) driver;
+			driver.switchTo().frame("RadWindow1");	
+
 			
 			//scroll down to the bottom of the popup			
 			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
@@ -351,11 +337,13 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			//click print pdf button		
 			click("input#ctl00_ContentPlaceHolder1_btnPrinttoPDF.button");
 			
+			Thread.sleep(2000);
+			
 			Robot object=new Robot();
 			
 			object.keyPress(KeyEvent.VK_DOWN);	
 			
-			object.setAutoDelay(2000);
+			object.setAutoDelay(3000);
 			
 			// Press Enter<br>
 			object.keyPress(KeyEvent.VK_ENTER);
@@ -374,39 +362,39 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
 		}		
-	}
-	
-//	@Test(priority=9)	
+	}	
+	@Test(priority=9)	
 	public void TCED19809()
 	
 	{			
 		try 
 		   {				
-			
-			Thread.sleep(2000);			
-			
-			driver.navigate().to("http://192.168.10.124/Edinsight/Form/RTI/FixInterventionPlans.aspx?args=fPCcek9X3JyzRdS9nDE+7KD3NBSoLWFnR+sq1TMwYPs=");
-			
-			//click Intervention tracking button		
-			click("input#ctl00_MainContent_btnSearch.button");	
-			Thread.sleep(2000);
+
+            driver.switchTo().parentFrame();                  
+            
+            click("//*[@id='RadWindowWrapper_ctl00_MainContent_RadWindow1']/div[1]/div/ul/li[2]/span");            
+            if(isAlertPresents())
+            {
+            	driver.switchTo().alert().accept();
+            }
+            Thread.sleep(2000);
 			
 			//Click Edit Measurement button 
 			click("input#ctl00_MainContent_rgSearch_ctl00_ctl06_btnEditPlan.button");
 			
-			driver.switchTo().frame("RadWindow1");			
+			driver.switchTo().frame("RadWindow1");	
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Arrow']");
 						
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input']");
+			//click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input']");
 			
-			Thread.sleep(3000);
+			Thread.sleep(2000);	
 			
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			
-			//scroll down to the bottom of the popup			
+			//scroll down to the bottom of the popup
+			JavascriptExecutor js=(JavascriptExecutor)driver;
 			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 			
 			 //Select the Measurement/Assessment Method as Study Island
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_DropDown']/div/ul/li[12]");
+			click("//li[contains(text(),'Study Island')]");
 			
 			Thread.sleep(3000);					
 	
@@ -433,7 +421,7 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 		}		
 		
 	}
-//	@Test(priority=10)	
+    @Test(priority=10)	
 	public void TCED19810()
 	{
 		try
@@ -455,7 +443,7 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 		}
 		
 	}
-//	@Test(priority=11)	
+	@Test(priority=11)	
 	public void TCED19811()
 	{
 		
@@ -465,10 +453,11 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			Thread.sleep(2000);
 			
 			//Click on Change Tier button for a particular Student
-			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnChangeTier']"); 			
+			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnChangeTier']"); 
+			Thread.sleep(2000);
 						
 			//Assert the page heading as Change Tier
-			Assert.assertEquals(getText("//h6[@class='rwTitle']"),"Change Tier");
+			Assert.assertEquals(getText("//*[@id='RadWindowWrapper_ctl00_MainContent_rwChangeTier']/div[1]/div/h6"),"Change Tier");
 			
 			driver.switchTo().frame("rwChangeTier");
 			
@@ -484,7 +473,11 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			}
 			Thread.sleep(3000);			
 			driver.navigate().refresh();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
+			if(isAlertPresents())
+			{
+				driver.switchTo().alert().dismiss();
+			}
 			//Assert the Label "Fix & Delete Intervention Plans"
 			Assert.assertEquals(getText("//td[@class='subheading']"),"Fix/Delete Intervention Plans");
 		} 
@@ -494,13 +487,12 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}	
- //   @Test(priority=12)	
+    @Test(priority=12)	
 	public void TCED19812()	
 	{
 		try 
 		
-		  {
-			
+		  {			
 			//Application should be in the  Fix/Delete Intervention Plans page
 			
 			//Select last student to Delete
@@ -520,11 +512,13 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			//Assert the Label "Fix & Delete Intervention Plans"
 			Assert.assertEquals(getText("//td[@class='subheading']"),"Fix/Delete Intervention Plans");
 			
+			waitForEnable("//*[@id='ctl00_A3']/img");
+			
 			//click on Logout button		 
 			click("//*[@id='ctl00_A3']/img");
 			
 			//Assert the page Header as "Edinsight Login"					
-			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
+			Assert.assertEquals(driver.getTitle(),"EdInsight Login");
 		} 		
 		catch (Exception e) 
 		{
