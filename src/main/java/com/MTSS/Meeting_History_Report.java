@@ -322,8 +322,14 @@ public class Meeting_History_Report extends BaseClassOne
 	 public void TCED22511()
 	 {
 		 try
-		 {
-				  
+		 {	
+			  //click on Logout button
+			  waitForEnable("//*[@id='ctl00_A3']/img");
+			  click("//*[@id='ctl00_A3']/img");
+			  
+			  //Superintent Login
+			  login(Supertent_Login_id,Supertent_Login_Password);
+			 
 			  //hover over MTTS link			
 			   Actions actions = new Actions(driver);
 			   WebElement mouseHover = find("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a");
@@ -333,18 +339,20 @@ public class Meeting_History_Report extends BaseClassOne
 			   click("//a[contains(text(),'Meeting History Report')]");
 			   
 			   //Click on Run Report by Date Range
-			   click("//*[@id='ctl00_MainContent_rdoDateRange']");	   
+			   click("//*[@id='ctl00_MainContent_rdoDateRange']");	  			   
 			   
-			   
-			   //Select End Date :-  2/1/2018	  
-			   find("//*[@id='ctl00_MainContent_rdpStart_dateInput']").sendKeys("2/1/2018");
+			   //Select End Date :-  2/1/2018
+			   type("//*[@id='ctl00_MainContent_rdpStart_dateInput']","2/1/2018");
+			   //find("//*[@id='ctl00_MainContent_rdpStart_dateInput']").sendKeys("2/1/2018");
 			  
 			   Thread.sleep(2000);
 			   
 			   //Select End Date :-  8/3/2018
-			   find("//*[@id='ctl00_MainContent_rdgEnd_dateInput']").sendKeys("8/3/2018");			  
+			   type("//*[@id='ctl00_MainContent_rdgEnd_dateInput']","8/3/2018");
+			   //find("//*[@id='ctl00_MainContent_rdgEnd_dateInput']").sendKeys("8/3/2018");			  
 			   
 			   //click on Run Report
+			   waitForEnable("//*[@id='ctl00_MainContent_btnRunReport']");
 			   click("//*[@id='ctl00_MainContent_btnRunReport']");
 			   
 			  //Assert the label "Meeting History Report "
@@ -368,7 +376,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=12)
+	 @Test(priority=12)
 	 public void TCED22512()
 	 {
 		 try
@@ -392,7 +400,7 @@ public class Meeting_History_Report extends BaseClassOne
 		}
 		 
 	 }
-//	 @Test(priority=13)
+	 @Test(priority=13)
 	 public void TCED22513()
 	 {
 		 try
@@ -415,7 +423,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}	 
 	 }
-//	 @Test(priority=14)
+	 @Test(priority=14)
 	 public void TCED22514()
 	 {
 		 try
@@ -450,7 +458,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=15)
+	 @Test(priority=15)
 	 public void TCED22515()
 	 {
 		 try
@@ -472,7 +480,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}		 
 	 }
-//	 @Test(priority=16)
+	 @Test(priority=16)
 	 public void TCED22516()
 	 {
 		 try
@@ -495,7 +503,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		 }	 
 	 }
-//	 @Test(priority=17)
+	 @Test(priority=17)
 	 public void TCED22517()
 	 {
 		 try

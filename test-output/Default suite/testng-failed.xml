@@ -8,6 +8,8 @@
           <include name="TCED22511"/>
           <include name="setup1"/>
           <include name="tearDown"/>
+          <include name="TCED22512"/>
+          <include name="TCED22513"/>
         </methods>
       </class> <!-- com.MTSS.Meeting_History_Report -->
     </classes>

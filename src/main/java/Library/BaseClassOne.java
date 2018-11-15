@@ -620,6 +620,13 @@ public class BaseClassOne	{
 		((JavascriptExecutor) driver).executeScript(
 		"arguments[0].scrollIntoView();", element);
 	}
+	//Scroll to specific postion(x axis,y axis)
+	public void ScrollTo_xy_position(int x, int y)
+	{
+		((JavascriptExecutor) driver).executeScript("scroll("+x+","+y+")");	
+		                                            
+	}
+	
 	//To tkae the screen shot
 	public void Takescreenshot(String ScreenshotName)
 	{
