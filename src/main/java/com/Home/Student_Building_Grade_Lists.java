@@ -381,7 +381,7 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 			click("//input[@id='ctl00_MainContent_btnExportCSV']");
 			
 			//Assert the csv generated		
-			Thread.sleep(6000);		
+			Thread.sleep(9000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".CSV"), "Failed to download document which has extension .CSV");
 		} 
 		catch (Exception e)
@@ -402,7 +402,7 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 			click("//input[@id='ctl00_MainContent_btnExportpdf']");
 			
 			//Assert the PDF generated		
-			Thread.sleep(6000);		
+			Thread.sleep(9000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 		} 
 		catch (Exception e)
@@ -490,7 +490,7 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 			click("//input[@id='ctl00_MainContent_btnPrintToPDF']");
 			
 			//Assert the PDF generated		
-			Thread.sleep(6000);		
+			Thread.sleep(9000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			
 			//click on Logout button		 
