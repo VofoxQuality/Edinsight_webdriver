@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="24.489" tests="10" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="23.543" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -63,14 +63,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TCED13021" classname="com.localassessment.Score_Class_Results_Online" time="5.533"/>
-  <testcase name="TCED13022" classname="com.localassessment.Score_Class_Results_Online" time="5.319"/>
-  <testcase name="TCED13023" classname="com.localassessment.Score_Class_Results_Online" time="0.158"/>
-  <testcase name="TCED13024" classname="com.localassessment.Score_Class_Results_Online" time="0.661"/>
-  <testcase name="TCED13025" classname="com.localassessment.Score_Class_Results_Online" time="0.843"/>
-  <testcase name="TCED13026" classname="com.localassessment.Score_Class_Results_Online" time="2.278"/>
-  <testcase name="TCED13027" classname="com.localassessment.Score_Class_Results_Online" time="2.903"/>
-  <testcase name="TCED13028" classname="com.localassessment.Score_Class_Results_Online" time="2.654"/>
-  <testcase name="TCED13029" classname="com.localassessment.Score_Class_Results_Online" time="0.612"/>
-  <testcase name="TCED13030" classname="com.localassessment.Score_Class_Results_Online" time="3.528"/>
+  <testcase name="TCED13021" classname="com.localassessment.Score_Class_Results_Online" time="6.066"/>
+  <testcase name="TCED13022" classname="com.localassessment.Score_Class_Results_Online" time="4.242"/>
+  <testcase name="TCED13023" classname="com.localassessment.Score_Class_Results_Online" time="0.151"/>
+  <testcase name="TCED13024" classname="com.localassessment.Score_Class_Results_Online" time="0.507"/>
+  <testcase name="TCED13025" classname="com.localassessment.Score_Class_Results_Online" time="1.112"/>
+  <testcase name="TCED13026" classname="com.localassessment.Score_Class_Results_Online" time="1.966"/>
+  <testcase name="TCED13027" classname="com.localassessment.Score_Class_Results_Online" time="2.896"/>
+  <testcase name="TCED13028" classname="com.localassessment.Score_Class_Results_Online" time="2.358"/>
+  <testcase name="TCED13029" classname="com.localassessment.Score_Class_Results_Online" time="0.688"/>
+  <testcase name="TCED13030" classname="com.localassessment.Score_Class_Results_Online" time="3.557"/>
 </testsuite>

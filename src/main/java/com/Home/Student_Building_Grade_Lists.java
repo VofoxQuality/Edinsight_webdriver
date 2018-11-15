@@ -493,7 +493,8 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 			Thread.sleep(9000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			
-			//click on Logout button		 
+		    //click on Logout button
+			waitForEnable("//*[@id='ctl00_A3']/img");
 			click("//*[@id='ctl00_A3']/img");
 			
 			//Assert the page Header as "Edinsight Login"					
