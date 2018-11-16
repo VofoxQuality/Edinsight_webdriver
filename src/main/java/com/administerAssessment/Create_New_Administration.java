@@ -333,12 +333,12 @@ public class Create_New_Administration extends BaseClassOne
 			FileDelete();
 			
 			//To click print pdf
-			/*		
+				
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
 			Thread.sleep(10000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-			 */
+			 
 			//To click on the print word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']"); 
@@ -347,14 +347,14 @@ public class Create_New_Administration extends BaseClassOne
 
 			//To delete all the files in the directory
 			FileDelete();
-			/*	
+				
 			//To click on the Print OE to PDF
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkOePdfQuestions']");
 			Thread.sleep(6000);
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 
-			 */
+			 
 			//To click on the OE to Word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkOeWordQuestions']");
@@ -365,12 +365,12 @@ public class Create_New_Administration extends BaseClassOne
 
 			//To delete all the files in the directory
 			FileDelete();
-			/*	
+				
 			//To click print pdf
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfAnswer']");
 			Thread.sleep(6000);
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-			 */
+			 
 			//To click on the print word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordAnswer']");
