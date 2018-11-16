@@ -3,18 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Home.Notes_Tracking_Summary">
+      <class name="com.analyzeByScore.Local_Assessment_Item_Analysisby_Student">
         <methods>
-          <include name="TCED33604"/>
-          <include name="TCED33606"/>
+          <include name="TCED14128"/>
+          <include name="TCED14127"/>
+          <include name="TCED14126"/>
           <include name="setup1"/>
-          <include name="TCED33603"/>
-          <include name="TCED33602"/>
-          <include name="TCED33605"/>
-          <include name="TCED33601"/>
+          <include name="TCED14124"/>
+          <include name="TCED14123"/>
+          <include name="TCED14122"/>
+          <include name="TCED14125"/>
           <include name="tearDown"/>
+          <include name="TCED14121"/>
         </methods>
-      </class> <!-- com.Home.Notes_Tracking_Summary -->
+      </class> <!-- com.analyzeByScore.Local_Assessment_Item_Analysisby_Student -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -40,7 +40,7 @@ public class Meeting_History_Report extends BaseClassOne
 		  }	
 	   
 	 }
-//	 @Test(priority=2)
+	 @Test(priority=2)
 	 public void TCED22502()
 	 {
 		 try
@@ -83,7 +83,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=3)
+	 @Test(priority=3)
 	 public void TCED22503()
 	 {
 		 try
@@ -102,7 +102,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=4)
+	 @Test(priority=4)
 	 public void TCED22504()
 	 {
 		 try
@@ -124,7 +124,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		 }		 
 	 }
-//	 @Test(priority=5)
+	 @Test(priority=5)
 	 public void TCED22505()
 	 {
 		 //Application should be in the Meeting History Report  page
@@ -184,7 +184,7 @@ public class Meeting_History_Report extends BaseClassOne
 		 Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgHirstoryReport_ctl00']/thead/tr[1]/th[22]/a"),"Submitted");
 		 
 	 }
-//	 @Test(priority=6)
+	 @Test(priority=6)
 	 public void TCED22506()
 	 {
 		 try
@@ -207,7 +207,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=7)
+	 @Test(priority=7)
 	 public void TCED22507()
 	 {
 		 try
@@ -230,7 +230,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=8)
+	 @Test(priority=8)
 	 public void TCED22508()
 	 {
 		 try
@@ -264,7 +264,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=9)
+	 @Test(priority=9)
 	 public void TCED22509()
 	 {
 		 try
@@ -298,7 +298,7 @@ public class Meeting_History_Report extends BaseClassOne
 			e.printStackTrace();
 		}
 	 }
-//	 @Test(priority=10)
+	 @Test(priority=10)
 	 public void TCED22510()
 	 {
 		 try
@@ -322,26 +322,37 @@ public class Meeting_History_Report extends BaseClassOne
 	 public void TCED22511()
 	 {
 		 try
-		 {
-				  
+		 {	
+			  //click on Logout button
+			  waitForEnable("//*[@id='ctl00_A3']/img");
+			  click("//*[@id='ctl00_A3']/img");
+			  
+			  //Superintent Login
+			  login(Supertent_Login_id,Supertent_Login_Password);
+			 
 			  //hover over MTTS link			
 			   Actions actions = new Actions(driver);
-			   WebElement mouseHover = find("//a[contains(text(),'MTSS')]");
+			   WebElement mouseHover = find("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a");
 			   actions.moveToElement(mouseHover).build().perform();
 			   
 			   //Click Meeting History Report 
 			   click("//a[contains(text(),'Meeting History Report')]");
 			   
 			   //Click on Run Report by Date Range
-			   click("//*[@id='ctl00_MainContent_rdoDateRange']");
+			   click("//*[@id='ctl00_MainContent_rdoDateRange']");	  			   
 			   
 			   //Select End Date :-  2/1/2018
-			   find("//*[@id='ctl00_MainContent_rdpStart_dateInput']").sendKeys("2/1/2018");
+			   type("//*[@id='ctl00_MainContent_rdpStart_dateInput']","2/1/2018");
+			   //find("//*[@id='ctl00_MainContent_rdpStart_dateInput']").sendKeys("2/1/2018");
+			  
+			   Thread.sleep(2000);
 			   
 			   //Select End Date :-  8/3/2018
-			   find("//*[@id='ctl00_MainContent_rdgEnd_dateInput']").sendKeys("8/3/2018");
+			   type("//*[@id='ctl00_MainContent_rdgEnd_dateInput']","8/3/2018");
+			   //find("//*[@id='ctl00_MainContent_rdgEnd_dateInput']").sendKeys("8/3/2018");			  
 			   
 			   //click on Run Report
+			   waitForEnable("//*[@id='ctl00_MainContent_btnRunReport']");
 			   click("//*[@id='ctl00_MainContent_btnRunReport']");
 			   
 			  //Assert the label "Meeting History Report "
@@ -509,7 +520,8 @@ public class Meeting_History_Report extends BaseClassOne
 			 //Assert the extension of the downloaded file
 			 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			 
-			//click on Logout button		 
+			//click on Logout button
+			waitForEnable("//*[@id='ctl00_A3']/img");
 			click("//*[@id='ctl00_A3']/img");
 				
 			//Assert the page Header as "Edinsight Login"					
