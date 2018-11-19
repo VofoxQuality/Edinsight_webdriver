@@ -34,69 +34,58 @@ public class Manage_meetings extends BaseClassOne {
 			// To click in intervention plans
 			click("//*[@id='ctl00_MainContent_trTierStudentsPlanInterventions']/td[2]/a");
 
-
+			// TO select the School & grade
 			select("//*[@id='ctl00_MainContent_ddlEducationProvider']","Bird-in-Hand Elementary School");
-
 			select("//*[@id='ctl00_MainContent_ddlCurrentGradeLevel']","Fourth Grade");
 
 			// To click on search
 			click("//*[@id='ctl00_MainContent_btnSearch']");
 
 			Thread.sleep(2000);
-
+			// To click and select the tire interventions
 			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_chkSelectUserSelectCheckBox']");
-
 			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl06_chkSelectUserSelectCheckBox']");
-
 			select("//*[@id='ctl00_MainContent_RTIMassTieringControl1_ddlTierMulti']","Tier 2");
-
 			click("//*[@id='ctl00_MainContent_RTIMassTieringControl1_btnTier']");
 
 			Thread.sleep(7000);
-
+			// To click interventions
 			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnIntervention']");
 
 			Thread.sleep(4000);
-
+			// Frame select
 			SwitchFrameName("RadWindow1");
-
+			// To click interventions
 			click("//*[@id='ctl00_ContentPlaceHolder1_ctl00_ctl00_gridInvervention_ctl02_btnAddIntervention']");		
-
+			// Frame select
 			SwitchFrameName("RadWindow2");
-
+			// To click interventions
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
 			Thread.sleep(4000);
+			// To click and select  interventions from list
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_DropDown']/div/ul/li[1]/label/input");
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
 
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
 
-
+			// To click the select  details to submit the intervention details from dropdown
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_trMeasureAssmnt']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Arrow']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_DropDown']/div/ul/li[2]");
-
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlDuration']","2");
-
+			// To scroll to location
 			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_lblPersonResponsible']");
 			Thread.sleep(3000);
-
+			// To select  details to submit the intervention details from dropdown
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyTPR']","2");
 
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyMPS']","10");
-
+			// To click the select  details to submit the intervention details from dropdown
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_DropDown']/div/ul/li[2]/label/input");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveSubmit']");
 
 			Thread.sleep(3000);
@@ -104,53 +93,43 @@ public class Manage_meetings extends BaseClassOne {
 			Thread.sleep(3000);
 			click("//*[@id='RadWindowWrapper_ctl00_MainContent_RadWindow1']/div[1]/div/ul/li[2]/span");
 			Thread.sleep(4000);
-/***********************/
+
 
 			Thread.sleep(4000);
-
+			// To click interventions
 			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl06_btnIntervention']");
 
 			Thread.sleep(4000);
-
+			// Frame select
 			SwitchFrameName("RadWindow1");
-
+			// To click interventions
 			click("//*[@id='ctl00_ContentPlaceHolder1_ctl00_ctl00_gridInvervention_ctl02_btnAddIntervention']");		
-
+			// Frame select
 			SwitchFrameName("RadWindow2");
-
+			// To click the select  details to submit the intervention details from dropdown
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
 			Thread.sleep(4000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_DropDown']/div/ul/li[1]/label/input");
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
 
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
-
+			// To click the select  details to submit the intervention details from dropdown
 
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_trMeasureAssmnt']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Arrow']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_DropDown']/div/ul/li[2]");
-
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlDuration']","2");
 
 			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_lblPersonResponsible']");
 			Thread.sleep(3000);
-
+			// To click the select  details to submit the intervention details from dropdown
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyTPR']","2");
-
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyMPS']","10");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_DropDown']/div/ul/li[2]/label/input");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
-
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveSubmit']");
 
 			Thread.sleep(3000);
@@ -909,6 +888,7 @@ public class Manage_meetings extends BaseClassOne {
 			
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnClose']");
 			
+		// For Future Scripts	
 			// To assert the validations	
 	//		Assert.assertEquals((readAlertMessageText()), "There are still unsubmitted intervention plans.  Are you sure you want to close this window?");		
 			// To accept the alert
@@ -919,6 +899,52 @@ public class Manage_meetings extends BaseClassOne {
 			// To assert the validations		
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/table/tbody/tr[1]/td"), "Meetings");		
 
+		} 
+
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}        
+
+	}
+
+
+}
+			
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************** For Future Purpose***************/
+			
+			
+			
 /*			//Hover over MTTS link			
 			Actions actions11 = new Actions(driver);
 			WebElement mouseHover11 = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
@@ -957,18 +983,7 @@ public class Manage_meetings extends BaseClassOne {
 			
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnClose']");
 */
-		} 
-
-		catch (Exception e) 
-		{
-			e.printStackTrace();
-			Assert.fail(e.getMessage());
-		}        
-
-	}
-
-
-}
+	
 
 
 

@@ -144,8 +144,7 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 		try
 		{
            //Application should be in the Student Building/Grade lists Param page
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("scroll(0,100)");
+			ScrollTo_xy_position(0,100);
 			
 			//Assert the Labels:-Student ID 
 			Assert.assertEquals(getText("//th[contains(text(),'Student ID')]"),"Student ID");
@@ -304,6 +303,8 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 			{
 			click("//*[@id='ctl00_MainContent_rbSearchByGroup']");
 			}
+			Thread.sleep(2000);
+			
 			//select Group: 00 123 MR
 			select("//select[@id='ctl00_MainContent_ddlStudentGroup']","label=00 123 MR");
 			
@@ -381,7 +382,7 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 			click("//input[@id='ctl00_MainContent_btnExportCSV']");
 			
 			//Assert the csv generated		
-			Thread.sleep(9000);		
+			Thread.sleep(6000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".CSV"), "Failed to download document which has extension .CSV");
 		} 
 		catch (Exception e)
@@ -402,7 +403,7 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 			click("//input[@id='ctl00_MainContent_btnExportpdf']");
 			
 			//Assert the PDF generated		
-			Thread.sleep(9000);		
+			Thread.sleep(6000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 		} 
 		catch (Exception e)
@@ -466,7 +467,8 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 		   Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"),"Create New Group:");
 		   
 		   driver.switchTo().parentFrame();
-		   //click("//*[@id='RadWindowWrapper_ctl00_MainContent_StudentGroupWindowUniqueNameToAvoidErrorsIHope2']/div[1]/div/ul/li/span");
+		   
+		   //click on close button		   
 		   click("//span[@title='Close']");
 
 		} 
@@ -482,15 +484,14 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 		try
 		{
            //Application should be in the Student Building/Grade lists Param page
-			JavascriptExecutor js=(JavascriptExecutor)driver;
-			js.executeScript("scroll(0,0)");
+			ScrollTo_xy_position(0,0);
 			FileDelete();
 			
 			//Click on  Export to PDF
 			click("//input[@id='ctl00_MainContent_btnPrintToPDF']");
 			
 			//Assert the PDF generated		
-			Thread.sleep(9000);		
+			Thread.sleep(6000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			
 		    //click on Logout button
