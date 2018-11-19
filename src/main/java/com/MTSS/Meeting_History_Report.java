@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+/**
+ * Akhil
+ */
 
 import Library.BaseClassOne;
 
@@ -324,7 +327,7 @@ public class Meeting_History_Report extends BaseClassOne
 		 try
 		 {	
 			  //click on Logout button
-			  waitForEnable("//*[@id='ctl00_A3']/img");
+			 waitForEnable("//*[@id='ctl00_A3']/img");
 			  click("//*[@id='ctl00_A3']/img");
 			  
 			  //Superintent Login
