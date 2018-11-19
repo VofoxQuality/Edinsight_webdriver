@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Home.Student_Building_Grade_Lists">
+      <class name="com.MTSS.Meeting_History_Report">
         <methods>
-          <include name="TCED33203"/>
-          <include name="TCED33214"/>
-          <include name="TCED33205"/>
-          <include name="TCED33206"/>
+          <include name="TCED22511"/>
           <include name="setup1"/>
-          <include name="TCED33204"/>
-          <include name="TCED33215"/>
-          <include name="TCED33209"/>
-          <include name="TCED33207"/>
-          <include name="TCED33208"/>
-          <include name="TCED33201"/>
-          <include name="TCED33212"/>
-          <include name="TCED33202"/>
-          <include name="TCED33213"/>
-          <include name="TCED33210"/>
-          <include name="TCED33211"/>
+          <include name="TCED22517"/>
+          <include name="tearDown"/>
+          <include name="TCED22515"/>
+          <include name="TCED22512"/>
+          <include name="TCED22513"/>
         </methods>
-      </class> <!-- com.Home.Student_Building_Grade_Lists -->
+      </class> <!-- com.MTSS.Meeting_History_Report -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
