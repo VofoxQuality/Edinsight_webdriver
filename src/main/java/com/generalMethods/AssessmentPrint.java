@@ -32,7 +32,7 @@ public class AssessmentPrint extends BaseClassOne
 		click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']");
 		Thread.sleep(10000);
 		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
-
+		
 		//To delete all the files in the directory
 		FileDelete();
 			

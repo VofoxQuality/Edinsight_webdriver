@@ -94,7 +94,7 @@
 						<suiteXmlFile>VED0024-Student_Assessment_Administration_Resultsby_Teacher.xml</suiteXmlFile>
 						<suiteXmlFile>VED0043-Fix_and_Delete_Intervention_Plans.xml</suiteXmlFile>
 						<suiteXmlFile>VED0045-Manage Meetings.xml</suiteXmlFile>
-						<suiteXmlFile>VED0052-Meeting History Report.xml</suiteXmlFile>
+						<suiteXmlFile>VED0052-Meeting_History_Report.xml</suiteXmlFile>
 						<suiteXmlFile>VED0054-Tier_History_Report.xml</suiteXmlFile>
 						<suiteXmlFile>VED0058-Tiered_Students_With_No_Intervention_Plan.xml</suiteXmlFile>
 						<suiteXmlFile>VED0082-Browse_By_Standard.xml</suiteXmlFile>

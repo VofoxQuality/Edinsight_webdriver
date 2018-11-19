@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="23.543" tests="10" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="12.682" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -35,7 +35,7 @@
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
     <property name="library.jansi.path" value="E:\apache-maven-3.5.4\bin\..\lib\jansi-native"/>
-    <property name="surefire.suiteXmlFiles" value="VED0016-Score_Class_Results_Online.xml"/>
+    <property name="surefire.suiteXmlFiles" value="VED0036-MTSS_Tier_Intervention_Menu.xml"/>
     <property name="user.home" value="C:\Users\Developer"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dsurefire.suiteXmlFiles=VED0016-Score_Class_Results_Online.xml"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dsurefire.suiteXmlFiles=VED0036-MTSS_Tier_Intervention_Menu.xml"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,14 +63,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TCED13021" classname="com.localassessment.Score_Class_Results_Online" time="6.066"/>
-  <testcase name="TCED13022" classname="com.localassessment.Score_Class_Results_Online" time="4.242"/>
-  <testcase name="TCED13023" classname="com.localassessment.Score_Class_Results_Online" time="0.151"/>
-  <testcase name="TCED13024" classname="com.localassessment.Score_Class_Results_Online" time="0.507"/>
-  <testcase name="TCED13025" classname="com.localassessment.Score_Class_Results_Online" time="1.112"/>
-  <testcase name="TCED13026" classname="com.localassessment.Score_Class_Results_Online" time="1.966"/>
-  <testcase name="TCED13027" classname="com.localassessment.Score_Class_Results_Online" time="2.896"/>
-  <testcase name="TCED13028" classname="com.localassessment.Score_Class_Results_Online" time="2.358"/>
-  <testcase name="TCED13029" classname="com.localassessment.Score_Class_Results_Online" time="0.688"/>
-  <testcase name="TCED13030" classname="com.localassessment.Score_Class_Results_Online" time="3.557"/>
+  <testcase name="TCED19101" classname="com.MTSS.MTSS_Tier_Intervention_Menu" time="7.128"/>
+  <testcase name="TCED19102" classname="com.MTSS.MTSS_Tier_Intervention_Menu" time="0.734"/>
+  <testcase name="TCED19103" classname="com.MTSS.MTSS_Tier_Intervention_Menu" time="1.732"/>
+  <testcase name="TCED19104" classname="com.MTSS.MTSS_Tier_Intervention_Menu" time="1.578"/>
+  <testcase name="TCED19105" classname="com.MTSS.MTSS_Tier_Intervention_Menu" time="1.51"/>
 </testsuite>
