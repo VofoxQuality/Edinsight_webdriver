@@ -632,8 +632,14 @@ public class BaseClassOne	{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 	}
-	
+	//Scroll to specific postion(x axis,y axis)
+	 public void ScrollTo_xy_position(int x, int y)
+	 {
+	  ((JavascriptExecutor) driver).executeScript("scroll("+x+","+y+")"); 
+	                                              
+	 }
 	//*****************************************Test Listner *********************************	
 
 }
