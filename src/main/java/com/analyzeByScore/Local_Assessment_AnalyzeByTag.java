@@ -7,6 +7,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.generalMethods.Summary_report_drill_down_grid;
+
 import java.util.regex.Pattern;
 import Library.BaseClassOne;
 
@@ -34,14 +37,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{
-			//Click on main menu local Assignment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//a[contains(text(),'Analyze Scores')]");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -148,39 +145,16 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			
 			//Drill down from Total Scheduled Students
 			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[2]/a");
-			
+				
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			////Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();
 						
 		} 
 		catch (Exception e)
@@ -194,18 +168,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{	
-			Thread.sleep(2000);
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -234,32 +198,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();
 						
 		} 
 		catch (Exception e)
@@ -273,16 +214,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//Click on main menu local Assignment.
-			 Actions actions = new Actions(driver);
-			 WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			 actions.moveToElement(mouseHover).build().perform();		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -302,7 +235,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
 			
-			//Drill down from  Total test completed and scored
+			//Drill down from  Total tests started but not completed
 			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[4]/a");
 			
 			//Assert the label Assessment Students List
@@ -311,32 +244,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();
 						
 		} 
 		catch (Exception e)
@@ -350,17 +260,10 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			 Actions actions = new Actions(driver);
-			 WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			 actions.moveToElement(mouseHover).build().perform();		
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
-			
-			//* Assert the header "Analyze by Tag"
+			//Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
 			
 			//To fill the the Test ID Search 
@@ -391,32 +294,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();
 						
 		} 
 		catch (Exception e)
@@ -430,16 +310,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//Click on main menu local Assignment.
-			 Actions actions = new Actions(driver);
-			 WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			 actions.moveToElement(mouseHover).build().perform();			
-			
-			//To click on the analyze by Score
-			click("//a[contains(text(),'Analyze Scores')]");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -473,32 +345,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();
 						
 		} 
 		catch (Exception e)
@@ -512,16 +361,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//Click on main menu local Assignment.
-			 Actions actions = new Actions(driver);
-			 WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			 actions.moveToElement(mouseHover).build().perform();	
-			
-			//To click on the analyze by Score
-			click("//a[contains(text(),'Analyze Scores')]");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -592,16 +433,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//Click on main menu local Assignment.
-			 Actions actions = new Actions(driver);
-			 WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			 actions.moveToElement(mouseHover).build().perform();		
-			
-			//To click on the analyze by Score
-			click("//a[contains(text(),'Analyze Scores')]");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -682,35 +515,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
-			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
-			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();
 						
 		} 
 		catch (Exception e)
@@ -724,18 +531,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//Application should be in the Analyze by Tag Report page
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -764,32 +561,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();
 						
 		} 
 		catch (Exception e)
@@ -803,18 +577,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//Application should be in the Analyze by Tag Report page
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -893,21 +657,11 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//Application should be in the Analyze by Tag Report page
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
-			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
 			
 			//To fill the the Test ID Search 
 			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
@@ -948,32 +702,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();
 						
 		} 
 		catch (Exception e)
@@ -987,21 +718,11 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//Application should be in the Analyze by Tag Report page
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
-			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
 			
 			//To fill the the Test ID Search 
 			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
@@ -1045,32 +766,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();	
 						
 		} 
 		catch (Exception e)
@@ -1084,21 +782,11 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//Application should be in the Analyze by Tag Report page
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
-			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
 			
 			//To fill the the Test ID Search 
 			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
@@ -1138,32 +826,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();
 						
 		} 
 		catch (Exception e)
@@ -1177,21 +842,11 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//Application should be in the Analyze by Tag Report page
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
-			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
 			
 			//To fill the the Test ID Search 
 			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
@@ -1267,32 +922,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();	
 		}
 		catch (Exception e)
 		{
@@ -1305,20 +937,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-             //Application should be in the Analyze by Tag Report page
-			
-			//Application should be in the Analyze by Tag Report page
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -1354,32 +974,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();
 		}
 		catch (Exception e)
 		{
@@ -1392,20 +989,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-            //Application should be in the Analyze by Tag Report page
-			
-			//Application should be in the Analyze by Tag Report page
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -1441,32 +1026,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();		
 		}
 		catch (Exception e)
 		{
@@ -1479,23 +1041,11 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-            //Application should be in the Analyze by Tag Report page
-			
-			//Application should be in the Analyze by Tag Report page
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
-			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
 			
 			//To fill the the Test ID Search 
 			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
@@ -1531,32 +1081,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 		    Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 						
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-						
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-						
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-						
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-						
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-						
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-						
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-						
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-						
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();		
 									
 		} 
 		catch (Exception e)
@@ -1570,23 +1097,11 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-            //Application should be in the Analyze by Tag Report page
-			
-			//Application should be in the Analyze by Tag Report page
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
-			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
 			
 			//To fill the the Test ID Search 
 			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
@@ -1622,32 +1137,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 		    Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 						
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-						
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-						
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-						
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-						
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-						
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-						
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-						
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-						
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();		
 									
 		} 
 		catch (Exception e)
@@ -1661,23 +1153,11 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-            //Application should be in the Analyze by Tag Report page
-			
-			//Application should be in the Analyze by Tag Report page
-			//Click on main menu local Assignment.			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-			actions.moveToElement(mouseHover).build().perform();
-			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");		
-			
-			//To click on the analyze by Score
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-			
-			//To click on the Beta Summary reports(Analyze By Tag New)
-			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			//navigate to analyze score param page after login
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
-			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
 			
 			//To fill the the Test ID Search 
 			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
@@ -1713,32 +1193,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 		    Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 						
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-						
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-						
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-						
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-						
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-						
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-						
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-						
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-						
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			AT.summary_report_studentlist_grid();		
 									
 		} 
 		catch (Exception e)
@@ -1825,16 +1282,17 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			click("//*[@id='ctl00_ContentPlaceHolder1_RadContextMenu2_detached']/ul/li[2]/span");
 			Thread.sleep(3000);
 			
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
-			
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");			
 			
 		
-	}catch(Exception e) 
+	}
+	catch(Exception e) 
 	{
 	e.printStackTrace();
 	Assert.fail(e.getMessage());
 	}
-    }
+		
+  }
 	@Test(priority=27)
 	public void TCED14327()
 	{
@@ -1919,6 +1377,29 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.fail(e.getMessage());
 		}	
 		}
+	    //navigate to analyze score param page after login
+	    public void navigate_to_analyze_tag_param_page()
+	    {
+	    	
+			 try
+			    {
+					//Hover over main menu local Assignment.			
+					Actions actions = new Actions(driver);
+					WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+					actions.moveToElement(mouseHover).build().perform();					
+					
+					//To click on the analyze by Score
+					click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
+					
+					//To click on the Beta Summary reports(Analyze By Tag New)
+					click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+				} 
+			 catch (Exception e)
+			    {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}	    	
+	    }
 	
 }	
 

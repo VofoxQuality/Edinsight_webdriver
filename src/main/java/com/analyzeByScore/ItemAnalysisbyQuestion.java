@@ -99,7 +99,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		try
 		{
 			// To click the Studentcountlink
-			click("//a[contains(text(),'8')]");
+			click("//a[contains(text(),'16')]");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
@@ -121,7 +121,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			//To click on the run report param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 			// To click the Studentcountlink
-			click("//a[contains(text(),'6(75%)')]");
+			click("//a[contains(text(),'6(37.5%)')]");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
@@ -144,7 +144,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			//To click on the run report param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 			// To click the Studentcountlink
-			click("//a[contains(text(),'1(12.5%)')]");
+			click("//a[contains(text(),'1(6.25%)')]");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
@@ -231,7 +231,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		try
 		{
 			// TO click the link
-			click("//a[contains(text(),'4')]");
+			click("//a[contains(text(),'5')]");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 		}catch(Exception e) 
@@ -260,7 +260,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			//To click on the run report param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 
-			click("//a[contains(text(),'2(50%)')]");
+			click("//a[contains(text(),'5')]");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
@@ -291,7 +291,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			//To click on the run report param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 
-			click("//a[contains(text(),'1(25%)')]");
+			click("//a[contains(text(),'1(20%)')]");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
@@ -385,7 +385,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		try
 		{
 			// TO click the link
-			click("//a[contains(text(),'8')]");
+			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[2]/a");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
@@ -411,7 +411,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			// Method for StudentFilters
 			StudentFiltersParampage();
 
-			click("//a[contains(text(),'6(75%)')]");
+			click("//a[contains(text(),'6(37.5%)')]");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
@@ -434,7 +434,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			Thread.sleep(1000);
 			// Method for StudentFilters
 			StudentFiltersParampage();
-			click("//a[contains(text(),'1(12.5%)')]");
+			click("//a[contains(text(),'1(6.25%)')]");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
