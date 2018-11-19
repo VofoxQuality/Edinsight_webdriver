@@ -615,23 +615,12 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 	{
 		try
 		{
-			//To switch to parent frame
-			//		driver.switchTo().parentFrame();
-
-			//	Thread.sleep(2000);
-
-			//			AssessmentPrint obj = new AssessmentPrint();
-			//			String xpath = "//a[@id='ctl00_MainContent_lnkassessmentPDF']";
-			//			obj.AssessmentPrintReports(xpath);
-			//
-			//			
-
 			driver.switchTo().parentFrame();
 
-			click("//*[@id='ctl00_MainContent_lnkassessmentPDF']");
+
 			Thread.sleep(2000);
 			//To click here to see the test
-		//	click("//*[@id='ctl00_MainContent_lnkAnswerKey']");
+			click("//*[@id='ctl00_MainContent_lnkassessmentPDF']");
 
 			//To select the frame
 			SwitchFrameName("Assessment Print");
@@ -639,19 +628,18 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			//To delete all the files in the directory
 			FileDelete();
 
-			//To click print pdf
-			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
-			Thread.sleep(25000);
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-
 			//To click on the print word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']");
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
-
+			
 			//To delete all the files in the directory
 			FileDelete();
+			//To click print pdf
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
+			Thread.sleep(5000);
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 
 			//To click on the Print OE to PDF
 			Thread.sleep(3000);
@@ -697,14 +685,6 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedWord']");
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
-
-
-
-
-
-
-
-
 
 
 		}catch(Exception e) 
