@@ -1,196 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="15" passed="12">
+<testng-results skipped="0" failed="0" total="27" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="148629" started-at="2018-11-15T11:38:02Z" finished-at="2018-11-15T11:40:31Z">
+  <suite name="Default suite" duration-ms="291325" started-at="2018-11-19T06:49:04Z" finished-at="2018-11-19T06:53:56Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="148629" started-at="2018-11-15T11:38:02Z" finished-at="2018-11-15T11:40:31Z">
-      <class name="com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="setup1" is-config="true" duration-ms="13341" started-at="2018-11-15T17:08:02Z" finished-at="2018-11-15T17:08:15Z">
+    <test name="Default test" duration-ms="291325" started-at="2018-11-19T06:49:04Z" finished-at="2018-11-19T06:53:56Z">
+      <class name="com.analyzeByScore.Local_Assessment_AnalyzeByTag">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="setup1" is-config="true" duration-ms="16232" started-at="2018-11-19T12:19:04Z" finished-at="2018-11-19T12:19:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED14151()[pri:1, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14151" duration-ms="12431" started-at="2018-11-15T17:08:15Z" finished-at="2018-11-15T17:08:28Z">
+        <test-method status="PASS" signature="TCED14301()[pri:1, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14301" duration-ms="7358" started-at="2018-11-19T12:19:21Z" finished-at="2018-11-19T12:19:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14151 -->
-        <test-method status="PASS" signature="TCED14152()[pri:2, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14152" duration-ms="287" started-at="2018-11-15T17:08:28Z" finished-at="2018-11-15T17:08:28Z">
+        </test-method> <!-- TCED14301 -->
+        <test-method status="PASS" signature="TCED14302()[pri:2, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14302" duration-ms="6695" started-at="2018-11-19T12:19:28Z" finished-at="2018-11-19T12:19:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14152 -->
-        <test-method status="PASS" signature="TCED14153()[pri:3, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14153" duration-ms="2020" started-at="2018-11-15T17:08:28Z" finished-at="2018-11-15T17:08:30Z">
+        </test-method> <!-- TCED14302 -->
+        <test-method status="PASS" signature="TCED14303()[pri:3, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14303" duration-ms="539" started-at="2018-11-19T12:19:35Z" finished-at="2018-11-19T12:19:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14153 -->
-        <test-method status="PASS" signature="TCED14154()[pri:4, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14154" duration-ms="17282" started-at="2018-11-15T17:08:30Z" finished-at="2018-11-15T17:08:47Z">
+        </test-method> <!-- TCED14303 -->
+        <test-method status="PASS" signature="TCED14304()[pri:4, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14304" duration-ms="1270" started-at="2018-11-19T12:19:35Z" finished-at="2018-11-19T12:19:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14154 -->
-        <test-method status="FAIL" signature="TCED14155()[pri:5, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14155" duration-ms="4272" started-at="2018-11-15T17:08:47Z" finished-at="2018-11-15T17:08:52Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failed to download document which has extension .PDF expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed to download document which has extension .PDF expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher.TCED14155(StudentAssessmentAdministrationResultsbyTeacher.java:236)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- TCED14304 -->
+        <test-method status="PASS" signature="TCED14305()[pri:5, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14305" duration-ms="6324" started-at="2018-11-19T12:19:37Z" finished-at="2018-11-19T12:19:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14155 -->
-        <test-method status="FAIL" signature="TCED14156()[pri:6, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14156" duration-ms="4329" started-at="2018-11-15T17:08:52Z" finished-at="2018-11-15T17:08:56Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failed to download document which has extension .CSV expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed to download document which has extension .CSV expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher.TCED14156(StudentAssessmentAdministrationResultsbyTeacher.java:258)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- TCED14305 -->
+        <test-method status="PASS" signature="TCED14306()[pri:6, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14306" duration-ms="5880" started-at="2018-11-19T12:19:43Z" finished-at="2018-11-19T12:19:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14156 -->
-        <test-method status="PASS" signature="TCED14157()[pri:7, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14157" duration-ms="2421" started-at="2018-11-15T17:08:56Z" finished-at="2018-11-15T17:08:58Z">
+        </test-method> <!-- TCED14306 -->
+        <test-method status="PASS" signature="TCED14307()[pri:7, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14307" duration-ms="8218" started-at="2018-11-19T12:19:49Z" finished-at="2018-11-19T12:19:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14157 -->
-        <test-method status="PASS" signature="TCED14158()[pri:8, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14158" duration-ms="10442" started-at="2018-11-15T17:08:58Z" finished-at="2018-11-15T17:09:09Z">
+        </test-method> <!-- TCED14307 -->
+        <test-method status="PASS" signature="TCED14308()[pri:8, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14308" duration-ms="8095" started-at="2018-11-19T12:19:57Z" finished-at="2018-11-19T12:20:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14158 -->
-        <test-method status="PASS" signature="TCED14159()[pri:9, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14159" duration-ms="9280" started-at="2018-11-15T17:09:09Z" finished-at="2018-11-15T17:09:18Z">
+        </test-method> <!-- TCED14308 -->
+        <test-method status="PASS" signature="TCED14309()[pri:9, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14309" duration-ms="11110" started-at="2018-11-19T12:20:05Z" finished-at="2018-11-19T12:20:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14159 -->
-        <test-method status="PASS" signature="TCED14160()[pri:10, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14160" duration-ms="1727" started-at="2018-11-15T17:09:18Z" finished-at="2018-11-15T17:09:20Z">
+        </test-method> <!-- TCED14309 -->
+        <test-method status="PASS" signature="TCED14310()[pri:10, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14310" duration-ms="10362" started-at="2018-11-19T12:20:16Z" finished-at="2018-11-19T12:20:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14160 -->
-        <test-method status="PASS" signature="TCED14161()[pri:11, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14161" duration-ms="10521" started-at="2018-11-15T17:09:20Z" finished-at="2018-11-15T17:09:30Z">
+        </test-method> <!-- TCED14310 -->
+        <test-method status="PASS" signature="TCED14311()[pri:11, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14311" duration-ms="1129" started-at="2018-11-19T12:20:27Z" finished-at="2018-11-19T12:20:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14161 -->
-        <test-method status="PASS" signature="TCED14162()[pri:12, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14162" duration-ms="2530" started-at="2018-11-15T17:09:30Z" finished-at="2018-11-15T17:09:33Z">
+        </test-method> <!-- TCED14311 -->
+        <test-method status="PASS" signature="TCED14312()[pri:12, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14312" duration-ms="6466" started-at="2018-11-19T12:20:28Z" finished-at="2018-11-19T12:20:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14162 -->
-        <test-method status="PASS" signature="TCED14163()[pri:13, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14163" duration-ms="11077" started-at="2018-11-15T17:09:33Z" finished-at="2018-11-15T17:09:44Z">
+        </test-method> <!-- TCED14312 -->
+        <test-method status="PASS" signature="TCED14313()[pri:13, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14313" duration-ms="11237" started-at="2018-11-19T12:20:34Z" finished-at="2018-11-19T12:20:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14163 -->
-        <test-method status="PASS" signature="TCED14164()[pri:14, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14164" duration-ms="28196" started-at="2018-11-15T17:09:44Z" finished-at="2018-11-15T17:10:12Z">
+        </test-method> <!-- TCED14313 -->
+        <test-method status="PASS" signature="TCED14314()[pri:14, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14314" duration-ms="11511" started-at="2018-11-19T12:20:46Z" finished-at="2018-11-19T12:20:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14164 -->
-        <test-method status="FAIL" signature="TCED14165()[pri:15, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="TCED14165" duration-ms="18400" started-at="2018-11-15T17:10:12Z" finished-at="2018-11-15T17:10:31Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failed to download document which has extension .PDF expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed to download document which has extension .PDF expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.generalMethods.AssessmentPrint.AssessmentPrintReports(AssessmentPrint.java:28)
-	at com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher.TCED14165(StudentAssessmentAdministrationResultsbyTeacher.java:624)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- TCED14314 -->
+        <test-method status="PASS" signature="TCED14315()[pri:15, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14315" duration-ms="13145" started-at="2018-11-19T12:20:57Z" finished-at="2018-11-19T12:21:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14165 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@dafa95]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-15T17:10:31Z" finished-at="2018-11-15T17:10:31Z">
+        </test-method> <!-- TCED14315 -->
+        <test-method status="PASS" signature="TCED14316()[pri:16, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14316" duration-ms="13332" started-at="2018-11-19T12:21:10Z" finished-at="2018-11-19T12:21:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14316 -->
+        <test-method status="PASS" signature="TCED14317()[pri:17, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14317" duration-ms="7241" started-at="2018-11-19T12:21:24Z" finished-at="2018-11-19T12:21:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14317 -->
+        <test-method status="PASS" signature="TCED14318()[pri:18, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14318" duration-ms="1325" started-at="2018-11-19T12:21:31Z" finished-at="2018-11-19T12:21:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14318 -->
+        <test-method status="PASS" signature="TCED14319()[pri:19, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14319" duration-ms="8409" started-at="2018-11-19T12:21:32Z" finished-at="2018-11-19T12:21:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14319 -->
+        <test-method status="PASS" signature="TCED14320()[pri:20, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14320" duration-ms="9768" started-at="2018-11-19T12:21:40Z" finished-at="2018-11-19T12:21:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14320 -->
+        <test-method status="PASS" signature="TCED14321()[pri:21, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14321" duration-ms="8505" started-at="2018-11-19T12:21:50Z" finished-at="2018-11-19T12:21:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14321 -->
+        <test-method status="PASS" signature="TCED14322()[pri:22, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14322" duration-ms="9710" started-at="2018-11-19T12:21:59Z" finished-at="2018-11-19T12:22:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14322 -->
+        <test-method status="PASS" signature="TCED14323()[pri:23, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14323" duration-ms="11123" started-at="2018-11-19T12:22:08Z" finished-at="2018-11-19T12:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14323 -->
+        <test-method status="PASS" signature="TCED14324()[pri:24, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14324" duration-ms="14698" started-at="2018-11-19T12:22:20Z" finished-at="2018-11-19T12:22:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14324 -->
+        <test-method status="PASS" signature="TCED14325()[pri:25, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14325" duration-ms="8934" started-at="2018-11-19T12:22:34Z" finished-at="2018-11-19T12:22:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14325 -->
+        <test-method status="PASS" signature="TCED14326()[pri:26, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14326" duration-ms="17911" started-at="2018-11-19T12:22:43Z" finished-at="2018-11-19T12:23:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14326 -->
+        <test-method status="PASS" signature="TCED14327()[pri:27, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="TCED14327" duration-ms="54650" started-at="2018-11-19T12:23:01Z" finished-at="2018-11-19T12:23:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14327 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@13ad2d6]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-19T12:23:56Z" finished-at="2018-11-19T12:23:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.analyzeByScore.Local_Assessment_AnalyzeByTag -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

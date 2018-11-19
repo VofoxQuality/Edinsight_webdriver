@@ -3,15 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.MTSS.Meeting_History_Report">
+      <class name="com.analyzeByScore.Local_Assessment_AnalyzeByTag">
         <methods>
-          <include name="TCED22511"/>
           <include name="setup1"/>
+          <include name="TCED14326"/>
+          <include name="TCED14327"/>
           <include name="tearDown"/>
-          <include name="TCED22512"/>
-          <include name="TCED22513"/>
         </methods>
-      </class> <!-- com.MTSS.Meeting_History_Report -->
+      </class> <!-- com.analyzeByScore.Local_Assessment_AnalyzeByTag -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
