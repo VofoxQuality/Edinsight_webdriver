@@ -3,14 +3,26 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.analyzeByScore.Local_Assessment_AnalyzeByTag">
+      <class name="com.Home.Student_Building_Grade_Lists">
         <methods>
+          <include name="TCED33203"/>
+          <include name="TCED33214"/>
+          <include name="TCED33205"/>
+          <include name="TCED33206"/>
           <include name="setup1"/>
-          <include name="TCED14326"/>
-          <include name="TCED14327"/>
-          <include name="tearDown"/>
+          <include name="TCED33204"/>
+          <include name="TCED33215"/>
+          <include name="TCED33209"/>
+          <include name="TCED33207"/>
+          <include name="TCED33208"/>
+          <include name="TCED33201"/>
+          <include name="TCED33212"/>
+          <include name="TCED33202"/>
+          <include name="TCED33213"/>
+          <include name="TCED33210"/>
+          <include name="TCED33211"/>
         </methods>
-      </class> <!-- com.analyzeByScore.Local_Assessment_AnalyzeByTag -->
+      </class> <!-- com.Home.Student_Building_Grade_Lists -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

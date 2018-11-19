@@ -90,7 +90,7 @@
 						<suiteXmlFile>VED0001-Copy_Assessment_Vendor_Mode.xml</suiteXmlFile>
 						<suiteXmlFile>VED0013-Create_New_Administration.xml</suiteXmlFile>
 						<suiteXmlFile>VED0022-Item_Analysis_by_Question.xml</suiteXmlFile>
-						<suiteXmlFile>VED0023-Local Assessment-Item_Analysis_by_Student.xml</suiteXmlFile>
+						<suiteXmlFile>VED0023-Local_Assessment-Item_Analysis_by_Student.xml</suiteXmlFile>
 						<suiteXmlFile>VED0024-Student_Assessment_Administration_Resultsby_Teacher.xml</suiteXmlFile>
 						<suiteXmlFile>VED0043-Fix_and_Delete_Intervention_Plans.xml</suiteXmlFile>
 						<suiteXmlFile>VED0045-Manage Meetings.xml</suiteXmlFile>
