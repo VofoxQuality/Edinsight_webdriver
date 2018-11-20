@@ -5,11 +5,31 @@
     <classes>
       <class name="com.analyzeByScore.Local_Assessment_AnalyzeByTag">
         <methods>
+          <include name="TCED14325"/>
+          <include name="TCED14322"/>
+          <include name="TCED14323"/>
+          <include name="TCED14320"/>
+          <include name="TCED14307"/>
+          <include name="TCED14326"/>
+          <include name="TCED14305"/>
+          <include name="TCED14327"/>
+          <include name="TCED14324"/>
+          <include name="TCED14308"/>
+          <include name="TCED14309"/>
+          <include name="TCED14306"/>
           <include name="setup1"/>
+          <include name="TCED14321"/>
+          <include name="TCED14314"/>
+          <include name="TCED14311"/>
+          <include name="TCED14312"/>
+          <include name="TCED14318"/>
           <include name="TCED14315"/>
           <include name="TCED14316"/>
-          <include name="TCED14327"/>
+          <include name="TCED14313"/>
+          <include name="TCED14319"/>
+          <include name="TCED14317"/>
           <include name="tearDown"/>
+          <include name="TCED14310"/>
         </methods>
       </class> <!-- com.analyzeByScore.Local_Assessment_AnalyzeByTag -->
     </classes>
