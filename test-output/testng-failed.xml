@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.MTSS.Meeting_History_Report">
+      <class name="com.analyzeByScore.ItemAnalysisbyQuestion">
         <methods>
-          <include name="TCED22511"/>
           <include name="setup1"/>
-          <include name="TCED22517"/>
+          <include name="TCED14102"/>
           <include name="tearDown"/>
-          <include name="TCED22515"/>
-          <include name="TCED22512"/>
-          <include name="TCED22513"/>
         </methods>
-      </class> <!-- com.MTSS.Meeting_History_Report -->
+      </class> <!-- com.analyzeByScore.ItemAnalysisbyQuestion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

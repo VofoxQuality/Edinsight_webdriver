@@ -524,10 +524,13 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 
 			//To click on run report in param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
-
+			Thread.sleep(2000);	
+			//To delete all the files in the directory
+			FileDelete();
+			
 			//To click on the Print on CSV
 			click("//input[@id='ctl00_MainContent_btnExportToCSV']");
-			Thread.sleep(4000);	
+			Thread.sleep(5000);	
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
 
 
