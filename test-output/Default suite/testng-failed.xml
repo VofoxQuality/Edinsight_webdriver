@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.MTSS.Fix_and_Delete_intervention_plan">
+      <class name="com.analyzeByScore.ItemAnalysisbyQuestion">
         <methods>
           <include name="setup1"/>
-          <include name="TCED19808"/>
+          <include name="TCED14102"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.MTSS.Fix_and_Delete_intervention_plan -->
+      </class> <!-- com.analyzeByScore.ItemAnalysisbyQuestion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
