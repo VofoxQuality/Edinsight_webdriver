@@ -3,17 +3,39 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.MTSS.Meeting_History_Report">
+      <class name="com.analyzeByScore.Local_Assessment_AnalyzeByTag">
         <methods>
-          <include name="TCED22511"/>
+          <include name="TCED14303"/>
+          <include name="TCED14325"/>
+          <include name="TCED14322"/>
+          <include name="TCED14301"/>
+          <include name="TCED14323"/>
+          <include name="TCED14320"/>
+          <include name="TCED14307"/>
+          <include name="TCED14304"/>
+          <include name="TCED14326"/>
+          <include name="TCED14305"/>
+          <include name="TCED14327"/>
+          <include name="TCED14302"/>
+          <include name="TCED14324"/>
+          <include name="TCED14308"/>
+          <include name="TCED14309"/>
+          <include name="TCED14306"/>
           <include name="setup1"/>
-          <include name="TCED22517"/>
+          <include name="TCED14321"/>
+          <include name="TCED14314"/>
+          <include name="TCED14311"/>
+          <include name="TCED14312"/>
+          <include name="TCED14318"/>
+          <include name="TCED14315"/>
+          <include name="TCED14316"/>
+          <include name="TCED14313"/>
+          <include name="TCED14319"/>
+          <include name="TCED14317"/>
           <include name="tearDown"/>
-          <include name="TCED22515"/>
-          <include name="TCED22512"/>
-          <include name="TCED22513"/>
+          <include name="TCED14310"/>
         </methods>
-      </class> <!-- com.MTSS.Meeting_History_Report -->
+      </class> <!-- com.analyzeByScore.Local_Assessment_AnalyzeByTag -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

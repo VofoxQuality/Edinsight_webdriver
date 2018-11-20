@@ -21,7 +21,7 @@ public class AssessmentPrint extends BaseClassOne
 		FileDelete();
 
 		//To click print pdf
-			
+		Thread.sleep(1000);
 		click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
 		Thread.sleep(10000);
 
