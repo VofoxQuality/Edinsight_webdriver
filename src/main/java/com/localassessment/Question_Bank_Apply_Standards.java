@@ -389,9 +389,7 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 			e.printStackTrace();
 		}
 		
-	}
-	
-	
+	}	
 	protected String getSaltString() {
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder salt = new StringBuilder();
