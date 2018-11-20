@@ -223,8 +223,8 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 
 
 			//To scroll up to the page
-			JavascriptExecutor jse = (JavascriptExecutor)driver;
-			jse.executeScript("window.scrollBy(0,0)", "");
+			
+			Scroll_toTop();
 			Thread.sleep(3000);
 			//To delete all the files in the directory
 			FileDelete();
