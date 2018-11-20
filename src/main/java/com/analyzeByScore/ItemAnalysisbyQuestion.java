@@ -45,29 +45,29 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		try
 		{
 			// To Assert the Validation Messages
-			Assert.assertEquals( "Total Scheduled Students:", getText("//td[contains(text(),'Total Scheduled Students:')]"));	
+			Assert.assertEquals(getText("//td[contains(text(),'Total Scheduled Students:')]"), "Total Scheduled Students:");	
 
-			Assert.assertEquals( "Total test completed and scored:", getText("//td[contains(text(),'Total test completed and scored:')]"));	
+			Assert.assertEquals( getText("//td[contains(text(),'Total test completed and scored:')]"),"Total test completed and scored:");	
 
-			Assert.assertEquals( "Total tests started but not completed:", getText("//td[contains(text(),'Total tests started but not completed:')]"));	
+			Assert.assertEquals( getText("//td[contains(text(),'Total tests started but not completed:')]"),"Total tests started but not completed:");	
 
-			Assert.assertEquals( "Run Report By Building", getText("//label[@for='ctl00_MainContent_rbBuilding']"));	
+			Assert.assertEquals( getText("//label[@for='ctl00_MainContent_rbBuilding']"),"Run Report By Building");	
 
-			Assert.assertEquals( "School:", getText("//td[contains(text(),'School:')]"));	
+			Assert.assertEquals( getText("//td[contains(text(),'School:')]"),"School:");	
 
-			Assert.assertEquals( "Select Teacher :", getText("//td[contains(text(),'Select Teacher :')]"));	
+			Assert.assertEquals( getText("//td[contains(text(),'Select Teacher :')]"),"Select Teacher :");	
 
-			Assert.assertEquals( "Course/Section :", getText("//td[contains(text(),'Course/Section :')]"));	
+			Assert.assertEquals( getText("//td[contains(text(),'Course/Section :')]"),"Course/Section :");	
 
-			Assert.assertEquals( "Run Report By Student Group", getText("//label[@for='ctl00_MainContent_rbStudentGroup']"));	
+			Assert.assertEquals( getText("//label[@for='ctl00_MainContent_rbStudentGroup']"),"Run Report By Student Group");	
 
-			Assert.assertEquals( "Student Group", getText("//span[contains(text(),'Student Group')]"));	
+			Assert.assertEquals( getText("//span[contains(text(),'Student Group')]"),"Student Group");	
 
-			Assert.assertEquals( "Filter Questions with:", getText("//td[contains(text(),'Filter Questions with:')]"));	
+			Assert.assertEquals(getText("//td[contains(text(),'Filter Questions with:')]"),"Filter Questions with:");	
 
-			Assert.assertEquals( "Rationale Display Options:", getText("//td[contains(text(),'Rationale Display Options:')]"));	
+			Assert.assertEquals( getText("//td[contains(text(),'Rationale Display Options:')]"),"Rationale Display Options:");	
 
-			Assert.assertEquals( "Display question prompt for each question", getText("//label[@for='ctl00_MainContent_chkShowQuestionPrompt']"));	
+			Assert.assertEquals( getText("//label[@for='ctl00_MainContent_chkShowQuestionPrompt']"),"Display question prompt for each question");	
 
 		}catch(Exception e) 
 		{
@@ -83,7 +83,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		{	// TO click the link
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 			// To Assert the label
-			Assert.assertEquals( "Question Standards", getText("//*[@id='ctl00_MainContent_grdQuestions_ctl02_trQuestionStandardHeading']/td/span"));	
+			Assert.assertEquals( getText("//*[@id='ctl00_MainContent_grdQuestions_ctl02_trQuestionStandardHeading']/td/span"),"Question Standards");	
 
 		}catch(Exception e) 
 		{
@@ -213,7 +213,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			BuildingFiltersParamPage();		
 
 			// To Assert the header
-			Assert.assertEquals( "Question Standards", getText("//*[@id='ctl00_MainContent_grdQuestions_ctl02_trQuestionStandardHeading']/td/span"));	
+			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_grdQuestions_ctl02_trQuestionStandardHeading']/td/span"),"Question Standards");	
 
 		}catch(Exception e) 
 		{
@@ -367,7 +367,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			// Method for StudentFilters
 			StudentFiltersParampage();
 
-			Assert.assertEquals( "Question Standards", getText("//*[@id='ctl00_MainContent_grdQuestions_ctl02_trQuestionStandardHeading']/td/span"));			
+			Assert.assertEquals( getText("//*[@id='ctl00_MainContent_grdQuestions_ctl02_trQuestionStandardHeading']/td/span"),"Question Standards");			
 
 		}catch(Exception e) 
 		{
@@ -603,7 +603,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		//To click on the item analysis by student link text
 		click("//*[@id='ctl00_MainContent_hlnkItemAnalysis']");
 
-		Assert.assertEquals( "Item Analysis by Question", getText("//span[@class='administitle']"));	
+		Assert.assertEquals(getText("//span[@class='administitle']"),"Item Analysis by Question");	
 
 		//To fill the the Test ID Search 
 		type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
@@ -627,25 +627,25 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 
 	{
 		// To Assert the Validation Messages
-		Assert.assertEquals( "Assessment Students List", getText("//span[@class='subheading']"));	
+		Assert.assertEquals( getText("//span[@class='subheading']"),"Assessment Students List");	
 
-		Assert.assertEquals( "Student ID", getText("//a[contains(text(),'Student ID')]"));
+		Assert.assertEquals( getText("//a[contains(text(),'Student ID')]"),"Student ID");
 
-		Assert.assertEquals( "Last Name", getText("//a[contains(text(),'Last Name')]"));
+		Assert.assertEquals( getText("//a[contains(text(),'Last Name')]"),"Last Name");
 
-		Assert.assertEquals( "First Name", getText("//a[contains(text(),'First Name')]"));
+		Assert.assertEquals(getText("//a[contains(text(),'First Name')]"), "First Name");
 
-		Assert.assertEquals( "Grade", getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"));
+		Assert.assertEquals( getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
 
-		Assert.assertEquals( "School", getText("//a[@title='Click here to sort'][contains(text(),'School')]"));
+		Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
 
-		Assert.assertEquals( "Ethnicity", getText("//a[contains(text(),'Ethnicity')]"));
+		Assert.assertEquals( getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
 
-		Assert.assertEquals( "IEP", getText("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00']/thead/tr[1]/th[11]/a"));
+		Assert.assertEquals( getText("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00']/thead/tr[1]/th[11]/a"),"IEP");
 
-		Assert.assertEquals( "ELL", getText("//a[contains(text(),'ELL')]"));
+		Assert.assertEquals( getText("//a[contains(text(),'ELL')]"),"ELL");
 
-		Assert.assertEquals( "Ec. Disadvantaged", getText("//a[contains(text(),'Ec. Disadvantaged')]"));
+		Assert.assertEquals( getText("//a[contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");
 	}
 
 	public void BuildingFiltersParamPage() throws InterruptedException
