@@ -1,89 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="17" passed="17">
+<testng-results skipped="0" failed="0" total="27" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="117740" started-at="2018-11-19T11:37:52Z" finished-at="2018-11-19T11:39:50Z">
+  <suite name="Default suite" duration-ms="311388" started-at="2018-11-20T06:54:13Z" finished-at="2018-11-20T06:59:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="117740" started-at="2018-11-19T11:37:52Z" finished-at="2018-11-19T11:39:50Z">
-      <class name="com.MTSS.Meeting_History_Report">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="setup1" is-config="true" duration-ms="8962" started-at="2018-11-19T11:37:52Z" finished-at="2018-11-19T11:38:01Z">
+    <test name="Default test" duration-ms="311388" started-at="2018-11-20T06:54:13Z" finished-at="2018-11-20T06:59:24Z">
+      <class name="com.analyzeByScore.Local_Assessment_AnalyzeByTag">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="setup1" is-config="true" duration-ms="23846" started-at="2018-11-20T12:24:13Z" finished-at="2018-11-20T12:24:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED22501()[pri:1, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22501" duration-ms="7627" started-at="2018-11-19T11:38:01Z" finished-at="2018-11-19T11:38:09Z">
+        <test-method status="PASS" signature="TCED14301()[pri:1, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14301" duration-ms="6685" started-at="2018-11-20T12:24:37Z" finished-at="2018-11-20T12:24:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22501 -->
-        <test-method status="PASS" signature="TCED22502()[pri:2, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22502" duration-ms="199" started-at="2018-11-19T11:38:09Z" finished-at="2018-11-19T11:38:09Z">
+        </test-method> <!-- TCED14301 -->
+        <test-method status="PASS" signature="TCED14302()[pri:2, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14302" duration-ms="6265" started-at="2018-11-20T12:24:44Z" finished-at="2018-11-20T12:24:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22502 -->
-        <test-method status="PASS" signature="TCED22503()[pri:3, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22503" duration-ms="1036" started-at="2018-11-19T11:38:09Z" finished-at="2018-11-19T11:38:10Z">
+        </test-method> <!-- TCED14302 -->
+        <test-method status="PASS" signature="TCED14303()[pri:3, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14303" duration-ms="310" started-at="2018-11-20T12:24:50Z" finished-at="2018-11-20T12:24:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22503 -->
-        <test-method status="PASS" signature="TCED22504()[pri:4, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22504" duration-ms="57" started-at="2018-11-19T11:38:10Z" finished-at="2018-11-19T11:38:10Z">
+        </test-method> <!-- TCED14303 -->
+        <test-method status="PASS" signature="TCED14304()[pri:4, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14304" duration-ms="1218" started-at="2018-11-20T12:24:50Z" finished-at="2018-11-20T12:24:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22504 -->
-        <test-method status="PASS" signature="TCED22505()[pri:5, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22505" duration-ms="295" started-at="2018-11-19T11:38:10Z" finished-at="2018-11-19T11:38:10Z">
+        </test-method> <!-- TCED14304 -->
+        <test-method status="PASS" signature="TCED14305()[pri:5, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14305" duration-ms="6440" started-at="2018-11-20T12:24:51Z" finished-at="2018-11-20T12:24:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22505 -->
-        <test-method status="PASS" signature="TCED22506()[pri:6, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22506" duration-ms="11275" started-at="2018-11-19T11:38:10Z" finished-at="2018-11-19T11:38:22Z">
+        </test-method> <!-- TCED14305 -->
+        <test-method status="PASS" signature="TCED14306()[pri:6, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14306" duration-ms="7287" started-at="2018-11-20T12:24:58Z" finished-at="2018-11-20T12:25:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22506 -->
-        <test-method status="PASS" signature="TCED22507()[pri:7, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22507" duration-ms="11311" started-at="2018-11-19T11:38:22Z" finished-at="2018-11-19T11:38:33Z">
+        </test-method> <!-- TCED14306 -->
+        <test-method status="PASS" signature="TCED14307()[pri:7, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14307" duration-ms="8696" started-at="2018-11-20T12:25:05Z" finished-at="2018-11-20T12:25:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22507 -->
-        <test-method status="PASS" signature="TCED22508()[pri:8, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22508" duration-ms="2876" started-at="2018-11-19T11:38:33Z" finished-at="2018-11-19T11:38:36Z">
+        </test-method> <!-- TCED14307 -->
+        <test-method status="PASS" signature="TCED14308()[pri:8, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14308" duration-ms="9425" started-at="2018-11-20T12:25:14Z" finished-at="2018-11-20T12:25:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22508 -->
-        <test-method status="PASS" signature="TCED22509()[pri:9, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22509" duration-ms="1002" started-at="2018-11-19T11:38:36Z" finished-at="2018-11-19T11:38:37Z">
+        </test-method> <!-- TCED14308 -->
+        <test-method status="PASS" signature="TCED14309()[pri:9, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14309" duration-ms="11310" started-at="2018-11-20T12:25:23Z" finished-at="2018-11-20T12:25:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22509 -->
-        <test-method status="PASS" signature="TCED22510()[pri:10, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22510" duration-ms="285" started-at="2018-11-19T11:38:37Z" finished-at="2018-11-19T11:38:37Z">
+        </test-method> <!-- TCED14309 -->
+        <test-method status="PASS" signature="TCED14310()[pri:10, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14310" duration-ms="10728" started-at="2018-11-20T12:25:34Z" finished-at="2018-11-20T12:25:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22510 -->
-        <test-method status="PASS" signature="TCED22511()[pri:11, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22511" duration-ms="12511" started-at="2018-11-19T11:38:37Z" finished-at="2018-11-19T11:38:50Z">
+        </test-method> <!-- TCED14310 -->
+        <test-method status="PASS" signature="TCED14311()[pri:11, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14311" duration-ms="1434" started-at="2018-11-20T12:25:45Z" finished-at="2018-11-20T12:25:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22511 -->
-        <test-method status="PASS" signature="TCED22512()[pri:12, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22512" duration-ms="11274" started-at="2018-11-19T11:38:50Z" finished-at="2018-11-19T11:39:01Z">
+        </test-method> <!-- TCED14311 -->
+        <test-method status="PASS" signature="TCED14312()[pri:12, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14312" duration-ms="6429" started-at="2018-11-20T12:25:47Z" finished-at="2018-11-20T12:25:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22512 -->
-        <test-method status="PASS" signature="TCED22513()[pri:13, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22513" duration-ms="11296" started-at="2018-11-19T11:39:01Z" finished-at="2018-11-19T11:39:12Z">
+        </test-method> <!-- TCED14312 -->
+        <test-method status="PASS" signature="TCED14313()[pri:13, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14313" duration-ms="11917" started-at="2018-11-20T12:25:53Z" finished-at="2018-11-20T12:26:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22513 -->
-        <test-method status="PASS" signature="TCED22514()[pri:14, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22514" duration-ms="3323" started-at="2018-11-19T11:39:12Z" finished-at="2018-11-19T11:39:16Z">
+        </test-method> <!-- TCED14313 -->
+        <test-method status="PASS" signature="TCED14314()[pri:14, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14314" duration-ms="12463" started-at="2018-11-20T12:26:05Z" finished-at="2018-11-20T12:26:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22514 -->
-        <test-method status="PASS" signature="TCED22515()[pri:15, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22515" duration-ms="11281" started-at="2018-11-19T11:39:16Z" finished-at="2018-11-19T11:39:27Z">
+        </test-method> <!-- TCED14314 -->
+        <test-method status="PASS" signature="TCED14315()[pri:15, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14315" duration-ms="13556" started-at="2018-11-20T12:26:17Z" finished-at="2018-11-20T12:26:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22515 -->
-        <test-method status="PASS" signature="TCED22516()[pri:16, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22516" duration-ms="11311" started-at="2018-11-19T11:39:27Z" finished-at="2018-11-19T11:39:38Z">
+        </test-method> <!-- TCED14315 -->
+        <test-method status="PASS" signature="TCED14316()[pri:16, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14316" duration-ms="14625" started-at="2018-11-20T12:26:31Z" finished-at="2018-11-20T12:26:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22516 -->
-        <test-method status="PASS" signature="TCED22517()[pri:17, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="TCED22517" duration-ms="11765" started-at="2018-11-19T11:39:38Z" finished-at="2018-11-19T11:39:50Z">
+        </test-method> <!-- TCED14316 -->
+        <test-method status="PASS" signature="TCED14317()[pri:17, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14317" duration-ms="8685" started-at="2018-11-20T12:26:46Z" finished-at="2018-11-20T12:26:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED22517 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MTSS.Meeting_History_Report@553a3d88]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-19T11:39:50Z" finished-at="2018-11-19T11:39:50Z">
+        </test-method> <!-- TCED14317 -->
+        <test-method status="PASS" signature="TCED14318()[pri:18, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14318" duration-ms="1126" started-at="2018-11-20T12:26:54Z" finished-at="2018-11-20T12:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14318 -->
+        <test-method status="PASS" signature="TCED14319()[pri:19, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14319" duration-ms="9989" started-at="2018-11-20T12:26:55Z" finished-at="2018-11-20T12:27:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14319 -->
+        <test-method status="PASS" signature="TCED14320()[pri:20, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14320" duration-ms="8796" started-at="2018-11-20T12:27:05Z" finished-at="2018-11-20T12:27:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14320 -->
+        <test-method status="PASS" signature="TCED14321()[pri:21, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14321" duration-ms="9162" started-at="2018-11-20T12:27:14Z" finished-at="2018-11-20T12:27:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14321 -->
+        <test-method status="PASS" signature="TCED14322()[pri:22, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14322" duration-ms="8592" started-at="2018-11-20T12:27:23Z" finished-at="2018-11-20T12:27:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14322 -->
+        <test-method status="PASS" signature="TCED14323()[pri:23, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14323" duration-ms="11710" started-at="2018-11-20T12:27:32Z" finished-at="2018-11-20T12:27:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14323 -->
+        <test-method status="PASS" signature="TCED14324()[pri:24, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14324" duration-ms="13991" started-at="2018-11-20T12:27:44Z" finished-at="2018-11-20T12:27:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14324 -->
+        <test-method status="PASS" signature="TCED14325()[pri:25, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14325" duration-ms="8302" started-at="2018-11-20T12:27:58Z" finished-at="2018-11-20T12:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14325 -->
+        <test-method status="PASS" signature="TCED14326()[pri:26, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14326" duration-ms="18893" started-at="2018-11-20T12:28:06Z" finished-at="2018-11-20T12:28:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14326 -->
+        <test-method status="PASS" signature="TCED14327()[pri:27, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="TCED14327" duration-ms="59382" started-at="2018-11-20T12:28:25Z" finished-at="2018-11-20T12:29:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14327 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.Local_Assessment_AnalyzeByTag@25a98f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-20T12:29:24Z" finished-at="2018-11-20T12:29:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.MTSS.Meeting_History_Report -->
+      </class> <!-- com.analyzeByScore.Local_Assessment_AnalyzeByTag -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
