@@ -317,7 +317,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-		@Test(priority=14)
+	@Test(priority=14)
 	public void TCED14414() 
 	{
 		try
@@ -613,32 +613,6 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Assert.fail(e.getMessage());
 		}	
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	/***************************General Methods*************************************************************/
 
