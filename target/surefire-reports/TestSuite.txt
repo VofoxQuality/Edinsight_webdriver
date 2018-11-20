@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.5 sec - in TestSuite
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 71.971 sec <<< FAILURE! - in TestSuite
+TCED16205(com.localassessment.Question_Bank_Apply_Standards)  Time elapsed: 6.929 sec  <<< FAILURE!
+java.lang.AssertionError: Assigned standard not found expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.localassessment.Question_Bank_Apply_Standards.TCED16205(Question_Bank_Apply_Standards.java:196)
+
+TCED16206(com.localassessment.Question_Bank_Apply_Standards)  Time elapsed: 20.276 sec  <<< FAILURE!
+java.lang.AssertionError: Timeout during waiting for element: '//a[contains(text(),'Question Bank')]'
+	at Library.BaseClassOne.waitFor(BaseClassOne.java:278)
+	at Library.BaseClassOne.click(BaseClassOne.java:190)
+	at com.localassessment.Question_Bank_Apply_Standards.TCED16206(Question_Bank_Apply_Standards.java:218)
+
