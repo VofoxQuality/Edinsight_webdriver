@@ -130,7 +130,6 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 		   String Std=getText("//span[@id='ctl00_MainContent_lblIncidentCount']");		  
 		   String []word=Std.split(" ",3); 		   
 		   Assert.assertEquals(word[0]+" "+word[1],"Student Count:");
-
 		} 
 		catch (Exception e)
 		{
