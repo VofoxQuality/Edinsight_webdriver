@@ -225,13 +225,13 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			//To scroll up to the page
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("window.scrollBy(0,0)", "");
-
+			Thread.sleep(3000);
 			//To delete all the files in the directory
 			FileDelete();
 
 			//To click on the generate PDF
 			click("//*[@id='ctl00_MainContent_btnPDF']");
-			Thread.sleep(4000);
+			Thread.sleep(7000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 
@@ -253,7 +253,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 
 			//To click on the generate PDF
 			click("//*[@id='ctl00_MainContent_btnExportCSV']");
-			Thread.sleep(4000);
+			Thread.sleep(7000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
 
