@@ -201,7 +201,6 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
 			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -247,7 +246,6 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
 			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -297,7 +295,6 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
 			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -348,7 +345,6 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
 			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -396,32 +392,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			AT.summary_report_studentlist_grid();
 						
 		} 
 		catch (Exception e)
@@ -516,6 +488,9 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
+			
+			//Assert the label  Analyze by Tag
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
 			
 			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();
@@ -1279,8 +1254,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	}
 	catch(Exception e) 
 	{
-	e.printStackTrace();
-	Assert.fail(e.getMessage());
+		e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 		
   }
@@ -1289,7 +1264,6 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{
-			
 			driver.switchTo().parentFrame();
 			
 			click("//*[@id='RadWindowWrapper_ctl00_MainContent_rwTestSummery']/div[1]/div/ul/li[2]/span");

@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher">
+      <class name="com.MTSS.Fix_and_Delete_intervention_plan">
         <methods>
-          <include name="TCED14155"/>
           <include name="setup1"/>
+          <include name="TCED19808"/>
           <include name="tearDown"/>
-          <include name="TCED14156"/>
         </methods>
-      </class> <!-- com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher -->
+      </class> <!-- com.MTSS.Fix_and_Delete_intervention_plan -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
