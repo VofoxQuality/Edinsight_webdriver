@@ -554,6 +554,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 	{
 		try
 		{
+			Thread.sleep(2000);
 			//To check the radio button Report By Student Group
 			click("//*[@id='ctl00_MainContent_rbStudentGroup']");
 
@@ -599,7 +600,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			String xpath= "//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[3]/td/a";
 			TestingSummary obj1= new TestingSummary();
 			obj1.TestingSummarypopup(xpath);
-			
+
 
 		}catch(Exception e) 
 		{
@@ -614,14 +615,76 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 	{
 		try
 		{
-			//To switch to parent frame
 			driver.switchTo().parentFrame();
 
-			Thread.sleep(2000);
 
-			AssessmentPrint obj = new AssessmentPrint();
-			String xpath = "//a[@id='ctl00_MainContent_lnkassessmentPDF']";
-			obj.AssessmentPrintReports(xpath);
+			Thread.sleep(2000);
+			//To click here to see the test
+			click("//*[@id='ctl00_MainContent_lnkassessmentPDF']");
+
+			//To select the frame
+			SwitchFrameName("Assessment Print");
+			Thread.sleep(2000);
+			//To delete all the files in the directory
+			FileDelete();
+
+			//To click on the print word
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']");
+
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+			
+			//To delete all the files in the directory
+			FileDelete();
+			//To click print pdf
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
+			Thread.sleep(5000);
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+
+			//To click on the Print OE to PDF
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkOePdfQuestions']");
+
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+
+
+			//To click on the OE to Word
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkOeWordQuestions']");
+
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+
+			//*******Print answer Key**********************
+
+			//To delete all the files in the directory
+			FileDelete();
+
+			//To click print pdf
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfAnswer']");
+
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+
+			//To click on the print word
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordAnswer']");
+
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+
+			//To delete all the files in the directory
+			FileDelete();
+
+			//To click on the Print OE to PDF
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedPDF']");
+
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+
+
+			//To click on the OE to Word
+			Thread.sleep(3000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedWord']");
+
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 
 
 		}catch(Exception e) 

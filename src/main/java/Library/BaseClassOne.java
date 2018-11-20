@@ -61,9 +61,9 @@ public class BaseClassOne	{
 	 //Sebastian
 	//  protected  String downloadPath="D:\\selenium_downloads";
 	 //Manoj
-	protected  String downloadPath="E:\\selenium_downloads";
+	 //protected  String downloadPath="E:\\selenium_downloads";
 	 //Ans
-	//protected  String downloadPath="E:\\selenium_downloads";
+	protected  String downloadPath="E:\\selenium_downloads";
 	
 	 
 	 int i=0;
@@ -80,17 +80,17 @@ public class BaseClassOne	{
 		//Sebastian
 		//System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
 		//Akhil TS
-		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		// System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		//Manoj
 
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 		//Server
-		System.setProperty("webdriver.gecko.driver", "e:\\Jars\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "e:\\Jars\\geckodriver.exe");
 
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 
 		//Ans
-		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		
 		
 		
@@ -620,6 +620,13 @@ public class BaseClassOne	{
 		((JavascriptExecutor) driver).executeScript(
 		"arguments[0].scrollIntoView();", element);
 	}
+	//Scroll to specific postion(x axis,y axis)
+	public void ScrollTo_xy_position(int x, int y)
+	{
+		((JavascriptExecutor) driver).executeScript("scroll("+x+","+y+")");	
+		                                            
+	}
+	
 	//To tkae the screen shot
 	public void Takescreenshot(String ScreenshotName)
 	{
@@ -632,14 +639,8 @@ public class BaseClassOne	{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
-	//Scroll to specific postion(x axis,y axis)
-	 public void ScrollTo_xy_position(int x, int y)
-	 {
-	  ((JavascriptExecutor) driver).executeScript("scroll("+x+","+y+")"); 
-	                                              
-	 }
+	
 	//*****************************************Test Listner *********************************	
 
 }
