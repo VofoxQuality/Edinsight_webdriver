@@ -1,7 +1,10 @@
 package com.Home;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -125,15 +128,13 @@ public class Teacher_Course_Section_Attendance extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionAttendance2_btnSelectToGroup']");
 			
 			//Assert the label "Add Students to Group"
-			SwitchFrameName("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
+			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"),"Add Students to Group:");
-			
-			//Click on Close button
-			driver.switchTo().defaultContent();
-			//driver.switchTo().parentFrame();
-			//click("//*[@id='RadWindowWrapper_ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionStoplight1_StudentGroupWindowUniqueNameToAvoidErrorsIHope2']/div[1]/div/ul/li/span");
-			click("//span[@title='Close']");
 
+			driver.switchTo().parentFrame();
+			
+			Thread.sleep(3000);			
+			click("//span[@title='Close']");
 		} 
 		catch (Exception e)
 		{
@@ -146,16 +147,21 @@ public class Teacher_Course_Section_Attendance extends BaseClassOne
 	{
 		try
 		{
-			//Application should be in the Attendance View tab		
+			//Application should be in the Attendance View tab			
+			driver.get(driver.getCurrentUrl());
 			
-			//Select a student 
+			Thread.sleep(3000);
+
+			click("//span[@class='rtsTxt'][contains(text(),'Attendance')]");
+			
+			//select a student
 			click("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionAttendance2_rgStudentList_ctl00_ctl04_chkSelectUserSelectCheckBox']");
 			
 			//Click on add selected students to group button 
-			click("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionStoplight1_btnCheckAll']");
+			click("#ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionAttendance2_btnCheckAll");
 			
 			//Assert the label "Add Students to Group"
-			SwitchFrameName("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
+			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"),"Add Students to Group:");
 			
 			//Assert the label "Create New Group:"
@@ -163,6 +169,8 @@ public class Teacher_Course_Section_Attendance extends BaseClassOne
 			
 			//Click on Close button
 			driver.switchTo().parentFrame();
+			
+			Thread.sleep(3000);
 			click("//span[@title='Close']");
 		} 
 		catch (Exception e)
@@ -171,5 +179,44 @@ public class Teacher_Course_Section_Attendance extends BaseClassOne
 			e.printStackTrace();
 		}				
 	}
-
+	@Test(priority=6)
+	public void TCED35606()
+	{
+		try
+		{
+			//Application should be in the Attendance View tab	
+			Scroll_DowntoEnd();
+						
+			//Excused Absences chart should be visible
+			Assert.assertTrue(isDisplayed("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionAttendance2_chartExcusedAbsences_Image']"), "Excused Absences chart not visible");
+		} 
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}				
+	}
+	@Test(priority=7)
+	public void TCED35607()
+	{
+		try
+		{	
+			//Application should be in the Attendance View tab
+			
+			//Unexcused Absences chart should be visible
+			Assert.assertTrue(isDisplayed("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionAttendance2_chartUnexcusedAbsences_Image']"), "Unexcused Absences chart not visible");
+			
+		    //click on Logout button
+			waitForEnable("//*[@id='ctl00_A3']/img");
+			click("//*[@id='ctl00_A3']/img");
+			
+			//Assert the page Header as "Edinsight Login"					
+			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
+		} 
+		catch (Exception e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}				
+	}
 }

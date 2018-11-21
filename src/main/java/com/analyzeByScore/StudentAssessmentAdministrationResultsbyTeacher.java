@@ -222,9 +222,10 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 		{
 
 
-			//To scroll up to the page
-			
-			Scroll_toTop();
+			// To scroll to particular location
+			ScrollTo_Location("//td[@colspan='9']//center[contains(text(),'Standards')]");
+
+
 			Thread.sleep(3000);
 			//To delete all the files in the directory
 			FileDelete();
@@ -633,7 +634,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']");
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
-			
+
 			//To delete all the files in the directory
 			FileDelete();
 			//To click print pdf
