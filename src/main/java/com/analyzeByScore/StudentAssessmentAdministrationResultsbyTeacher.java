@@ -223,7 +223,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 
 
 			// To scroll to particular location
-			ScrollTo_Location("//td[@colspan='9']//center[contains(text(),'Standards')]");
+			ScrollTo_Location("//*[@id='ctl00_MainContent_ddlSchoolType']");
 
 
 			Thread.sleep(3000);
@@ -450,12 +450,6 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Assert.fail(e.getMessage());
 		}
 	}
-
-
-
-
-
-
 
 	@Test(priority=11)
 	public void TCED14161() 
