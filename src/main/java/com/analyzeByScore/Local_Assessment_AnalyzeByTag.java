@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.generalMethods.Navigation_for_analyze_byTag;
 import com.generalMethods.Summary_report_drill_down_grid;
 
 import java.util.regex.Pattern;
@@ -16,7 +17,9 @@ import Library.BaseClassOne;
 public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 
 {
-	
+	//creating the object of 2 classes under the general methods package
+	Navigation_for_analyze_byTag ob=new Navigation_for_analyze_byTag();
+	Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
 	
 	@Test(priority=1)
 	public void TCED14301() 
@@ -38,7 +41,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -152,8 +155,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
-			////Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			////Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -169,7 +171,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{	
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -199,7 +201,6 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
 			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -215,7 +216,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -245,7 +246,6 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
 			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -261,7 +261,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -295,7 +295,6 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
 			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -311,7 +310,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -346,7 +345,6 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
 			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -362,7 +360,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -394,32 +392,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
-			//Assert the label student Id   
-			Assert.assertEquals(getText("//a[contains(text(),'Student ID')]"),"Student ID");
-			
-			//Assert the label Last Name 
-			Assert.assertEquals(getText("//a[contains(text(),'Last Name')]"),"Last Name");
-			
-			//Assert the label First Name 
-			Assert.assertEquals(getText("//a[contains(text(),'First Name')]"),"First Name");
-			
-			//Assert the label Grade 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Grade')]"),"Grade");
-			
-			//Assert the label   School   
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'School')]"),"School");
-			
-			//Assert the label   Ethnicity    
-			Assert.assertEquals(getText("//a[contains(text(),'Ethnicity')]"),"Ethnicity");
-			
-			//Assert the label  IEP  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'IEP')]"),"IEP");
-			
-			//Assert the label  ELL  
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'ELL')]"),"ELL");
-			
-			//Assert the label  Ec. Disadvantaged 
-			Assert.assertEquals(getText("//a[@title='Click here to sort'][contains(text(),'Ec. Disadvantaged')]"),"Ec. Disadvantaged");		
+			//Assert the columns in the student list grid
+			AT.summary_report_studentlist_grid();
 						
 		} 
 		catch (Exception e)
@@ -434,7 +408,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -515,8 +489,10 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
-			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			//Assert the label  Analyze by Tag
+			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
+			
+			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -532,7 +508,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -561,8 +537,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
 			
-			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -578,7 +553,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -658,7 +633,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -702,8 +677,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
-			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -719,7 +693,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -766,8 +740,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
-			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();	
 						
 		} 
@@ -783,7 +756,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -826,8 +799,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 			
-			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();
 						
 		} 
@@ -843,7 +815,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -922,8 +894,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
 			
-			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();	
 		}
 		catch (Exception e)
@@ -938,7 +909,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -974,8 +945,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
-			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();
 		}
 		catch (Exception e)
@@ -990,7 +960,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -1026,8 +996,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
-			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();		
 		}
 		catch (Exception e)
@@ -1042,7 +1011,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -1081,8 +1050,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 		    Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 						
-			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();		
 									
 		} 
@@ -1098,7 +1066,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -1137,8 +1105,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 		    Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 						
-			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();		
 									
 		} 
@@ -1153,8 +1120,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//navigate to analyze score param page after login
-			navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login					
+			ob.navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -1193,8 +1160,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//Assert the label  Analyze by Tag
 		    Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze by Tag");
 						
-			//Assert the columns in the student list grid
-			Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
+			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();		
 									
 		} 
@@ -1288,8 +1254,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	}
 	catch(Exception e) 
 	{
-	e.printStackTrace();
-	Assert.fail(e.getMessage());
+		e.printStackTrace();
+		Assert.fail(e.getMessage());
 	}
 		
   }
@@ -1298,7 +1264,6 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{
-			
 			driver.switchTo().parentFrame();
 			
 			click("//*[@id='RadWindowWrapper_ctl00_MainContent_rwTestSummery']/div[1]/div/ul/li[2]/span");
@@ -1376,30 +1341,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
 		}	
-		}
-	    //navigate to analyze score param page after login
-	    public void navigate_to_analyze_tag_param_page()
-	    {
-	    	
-			 try
-			    {
-					//Hover over main menu local Assignment.			
-					Actions actions = new Actions(driver);
-					WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-					actions.moveToElement(mouseHover).build().perform();					
-					
-					//To click on the analyze by Score
-					click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
-					
-					//To click on the Beta Summary reports(Analyze By Tag New)
-					click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
-				} 
-			 catch (Exception e)
-			    {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}	    	
-	    }
+		}    
 	
 }	
 
