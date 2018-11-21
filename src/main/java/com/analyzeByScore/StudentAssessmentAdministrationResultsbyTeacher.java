@@ -384,6 +384,9 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Thread.sleep(4000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
+			Thread.sleep(3000);
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");		
+
 
 
 		}catch(Exception e) 
@@ -572,6 +575,11 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Thread.sleep(4000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+			
+			Thread.sleep(3000);
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");		
+
+
 
 
 		}catch(Exception e) 
