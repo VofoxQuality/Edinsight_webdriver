@@ -65,9 +65,11 @@ public class Manage_meetings extends BaseClassOne {
 			// To click and select  interventions from list
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_DropDown']/div/ul/li[1]/label/input");
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
+			
+			Thread.sleep(2000);
 
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
-
+		
 			// To click the select  details to submit the intervention details from dropdown
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
 			click("//*[@id='ctl00_ContentPlaceHolder1_trMeasureAssmnt']");
