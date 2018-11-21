@@ -629,6 +629,8 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		// To Assert the Validation Messages
 		Assert.assertEquals( "Assessment Students List", getText("//span[@class='subheading']"));	
 
+		Assert.assertEquals( "Item Analysis", getText("//*[@id='ctl00_MainContent_tblSummary']/tbody/tr[1]/td[2]"));	
+
 		Assert.assertEquals( "Student ID", getText("//a[contains(text(),'Student ID')]"));
 
 		Assert.assertEquals( "Last Name", getText("//a[contains(text(),'Last Name')]"));
