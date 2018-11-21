@@ -56,7 +56,7 @@ public class Manage_meetings extends BaseClassOne {
 			// Frame select
 			SwitchFrameName("RadWindow1");
 			// To click interventions
-			click("//*[@id='ctl00_ContentPlaceHolder1_ctl00_ctl00_gridInvervention_ctl02_btnAddIntervention']");		
+			click("//input[contains(@type,'submit')][@value='Add Intervention Plan']");		
 			// Frame select
 			SwitchFrameName("RadWindow2");
 			// To click interventions
@@ -103,7 +103,7 @@ public class Manage_meetings extends BaseClassOne {
 			// Frame select
 			SwitchFrameName("RadWindow1");
 			// To click interventions
-			click("//*[@id='ctl00_ContentPlaceHolder1_ctl00_ctl00_gridInvervention_ctl02_btnAddIntervention']");		
+			click("//input[contains(@type,'submit')][@value='Add Intervention Plan']");		
 			// Frame select
 			SwitchFrameName("RadWindow2");
 			// To click the select  details to submit the intervention details from dropdown
