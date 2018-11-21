@@ -409,8 +409,10 @@ public class Fix_and_Delete_intervention_plan extends BaseClassOne
 			//scroll down to the bottom of the popup
 			Scroll_DowntoEnd();
 			
+			Thread.sleep(3000);
 			 //Select the Measurement/Assessment Method as Study Island
-			click("//li[contains(text(),'Study Island')]");
+			type("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input']","Study Island");
+			//li[contains(text(),'Study Island')]
 			
 			Thread.sleep(3000);					
 	

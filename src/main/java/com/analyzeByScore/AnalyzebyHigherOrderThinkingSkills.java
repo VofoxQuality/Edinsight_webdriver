@@ -38,7 +38,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-		@Test(priority=2)
+	@Test(priority=2)
 	public void TCED14402() 
 	{
 		try
@@ -69,7 +69,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-		@Test(priority=3)
+	@Test(priority=3)
 	public void TCED14403() 
 	{
 		try
@@ -88,7 +88,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-		@Test(priority=4)
+	@Test(priority=4)
 	public void TCED14404() 
 	{
 		try
@@ -109,7 +109,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-		@Test(priority=5)
+	@Test(priority=5)
 	public void TCED14405() 
 	{
 		try
@@ -130,7 +130,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-		@Test(priority=6)
+	@Test(priority=6)
 	public void TCED14406() 
 	{
 		try
@@ -159,19 +159,19 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		try
 		{	
 			Thread.sleep(2000);
-		// Common header parameters
-		ReportParams();
-		Thread.sleep(3000);
-		ScrollTo_Location("//*[@id='ctl00_MainContent_trDetailedChart']/td/table/tbody/tr[1]/td/h3");
-		Thread.sleep(5000);
-		String	xpath1= "//*[@id='ctl00_MainContent_DetailedAnalyzeChart_Image']";
-		// To Click the link & Assert the drilldown labels
-		int x = 91;
-		int y = 228;
-		Actions action = new Actions(driver);
-		//clicking on the chart based on x coordinate and y coordinate 
-		action.moveByOffset( x, y).click().build().perform();
-		Studentdrilldownlabels2(xpath1);
+			// Common header parameters
+			ReportParams();
+			Thread.sleep(3000);
+			ScrollTo_Location("//*[@id='ctl00_MainContent_trDetailedChart']/td/table/tbody/tr[1]/td/h3");
+			Thread.sleep(5000);
+			String	xpath1= "//*[@id='ctl00_MainContent_DetailedAnalyzeChart_Image']";
+			// To Click the link & Assert the drilldown labels
+			int x = 91;
+			int y = 228;
+			Actions action = new Actions(driver);
+			//clicking on the chart based on x coordinate and y coordinate 
+			action.moveByOffset( x, y).click().build().perform();
+			Studentdrilldownlabels2(xpath1);
 
 		}catch(Exception e) 
 		{
@@ -317,7 +317,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-		@Test(priority=14)
+	@Test(priority=14)
 	public void TCED14414() 
 	{
 		try
@@ -336,7 +336,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			//clicking on the chart based on x coordinate and y coordinate 
 			action.moveByOffset( x, y).click().build().perform();
 			Studentdrilldownlabels2(xpath1);
-			
+
 		}catch(Exception e) 
 		{
 			e.printStackTrace();
@@ -479,7 +479,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	}
 
 
-		@Test(priority=21)
+	@Test(priority=21)
 	public void TCED14421() 
 	{
 		try
@@ -630,17 +630,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 
 
 
-
-
-
-
-
-
-
-
-
-
-	/***************************General Methods*************************************************************/
+/***** Common Methods used above testcases****/
 
 
 	public void Studentdrilldownlabels(String xpath)
@@ -791,29 +781,29 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		//To delete all the files in the directory
 		FileDelete();
 
-		//To click print pdf
-		/*		
-		click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
-		Thread.sleep(10000);
-
-		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-		 */
 		//To click on the print word
 		Thread.sleep(3000);
 		click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']");
 		Thread.sleep(10000);
 		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 
+		//To click print pdf
+
+		click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
+		Thread.sleep(10000);
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+
+
 		//To delete all the files in the directory
 		FileDelete();
-		/*	
+
 		//To click on the Print OE to PDF
 		Thread.sleep(3000);
 		click("//*[@id='ctl00_ContentPlaceHolder1_linkOePdfQuestions']");
 		Thread.sleep(6000);
 		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 
-		 */
+
 		//To click on the OE to Word
 		Thread.sleep(3000);
 		click("//*[@id='ctl00_ContentPlaceHolder1_linkOeWordQuestions']");
@@ -824,12 +814,12 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 
 		//To delete all the files in the directory
 		FileDelete();
-		/*	
+
 		//To click print pdf
 		click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfAnswer']");
 		Thread.sleep(6000);
 		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-		 */
+
 		//To click on the print word
 		Thread.sleep(3000);
 		click("//*[@id='ctl00_ContentPlaceHolder1_linkWordAnswer']");
