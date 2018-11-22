@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="57.335" tests="8" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="55.041" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -63,12 +63,12 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TCED16201" classname="com.localassessment.Question_Bank_Apply_Standards" time="5.757"/>
-  <testcase name="TCED16202" classname="com.localassessment.Question_Bank_Apply_Standards" time="7.604"/>
-  <testcase name="TCED16203" classname="com.localassessment.Question_Bank_Apply_Standards" time="0.439"/>
-  <testcase name="TCED16204" classname="com.localassessment.Question_Bank_Apply_Standards" time="1.781"/>
-  <testcase name="TCED16205" classname="com.localassessment.Question_Bank_Apply_Standards" time="7.699"/>
-  <testcase name="TCED16206" classname="com.localassessment.Question_Bank_Apply_Standards" time="9.466"/>
-  <testcase name="TCED16207" classname="com.localassessment.Question_Bank_Apply_Standards" time="14.512"/>
-  <testcase name="TCED16208" classname="com.localassessment.Question_Bank_Apply_Standards" time="10.077"/>
+  <testcase name="TCED16201" classname="com.localassessment.Question_Bank_Apply_Standards" time="5.902"/>
+  <testcase name="TCED16202" classname="com.localassessment.Question_Bank_Apply_Standards" time="5.956"/>
+  <testcase name="TCED16203" classname="com.localassessment.Question_Bank_Apply_Standards" time="0.4"/>
+  <testcase name="TCED16204" classname="com.localassessment.Question_Bank_Apply_Standards" time="1.858"/>
+  <testcase name="TCED16205" classname="com.localassessment.Question_Bank_Apply_Standards" time="7.825"/>
+  <testcase name="TCED16206" classname="com.localassessment.Question_Bank_Apply_Standards" time="9.072"/>
+  <testcase name="TCED16207" classname="com.localassessment.Question_Bank_Apply_Standards" time="13.978"/>
+  <testcase name="TCED16208" classname="com.localassessment.Question_Bank_Apply_Standards" time="10.05"/>
 </testsuite>

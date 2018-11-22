@@ -1,81 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="15" passed="15">
+<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="208862" started-at="2018-11-20T13:55:10Z" finished-at="2018-11-20T13:58:39Z">
+  <suite started-at="2018-11-21T09:39:12Z" name="Suite" finished-at="2018-11-21T09:44:07Z" duration-ms="294071">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="208862" started-at="2018-11-20T13:55:10Z" finished-at="2018-11-20T13:58:39Z">
-      <class name="com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="setup1" is-config="true" duration-ms="10867" started-at="2018-11-20T19:25:10Z" finished-at="2018-11-20T19:25:21Z">
+    <test started-at="2018-11-21T09:39:12Z" name="Test" finished-at="2018-11-21T09:44:07Z" duration-ms="294071">
+      <class name="com.analyzeByScore.ItemAnalysisbyQuestion">
+        <test-method is-config="true" signature="setup1()[pri:0, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:39:12Z" name="setup1" finished-at="2018-11-21T09:39:18Z" duration-ms="5693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED14151()[pri:1, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14151" duration-ms="13034" started-at="2018-11-20T19:25:21Z" finished-at="2018-11-20T19:25:34Z">
+        <test-method signature="TCED14081()[pri:1, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:39:18Z" name="TCED14081" finished-at="2018-11-21T09:39:28Z" duration-ms="9895" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14151 -->
-        <test-method status="PASS" signature="TCED14152()[pri:2, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14152" duration-ms="152" started-at="2018-11-20T19:25:34Z" finished-at="2018-11-20T19:25:34Z">
+        </test-method> <!-- TCED14081 -->
+        <test-method signature="TCED14082()[pri:2, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:39:28Z" name="TCED14082" finished-at="2018-11-21T09:39:28Z" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14152 -->
-        <test-method status="PASS" signature="TCED14153()[pri:3, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14153" duration-ms="1844" started-at="2018-11-20T19:25:34Z" finished-at="2018-11-20T19:25:36Z">
+        </test-method> <!-- TCED14082 -->
+        <test-method signature="TCED14083()[pri:3, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:39:28Z" name="TCED14083" finished-at="2018-11-21T09:39:29Z" duration-ms="785" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14153 -->
-        <test-method status="PASS" signature="TCED14154()[pri:4, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14154" duration-ms="16760" started-at="2018-11-20T19:25:36Z" finished-at="2018-11-20T19:25:53Z">
+        </test-method> <!-- TCED14083 -->
+        <test-method signature="TCED14084()[pri:4, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:39:29Z" name="TCED14084" finished-at="2018-11-21T09:39:30Z" duration-ms="902" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14154 -->
-        <test-method status="PASS" signature="TCED14155()[pri:5, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14155" duration-ms="15311" started-at="2018-11-20T19:25:53Z" finished-at="2018-11-20T19:26:08Z">
+        </test-method> <!-- TCED14084 -->
+        <test-method signature="TCED14085()[pri:5, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:39:30Z" name="TCED14085" finished-at="2018-11-21T09:39:35Z" duration-ms="5190" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14155 -->
-        <test-method status="PASS" signature="TCED14156()[pri:6, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14156" duration-ms="12306" started-at="2018-11-20T19:26:08Z" finished-at="2018-11-20T19:26:20Z">
+        </test-method> <!-- TCED14085 -->
+        <test-method signature="TCED14086()[pri:6, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:39:35Z" name="TCED14086" finished-at="2018-11-21T09:39:40Z" duration-ms="5226" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14156 -->
-        <test-method status="PASS" signature="TCED14157()[pri:7, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14157" duration-ms="2022" started-at="2018-11-20T19:26:20Z" finished-at="2018-11-20T19:26:22Z">
+        </test-method> <!-- TCED14086 -->
+        <test-method signature="TCED14087()[pri:7, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:39:40Z" name="TCED14087" finished-at="2018-11-21T09:39:46Z" duration-ms="5402" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14157 -->
-        <test-method status="PASS" signature="TCED14158()[pri:8, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14158" duration-ms="10268" started-at="2018-11-20T19:26:22Z" finished-at="2018-11-20T19:26:33Z">
+        </test-method> <!-- TCED14087 -->
+        <test-method signature="TCED14088()[pri:8, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:39:46Z" name="TCED14088" finished-at="2018-11-21T09:39:51Z" duration-ms="5466" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14158 -->
-        <test-method status="PASS" signature="TCED14159()[pri:9, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14159" duration-ms="9270" started-at="2018-11-20T19:26:33Z" finished-at="2018-11-20T19:26:42Z">
+        </test-method> <!-- TCED14088 -->
+        <test-method signature="TCED14089()[pri:9, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:39:51Z" name="TCED14089" finished-at="2018-11-21T09:40:00Z" duration-ms="8472" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14159 -->
-        <test-method status="PASS" signature="TCED14160()[pri:10, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14160" duration-ms="1434" started-at="2018-11-20T19:26:42Z" finished-at="2018-11-20T19:26:43Z">
+        </test-method> <!-- TCED14089 -->
+        <test-method signature="TCED14090()[pri:10, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:40:00Z" name="TCED14090" finished-at="2018-11-21T09:40:00Z" duration-ms="719" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14160 -->
-        <test-method status="PASS" signature="TCED14161()[pri:11, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14161" duration-ms="10328" started-at="2018-11-20T19:26:43Z" finished-at="2018-11-20T19:26:54Z">
+        </test-method> <!-- TCED14090 -->
+        <test-method signature="TCED14091()[pri:11, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:40:00Z" name="TCED14091" finished-at="2018-11-21T09:40:09Z" duration-ms="9102" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14161 -->
-        <test-method status="PASS" signature="TCED14162()[pri:12, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14162" duration-ms="1729" started-at="2018-11-20T19:26:54Z" finished-at="2018-11-20T19:26:55Z">
+        </test-method> <!-- TCED14091 -->
+        <test-method signature="TCED14092()[pri:12, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:40:09Z" name="TCED14092" finished-at="2018-11-21T09:40:18Z" duration-ms="8612" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14162 -->
-        <test-method status="PASS" signature="TCED14163()[pri:13, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14163" duration-ms="12577" started-at="2018-11-20T19:26:55Z" finished-at="2018-11-20T19:27:08Z">
+        </test-method> <!-- TCED14092 -->
+        <test-method signature="TCED14093()[pri:13, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:40:18Z" name="TCED14093" finished-at="2018-11-21T09:40:27Z" duration-ms="8855" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14163 -->
-        <test-method status="PASS" signature="TCED14164()[pri:14, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14164" duration-ms="27983" started-at="2018-11-20T19:27:08Z" finished-at="2018-11-20T19:27:36Z">
+        </test-method> <!-- TCED14093 -->
+        <test-method signature="TCED14094()[pri:14, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:40:27Z" name="TCED14094" finished-at="2018-11-21T09:40:36Z" duration-ms="9449" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14164 -->
-        <test-method status="PASS" signature="TCED14165()[pri:15, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="TCED14165" duration-ms="62927" started-at="2018-11-20T19:27:36Z" finished-at="2018-11-20T19:28:39Z">
+        </test-method> <!-- TCED14094 -->
+        <test-method signature="TCED14095()[pri:15, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:40:36Z" name="TCED14095" finished-at="2018-11-21T09:40:42Z" duration-ms="5830" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14165 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@271053e1]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-20T19:28:39Z" finished-at="2018-11-20T19:28:39Z">
+        </test-method> <!-- TCED14095 -->
+        <test-method signature="TCED14096()[pri:16, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:40:42Z" name="TCED14096" finished-at="2018-11-21T09:40:43Z" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14096 -->
+        <test-method signature="TCED14097()[pri:17, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:40:43Z" name="TCED14097" finished-at="2018-11-21T09:40:51Z" duration-ms="7633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14097 -->
+        <test-method signature="TCED14098()[pri:18, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:40:51Z" name="TCED14098" finished-at="2018-11-21T09:40:58Z" duration-ms="7846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14098 -->
+        <test-method signature="TCED14099()[pri:19, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:40:58Z" name="TCED14099" finished-at="2018-11-21T09:41:06Z" duration-ms="8062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14099 -->
+        <test-method signature="TCED14100()[pri:20, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:41:06Z" name="TCED14100" finished-at="2018-11-21T09:41:14Z" duration-ms="7755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14100 -->
+        <test-method signature="TCED14101()[pri:21, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:41:14Z" name="TCED14101" finished-at="2018-11-21T09:41:27Z" duration-ms="13116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14101 -->
+        <test-method signature="TCED14102()[pri:22, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:41:27Z" name="TCED14102" finished-at="2018-11-21T09:41:44Z" duration-ms="16358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14102 -->
+        <test-method signature="TCED14103()[pri:23, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:41:44Z" name="TCED14103" finished-at="2018-11-21T09:42:16Z" duration-ms="31914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14103 -->
+        <test-method signature="TCED14104()[pri:24, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:42:16Z" name="TCED14104" finished-at="2018-11-21T09:44:07Z" duration-ms="110902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14104 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.analyzeByScore.ItemAnalysisbyQuestion@a38c7fe]" started-at="2018-11-21T09:44:07Z" name="tearDown" finished-at="2018-11-21T09:44:07Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.analyzeByScore.ItemAnalysisbyQuestion -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

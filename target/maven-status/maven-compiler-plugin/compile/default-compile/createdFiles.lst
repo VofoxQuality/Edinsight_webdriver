@@ -30,6 +30,7 @@ Functions\DeleteorUnlinkQustions.class
 com\analyzeByScore\BuildingComparisonReportbyAdministration.class
 com\Home\Grades.class
 com\Home\Data_sets.class
+com\Home\Teacher_Course_Section_Attendance.class
 com\MTSS\Meeting_History_Report.class
 com\MTSS\TeamDecisionReport.class
 com\curriculum\CTE_Competency_List.class
@@ -77,6 +78,7 @@ CheckList\Create_New_Assessment.class
 com\analyzeByScore\AdministrationComparisonbyStudent.class
 Functions\addExhibit.class
 Functions\CreateRuberic.class
+com\generalMethods\Navigation_for_analyze_byTag.class
 com\questionBank\SearchQuestion.class
 com\MTSS\InterventionEffectivenessBySkill.class
 com\generalMethods\Summary_report_drill_down_grid.class

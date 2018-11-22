@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="62785" started-at="2018-11-20T12:14:44Z" finished-at="2018-11-20T12:15:47Z">
+  <suite name="Suite" duration-ms="60475" started-at="2018-11-21T11:11:57Z" finished-at="2018-11-21T11:12:58Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="62785" started-at="2018-11-20T12:14:44Z" finished-at="2018-11-20T12:15:47Z">
+    <test name="Test" duration-ms="60475" started-at="2018-11-21T11:11:57Z" finished-at="2018-11-21T11:12:58Z">
       <class name="com.localassessment.Question_Bank_Apply_Standards">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="setup1" is-config="true" duration-ms="5426" started-at="2018-11-20T12:14:44Z" finished-at="2018-11-20T12:14:50Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="setup1" is-config="true" duration-ms="5417" started-at="2018-11-21T11:11:57Z" finished-at="2018-11-21T11:12:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED16201()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16201" duration-ms="5756" started-at="2018-11-20T12:14:50Z" finished-at="2018-11-20T12:14:56Z">
+        <test-method status="PASS" signature="TCED16201()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16201" duration-ms="5899" started-at="2018-11-21T11:12:03Z" finished-at="2018-11-21T11:12:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED16201 -->
-        <test-method status="PASS" signature="TCED16202()[pri:1, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16202" duration-ms="7604" started-at="2018-11-20T12:14:56Z" finished-at="2018-11-20T12:15:03Z">
+        <test-method status="PASS" signature="TCED16202()[pri:1, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16202" duration-ms="5958" started-at="2018-11-21T11:12:08Z" finished-at="2018-11-21T11:12:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED16202 -->
-        <test-method status="PASS" signature="TCED16203()[pri:2, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16203" duration-ms="438" started-at="2018-11-20T12:15:03Z" finished-at="2018-11-20T12:15:04Z">
+        <test-method status="PASS" signature="TCED16203()[pri:2, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16203" duration-ms="399" started-at="2018-11-21T11:12:14Z" finished-at="2018-11-21T11:12:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED16203 -->
-        <test-method status="PASS" signature="TCED16204()[pri:3, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16204" duration-ms="1780" started-at="2018-11-20T12:15:04Z" finished-at="2018-11-20T12:15:05Z">
+        <test-method status="PASS" signature="TCED16204()[pri:3, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16204" duration-ms="1858" started-at="2018-11-21T11:12:15Z" finished-at="2018-11-21T11:12:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED16204 -->
-        <test-method status="PASS" signature="TCED16205()[pri:4, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16205" duration-ms="7699" started-at="2018-11-20T12:15:05Z" finished-at="2018-11-20T12:15:13Z">
+        <test-method status="PASS" signature="TCED16205()[pri:4, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16205" duration-ms="7825" started-at="2018-11-21T11:12:17Z" finished-at="2018-11-21T11:12:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED16205 -->
-        <test-method status="PASS" signature="TCED16206()[pri:5, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16206" duration-ms="9466" started-at="2018-11-20T12:15:13Z" finished-at="2018-11-20T12:15:23Z">
+        <test-method status="PASS" signature="TCED16206()[pri:5, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16206" duration-ms="9071" started-at="2018-11-21T11:12:25Z" finished-at="2018-11-21T11:12:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED16206 -->
-        <test-method status="PASS" signature="TCED16207()[pri:6, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16207" duration-ms="14513" started-at="2018-11-20T12:15:23Z" finished-at="2018-11-20T12:15:37Z">
+        <test-method status="PASS" signature="TCED16207()[pri:6, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16207" duration-ms="13978" started-at="2018-11-21T11:12:34Z" finished-at="2018-11-21T11:12:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED16207 -->
-        <test-method status="PASS" signature="TCED16208()[pri:7, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16208" duration-ms="10077" started-at="2018-11-20T12:15:37Z" finished-at="2018-11-20T12:15:47Z">
+        <test-method status="PASS" signature="TCED16208()[pri:7, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="TCED16208" duration-ms="10050" started-at="2018-11-21T11:12:48Z" finished-at="2018-11-21T11:12:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCED16208 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-20T12:15:47Z" finished-at="2018-11-20T12:15:47Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@5f9d02cb]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-21T11:12:58Z" finished-at="2018-11-21T11:12:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
