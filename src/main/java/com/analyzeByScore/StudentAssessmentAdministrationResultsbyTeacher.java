@@ -223,7 +223,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 
 
 			// To scroll to particular location
-			ScrollTo_Location("//td[@colspan='9']//center[contains(text(),'Standards')]");
+			ScrollTo_Location("//*[@id='ctl00_MainContent_ddlSchoolType']");
 
 
 			Thread.sleep(3000);
@@ -384,6 +384,9 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Thread.sleep(4000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
+			Thread.sleep(3000);
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");		
+
 
 
 		}catch(Exception e) 
@@ -450,12 +453,6 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Assert.fail(e.getMessage());
 		}
 	}
-
-
-
-
-
-
 
 	@Test(priority=11)
 	public void TCED14161() 
@@ -578,6 +575,11 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Thread.sleep(4000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+			
+			Thread.sleep(3000);
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");		
+
+
 
 
 		}catch(Exception e) 

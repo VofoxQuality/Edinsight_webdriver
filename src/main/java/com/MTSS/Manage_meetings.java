@@ -56,7 +56,7 @@ public class Manage_meetings extends BaseClassOne {
 			// Frame select
 			SwitchFrameName("RadWindow1");
 			// To click interventions
-			click("//*[@id='ctl00_ContentPlaceHolder1_ctl00_ctl00_gridInvervention_ctl02_btnAddIntervention']");		
+			click("//input[contains(@type,'submit')][@value='Add Intervention Plan']");		
 			// Frame select
 			SwitchFrameName("RadWindow2");
 			// To click interventions
@@ -65,9 +65,11 @@ public class Manage_meetings extends BaseClassOne {
 			// To click and select  interventions from list
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_DropDown']/div/ul/li[1]/label/input");
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
+			
+			Thread.sleep(2000);
 
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
-
+		
 			// To click the select  details to submit the intervention details from dropdown
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
 			click("//*[@id='ctl00_ContentPlaceHolder1_trMeasureAssmnt']");
@@ -103,7 +105,7 @@ public class Manage_meetings extends BaseClassOne {
 			// Frame select
 			SwitchFrameName("RadWindow1");
 			// To click interventions
-			click("//*[@id='ctl00_ContentPlaceHolder1_ctl00_ctl00_gridInvervention_ctl02_btnAddIntervention']");		
+			click("//input[contains(@type,'submit')][@value='Add Intervention Plan']");		
 			// Frame select
 			SwitchFrameName("RadWindow2");
 			// To click the select  details to submit the intervention details from dropdown
