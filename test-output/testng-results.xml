@@ -1,133 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="26" passed="26">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-22T10:35:13Z" name="Suite" finished-at="2018-11-22T10:38:11Z" duration-ms="178005">
+  <suite name="Default suite" duration-ms="367193" started-at="2018-11-23T09:43:03Z" finished-at="2018-11-23T09:49:10Z">
     <groups>
     </groups>
-    <test started-at="2018-11-22T10:35:13Z" name="Test" finished-at="2018-11-22T10:38:11Z" duration-ms="178005">
-      <class name="com.curriculum.Print_Lessons">
-        <test-method is-config="true" signature="setup1()[pri:0, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:35:13Z" name="setup1" finished-at="2018-11-22T10:35:19Z" duration-ms="5438" status="PASS">
+    <test name="Default test" duration-ms="367193" started-at="2018-11-23T09:43:03Z" finished-at="2018-11-23T09:49:10Z">
+      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="setup1" is-config="true" duration-ms="10696" started-at="2018-11-23T15:13:03Z" finished-at="2018-11-23T15:13:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method signature="TCED25101()[pri:0, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:35:19Z" name="TCED25101" finished-at="2018-11-22T10:35:27Z" duration-ms="8065" status="PASS">
+        <test-method status="PASS" signature="TCED14401()[pri:1, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14401" duration-ms="11900" started-at="2018-11-23T15:13:13Z" finished-at="2018-11-23T15:13:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25101 -->
-        <test-method signature="TCED25102()[pri:1, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:35:27Z" name="TCED25102" finished-at="2018-11-22T10:35:28Z" duration-ms="1442" status="PASS">
+        </test-method> <!-- TCED14401 -->
+        <test-method status="PASS" signature="TCED14402()[pri:2, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14402" duration-ms="265" started-at="2018-11-23T15:13:25Z" finished-at="2018-11-23T15:13:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25102 -->
-        <test-method signature="TCED25103()[pri:2, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:35:28Z" name="TCED25103" finished-at="2018-11-22T10:35:29Z" duration-ms="1380" status="PASS">
+        </test-method> <!-- TCED14402 -->
+        <test-method status="PASS" signature="TCED14403()[pri:3, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14403" duration-ms="1005" started-at="2018-11-23T15:13:25Z" finished-at="2018-11-23T15:13:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25103 -->
-        <test-method signature="TCED25104()[pri:3, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:35:29Z" name="TCED25104" finished-at="2018-11-22T10:35:42Z" duration-ms="12646" status="PASS">
+        </test-method> <!-- TCED14403 -->
+        <test-method status="PASS" signature="TCED14404()[pri:4, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14404" duration-ms="5242" started-at="2018-11-23T15:13:26Z" finished-at="2018-11-23T15:13:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25104 -->
-        <test-method signature="TCED25105()[pri:4, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:35:42Z" name="TCED25105" finished-at="2018-11-22T10:35:55Z" duration-ms="12686" status="PASS">
+        </test-method> <!-- TCED14404 -->
+        <test-method status="PASS" signature="TCED14405()[pri:5, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14405" duration-ms="6813" started-at="2018-11-23T15:13:32Z" finished-at="2018-11-23T15:13:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25105 -->
-        <test-method signature="TCED25106()[pri:5, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:35:55Z" name="TCED25106" finished-at="2018-11-22T10:35:57Z" duration-ms="1928" status="PASS">
+        </test-method> <!-- TCED14405 -->
+        <test-method status="PASS" signature="TCED14406()[pri:6, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14406" duration-ms="14117" started-at="2018-11-23T15:13:38Z" finished-at="2018-11-23T15:13:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25106 -->
-        <test-method signature="TCED25107()[pri:6, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:35:57Z" name="TCED25107" finished-at="2018-11-22T10:35:59Z" duration-ms="1926" status="PASS">
+        </test-method> <!-- TCED14406 -->
+        <test-method status="PASS" signature="TCED14407()[pri:7, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14407" duration-ms="17008" started-at="2018-11-23T15:13:53Z" finished-at="2018-11-23T15:14:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25107 -->
-        <test-method signature="TCED25108()[pri:7, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:35:59Z" name="TCED25108" finished-at="2018-11-22T10:36:00Z" duration-ms="1253" status="PASS">
+        </test-method> <!-- TCED14407 -->
+        <test-method status="PASS" signature="TCED14408()[pri:8, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14408" duration-ms="13371" started-at="2018-11-23T15:14:10Z" finished-at="2018-11-23T15:14:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25108 -->
-        <test-method signature="TCED25109()[pri:8, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:36:00Z" name="TCED25109" finished-at="2018-11-22T10:36:01Z" duration-ms="1237" status="PASS">
+        </test-method> <!-- TCED14408 -->
+        <test-method status="PASS" signature="TCED14409()[pri:9, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14409" duration-ms="6590" started-at="2018-11-23T15:14:23Z" finished-at="2018-11-23T15:14:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25109 -->
-        <test-method signature="TCED25110()[pri:9, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:36:01Z" name="TCED25110" finished-at="2018-11-22T10:36:14Z" duration-ms="12513" status="PASS">
+        </test-method> <!-- TCED14409 -->
+        <test-method status="PASS" signature="TCED14410()[pri:10, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14410" duration-ms="1318" started-at="2018-11-23T15:14:30Z" finished-at="2018-11-23T15:14:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25110 -->
-        <test-method signature="TCED25111()[pri:10, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:36:14Z" name="TCED25111" finished-at="2018-11-22T10:36:26Z" duration-ms="12620" status="PASS">
+        </test-method> <!-- TCED14410 -->
+        <test-method status="PASS" signature="TCED14411()[pri:11, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14411" duration-ms="5109" started-at="2018-11-23T15:14:31Z" finished-at="2018-11-23T15:14:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25111 -->
-        <test-method signature="TCED25112()[pri:11, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:36:26Z" name="TCED25112" finished-at="2018-11-22T10:36:28Z" duration-ms="2121" status="PASS">
+        </test-method> <!-- TCED14411 -->
+        <test-method status="PASS" signature="TCED14412()[pri:12, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14412" duration-ms="5183" started-at="2018-11-23T15:14:36Z" finished-at="2018-11-23T15:14:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25112 -->
-        <test-method signature="TCED25113()[pri:12, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:36:28Z" name="TCED25113" finished-at="2018-11-22T10:36:30Z" duration-ms="1367" status="PASS">
+        </test-method> <!-- TCED14412 -->
+        <test-method status="PASS" signature="TCED14413()[pri:13, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14413" duration-ms="13067" started-at="2018-11-23T15:14:41Z" finished-at="2018-11-23T15:14:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25113 -->
-        <test-method signature="TCED25114()[pri:13, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:36:30Z" name="TCED25114" finished-at="2018-11-22T10:36:31Z" duration-ms="1322" status="PASS">
+        </test-method> <!-- TCED14413 -->
+        <test-method status="PASS" signature="TCED14414()[pri:14, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14414" duration-ms="16941" started-at="2018-11-23T15:14:54Z" finished-at="2018-11-23T15:15:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25114 -->
-        <test-method signature="TCED25115()[pri:14, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:36:31Z" name="TCED25115" finished-at="2018-11-22T10:36:44Z" duration-ms="12454" status="PASS">
+        </test-method> <!-- TCED14414 -->
+        <test-method status="PASS" signature="TCED14415()[pri:15, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14415" duration-ms="13340" started-at="2018-11-23T15:15:11Z" finished-at="2018-11-23T15:15:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25115 -->
-        <test-method signature="TCED25116()[pri:15, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:36:44Z" name="TCED25116" finished-at="2018-11-22T10:36:56Z" duration-ms="12615" status="PASS">
+        </test-method> <!-- TCED14415 -->
+        <test-method status="PASS" signature="TCED14416()[pri:16, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14416" duration-ms="6299" started-at="2018-11-23T15:15:25Z" finished-at="2018-11-23T15:15:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25116 -->
-        <test-method signature="TCED25117()[pri:16, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:36:56Z" name="TCED25117" finished-at="2018-11-22T10:36:58Z" duration-ms="2137" status="PASS">
+        </test-method> <!-- TCED14416 -->
+        <test-method status="PASS" signature="TCED14417()[pri:17, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14417" duration-ms="1056" started-at="2018-11-23T15:15:31Z" finished-at="2018-11-23T15:15:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25117 -->
-        <test-method signature="TCED25118()[pri:17, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:36:58Z" name="TCED25118" finished-at="2018-11-22T10:37:00Z" duration-ms="1268" status="PASS">
+        </test-method> <!-- TCED14417 -->
+        <test-method status="PASS" signature="TCED14418()[pri:18, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14418" duration-ms="5004" started-at="2018-11-23T15:15:32Z" finished-at="2018-11-23T15:15:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25118 -->
-        <test-method signature="TCED25119()[pri:18, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:37:00Z" name="TCED25119" finished-at="2018-11-22T10:37:01Z" duration-ms="1354" status="PASS">
+        </test-method> <!-- TCED14418 -->
+        <test-method status="PASS" signature="TCED14419()[pri:19, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14419" duration-ms="5454" started-at="2018-11-23T15:15:37Z" finished-at="2018-11-23T15:15:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25119 -->
-        <test-method signature="TCED25120()[pri:19, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:37:01Z" name="TCED25120" finished-at="2018-11-22T10:37:13Z" duration-ms="12473" status="PASS">
+        </test-method> <!-- TCED14419 -->
+        <test-method status="PASS" signature="TCED14420()[pri:20, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14420" duration-ms="13243" started-at="2018-11-23T15:15:42Z" finished-at="2018-11-23T15:15:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25120 -->
-        <test-method signature="TCED25121()[pri:20, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:37:13Z" name="TCED25121" finished-at="2018-11-22T10:37:26Z" duration-ms="12638" status="PASS">
+        </test-method> <!-- TCED14420 -->
+        <test-method status="PASS" signature="TCED14421()[pri:21, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14421" duration-ms="16864" started-at="2018-11-23T15:15:56Z" finished-at="2018-11-23T15:16:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25121 -->
-        <test-method signature="TCED25122()[pri:21, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:37:26Z" name="TCED25122" finished-at="2018-11-22T10:37:28Z" duration-ms="2039" status="PASS">
+        </test-method> <!-- TCED14421 -->
+        <test-method status="PASS" signature="TCED14422()[pri:22, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14422" duration-ms="13471" started-at="2018-11-23T15:16:12Z" finished-at="2018-11-23T15:16:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25122 -->
-        <test-method signature="TCED25123()[pri:22, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:37:28Z" name="TCED25123" finished-at="2018-11-22T10:37:29Z" duration-ms="1388" status="PASS">
+        </test-method> <!-- TCED14422 -->
+        <test-method status="PASS" signature="TCED14423()[pri:23, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14423" duration-ms="13387" started-at="2018-11-23T15:16:26Z" finished-at="2018-11-23T15:16:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25123 -->
-        <test-method signature="TCED25124()[pri:23, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:37:29Z" name="TCED25124" finished-at="2018-11-22T10:37:31Z" duration-ms="1290" status="PASS">
+        </test-method> <!-- TCED14423 -->
+        <test-method status="PASS" signature="TCED14424()[pri:24, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14424" duration-ms="8278" started-at="2018-11-23T15:16:39Z" finished-at="2018-11-23T15:16:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25124 -->
-        <test-method signature="TCED25125()[pri:24, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:37:31Z" name="TCED25125" finished-at="2018-11-22T10:37:49Z" duration-ms="18500" status="PASS">
+        </test-method> <!-- TCED14424 -->
+        <test-method status="PASS" signature="TCED14425()[pri:25, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14425" duration-ms="27973" started-at="2018-11-23T15:16:48Z" finished-at="2018-11-23T15:17:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25125 -->
-        <test-method signature="TCED25126()[pri:25, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:37:49Z" name="TCED25126" finished-at="2018-11-22T10:38:08Z" duration-ms="18638" status="PASS">
+        </test-method> <!-- TCED14425 -->
+        <test-method status="PASS" signature="TCED14426()[pri:26, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14426" duration-ms="114140" started-at="2018-11-23T15:17:16Z" finished-at="2018-11-23T15:19:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED25126 -->
-        <test-method signature="TCED25127()[pri:26, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:38:08Z" name="TCED25127" finished-at="2018-11-22T10:38:10Z" duration-ms="2038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED25127 -->
-        <test-method signature="TCED27128()[pri:27, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:38:10Z" name="TCED27128" finished-at="2018-11-22T10:38:11Z" duration-ms="1189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED27128 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.curriculum.Print_Lessons@70e9c95d]" started-at="2018-11-22T10:38:11Z" name="tearDown" finished-at="2018-11-22T10:38:11Z" duration-ms="0" status="PASS">
+        </test-method> <!-- TCED14426 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-23T15:19:10Z" finished-at="2018-11-23T15:19:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.curriculum.Print_Lessons -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
