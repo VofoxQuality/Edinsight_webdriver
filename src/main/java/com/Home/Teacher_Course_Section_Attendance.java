@@ -135,6 +135,9 @@ public class Teacher_Course_Section_Attendance extends BaseClassOne
 			
 			Thread.sleep(3000);			
 			click("//span[@title='Close']");
+			
+			//Assert the label "Attendance View"
+			Assert.assertEquals(getText("//span[contains(text(),'Attendance View')]"),"Attendance View");
 		} 
 		catch (Exception e)
 		{
@@ -172,6 +175,9 @@ public class Teacher_Course_Section_Attendance extends BaseClassOne
 			
 			Thread.sleep(3000);
 			click("//span[@title='Close']");
+			
+			//Assert the label "Attendance View"
+			Assert.assertEquals(getText("//span[contains(text(),'Attendance View')]"),"Attendance View");
 		} 
 		catch (Exception e)
 		{
