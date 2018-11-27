@@ -24,8 +24,7 @@ public class ReportInBrowser {
 			//driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver1.get("file:///e:/Quality/trunk/Edinsight_Maven_Automation/target/test-output/emailable-report.html");
 		
-		Actions action = new Actions(driver); 
-		action.sendKeys(Keys.RIGHT).build().perform();`
+		
 	}
 
 }
