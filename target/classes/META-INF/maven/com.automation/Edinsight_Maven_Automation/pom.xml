@@ -109,6 +109,7 @@
 						<suiteXmlFile>VED00115-Teacher_Course_Section_Attendance.xml</suiteXmlFile>
 						<suiteXmlFile>VED00116-Teacher_Course_Section_Curriculum_Maps.xml</suiteXmlFile>
 						<suiteXmlFile>VED00122-Teacher_Course_Section_MTSS.xml</suiteXmlFile>
+						<suiteXmlFile>VED00106-Student_Building_Grade_Lists.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

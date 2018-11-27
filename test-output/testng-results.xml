@@ -1,45 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50824" started-at="2018-11-27T09:29:00Z" finished-at="2018-11-27T09:29:51Z">
+  <suite name="Default suite" duration-ms="95004" started-at="2018-11-27T10:29:53Z" finished-at="2018-11-27T10:31:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50824" started-at="2018-11-27T09:29:00Z" finished-at="2018-11-27T09:29:51Z">
-      <class name="com.Home.Teacher_Course_Section_Curriculum_Maps">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Teacher_Course_Section_Curriculum_Maps@32eebfca]" name="setup1" is-config="true" duration-ms="8368" started-at="2018-11-27T09:29:00Z" finished-at="2018-11-27T09:29:09Z">
+    <test name="Default test" duration-ms="95004" started-at="2018-11-27T10:29:53Z" finished-at="2018-11-27T10:31:28Z">
+      <class name="com.Home.Student_Building_Grade_Lists">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="setup1" is-config="true" duration-ms="11059" started-at="2018-11-27T10:29:53Z" finished-at="2018-11-27T10:30:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED35701()[pri:1, instance:com.Home.Teacher_Course_Section_Curriculum_Maps@32eebfca]" name="TCED35701" duration-ms="15179" started-at="2018-11-27T09:29:09Z" finished-at="2018-11-27T09:29:24Z">
+        <test-method status="PASS" signature="TCED33201()[pri:1, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33201" duration-ms="9349" started-at="2018-11-27T10:30:04Z" finished-at="2018-11-27T10:30:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED35701 -->
-        <test-method status="PASS" signature="TCED35702()[pri:2, instance:com.Home.Teacher_Course_Section_Curriculum_Maps@32eebfca]" name="TCED35702" duration-ms="243" started-at="2018-11-27T09:29:24Z" finished-at="2018-11-27T09:29:24Z">
+        </test-method> <!-- TCED33201 -->
+        <test-method status="PASS" signature="TCED33202()[pri:2, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33202" duration-ms="455" started-at="2018-11-27T10:30:13Z" finished-at="2018-11-27T10:30:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED35702 -->
-        <test-method status="PASS" signature="TCED35703()[pri:3, instance:com.Home.Teacher_Course_Section_Curriculum_Maps@32eebfca]" name="TCED35703" duration-ms="2004" started-at="2018-11-27T09:29:24Z" finished-at="2018-11-27T09:29:26Z">
+        </test-method> <!-- TCED33202 -->
+        <test-method status="PASS" signature="TCED33203()[pri:3, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33203" duration-ms="5564" started-at="2018-11-27T10:30:14Z" finished-at="2018-11-27T10:30:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED35703 -->
-        <test-method status="PASS" signature="TCED35704()[pri:4, instance:com.Home.Teacher_Course_Section_Curriculum_Maps@32eebfca]" name="TCED35704" duration-ms="990" started-at="2018-11-27T09:29:26Z" finished-at="2018-11-27T09:29:27Z">
+        </test-method> <!-- TCED33203 -->
+        <test-method status="PASS" signature="TCED33204()[pri:4, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33204" duration-ms="268" started-at="2018-11-27T10:30:19Z" finished-at="2018-11-27T10:30:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED35704 -->
-        <test-method status="PASS" signature="TCED35705()[pri:5, instance:com.Home.Teacher_Course_Section_Curriculum_Maps@32eebfca]" name="TCED35705" duration-ms="11639" started-at="2018-11-27T09:29:27Z" finished-at="2018-11-27T09:29:39Z">
+        </test-method> <!-- TCED33204 -->
+        <test-method status="PASS" signature="TCED33205()[pri:5, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33205" duration-ms="11286" started-at="2018-11-27T10:30:19Z" finished-at="2018-11-27T10:30:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED35705 -->
-        <test-method status="PASS" signature="TCED35706()[pri:6, instance:com.Home.Teacher_Course_Section_Curriculum_Maps@32eebfca]" name="TCED35706" duration-ms="12367" started-at="2018-11-27T09:29:39Z" finished-at="2018-11-27T09:29:51Z">
+        </test-method> <!-- TCED33205 -->
+        <test-method status="PASS" signature="TCED33206()[pri:6, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33206" duration-ms="11321" started-at="2018-11-27T10:30:31Z" finished-at="2018-11-27T10:30:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED35706 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Teacher_Course_Section_Curriculum_Maps@32eebfca]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-27T09:29:51Z" finished-at="2018-11-27T09:29:51Z">
+        </test-method> <!-- TCED33206 -->
+        <test-method status="PASS" signature="TCED33207()[pri:7, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33207" duration-ms="2220" started-at="2018-11-27T10:30:42Z" finished-at="2018-11-27T10:30:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED33207 -->
+        <test-method status="PASS" signature="TCED33208()[pri:8, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33208" duration-ms="1141" started-at="2018-11-27T10:30:44Z" finished-at="2018-11-27T10:30:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED33208 -->
+        <test-method status="PASS" signature="TCED33209()[pri:9, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33209" duration-ms="4296" started-at="2018-11-27T10:30:45Z" finished-at="2018-11-27T10:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED33209 -->
+        <test-method status="PASS" signature="TCED33210()[pri:10, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33210" duration-ms="243" started-at="2018-11-27T10:30:50Z" finished-at="2018-11-27T10:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED33210 -->
+        <test-method status="PASS" signature="TCED33211()[pri:11, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33211" duration-ms="11283" started-at="2018-11-27T10:30:50Z" finished-at="2018-11-27T10:31:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED33211 -->
+        <test-method status="PASS" signature="TCED33212()[pri:12, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33212" duration-ms="11306" started-at="2018-11-27T10:31:01Z" finished-at="2018-11-27T10:31:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED33212 -->
+        <test-method status="PASS" signature="TCED33213()[pri:13, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33213" duration-ms="2221" started-at="2018-11-27T10:31:13Z" finished-at="2018-11-27T10:31:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED33213 -->
+        <test-method status="PASS" signature="TCED33214()[pri:14, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33214" duration-ms="1156" started-at="2018-11-27T10:31:15Z" finished-at="2018-11-27T10:31:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED33214 -->
+        <test-method status="PASS" signature="TCED33215()[pri:15, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="TCED33215" duration-ms="11804" started-at="2018-11-27T10:31:16Z" finished-at="2018-11-27T10:31:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED33215 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Home.Student_Building_Grade_Lists@553a3d88]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-27T10:31:28Z" finished-at="2018-11-27T10:31:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Home.Teacher_Course_Section_Curriculum_Maps -->
+      </class> <!-- com.Home.Student_Building_Grade_Lists -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

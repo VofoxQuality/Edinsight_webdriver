@@ -250,6 +250,9 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 		   
 		   driver.switchTo().parentFrame();
 		   click("//*[@id='RadWindowWrapper_ctl00_MainContent_StudentGroupWindowUniqueNameToAvoidErrorsIHope2']/div[1]/div/ul/li/span");
+		   
+		 //Assert the Heading "Student Building/Grade lists"
+		Assert.assertEquals(getText("//td[@class='subheading']"),"Student Building/Grade lists");
 
 		} 
 		catch (Exception e)
@@ -282,6 +285,9 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 		   
 		   driver.switchTo().parentFrame();
 		   click("//*[@id='RadWindowWrapper_ctl00_MainContent_StudentGroupWindowUniqueNameToAvoidErrorsIHope2']/div[1]/div/ul/li/span");
+		   
+		 //Assert the Heading "Student Building/Grade lists"
+		 Assert.assertEquals(getText("//td[@class='subheading']"),"Student Building/Grade lists");
 
 		} 
 		catch (Exception e)
@@ -435,6 +441,9 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 		   
 		   driver.switchTo().parentFrame();
 		   click("//*[@id='RadWindowWrapper_ctl00_MainContent_StudentGroupWindowUniqueNameToAvoidErrorsIHope2']/div[1]/div/ul/li/span");
+		   
+		 //Assert the Heading "Student Building/Grade lists"
+		Assert.assertEquals(getText("//td[@class='subheading']"),"Student Building/Grade lists");
 
 		} 
 		catch (Exception e)
@@ -469,6 +478,9 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 		   
 		   //click on close button		   
 		   click("//span[@title='Close']");
+		   
+		 //Assert the Heading "Student Building/Grade lists"
+		Assert.assertEquals(getText("//td[@class='subheading']"),"Student Building/Grade lists");
 
 		} 
 		catch (Exception e)
