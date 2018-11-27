@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.Home.Teacher_Course_Section_Curriculum_Maps">
+      <class name="com.curriculum.CTE_Competency_List">
         <methods>
-          <include name="TCED35702"/>
-          <include name="TCED35703"/>
+          <include name="TCED30704"/>
           <include name="setup1"/>
-          <include name="TCED35701"/>
-          <include name="TCED35706"/>
-          <include name="TCED35705"/>
           <include name="tearDown"/>
-          <include name="TCED35704"/>
+          <include name="TCED30705"/>
         </methods>
-      </class> <!-- com.Home.Teacher_Course_Section_Curriculum_Maps -->
+      </class> <!-- com.curriculum.CTE_Competency_List -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
