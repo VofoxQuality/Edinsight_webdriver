@@ -61,9 +61,9 @@ public class BaseClassOne	{
 	 //Sebastian
 	  //protected  String downloadPath="D:\\selenium_downloads";
 	 //Manoj
-	 //protected  String downloadPath="E:\\selenium_downloads";
+	 protected  String downloadPath="E:\\selenium_downloads";
 	 //Ans
-	protected  String downloadPath="E:\\selenium_downloads";
+	//protected  String downloadPath="E:\\selenium_downloads";
 	
 	 
 	 int i=0;
@@ -85,12 +85,12 @@ public class BaseClassOne	{
 
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 		//Server
-		//System.setProperty("webdriver.gecko.driver", "e:\\Jars\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "e:\\Jars\\geckodriver.exe");
 
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 
 		//Ans
-		System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		
 		
 		
