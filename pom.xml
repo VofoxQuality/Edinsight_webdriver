@@ -105,7 +105,8 @@
 						<suiteXmlFile>VED0094-Grades.xml</suiteXmlFile>
 						<suiteXmlFile>VED0095-Schedule.xml</suiteXmlFile>
 						<suiteXmlFile>VED0097-Data_sets.xml</suiteXmlFile>
-						<suiteXmlFile>VED00109-Notes_Tracking_Summary.xml</suiteXmlFile>  
+						<suiteXmlFile>VED00109-Notes_Tracking_Summary.xml</suiteXmlFile>
+						<suiteXmlFile>VED00115-Teacher_Course_Section_Attendance.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

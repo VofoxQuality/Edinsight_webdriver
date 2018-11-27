@@ -59,7 +59,7 @@ public class BaseClassOne	{
 	 public static WebDriver driver;
 	 public String  baseUrl = "http://192.168.10.124/Edinsight/Login.aspx";
 	 //Sebastian
-	  protected  String downloadPath="D:\\selenium_downloads";
+	  //protected  String downloadPath="D:\\selenium_downloads";
 	 //Manoj
 	 //protected  String downloadPath="E:\\selenium_downloads";
 	 //Ans
