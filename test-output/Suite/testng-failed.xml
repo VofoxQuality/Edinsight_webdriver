@@ -3,35 +3,27 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.MTSS.Manage_meetings">
+      <class name="com.Home.Student_Building_Grade_Lists">
         <methods>
-          <include name="TCED20212"/>
-          <include name="TCED20220"/>
-          <include name="TCED20221"/>
-          <include name="setup1"/>
-          <include name="TCED20222"/>
-          <include name="TCED20209"/>
-          <include name="TCED20205"/>
-          <include name="TCED20206"/>
-          <include name="TCED20207"/>
-          <include name="TCED20208"/>
-          <include name="TCED20202"/>
-          <include name="TCED20224"/>
-          <include name="TCED20203"/>
-          <include name="TCED20204"/>
+          <include name="TCED33203"/>
+          <include name="TCED33214"/>
           <include name="tearDown"/>
-          <include name="TCED20201"/>
-          <include name="TCED20223"/>
-          <include name="TCED20210"/>
-          <include name="TCED20211"/>
-          <include name="TCED20217"/>
-          <include name="TCED20218"/>
-          <include name="TCED20219"/>
-          <include name="TCED20213"/>
-          <include name="TCED20214"/>
-          <include name="TCED20215"/>
+          <include name="TCED33205"/>
+          <include name="TCED33206"/>
+          <include name="setup1"/>
+          <include name="TCED33204"/>
+          <include name="TCED33215"/>
+          <include name="TCED33209"/>
+          <include name="TCED33207"/>
+          <include name="TCED33208"/>
+          <include name="TCED33201"/>
+          <include name="TCED33212"/>
+          <include name="TCED33202"/>
+          <include name="TCED33213"/>
+          <include name="TCED33210"/>
+          <include name="TCED33211"/>
         </methods>
-      </class> <!-- com.MTSS.Manage_meetings -->
+      </class> <!-- com.Home.Student_Building_Grade_Lists -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
