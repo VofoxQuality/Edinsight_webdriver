@@ -59,9 +59,9 @@ public class BaseClassOne	{
 	 public static WebDriver driver;
 	 public String  baseUrl = "http://192.168.10.124/Edinsight/Login.aspx";
 	 //Sebastian
-	  //protected  String downloadPath="D:\\selenium_downloads";
+	  protected  String downloadPath="D:\\selenium_downloads";
 	 //Manoj
-	 protected  String downloadPath="E:\\selenium_downloads";
+	 //protected  String downloadPath="E:\\selenium_downloads";
 	 //Ans
 	//protected  String downloadPath="E:\\selenium_downloads";
 	
@@ -78,14 +78,14 @@ public class BaseClassOne	{
 		//FirefoxProfile profile=Browser_Preference();
 		
 		//Sebastian
-		//System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","D:\\Jars\\Drivers\\New-geckodriver\\geckodriver.exe");
 		//Akhil TS
 		//System.setProperty("webdriver.gecko.driver", "E:\\Edinsight\\geckodriver.exe");
 		//Manoj
 
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 		//Server
-		System.setProperty("webdriver.gecko.driver", "e:\\Jars\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "e:\\Jars\\geckodriver.exe");
 
 		//System.setProperty("webdriver.gecko.driver", "f:\\Jars\\geckodriver.exe");
 
