@@ -3,17 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
+      <class name="Report.Mann_Early_Warning">
         <methods>
           <include name="setup1"/>
-          <include name="TCED14407"/>
-          <include name="TCED14406"/>
-          <include name="TCED14414"/>
-          <include name="TCED14413"/>
+          <include name="TCED37107"/>
           <include name="tearDown"/>
-          <include name="TCED14421"/>
         </methods>
-      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
+      </class> <!-- Report.Mann_Early_Warning -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

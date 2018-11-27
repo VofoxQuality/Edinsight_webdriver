@@ -1,125 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="26" passed="26">
+<testng-results skipped="0" failed="1" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="367193" started-at="2018-11-23T09:43:03Z" finished-at="2018-11-23T09:49:10Z">
+  <suite name="Default suite" duration-ms="57695" started-at="2018-11-26T09:51:40Z" finished-at="2018-11-26T09:52:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="367193" started-at="2018-11-23T09:43:03Z" finished-at="2018-11-23T09:49:10Z">
-      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="setup1" is-config="true" duration-ms="10696" started-at="2018-11-23T15:13:03Z" finished-at="2018-11-23T15:13:13Z">
+    <test name="Default test" duration-ms="57695" started-at="2018-11-26T09:51:40Z" finished-at="2018-11-26T09:52:38Z">
+      <class name="Report.Mann_Early_Warning">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:Report.Mann_Early_Warning@f777e8]" name="setup1" is-config="true" duration-ms="14155" started-at="2018-11-26T15:21:40Z" finished-at="2018-11-26T15:21:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED14401()[pri:1, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14401" duration-ms="11900" started-at="2018-11-23T15:13:13Z" finished-at="2018-11-23T15:13:25Z">
+        <test-method status="PASS" signature="TCED37101()[pri:1, instance:Report.Mann_Early_Warning@f777e8]" name="TCED37101" duration-ms="8356" started-at="2018-11-26T15:21:55Z" finished-at="2018-11-26T15:22:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14401 -->
-        <test-method status="PASS" signature="TCED14402()[pri:2, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14402" duration-ms="265" started-at="2018-11-23T15:13:25Z" finished-at="2018-11-23T15:13:25Z">
+        </test-method> <!-- TCED37101 -->
+        <test-method status="PASS" signature="TCED37102()[pri:2, instance:Report.Mann_Early_Warning@f777e8]" name="TCED37102" duration-ms="41" started-at="2018-11-26T15:22:03Z" finished-at="2018-11-26T15:22:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14402 -->
-        <test-method status="PASS" signature="TCED14403()[pri:3, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14403" duration-ms="1005" started-at="2018-11-23T15:13:25Z" finished-at="2018-11-23T15:13:26Z">
+        </test-method> <!-- TCED37102 -->
+        <test-method status="PASS" signature="TCED37103()[pri:3, instance:Report.Mann_Early_Warning@f777e8]" name="TCED37103" duration-ms="2353" started-at="2018-11-26T15:22:03Z" finished-at="2018-11-26T15:22:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14403 -->
-        <test-method status="PASS" signature="TCED14404()[pri:4, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14404" duration-ms="5242" started-at="2018-11-23T15:13:26Z" finished-at="2018-11-23T15:13:32Z">
+        </test-method> <!-- TCED37103 -->
+        <test-method status="PASS" signature="TCED37104()[pri:4, instance:Report.Mann_Early_Warning@f777e8]" name="TCED37104" duration-ms="2261" started-at="2018-11-26T15:22:05Z" finished-at="2018-11-26T15:22:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14404 -->
-        <test-method status="PASS" signature="TCED14405()[pri:5, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14405" duration-ms="6813" started-at="2018-11-23T15:13:32Z" finished-at="2018-11-23T15:13:38Z">
+        </test-method> <!-- TCED37104 -->
+        <test-method status="FAIL" signature="TCED37107()[pri:7, instance:Report.Mann_Early_Warning@f777e8]" name="TCED37107" duration-ms="7697" started-at="2018-11-26T15:22:08Z" finished-at="2018-11-26T15:22:15Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sorted asc] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sorted asc] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at Report.Mann_Early_Warning.verify_sort_ascending(Mann_Early_Warning.java:258)
+	at Report.Mann_Early_Warning.TCED37107(Mann_Early_Warning.java:192)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14405 -->
-        <test-method status="PASS" signature="TCED14406()[pri:6, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14406" duration-ms="14117" started-at="2018-11-23T15:13:38Z" finished-at="2018-11-23T15:13:53Z">
+        </test-method> <!-- TCED37107 -->
+        <test-method status="PASS" signature="TCED37108()[pri:8, instance:Report.Mann_Early_Warning@f777e8]" name="TCED37108" duration-ms="11460" started-at="2018-11-26T15:22:15Z" finished-at="2018-11-26T15:22:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14406 -->
-        <test-method status="PASS" signature="TCED14407()[pri:7, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14407" duration-ms="17008" started-at="2018-11-23T15:13:53Z" finished-at="2018-11-23T15:14:10Z">
+        </test-method> <!-- TCED37108 -->
+        <test-method status="PASS" signature="TCED37109()[pri:9, instance:Report.Mann_Early_Warning@f777e8]" name="TCED37109" duration-ms="11314" started-at="2018-11-26T15:22:27Z" finished-at="2018-11-26T15:22:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14407 -->
-        <test-method status="PASS" signature="TCED14408()[pri:8, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14408" duration-ms="13371" started-at="2018-11-23T15:14:10Z" finished-at="2018-11-23T15:14:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14408 -->
-        <test-method status="PASS" signature="TCED14409()[pri:9, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14409" duration-ms="6590" started-at="2018-11-23T15:14:23Z" finished-at="2018-11-23T15:14:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14409 -->
-        <test-method status="PASS" signature="TCED14410()[pri:10, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14410" duration-ms="1318" started-at="2018-11-23T15:14:30Z" finished-at="2018-11-23T15:14:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14410 -->
-        <test-method status="PASS" signature="TCED14411()[pri:11, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14411" duration-ms="5109" started-at="2018-11-23T15:14:31Z" finished-at="2018-11-23T15:14:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14411 -->
-        <test-method status="PASS" signature="TCED14412()[pri:12, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14412" duration-ms="5183" started-at="2018-11-23T15:14:36Z" finished-at="2018-11-23T15:14:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14412 -->
-        <test-method status="PASS" signature="TCED14413()[pri:13, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14413" duration-ms="13067" started-at="2018-11-23T15:14:41Z" finished-at="2018-11-23T15:14:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14413 -->
-        <test-method status="PASS" signature="TCED14414()[pri:14, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14414" duration-ms="16941" started-at="2018-11-23T15:14:54Z" finished-at="2018-11-23T15:15:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14414 -->
-        <test-method status="PASS" signature="TCED14415()[pri:15, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14415" duration-ms="13340" started-at="2018-11-23T15:15:11Z" finished-at="2018-11-23T15:15:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14415 -->
-        <test-method status="PASS" signature="TCED14416()[pri:16, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14416" duration-ms="6299" started-at="2018-11-23T15:15:25Z" finished-at="2018-11-23T15:15:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14416 -->
-        <test-method status="PASS" signature="TCED14417()[pri:17, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14417" duration-ms="1056" started-at="2018-11-23T15:15:31Z" finished-at="2018-11-23T15:15:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14417 -->
-        <test-method status="PASS" signature="TCED14418()[pri:18, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14418" duration-ms="5004" started-at="2018-11-23T15:15:32Z" finished-at="2018-11-23T15:15:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14418 -->
-        <test-method status="PASS" signature="TCED14419()[pri:19, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14419" duration-ms="5454" started-at="2018-11-23T15:15:37Z" finished-at="2018-11-23T15:15:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14419 -->
-        <test-method status="PASS" signature="TCED14420()[pri:20, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14420" duration-ms="13243" started-at="2018-11-23T15:15:42Z" finished-at="2018-11-23T15:15:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14420 -->
-        <test-method status="PASS" signature="TCED14421()[pri:21, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14421" duration-ms="16864" started-at="2018-11-23T15:15:56Z" finished-at="2018-11-23T15:16:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14421 -->
-        <test-method status="PASS" signature="TCED14422()[pri:22, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14422" duration-ms="13471" started-at="2018-11-23T15:16:12Z" finished-at="2018-11-23T15:16:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14422 -->
-        <test-method status="PASS" signature="TCED14423()[pri:23, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14423" duration-ms="13387" started-at="2018-11-23T15:16:26Z" finished-at="2018-11-23T15:16:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14423 -->
-        <test-method status="PASS" signature="TCED14424()[pri:24, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14424" duration-ms="8278" started-at="2018-11-23T15:16:39Z" finished-at="2018-11-23T15:16:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14424 -->
-        <test-method status="PASS" signature="TCED14425()[pri:25, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14425" duration-ms="27973" started-at="2018-11-23T15:16:48Z" finished-at="2018-11-23T15:17:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14425 -->
-        <test-method status="PASS" signature="TCED14426()[pri:26, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="TCED14426" duration-ms="114140" started-at="2018-11-23T15:17:16Z" finished-at="2018-11-23T15:19:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14426 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@271053e1]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-23T15:19:10Z" finished-at="2018-11-23T15:19:10Z">
+        </test-method> <!-- TCED37109 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Report.Mann_Early_Warning@f777e8]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-26T15:22:38Z" finished-at="2018-11-26T15:22:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
+      </class> <!-- Report.Mann_Early_Warning -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

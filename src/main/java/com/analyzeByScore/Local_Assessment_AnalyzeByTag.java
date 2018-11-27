@@ -8,17 +8,14 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.generalMethods.Navigation_for_analyze_byTag;
 import com.generalMethods.Summary_report_drill_down_grid;
-
 import java.util.regex.Pattern;
 import Library.BaseClassOne;
 
 public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 
 {
-	//creating the object of 2 classes under the general methods package
-	Navigation_for_analyze_byTag ob=new Navigation_for_analyze_byTag();
+	//creating the object of 2 classes under the general methods package	
 	Summary_report_drill_down_grid AT=new Summary_report_drill_down_grid();
 	
 	@Test(priority=1)
@@ -40,8 +37,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{
-			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login			
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -65,7 +62,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
 			
 			//Assert the the Header Name as Analyze By Tag
-			Assert.assertEquals(getText("//span[@id='ctl00_PlcPageCategory_lblRptName']"),"Analyze By Tag");		
+			Assert.assertEquals(getText("//span[@id='ctl00_PlcPageCategory_lblRptName']"),"Analyze By Tag");	
 			
 		} 
 		catch (Exception e)
@@ -130,8 +127,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//a[contains(text(),'Total Points Possible')]"),"Total Points Possible");
 			
 			//Assert the Label Question Type
-			Assert.assertEquals(getText("//a[contains(text(),'Question Type')]"),"Question Type");
-			
+			Assert.assertEquals(getText("//a[contains(text(),'Question Type')]"),"Question Type");			
 		} 
 		catch (Exception e)
 		{
@@ -170,8 +166,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{	
-			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login			
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -201,8 +197,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
 			//Assert the columns in the student list grid
-			AT.summary_report_studentlist_grid();
-						
+			AT.summary_report_studentlist_grid();						
 		} 
 		catch (Exception e)
 		{
@@ -215,8 +210,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login			
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -260,8 +255,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login			
+			navigate_to_analyze_tag_param_page();
 			
 			//Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -309,8 +304,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login			
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -359,8 +354,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login			
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -407,8 +402,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login			
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -507,8 +502,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login			
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -552,8 +547,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login			
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -632,8 +627,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login			
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -693,7 +688,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -756,7 +751,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -815,7 +810,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -909,7 +904,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -960,7 +955,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//span[@class='administitle']"),"Analyze by Tag");
@@ -1011,7 +1006,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -1066,7 +1061,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		try
 		{			
 			//navigate to analyze score param page after login
-			ob.navigate_to_analyze_tag_param_page();
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -1120,8 +1115,8 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	{
 		try
 		{			
-			//navigate to analyze score param page after login					
-			ob.navigate_to_analyze_tag_param_page();
+			//navigate to analyze score param page after login	
+			navigate_to_analyze_tag_param_page();
 			
 			//* Assert the header "Analyze by Tag"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"),"Analyze by Tag");
@@ -1175,7 +1170,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 	@Test(priority=24)
 	public void TCED14324() 
 	{
-		try
+	 try
 		{
 			driver.navigate().back();
 
@@ -1188,9 +1183,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_btnPrintToPDF']");
 			Thread.sleep(6000);
 			
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-			
-			
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");				
 	    }
 	catch(Exception e) 
 	{
@@ -1208,10 +1201,10 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_btnCSV']");
 			Thread.sleep(3000);
 			
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
-			
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");		
 		
-	}catch(Exception e) 
+	    }
+		catch(Exception e) 
 	{
 	e.printStackTrace();
 	Assert.fail(e.getMessage());
@@ -1248,8 +1241,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			click("//*[@id='ctl00_ContentPlaceHolder1_RadContextMenu2_detached']/ul/li[2]/span");
 			Thread.sleep(3000);
 			
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");			
-			
+			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");	
 		
 	}
 	catch(Exception e) 
@@ -1341,7 +1333,30 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
 		}	
-		}    
+	}
+	
+	//navigate to analyze tag param page after login
+	public void navigate_to_analyze_tag_param_page()
+    {    	
+	   try
+		    {
+				//Hover over main menu local Assignment.			
+				Actions actions = new Actions(driver);
+				WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+				actions.moveToElement(mouseHover).build().perform();					
+				
+				//To click on the analyze by Score
+				click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
+				
+				//To click on the Beta Summary reports(Analyze By Tag New)
+				click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+			} 
+		 catch (Exception e)
+		    {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}	    	
+    }
 	
 }	
 
