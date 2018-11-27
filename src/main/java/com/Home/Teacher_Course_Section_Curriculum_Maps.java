@@ -199,6 +199,10 @@ public class Teacher_Course_Section_Curriculum_Maps extends BaseClassOne
 			 ArrayList<String> all_tabs=new ArrayList<String>(all);
 			 driver.close();
 			 driver.switchTo().window(all_tabs.get(1));
+			 
+			//Assert the label "View Curriculum"
+			Assert.assertEquals(getText("//h4[@class='CurriculumTitle']"),"View Curriculum");
+			
 			 driver.close();
 			 driver.switchTo().window(all_tabs.get(0));
 			 
