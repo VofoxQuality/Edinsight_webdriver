@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -42,4 +43,45 @@
       </class> <!-- com.Home.Teacher_Course_Section_MTSS -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
+=======
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="159672" started-at="2018-11-27T13:30:59Z" finished-at="2018-11-27T13:33:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="159672" started-at="2018-11-27T13:30:59Z" finished-at="2018-11-27T13:33:39Z">
+      <class name="com.curriculum.CTE_Competency_List">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.curriculum.CTE_Competency_List@f777e8]" name="setup1" is-config="true" duration-ms="7393" started-at="2018-11-27T19:00:59Z" finished-at="2018-11-27T19:01:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup1 -->
+        <test-method status="PASS" signature="TCED30701()[pri:0, instance:com.curriculum.CTE_Competency_List@f777e8]" name="TCED30701" duration-ms="32348" started-at="2018-11-27T19:01:06Z" finished-at="2018-11-27T19:01:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED30701 -->
+        <test-method status="PASS" signature="TCED30702()[pri:1, instance:com.curriculum.CTE_Competency_List@f777e8]" name="TCED30702" duration-ms="1545" started-at="2018-11-27T19:01:39Z" finished-at="2018-11-27T19:01:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED30702 -->
+        <test-method status="PASS" signature="TCED30703()[pri:2, instance:com.curriculum.CTE_Competency_List@f777e8]" name="TCED30703" duration-ms="35874" started-at="2018-11-27T19:01:40Z" finished-at="2018-11-27T19:02:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED30703 -->
+        <test-method status="PASS" signature="TCED30704()[pri:3, instance:com.curriculum.CTE_Competency_List@f777e8]" name="TCED30704" duration-ms="40883" started-at="2018-11-27T19:02:16Z" finished-at="2018-11-27T19:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED30704 -->
+        <test-method status="PASS" signature="TCED30705()[pri:4, instance:com.curriculum.CTE_Competency_List@f777e8]" name="TCED30705" duration-ms="41593" started-at="2018-11-27T19:02:57Z" finished-at="2018-11-27T19:03:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED30705 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.curriculum.CTE_Competency_List@f777e8]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-27T19:03:39Z" finished-at="2018-11-27T19:03:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.curriculum.CTE_Competency_List -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> 6e67ff8fe903565816206c33b680160bfccd7b2a
 </testng-results>

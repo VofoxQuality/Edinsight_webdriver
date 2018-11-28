@@ -134,7 +134,7 @@ public void TCED30704()
 		//Click on WORD button
 		click("//*[@id='ctl00_MainContent_ReportDisplayCtrl1_btnSaveToRTF']");
 		
-		Thread.sleep(30000);		
+		Thread.sleep(35000);		
 		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 	} 
  
@@ -159,8 +159,8 @@ public void TCED30705()
 		//Click on CSV button
 		click("//*[@id='ctl00_MainContent_ReportDisplayCtrl1_btnSaveToExcel']");
 		
-		Thread.sleep(30000);		
-		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
+		Thread.sleep(35000);		
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath,".csv"), "Failed to download document which has extension .CSV");
 		
 		if(!parent_wind.equals(child))
 		{
