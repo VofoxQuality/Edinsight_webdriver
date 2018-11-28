@@ -38,6 +38,7 @@ com\MTSS\FacilitatorPersonResponsibleList.class
 com\MTSS\Students_Receiving_Interventions_by_Teacher.class
 com\analyzeByScore\StandardMasteryReportbyClass.class
 com\curriculum\Standards_Coverage_Report.class
+com\Student_Data_Depot\Student_Data_Depot_Configure_Testing_Periods.class
 com\curriculum\CompletionStatusReport.class
 com\generalMethods\Edinsight_common_login.class
 com\manageAssessment\EditAssessment.class
@@ -45,6 +46,7 @@ com\MTSS\Configure_Settings.class
 com\generalMethods\AssessmentPrint.class
 Functions\Create_New_Assessment_Survay.class
 Library\objectData.class
+Report\Mann_Early_Warning.class
 com\analyzeByScore\AnalyzeByStandard.class
 com\localassessment\Copy_assessment_vendor.class
 com\curriculum\Edit_Curriculum.class
@@ -64,6 +66,7 @@ com\Home\Student_Search.class
 com\MTSS\Mtss_track_student_interventions.class
 com\Home\Student_Building_Grade_Lists.class
 com\MTSS\Unsubmitted_Intervention_Plans.class
+com\Home\Teacher_Course_Section_Curriculum_Maps.class
 com\curriculum\Custom_Reports.class
 com\curriculum\Copy_Current_Map.class
 com\MTSS\Mass_Change_Person_Responsible.class
@@ -78,7 +81,6 @@ CheckList\Create_New_Assessment.class
 com\analyzeByScore\AdministrationComparisonbyStudent.class
 Functions\addExhibit.class
 Functions\CreateRuberic.class
-com\generalMethods\Navigation_for_analyze_byTag.class
 com\questionBank\SearchQuestion.class
 com\MTSS\InterventionEffectivenessBySkill.class
 com\generalMethods\Summary_report_drill_down_grid.class
@@ -87,6 +89,7 @@ com\curriculum\My_lesson_plans_calendar.class
 com\curriculum\Submitted_Lesson_Plans.class
 com\curriculum\View_Print.class
 com\curriculum\Create_New_Map.class
+com\Home\Teacher_Course_Section_MTSS.class
 CheckList\QuestionBuilder.class
 com\MTSS\Test_Suite_MTSS_T1_Interventions.class
 com\localassessment\Copy_assessment.class
