@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.Home.Teacher_Course_Section_Curriculum_Maps">
+        <methods>
+          <include name="TCED35702"/>
+          <include name="TCED35703"/>
+          <include name="setup1"/>
+          <include name="TCED35701"/>
+          <include name="TCED35706"/>
+          <include name="TCED35705"/>
+          <include name="tearDown"/>
+          <include name="TCED35704"/>
+        </methods>
+      </class> <!-- com.Home.Teacher_Course_Section_Curriculum_Maps -->
+=======
       <class name="com.Home.Student_Building_Grade_Lists">
         <methods>
           <include name="TCED33203"/>
@@ -24,6 +38,7 @@
           <include name="TCED33211"/>
         </methods>
       </class> <!-- com.Home.Student_Building_Grade_Lists -->
+>>>>>>> 6e67ff8fe903565816206c33b680160bfccd7b2a
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
