@@ -59,17 +59,17 @@ public class Manage_meetings extends BaseClassOne {
 			click("//input[contains(@type,'submit')][@value='Add Intervention Plan']");		
 			// Frame select
 			SwitchFrameName("RadWindow2");
-			// To click interventions
+			// To click interventions Skill
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
-			Thread.sleep(4000);
+			Thread.sleep(2000);
 			// To click and select  interventions from list
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_DropDown']/div/ul/li[1]/label/input");
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
-			
 			Thread.sleep(2000);
-
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
+			click("//*[@id='ctl00_ContentPlaceHolder1_lblProgramDescription']");
+			Thread.sleep(2000);
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
-		
+
 			// To click the select  details to submit the intervention details from dropdown
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
 			click("//*[@id='ctl00_ContentPlaceHolder1_trMeasureAssmnt']");
@@ -108,12 +108,15 @@ public class Manage_meetings extends BaseClassOne {
 			click("//input[contains(@type,'submit')][@value='Add Intervention Plan']");		
 			// Frame select
 			SwitchFrameName("RadWindow2");
-			// To click the select  details to submit the intervention details from dropdown
+			// To click interventions Skill
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
-			Thread.sleep(4000);
+			Thread.sleep(2000);
+			// To click and select  interventions from list
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_DropDown']/div/ul/li[1]/label/input");
+			Thread.sleep(2000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
-
+			click("//*[@id='ctl00_ContentPlaceHolder1_lblProgramDescription']");
+			Thread.sleep(2000);
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
 			// To click the select  details to submit the intervention details from dropdown
 
@@ -870,7 +873,7 @@ public class Manage_meetings extends BaseClassOne {
 
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_spanTier']"), "The following students were discussed at this meeting");
 
-	//		Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_divInterventions']/span"), "EdInsight has auto-generated the following intervention plans as a result of this meeting. Please complete, review, and submit these plans.");
+			//		Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_divInterventions']/span"), "EdInsight has auto-generated the following intervention plans as a result of this meeting. Please complete, review, and submit these plans.");
 
 		} 
 
@@ -887,15 +890,15 @@ public class Manage_meetings extends BaseClassOne {
 
 	{
 		try {
-			
+
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnClose']");
-			
-		// For Future Scripts	
+
+			// For Future Scripts	
 			// To assert the validations	
-	//		Assert.assertEquals((readAlertMessageText()), "There are still unsubmitted intervention plans.  Are you sure you want to close this window?");		
+			//		Assert.assertEquals((readAlertMessageText()), "There are still unsubmitted intervention plans.  Are you sure you want to close this window?");		
 			// To accept the alert
-		//	AcceptAlert();		
-			
+			//	AcceptAlert();		
+
 			driver.switchTo().defaultContent();
 			Thread.sleep(2000);
 			// To assert the validations		
@@ -913,8 +916,8 @@ public class Manage_meetings extends BaseClassOne {
 
 
 }
-			
-	
+
+
 
 
 
@@ -944,9 +947,9 @@ public class Manage_meetings extends BaseClassOne {
 
 
 /************** For Future Purpose***************/
-			
-			
-			
+
+
+
 /*			//Hover over MTTS link			
 			Actions actions11 = new Actions(driver);
 			WebElement mouseHover11 = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
@@ -976,16 +979,16 @@ public class Manage_meetings extends BaseClassOne {
 			click("//*[@id='ctl00_ContentPlaceHolder1_ctl00_ctl00_gridInvervention_ctl02_btnEditIntervention']");
 
 			SwitchFrameName("RadWindow2");
-			
+
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnDelete']");
-			
+
 			AcceptAlert();
-			
+
 			SwitchFrameName("RadWindow1");
-			
+
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnClose']");
-*/
-	
+ */
+
 
 
 

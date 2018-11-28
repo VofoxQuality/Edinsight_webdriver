@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.localassessment.Copy_assessment_vendor">
         <methods>
           <include name="setup1"/>
@@ -14,6 +15,17 @@
           <include name="TCED15006"/>
         </methods>
       </class> <!-- com.localassessment.Copy_assessment_vendor -->
+=======
+      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
+        <methods>
+          <include name="setup1"/>
+          <include name="TCED14406"/>
+          <include name="TCED14413"/>
+          <include name="tearDown"/>
+          <include name="TCED14420"/>
+        </methods>
+      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
+>>>>>>> e466c531bb131c1fec2b623672e025ad19ffd348
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

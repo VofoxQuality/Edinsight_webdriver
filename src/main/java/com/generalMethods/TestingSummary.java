@@ -21,19 +21,19 @@ public class TestingSummary extends BaseClassOne{
 
 	Thread.sleep(2000);
 	//To Assert the Grid labels
-	Assert.assertEquals("Testing Summary", getText("xpath=(.//*[normalize-space(text()) and normalize-space(.)='##LOC[Cancel]##'])[2]/following::span[1]"));
+	Assert.assertEquals(getText("xpath=(.//*[normalize-space(text()) and normalize-space(.)='##LOC[Cancel]##'])[2]/following::span[1]"),"Testing Summary");
 
 	Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_lblSchoolHCompletionRate']").contains("School with the highest completion rate"),"failed to assert text"+"School with the highest completion rate");
 
 	Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_lblSchoolLCompletetionRate']").contains("School with the lowest completion rate"),"failed to assert text"+"School with the lowest completion rate");
 
-	Assert.assertEquals("School/Building", getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[1]/a"));
+	Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[1]/a"),"School/Building");
 
-	Assert.assertEquals("Scheduled Students", getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[5]/a"));
+	Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[5]/a"),"Scheduled Students");
 
-	Assert.assertEquals("Completed", getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[6]/a"));
+	Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[6]/a"),"Completed");
 
-	Assert.assertEquals("Not Completed", getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[7]/a"));
+	Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_rgTestingSummeryReportr_ctl00']/thead/tr/th[7]/a"),"Not Completed");
 
 
 	//To click on the options button
