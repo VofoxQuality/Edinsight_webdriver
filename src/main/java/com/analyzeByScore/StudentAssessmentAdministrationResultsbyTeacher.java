@@ -44,10 +44,10 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
 
 			//To select the Assessment 
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessment']"))).selectByVisibleText("For Automation- do not edit");
+			select("//*[@id='ctl00_MainContent_ddlAssessment']","For Automation- do not edit");
 
 			//To select the Administrations
-			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministration']"))).selectByVisibleText("For Automation- do not edit (Admin)(2017-2018)");
+			select("//*[@id='ctl00_MainContent_ddlAdministration']","For Automation- do not edit (Admin)(2017-2018)");
 
 			//To click on the show administration results
 			click("//*[@id='ctl00_MainContent_btnShowResults']");
@@ -235,6 +235,9 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Thread.sleep(7000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+			
+			// To Assert the header
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");
 
 
 		}catch(Exception e) 
@@ -257,6 +260,9 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Thread.sleep(7000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
+			
+			// To Assert the header
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");
 
 
 		}catch(Exception e) 
@@ -362,6 +368,9 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Thread.sleep(4000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+			
+			// To Assert the header
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");
 
 
 		}catch(Exception e) 
@@ -384,8 +393,12 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			Thread.sleep(4000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
+			
 			Thread.sleep(3000);
-			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");		
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");
+			
+			// To Assert the header
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");
 
 
 
@@ -576,11 +589,8 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Student Assessment Administration Report By Teacher");		
-
-
-
 
 		}catch(Exception e) 
 		{
