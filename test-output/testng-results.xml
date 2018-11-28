@@ -1,509 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="6" passed="1" failed="5" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-28T05:35:47Z" name="Suite" finished-at="2018-11-28T05:36:01Z" duration-ms="14281">
+  <suite started-at="2018-11-28T11:45:08Z" name="Suite" finished-at="2018-11-28T11:48:31Z" duration-ms="202916">
     <groups>
     </groups>
-    <test started-at="2018-11-28T05:35:47Z" name="Test" finished-at="2018-11-28T05:36:01Z" duration-ms="14281">
-      <class name="com.localassessment.Copy_assessment_vendor">
-        <test-method is-config="true" signature="setup1()[pri:0, instance:com.localassessment.Copy_assessment_vendor@52b1beb6]" started-at="2018-11-28T05:35:47Z" name="setup1" finished-at="2018-11-28T05:35:52Z" duration-ms="5289" status="PASS">
+    <test started-at="2018-11-28T11:45:08Z" name="Test" finished-at="2018-11-28T11:48:31Z" duration-ms="202916">
+      <class name="com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher">
+        <test-method is-config="true" signature="setup1()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:45:08Z" name="setup1" finished-at="2018-11-28T11:45:13Z" duration-ms="5394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method signature="TCED15001()[pri:1, instance:com.localassessment.Copy_assessment_vendor@52b1beb6]" started-at="2018-11-28T05:35:52Z" name="TCED15001" finished-at="2018-11-28T05:35:58Z" duration-ms="5734" status="PASS">
+        <test-method signature="TCED14151()[pri:1, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:45:13Z" name="TCED14151" finished-at="2018-11-28T11:45:23Z" duration-ms="10279" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15001 -->
-        <test-method signature="TCED15002()[pri:2, instance:com.localassessment.Copy_assessment_vendor@52b1beb6]" started-at="2018-11-28T05:35:58Z" name="TCED15002" finished-at="2018-11-28T05:36:01Z" duration-ms="3204" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failed to decode response from marionette
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8224, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: cb3bd7e9-d286-4e96-a779-e9aa43ffe825
-*** Element info: {Using=xpath, value=//*[@id='ctl00_MainContent_txtTestId']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed to decode response from marionette
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8224, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: cb3bd7e9-d286-4e96-a779-e9aa43ffe825
-*** Element info: {Using=xpath, value=//*[@id='ctl00_MainContent_txtTestId']}
-at org.testng.Assert.fail(Assert.java:96)
-at com.localassessment.Copy_assessment_vendor.TCED15002(Copy_assessment_vendor.java:50)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- TCED14151 -->
+        <test-method signature="TCED14152()[pri:2, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:45:23Z" name="TCED14152" finished-at="2018-11-28T11:45:23Z" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15002 -->
-        <test-method signature="TCED15003()[pri:3, instance:com.localassessment.Copy_assessment_vendor@52b1beb6]" started-at="2018-11-28T05:36:01Z" name="TCED15003" finished-at="2018-11-28T05:36:01Z" duration-ms="3" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8224, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: cb3bd7e9-d286-4e96-a779-e9aa43ffe825
-*** Element info: {Using=css selector, value=frame[name='rwCopyAssessment'],iframe[name='rwCopyAssessment']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8224, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: cb3bd7e9-d286-4e96-a779-e9aa43ffe825
-*** Element info: {Using=css selector, value=frame[name='rwCopyAssessment'],iframe[name='rwCopyAssessment']}
-at org.testng.Assert.fail(Assert.java:96)
-at com.localassessment.Copy_assessment_vendor.TCED15003(Copy_assessment_vendor.java:68)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- TCED14152 -->
+        <test-method signature="TCED14153()[pri:3, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:45:23Z" name="TCED14153" finished-at="2018-11-28T11:45:25Z" duration-ms="1602" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15003 -->
-        <test-method signature="TCED15004()[pri:4, instance:com.localassessment.Copy_assessment_vendor@52b1beb6]" started-at="2018-11-28T05:36:01Z" name="TCED15004" finished-at="2018-11-28T05:36:01Z" duration-ms="4" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8224, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: cb3bd7e9-d286-4e96-a779-e9aa43ffe825
-*** Element info: {Using=xpath, value=//*[@id='aspnetForm']/div[4]/div/table/tbody/tr[2]/td/table/tbody/tr[1]/td[1]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8224, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: cb3bd7e9-d286-4e96-a779-e9aa43ffe825
-*** Element info: {Using=xpath, value=//*[@id='aspnetForm']/div[4]/div/table/tbody/tr[2]/td/table/tbody/tr[1]/td[1]}
-at org.testng.Assert.fail(Assert.java:96)
-at com.localassessment.Copy_assessment_vendor.TCED15004(Copy_assessment_vendor.java:99)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- TCED14153 -->
+        <test-method signature="TCED14154()[pri:4, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:45:25Z" name="TCED14154" finished-at="2018-11-28T11:45:41Z" duration-ms="16135" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15004 -->
-        <test-method signature="TCED15005()[pri:5, instance:com.localassessment.Copy_assessment_vendor@52b1beb6]" started-at="2018-11-28T05:36:01Z" name="TCED15005" finished-at="2018-11-28T05:36:01Z" duration-ms="10" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8224, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: cb3bd7e9-d286-4e96-a779-e9aa43ffe825
-*** Element info: {Using=xpath, value=//*[@id='aspnetForm']/div[4]/div/table/tbody/tr[2]/td/table/tbody/tr[7]/td[3]/div[2]/span}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8224, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: cb3bd7e9-d286-4e96-a779-e9aa43ffe825
-*** Element info: {Using=xpath, value=//*[@id='aspnetForm']/div[4]/div/table/tbody/tr[2]/td/table/tbody/tr[7]/td[3]/div[2]/span}
-at org.testng.Assert.fail(Assert.java:96)
-at com.localassessment.Copy_assessment_vendor.TCED15005(Copy_assessment_vendor.java:168)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- TCED14154 -->
+        <test-method signature="TCED14155()[pri:5, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:45:41Z" name="TCED14155" finished-at="2018-11-28T11:45:57Z" duration-ms="15396" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED15005 -->
-        <test-method signature="TCED15006()[pri:6, instance:com.localassessment.Copy_assessment_vendor@52b1beb6]" started-at="2018-11-28T05:36:01Z" name="TCED15006" finished-at="2018-11-28T05:36:01Z" duration-ms="6" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8224, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: cb3bd7e9-d286-4e96-a779-e9aa43ffe825
-*** Element info: {Using=css selector, value=input#ctl00_ContentPlaceHolder1_txtQuestionStartingId}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'QA-SCHEDULER', ip: '192.168.10.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8224, moz:profile: C:\Users\Developer\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: cb3bd7e9-d286-4e96-a779-e9aa43ffe825
-*** Element info: {Using=css selector, value=input#ctl00_ContentPlaceHolder1_txtQuestionStartingId}
-at org.testng.Assert.fail(Assert.java:96)
-at com.localassessment.Copy_assessment_vendor.TCED15006(Copy_assessment_vendor.java:205)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-=======
-<testng-results skipped="0" failed="3" ignored="0" total="26" passed="23">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="427378" started-at="2018-11-28T10:59:19Z" finished-at="2018-11-28T11:06:26Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="427378" started-at="2018-11-28T10:59:19Z" finished-at="2018-11-28T11:06:26Z">
-      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="setup1" is-config="true" duration-ms="8017" started-at="2018-11-28T10:59:19Z" finished-at="2018-11-28T10:59:27Z">
+        </test-method> <!-- TCED14155 -->
+        <test-method signature="TCED14156()[pri:6, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:45:57Z" name="TCED14156" finished-at="2018-11-28T11:46:09Z" duration-ms="12275" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED14401()[pri:1, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14401" duration-ms="12092" started-at="2018-11-28T10:59:27Z" finished-at="2018-11-28T10:59:39Z">
+        </test-method> <!-- TCED14156 -->
+        <test-method signature="TCED14157()[pri:7, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:46:09Z" name="TCED14157" finished-at="2018-11-28T11:46:11Z" duration-ms="1835" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14401 -->
-        <test-method status="PASS" signature="TCED14402()[pri:2, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14402" duration-ms="381" started-at="2018-11-28T10:59:39Z" finished-at="2018-11-28T10:59:40Z">
+        </test-method> <!-- TCED14157 -->
+        <test-method signature="TCED14158()[pri:8, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:46:11Z" name="TCED14158" finished-at="2018-11-28T11:46:21Z" duration-ms="10248" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14402 -->
-        <test-method status="PASS" signature="TCED14403()[pri:3, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14403" duration-ms="1202" started-at="2018-11-28T10:59:40Z" finished-at="2018-11-28T10:59:41Z">
+        </test-method> <!-- TCED14158 -->
+        <test-method signature="TCED14159()[pri:9, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:46:21Z" name="TCED14159" finished-at="2018-11-28T11:46:33Z" duration-ms="12369" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14403 -->
-        <test-method status="PASS" signature="TCED14404()[pri:4, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14404" duration-ms="9337" started-at="2018-11-28T10:59:41Z" finished-at="2018-11-28T10:59:50Z">
+        </test-method> <!-- TCED14159 -->
+        <test-method signature="TCED14160()[pri:10, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:46:33Z" name="TCED14160" finished-at="2018-11-28T11:46:35Z" duration-ms="1176" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14404 -->
-        <test-method status="PASS" signature="TCED14405()[pri:5, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14405" duration-ms="6430" started-at="2018-11-28T10:59:50Z" finished-at="2018-11-28T10:59:57Z">
+        </test-method> <!-- TCED14160 -->
+        <test-method signature="TCED14161()[pri:11, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:46:35Z" name="TCED14161" finished-at="2018-11-28T11:46:45Z" duration-ms="10326" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED14405 -->
-        <test-method status="FAIL" signature="TCED14406()[pri:6, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14406" duration-ms="28526" started-at="2018-11-28T10:59:57Z" finished-at="2018-11-28T11:00:25Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Could not find any element matching '//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/span']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Could not find any element matching '//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/span'
-at Library.BaseClassOne.find(BaseClassOne.java:226)
-at Library.BaseClassOne.getText(BaseClassOne.java:396)
-at Library.BaseClassOne.getText(BaseClassOne.java:346)
-at com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills.Studentdrilldownlabels2(AnalyzebyHigherOrderThinkingSkills.java:753)
-at com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills.TCED14406(AnalyzebyHigherOrderThinkingSkills.java:149)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
->>>>>>> e466c531bb131c1fec2b623672e025ad19ffd348
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- TCED14161 -->
+        <test-method signature="TCED14162()[pri:12, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:46:45Z" name="TCED14162" finished-at="2018-11-28T11:46:46Z" duration-ms="1520" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- TCED15006 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.localassessment.Copy_assessment_vendor@52b1beb6]" started-at="2018-11-28T05:36:01Z" name="tearDown" finished-at="2018-11-28T05:36:01Z" duration-ms="2" status="PASS">
+        </test-method> <!-- TCED14162 -->
+        <test-method signature="TCED14163()[pri:13, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:46:46Z" name="TCED14163" finished-at="2018-11-28T11:47:00Z" duration-ms="13688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14163 -->
+        <test-method signature="TCED14164()[pri:14, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:47:00Z" name="TCED14164" finished-at="2018-11-28T11:47:28Z" duration-ms="27923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14164 -->
+        <test-method signature="TCED14165()[pri:15, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:47:28Z" name="TCED14165" finished-at="2018-11-28T11:48:31Z" duration-ms="62546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCED14165 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher@942a29c]" started-at="2018-11-28T11:48:31Z" name="tearDown" finished-at="2018-11-28T11:48:31Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.localassessment.Copy_assessment_vendor -->
+      </class> <!-- com.analyzeByScore.StudentAssessmentAdministrationResultsbyTeacher -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
-=======
-        </test-method> <!-- TCED14406 -->
-        <test-method status="PASS" signature="TCED14407()[pri:7, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14407" duration-ms="18249" started-at="2018-11-28T11:00:25Z" finished-at="2018-11-28T11:00:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14407 -->
-        <test-method status="PASS" signature="TCED14408()[pri:8, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14408" duration-ms="16662" started-at="2018-11-28T11:00:43Z" finished-at="2018-11-28T11:01:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14408 -->
-        <test-method status="PASS" signature="TCED14409()[pri:9, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14409" duration-ms="7823" started-at="2018-11-28T11:01:00Z" finished-at="2018-11-28T11:01:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14409 -->
-        <test-method status="PASS" signature="TCED14410()[pri:10, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14410" duration-ms="1140" started-at="2018-11-28T11:01:08Z" finished-at="2018-11-28T11:01:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14410 -->
-        <test-method status="PASS" signature="TCED14411()[pri:11, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14411" duration-ms="6145" started-at="2018-11-28T11:01:09Z" finished-at="2018-11-28T11:01:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14411 -->
-        <test-method status="PASS" signature="TCED14412()[pri:12, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14412" duration-ms="5997" started-at="2018-11-28T11:01:15Z" finished-at="2018-11-28T11:01:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14412 -->
-        <test-method status="FAIL" signature="TCED14413()[pri:13, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14413" duration-ms="28812" started-at="2018-11-28T11:01:21Z" finished-at="2018-11-28T11:01:50Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Could not find any element matching '//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/span']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Could not find any element matching '//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/span'
-at Library.BaseClassOne.find(BaseClassOne.java:226)
-at Library.BaseClassOne.getText(BaseClassOne.java:396)
-at Library.BaseClassOne.getText(BaseClassOne.java:346)
-at com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills.Studentdrilldownlabels2(AnalyzebyHigherOrderThinkingSkills.java:753)
-at com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills.TCED14413(AnalyzebyHigherOrderThinkingSkills.java:316)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14413 -->
-        <test-method status="PASS" signature="TCED14414()[pri:14, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14414" duration-ms="17770" started-at="2018-11-28T11:01:50Z" finished-at="2018-11-28T11:02:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14414 -->
-        <test-method status="PASS" signature="TCED14415()[pri:15, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14415" duration-ms="14035" started-at="2018-11-28T11:02:08Z" finished-at="2018-11-28T11:02:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14415 -->
-        <test-method status="PASS" signature="TCED14416()[pri:16, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14416" duration-ms="7547" started-at="2018-11-28T11:02:22Z" finished-at="2018-11-28T11:02:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14416 -->
-        <test-method status="PASS" signature="TCED14417()[pri:17, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14417" duration-ms="1181" started-at="2018-11-28T11:02:29Z" finished-at="2018-11-28T11:02:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14417 -->
-        <test-method status="PASS" signature="TCED14418()[pri:18, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14418" duration-ms="5817" started-at="2018-11-28T11:02:30Z" finished-at="2018-11-28T11:02:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14418 -->
-        <test-method status="PASS" signature="TCED14419()[pri:19, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14419" duration-ms="5775" started-at="2018-11-28T11:02:36Z" finished-at="2018-11-28T11:02:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14419 -->
-        <test-method status="FAIL" signature="TCED14420()[pri:20, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14420" duration-ms="28362" started-at="2018-11-28T11:02:42Z" finished-at="2018-11-28T11:03:10Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Could not find any element matching '//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/span']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Could not find any element matching '//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/span'
-at Library.BaseClassOne.find(BaseClassOne.java:226)
-at Library.BaseClassOne.getText(BaseClassOne.java:396)
-at Library.BaseClassOne.getText(BaseClassOne.java:346)
-at com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills.Studentdrilldownlabels2(AnalyzebyHigherOrderThinkingSkills.java:753)
-at com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills.TCED14420(AnalyzebyHigherOrderThinkingSkills.java:480)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14420 -->
-        <test-method status="PASS" signature="TCED14421()[pri:21, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14421" duration-ms="17577" started-at="2018-11-28T11:03:10Z" finished-at="2018-11-28T11:03:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14421 -->
-        <test-method status="PASS" signature="TCED14422()[pri:22, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14422" duration-ms="14018" started-at="2018-11-28T11:03:28Z" finished-at="2018-11-28T11:03:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14422 -->
-        <test-method status="PASS" signature="TCED14423()[pri:23, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14423" duration-ms="14194" started-at="2018-11-28T11:03:42Z" finished-at="2018-11-28T11:03:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14423 -->
-        <test-method status="PASS" signature="TCED14424()[pri:24, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14424" duration-ms="8311" started-at="2018-11-28T11:03:56Z" finished-at="2018-11-28T11:04:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14424 -->
-        <test-method status="PASS" signature="TCED14425()[pri:25, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14425" duration-ms="28759" started-at="2018-11-28T11:04:05Z" finished-at="2018-11-28T11:04:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14425 -->
-        <test-method status="PASS" signature="TCED14426()[pri:26, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="TCED14426" duration-ms="113172" started-at="2018-11-28T11:04:33Z" finished-at="2018-11-28T11:06:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED14426 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills@7cbd213e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-28T11:06:26Z" finished-at="2018-11-28T11:06:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
->>>>>>> e466c531bb131c1fec2b623672e025ad19ffd348
 </testng-results>
