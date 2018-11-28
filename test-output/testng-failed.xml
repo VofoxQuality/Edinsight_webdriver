@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<<<<<<< HEAD
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.analyzeByScore.ItemAnalysisbyQuestion">
+      <class name="com.localassessment.Copy_assessment_vendor">
         <methods>
-          <include name="TCED14091"/>
-          <include name="TCED14090"/>
           <include name="setup1"/>
+          <include name="TCED15003"/>
+          <include name="TCED15005"/>
+          <include name="TCED15002"/>
           <include name="tearDown"/>
+          <include name="TCED15004"/>
+          <include name="TCED15006"/>
         </methods>
-      </class> <!-- com.analyzeByScore.ItemAnalysisbyQuestion -->
+      </class> <!-- com.localassessment.Copy_assessment_vendor -->
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
+        <methods>
+          <include name="setup1"/>
+          <include name="TCED14406"/>
+          <include name="TCED14413"/>
+          <include name="tearDown"/>
+          <include name="TCED14420"/>
+        </methods>
+      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
+>>>>>>> e466c531bb131c1fec2b623672e025ad19ffd348
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,44 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
 <<<<<<< HEAD
-      <class name="com.Home.Teacher_Course_Section_Curriculum_Maps">
+      <class name="com.localassessment.Copy_assessment_vendor">
         <methods>
-          <include name="TCED35702"/>
-          <include name="TCED35703"/>
           <include name="setup1"/>
-          <include name="TCED35701"/>
-          <include name="TCED35706"/>
-          <include name="TCED35705"/>
+          <include name="TCED15003"/>
+          <include name="TCED15005"/>
+          <include name="TCED15002"/>
           <include name="tearDown"/>
-          <include name="TCED35704"/>
+          <include name="TCED15004"/>
+          <include name="TCED15006"/>
         </methods>
-      </class> <!-- com.Home.Teacher_Course_Section_Curriculum_Maps -->
+      </class> <!-- com.localassessment.Copy_assessment_vendor -->
 =======
-      <class name="com.Home.Student_Building_Grade_Lists">
+      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
         <methods>
-          <include name="TCED33203"/>
-          <include name="TCED33214"/>
-          <include name="tearDown"/>
-          <include name="TCED33205"/>
-          <include name="TCED33206"/>
           <include name="setup1"/>
-          <include name="TCED33204"/>
-          <include name="TCED33215"/>
-          <include name="TCED33209"/>
-          <include name="TCED33207"/>
-          <include name="TCED33208"/>
-          <include name="TCED33201"/>
-          <include name="TCED33212"/>
-          <include name="TCED33202"/>
-          <include name="TCED33213"/>
-          <include name="TCED33210"/>
-          <include name="TCED33211"/>
+          <include name="TCED14406"/>
+          <include name="TCED14413"/>
+          <include name="tearDown"/>
+          <include name="TCED14420"/>
         </methods>
-      </class> <!-- com.Home.Student_Building_Grade_Lists -->
->>>>>>> 6e67ff8fe903565816206c33b680160bfccd7b2a
+      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
+>>>>>>> e466c531bb131c1fec2b623672e025ad19ffd348
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
