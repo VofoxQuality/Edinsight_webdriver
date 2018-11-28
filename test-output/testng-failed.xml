@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-=======
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
->>>>>>> 6e67ff8fe903565816206c33b680160bfccd7b2a
     <classes>
-      <class name="com.curriculum.CTE_Competency_List">
+      <class name="com.localassessment.Copy_assessment_vendor">
         <methods>
-          <include name="TCED30704"/>
           <include name="setup1"/>
+          <include name="TCED15003"/>
+          <include name="TCED15005"/>
+          <include name="TCED15002"/>
           <include name="tearDown"/>
-          <include name="TCED30705"/>
+          <include name="TCED15004"/>
+          <include name="TCED15006"/>
         </methods>
-      </class> <!-- com.curriculum.CTE_Competency_List -->
+      </class> <!-- com.localassessment.Copy_assessment_vendor -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
