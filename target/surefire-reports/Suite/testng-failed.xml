@@ -5,11 +5,9 @@
     <classes>
       <class name="com.analyzeByScore.ItemAnalysisbyQuestion">
         <methods>
-          <include name="TCED14104"/>
           <include name="TCED14091"/>
           <include name="TCED14090"/>
           <include name="setup1"/>
-          <include name="TCED14103"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.analyzeByScore.ItemAnalysisbyQuestion -->

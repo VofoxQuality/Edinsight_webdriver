@@ -1,31 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 263.886 sec <<< FAILURE! - in TestSuite
-TCED14090(com.analyzeByScore.ItemAnalysisbyQuestion)  Time elapsed: 20.152 sec  <<< FAILURE!
+Tests run: 24, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 346.34 sec <<< FAILURE! - in TestSuite
+TCED14090(com.analyzeByScore.ItemAnalysisbyQuestion)  Time elapsed: 20.234 sec  <<< FAILURE!
 java.lang.AssertionError: Timeout during waiting for element: '//a[contains(text(),'5')]'
 	at Library.BaseClassOne.waitFor(BaseClassOne.java:278)
 	at Library.BaseClassOne.click(BaseClassOne.java:190)
 	at com.analyzeByScore.ItemAnalysisbyQuestion.TCED14090(ItemAnalysisbyQuestion.java:234)
 
-TCED14091(com.analyzeByScore.ItemAnalysisbyQuestion)  Time elapsed: 28.442 sec  <<< FAILURE!
+TCED14091(com.analyzeByScore.ItemAnalysisbyQuestion)  Time elapsed: 28.585 sec  <<< FAILURE!
 java.lang.AssertionError: Timeout during waiting for element: '//a[contains(text(),'5')]'
 	at Library.BaseClassOne.waitFor(BaseClassOne.java:278)
 	at Library.BaseClassOne.click(BaseClassOne.java:190)
 	at com.analyzeByScore.ItemAnalysisbyQuestion.TCED14091(ItemAnalysisbyQuestion.java:263)
-
-TCED14103(com.analyzeByScore.ItemAnalysisbyQuestion)  Time elapsed: 20.919 sec  <<< FAILURE!
-java.lang.AssertionError: Timeout during waiting for element: '//a[contains(.,'Analyze Scores')]'
-	at Library.BaseClassOne.waitFor(BaseClassOne.java:278)
-	at Library.BaseClassOne.click(BaseClassOne.java:190)
-	at com.analyzeByScore.ItemAnalysisbyQuestion.ReportParam(ItemAnalysisbyQuestion.java:601)
-	at com.analyzeByScore.ItemAnalysisbyQuestion.TCED14103(ItemAnalysisbyQuestion.java:550)
-
-TCED14104(com.analyzeByScore.ItemAnalysisbyQuestion)  Time elapsed: 44.275 sec  <<< FAILURE!
-java.lang.AssertionError: Failed to download document which has extension .PDF expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.generalMethods.AssessmentPrint.AssessmentPrintReports(AssessmentPrint.java:43)
-	at com.analyzeByScore.ItemAnalysisbyQuestion.TCED14104(ItemAnalysisbyQuestion.java:575)
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="257.252" tests="24" errors="0" skipped="0" failures="4">
+<testsuite name="TestSuite" time="340.078" tests="24" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -63,189 +63,141 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TCED14081" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="10.552"/>
-  <testcase name="TCED14082" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="0.172"/>
-  <testcase name="TCED14083" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="0.781"/>
-  <testcase name="TCED14084" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="0.844"/>
-  <testcase name="TCED14085" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="5.063"/>
-  <testcase name="TCED14086" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="5.061"/>
-  <testcase name="TCED14087" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="4.707"/>
-  <testcase name="TCED14088" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="5.112"/>
-  <testcase name="TCED14089" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="8.503"/>
-  <testcase name="TCED14090" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="20.152">
+  <testcase name="TCED14081" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="10.429"/>
+  <testcase name="TCED14082" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="0.141"/>
+  <testcase name="TCED14083" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="0.813"/>
+  <testcase name="TCED14084" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="0.861"/>
+  <testcase name="TCED14085" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="5.194"/>
+  <testcase name="TCED14086" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="5.093"/>
+  <testcase name="TCED14087" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="5.306"/>
+  <testcase name="TCED14088" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="5.397"/>
+  <testcase name="TCED14089" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="8.884"/>
+  <testcase name="TCED14090" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="20.234">
     <failure message="Timeout during waiting for element: &apos;//a[contains(text(),&apos;5&apos;)]&apos;" type="java.lang.AssertionError">java.lang.AssertionError: Timeout during waiting for element: '//a[contains(text(),'5')]'
 	at Library.BaseClassOne.waitFor(BaseClassOne.java:278)
 	at Library.BaseClassOne.click(BaseClassOne.java:190)
 	at com.analyzeByScore.ItemAnalysisbyQuestion.TCED14090(ItemAnalysisbyQuestion.java:234)
 </failure>
-    <system-err><![CDATA[1543401931728	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: timeout
-1543401931728	addons.productaddons	INFO	fetching config from: chrome://global/content/gmp-sources/openh264.json
-1543401931729	addons.productaddons	INFO	fetching config from: chrome://global/content/gmp-sources/widevinecdm.json
-1543401931730	addons.productaddons	INFO	found plugin: gmp-gmpopenh264
-1543401931731	addons.productaddons	INFO	found plugin: gmp-widevinecdm
-1543401932189	addons.productaddons	INFO	downloadXHR File download. status=200
-1543401932195	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\DEVELO~1\AppData\Local\Temp\tmpaddon-b7074
-1543401934631	addons.productaddons	INFO	downloadXHR File download. status=200
-1543401934635	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\DEVELO~1\AppData\Local\Temp\tmpaddon-c8cb7a
-]]></system-err>
   </testcase>
-  <testcase name="TCED14091" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="28.442">
+  <testcase name="TCED14091" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="28.585">
     <failure message="Timeout during waiting for element: &apos;//a[contains(text(),&apos;5&apos;)]&apos;" type="java.lang.AssertionError">java.lang.AssertionError: Timeout during waiting for element: '//a[contains(text(),'5')]'
 	at Library.BaseClassOne.waitFor(BaseClassOne.java:278)
 	at Library.BaseClassOne.click(BaseClassOne.java:190)
 	at com.analyzeByScore.ItemAnalysisbyQuestion.TCED14091(ItemAnalysisbyQuestion.java:263)
 </failure>
-    <system-err><![CDATA[1543401938401	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1543401938476	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bneLxxskahSUGAJ0WQHEtYID ... 5tcykm+1w8e5a7ChyiGonaHm6R9SZDUgkCpz5iGhA67hhWQpD2Ru1OvljY5QDnkpeWUmd7FrHmFz2gitWSexdaLtc3Aov2xfCzsTA3qAMxsFcFUqVC/8LfPy8UF/R
-1543401938610	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bneLxxskahSUGAJ0WQHEtYID ... 5tcykm+1w8e5a7ChyiGonaHm6R9SZDUgkCpz5iGhA67hhWQpD2Ru1OvljY5QDnkpeWUmd7FrHmFz2gitWSexdaLtc3Aov2xfCzsTA3qAMxsFcFUqVC/8LfPy8UF/R
-1543401938613	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bneLxxskahSUGAJ0WQHEtYID ... 5tcykm+1w8e5a7ChyiGonaHm6R9SZDUgkCpz5iGhA67hhWQpD2Ru1OvljY5QDnkpeWUmd7FrHmFz2gitWSexdaLtc3Aov2xfCzsTA3qAMxsFcFUqVC/8LfPy8UF/R
-1543401938795	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451488
-1543401938796	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451494
-1543401938796	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451495
-1543401938866	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnV2Yah9CNHhB4EY7sot+UtjxdzJR8OVAKV2lL98kf8NALPRZHFA6dqduNEk/2emGd7LOcRRTdDoPEW2V2PjZ2wzFRyLppUmuQWzzTT7X2NEhzHMtVwq0JgDTwthcBIFxOQ==
-1543401938929	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451501
-1543401938931	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451502
-JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnV2Yah9CNHhB4EY7sot+UtjxdzJR8OVAKV2lL98kf8NALPRZHFA6dqduNEk/2emGd7LOcRRTdDoPEW2V2PjZ2wzFRyLppUmuQWzzTT7X2NEhzHMtVwq0JgDTwthcBIFxOQ==, line 1: ReferenceError: False is not defined
-1543401938956	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnV2Yah9CNHhB4EY7sot+UtjxdzJR8OVAKV2lL98kf8NALPRZHFA6dqduNEk/2emGd7LOcRRTdDoPEW2V2PjZ2wzFRyLppUmuQWzzTT7X2NEhzHMtVwq0JgDTwthcBIFxOQ==
-1543401938995	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnV2Yah9CNHhB4EY7sot+UtjxdzJR8OVAKV2lL98kf8NALPRZHFA6dqduNEk/2emGd7LOcRRTdDoPEW2V2PjZ2wzFRyLppUmuQWzzTT7X2NEhzHMtVwq0JgDTwthcBIFxOQ==
-1543401939144	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnV2Yah9CNHhB4EY7sot+UtjxdzJR8OVAKV2lL98kf8NALPRZHFA6dqduNEk/2emGd7LOcRRTdDoPEW2V2PjZ2wzFRyLppUmuQWzzTT7X2NEhzHMtVwq0JgDTwthcBIFxOQ==
-1543401939147	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnV2Yah9CNHhB4EY7sot+UtjxdzJR8OVAKV2lL98kf8NALPRZHFA6dqduNEk/2emGd7LOcRRTdDoPEW2V2PjZ2wzFRyLppUmuQWzzTT7X2NEhzHMtVwq0JgDTwthcBIFxOQ==
-1543401939316	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451499
-1543401939316	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451505
-1543401939316	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451506
-1543401939397	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfgwf4mOMu+PGLC2zrUIai8=
-1543401939442	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451512
-1543401939444	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451513
-JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfgwf4mOMu+PGLC2zrUIai8=, line 1: ReferenceError: False is not defined
-1543401939475	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfgwf4mOMu+PGLC2zrUIai8=
-1543401939580	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfgwf4mOMu+PGLC2zrUIai8=
-1543401939780	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfgwf4mOMu+PGLC2zrUIai8=
-1543401939781	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfgwf4mOMu+PGLC2zrUIai8=
-1543401939938	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451510
-1543401939938	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451516
-1543401939938	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451517
-1543401940003	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bned7wtKbo0NuH+afOk5CZ8k=
-1543401940056	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451523
-1543401940059	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451524
-JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bned7wtKbo0NuH+afOk5CZ8k=, line 1: ReferenceError: False is not defined
-1543401940089	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bned7wtKbo0NuH+afOk5CZ8k=
-1543401940123	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bned7wtKbo0NuH+afOk5CZ8k=
-1543401940254	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bned7wtKbo0NuH+afOk5CZ8k=
-1543401940254	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bned7wtKbo0NuH+afOk5CZ8k=
-1543401940405	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451521
-1543401940405	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451527
-1543401940405	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451528
-1543401940478	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnTS/2+JW9hCm9Xhh0nMuXVU=
-1543401940531	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451534
-1543401940534	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451535
-JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnTS/2+JW9hCm9Xhh0nMuXVU=, line 1: ReferenceError: False is not defined
-1543401940564	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnTS/2+JW9hCm9Xhh0nMuXVU=
-1543401940602	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnTS/2+JW9hCm9Xhh0nMuXVU=
-1543401940742	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnTS/2+JW9hCm9Xhh0nMuXVU=
-1543401940743	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnTS/2+JW9hCm9Xhh0nMuXVU=
-1543401940894	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451532
-1543401940895	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451538
-1543401940895	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451539
-1543401940963	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnZlhZVcaRBZcaURgirZxKjc=
-1543401941017	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451545
-1543401941020	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451546
-JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnZlhZVcaRBZcaURgirZxKjc=, line 1: ReferenceError: False is not defined
-1543401941044	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnZlhZVcaRBZcaURgirZxKjc=
-1543401941093	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnZlhZVcaRBZcaURgirZxKjc=
-1543401941268	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnZlhZVcaRBZcaURgirZxKjc=
-1543401941268	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnZlhZVcaRBZcaURgirZxKjc=
-1543401941434	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451543
-1543401941434	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451549
-1543401941434	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451550
-1543401941498	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2 ... F1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2PVAAQfiyQdH9+HhR3G35xCceE7OMoxcNLXcX79kW12i
-1543401941549	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451556
-1543401941551	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451557
-JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2mYxSQdbKVFfM1rObJke4qY2jmWGTDWQhora0W/Gx32FL/9aojlkzHVUS5tAusVVyFkOWM8YdCgFbWdyUDIrCUS4aA7fD2JCo7KPo+Cz6IHsfsXHcntD5dOawOuvsRZrAgd3TQMpok850TAt4OT6wF2sae+aEViUURES7Od7iNG9ewfA0QwA72GoKBJtPVvWhCwC+vDOTmWPuwNhJMIyJgakcVrwN9m2yvF7ga5c5M98N/WlHCn9hmy7z9J/B/G8smERdHjOAcep6vMnATRh76NgxF1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2PVAAQfiyQdH9+HhR3G35xCceE7OMoxcNLXcX79kW12i, line 1: ReferenceE1543401941574	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2 ... F1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2PVAAQfiyQdH9+HhR3G35xCceE7OMoxcNLXcX79kW12i
-rror: False is not defined
-1543401942659	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2 ... F1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2PVAAQfiyQdH9+HhR3G35xCceE7OMoxcNLXcX79kW12i
-1543401942806	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2 ... F1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2PVAAQfiyQdH9+HhR3G35xCceE7OMoxcNLXcX79kW12i
-1543401942810	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2 ... F1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2PVAAQfiyQdH9+HhR3G35xCceE7OMoxcNLXcX79kW12i
-1543401942997	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451554
-1543401942997	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451560
-1543401942997	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451561
-1543401943055	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnWSFJzZqUMX3Jcq6gDL1IfQ ... jiEEJErquKpdr8n0Qd612F+zB4ckUXgwVA+lXY+zaz6WvgatNlVp9E6iHQ+3CFrS4ttfy30OtYvMoNmOcw4NAjRMs0UT063DLIc6zpXrkRO1w9PhG7jsNxA5eH1QZ
-1543401943106	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451567
-1543401943107	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451568
-JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnWSFJzZqUMX3Jcq6gDL1IfQvEg7juvkQPJZq71P678UrrWPCUaHjLm16ovcAFyWUAjx2j7hLix1D6SLcQ4WYswu/uV1pusXBbksB49g37EcpbP9ecRUIIqpQ6jAFPpdgr+qVR7sMKK+/JiBgfhiP6Ghqdgc/NRiG5lyDjgeYeWECkDZXETURSsFtg6cF0HuyDV4ZutsAJ+IZjrm9OMcp9a1kVvTfjfMO9TfHnRZAB4sTP0K4pOSJx/6uq8jKgW1KRO48lQb/Qc5WHhwrS7FF2RPWqwUcal3Kzcb+TXNndkOuZHAjiEEJErquKpdr8n0Qd612F+zB4ckUXgwVA+lXY+zaz6WvgatNlVp9E6iHQ+3CFrS4ttfy30OtYvMoNmOcw4NAjRMs0UT063DLIc6zpXrkRO1w9PhG7jsNxA5eH1QZ, line 1: ReferenceError: False is not defined
-1543401943136	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnWSFJzZqUMX3Jcq6gDL1IfQ ... jiEEJErquKpdr8n0Qd612F+zB4ckUXgwVA+lXY+zaz6WvgatNlVp9E6iHQ+3CFrS4ttfy30OtYvMoNmOcw4NAjRMs0UT063DLIc6zpXrkRO1w9PhG7jsNxA5eH1QZ
-1543401945202	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnWSFJzZqUMX3Jcq6gDL1IfQ ... jiEEJErquKpdr8n0Qd612F+zB4ckUXgwVA+lXY+zaz6WvgatNlVp9E6iHQ+3CFrS4ttfy30OtYvMoNmOcw4NAjRMs0UT063DLIc6zpXrkRO1w9PhG7jsNxA5eH1QZ
-1543401945329	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnWSFJzZqUMX3Jcq6gDL1IfQ ... jiEEJErquKpdr8n0Qd612F+zB4ckUXgwVA+lXY+zaz6WvgatNlVp9E6iHQ+3CFrS4ttfy30OtYvMoNmOcw4NAjRMs0UT063DLIc6zpXrkRO1w9PhG7jsNxA5eH1QZ
-1543401945331	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnWSFJzZqUMX3Jcq6gDL1IfQ ... jiEEJErquKpdr8n0Qd612F+zB4ckUXgwVA+lXY+zaz6WvgatNlVp9E6iHQ+3CFrS4ttfy30OtYvMoNmOcw4NAjRMs0UT063DLIc6zpXrkRO1w9PhG7jsNxA5eH1QZ
-1543401945520	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451565
-1543401945521	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451571
-1543401945521	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451572
-1543401945584	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnfN8cGbtovACwM3y0ofxkc1 ... uidNGW/TMer1BsBVZRFYQHx76ZV935OP3E+VIFG9o/P6OziXolL8mGp+1AVlxF4oZ0069q4+vgbMiy2+tM1CkSR1WKpUSP4xD6ZdJlY0wJ6iuvRMMJrzksoXE4tCX
-1543401945635	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451578
-1543401945638	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451579
-JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnfN8cGbtovACwM3y0ofxkc1vgWT+YGuTF02P6swz9kAtmbyigHB2lmHTQBjIaWq3JnmNu88t7Gmopju4xJJxESOF5ema3GMpZ58PN095my1qu0NtmERkXmE6vjVu1i/UJLJm0APl3Zbkg8e3w1kBokqizX1TklgOFXtLnZ3p3w2wHOkwyx1DU3/RhcarM9e1IU8gdbzK4nTTvfBkdFkPNuX4DKc12Vy6Ywoe4srjfEAS5HZ2xuNEr6lxpADO+n/4AGXSg/Xw/9/VrEMvnkTgaNY/c+pVNjEh5ObiGykOtgJzbF3uidNGW/TMer1BsBVZRFYQHx76ZV935OP3E+VIFG9o/P6OziXolL8mGp+1AVlxF4oZ0069q4+vgbMiy2+tM1CkSR1WKpUSP4xD6ZdJlY0wJ6iuvRMMJrzksoXE4tCX, line 1: ReferenceError: False is not defined
-1543401945667	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnfN8cGbtovACwM3y0ofxkc1 ... uidNGW/TMer1BsBVZRFYQHx76ZV935OP3E+VIFG9o/P6OziXolL8mGp+1AVlxF4oZ0069q4+vgbMiy2+tM1CkSR1WKpUSP4xD6ZdJlY0wJ6iuvRMMJrzksoXE4tCX
-1543401945707	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnfN8cGbtovACwM3y0ofxkc1 ... uidNGW/TMer1BsBVZRFYQHx76ZV935OP3E+VIFG9o/P6OziXolL8mGp+1AVlxF4oZ0069q4+vgbMiy2+tM1CkSR1WKpUSP4xD6ZdJlY0wJ6iuvRMMJrzksoXE4tCX
-1543401945950	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnfN8cGbtovACwM3y0ofxkc1 ... uidNGW/TMer1BsBVZRFYQHx76ZV935OP3E+VIFG9o/P6OziXolL8mGp+1AVlxF4oZ0069q4+vgbMiy2+tM1CkSR1WKpUSP4xD6ZdJlY0wJ6iuvRMMJrzksoXE4tCX
-1543401945953	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnfN8cGbtovACwM3y0ofxkc1 ... uidNGW/TMer1BsBVZRFYQHx76ZV935OP3E+VIFG9o/P6OziXolL8mGp+1AVlxF4oZ0069q4+vgbMiy2+tM1CkSR1WKpUSP4xD6ZdJlY0wJ6iuvRMMJrzksoXE4tCX
-1543401946153	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451576
-1543401946154	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451582
-1543401946154	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451583
-1543401946233	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnWwwEc2/2DmDEcT8P/lvdP/ ... 0yZntCfQPccfynX7JzDIBMTJoVivUy3+vkDtfQnfWpkYL0/wjqdllgJEZuURC+8Sw/8yjv7r66D7eIOGZKufFPmnR/nTqa8hlmTZuVjTq1FqXWsCB8QtcJy+mPezM
-1543401946284	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451589
-1543401946285	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451590
-JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnWwwEc2/2DmDEcT8P/lvdP/S+Dy6VBFsFMPgoj68D23kjzYzYiJT96CYrYZjQ6hkcgQH5fG3JW+fZfK4FPK1ALJMkeM32qzigc43fznLbl06FG7K27aEUa/V/R/oX3/ackle/y8V0jUpK3yUoR+s1wkqEfE6qvAbxdzulCv0UFoalnGqDmqK1vosN15l4hsP/Tdha0XT6n4+QE8IP4iyhzhmLBvSGsNlooQY9wzGN7yHQEXkgnEo89KNycZ9Oz0NrAPEnML/HuSlvg7V4C92BS4nP/0GYUV9KbRsY77jWBtGYne0yZntCfQPccfynX7JzDIBMTJoVivUy3+vkDtfQnfWpkYL0/wjqdllgJEZuURC+8Sw/8yjv7r66D7eIOGZKufFPmnR/nTqa8hlmTZuVjTq1FqXWsCB8QtcJy+mPezM, line 1: ReferenceError: False is not defined
-1543401946303	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnWwwEc2/2DmDEcT8P/lvdP/ ... 0yZntCfQPccfynX7JzDIBMTJoVivUy3+vkDtfQnfWpkYL0/wjqdllgJEZuURC+8Sw/8yjv7r66D7eIOGZKufFPmnR/nTqa8hlmTZuVjTq1FqXWsCB8QtcJy+mPezM
+    <system-err><![CDATA[1543406567072	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1543406567158	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnc+Gu+Ruf0sOsPJKjzWFwLB ... +c5ql8lDuWDAf5IE0XEfaapGjYk+65twq8FG5NV4+aq6MSJpa1BRrHpb0Dy8T2zfThrU9Lp7rd6CNgKQF5m2oGf5YQWPlLe7YJip33OqNvynP832CDprQnpc0ZCz1
+1543406567309	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnc+Gu+Ruf0sOsPJKjzWFwLB ... +c5ql8lDuWDAf5IE0XEfaapGjYk+65twq8FG5NV4+aq6MSJpa1BRrHpb0Dy8T2zfThrU9Lp7rd6CNgKQF5m2oGf5YQWPlLe7YJip33OqNvynP832CDprQnpc0ZCz1
+1543406567311	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnc+Gu+Ruf0sOsPJKjzWFwLB ... +c5ql8lDuWDAf5IE0XEfaapGjYk+65twq8FG5NV4+aq6MSJpa1BRrHpb0Dy8T2zfThrU9Lp7rd6CNgKQF5m2oGf5YQWPlLe7YJip33OqNvynP832CDprQnpc0ZCz1
+1543406567498	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451488
+1543406567499	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451494
+1543406567499	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451495
+1543406567569	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnXOl5RoD1TN3O7H1ydM3jJfzkLKWdqE/h2ebhAHNcOCtdo2jIr6tb3EV+kkDiOOx0gESUak7pXZA4eVfvF76Tp6Ts+87W5POX3AKlf7CTHlkiIKIz1WfIRWvC/tr9R913A==
+1543406567637	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451501
+1543406567640	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451502
+JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnXOl5RoD1TN3O7H1ydM3jJfzkLKWdqE/h2ebhAHNcOCtdo2jIr6tb3EV+kkDiOOx0gESUak7pXZA4eVfvF76Tp6Ts+87W5POX3AKlf7CTHlkiIKIz1WfIRWvC/tr9R913A==, line 1: ReferenceError: False is not defined
+1543406567658	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnXOl5RoD1TN3O7H1ydM3jJfzkLKWdqE/h2ebhAHNcOCtdo2jIr6tb3EV+kkDiOOx0gESUak7pXZA4eVfvF76Tp6Ts+87W5POX3AKlf7CTHlkiIKIz1WfIRWvC/tr9R913A==
+1543406567699	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnXOl5RoD1TN3O7H1ydM3jJfzkLKWdqE/h2ebhAHNcOCtdo2jIr6tb3EV+kkDiOOx0gESUak7pXZA4eVfvF76Tp6Ts+87W5POX3AKlf7CTHlkiIKIz1WfIRWvC/tr9R913A==
+1543406567885	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnXOl5RoD1TN3O7H1ydM3jJfzkLKWdqE/h2ebhAHNcOCtdo2jIr6tb3EV+kkDiOOx0gESUak7pXZA4eVfvF76Tp6Ts+87W5POX3AKlf7CTHlkiIKIz1WfIRWvC/tr9R913A==
+1543406567887	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/AssessmentReports.aspx?args=s79LFcKIz38I3KnjVa8bnXOl5RoD1TN3O7H1ydM3jJfzkLKWdqE/h2ebhAHNcOCtdo2jIr6tb3EV+kkDiOOx0gESUak7pXZA4eVfvF76Tp6Ts+87W5POX3AKlf7CTHlkiIKIz1WfIRWvC/tr9R913A==
+1543406568067	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451499
+1543406568068	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451505
+1543406568068	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451506
+1543406568141	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnUw2vbqKhKZWcZLQxvBCqHk=
+1543406568193	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451512
+1543406568197	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451513
+JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnUw2vbqKhKZWcZLQxvBCqHk=, line 1: ReferenceError: False is not defined
+1543406568222	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnUw2vbqKhKZWcZLQxvBCqHk=
+1543406568329	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnUw2vbqKhKZWcZLQxvBCqHk=
+1543406568457	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnUw2vbqKhKZWcZLQxvBCqHk=
+1543406568458	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnUw2vbqKhKZWcZLQxvBCqHk=
+1543406568614	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451510
+1543406568614	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451516
+1543406568614	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451517
+1543406568682	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bncninxNZ2PiwFLFezGPals4=
+1543406568737	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451523
+1543406568739	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451524
+JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bncninxNZ2PiwFLFezGPals4=, line 1: ReferenceError: False is not defined
+1543406568770	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bncninxNZ2PiwFLFezGPals4=
+1543406568806	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bncninxNZ2PiwFLFezGPals4=
+1543406568891	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bncninxNZ2PiwFLFezGPals4=
+1543406568892	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bncninxNZ2PiwFLFezGPals4=
+1543406569040	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451521
+1543406569041	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451527
+1543406569041	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451528
+1543406569117	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnQ+q3p1BRxft1xsheKQqcIw=
+1543406569168	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451534
+1543406569173	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451535
+JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnQ+q3p1BRxft1xsheKQqcIw=, line 1: ReferenceError: False is not defined
+1543406569196	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnQ+q3p1BRxft1xsheKQqcIw=
+1543406569240	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnQ+q3p1BRxft1xsheKQqcIw=
+1543406569377	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnQ+q3p1BRxft1xsheKQqcIw=
+1543406569378	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnQ+q3p1BRxft1xsheKQqcIw=
+1543406569531	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451532
+1543406569531	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451538
+1543406569531	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451539
+1543406569597	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfJmcBVGNTlG0Mb62Ekx/NQ=
+1543406569654	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451545
+1543406569657	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451546
+JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfJmcBVGNTlG0Mb62Ekx/NQ=, line 1: ReferenceError: False is not defined
+1543406569690	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfJmcBVGNTlG0Mb62Ekx/NQ=
+1543406569737	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfJmcBVGNTlG0Mb62Ekx/NQ=
+1543406569897	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfJmcBVGNTlG0Mb62Ekx/NQ=
+1543406569898	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysisParams.aspx?args=s79LFcKIz38I3KnjVa8bnfJmcBVGNTlG0Mb62Ekx/NQ=
+1543406570075	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451543
+1543406570075	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451549
+1543406570076	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451550
+1543406570140	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2 ... F1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2C4c3tsxhdkxZCSXFkFi53E+YBLS8HcPgQ5sCjgkeK6C
+1543406570186	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451556
+1543406570188	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451557
+JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2mYxSQdbKVFfM1rObJke4qY2jmWGTDWQhora0W/Gx32FL/9aojlkzHVUS5tAusVVyFkOWM8YdCgFbWdyUDIrCUS4aA7fD2JCo7KPo+Cz6IHsfsXHcntD5dOawOuvsRZrAgd3TQMpok850TAt4OT6wF2sae+aEViUURES7Od7iNG9ewfA0QwA72GoKBJtPVvWhCwC+vDOTmWPuwNhJMIyJgakcVrwN9m2yvF7ga5c5M98N/WlHCn9hmy7z9J/B/G8smERdHjOAcep6vMnATRh76NgxF1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2C4c3tsxhdkxZCSXFkFi53E+YBLS8HcPgQ1543406570217	Marionette	DEBUG	[6442450945] Receiv5sCjgkeK6C, line 1: ReferenceError: False is not defined
+ed DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2 ... F1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2C4c3tsxhdkxZCSXFkFi53E+YBLS8HcPgQ5sCjgkeK6C
+1543406571286	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2 ... F1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2C4c3tsxhdkxZCSXFkFi53E+YBLS8HcPgQ5sCjgkeK6C
+1543406571389	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2 ... F1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2C4c3tsxhdkxZCSXFkFi53E+YBLS8HcPgQ5sCjgkeK6C
+1543406571390	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=yMN/V9xZUJl/u0X8hD/kYiZ7N0Rvgi5YBzRhOsQaIx2 ... F1KivenFQAOgGL+AwkzP9rrHXMfdYT0V3GYIHPnXbROY7dT5IA+zFOBFEFENOsA/DLVqOtn1gWmpdj5IY2C4c3tsxhdkxZCSXFkFi53E+YBLS8HcPgQ5sCjgkeK6C
+1543406571586	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451554
+1543406571586	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451560
+1543406571586	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451561
+1543406571648	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU5473db3ys3vpjSi49eY0s ... ZOdLJRcDkLCjiQPAQeKgtsWhiqSAYmmk+aDhDAj6MTdLlt6+O0FSKe0YFT+MWQ9ukGGjnEq/rMqi6FRuGaxXyDvyN5/Cg9OSZgxTJz8VQ9KnnMEDeIBs3psYrYPif
+1543406571699	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451567
+1543406571709	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451568
+JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU5473db3ys3vpjSi49eY0s414+zktY9XURphac2ts3qeTniWcWdiWX3aJZO+zn8SkYv+1gcYBL9jfERBwuFCSYZbz+IYQziE3K5s5MN/a8E5riCFurnDRewfwVo1rdR+F84MWFB1IDbblmExlvkl0gRVWdlFkrLE9ZI2viFzHfaT7HWP10mY79vT0NRDdo9xGHNnQl1dEye0/MjbzrE0MOW1odE0T7RxycA0TkZEc1J3nmzNAlm4THLJSjWydx8ESmUdtk/vRIxJSb3Ywn6WH54XLOXgzWojv9DWn6BWNsRzyBZOdLJRcDkLCjiQPAQeKgtsWhiqSAYmmk+aDhDAj6MTdLlt6+O0FSKe0YFT+MWQ9ukGGjnEq/rMqi6FRuGaxXyDvyN5/Cg9OSZgxTJz8VQ9KnnMEDeIBs3psYrYPif, line 1: ReferenceError: False is not defined
+1543406571737	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU5473db3ys3vpjSi49eY0s ... ZOdLJRcDkLCjiQPAQeKgtsWhiqSAYmmk+aDhDAj6MTdLlt6+O0FSKe0YFT+MWQ9ukGGjnEq/rMqi6FRuGaxXyDvyN5/Cg9OSZgxTJz8VQ9KnnMEDeIBs3psYrYPif
+1543406573830	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU5473db3ys3vpjSi49eY0s ... ZOdLJRcDkLCjiQPAQeKgtsWhiqSAYmmk+aDhDAj6MTdLlt6+O0FSKe0YFT+MWQ9ukGGjnEq/rMqi6FRuGaxXyDvyN5/Cg9OSZgxTJz8VQ9KnnMEDeIBs3psYrYPif
+1543406573979	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU5473db3ys3vpjSi49eY0s ... ZOdLJRcDkLCjiQPAQeKgtsWhiqSAYmmk+aDhDAj6MTdLlt6+O0FSKe0YFT+MWQ9ukGGjnEq/rMqi6FRuGaxXyDvyN5/Cg9OSZgxTJz8VQ9KnnMEDeIBs3psYrYPif
+1543406573984	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU5473db3ys3vpjSi49eY0s ... ZOdLJRcDkLCjiQPAQeKgtsWhiqSAYmmk+aDhDAj6MTdLlt6+O0FSKe0YFT+MWQ9ukGGjnEq/rMqi6FRuGaxXyDvyN5/Cg9OSZgxTJz8VQ9KnnMEDeIBs3psYrYPif
+1543406574170	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451565
+1543406574171	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451571
+1543406574171	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451572
+1543406574235	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU0SxlVK6i2YqzA2uCTdA/U ... ehHy56RPnBTTNjfJ7500dF7wyqfkFJw06fbp/dc209gG/GYNS+6TMAOWDpg9i/55eF0BW9lDTKLIyHg6R5Rnbl7o4XlCTpFNYxEmA1LTdPBFGPCykNYzC9MgY/GWN
+1543406574284	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451578
+1543406574291	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451579
+JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU0SxlVK6i2YqzA2uCTdA/U8MUW6XwiIX1T+vbnoJC2x6oe64xuvOSETQT7x7VdpuMlMH2EOGbjNZQlU4Tst0Z9mxvHr62M8/2J64cwkdyjc1zxUELeGA5DizSDaE4Y7d5+phqnlnX9KwxbERvb8Dy0szHgSwBqiBiaFucDtqLZeJL+ntYM5EHOHm8kESD6h7dAMegGjDyGN1vTi3AR+ETUf/eGvc8E/iuNd7UZ7YE/pTxEHGuweU5U3dZMi58OXQUTduUjQtt9ZwV8iFzONfNKjuGHeLrPi3jKQjqU3L+S2H72ehHy56RPnBTTNjfJ7500dF7wyqfkFJw06fbp/dc209gG/GYNS+6TMAOWDpg9i/55eF0BW9lDTKLIyHg6R5Rnbl7o4XlCTpFNYxEmA1LTdPBFGPCykNYzC9MgY/GWN, line 1: ReferenceError: False is not defined
+1543406574318	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU0SxlVK6i2YqzA2uCTdA/U ... ehHy56RPnBTTNjfJ7500dF7wyqfkFJw06fbp/dc209gG/GYNS+6TMAOWDpg9i/55eF0BW9lDTKLIyHg6R5Rnbl7o4XlCTpFNYxEmA1LTdPBFGPCykNYzC9MgY/GWN
+1543406574370	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU0SxlVK6i2YqzA2uCTdA/U ... ehHy56RPnBTTNjfJ7500dF7wyqfkFJw06fbp/dc209gG/GYNS+6TMAOWDpg9i/55eF0BW9lDTKLIyHg6R5Rnbl7o4XlCTpFNYxEmA1LTdPBFGPCykNYzC9MgY/GWN
+1543406574672	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU0SxlVK6i2YqzA2uCTdA/U ... ehHy56RPnBTTNjfJ7500dF7wyqfkFJw06fbp/dc209gG/GYNS+6TMAOWDpg9i/55eF0BW9lDTKLIyHg6R5Rnbl7o4XlCTpFNYxEmA1LTdPBFGPCykNYzC9MgY/GWN
+1543406574675	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnU0SxlVK6i2YqzA2uCTdA/U ... ehHy56RPnBTTNjfJ7500dF7wyqfkFJw06fbp/dc209gG/GYNS+6TMAOWDpg9i/55eF0BW9lDTKLIyHg6R5Rnbl7o4XlCTpFNYxEmA1LTdPBFGPCykNYzC9MgY/GWN
+1543406574887	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451576
+1543406574887	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451582
+1543406574888	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451583
+1543406574968	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnYjV91esALe+EJFsW2yVrnb ... l95OdioUyDR5rDSeXlCHpF72zhDDc3H5bNXhUIsdTzLfrS89jIQuD1o3ySXPn35c7D4nneU865m9NcCUrhp5N+4hhNODW+njs8fJ++AnBhdJodpM/AzSNBfAZ+Xoo
+1543406575020	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451589
+1543406575021	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442451590
+JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnYjV91esALe+EJFsW2yVrnbA9ma/FfD35E0nQUU9M987QN92UlNy1FggYxblIxSVqjral1Os6oaUD1pq3KZY39I3O6Q8SYD3yvA+VH13PaHUA0EepA+cBH0Ncb1EvTjWXq84yRNS/phoIxAdghdnr/eAPC7Z+2uFoXGkIxnE5073uOpjBuRhhBmhUWC5mk32OLyNnj+MEpbsQHw/MVu32lbJB782IamEWWWY7jHE+mZ9gLRwUt+FquddtJUIceXf+ZIjfq4gGV/W3g3ypt0wnJqv6kvJWtaFztBpFauJ95Y4crLl95OdioUyDR5rDSeXlCHpF72zhDDc3H5bNXhUIsdTzLfrS89jIQuD1o3ySXPn35c7D4nneU865m9NcCUrhp5N+4hhNODW+njs8fJ++AnBhdJodpM/AzSNBfAZ+Xoo, line 1: ReferenceError: False is not defined
+1543406575038	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnYjV91esALe+EJFsW2yVrnb ... l95OdioUyDR5rDSeXlCHpF72zhDDc3H5bNXhUIsdTzLfrS89jIQuD1o3ySXPn35c7D4nneU865m9NcCUrhp5N+4hhNODW+njs8fJ++AnBhdJodpM/AzSNBfAZ+Xoo
 ]]></system-err>
   </testcase>
-  <testcase name="TCED14092" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="9.672"/>
-  <testcase name="TCED14093" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="10.799"/>
-  <testcase name="TCED14094" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="8.687"/>
-  <testcase name="TCED14095" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="7.365"/>
-  <testcase name="TCED14096" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="0.953"/>
-  <testcase name="TCED14097" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="8.584"/>
-  <testcase name="TCED14098" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="8.75"/>
-  <testcase name="TCED14099" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="8.551"/>
-  <testcase name="TCED14100" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="8.054"/>
-  <testcase name="TCED14101" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="13.801"/>
-  <testcase name="TCED14102" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="17.453"/>
-  <testcase name="TCED14103" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="20.919">
-    <failure message="Timeout during waiting for element: &apos;//a[contains(.,&apos;Analyze Scores&apos;)]&apos;" type="java.lang.AssertionError">java.lang.AssertionError: Timeout during waiting for element: '//a[contains(.,'Analyze Scores')]'
-	at Library.BaseClassOne.waitFor(BaseClassOne.java:278)
-	at Library.BaseClassOne.click(BaseClassOne.java:190)
-	at com.analyzeByScore.ItemAnalysisbyQuestion.ReportParam(ItemAnalysisbyQuestion.java:601)
-	at com.analyzeByScore.ItemAnalysisbyQuestion.TCED14103(ItemAnalysisbyQuestion.java:550)
-</failure>
-    <system-err><![CDATA[1543402069816	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-]]></system-err>
-  </testcase>
-  <testcase name="TCED14104" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="44.275">
-    <failure message="Failed to download document which has extension .PDF expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Failed to download document which has extension .PDF expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.generalMethods.AssessmentPrint.AssessmentPrintReports(AssessmentPrint.java:43)
-	at com.analyzeByScore.ItemAnalysisbyQuestion.TCED14104(ItemAnalysisbyQuestion.java:575)
-</failure>
-    <system-err><![CDATA[1543402090055	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnUYwr3IhdBQ//1TFl2wDC5v ... QHj2ErLbfBYpBQl0wClkIKZS5PHVeDkJl0CautxK/ZHpKkgK/oUFc5GAegjAWkKip/tiDIAS+qWsTpJTVZTLqx73tpWelDe2Q4rX+3ljR5sRdOcJ+Y8/nsTZTcSKI
-1543402090340	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnUYwr3IhdBQ//1TFl2wDC5v ... QHj2ErLbfBYpBQl0wClkIKZS5PHVeDkJl0CautxK/ZHpKkgK/oUFc5GAegjAWkKip/tiDIAS+qWsTpJTVZTLqx73tpWelDe2Q4rX+3ljR5sRdOcJ+Y8/nsTZTcSKI
-1543402090344	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnUYwr3IhdBQ//1TFl2wDC5v ... QHj2ErLbfBYpBQl0wClkIKZS5PHVeDkJl0CautxK/ZHpKkgK/oUFc5GAegjAWkKip/tiDIAS+qWsTpJTVZTLqx73tpWelDe2Q4rX+3ljR5sRdOcJ+Y8/nsTZTcSKI
-1543402090576	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442452621
-1543402090577	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442452627
-1543402090577	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442452628
-1543402090659	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnYT5XpvbnLUOKDh3mlJxOSz ... HULl+SNDh08vw2A1V8qiAT1Rb3pj3UTEINdpvdckotxgaExjdF9mgk4d8yd2fCEO7NfHkrPV1iXq5V2ElstYaYNVN9WxSdiWbw6jB/VQRNO2Oag9ychO7lz2Y3mga
-1543402090719	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442452634
-1543402090721	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442452635
-JavaScript error: http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnYT5XpvbnLUOKDh3mlJxOSzXO8shRAHYcQO8//bhB8rmuAtd/BLYGxZ9TmkmrYdcgiZ/WLfiNgc+42lvnfMQ7uS3AwqY8BnhrqnbV0KdghOG4PWtMl8c3mV1rLAx1A3tM2ja7u7OooemwfIi12ZJdCoL8AfL2zhlYhjWdTrzpAGlNFMziY6iHF1GpBmE8pJn/f3Eulgd06SRiGWnriKkNgfDhmGLBEA+ITxHGFgNE6S1J3rwJrGisq7P01+iLPtPa/aQFX/MR1wzAmDbxiAKosw8iyBEo2/be19eZiiqcDy5LxYHULl+SNDh08vw2A1V8qiAT1Rb3pj3UTEINdpvdckotxgaExjdF9mgk4d8yd2fCEO7NfHkrPV1iXq5V2ElstYaYNVN9WxSdiWbw6jB/VQRNO2Oag9ychO7lz2Y3mga, line 1: ReferenceError: False is not defined
-1543402090943	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/ReportItemAnalysis.aspx?args=s79LFcKIz38I3KnjVa8bnYT5XpvbnLUOKDh3mlJxOSz ... HULl+SNDh08vw2A1V8qiAT1Rb3pj3UTEINdpvdckotxgaExjdF9mgk4d8yd2fCEO7NfHkrPV1iXq5V2ElstYaYNVN9WxSdiWbw6jB/VQRNO2Oag9ychO7lz2Y3mga
-1543402092038	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/LocalAssessmentDashboardPopup.aspx?args=K2Mx8H/lUrLx3C0HUfB4Up408aGrghp/ ... lxb+dT3aZ+cfQ6RlYc29iwCkQeAMd4InG+kcSejrT+yiuIqX/aDnyBSQZiEladNIVm27BhEe9JO66EHMOA5IN5oPr2jltNucUyqmGOLFMif8HmJXsC980IbCDFQ==
-1543402097253	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-1543402110350	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/LocalAssessmentDashboardPopup.aspx?args=K2Mx8H/lUrLx3C0HUfB4Up408aGrghp/ ... lxb+dT3aZ+cfQ6RlYc29iwCkQeAMd4InG+kcSejrT+yiuIqX/aDnyBSQZiEladNIVm27BhEe9JO66EHMOA5IN5oPr2jltNucUyqmGOLFMif8HmJXsC980IbCDFQ==
-1543402113354	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/LocalAssessmentDashboardPopup.aspx?args=K2Mx8H/lUrLx3C0HUfB4Up408aGrghp/ ... lxb+dT3aZ+cfQ6RlYc29iwCkQeAMd4InG+kcSejrT+yiuIqX/aDnyBSQZiEladNIVm27BhEe9JO66EHMOA5IN5oPr2jltNucUyqmGOLFMif8HmJXsC980IbCDFQ==
-1543402114317	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/LocalAssessmentDashboardPopup.aspx?args=K2Mx8H/lUrLx3C0HUfB4Up408aGrghp/ ... lxb+dT3aZ+cfQ6RlYc29iwCkQeAMd4InG+kcSejrT+yiuIqX/aDnyBSQZiEladNIVm27BhEe9JO66EHMOA5IN5oPr2jltNucUyqmGOLFMif8HmJXsC980IbCDFQ==
-1543402114319	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/LocalAssessmentDashboardPopup.aspx?args=K2Mx8H/lUrLx3C0HUfB4Up408aGrghp/ ... lxb+dT3aZ+cfQ6RlYc29iwCkQeAMd4InG+kcSejrT+yiuIqX/aDnyBSQZiEladNIVm27BhEe9JO66EHMOA5IN5oPr2jltNucUyqmGOLFMif8HmJXsC980IbCDFQ==
-1543402114477	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/LocalAssessmentDashboardPopup.aspx?args=K2Mx8H/lUrLx3C0HUfB4Up408aGrghp/ ... lxb+dT3aZ+cfQ6RlYc29iwCkQeAMd4InG+kcSejrT+yiuIqX/aDnyBSQZiEladNIVm27BhEe9JO66EHMOA5IN5oPr2jltNucUyqmGOLFMif8HmJXsC980IbCDFQ==
-1543402114494	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/LocalAssessmentDashboardPopup.aspx?args=K2Mx8H/lUrLx3C0HUfB4Up408aGrghp/ ... lxb+dT3aZ+cfQ6RlYc29iwCkQeAMd4InG+kcSejrT+yiuIqX/aDnyBSQZiEladNIVm27BhEe9JO66EHMOA5IN5oPr2jltNucUyqmGOLFMif8HmJXsC980IbCDFQ==
-1543402128280	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
-]]></system-err>
-  </testcase>
+  <testcase name="TCED14092" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="9.729"/>
+  <testcase name="TCED14093" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="9.827"/>
+  <testcase name="TCED14094" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="11.101"/>
+  <testcase name="TCED14095" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="6.361"/>
+  <testcase name="TCED14096" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="0.806"/>
+  <testcase name="TCED14097" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="10.066"/>
+  <testcase name="TCED14098" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="8.548"/>
+  <testcase name="TCED14099" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="8.934"/>
+  <testcase name="TCED14100" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="8.194"/>
+  <testcase name="TCED14101" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="14.532"/>
+  <testcase name="TCED14102" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="16.656"/>
+  <testcase name="TCED14103" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="33.881"/>
+  <testcase name="TCED14104" classname="com.analyzeByScore.ItemAnalysisbyQuestion" time="110.506"/>
 </testsuite>
