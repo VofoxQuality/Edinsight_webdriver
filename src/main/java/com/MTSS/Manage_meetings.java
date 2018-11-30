@@ -59,26 +59,27 @@ public class Manage_meetings extends BaseClassOne {
 			click("//input[contains(@type,'submit')][@value='Add Intervention Plan']");		
 			// Frame select
 			SwitchFrameName("RadWindow2");
+
 			// To click interventions Skill
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
 			Thread.sleep(2000);
 			// To click and select  interventions from list
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_DropDown']/div/ul/li[1]/label/input");
 			Thread.sleep(2000);
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
-			click("//*[@id='ctl00_ContentPlaceHolder1_lblProgramDescription']");
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");  
 			Thread.sleep(2000);
+			// To select and directly enter the dropdown values 
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
 
-			// To click the select  details to submit the intervention details from dropdown
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
-			click("//*[@id='ctl00_ContentPlaceHolder1_trMeasureAssmnt']");
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Arrow']");
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_DropDown']/div/ul/li[2]");
+			type("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Input']", "Fundations");
+
+			type("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input']", "CDT");
+
+			//*[@id="ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input"]
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlDuration']","2");
+
 			// To scroll to location
-			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_lblPersonResponsible']");
+			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_litInitiationDate']");
 			Thread.sleep(3000);
 			// To select  details to submit the intervention details from dropdown
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyTPR']","2");
@@ -114,22 +115,22 @@ public class Manage_meetings extends BaseClassOne {
 			// To click and select  interventions from list
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_DropDown']/div/ul/li[1]/label/input");
 			Thread.sleep(2000);
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
-			click("//*[@id='ctl00_ContentPlaceHolder1_lblProgramDescription']");
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");  
 			Thread.sleep(2000);
+			// To select and directly enter the dropdown values 
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
-			// To click the select  details to submit the intervention details from dropdown
 
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
-			click("//*[@id='ctl00_ContentPlaceHolder1_trMeasureAssmnt']");
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Arrow']");
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_DropDown']/div/ul/li[2]");
+			type("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Input']", "Fundations");
+
+			type("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input']", "CDT");
+
+			//*[@id="ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input"]
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlDuration']","2");
 
-			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_lblPersonResponsible']");
+			// To scroll to location
+			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_litInitiationDate']");
 			Thread.sleep(3000);
-			// To click the select  details to submit the intervention details from dropdown
+			// To select  details to submit the intervention details from dropdown
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyTPR']","2");
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyMPS']","10");
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");

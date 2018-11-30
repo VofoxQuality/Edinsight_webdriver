@@ -140,7 +140,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Thread.sleep(3000);
 			//	ScrollTo_Location("//*[@id='ctl00_MainContent_trSummaryChart']/td/table/tbody/tr[1]/td/h3");
 
-			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
+			WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[1]"));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
 
 			Thread.sleep(3000);
@@ -307,7 +307,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Thread.sleep(3000);
 			//	ScrollTo_Location("//*[@id='ctl00_MainContent_trSummaryChart']/td/table/tbody/tr[1]/td/h3");
 
-			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
+			WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[1]"));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
 
 			Thread.sleep(3000);
@@ -471,7 +471,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			// Common header parameters
 			ReportParams();
 			Thread.sleep(3000);
-			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
+			WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[1]"));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
 
 			Thread.sleep(3000);
