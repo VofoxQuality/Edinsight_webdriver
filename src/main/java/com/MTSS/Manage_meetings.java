@@ -485,8 +485,10 @@ public class Manage_meetings extends BaseClassOne {
 	{
 		try {
 			//To scroll up to the page
-			JavascriptExecutor jse = (JavascriptExecutor)driver;
-			jse.executeScript("window.scrollBy(0,0)", "");
+		//	JavascriptExecutor jse = (JavascriptExecutor)driver;
+		//	jse.executeScript("window.scrollBy(0,0)", "");
+			
+			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_lblMeetingPurpose']");
 			// select the parameters
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlParntGuardAttendance']","Parent/Guardian Attendance not Required");
 
