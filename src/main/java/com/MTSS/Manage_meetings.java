@@ -465,7 +465,6 @@ public class Manage_meetings extends BaseClassOne {
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_lblMessageBottom']").contains("You must select a Student Attendance."),"Failed to Assert"+"You must select a Student Attendance.");	
 
 
-
 		} 
 
 		catch (Exception e) 
@@ -476,8 +475,6 @@ public class Manage_meetings extends BaseClassOne {
 
 	}
 
-
-
 	@Test(priority=12)
 
 	public void TCED20212() throws InterruptedException
@@ -485,8 +482,10 @@ public class Manage_meetings extends BaseClassOne {
 	{
 		try {
 			//To scroll up to the page
-			JavascriptExecutor jse = (JavascriptExecutor)driver;
-			jse.executeScript("window.scrollBy(0,0)", "");
+		//	JavascriptExecutor jse = (JavascriptExecutor)driver;
+		//	jse.executeScript("window.scrollBy(0,0)", "");
+			
+			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_lblMeetingPurpose']");
 			// select the parameters
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlParntGuardAttendance']","Parent/Guardian Attendance not Required");
 

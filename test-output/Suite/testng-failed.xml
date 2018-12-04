@@ -3,19 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.localassessment.Copy_assessment_vendor">
-        <methods>
-          <include name="setup1"/>
-          <include name="TCED15003"/>
-          <include name="TCED15005"/>
-          <include name="TCED15002"/>
-          <include name="tearDown"/>
-          <include name="TCED15004"/>
-          <include name="TCED15006"/>
-        </methods>
-      </class> <!-- com.localassessment.Copy_assessment_vendor -->
-=======
       <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
         <methods>
           <include name="setup1"/>
@@ -25,7 +12,6 @@
           <include name="TCED14420"/>
         </methods>
       </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
->>>>>>> e466c531bb131c1fec2b623672e025ad19ffd348
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
