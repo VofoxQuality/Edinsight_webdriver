@@ -99,7 +99,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		try
 		{
 			// To click the Studentcountlink
-			click("//a[contains(text(),'16')]");
+			click("//td[contains(text(),'Total Scheduled Students:')]//following::a[1]");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
@@ -231,7 +231,9 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		try
 		{
 			// TO click the link
-			click("//a[contains(text(),'5')]");
+			click("//td[contains(text(),'Total Scheduled Students:')]//following::a[1]");
+	
+			
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 		}catch(Exception e) 
@@ -260,7 +262,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			//To click on the run report param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
 
-			click("//a[contains(text(),'5')]");
+			click("//td[contains(text(),'Total Scheduled Students:')]//following::a[1]");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
@@ -662,6 +664,8 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 
 		//To click on the run report
 		click("//input[@id='ctl00_MainContent_btnFilter']");
+		Thread.sleep(2000);
+		
 	}
 
 	public void StudentFiltersParampage() throws InterruptedException

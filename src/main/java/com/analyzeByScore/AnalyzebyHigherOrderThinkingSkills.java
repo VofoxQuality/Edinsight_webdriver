@@ -140,12 +140,17 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Thread.sleep(3000);
 			//	ScrollTo_Location("//*[@id='ctl00_MainContent_trSummaryChart']/td/table/tbody/tr[1]/td/h3");
 
-			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
+			WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[1]"));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
 
 			Thread.sleep(3000);
 			String	xpath= "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]";
-			// To Click the link & Assert the drilldown labels
+			
+			int x = 211;
+			int y = 432;
+			Actions action = new Actions(driver);
+			//clicking on the chart based on x coordinate and y coordinate 
+			action.moveByOffset( x, y).click().build().perform();
 			Studentdrilldownlabels2(xpath);
 
 
@@ -194,7 +199,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		{
 			// Common header parameters
 			ReportParams();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			ScrollTo_Location("//*[@id='ctl00_MainContent_rgHOTAnalysis_ctl00']/thead/tr/th[2]");	
 			Thread.sleep(3000);
 			String	xpath= "//*[@id='ctl00_MainContent_rgHOTAnalysis_ctl00__0']/td[4]/a";
@@ -307,12 +312,17 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Thread.sleep(3000);
 			//	ScrollTo_Location("//*[@id='ctl00_MainContent_trSummaryChart']/td/table/tbody/tr[1]/td/h3");
 
-			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
+			WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[1]"));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
 
 			Thread.sleep(3000);
 			String	xpath= "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]";
-			// To Click the link & Assert the drilldown labels
+			
+			int x = 211;
+			int y = 432;
+			Actions action = new Actions(driver);
+			//clicking on the chart based on x coordinate and y coordinate 
+			action.moveByOffset( x, y).click().build().perform();
 			Studentdrilldownlabels2(xpath);
 
 
@@ -471,14 +481,18 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			// Common header parameters
 			ReportParams();
 			Thread.sleep(3000);
-			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
+			WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[1]"));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
 
 			Thread.sleep(3000);
 			String	xpath= "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]";
-			// To Click the link & Assert the drilldown labels
+			
+			int x = 211;
+			int y = 432;
+			Actions action = new Actions(driver);
+			//clicking on the chart based on x coordinate and y coordinate 
+			action.moveByOffset( x, y).click().build().perform();
 			Studentdrilldownlabels2(xpath);
-
 
 
 		}catch(Exception e) 
