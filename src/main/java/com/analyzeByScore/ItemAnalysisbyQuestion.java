@@ -99,7 +99,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		try
 		{
 			// To click the Studentcountlink
-			click("//a[contains(text(),'16')]");
+			click("//td[contains(text(),'Total Scheduled Students:')]//following::a[1]");
 			// Method for Studentdetail
 			AssertStudentdetailHeaders();
 
