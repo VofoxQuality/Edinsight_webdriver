@@ -465,7 +465,6 @@ public class Manage_meetings extends BaseClassOne {
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_lblMessageBottom']").contains("You must select a Student Attendance."),"Failed to Assert"+"You must select a Student Attendance.");	
 
 
-
 		} 
 
 		catch (Exception e) 
@@ -475,8 +474,6 @@ public class Manage_meetings extends BaseClassOne {
 		}        
 
 	}
-
-
 
 	@Test(priority=12)
 
