@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.curriculum.CTE_Competency_List">
+      <class name="com.Home.Assessments">
         <methods>
-          <include name="TCED30704"/>
+          <include name="TCED34201"/>
           <include name="setup1"/>
           <include name="tearDown"/>
-          <include name="TCED30705"/>
         </methods>
-      </class> <!-- com.curriculum.CTE_Competency_List -->
+      </class> <!-- com.Home.Assessments -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
