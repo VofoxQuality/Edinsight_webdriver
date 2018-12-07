@@ -46,8 +46,8 @@ public class Assessments extends BaseClassOne
 			//Assert the label "Standardized Assessment Results"
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr/td/b"),"Standardized Assessment Results");
 							
-			//Assert the label "Student Data Depot"
-			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_rgInputAssessment_ctl00']/thead/tr/th"),"Student Data Depot");
+			//Assert the label "Student Data Depot" 
+			Assert.assertEquals(getText("//th[contains(text(),'Student Data Depot')]"),"Student Data Depot");			
 			
 			//Assert the label "PVAAS Results"
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_panPVAASHistory']/b"),"PVAAS Results");

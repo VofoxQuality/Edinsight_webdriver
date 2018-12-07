@@ -94,10 +94,8 @@ public void TCED30702()
    {
     	Assert.fail(e.getMessage());
 		e.printStackTrace();
-	}
-		
+	}		
  }
-
 @Test(priority=2)
 
 public void TCED30703()
