@@ -208,52 +208,58 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 	public void TCED16206()
 	{
 		
-		//Application should be in the Question Search page.
-		
-		//Hover over main menu local Assignment.
-		Actions act= new Actions(driver);
-		act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"))).build().perform();			
-		
-		//click on Question bank link		
-		click("//a[contains(text(),'Question Bank')]");
-		
-		//click search question		
-		click("//a[@id='ctl00_MainContent_lnkSearchQuestions']");
-		
-		driver.navigate().refresh();
-		
-		//select a question
-		click("//*[@id='ctl00_MainContent_grdQuestion_ctl03_chkQuestion']");
-				
-		//Click on Apply Standards button
-		click("//*[@id='ctl00_MainContent_btnApplyStandards']");		
-		
-		//switch to frame to read standard id			
-		driver.switchTo().frame("MassEditStandards");
-		
-		//Select a Standard
-		click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00_ctl04_CheckboxSelectColumnSelectCheckBox']");
-		
-		//Click on Option button 
-		click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_SplitButton']");
-		
-		//Click on Replace checked standards
-		click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_RadContextMenu1_detached']/ul/li[7]/span");
-		
-		//Assert the close button displayed for the added standard		
-		Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00_ctl04_btnDelete']")).isDisplayed());
-		
-		//Click on Option Button 
-		click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_SplitButton']");
-		
-		// Close and Update Search
-		click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_RadContextMenu1_detached']/ul/li[9]/span");
-		
-	}
-	
+		try {
+			//Application should be in the Question Search page.
+			
+			//Hover over main menu local Assignment.
+			Actions act= new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"))).build().perform();			
+			
+			//click on Question bank link		
+			click("//a[contains(text(),'Question Bank')]");
+			
+			//click search question		
+			click("//a[@id='ctl00_MainContent_lnkSearchQuestions']");
+			
+			driver.navigate().refresh();
+			
+			//select a question
+			click("//*[@id='ctl00_MainContent_grdQuestion_ctl03_chkQuestion']");
+					
+			//Click on Apply Standards button
+			click("//*[@id='ctl00_MainContent_btnApplyStandards']");		
+			
+			//switch to frame to read standard id			
+			driver.switchTo().frame("MassEditStandards");
+			
+			//Select a Standard
+			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00_ctl04_CheckboxSelectColumnSelectCheckBox']");
+			
+			//Click on Option button 
+			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_SplitButton']");
+			
+			//Click on Replace checked standards
+			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_RadContextMenu1_detached']/ul/li[7]/span");
+						
+			Thread.sleep(3000);
+			
+			//Assert the close button displayed for the added standard		
+			Assert.assertTrue(find("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00_ctl04_btnDelete']").isDisplayed());
+			
+			//Click on Option Button 
+			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_SplitButton']");
+			
+			// Close and Update Search
+			click("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_RadContextMenu1_detached']/ul/li[9]/span");
+		}
+		catch (InterruptedException e)
+		{
+			Assert.fail(e.getMessage());
+			e.printStackTrace();
+		}				
+	}	
 	@Test(priority=6)	
-	public void TCED16207()
-	
+	public void TCED16207()	
 	{
 		
 		try
@@ -294,41 +300,32 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 	    Select sel=new Select(driver.findElement(By.cssSelector("select#ctl00_ContentPlaceHolder1_ucQuestionStandards_ddlFavorites")));
 
 	    List<WebElement> allOptions = sel.getOptions();	    
-	    for(WebElement el : allOptions) 
-	    
-	      {
-	        
-	        String text = el.getText(); 	        
+	    for(WebElement el : allOptions)	    
+	      {	        
+	        String text = el.getText();     
 	        
 	        if(text.equals(favourite))	        
 	        {
 	    	  Assert.assertTrue(true,"favourite not created");   
 	    	  break;	         
-	        }
-	     	        
-	      } 
-	        
+	        }	     	        
+	      }        
 	    
 	    Thread.sleep(3000);		
 	    driver.switchTo().parentFrame();
 	  
 	    //click close button
 	    click("//div[@id='RadWindowWrapper_ctl00_MainContent_MassEditStandards']/div/div/ul/li[2]/span");	 
-		}
-		
+		}		
 		catch(Exception e)
 		{
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
-		}
-	  				
-	}
-	
+		}	  				
+	}	
 	@Test(priority=7)	
-	public void TCED16208() throws Exception
-	
-	{
-		
+	public void TCED16208()	
+	{		
 		try
 		{
 			//Application should be in the Apply Standard pop-up

@@ -1,77 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="14" passed="14">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44397" started-at="2018-12-10T08:29:16Z" finished-at="2018-12-10T08:30:01Z">
+  <suite name="Default suite" duration-ms="79909" started-at="2018-12-10T11:45:25Z" finished-at="2018-12-10T11:46:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44397" started-at="2018-12-10T08:29:16Z" finished-at="2018-12-10T08:30:01Z">
-      <class name="com.Student_Data_Depot.Data_Depot_Menu_Items">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="setup1" is-config="true" duration-ms="14027" started-at="2018-12-10T13:59:16Z" finished-at="2018-12-10T13:59:30Z">
+    <test name="Default test" duration-ms="79909" started-at="2018-12-10T11:45:25Z" finished-at="2018-12-10T11:46:45Z">
+      <class name="com.localassessment.Question_Bank_Apply_Standards">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@1686d1f]" name="setup1" is-config="true" duration-ms="6549" started-at="2018-12-10T17:15:25Z" finished-at="2018-12-10T17:15:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="TCED62401()[pri:1, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62401" duration-ms="8515" started-at="2018-12-10T13:59:30Z" finished-at="2018-12-10T13:59:39Z">
+        <test-method status="PASS" signature="TCED16201()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@1686d1f]" name="TCED16201" duration-ms="5879" started-at="2018-12-10T17:15:32Z" finished-at="2018-12-10T17:15:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED62401 -->
-        <test-method status="PASS" signature="TCED62402()[pri:2, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62402" duration-ms="259" started-at="2018-12-10T13:59:39Z" finished-at="2018-12-10T13:59:39Z">
+        </test-method> <!-- TCED16201 -->
+        <test-method status="PASS" signature="TCED16202()[pri:1, instance:com.localassessment.Question_Bank_Apply_Standards@1686d1f]" name="TCED16202" duration-ms="8102" started-at="2018-12-10T17:15:38Z" finished-at="2018-12-10T17:15:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED62402 -->
-        <test-method status="PASS" signature="TCED62403()[pri:3, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62403" duration-ms="2395" started-at="2018-12-10T13:59:39Z" finished-at="2018-12-10T13:59:41Z">
+        </test-method> <!-- TCED16202 -->
+        <test-method status="PASS" signature="TCED16203()[pri:2, instance:com.localassessment.Question_Bank_Apply_Standards@1686d1f]" name="TCED16203" duration-ms="678" started-at="2018-12-10T17:15:46Z" finished-at="2018-12-10T17:15:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED62403 -->
-        <test-method status="PASS" signature="TCED62404()[pri:4, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62404" duration-ms="1990" started-at="2018-12-10T13:59:41Z" finished-at="2018-12-10T13:59:43Z">
+        </test-method> <!-- TCED16203 -->
+        <test-method status="PASS" signature="TCED16204()[pri:3, instance:com.localassessment.Question_Bank_Apply_Standards@1686d1f]" name="TCED16204" duration-ms="2374" started-at="2018-12-10T17:15:46Z" finished-at="2018-12-10T17:15:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED62404 -->
-        <test-method status="PASS" signature="TCED62405()[pri:5, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62405" duration-ms="1698" started-at="2018-12-10T13:59:43Z" finished-at="2018-12-10T13:59:45Z">
+        </test-method> <!-- TCED16204 -->
+        <test-method status="PASS" signature="TCED16205()[pri:4, instance:com.localassessment.Question_Bank_Apply_Standards@1686d1f]" name="TCED16205" duration-ms="10137" started-at="2018-12-10T17:15:49Z" finished-at="2018-12-10T17:15:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED62405 -->
-        <test-method status="PASS" signature="TCED62406()[pri:6, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62406" duration-ms="1715" started-at="2018-12-10T13:59:45Z" finished-at="2018-12-10T13:59:47Z">
+        </test-method> <!-- TCED16205 -->
+        <test-method status="PASS" signature="TCED16206()[pri:5, instance:com.localassessment.Question_Bank_Apply_Standards@1686d1f]" name="TCED16206" duration-ms="15763" started-at="2018-12-10T17:15:59Z" finished-at="2018-12-10T17:16:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED62406 -->
-        <test-method status="PASS" signature="TCED62407()[pri:7, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62407" duration-ms="1468" started-at="2018-12-10T13:59:47Z" finished-at="2018-12-10T13:59:48Z">
+        </test-method> <!-- TCED16206 -->
+        <test-method status="PASS" signature="TCED16207()[pri:6, instance:com.localassessment.Question_Bank_Apply_Standards@1686d1f]" name="TCED16207" duration-ms="17857" started-at="2018-12-10T17:16:15Z" finished-at="2018-12-10T17:16:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED62407 -->
-        <test-method status="PASS" signature="TCED62409()[pri:9, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62409" duration-ms="1807" started-at="2018-12-10T13:59:48Z" finished-at="2018-12-10T13:59:50Z">
+        </test-method> <!-- TCED16207 -->
+        <test-method status="PASS" signature="TCED16208()[pri:7, instance:com.localassessment.Question_Bank_Apply_Standards@1686d1f]" name="TCED16208" duration-ms="12528" started-at="2018-12-10T17:16:32Z" finished-at="2018-12-10T17:16:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCED62409 -->
-        <test-method status="PASS" signature="TCED62410()[pri:10, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62410" duration-ms="1569" started-at="2018-12-10T13:59:50Z" finished-at="2018-12-10T13:59:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED62410 -->
-        <test-method status="PASS" signature="TCED62411()[pri:11, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62411" duration-ms="1566" started-at="2018-12-10T13:59:52Z" finished-at="2018-12-10T13:59:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED62411 -->
-        <test-method status="PASS" signature="TCED62412()[pri:12, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62412" duration-ms="1602" started-at="2018-12-10T13:59:53Z" finished-at="2018-12-10T13:59:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED62412 -->
-        <test-method status="PASS" signature="TCED62413()[pri:13, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62413" duration-ms="1705" started-at="2018-12-10T13:59:55Z" finished-at="2018-12-10T13:59:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED62413 -->
-        <test-method status="PASS" signature="TCED62414()[pri:14, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62414" duration-ms="1604" started-at="2018-12-10T13:59:57Z" finished-at="2018-12-10T13:59:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED62414 -->
-        <test-method status="PASS" signature="TCED62415()[pri:15, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="TCED62415" duration-ms="2400" started-at="2018-12-10T13:59:58Z" finished-at="2018-12-10T14:00:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCED62415 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Student_Data_Depot.Data_Depot_Menu_Items@1686d1f]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-12-10T14:00:01Z" finished-at="2018-12-10T14:00:01Z">
+        </test-method> <!-- TCED16208 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.localassessment.Question_Bank_Apply_Standards@1686d1f]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-12-10T17:16:45Z" finished-at="2018-12-10T17:16:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Student_Data_Depot.Data_Depot_Menu_Items -->
+      </class> <!-- com.localassessment.Question_Bank_Apply_Standards -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

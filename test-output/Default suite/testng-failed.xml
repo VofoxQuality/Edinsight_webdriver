@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Student_Data_Depot.Data_Depot_Menu_Items">
+      <class name="com.localassessment.Question_Bank_Apply_Standards">
         <methods>
           <include name="setup1"/>
-          <include name="TCED62407"/>
+          <include name="TCED16206"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Student_Data_Depot.Data_Depot_Menu_Items -->
+      </class> <!-- com.localassessment.Question_Bank_Apply_Standards -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
