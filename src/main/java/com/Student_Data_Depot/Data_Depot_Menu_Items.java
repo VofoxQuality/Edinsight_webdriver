@@ -85,7 +85,7 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 		}
 		catch (Exception e)
 		{
-			// TODO Auto-generated catch block
+			Assert.fail(e.getMessage());
 			e.printStackTrace();
 		}
 	}
@@ -311,10 +311,10 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 			click("//a[contains(text(),'For Automation - Do_Not_Edit_n_Delete')]");
 			
 			//Click on the Longitudinal Measure Comparison Report Link
-			//click("//a[contains(text(),'Longitudinal Measure Comparison Report')]");
+			click("//a[contains(text(),'Longitudinal Measure Comparison Report')]");
 			
 			//Assert page header as For Automation - Do_Not_Edit_n_Delete Longitudinal Measure Comparison Report"
-			//Assert.assertEquals(getText("//span[@class='subheading']"),"For Automation - Do_Not_Edit_n_Delete Longitudinal Measure Comparison Report");
+			Assert.assertEquals(getText("//span[@class='subheading']"),"For Automation - Do_Not_Edit_n_Delete Longitudinal Measure Comparison Report");
 		}
 		catch (Exception e)
 		{
@@ -363,6 +363,13 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 			
 			//Assert page header as For Automation - Do_Not_Edit_n_Delete Longitudinal Measure Comparison Report"
 			Assert.assertEquals(getText("//span[@class='subheading']"),"For Automation - Do_Not_Edit_n_Delete Student Reports");
+			
+		    //click on Logout button
+			waitForEnable("//*[@id='ctl00_A3']/img");
+			click("//*[@id='ctl00_A3']/img");
+			
+			//Assert the page Header as "Edinsight Login"					
+			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
 		}
 		catch (Exception e)
 		{
