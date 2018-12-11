@@ -317,14 +317,14 @@ public class Mann_Early_Warning extends BaseClassOne
 				     while((input = bufferedReader.readLine()) != null)
 				     {
 				         count++;
-				     } 
+				     } 				     
+				     System.out.println(count);	
 				     
-				     System.out.println(count);
-				     
-	
-		     	  }
-			  }		 
-
+					 String[]std_count=getText("//span[@id='ctl00_MainContent_lblStudentsCount']").split(" ");
+					 Assert.assertEquals(Integer.parseInt(std_count[2]), count-2);
+				  }
+			 }		 
+			 
 		} 
 		catch (Exception e)
 		{
@@ -835,30 +835,34 @@ public class Mann_Early_Warning extends BaseClassOne
 	}
 	
 	
-	public void verify_sort_ascending(String locator) throws Exception
+	public void verify_column_sort_ascending(String column_name_locator,int page_size) 
 	{
-		click(locator);		
-		Thread.sleep(3000);
-		Actions act=new Actions(driver);
-		act.moveToElement(find(locator+"//following::button[1]")).build().perform();
+		
+		String[]ar=new String[page_size];
+		
+		String[]sorted_webdriver=new String[page_size];
+		
+		int m=0;
+		
+		for(int i=0; i<page_size;++i)	
+		
+		{
+			if(isElementPresent("//*[@id='ctl00_MainContent_rgStudentData_ctl00__"+i+"']/td[5]")==false)
+			{
+				break;
+			}
 
-		String tool_tip=find(locator+"//following::button[1]").getAttribute("title");
-		Thread.sleep(3000);
-		
-		System.out.println(tool_tip);
-		
-		Assert.assertEquals(tool_tip,"Sorted asc");	
-		click(locator);		
-		Thread.sleep(3000);
-		
-		act.moveToElement(find(locator+"//following::button[1]")).build().perform();
+			ScrollTo_Location("//*[@id='ctl00_MainContent_rgStudentData_ctl00__"+i+"']/td[5]");				
 
-		String tool_tip1=find(locator+"//following::button[1]").getAttribute("title");
-		Thread.sleep(3000);
+			if(m<page_size)
+			{
+			ar[m]=find("//*[@id='ctl00_MainContent_rgStudentData_ctl00__"+i+"']/td[5]").getText();
+			++m;
+			}
+			
+		}
 		
-		System.out.println(tool_tip1);
-		
-		Assert.assertEquals(tool_tip1,"Sorted desc");
 	}
+		
 
 }
