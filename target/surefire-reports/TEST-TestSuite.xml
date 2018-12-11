@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="78.786" tests="16" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="66.837" tests="8" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -35,7 +35,7 @@
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
     <property name="library.jansi.path" value="E:\apache-maven-3.5.4\bin\..\lib\jansi-native"/>
-    <property name="surefire.suiteXmlFiles" value="VED0091-Assessments.xml"/>
+    <property name="surefire.suiteXmlFiles" value="VED0008-Question_Bank_Apply_Standards.xml"/>
     <property name="user.home" value="C:\Users\Developer"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dsurefire.suiteXmlFiles=VED0091-Assessments.xml"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dsurefire.suiteXmlFiles=VED0008-Question_Bank_Apply_Standards.xml"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,20 +63,46 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TCED34201" classname="com.Home.Assessments" time="11.346"/>
-  <testcase name="TCED34202" classname="com.Home.Assessments" time="0.321"/>
-  <testcase name="TCED34203" classname="com.Home.Assessments" time="0.721"/>
-  <testcase name="TCED34204" classname="com.Home.Assessments" time="0.158"/>
-  <testcase name="TCED34205" classname="com.Home.Assessments" time="11.261"/>
-  <testcase name="TCED34206" classname="com.Home.Assessments" time="4.21"/>
-  <testcase name="TCED34207" classname="com.Home.Assessments" time="0.203"/>
-  <testcase name="TCED34208" classname="com.Home.Assessments" time="1.969"/>
-  <testcase name="TCED34209" classname="com.Home.Assessments" time="11.272"/>
-  <testcase name="TCED34210" classname="com.Home.Assessments" time="5.38"/>
-  <testcase name="TCED34211" classname="com.Home.Assessments" time="0.823"/>
-  <testcase name="TCED34212" classname="com.Home.Assessments" time="4.761"/>
-  <testcase name="TCED34213" classname="com.Home.Assessments" time="11.273"/>
-  <testcase name="TCED34214" classname="com.Home.Assessments" time="3.669"/>
-  <testcase name="TCED34215" classname="com.Home.Assessments" time="0.157"/>
-  <testcase name="TCED34216" classname="com.Home.Assessments" time="11.262"/>
+  <testcase name="TCED16201" classname="com.localassessment.Question_Bank_Apply_Standards" time="5.764"/>
+  <testcase name="TCED16202" classname="com.localassessment.Question_Bank_Apply_Standards" time="5.99"/>
+  <testcase name="TCED16203" classname="com.localassessment.Question_Bank_Apply_Standards" time="0.423"/>
+  <testcase name="TCED16204" classname="com.localassessment.Question_Bank_Apply_Standards" time="1.797"/>
+  <testcase name="TCED16205" classname="com.localassessment.Question_Bank_Apply_Standards" time="7.035">
+    <failure message="Assigned standard not found expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Assigned standard not found expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.localassessment.Question_Bank_Apply_Standards.TCED16205(Question_Bank_Apply_Standards.java:196)
+</failure>
+    <system-err><![CDATA[1544442414056	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/62.0/20180830143136/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0.17134.286%20(x64)/default/default/update.xml
+1544442414812	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/QuestionBankMassEditStandards.aspx?massIds=1000%2c1001&rwndrnd=0.6213361564514466
+1544442414895	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/QuestionBankMassEditStandards.aspx?massIds=1000%2c1001&rwndrnd=0.6213361564514466
+1544442414896	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/QuestionBankMassEditStandards.aspx?massIds=1000%2c1001&rwndrnd=0.6213361564514466
+1544442415100	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/QuestionBankMassEditStandards.aspx?massIds=1000%2c1001&rwndrnd=0.6213361564514466
+1544442415163	addons.productaddons	INFO	Completed downloading document
+1544442415169	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/QuestionBankMassEditStandards.aspx?massIds=1000%2c1001&rwndrnd=0.6213361564514466
+1544442415964	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1544442416034	addons.productaddons	INFO	downloadXHR File download. status=200
+1544442416036	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\DEVELO~1\AppData\Local\Temp\tmpaddon-37b993
+1544442416229	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1544442416272	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://192.168.10.124/EdInsight/Form/LocalAssessment/QuestionBankMassEditStandards.aspx?massIds=1000%2c1001&rwndrnd=0.6213361564514466
+1544442416394	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://192.168.10.124/EdInsight/Form/LocalAssessment/QuestionBankMassEditStandards.aspx?massIds=1000%2c1001&rwndrnd=0.6213361564514466
+1544442416395	Marionette	DEBUG	[6442450945] Received DOM event unload for http://192.168.10.124/EdInsight/Form/LocalAssessment/QuestionBankMassEditStandards.aspx?massIds=1000%2c1001&rwndrnd=0.6213361564514466
+1544442416595	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://192.168.10.124/EdInsight/Form/LocalAssessment/QuestionBankMassEditStandards.aspx?massIds=1000%2c1001&rwndrnd=0.6213361564514466
+1544442416670	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://192.168.10.124/EdInsight/Form/LocalAssessment/QuestionBankMassEditStandards.aspx?massIds=1000%2c1001&rwndrnd=0.6213361564514466
+1544442416979	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1544442417729	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1544442418253	addons.productaddons	INFO	downloadXHR File download. status=200
+1544442418255	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\DEVELO~1\AppData\Local\Temp\tmpaddon-75a1c1
+]]></system-err>
+  </testcase>
+  <testcase name="TCED16206" classname="com.localassessment.Question_Bank_Apply_Standards" time="20.305">
+    <failure message="Timeout during waiting for element: &apos;//a[contains(text(),&apos;Question Bank&apos;)]&apos;" type="java.lang.AssertionError">java.lang.AssertionError: Timeout during waiting for element: '//a[contains(text(),'Question Bank')]'
+	at Library.BaseClassOne.waitFor(BaseClassOne.java:265)
+	at Library.BaseClassOne.click(BaseClassOne.java:177)
+	at com.localassessment.Question_Bank_Apply_Standards.TCED16206(Question_Bank_Apply_Standards.java:218)
+</failure>
+  </testcase>
+  <testcase name="TCED16207" classname="com.localassessment.Question_Bank_Apply_Standards" time="15.945"/>
+  <testcase name="TCED16208" classname="com.localassessment.Question_Bank_Apply_Standards" time="9.578"/>
 </testsuite>
