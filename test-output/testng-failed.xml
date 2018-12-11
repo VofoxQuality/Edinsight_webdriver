@@ -1,35 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills">
+      <class name="com.localassessment.Question_Bank_Apply_Standards">
         <methods>
-          <include name="TCED14409"/>
-          <include name="TCED14408"/>
-          <include name="TCED14419"/>
-          <include name="TCED14416"/>
-          <include name="TCED14415"/>
-          <include name="TCED14426"/>
-          <include name="TCED14407"/>
-          <include name="TCED14418"/>
-          <include name="TCED14406"/>
-          <include name="TCED14417"/>
-          <include name="TCED14412"/>
-          <include name="TCED14423"/>
-          <include name="TCED14411"/>
-          <include name="TCED14422"/>
-          <include name="TCED14414"/>
-          <include name="TCED14425"/>
-          <include name="TCED14413"/>
-          <include name="TCED14424"/>
-          <include name="tearDown"/>
-          <include name="TCED14410"/>
-          <include name="TCED14421"/>
-          <include name="TCED14420"/>
           <include name="setup1"/>
+          <include name="TCED16206"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.analyzeByScore.AnalyzebyHigherOrderThinkingSkills -->
+      </class> <!-- com.localassessment.Question_Bank_Apply_Standards -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
