@@ -189,9 +189,6 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		}
 	}
 
-
-
-
 	@Test(priority=8)
 	public void TCED14408() 
 	{
@@ -213,8 +210,6 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Assert.fail(e.getMessage());
 		}
 	}
-
-
 
 	@Test(priority=9)
 	public void TCED14409() 
@@ -238,9 +233,6 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Assert.fail(e.getMessage());
 		}
 	}
-
-
-
 	@Test(priority=10)
 	public void TCED14410() 
 	{
@@ -258,8 +250,6 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Assert.fail(e.getMessage());
 		}
 	}
-
-
 	@Test(priority=11)
 	public void TCED14411() 
 	{
