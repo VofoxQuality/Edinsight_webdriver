@@ -14,6 +14,7 @@ public class Teacher_Course_Section_MTSS extends BaseClassOne
 	{
 		try
 		{
+			
 			//Supertent Login
 			login(Supertent_Login_id,Supertent_Login_Password);
 			
@@ -157,13 +158,16 @@ public class Teacher_Course_Section_MTSS extends BaseClassOne
 			//Select a student 
 			click("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionRTII_rgStudentRTII_ctl00_ctl02_ctl01_chkSelectUserSelectCheckBox']");
 			
+			Thread.sleep(3000);	
 			//Click on add selected students to group button 
 			click("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionRTII_btnSelectToGroup']");
 			
+			Thread.sleep(3000);
 			//Assert the label "Add Students to Group"
 			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"),"Add Students to Group:");
 
+			Thread.sleep(3000);
 			driver.switchTo().parentFrame();
 			
 			Thread.sleep(3000);			
@@ -193,6 +197,7 @@ public class Teacher_Course_Section_MTSS extends BaseClassOne
 			//Click on add all selected students to group button 
 			click("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionRTII_btnCheckAll']");
 			
+			Thread.sleep(3000);
 			//Assert the label "Add Students to Group"
 			driver.switchTo().frame("StudentGroupWindowUniqueNameToAvoidErrorsIHope2");
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label1']"),"Add Students to Group:");
@@ -201,14 +206,15 @@ public class Teacher_Course_Section_MTSS extends BaseClassOne
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"),"Create New Group:");			
 			
 			//Click on Close button
+			Thread.sleep(3000);
 			driver.switchTo().parentFrame();
 			
-			Thread.sleep(3000);
+			
 			click("//span[@title='Close']");
 			
 			//click on Logout button
-			waitForEnable("//*[@id='ctl00_A3']/img");
-			click("//*[@id='ctl00_A3']/img");
+			waitForEnable("//*[@id='ctl00_A3']");
+			click("//*[@id='ctl00_A3']");
 			
 			//Assert the page Header as "Edinsight Login"					
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));

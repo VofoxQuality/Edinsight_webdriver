@@ -55,11 +55,16 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//To select the Administrations 
 			select("//*[@id='ctl00_MainContent_ddlAdministrations']", "label=For Automation- do not edit (Admin)(2017-2018)");			
 			
+			Thread.sleep(2000);
+			
 			//Assert the Label  "All Tags"
-		    Assert.assertEquals(getText("//label[@for='ctl00_MainContent_chkAll']"),"All Tags");
+		    Assert.assertEquals(getText("//label[contains(text(),'All Tags')]"),"All Tags");
 			
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
+			
+			
+			Thread.sleep(2000);
 			
 			//Assert the the Header Name as Analyze By Tag
 			Assert.assertEquals(getText("//span[@id='ctl00_PlcPageCategory_lblRptName']"),"Analyze By Tag");	
@@ -100,7 +105,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//label[@for='ctl00_MainContent_rbStudentGroup']"),"Run Report By Student Group");
 			
 			//Assert the label Summary
-			Assert.assertEquals(getText("//h3[contains(text(),'Summary')]"),"Summary");			
+			Assert.assertEquals(getText("//a[contains(text(),'Testing Summary')]"),"Testing Summary");			
 			
 			//Assert the label Detailed
 			Assert.assertEquals(getText("//h3[contains(text(),'Detailed')]"),"Detailed");		
@@ -187,14 +192,19 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
 			
-			//Drill down from  Total test completed and scored
-			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[4]/a");
+			//click on chart summary
+			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
+				
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]");
+			Thread.sleep(3000);
+			
+			Thread.sleep(3000);
 			
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
-			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
+			
 			
 			//Assert the columns in the student list grid
 			AT.summary_report_studentlist_grid();						
@@ -231,14 +241,16 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//To click on the run report button
 			click("//*[@id='ctl00_MainContent_btnRunReport']");
 			
-			//Drill down from  Total tests started but not completed
-			click("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[4]/td/table/tbody/tr/td[4]/a");
+			//click on chart summary
+			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
+				
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]");
+			Thread.sleep(3000);
 			
 			//Assert the label Assessment Students List
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
-			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Analyze By Tag')]"),"Analyze By Tag");
 			
 			//Assert the columns in the student list grid
 			AT.summary_report_studentlist_grid();
@@ -832,6 +844,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 
 			//Select a Group from Run Report By Student Group 
 			click("//label[contains(text(),'Run Report By Student Group')]//preceding::input[1]");
+			Thread.sleep(2000);
 			select("//select[@id='ctl00_MainContent_ddlStudentGroup']","label=00 123 MR");
 			
 			//click on Run Report button
@@ -887,7 +900,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			Assert.assertEquals(getText("//span[@class='subheading']"),"Assessment Students List");
 			
 			//Assert the label  Analyze by Tag
-			Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
+			//Assert.assertEquals(getText("//td[contains(text(),'Report Name:')]//following::td[1]"),"Analyze By Tag");
 			
 			//Assert the columns in the student list grid			
 			AT.summary_report_studentlist_grid();	
@@ -1263,8 +1276,10 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 			//To click here to see the test
 			click("//*[@id='ctl00_MainContent_lnkAnswerKey']");
 			
+			
+			
 			//To select the frame
-			SwitchFrameName("AssessmentPrint");
+			SwitchFrameName("printPopup");
 			
 			//To delete all the files in the directory
 			FileDelete();
@@ -1342,6 +1357,11 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 		    {
 				//Hover over main menu local Assignment.			
 				Actions actions = new Actions(driver);
+				
+				WebElement mouseHover1 =find("//a[contains(text(),'Data Analyst')]");
+				actions.moveToElement(mouseHover1).build().perform();
+				
+				
 				WebElement mouseHover =find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
 				actions.moveToElement(mouseHover).build().perform();					
 				
@@ -1349,7 +1369,7 @@ public class Local_Assessment_AnalyzeByTag extends BaseClassOne
 				click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
 				
 				//To click on the Beta Summary reports(Analyze By Tag New)
-				click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTagNew']");
+				click("//*[@id='ctl00_MainContent_hlnkAnalyzeByTag']");
 			} 
 		 catch (Exception e)
 		    {

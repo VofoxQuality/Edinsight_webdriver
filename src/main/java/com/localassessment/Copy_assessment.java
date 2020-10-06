@@ -3,6 +3,7 @@
  */
 package com.localassessment;
 
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -30,10 +31,11 @@ public class Copy_assessment extends BaseClassOne
 		login(Supertent_Login_id,Supertent_Login_Password);
 		
 		//Click on main menu local Assignment.
-		click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+		Actions act=new Actions(driver);					
+		act.moveToElement(find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a")).build().perform();
 		
 		//Click on manage assessment
-		click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[5]/div/a");
+		click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[6]/div/a");
 		
 		//type on test id textbox		
 		type("//*[@id='ctl00_MainContent_txtTestId']", test_id);
@@ -49,13 +51,11 @@ public class Copy_assessment extends BaseClassOne
 		
 		System.out.println(success_text);
 		
+		driver.switchTo().alert().accept();
+		
 		//Assert the alert message contains "Test copied successfully....."
 		
 		Assert.assertTrue(success_text.contains(expected_message),"success message not displayed");	
-		
-		//close alert pop up
-		
-		//driver.switchTo().alert().accept();	
 		
 		}
 		catch (Exception e) 

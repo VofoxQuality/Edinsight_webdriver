@@ -343,7 +343,7 @@ public class Submitted_Lesson_Plans extends BaseClassOne
 	 {
 		driver.navigate().refresh(); 
 		 
-		 click("//*[@id='ctl00_A3']/img");
+		 click("//*[@id='ctl00_A3']");
 	 } 
    catch (Exception e) 
    {

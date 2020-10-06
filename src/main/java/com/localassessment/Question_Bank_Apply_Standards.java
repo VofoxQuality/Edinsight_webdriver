@@ -1,4 +1,4 @@
-	package com.localassessment;
+package com.localassessment;
 
 import java.util.List;
 import java.util.Random;
@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import com.generalMethods.MouseOver;
 import Library.BaseClassOne;
 public class Question_Bank_Apply_Standards extends BaseClassOne
 {
@@ -23,16 +24,14 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 			login(Supertent_Login_id,Supertent_Login_Password);	
 			
 			//Assert logout button is displayed in the dashboard page
-			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_A3']/img")).isDisplayed());
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_A3']")).isDisplayed());
 		}
 		catch (Exception e)
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
-	}
-	
+		}		
+	}	
 	@Test(priority=1)
 	public void TCED16202()
 	{
@@ -59,16 +58,13 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 			
 			//A pop-up should open Assert the header "Align Standard to Multiple Questions"
 			Assert.assertTrue(getText("//*[@id='RadWindowWrapper_ctl00_MainContent_MassEditStandards']/div[1]/div/h6").contains("Align Standards to Multiple Questions"),"failed to assert the Header"+"Align Standard to Multiple Questions");
-		} 
-		
+		}		
 		catch (Exception e)
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}	
-				
-	}
-	
+		}					
+	}	
 	@Test(priority=2)
 	public void TCED16203()
 	{		
@@ -101,10 +97,8 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
-	}
-	
+		}		
+	}	
 	@Test(priority=3)
 	public void TCED16204()
 	{	
@@ -138,19 +132,16 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 			
 			//Assert the Label "Description"
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_QuestionBankStandards1_rgStandards_ctl00']/thead/tr/th[6]").contains("Description"),"failed to assert the label -Description");
-		} 
-		
+		} 		
 		catch (Exception e) 
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
 		}
-	}
-	
+	}	
 	@Test(priority=4)
 	public void TCED16205()
-	{	
-		
+	{		
 		try
 		{	
 			
@@ -193,23 +184,23 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_grdQuestion']/tbody/tr[2]/td[3]/table").contains(Add_std),"Assigned standard not found");			
 			
 			//Assert the assigned Standard ID's for the corresponding question
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_grdQuestion']/tbody/tr[2]/td[3]/table").contains(Add_std1),"Assigned standard not found");						
+			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_grdQuestion']/tbody/tr[2]/td[3]/table").contains(Add_std1),"Assigned standard not found");					
 
 		} 
 		catch (Exception e) 
 		{			
 			e.printStackTrace();
 			Assert.fail(e.getMessage());		
-		}
-					
-	}
-	
+		}					
+	}	
 	@Test(priority=5)	
 	public void TCED16206()
-	{
-		
-		try {
+	{		
+		try
+		{
 			//Application should be in the Question Search page.
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
 			
 			//Hover over main menu local Assignment.
 			Actions act= new Actions(driver);
@@ -218,10 +209,11 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 			//click on Question bank link		
 			click("//a[contains(text(),'Question Bank')]");
 			
-			//click search question		
+			//click search question	
+			Thread.sleep(5000);
 			click("//a[@id='ctl00_MainContent_lnkSearchQuestions']");
 			
-			driver.navigate().refresh();
+			//driver.navigate().refresh();
 			
 			//select a question
 			click("//*[@id='ctl00_MainContent_grdQuestion_ctl03_chkQuestion']");
@@ -267,7 +259,7 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 		
 		driver.navigate().refresh();			
 		
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		if(isAlertPresents())
 		{			
@@ -278,6 +270,7 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 		click("//input[@id='ctl00_MainContent_grdQuestion_ctl03_imgBTnStandardsEdit']");		
 			   
 		// switch to frame 
+		Thread.sleep(5000);
 		driver.switchTo().frame("MassEditStandards");
 	    
 	    //Click on Option button 
@@ -374,7 +367,7 @@ public class Question_Bank_Apply_Standards extends BaseClassOne
 			    click("//div[@id='RadWindowWrapper_ctl00_MainContent_MassEditStandards']/div/div/ul/li[2]/span");
 			    
 				//click on Logout button		 
-				click("//*[@id='ctl00_A3']/img");
+				click("//*[@id='ctl00_A3']");
 				
 				//Assert the page Header as "Edinsight Login"					
 				Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));				

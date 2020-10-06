@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.generalMethods.MouseOver;
+
 import Library.BaseClassOne;
 
 /**
@@ -178,12 +180,6 @@ public class TeamDecisionReport extends BaseClassOne {
 		}
 	}
 
-
-
-
-
-
-
 //	@Test(priority=6)
 	public void TCED22606() 
 	{
@@ -324,7 +320,10 @@ public class TeamDecisionReport extends BaseClassOne {
 			click("//*[@id='ctl00_A3']");
 
 			//Supertent Login
-			login(Supertent_Login_id,Supertent_Login_Password);		
+			login(Supertent_Login_id,Supertent_Login_Password);	
+			
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
 
 			///Hover over MTTS link			
 			Actions actions = new Actions(driver);
@@ -433,7 +432,11 @@ public class TeamDecisionReport extends BaseClassOne {
 	{
 		try
 		{
-			///Hover over MTTS link			
+			///Hover over MTTS link		
+			
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			Actions actions = new Actions(driver);
 			WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
 			actions.moveToElement(mouseHover).build().perform();		
@@ -474,15 +477,11 @@ public class TeamDecisionReport extends BaseClassOne {
 			Assert.fail(e.getMessage());
 		}
 	}
-
-
-
 	@Test(priority=15)
 	public void TCED22615() 
 	{
 		try
 		{
-
 			//To delete all the files in the directory
 			FileDelete();
 
@@ -491,7 +490,6 @@ public class TeamDecisionReport extends BaseClassOne {
 			Thread.sleep(4000);
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
-
 
 		}catch(Exception e) 
 		{
@@ -513,7 +511,6 @@ public class TeamDecisionReport extends BaseClassOne {
 			// To Assert the files
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 
-
 		}catch(Exception e) 
 		{
 			e.printStackTrace();
@@ -533,7 +530,6 @@ public class TeamDecisionReport extends BaseClassOne {
 			Thread.sleep(4000);
 			// To Assert the files
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-
 
 		}catch(Exception e) 
 		{

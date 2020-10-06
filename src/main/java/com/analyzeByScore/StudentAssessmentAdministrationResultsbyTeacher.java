@@ -636,7 +636,7 @@ public class StudentAssessmentAdministrationResultsbyTeacher extends BaseClassOn
 			click("//*[@id='ctl00_MainContent_lnkassessmentPDF']");
 
 			//To select the frame
-			SwitchFrameName("Assessment Print");
+			SwitchFrameName("printPopup");
 			Thread.sleep(2000);
 			//To delete all the files in the directory
 			FileDelete();

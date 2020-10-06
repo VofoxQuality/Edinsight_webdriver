@@ -5,6 +5,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.generalMethods.MouseOver;
+
 import Library.BaseClassOne;
 
 public class Data_Depot_Menu_Items extends BaseClassOne 
@@ -111,6 +113,9 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 	{
 		try
 		{
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			// Hover the Data Depot Menu 
 			Actions act=new Actions(driver);					
 			act.moveToElement(find("//a[contains(text(),'Data Depot')]")).build().perform();	
@@ -135,6 +140,9 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 	{
 		try
 		{
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			// Hover the Data Depot Menu 
 			Actions act=new Actions(driver);					
 			act.moveToElement(find("//a[contains(text(),'Data Depot')]")).build().perform();	
@@ -159,6 +167,9 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 	{
 		try
 		{
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			// Hover the Data Depot Menu 
 			Actions act=new Actions(driver);					
 			act.moveToElement(find("//a[contains(text(),'Data Depot')]")).build().perform();	
@@ -183,6 +194,9 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 	{
 		try
 		{
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			// Hover the Data Depot Menu 
 			Actions act=new Actions(driver);					
 			act.moveToElement(find("//a[contains(text(),'Data Depot')]")).build().perform();	
@@ -207,6 +221,9 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 	{
 		try
 		{
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			// Hover the Data Depot Menu 
 			Actions act=new Actions(driver);					
 			act.moveToElement(find("//a[contains(text(),'Data Depot')]")).build().perform();	
@@ -231,6 +248,9 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 	{
 		try
 		{
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			// Hover the Data Depot Menu 
 			Actions act=new Actions(driver);					
 			act.moveToElement(find("//a[contains(text(),'Data Depot')]")).build().perform();	
@@ -255,6 +275,9 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 	{
 		try
 		{
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			// Hover the Data Depot Menu 
 			Actions act=new Actions(driver);					
 			act.moveToElement(find("//a[contains(text(),'Data Depot')]")).build().perform();	
@@ -279,6 +302,9 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 	{
 		try
 		{
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			// Hover the Data Depot Menu 
 			Actions act=new Actions(driver);					
 			act.moveToElement(find("//a[contains(text(),'Data Depot')]")).build().perform();	
@@ -303,6 +329,9 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 	{
 		try
 		{
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			// Hover the Data Depot Menu 
 			Actions act=new Actions(driver);					
 			act.moveToElement(find("//a[contains(text(),'Data Depot')]")).build().perform();	
@@ -327,6 +356,9 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 	{
 		try
 		{
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			// Hover the Data Depot Menu 
 			Actions act=new Actions(driver);					
 			act.moveToElement(find("//a[contains(text(),'Data Depot')]")).build().perform();	
@@ -335,10 +367,10 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 			click("//a[contains(text(),'For Automation - Do_Not_Edit_n_Delete')]");
 			
 			//Click on the Longitudinal Measure Comparison Report Link
-			click("//a[contains(text(),'Longitudinal Measure Comparison Report')]");
+			click("//a[contains(text(),'Course Grade Comparison Report')]");
 			
 			//Assert page header as For Automation - Do_Not_Edit_n_Delete Longitudinal Measure Comparison Report"
-			Assert.assertEquals(getText("//span[@class='subheading']"),"For Automation - Do_Not_Edit_n_Delete Longitudinal Measure Comparison Report");
+			Assert.assertEquals(getText("//span[@class='subheading']"),"Course Grade to For Automation - Do_Not_Edit_n_Delete Score Comparison Report");
 		}
 		catch (Exception e)
 		{
@@ -351,6 +383,9 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 	{
 		try
 		{
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			// Hover the Data Depot Menu 
 			Actions act=new Actions(driver);					
 			act.moveToElement(find("//a[contains(text(),'Data Depot')]")).build().perform();	
@@ -365,8 +400,8 @@ public class Data_Depot_Menu_Items extends BaseClassOne
 			Assert.assertEquals(getText("//span[@class='subheading']"),"For Automation - Do_Not_Edit_n_Delete Student Reports");
 			
 		    //click on Logout button
-			waitForEnable("//*[@id='ctl00_A3']/img");
-			click("//*[@id='ctl00_A3']/img");
+			waitForEnable("//*[@id='ctl00_A3']");
+			click("//*[@id='ctl00_A3']");
 			
 			//Assert the page Header as "Edinsight Login"					
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));

@@ -21,7 +21,7 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			login(Supertent_Login_id,Supertent_Login_Password);	
 			
 			//Assert logout button is displayed in the dashboard page
-			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_A3']/img")).isDisplayed());
+			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_A3']")).isDisplayed());
 		}
 		catch (Exception e)
 		{
@@ -33,8 +33,11 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 	public void TCED13302()
 	{
 		try {
-			//Click on main menu local Assignment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			
+			
+			//Click on main menu local Assignment.		
+			Actions act=new Actions(driver);					
+			act.moveToElement(find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a")).build().perform();
 			
 			// Click Score Results menu
 			click("//a[contains(text(),'Score Results')]");
@@ -377,7 +380,7 @@ public class Test_Suite_Print_Login_Codes extends BaseClassOne
 			click("//*[@id='RadWindowWrapper_ctl00_MainContent_ViewLoginCodes']/div[1]/div/ul/li/span");
 			
 			//click on Logout button			 
-			click("//*[@id='ctl00_A3']/img");
+			click("//*[@id='ctl00_A3']");
 			
 			//Assert the page Header as "Edinsight Login"						
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));

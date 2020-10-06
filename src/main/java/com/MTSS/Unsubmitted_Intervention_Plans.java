@@ -262,7 +262,7 @@ public class Unsubmitted_Intervention_Plans extends BaseClassOne
 		try
 		{
 			//Application should be in the Unsubmitted Intervention Plan Report page
-			
+	
 			//Select Some Student
 			click("//*[@id='ctl00_MainContent_rtiInterventions_ctl00_ctl04_chkSelectUserSelectCheckBox']");
 			
@@ -329,7 +329,7 @@ public class Unsubmitted_Intervention_Plans extends BaseClassOne
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			
 			//click on Logout button		 
-			click("//*[@id='ctl00_A3']/img");
+			click("//*[@id='ctl00_A3']");
 			
 			//Assert the page Header as "Edinsight Login"					
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));

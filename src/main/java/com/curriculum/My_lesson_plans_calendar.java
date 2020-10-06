@@ -79,7 +79,7 @@ public class My_lesson_plans_calendar extends BaseClassOne
 			
 			//Assert the Labels "Compress Schedule"
 			
-			Assert.assertTrue(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/span[3]").contains("Compress Schedule"),"failed to assert the text-Compress Schedule");
+			Assert.assertTrue(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/span[4]").contains("Compress Schedule"),"failed to assert the text-Compress Schedule");
 			
 			//Assert the Labels "Month"
 			
@@ -190,7 +190,7 @@ public class My_lesson_plans_calendar extends BaseClassOne
 			
 			//click logout button
 			
-			 click("//*[@id='ctl00_A3']/img");
+			 click("//*[@id='ctl00_A3']");
 		} 
 		
 		catch (Exception e)

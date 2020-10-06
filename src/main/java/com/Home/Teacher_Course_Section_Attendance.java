@@ -194,7 +194,7 @@ public class Teacher_Course_Section_Attendance extends BaseClassOne
 			Scroll_DowntoEnd();
 						
 			//Excused Absences chart should be visible
-			Assert.assertTrue(isDisplayed("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionAttendance2_chartExcusedAbsences_Image']"), "Excused Absences chart not visible");
+			Assert.assertTrue(isDisplayed("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionAttendance2_TelerikExcusedColumnChart']"), "Excused Absences chart not visible");
 		} 
 		catch (Exception e)
 		{
@@ -210,11 +210,11 @@ public class Teacher_Course_Section_Attendance extends BaseClassOne
 			//Application should be in the Attendance View tab
 			
 			//Unexcused Absences chart should be visible
-			Assert.assertTrue(isDisplayed("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionAttendance2_chartUnexcusedAbsences_Image']"), "Unexcused Absences chart not visible");
+			Assert.assertTrue(isDisplayed("//*[@id='ctl00_MainContent_CourseSectionDisplayControl1_CourseSectionAttendance2_TelerikUnexcusedColumnChart']"), "Unexcused Absences chart not visible");
 			
 		    //click on Logout button
-			waitForEnable("//*[@id='ctl00_A3']/img");
-			click("//*[@id='ctl00_A3']/img");
+			waitForEnable("//*[@id='ctl00_A3']");
+			click("//*[@id='ctl00_A3']");
 			
 			//Assert the page Header as "Edinsight Login"					
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));

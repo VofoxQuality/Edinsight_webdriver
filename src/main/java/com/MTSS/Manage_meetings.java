@@ -1,16 +1,24 @@
 package com.MTSS;
+import java.util.List;
+import java.util.Set;
+
 /**
  * @author Ans-A
  */
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.generalMethods.MouseOver;
+
 import Library.BaseClassOne;
+
+
 
 public class Manage_meetings extends BaseClassOne {
 
@@ -46,12 +54,21 @@ public class Manage_meetings extends BaseClassOne {
 			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_chkSelectUserSelectCheckBox']");
 			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl06_chkSelectUserSelectCheckBox']");
 			select("//*[@id='ctl00_MainContent_RTIMassTieringControl1_ddlTierMulti']","Tier 2");
-			click("//*[@id='ctl00_MainContent_RTIMassTieringControl1_btnTier']");
-
-			Thread.sleep(7000);
-			// To click interventions
+			click("//*[@id='ctl00_MainContent_RTIMassTieringControl1_btnTier']");			
+			
+			
+//			String popupHandle = clickAndFindPopup( By.xpath("//*[@id='ctl00_MainContent_RTIMassTieringControl1_btnTier']"));
+//			if (!popupHandle.equals("")) {
+//			    String currentHandle = driver.getWindowHandle();
+//			    driver.switchTo().window(popupHandle);
+//			    click("//*[@id='ctl00_MainContent_RTIMassTieringControl1_rwMeetingAlertPopUp1_C_btnContinue']");
+//			    driver.switchTo().window(currentHandle);
+//			}
+//			
+			Thread.sleep(4000);
+			
+			// To click interventions			
 			click("//*[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnIntervention']");
-
 			Thread.sleep(4000);
 			// Frame select
 			SwitchFrameName("RadWindow1");
@@ -59,28 +76,36 @@ public class Manage_meetings extends BaseClassOne {
 			click("//input[contains(@type,'submit')][@value='Add Intervention Plan']");		
 			// Frame select
 			SwitchFrameName("RadWindow2");
-
+			Thread.sleep(2000);
 			// To click interventions Skill
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");
 			Thread.sleep(2000);
 			// To click and select  interventions from list
-			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_DropDown']/div/ul/li[1]/label/input");
+			click("//label[contains(text(),'Foundational Skills')]//input[@class='rcbCheckBox']");
 			Thread.sleep(2000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");  
 			Thread.sleep(2000);
+			
+			click("//span[@id='ctl00_ContentPlaceHolder1_rcmbProgramDescription_Arrow']");
 			// To select and directly enter the dropdown values 
-			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
+			click("//li[contains(text(),'Counseling - Individual')]");
+			Thread.sleep(2000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
+			// To select and directly enter the dropdown values 
+			click("//li[contains(text(),'Fundations')]");
 
-			type("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Input']", "Fundations");
+	//		select("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Input']", "Fundations");
+			
 
 			type("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input']", "CDT");
-
-			//*[@id="ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input"]
-			select("//*[@id='ctl00_ContentPlaceHolder1_ddlDuration']","2");
-
+			
 			// To scroll to location
 			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_litInitiationDate']");
 			Thread.sleep(3000);
+
+			//*[@id="ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input"]
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlDuration']","2");	
+			
 			// To select  details to submit the intervention details from dropdown
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyTPR']","2");
 
@@ -89,6 +114,8 @@ public class Manage_meetings extends BaseClassOne {
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_DropDown']/div/ul/li[2]/label/input");
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
+			
+			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveSubmit']");
 
 			Thread.sleep(3000);
@@ -117,26 +144,38 @@ public class Manage_meetings extends BaseClassOne {
 			Thread.sleep(2000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbInterSkill_Arrow']");  
 			Thread.sleep(2000);
+			
+			click("//span[@id='ctl00_ContentPlaceHolder1_rcmbProgramDescription_Arrow']");
 			// To select and directly enter the dropdown values 
-			select("//*[@id='ctl00_ContentPlaceHolder1_ddlProgramDescription']","Counseling - Individual");
+			click("//li[contains(text(),'Counseling - Individual')]");
+			Thread.sleep(2000);
+			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Arrow']");
+			
+			// To select and directly enter the dropdown values 
+			click("//li[contains(text(),'Fundations')]");
+			
 
-			type("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Input']", "Fundations");
+		//	type("//*[@id='ctl00_ContentPlaceHolder1_rcmbCurriculumMaterials_Input']", "Fundations");
 
 			type("//*[@id='ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input']", "CDT");
-
-			//*[@id="ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input"]
-			select("//*[@id='ctl00_ContentPlaceHolder1_ddlDuration']","2");
-
+			
 			// To scroll to location
 			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_litInitiationDate']");
 			Thread.sleep(3000);
+
+			//*[@id="ctl00_ContentPlaceHolder1_rcmbMeasureAssmnt_Input"]
+			select("//*[@id='ctl00_ContentPlaceHolder1_ddlDuration']","2");	
+			
 			// To select  details to submit the intervention details from dropdown
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyTPR']","2");
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlFrequencyMPS']","10");
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_DropDown']/div/ul/li[2]/label/input");
 			click("//*[@id='ctl00_ContentPlaceHolder1_rcmbParentNotification_Arrow']");
+			
+			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveSubmit']");
+			
 
 			Thread.sleep(3000);
 			driver.switchTo().defaultContent();	
@@ -144,17 +183,22 @@ public class Manage_meetings extends BaseClassOne {
 			click("//*[@id='RadWindowWrapper_ctl00_MainContent_RadWindow1']/div[1]/div/ul/li[2]/span");
 			Thread.sleep(4000);
 
-			//Hover over MTTS link			
-			Actions actions = new Actions(driver);
-			WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
-			actions.moveToElement(mouseHover).build().perform();		
+			//Hover over MTTS link							
+			WebElement element = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
+			
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
+			Actions action = new Actions(driver);
+			action.moveToElement(element).click().build().perform();		
+			
 			// To click on the meetings
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[2]/div/a");
 
 			click("//*[@id='ctl00_MainContent_trMeetings']/td[2]/a");
 			// To assert the validations
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/table/tbody/tr[1]/td"), "Meetings");		
-
+			
 
 		} 
 		catch (Exception e) 
@@ -164,7 +208,26 @@ public class Manage_meetings extends BaseClassOne {
 		}        
 
 	}
+	
+	// Method for handling popups if any
+	public String clickAndFindPopup(By locator) throws InterruptedException {
+	    // Get the original list of handles to evaluate if a popup
+	    // needs to be handled.
+	    Set<String> existingHandles = driver.getWindowHandles();
 
+	    //Click Search button  -- This will cause the pop-up
+	    driver.findElement(locator).click();
+	    Thread.sleep(1000);
+
+	    Set<String> windowHandles = driver.getWindowHandles();
+	    windowHandles.removeAll(existingHandles);
+
+	    if (windowHandles.size() > 0) {
+	        return windowHandles.toString();
+	    }
+
+	    return "";
+	}
 
 	@Test(priority=2)
 
@@ -195,8 +258,6 @@ public class Manage_meetings extends BaseClassOne {
 
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[3]/td/label[2]"), "Include Only Students Receiving Tiered Interventions");		
 
-
-
 		} 
 		catch (Exception e) 
 		{
@@ -205,7 +266,6 @@ public class Manage_meetings extends BaseClassOne {
 		}        
 
 	}
-
 
 	@Test(priority=3)
 
@@ -282,7 +342,6 @@ public class Manage_meetings extends BaseClassOne {
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00']/thead/tr[1]/th[16]/a"), "Mathematics");		
 
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00']/thead/tr[1]/th[17]/a"), "Behavioral");		
-
 		} 
 
 		catch (Exception e) 
@@ -453,12 +512,12 @@ public class Manage_meetings extends BaseClassOne {
 
 	{
 		try {
+			
 			Thread.sleep(2000);
-
-			click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveSubmit']");
-			// Scroll to end
 			Scroll_DowntoEnd();
 			Thread.sleep(8000);
+			
+			click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveSubmit']");
 			// To assert the validations
 			Assert.assertTrue(getText("//*[@id='ctl00_ContentPlaceHolder1_lblMessageBottom']").contains("You must select a Parent/Guardian Attendance."),"Failed to Assert"+"You must select a Parent/Guardian Attendance.");	
 
@@ -481,15 +540,14 @@ public class Manage_meetings extends BaseClassOne {
 
 	{
 		try {
-			//To scroll up to the page
-		//	JavascriptExecutor jse = (JavascriptExecutor)driver;
-		//	jse.executeScript("window.scrollBy(0,0)", "");
 			
-			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_lblMeetingPurpose']");
 			// select the parameters
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlParntGuardAttendance']","Parent/Guardian Attendance not Required");
 
 			select("//*[@id='ctl00_ContentPlaceHolder1_ddlStudentAttendance']","Student in Attendance");
+			
+			ScrollTo_Location("//*[@id='ctl00_ContentPlaceHolder1_trNotes']/td/div/fieldset/legend/b");
+			Thread.sleep(9000);
 
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnSaveSubmit']");
 			Thread.sleep(3000);
@@ -502,10 +560,7 @@ public class Manage_meetings extends BaseClassOne {
 			SwitchFrameName("RadWindow1");
 			Thread.sleep(4000);
 			Assert.assertEquals(getText("//*[@id='aspnetForm']/div[4]/div/table/tbody/tr[1]/td/span"), "Your meeting has been submitted successfully!");	
-
-
 		} 
-
 		catch (Exception e) 
 		{
 			e.printStackTrace();
@@ -513,10 +568,7 @@ public class Manage_meetings extends BaseClassOne {
 		}        
 
 	}
-
-
 	@Test(priority=13)
-
 	public void TCED20213() throws InterruptedException
 
 	{
@@ -667,8 +719,6 @@ public class Manage_meetings extends BaseClassOne {
 	}
 
 
-
-
 	@Test(priority=18)
 
 	public void TCED20218() throws InterruptedException
@@ -687,8 +737,6 @@ public class Manage_meetings extends BaseClassOne {
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_chkListAreasOfNeed']/tbody/tr[3]/td/label"), "Behavioral");		
 
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_trDisclaimer']/td/span"), "* Only intervention plans for tier 2 students can be reviewed using this feature");		
-
-
 		} 
 
 		catch (Exception e) 
@@ -701,7 +749,6 @@ public class Manage_meetings extends BaseClassOne {
 
 
 	@Test(priority=19)
-
 	public void TCED20219() throws InterruptedException
 
 	{ 
@@ -714,12 +761,11 @@ public class Manage_meetings extends BaseClassOne {
 			ScrollTo_Location("//*[@id='ctl00_MainContent_trDisclaimer']/td/span");
 			// To click on button
 			click("//*[@id='ctl00_MainContent_btnMassMeeting']");
-			Thread.sleep(3000);			
+			Thread.sleep(3000);
 			SwitchFrameName("RadWindow1");
 			Thread.sleep(3000);
 			// To assert the validations
 			Assert.assertEquals(getText("//*[@id='aspnetForm']/div[4]/div[2]/span[1]"), "Meeting Summary Form");		
-
 		} 
 
 		catch (Exception e) 
@@ -729,10 +775,7 @@ public class Manage_meetings extends BaseClassOne {
 		}        
 
 	}
-
-
 	@Test(priority=20)
-
 	public void TCED20220() throws InterruptedException
 
 	{
@@ -770,9 +813,7 @@ public class Manage_meetings extends BaseClassOne {
 
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_spanDisclaimer']"), "*These notes will be attached to every selected student. Please do not include individual student names.");
 
-
 		} 
-
 		catch (Exception e) 
 		{
 			e.printStackTrace();
@@ -780,11 +821,7 @@ public class Manage_meetings extends BaseClassOne {
 		}        
 
 	}
-
-
-
 	@Test(priority=21)
-
 	public void TCED20221() throws InterruptedException
 
 	{
@@ -804,11 +841,8 @@ public class Manage_meetings extends BaseClassOne {
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
 		}        
-
 	}
-
 	@Test(priority=22)
-
 	public void TCED20222() throws InterruptedException
 
 	{
@@ -859,10 +893,7 @@ public class Manage_meetings extends BaseClassOne {
 			Assert.fail(e.getMessage());
 		}        
 	}
-
-
 	@Test(priority=23)
-
 	public void TCED20223() throws InterruptedException
 
 	{
@@ -873,10 +904,8 @@ public class Manage_meetings extends BaseClassOne {
 
 			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_spanTier']"), "The following students were discussed at this meeting");
 
-			//		Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_divInterventions']/span"), "EdInsight has auto-generated the following intervention plans as a result of this meeting. Please complete, review, and submit these plans.");
-
+			//Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_divInterventions']/span"), "EdInsight has auto-generated the following intervention plans as a result of this meeting. Please complete, review, and submit these plans.");
 		} 
-
 		catch (Exception e) 
 		{
 			e.printStackTrace();
@@ -885,7 +914,6 @@ public class Manage_meetings extends BaseClassOne {
 
 	}
 	@Test(priority=24)
-
 	public void TCED20224() throws InterruptedException
 
 	{
@@ -903,7 +931,6 @@ public class Manage_meetings extends BaseClassOne {
 			Thread.sleep(2000);
 			// To assert the validations		
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/table/tbody/tr[1]/td"), "Meetings");		
-
 		} 
 
 		catch (Exception e) 

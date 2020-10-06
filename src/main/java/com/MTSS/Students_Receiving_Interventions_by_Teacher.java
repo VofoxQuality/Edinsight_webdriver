@@ -30,7 +30,7 @@ public class Students_Receiving_Interventions_by_Teacher extends BaseClassOne
 			   click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[17]/div/a");
 			   
 			   //Assert the Heading "Tiered Students by Teacher Report"
-			   Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblHeading']"),"Tiered Students by Teacher Report");
+			   Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblHeading']"),"Students Receiving Tiered Interventions by Teacher Report");
 		  } 
 		catch (Exception e)
 		  {
@@ -113,7 +113,7 @@ public class Students_Receiving_Interventions_by_Teacher extends BaseClassOne
 			click("//input[@id='ctl00_MainContent_btnRunReport']");
 			
 			//Assert the label "Tiered Students by Teacher Report"
-			Assert.assertEquals(getText("//span[@class='subheading']"),"Tiered Students by Teacher Report");		
+			Assert.assertEquals(getText("//span[@class='subheading']"),"Students Receiving Tiered Interventions by Teacher Report");		
 			
 		  } 
 		  catch (Exception e)
@@ -219,7 +219,7 @@ public class Students_Receiving_Interventions_by_Teacher extends BaseClassOne
 			 click("//*[@id='RadWindowWrapper_ctl00_MainContent_StudentGroupWindowUniqueNameToAvoidErrorsIHope2']/div[1]/div/ul/li/span");
 			 
 			 //Assert the Heading "Tiered Students by Teacher Report"
-			 Assert.assertEquals(getText("//span[@class='subheading']"),"Tiered Students by Teacher Report");
+			 Assert.assertEquals(getText("//span[@class='subheading']"),"Students Receiving Tiered Interventions by Teacher Report");
 		  } 
 		catch (Exception e)
 		  {
@@ -250,7 +250,7 @@ public class Students_Receiving_Interventions_by_Teacher extends BaseClassOne
 			 click("//span[@title='Close']");
 			 
 			 //Assert the Heading "Tiered Students by Teacher Report"
-			 Assert.assertEquals(getText("//span[@class='subheading']"),"Tiered Students by Teacher Report");
+			 Assert.assertEquals(getText("//span[@class='subheading']"),"Students Receiving Tiered Interventions by Teacher Report");
 		  } 
 		catch (Exception e)
 		  {
@@ -269,7 +269,7 @@ public class Students_Receiving_Interventions_by_Teacher extends BaseClassOne
 			 click("//*[@id='ctl00_MainContent_btnAddToFavorite']");
 			 
 			 //Assert the Heading "Tiered Students by Teacher Report"
-			 Assert.assertEquals(getText("//span[@class='subheading']"),"Tiered Students by Teacher Report");
+			 Assert.assertEquals(getText("//span[@class='subheading']"),"Students Receiving Tiered Interventions by Teacher Report");
 		  } 
 		catch (Exception e)
 		  {
@@ -277,7 +277,7 @@ public class Students_Receiving_Interventions_by_Teacher extends BaseClassOne
 			e.printStackTrace();
 		  }
 	}
-	@Test(priority=11)
+	//@Test(priority=11)
 	public void TCED221211()
 	{
 		try

@@ -28,10 +28,8 @@ public class Standards_Coverage_Report extends BaseClassOne
 			//Superintent Login
 			login(Supertent_Login_id,Supertent_Login_Password);	
 			
-			//hover over curriculum link
-			
-			Actions act=new Actions(driver);
-					
+			//hover over curriculum link			
+			Actions act=new Actions(driver);					
 			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/a"))).build().perform();	
 			
 			//Click Reports Menu 

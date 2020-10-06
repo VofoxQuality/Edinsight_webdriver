@@ -7,7 +7,7 @@ import Library.BaseClassOne;
 public class AssessmentPrint extends BaseClassOne
 {
 	
-	public void AssessmentPrintReports(String xpath) throws InterruptedException
+	public void AssessmentPrintReports(String xpath,String FrameName) throws InterruptedException
 	
 	{
 		//To click here to see the test
@@ -15,7 +15,7 @@ public class AssessmentPrint extends BaseClassOne
 		click(xpath);	
 
 		//To select the frame
-		SwitchFrameName("Assessment Print");
+		SwitchFrameName(FrameName);
 
 		//To delete all the files in the directory
 		FileDelete();

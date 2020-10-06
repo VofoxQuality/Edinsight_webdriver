@@ -10,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.generalMethods.AssessmentPrint;
+import com.generalMethods.MouseOver;
 import com.generalMethods.TestingSummary;
 
 import Library.BaseClassOne;
@@ -25,8 +26,34 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 
 			//Supertent Login
 			login(Supertent_Login_id,Supertent_Login_Password);
-			// Common header parameters
-			ReportParams();
+			//Hover over local Assessment link			
+			Actions actions = new Actions(driver);
+			WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"));
+			actions.moveToElement(mouseHover).build().perform();		
+
+			//To click on the analyze by Score
+			click("//a[contains(.,'Analyze Scores')]");
+
+			//To click on the Beta Summary reports(Analyze By Higher Order Thinking Skills New)
+			click("//*[@id='ctl00_MainContent_hlnkAnalyzeByHOTNew']");
+			
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span"), "Analyze By HigherOrder Thinking Skills");		
+	
+
+			//To fill the the Test ID Search 
+			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
+
+			//To click on the search button
+			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
+
+			//To select the Assessment 
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
+
+			//To select the Administrations
+			new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation- do not edit (Admin)(2017-2018)");
+
+			//To click on the run report button
+			click("//*[@id='ctl00_MainContent_btnRunReport']");
 			// To assert the header
 			Assert.assertEquals(getText("//*[@id='ctl00_PlcPageCategory_lblRptName']"), "Analyze By Higher Order Thinking Skills");		
 
@@ -74,8 +101,10 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 	{
 		try
 		{
+			//Drill down from Total Scheduled Students
+			String	xpath= "//td[contains(text(),'Total Scheduled Students:')]//following::a[1]";
 
-			String	xpath= "//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[2]/a";
+
 			// To Click the link & Assert the drilldown labels
 			Studentdrilldownlabels(xpath);
 
@@ -95,8 +124,8 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		{
 			// Common header parameters
 			ReportParams();
-
-			String	xpath= "//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[4]/a";
+			//Drill down from  Total test completed and scored
+			String	xpath= "//td[contains(text(),'Total test completed and scored:')]//following::a[1]";
 			// To Click the link & Assert the drilldown labels
 			Studentdrilldownlabels(xpath);
 
@@ -116,8 +145,8 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		{
 			// Common header parameters
 			ReportParams();
-
-			String	xpath= "//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[6]/a";
+			//Drill down from  Total tests started but not completed
+			String	xpath= "//td[contains(text(),'Total tests started but not completed:')]//following::a[1]";
 			// To Click the link & Assert the drilldown labels
 			Studentdrilldownlabels(xpath);
 
@@ -138,20 +167,13 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			// Common header parameters
 			ReportParams();
 			Thread.sleep(3000);
-			//	ScrollTo_Location("//*[@id='ctl00_MainContent_trSummaryChart']/td/table/tbody/tr[1]/td/h3");
 
-			WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[1]"));
+			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
 
-			Thread.sleep(3000);
-			String	xpath= "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]";
-			
-			int x = 211;
-			int y = 432;
-			Actions action = new Actions(driver);
-			//clicking on the chart based on x coordinate and y coordinate 
-			action.moveByOffset( x, y).click().build().perform();
-			Studentdrilldownlabels2(xpath);
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]");
+
+			Studentdrilldownlabels2();
 
 
 		}catch(Exception e) 
@@ -170,17 +192,13 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Thread.sleep(2000);
 			// Common header parameters
 			ReportParams();
+			JavascriptExecutor js=(JavascriptExecutor)driver;
+			js.executeScript("scroll(0,820)");
 			Thread.sleep(3000);
-			ScrollTo_Location("//*[@id='ctl00_MainContent_trDetailedChart']/td/table/tbody/tr[1]/td/h3");
-			Thread.sleep(5000);
-			String	xpath1= "//*[@id='ctl00_MainContent_DetailedAnalyzeChart_Image']";
-			// To Click the link & Assert the drilldown labels
-			int x = 91;
-			int y = 228;
-			Actions action = new Actions(driver);
-			//clicking on the chart based on x coordinate and y coordinate 
-			action.moveByOffset( x, y).click().build().perform();
-			Studentdrilldownlabels2(xpath1);
+
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Detailed'])[1]/following::area[9]");							
+
+			Studentdrilldownlabels2();
 
 		}catch(Exception e) 
 		{
@@ -188,6 +206,9 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Assert.fail(e.getMessage());
 		}
 	}
+
+
+
 
 	@Test(priority=8)
 	public void TCED14408() 
@@ -199,9 +220,9 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Thread.sleep(5000);
 			ScrollTo_Location("//*[@id='ctl00_MainContent_rgHOTAnalysis_ctl00']/thead/tr/th[2]");	
 			Thread.sleep(3000);
-			String	xpath= "//*[@id='ctl00_MainContent_rgHOTAnalysis_ctl00__0']/td[4]/a";
+			click("//*[@id='ctl00_MainContent_rgHOTAnalysis_ctl00__0']/td[4]/a");
 			// To Click the link & Assert the drilldown labels
-			Studentdrilldownlabels2(xpath);
+			Studentdrilldownlabels2();
 
 
 		}catch(Exception e) 
@@ -210,6 +231,8 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Assert.fail(e.getMessage());
 		}
 	}
+
+
 
 	@Test(priority=9)
 	public void TCED14409() 
@@ -233,13 +256,17 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Assert.fail(e.getMessage());
 		}
 	}
+
+
+
 	@Test(priority=10)
 	public void TCED14410() 
 	{
 		try
 		{
 
-			String	xpath= "//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[2]/a";
+			//Drill down from Total Scheduled Students
+			String	xpath= "//td[contains(text(),'Total Scheduled Students:')]//following::a[1]";
 			// To Click the link & Assert the drilldown labels
 			Studentdrilldownlabels(xpath);
 
@@ -250,6 +277,8 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Assert.fail(e.getMessage());
 		}
 	}
+
+
 	@Test(priority=11)
 	public void TCED14411() 
 	{
@@ -257,8 +286,8 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		{
 			// Common header parameters
 			ReportParams();
-
-			String	xpath= "//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[4]/a";
+			//Drill down from  Total test completed and scored
+			String	xpath= "//td[contains(text(),'Total test completed and scored:')]//following::a[1]";
 			// To Click the link & Assert the drilldown labels
 			Studentdrilldownlabels(xpath);
 
@@ -279,7 +308,8 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			// Common header parameters
 			ReportParams();
 
-			String	xpath= "//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[6]/a";
+			//Drill down from  Total tests started but not completed
+			String	xpath= "//td[contains(text(),'Total tests started but not completed:')]//following::a[1]";
 			// To Click the link & Assert the drilldown labels
 			Studentdrilldownlabels(xpath);
 
@@ -300,21 +330,13 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			// Common header parameters
 			ReportParams();
 			Thread.sleep(3000);
-			//	ScrollTo_Location("//*[@id='ctl00_MainContent_trSummaryChart']/td/table/tbody/tr[1]/td/h3");
 
-			WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[1]"));
+			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
 
-			Thread.sleep(3000);
-			String	xpath= "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]";
-			
-			int x = 211;
-			int y = 432;
-			Actions action = new Actions(driver);
-			//clicking on the chart based on x coordinate and y coordinate 
-			action.moveByOffset( x, y).click().build().perform();
-			Studentdrilldownlabels2(xpath);
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]");
 
+			Studentdrilldownlabels2();
 
 
 		}catch(Exception e) 
@@ -333,17 +355,14 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Thread.sleep(2000);
 			// Common header parameters
 			ReportParams();
+			JavascriptExecutor js=(JavascriptExecutor)driver;
+			js.executeScript("scroll(0,820)");
 			Thread.sleep(3000);
-			ScrollTo_Location("//*[@id='ctl00_MainContent_trDetailedChart']/td/table/tbody/tr[1]/td/h3");
-			Thread.sleep(5000);
-			String	xpath1= "//*[@id='ctl00_MainContent_DetailedAnalyzeChart_Image']";
-			// To Click the link & Assert the drilldown labels
-			int x = 91;
-			int y = 228;
-			Actions action = new Actions(driver);
-			//clicking on the chart based on x coordinate and y coordinate 
-			action.moveByOffset( x, y).click().build().perform();
-			Studentdrilldownlabels2(xpath1);
+
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Detailed'])[1]/following::area[9]");							
+
+			Studentdrilldownlabels2();
+
 
 		}catch(Exception e) 
 		{
@@ -365,9 +384,9 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Thread.sleep(3000);
 			ScrollTo_Location("//*[@id='ctl00_MainContent_rgHOTAnalysis_ctl00']/thead/tr/th[2]");	
 			Thread.sleep(3000);
-			String	xpath= "//*[@id='ctl00_MainContent_rgHOTAnalysis_ctl00__0']/td[4]/a";
+			click("//*[@id='ctl00_MainContent_rgHOTAnalysis_ctl00__0']/td[4]/a");
 			// To Click the link & Assert the drilldown labels
-			Studentdrilldownlabels2(xpath);
+			Studentdrilldownlabels2();
 
 
 		}catch(Exception e) 
@@ -408,7 +427,8 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		try
 		{
 
-			String	xpath= "//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[2]/a";
+			//Drill down from Total Scheduled Students
+			String	xpath= "//td[contains(text(),'Total Scheduled Students:')]//following::a[1]";
 			// To Click the link & Assert the drilldown labels
 			Studentdrilldownlabels(xpath);
 
@@ -429,7 +449,8 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			// Common header parameters
 			ReportParams();
 
-			String	xpath= "//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[4]/a";
+			//Drill down from  Total test completed and scored
+			String	xpath= "//td[contains(text(),'Total test completed and scored:')]//following::a[1]";
 			// To Click the link & Assert the drilldown labels
 			Studentdrilldownlabels(xpath);
 
@@ -450,7 +471,8 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			// Common header parameters
 			ReportParams();
 
-			String	xpath= "//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[6]/a";
+			//Drill down from  Total tests started but not completed
+			String	xpath= "//td[contains(text(),'Total tests started but not completed:')]//following::a[1]";
 			// To Click the link & Assert the drilldown labels
 			Studentdrilldownlabels(xpath);
 
@@ -471,18 +493,14 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			// Common header parameters
 			ReportParams();
 			Thread.sleep(3000);
-			WebElement element=driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[2]/tbody/tr/td[1]"));
+
+			WebElement element=driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]"));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);	
 
-			Thread.sleep(3000);
-			String	xpath= "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]";
-			
-			int x = 211;
-			int y = 432;
-			Actions action = new Actions(driver);
-			//clicking on the chart based on x coordinate and y coordinate 
-			action.moveByOffset( x, y).click().build().perform();
-			Studentdrilldownlabels2(xpath);
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::area[4]");
+
+			Studentdrilldownlabels2();
+
 
 
 		}catch(Exception e) 
@@ -501,17 +519,14 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Thread.sleep(2000);
 			// Common header parameters
 			ReportParams();
+			JavascriptExecutor js=(JavascriptExecutor)driver;
+			js.executeScript("scroll(0,820)");
 			Thread.sleep(3000);
-			ScrollTo_Location("//*[@id='ctl00_MainContent_trDetailedChart']/td/table/tbody/tr[1]/td/h3");
-			Thread.sleep(5000);
-			String	xpath1= "//*[@id='ctl00_MainContent_DetailedAnalyzeChart_Image']";
-			// To Click the link & Assert the drilldown labels
-			int x = 91;
-			int y = 228;
-			Actions action = new Actions(driver);
-			//clicking on the chart based on x coordinate and y coordinate 
-			action.moveByOffset( x, y).click().build().perform();
-			Studentdrilldownlabels2(xpath1);
+
+			JavaScriptclick("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Detailed'])[1]/following::area[9]");							
+
+			Studentdrilldownlabels2();
+
 
 		}catch(Exception e) 
 		{
@@ -533,9 +548,9 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 			Thread.sleep(3000);
 			ScrollTo_Location("//*[@id='ctl00_MainContent_rgHOTAnalysis_ctl00']/thead/tr/th[2]");	
 			Thread.sleep(3000);
-			String	xpath= "//*[@id='ctl00_MainContent_rgHOTAnalysis_ctl00__0']/td[4]/a";
+			click("//*[@id='ctl00_MainContent_rgHOTAnalysis_ctl00__0']/td[4]/a");
 			// To Click the link & Assert the drilldown labels
-			Studentdrilldownlabels2(xpath);
+			Studentdrilldownlabels2();
 
 
 		}catch(Exception e) 
@@ -644,22 +659,21 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 
 
 
-	/***** Common Methods used above testcases****/
+	/***** Common Methods used above testcases
+	 * @throws InterruptedException ****/
 
 
-	public void Studentdrilldownlabels(String xpath)
+	public void Studentdrilldownlabels(String xpath) throws InterruptedException
 
 	{
 
-		// To Click on Students LINk
-		Actions builder = new Actions(driver);
-		builder.click().build().perform();
+		// To Click on Students LIst
 
 		click(xpath);
-
+		Thread.sleep(9000);
 		// To assert the student list page labels
-		Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/span"), "Assessment Students List");		
-
+		Assert.assertEquals(getText("//span[@class='subheading']"), "Assessment Students List");	
+		
 		Assert.assertEquals(getText("//*[@id='ctl00_MainContent_tblSummary']/tbody/tr[1]/td[2]"), "Analyze By Higher Order Thinking Skills");		
 
 		Assert.assertEquals(getText("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00']/thead/tr[1]/th[2]/a"), "Student ID");		
@@ -684,16 +698,21 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 
 	}
 
-	public void ReportParams()
+	public void ReportParams() throws InterruptedException
 
 	{
 
 
 		//Hover over local Assessment link			
-		Actions actions = new Actions(driver);
-		WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"));
-		actions.moveToElement(mouseHover).build().perform();		
-
+		
+		WebElement element = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"));
+		
+		MouseOver overmenuItem=new MouseOver();
+		overmenuItem. MouseOver_DataAnalyst();
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(element).click().build().perform();
+		Thread.sleep(1000);	
 		//To click on the analyze by Score
 		click("//a[contains(.,'Analyze Scores')]");
 
@@ -743,15 +762,10 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 
 
 
-	public void Studentdrilldownlabels2(String xpath) throws InterruptedException
+	public void Studentdrilldownlabels2() throws InterruptedException
 
 	{
 
-		// To Click on Students LINk
-		Actions builder = new Actions(driver);
-		builder.click().build().perform();
-
-		click(xpath);
 		Thread.sleep(2000);
 		// To assert the student list page labels
 		Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td/span"), "Assessment Students List");		
@@ -790,7 +804,7 @@ public class AnalyzebyHigherOrderThinkingSkills extends BaseClassOne{
 		click(xpath);	
 
 		//To select the frame
-		SwitchFrameName("AssessmentPrint");
+		SwitchFrameName("printPopup");
 
 		//To delete all the files in the directory
 		FileDelete();

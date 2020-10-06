@@ -2,12 +2,19 @@ package com.localassessment;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Library.BaseClassOne;
+
+/**
+ * 
+ * @author Ans-A
+ *
+ */
 
 public class Score_Class_Results_Online extends BaseClassOne {
 	
@@ -20,7 +27,7 @@ public class Score_Class_Results_Online extends BaseClassOne {
 				login(Supertent_Login_id,Supertent_Login_Password);	
 				
 				//Assert logout button is displayed in the dashboard page
-				Assert.assertTrue(isElementPresent("//*[@id='ctl00_A3']/img"),"Element is not displayed ");
+				Assert.assertTrue(isElementPresent("//*[@id='ctl00_A3']"),"Element is not displayed ");
 			}
 			catch (Exception e)
 			{
@@ -35,25 +42,31 @@ public class Score_Class_Results_Online extends BaseClassOne {
 		try
 		{
 			//Click on main menu local assessment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			
+			//Click on main menu local Assignment.		
+			Actions act=new Actions(driver);					
+			act.moveToElement(find("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a")).build().perform();
+			
 			
 			//To click on the score results
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[7]/div/a");	
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
+			
 			
 			//To search testid
 			type("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_txtTestId']", "314");
-			
+						   
 			//To click the search button
 			click("//*[@id='ctl00_MainContent_TestFilterPanel1_rpbTestFilter_i2_i0_btnTestId']");
 			
 			// To select the assessment from dropdown
-			select("//select[@id='ctl00_MainContent_ddlAssessments']","value=314");
+			select("//*[@id='ctl00_MainContent_ddlAssessments']","value=314");
 			
 			// To select the administration from dropdown
-			select("//select[@id='ctl00_MainContent_ddlTestAdministration']","value=1268");
+			select("//*[@id='ctl00_MainContent_ddlTestAdministration']","value=1268");
 			
 			// To click the  Score Class Results Online
-			click("//a[@id='ctl00_MainContent_lnkScoreByClass']");
+			click("//*[@id='ctl00_MainContent_lnkScoreByClass']");
 			
 			//Assert the Header 
 			Assert.assertTrue(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[1]/td/span").contains("Score Class Results Online"),"failed to assert text"+"  Score Class Results Online");
@@ -163,7 +176,9 @@ public class Score_Class_Results_Online extends BaseClassOne {
 			
 			click("//*[@id='ctl00_MainContent_btnDisplayGrid']");
 			
-			Scroll_DowntoEnd();
+			ScrollTo_Location("//*[@id='ctl00_MainContent_ddlCourse']");
+			
+			Thread.sleep(4000);
 			
 			 // To  Assert the Available Labels 
 			Assert.assertTrue(getText("//b[contains(text(),'Highlight for bad answers')]").contains("Highlight for bad answers"), "failed to assert alert"+"Highlight for bad answers");
@@ -176,8 +191,9 @@ public class Score_Class_Results_Online extends BaseClassOne {
 
 			Assert.assertTrue(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/div[4]").contains("Please check the items for marking the test as being completed."), "failed to assert alert"+"Please check the items for marking the test as being completed.");
 
+			Thread.sleep(4000);
 			// To  Assert the Grid Labels 
-			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_rgSearch_ctl00']/thead/tr[1]/th[1]").contains("Mark Test Complete"), "failed to assert alert"+"Mark Test Complete");
+			Assert.assertTrue(getText("//th[contains(text(),'Mark Test Complete')]").contains("Mark Test Complete"), "failed to assert alert"+"Mark Test Complete");
 
 			Assert.assertTrue(getText("//th[contains(text(),'Test Completed')]").contains("Test Completed"), "failed to assert alert"+"Test Completed");
 

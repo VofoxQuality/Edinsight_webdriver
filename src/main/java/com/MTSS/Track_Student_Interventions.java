@@ -163,7 +163,7 @@ public class Track_Student_Interventions extends BaseClassOne
 			Assert.assertEquals(getText("//td[@class='subheading']"),"Track Student Interventions");
 			
    			//click on Logout button			 
-			click("//*[@id='ctl00_A3']/img");
+			click("//*[@id='ctl00_A3']");
 			
 			//Assert the page Header as "Edinsight Login"						
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));			

@@ -17,10 +17,8 @@ public class Edit_Curriculum extends BaseClassOne
 {
 	
 	@Test(priority=0)
-	
 	public void TCED29201()
 	{
-		
 		try 
 		
 		{
@@ -39,11 +37,8 @@ public class Edit_Curriculum extends BaseClassOne
 			//Assert the Heading "Edit Curriculum - Department or Sub-group Login Access"
 			
 			Assert.assertTrue(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/h4").contains("Edit Curriculum - Department or Sub-group Login Access"),"failed to assert text"+"Edit Curriculum - Department or Sub-group Login Access");
-		
-		
+			
 		}
-		
-		
 		catch (Exception e) 
 		
 		{
@@ -54,8 +49,7 @@ public class Edit_Curriculum extends BaseClassOne
 		
 	}
 	
-@Test(priority=1)
-	
+	@Test(priority=1)
 	public void TCED29202()
 	{
 		try 
@@ -83,11 +77,8 @@ public class Edit_Curriculum extends BaseClassOne
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_rgAttendanceData_ctl00']/thead/tr[1]/th[6]").contains("Description"),"failed to assert text"+"Description");
 		
 			
-		
-		} 
-		
-		catch (Exception e)
-		
+		} 		
+		catch (Exception e)		
 		{		
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
@@ -696,14 +687,14 @@ public void TCED29204()
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapTitleDescription1_txtTitle']")).getAttribute("value").equals("For Automation [Do not Edit and Delete]"),"failed to assert text"+"  For Automation [Do not Edit and Delete]");
 			 		
 			//Assert the unit names "Test Unit 01"
-			Assert.assertTrue(getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[6]/td/a").contains("Test Unit 02"),"failed to assert text"+"  Test Unit 02");
+			Assert.assertTrue(getText("//a[contains(text(),'Test Unit 02')]").contains("Test Unit 02"),"failed to assert text"+"  Test Unit 02");
 			
 			
 			//Assert the unit names "Test Unit 02"
-			Assert.assertTrue(getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[7]/td/a").contains("Test Unit 01"),"failed to assert text"+"  Test Unit 01");
+			Assert.assertTrue(getText("//a[contains(text(),'Test Unit 01')]").contains("Test Unit 01"),"failed to assert text"+"  Test Unit 01");
 			
 			//Assert the unit names "Test Unit 03"
-			Assert.assertTrue(getText("//*[@id='table1']/table/tbody/tr/td[1]/table/tbody/tr[8]/td").contains("Test Unit 03"),"failed to assert text"+"  Test Unit 03");
+			Assert.assertTrue(getText("//a[contains(text(),'Test Unit 03')]").contains("Test Unit 03"),"failed to assert text"+"  Test Unit 03");
 		
 			driver.navigate().back();
     	
@@ -893,7 +884,10 @@ public void TCED29204()
 			
 			click("//*[@id='ctl00_MainContent_btnCopy']");
 			
+			Thread.sleep(2000);
+			
 			//Assert the message "Both the ''Title'' and ''Target School Year'' must be entered to copy!"
+		
 			
 			String alt_msg=driver.switchTo().alert().getText();
 			
@@ -1035,10 +1029,11 @@ public void TCED29204()
 				//Click on Copy to Current Map button
 				click("//*[@id='ctl00_MainContent_btnCopyFrom']");
 				
-				
+				Thread.sleep(2000);
 				//Assert the message "Topic Topic1 has been successfully added to the current map!"
 				String success=driver.switchTo().alert().getText();
 				
+				Thread.sleep(2000);
 				Assert.assertEquals("Topic Topic1 has been successfully added to the current map!", success);
 				
 				driver.switchTo().alert().accept();
@@ -1049,6 +1044,7 @@ public void TCED29204()
 				// Click on "Test Unit 01"
 				click("//a[@title='Test Unit 01']");
 				
+				Thread.sleep(2000);
 				//Assert the newly copied Topic as "Topic1"
 				Assert.assertEquals( getText("//a[contains(text(),'Add Topic...')]//preceding::a[1]"),"Topic1");
 				
@@ -1058,9 +1054,13 @@ public void TCED29204()
 				// Click on Delete this topic button				
 				click("//*[@id='ctl00_MainContent_CurriculumMapUnitTopic1_btnDeleteTopic']");
 				
+				Thread.sleep(2000);
 				//Assert the message "Are you sure you want to delete the selected Topic?"
 				
 				String del=driver.switchTo().alert().getText();
+				
+				Thread.sleep(2000);
+				
 				Assert.assertEquals("Are you sure you want to delete the selected Topic?",del);
 				
 				//Click OK button in the "Are you sure you want to delete the selected Topic?" 
@@ -1072,18 +1072,23 @@ public void TCED29204()
 				//Assert the message "Topic Deleted Successfully !!!"
 				
 				String top_del=driver.switchTo().alert().getText();
+				
+				Thread.sleep(2000);
+				
 				Assert.assertEquals("Topic Deleted Successfully !!!",top_del);
 				
 				driver.switchTo().alert().accept();
 				
 				//click on Logout button
 				 
-				click("//*[@id='ctl00_A3']/img");
+				click("//*[@id='ctl00_A3']");
 				
 				//Assert the page Header as "Edinsight Login"
-							
+				
+				//Assert the page Header as "Edinsight Login"						
 				Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
-			} 
+							
+	        }
 	        
 	        catch (Exception e) 
 	        

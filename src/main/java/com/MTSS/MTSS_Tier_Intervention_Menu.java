@@ -6,6 +6,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.generalMethods.MouseOver;
+
 import Library.BaseClassOne;
 
 public class MTSS_Tier_Intervention_Menu extends BaseClassOne {
@@ -74,6 +76,7 @@ public class MTSS_Tier_Intervention_Menu extends BaseClassOne {
 		try {
 			// To select container element
 			WebElement element = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
+			
 			Actions action = new Actions(driver);
 			action.moveToElement(element).click().build().perform();
 
@@ -105,6 +108,10 @@ public class MTSS_Tier_Intervention_Menu extends BaseClassOne {
 		try {
 			// To select container element
 			WebElement element = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
+			
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			Actions action = new Actions(driver);
 			action.moveToElement(element).click().build().perform();
 
@@ -135,6 +142,10 @@ public class MTSS_Tier_Intervention_Menu extends BaseClassOne {
 		try {
 			// To select container element
 			WebElement element = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
+			
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			Actions action = new Actions(driver);
 			action.moveToElement(element).click().build().perform();
 

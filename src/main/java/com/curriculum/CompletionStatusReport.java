@@ -75,7 +75,7 @@ public class CompletionStatusReport extends BaseClassOne {
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 			
 			//To click on the log out button
-			click("//img[@src='../../Images/btnExit.png']");
+			click("//*[@id='ctl00_A3']");
 			
 			
 		}catch(Exception e) 

@@ -11,6 +11,8 @@ import org.testng.annotations.Test;
  * Akhil
  */
 
+import com.generalMethods.MouseOver;
+
 import Library.BaseClassOne;
 
 public class Meeting_History_Report extends BaseClassOne
@@ -38,7 +40,7 @@ public class Meeting_History_Report extends BaseClassOne
 		  } 
 		catch (Exception e)
 		  {
-			Assert.fail(e.getMessage());
+			Assert.fail(e.getMessage()); 
 			e.printStackTrace();
 		  }	
 	   
@@ -194,12 +196,14 @@ public class Meeting_History_Report extends BaseClassOne
 		 {
 			//Application should be in the Meeting History Report  page
 			 
+			 Thread.sleep(5000);	
 			 FileDelete();
 			 
 			 //Click on Export to CSV
 			 click("//*[@id='ctl00_MainContent_btnExportCSV']");
 			 
-			 Thread.sleep(6000);	
+			 waitFor_downloadfile();			 
+			 Thread.sleep(500);		
 			 
 			 //Assert the extension of the downloaded file
 			 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
@@ -222,7 +226,8 @@ public class Meeting_History_Report extends BaseClassOne
 			 //Click on Export to PDF
 			 click("//*[@id='ctl00_MainContent_btnExportpdf']");
 			 
-			 Thread.sleep(6000);	
+			 waitFor_downloadfile();			 
+			 Thread.sleep(500);		
 			 
 			 //Assert the extension of the downloaded file
 			 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
@@ -255,6 +260,7 @@ public class Meeting_History_Report extends BaseClassOne
 			 Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"),"Create New Group:");
 			 
 			 //Click on Close button
+			 Thread.sleep(2000);
 			 driver.switchTo().parentFrame();
 			 click("//span[@title='Close']");
 			 
@@ -289,6 +295,7 @@ public class Meeting_History_Report extends BaseClassOne
 			 Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_Label3']"),"Create New Group:");
 			 
 			 //Click on Close button
+			 Thread.sleep(2000);
 			 driver.switchTo().parentFrame();
 			 click("//span[@title='Close']");
 			 
@@ -326,18 +333,28 @@ public class Meeting_History_Report extends BaseClassOne
 	 {
 		 try
 		 {	
+			 driver.switchTo().defaultContent();
+			 
 			  //click on Logout button
-			 waitForEnable("//*[@id='ctl00_A3']/img");
-			  click("//*[@id='ctl00_A3']/img");
+			 waitForEnable("//*[@id='ctl00_A3']");
+			  click("//*[@id='ctl00_A3']");
 			  
 			  //Superintent Login
 			  login(Supertent_Login_id,Supertent_Login_Password);
+			// driver.switchTo().defaultContent();
 			 
+			  Thread.sleep(5000);
+			  
+			  MouseOver overmenuItem=new MouseOver();
+			  overmenuItem. MouseOver_DataAnalyst();
+			  
 			  //hover over MTTS link			
 			   Actions actions = new Actions(driver);
-			   WebElement mouseHover = find("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a");
-			   actions.moveToElement(mouseHover).build().perform();
+			   WebElement mouseHover =find("//a[contains(text(),'MTSS')]");
+			  actions.moveToElement(mouseHover).build().perform();
+			 // click("//a[contains(text(),'MTSS')]");
 			   
+			  Thread.sleep(2000);
 			   //Click Meeting History Report 
 			   click("//a[contains(text(),'Meeting History Report')]");
 			   
@@ -391,7 +408,8 @@ public class Meeting_History_Report extends BaseClassOne
 			 //Click on Export to CSV
 			 click("//*[@id='ctl00_MainContent_btnExportCSV']");
 			 
-			 Thread.sleep(6000);	
+			 waitFor_downloadfile();			 
+			 Thread.sleep(500);		
 			 
 			 //Assert the extension of the downloaded file
 			 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
@@ -415,7 +433,8 @@ public class Meeting_History_Report extends BaseClassOne
 			 //Click on Export to PDF
 			 click("//*[@id='ctl00_MainContent_btnExportpdf']");
 			 
-			 Thread.sleep(6000);	
+			 waitFor_downloadfile();			 
+			 Thread.sleep(500);	
 			 
 			 //Assert the extension of the downloaded file
 			 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
@@ -430,9 +449,14 @@ public class Meeting_History_Report extends BaseClassOne
 	 public void TCED22514()
 	 {
 		 try
-		 {			 
+		 {	
+			  
 			  //hover over MTTS link			
 			   Actions actions = new Actions(driver);
+			   
+			   MouseOver overmenuItem=new MouseOver();
+			   overmenuItem. MouseOver_DataAnalyst();
+			   
 			   WebElement mouseHover =find("//a[contains(text(),'MTSS')]");
 			   actions.moveToElement(mouseHover).build().perform();
 			   
@@ -442,8 +466,8 @@ public class Meeting_History_Report extends BaseClassOne
                //Click on Run Report by Student Group option
 			   click("//*[@id='ctl00_MainContent_rdoStudentGroup']");
 			   
-			   //Select Group :88
-			   select("//*[@id='ctl00_MainContent_ddlStudentGroup']", "label=88");
+			   //Select Group :00 123 MR
+			   select("//*[@id='ctl00_MainContent_ddlStudentGroup']", "label=00 123 MR");
 			   
 			   //click on Run Report
 			   click("//*[@id='ctl00_MainContent_btnRunReport']");
@@ -451,8 +475,8 @@ public class Meeting_History_Report extends BaseClassOne
 			  //Assert the label "Meeting History Report "
 			  Assert.assertEquals(getText("//span[@class='subheading']"),"Meeting History Report");
 			  
-			  //Assert the Group as  88
-			  Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblProviderLevelDisplay']"),"88");
+			  //Assert the Group as  00 123 MR
+			  Assert.assertEquals(getText("//*[@id='ctl00_MainContent_lblProviderLevelDisplay']"),"00 123 MR");
 			  
 		} 
 		 catch (Exception e)
@@ -472,7 +496,8 @@ public class Meeting_History_Report extends BaseClassOne
 			 //Click on Export to CSV
 			 click("//*[@id='ctl00_MainContent_btnExportCSV']");
 			 
-			 Thread.sleep(6000);	
+			 waitFor_downloadfile();			 
+			 Thread.sleep(500);	
 			 
 			 //Assert the extension of the downloaded file
 			 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
@@ -495,7 +520,9 @@ public class Meeting_History_Report extends BaseClassOne
 			 //Click on Export to PDF
 			 click("//*[@id='ctl00_MainContent_btnExportpdf']");
 			 
-			 Thread.sleep(6000);	
+			 waitFor_downloadfile();
+			 
+			 Thread.sleep(500);
 			 
 			 //Assert the extension of the downloaded file
 			 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
@@ -517,15 +544,15 @@ public class Meeting_History_Report extends BaseClassOne
 			 
 			 //Click on Export to PDF
 			 click("//*[@id='ctl00_MainContent_btnPrintToPDF1']");
-			 
-			 Thread.sleep(6000);	
+			 waitFor_downloadfile();			 
+			 Thread.sleep(500);		
 			 
 			 //Assert the extension of the downloaded file
 			 Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			 
 			//click on Logout button
-			waitForEnable("//*[@id='ctl00_A3']/img");
-			click("//*[@id='ctl00_A3']/img");
+			waitForEnable("//*[@id='ctl00_A3']");
+			click("//*[@id='ctl00_A3']");
 				
 			//Assert the page Header as "Edinsight Login"					
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));

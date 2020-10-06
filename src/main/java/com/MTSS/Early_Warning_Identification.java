@@ -18,7 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
+import com.generalMethods.MouseOver;
 
 import Library.BaseClassOne;
 
@@ -361,6 +361,10 @@ public class Early_Warning_Identification extends BaseClassOne {
 
 			//Hover over MTTS link			
 			Actions actions = new Actions(driver);
+			
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			WebElement mouseHover = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"));
 			actions.moveToElement(mouseHover).build().perform();
 

@@ -4,6 +4,7 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
@@ -11,6 +12,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.generalMethods.MouseOver;
+
 import Library.BaseClassOne;
 public class Assessments extends BaseClassOne
 
@@ -24,8 +28,13 @@ public class Assessments extends BaseClassOne
 			login(Supertent_Login_id,Supertent_Login_Password);	
 			
 			//hover over Home link			
-			Actions act=new Actions(driver);					
+			Actions act=new Actions(driver);
+			
+			Thread.sleep(2000);
+			
 			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[1]/a"))).build().perform();	
+			
+			Thread.sleep(2000);
 			
 			//Click on  Student Search menu
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[1]/div/div[8]/div/a");			
@@ -47,7 +56,7 @@ public class Assessments extends BaseClassOne
 			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr/td/b"),"Standardized Assessment Results");
 							
 			//Assert the label "Student Data Depot" 
-			Assert.assertEquals(getText("//th[contains(text(),'Student Data Depot')]"),"Student Data Depot");			
+			//Assert.assertEquals(getText("//th[contains(text(),'Student Data Depot')]"),"Student Data Depot");			
 			
 			//Assert the label "PVAAS Results"
 			Assert.assertEquals(getText("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_panPVAASHistory']/b"),"PVAAS Results");
@@ -217,7 +226,7 @@ public class Assessments extends BaseClassOne
 		}	
 	}
 	
-	@Test(priority=4)	
+	//@Test(priority=4)	
 	public void TCED34205()
 	{
 		
@@ -232,7 +241,7 @@ public class Assessments extends BaseClassOne
 			//click on Print PDF		
 			click("//*[@id='ctl00_MainContent_ctl00_btnPrintToPDF']");			
 			
-			Thread.sleep(6000);		
+			//Thread.sleep(6000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 		} 
 		catch (Exception e)
@@ -246,10 +255,13 @@ public class Assessments extends BaseClassOne
 	{
 		try 
 		 {
-			//hover over Home link			
-			Actions act=new Actions(driver);					
-			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[1]/a"))).build().perform();	
 			
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+
+			Actions act12=new Actions(driver);
+			act12.moveToElement(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='My Home'])[1]/preceding::a[1]"))).build().perform();	
+		
 			//Click on  Student Search menu
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[1]/div/div[8]/div/a");			
 					
@@ -347,13 +359,13 @@ public class Assessments extends BaseClassOne
 			js.executeScript("scroll(0,0)");
 			
 			//Verify the "Percent Correct " graph is exists in the page.
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_KeyStoneChart_Image']"));
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneChartTelerik']"));
 			
 			//Taking screenshot of the "Percent Correct " graph	
 			Takescreenshot("Percent Correct");	
 			
 			//Verify the "Multiple Choice/Constructed Response" graph is exists in the page.
-			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneMultiChoiceChart_Image']"));
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneMultiChoiceChartTelerik']"));
 			
 			//Taking screenshot of the "Multiple Choice/Constructed Response" graph
 			js.executeScript("scroll(0,document.body.scrollHeight)");
@@ -361,14 +373,14 @@ public class Assessments extends BaseClassOne
 			
 			//Click on View Only Biology link
 			js.executeScript("scroll(0,0)");
-			click("//*[@id='ctl00_MainContent_lnkFilterBiology']/b");
+			click("//*[@id='ctl00_MainContent_lnkFilterBiology']");
 			//Taking screenshot of the "Percent Correct " graph exists against the Biology 
-			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneChart_Image']"));
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneChartTelerik']"));
 			Takescreenshot("Biology_Percent Correct");
 			
 			//Verify the "Multiple Choice/Constructed Response" graph is exists against the Biology Subject in the page.
 			js.executeScript("scroll(0,document.body.scrollHeight)");
-			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneMultiChoiceChart_Image']"));
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneMultiChoiceChartTelerik']"));
 			
 			//Taking screenshot of the "Multiple Choice/Constructed Response" graph	
 			Takescreenshot("Biology_Multiple Choice_Constructed Response");
@@ -377,13 +389,13 @@ public class Assessments extends BaseClassOne
 			js.executeScript("scroll(0,0)");
 			click("//*[@id='ctl00_MainContent_lnkFilterLiterature']/b");
 			//Taking screenshot of the "Percent Correct " graph exists against the literature
-			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneChart_Image']"));
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneChartTelerik']"));
 			Takescreenshot("literature_Percent Correct");
 			
 			//Verify the "Multiple Choice/Constructed Response" graph is exists against the Literature Subject in the page.
 			js.executeScript("scroll(0,document.body.scrollHeight)");
 			//Taking screenshot of the "Multiple Choice/Constructed Response" graph	
-			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneMultiChoiceChart_Image']"));
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_KeyStoneMultiChoiceChartTelerik']"));
 			Takescreenshot("literature_Multiple Choice_Constructed Response");
 		}
 		catch (Exception e)
@@ -392,7 +404,7 @@ public class Assessments extends BaseClassOne
 			e.printStackTrace();
 		} 		
 	}	
-	@Test(priority=8)	
+	//@Test(priority=8)	
 	public void TCED34209()
 	{
 		try 
@@ -418,6 +430,10 @@ public class Assessments extends BaseClassOne
 	{
 		try
 		{
+			
+
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
 			//hover over Home link			
 			Actions act=new Actions(driver);					
 			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[1]/a"))).build().perform();	
@@ -445,7 +461,7 @@ public class Assessments extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_StudentDisplayAssessments1_egCDT']/tbody/tr[8]/td[1]/a");
 			
 			//Assert the heading "CDT 2015-2016 Assessment Data"
-			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[2]/td"),"CDT 2015-2016 Assessment Data for JOHN ANDERSON");
+			Assert.assertEquals(getText("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr[1]/td"),"CDT 2015-2016 Assessment Data for JOHN ANDERSON");
 		}
 		catch (Exception e)
 		{
@@ -531,6 +547,10 @@ public class Assessments extends BaseClassOne
 	{
 		try
 		{
+
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			//hover over Home link			
 			Actions act=new Actions(driver);					
 			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[1]/a"))).build().perform();	
@@ -561,34 +581,34 @@ public class Assessments extends BaseClassOne
 			select("//*[@id='ctl00_MainContent_ddlNorms']","label=Biology");
 			
 			//Verify the "TOTAL TEST " graph is exists in the page.			
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_ChartTotalScores_Image']"));			
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikTotalScoreChart']"));			
 			
 			//Verify the "BASIC BIOLOGICAL PRINCIPALS/CHEMICAL BASIS FOR LIFE" graph is exists in the page.			
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat1_Image']"));
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikCat1Chart']"));
 			
 			//Verify the "BIOENERGETIC/HOMEOSTASIS AND TRANSPORT" graph is exists in the page.			
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat2_Image']"));
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikCat2Chart']"));
 			
 			//Verify the "CELL GROWTH AND REPRODUCTION/GENETICS " graph is exists in the page.			
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat3_Image']"));
+			Assert.assertTrue(isElementPresent("//*[@id=\"ctl00_MainContent_TelerikCat3Chart\"]"));
 			
 			//Verify the "THEORY OF EVOLUTION/ECOLOGY" graph is exists in the page.			
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat4_Image']"));
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikCat4Chart']"));
 
 			//Verify the "TOTAL TEST " graph is exists in the page.
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_ChartTotalScores_Image']"),"TOTAL TEST graph-Not found in the page");
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikTotalScoreChart']"),"TOTAL TEST graph-Not found in the page");
 			
 			//Verify the "BASIC BIOLOGICAL PRINCIPALS/CHEMICAL BASIS FOR LIFE" graph is exists in the page.
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat1_Image']"),"BASIC BIOLOGICAL PRINCIPALS/CHEMICAL BASIS FOR LIFE graph-Not found in the page");
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikCat1Chart']"),"BASIC BIOLOGICAL PRINCIPALS/CHEMICAL BASIS FOR LIFE graph-Not found in the page");
 			
 			//Verify the "BIOENERGETIC/HOMEOSTASIS AND TRANSPORT" graph is exists in the page.
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat2_Image']"),"BIOENERGETIC/HOMEOSTASIS AND TRANSPORT graph-Not found in the page");
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikCat2Chart']"),"BIOENERGETIC/HOMEOSTASIS AND TRANSPORT graph-Not found in the page");
 			
 			//Verify the "CELL GROWTH AND REPRODUCTION/GENETICS " graph is exists in the page.
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat3_Image']"),"CELL GROWTH AND REPRODUCTION/GENETICS graph-Not found in the page");
+			Assert.assertTrue(isElementPresent("//*[@id=\"ctl00_MainContent_TelerikCat3Chart\"]"),"CELL GROWTH AND REPRODUCTION/GENETICS graph-Not found in the page");
 			
 			//Verify the "THEORY OF EVOLUTION/ECOLOGY" graph is exists in the page.
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat4_Image']"),"THEORY OF EVOLUTION/ECOLOGY graph-Not found in the page");
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikCat4Chart']"),"THEORY OF EVOLUTION/ECOLOGY graph-Not found in the page");
 			
 			js.executeScript("scroll(0,50)");
 			Takescreenshot("Biology_CDT_2015-16_graph");			
@@ -597,23 +617,20 @@ public class Assessments extends BaseClassOne
 			js.executeScript("scroll(0,0)");
 			select("//*[@id='ctl00_MainContent_ddlNorms']","label=Reading/Lit Grades 6-HS");
 			
-			//Verify the "TOTAL TEST" graph is exists in the page.			
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_ChartTotalScores_Image']"));
+			//Verify the "TOTAL TEST " graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikTotalScoreChart']"));			
 			
-			//Verify the "KEY IDEAS AND DETAILS-LITERATURE TEXT" graph is exists in the page.			
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat1_Image']"));
+			//Verify the "BASIC BIOLOGICAL PRINCIPALS/CHEMICAL BASIS FOR LIFE" graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikCat1Chart']"));
 			
-			//Verify the "KEY IDEAS AND DETAILS-INFORMATIONAL TEXT " graph is exists in the page.			
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat2_Image']"));
+			//Verify the "BIOENERGETIC/HOMEOSTASIS AND TRANSPORT" graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikCat2Chart']"));
 			
-			//Verify the "CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-LIT TEXT" graph is exists in the page.			
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat3_Image']"));
+			//Verify the "CELL GROWTH AND REPRODUCTION/GENETICS " graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//*[@id=\"ctl00_MainContent_TelerikCat3Chart\"]"));
 			
-			//Verify the "CRAFT/STRUCT & INTEGRATION OF KNOWLEDGE/IDEAS-INFO TEXT" graph is exists in the page.			
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat4_Image']"));
-			
-			//Verify the "VOCABULARY ACQUISITION AND USE" graph is exists in the page.			
-			Assert.assertTrue(isElementPresent("//img[@id='ctl00_MainContent_chartCat5_Image']"));
+			//Verify the "THEORY OF EVOLUTION/ECOLOGY" graph is exists in the page.			
+			Assert.assertTrue(isElementPresent("//*[@id='ctl00_MainContent_TelerikCat4Chart']"));
 			
 			js.executeScript("scroll(0,50)");				  
 	    	Takescreenshot("Reading_Lit grades_6-HSCDT_CDT_2015-16_graph");		
@@ -625,11 +642,12 @@ public class Assessments extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-	@Test(priority=12)	
+	//@Test(priority=12)	
 	public void TCED34213()
 	{
 		try
 		{
+			
 			//Application should be in the CDT  2015-2016  page	
 			JavascriptExecutor js=(JavascriptExecutor)driver;
 			js.executeScript("scroll(0,0)");
@@ -653,6 +671,10 @@ public class Assessments extends BaseClassOne
 	{
 		try 
 		{
+
+			MouseOver overmenuItem=new MouseOver();
+			overmenuItem. MouseOver_DataAnalyst();
+			
 			//hover over Home link			
 			Actions act=new Actions(driver);					
 			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[1]/a"))).build().perform();	
@@ -740,11 +762,11 @@ public class Assessments extends BaseClassOne
 			FileDelete();
 			
 			//Click on the Print to PDF
-			click("//input[@id='ctl00_MainContent_btnPrintToPDF']");
+			//click("//input[@id='ctl00_MainContent_btnPrintToPDF']");
 			
 			//Assert the PDF generated		
 			Thread.sleep(6000);		
-			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+			//Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			
 		} 
 		catch (InterruptedException e)

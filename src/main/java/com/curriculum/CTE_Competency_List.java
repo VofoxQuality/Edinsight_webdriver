@@ -1,5 +1,7 @@
 package com.curriculum;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,9 +12,7 @@ import org.testng.annotations.Test;
 import Library.BaseClassOne;
 
 public class CTE_Competency_List extends BaseClassOne
-
-{
-	
+{	
 	String parent_wind;
 	String child;
 	
@@ -20,9 +20,9 @@ public class CTE_Competency_List extends BaseClassOne
    public void TCED30701()
    {
 		
-	 try
-		
+	 try		
 		{
+		 
 			//Superintent Login
 			login(Supertent_Login_id,Supertent_Login_Password);	
 			
@@ -43,10 +43,18 @@ public class CTE_Competency_List extends BaseClassOne
 				
 				if(!parent_wind.equals(child))
 				{
+					
+					Thread.sleep(5000);
 					driver.switchTo().window(child);	
 					
-					WebDriverWait wt=new WebDriverWait(driver,60);
+					Thread.sleep(5000);
+					
+					driver.manage().window().maximize();
+					
+					
+					WebDriverWait wt=new WebDriverWait(driver,120);
 					wt.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='ctl00_MainContent_ReportDisplayCtrl1_divReport']/table/tbody/tr[1]/td")));
+					Thread.sleep(10000);
 					
 					//Assert the Heading "CTE Competency List"
 					Assert.assertTrue(getText("//*[@id='ctl00_MainContent_ReportDisplayCtrl1_divReport']/table/tbody/tr[1]/td").contains("CTE Competency List"),"failed to assert text"+"CTE Competency List");
@@ -58,12 +66,9 @@ public class CTE_Competency_List extends BaseClassOne
 		{
 			Assert.fail(e.getMessage());
 			e.printStackTrace();
-		}
-		
-		
+		}			
 	}
-@Test(priority=1)
-  
+@Test(priority=1)  
 public void TCED30702()
  {
     try
@@ -97,42 +102,36 @@ public void TCED30702()
 	}		
  }
 @Test(priority=2)
-
 public void TCED30703()
- {
-	
-	try
+ {	
+  try
 	 {
 		FileDelete();
-			
+		
 		//Click on PDF button
 		click("//*[@id='ctl00_MainContent_ReportDisplayCtrl1_btnSaveToPDF']");
-		
-		Thread.sleep(30000);		
-		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
-	} 
-	
-	catch (Exception e)
-	
+		waitFor_downloadfile();
+		Thread.sleep(600);
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath,".pdf"), "Failed to download document which has extension .PDF");
+	} 	
+	catch (Exception e)	
 	{
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
-	}	
-		
+	}		
  }
-
 @Test(priority=3)
-
 public void TCED30704()
  {
 	
- try {
+ try
+   {
 		FileDelete();
 			
 		//Click on WORD button
 		click("//*[@id='ctl00_MainContent_ReportDisplayCtrl1_btnSaveToRTF']");
-		
-		Thread.sleep(35000);		
+		waitFor_downloadfile();
+		Thread.sleep(600);	    
 		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 	} 
  
@@ -140,24 +139,19 @@ public void TCED30704()
     {
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
-	}	
-		
+	}		
  }
-
 @Test(priority=4)
-
 public void TCED30705()
- {
-	
-	 try
-	  
+ {	
+	 try	  
 	 {
 		FileDelete();
 			
 		//Click on CSV button
 		click("//*[@id='ctl00_MainContent_ReportDisplayCtrl1_btnSaveToExcel']");
-		
-		Thread.sleep(35000);		
+		waitFor_downloadfile();
+		Thread.sleep(500);
 		Assert.assertTrue(isFileDownloaded_Ext(downloadPath,".csv"), "Failed to download document which has extension .CSV");
 		
 		if(!parent_wind.equals(child))
@@ -168,21 +162,19 @@ public void TCED30705()
 			driver.switchTo().window(parent_wind);
 		
 		//click on Logout button			 
-		click("//*[@id='ctl00_A3']/img");
+		click("//*[@id='ctl00_A3']");
 		
 		//Assert the page Header as "Edinsight Login"						
 		Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
 		
-		 CheckExtraTabs();
+		 //CheckExtraTabs();
 	} 
 	 
 	 catch (Exception e)
 	{
 		Assert.fail(e.getMessage());
 		e.printStackTrace();
-	}
-		
- }
-			
+	}		
+ }			
 
 }

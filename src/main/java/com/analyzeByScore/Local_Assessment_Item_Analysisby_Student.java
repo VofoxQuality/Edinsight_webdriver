@@ -1,5 +1,7 @@
 package com.analyzeByScore;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -32,10 +34,13 @@ public class Local_Assessment_Item_Analysisby_Student extends BaseClassOne
 		try
 		{
 			//Click on main menu local assessment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			Actions act=new Actions(driver);					
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"))).build().perform();	
+			
 			
 			//Click Analyze Score menu
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[8]/div/a");
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[9]/div/a");
+			
 			
 			//Click on Item Analysis by Student report
 			click("//*[@id='ctl00_MainContent_hlnkBenchmarkAnalysis']");
@@ -227,7 +232,7 @@ public class Local_Assessment_Item_Analysisby_Student extends BaseClassOne
 			//To click on the Print on CSV
 			click("//input[@id='ctl00_MainContent_btnExportCSV']");
 			
-			Thread.sleep(6000);
+			waitFor_downloadfile();
 			
 			//assert the downloaded CSv file
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
@@ -268,7 +273,7 @@ public class Local_Assessment_Item_Analysisby_Student extends BaseClassOne
 			String Click_here_to_see_test="//a[@id='ctl00_MainContent_lnkassessmentPDF']";
 			
 			AssessmentPrint ob=new AssessmentPrint();
-			ob.AssessmentPrintReports(Click_here_to_see_test);
+			ob.AssessmentPrintReports(Click_here_to_see_test,"printPopup");
 
 		} 
 		catch (Exception e)

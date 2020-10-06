@@ -4,6 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.generalMethods.MouseOver;
+
 import Library.BaseClassOne;
 
 public class Configure_Settings extends BaseClassOne
@@ -21,8 +24,8 @@ public class Configure_Settings extends BaseClassOne
 			login(Supertent_Login_id,Supertent_Login_Password);	
 					
 			Actions act=new Actions(driver);
-			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
-			
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();		
+
 			//Click Configure Settings			
 			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
 			
@@ -37,17 +40,11 @@ public class Configure_Settings extends BaseClassOne
 		}
 	}
 	
-@Test
-(priority=1)
-	
-	public void TCED23102()
-	
-	{
-	
-	 try 
-	 
-	 {
-		driver.navigate().refresh();
+    @Test(priority=1)	
+	public void TCED23102()	
+	{	
+	 try 	 
+	  {
 		 
 		 //Assert the Labels "Required
 		 
@@ -111,18 +108,14 @@ public class Configure_Settings extends BaseClassOne
 	 
 	}
 
-@Test
-(priority=2)
-
+    @Test(priority=2)
     public void TCED23103()
 
-    {
-	 
-    	try {
-			driver.navigate().refresh();
+    {	 
+    	try    	
+    	{
 			
-			//Click on Measures
-			 
+			//Click on Measures			 
 			click("//*[@id='ctl00_MainContent_trMeasures']/td/a");
 			
 			//Assert the message "Maintain Measures"
@@ -134,7 +127,6 @@ public class Configure_Settings extends BaseClassOne
 			 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_PlcPageCategory_RTIPageCategorySysadmin1_lblRTIFull']")).getText().contains("Multi-Tiered System of Supports"));
 
-			driver.navigate().back();
 		} 
     	
     	catch (Exception e)
@@ -149,68 +141,69 @@ public class Configure_Settings extends BaseClassOne
     	
     }
 
-@Test
-(priority=3)
-
+    @Test(priority=3)
     public void TCED23104()
 
-    {
-	 
-    	try {
-			driver.navigate().refresh();
+    {	 
+    	try 
+    	{
+    		
+    		MouseOver overmenuItem=new MouseOver();
+    		overmenuItem. MouseOver_DataAnalyst();
+    		
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
+			
+			//Click Configure Settings			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
 			
 			//Click on Interventions
 			 
 			click("//*[@id='ctl00_MainContent_trInterventionLists']/td/a");
 			
-			//Assert the message "Maintain Intervention List"
-			 
+			//Assert the message "Maintain Intervention List"			 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td")).getText().contains("Maintain Intervention List"));
 
-			//Assert the label " Multi-Tiered System of Supports"
-  	 
+			//Assert the label " Multi-Tiered System of Supports"  	 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_PlcPageCategory_RTIPageCategorySysadmin1_lblRTIFull']")).getText().contains("Multi-Tiered System of Supports"));
 
-			driver.navigate().back();
-		} 
-    	
-    	catch (Exception e) 
-    	
+		}     	
+    	catch (Exception e)     	
     	{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
 		}
     }
-
-@Test
-(priority=4)
-
-    public void TCED23105()
-
+    @Test(priority=4)
+    public void VED0044()
     {
 	 
-    	try {
-			driver.navigate().refresh();
+    	try
+    	{
+    		MouseOver overmenuItem=new MouseOver();
+    		overmenuItem. MouseOver_DataAnalyst();
+    		
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
 			
-			// Click on Skills
-			 
+			//Click Configure Settings			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
+			
+			// Click on Skills			 
 			click("//*[@id='ctl00_MainContent_trSkills']/td/a");
 			
-			//Assert the label " Multi-Tiered System of Supports"
-  	 
+			//Assert the label " Multi-Tiered System of Supports"  	 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_PlcPageCategory_RTIPageCategorySysadmin1_lblRTIFull']")).getText().contains("Multi-Tiered System of Supports"));
 
 			
-			//Assert the message "Select Tiering Type"
-			 
+			//Assert the message "Select Tiering Type"			 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td")).getText().contains("Select Tiering Type"));
 
 			driver.navigate().back();
 		} 
     	
-    	catch (Exception e) 
-    	
+    	catch (Exception e)     	
     	{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -218,16 +211,19 @@ public class Configure_Settings extends BaseClassOne
 			Assert.fail(e.getMessage());
 		}
     }
-
-@Test
-(priority=5)
-
+    @Test(priority=5)
     public void TCED23106()
-
-    {
-	 
-    	try {
-			driver.navigate().refresh();
+    {	 
+    	try
+    	{    		
+    		MouseOver overmenuItem=new MouseOver();
+    		overmenuItem. MouseOver_DataAnalyst();
+    		
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
+			
+			//Click Configure Settings			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
 			
 			//Click on  Screening Evaluation Criteria 
 			 
@@ -241,11 +237,9 @@ public class Configure_Settings extends BaseClassOne
 			//Assert the message "Maintain Screening Evaluation Criteria"
 			 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td")).getText().contains("Maintain Screening Evaluation Criteria"));
-			driver.navigate().back();
-		} 
-    	
-    	catch (Exception e)
-    	
+
+		}     	
+    	catch (Exception e)    	
     	{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -253,30 +247,31 @@ public class Configure_Settings extends BaseClassOne
 			Assert.fail(e.getMessage());
 		}
     }
-
-@Test
-(priority=6)
-
+    @Test(priority=6)
     public void TCED23107()
-
-    {
-	 
-    	try {
-			driver.navigate().refresh();
+    {	 
+    	try
+    	{
+    		
+    		MouseOver overmenuItem=new MouseOver();
+    		overmenuItem. MouseOver_DataAnalyst();
+    		
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
 			
-			//Click on  Referral Reasons 
-			 
+			//Click Configure Settings			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
+			
+			//Click on  Referral Reasons 			 
 			click("//*[@id='ctl00_MainContent_trReferralReasons']/td/a");
 			
-			//Assert the label " Multi-Tiered System of Supports"
-  	 
+			//Assert the label " Multi-Tiered System of Supports"  	 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_PlcPageCategory_RTIPageCategorySysadmin1_lblRTIFull']")).getText().contains("Multi-Tiered System of Supports"));
 
 			
-			//Assert the message Maintain RTI Referral Reasons
-			 
+			//Assert the message Maintain RTI Referral Reasons			 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td")).getText().contains("Maintain RTI Referral Reasons"));
-			driver.navigate().back();
+
 		} 
     	
     	catch (Exception e)
@@ -288,21 +283,23 @@ public class Configure_Settings extends BaseClassOne
 			Assert.fail(e.getMessage());
 		}
     }
-
-@Test
-(priority=7)
-
+    @Test(priority=7)
     public void TCED23108()
 
-    {
-	 
-    	try 
-    	
-    	{
-			driver.navigate().refresh();
+    {	 
+    	try     	
+    	{	
+    		
+    		MouseOver overmenuItem=new MouseOver();
+    		overmenuItem. MouseOver_DataAnalyst();
+    		
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
 			
-			//Click on  Team Decisions 
-			 
+			//Click Configure Settings			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
+    		
+			//Click on  Team Decisions 			 
 			click("//*[@id='ctl00_MainContent_trTeamDecisions']/td/a");
 			
 			//Assert the label " Multi-Tiered System of Supports"
@@ -312,65 +309,58 @@ public class Configure_Settings extends BaseClassOne
 			//Assert the message Changing the text of a team decision will result in that change being applied to any intervention plans for which that decision was chosen
 			 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_lblWarning']")).getText().contains("Changing the text of a team decision will result in that change being applied to any intervention plans for which that decision was chosen"));
-			driver.navigate().back();
-		} 
-    	
-    	catch (Exception e)
-    	
+		}     	
+    	catch (Exception e)    	
     	{
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-			
+			e.printStackTrace();			
 			Assert.fail(e.getMessage());
 		}
     }
-
-@Test
-(priority=8)
-
+    @Test(priority=8)
     public void TCED23109()
-
-    {
-	 
-    	try {
-			driver.navigate().refresh();
-			
-			//Click on Notes Templates  
-			 
+    {	 
+    	try 
+    	{  
+    		driver.navigate().back();
+    		Thread.sleep(2000);
+	
+			//Click on Notes Templates  			 
 			click("//*[@id='ctl00_MainContent_trNotesTemplates']/td/a");
 			
-			//Assert the label " Multi-Tiered System of Supports"
-  	 
+			Thread.sleep(2000);
+			
+			//Assert the label " Multi-Tiered System of Supports"  	 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_PlcPageCategory_RTIPageCategorySysadmin1_lblRTIFull']")).getText().contains("Multi-Tiered System of Supports"));
 			
 			//Assert the message 	To add a new template, click the 'Add New Template' button. The template name and which pages the template is available for can be edited by using the pencil icon. 
 			 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_lblInstructions']")).getText().contains("To add a new template, click the 'Add New Template' button. The template name and which pages the template is available for can be edited by using the pencil icon"));
-			driver.navigate().back();
 		}     	
     	
-    	catch (Exception e)
-    	
+    	catch (Exception e)    	
     	{
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-			
+			e.printStackTrace();			
 			Assert.fail(e.getMessage());
 		}
     }
-
-@Test
-(priority=9)
-
+ //   @Test(priority=9)
     public void TCED23110()
-
-    {
-	 
-    	try {
-			driver.navigate().refresh();
+    {	 
+    	try
+    	{	
+    		
+    		MouseOver overmenuItem=new MouseOver();
+    		overmenuItem. MouseOver_DataAnalyst();
+    		
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
 			
-			//Click on Parent Notification Method 
-			 
+			//Click Configure Settings			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
+			
+			//Click on Parent Notification Method 			 
 			click("//*[@id='ctl00_MainContent_trParentNotificationMethod']/td/a");
 			
 			//Assert the label " Multi-Tiered System of Supports"
@@ -378,71 +368,68 @@ public class Configure_Settings extends BaseClassOne
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_PlcPageCategory_RTIPageCategorySysadmin1_lblRTIFull']")).getText().contains("Multi-Tiered System of Supports"));
 			
 			//Assert the message 	To add a new template, click the 'Add New Template' button. The template name and which pages the template is available for can be edited by using the pencil icon. 
-			 
+			
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td")).getText().contains("Maintain Parent Notification"));
-			driver.navigate().back();
-		} 
-    	
-    	catch (Exception e)
-    	
+			
+		}     	
+    	catch (Exception e)    	
     	{
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-			
+			e.printStackTrace();			
 			Assert.fail(e.getMessage());
 		}
     }
-
-@Test
-(priority=10)
-
+ //   @Test(priority=10)
     public void TCED23111()
-
-    {
-	 
-    	try {
-			driver.navigate().refresh();
+    {	 
+    	try 
+    	 {
+    		MouseOver overmenuItem=new MouseOver();
+    		overmenuItem. MouseOver_DataAnalyst();
+    		
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();  		
+ 			
+			//Click Configure Settings			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
 			
 			//Click on Program Description 
 			 
 			click("//*[@id='ctl00_MainContent_trProgramDescription']/td/a");
 			
-			//Assert the label " Multi-Tiered System of Supports"
-  	 
-			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_PlcPageCategory_RTIPageCategorySysadmin1_lblRTIFull']")).getText().contains("Multi-Tiered System of Supports"));
+			Thread.sleep(2000);
+			
+			//Assert the label " Multi-Tiered System of Supports"  	 
+			Assert.assertEquals(getText("//*[@id='ctl00_PlcPageCategory_RTIPageCategorySysadmin1_lblRTIFull']"),"Multi-Tiered System of Supports");
 			
 			//Assert the message "Maintain Program Description"    	 
-			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td[1]")).getText().contains("Maintain Program Description"));
+			Assert.assertEquals(getText("//td[contains(text(),'Maintain Program Description')]"),"Maintain Program Description");
 			    	
-			//Assert the message "Maintain Program Description label"
-  	 
-			Assert.assertTrue(driver.findElement(By.xpath("//td[contains(text(),'Maintain Program Description Label')]")).getText().contains("Maintain Program Description Label"));
-			driver.navigate().back();
-		}
-    	
-    	catch (Exception e)
-    	
+			//Assert the message "Maintain Program Description label"  	 
+			Assert.assertEquals(getText("//td[contains(text(),'Maintain Program Description Label')]"),"Maintain Program Description Label");
+		}    	
+    	catch (Exception e)    	
     	{
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-			
+			e.printStackTrace();			
 			Assert.fail(e.getMessage());
 		}
     }
-
-@Test
-(priority=10)
-
+//   @Test(priority=11)
     public void TCED23112()
-
-    {
-	 
+    {	 
     	try
     	{
-			driver.navigate().refresh();
-			
-			// Click on  Meeting Purpose & Reason
-			 
+    		MouseOver overmenuItem=new MouseOver();
+    		overmenuItem. MouseOver_DataAnalyst();
+    		
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
+
+			//Click Configure Settings			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
+    		
+			// Click on  Meeting Purpose & Reason			 
 			click("//*[@id='ctl00_MainContent_trMeetingPurposeReason']/td/a");
 			
 			//Assert the label " Multi-Tiered System of Supports"
@@ -458,26 +445,30 @@ public class Configure_Settings extends BaseClassOne
     	catch (Exception e) 
     	{
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-			
+			e.printStackTrace();			
 			Assert.fail(e.getMessage());
 		}
     }
-
-@Test
-(priority=12)
-
-    public void TCED23113()
-
-    {
-	 
+//   @Test(priority=12)
+   public void TCED23113()
+    {	 
     	try 
     	{
-			driver.navigate().refresh();
+    		MouseOver overmenuItem=new MouseOver();
+    		overmenuItem. MouseOver_DataAnalyst();
+    		
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
 			
-			//Click on  Custom Field 
-			 
+			//Click Configure Settings			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
+    		
+    		//driver.navigate().back();
+			
+			//Click on  Custom Field 			 
 			click("//*[@id='ctl00_MainContent_trCustomField']/td/a");
+			
+			Thread.sleep(2000);
 			
 			//Assert the label " Multi-Tiered System of Supports"
   	 
@@ -486,45 +477,39 @@ public class Configure_Settings extends BaseClassOne
 			//Assert the message "Maintain Custom Field"
 			 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td")).getText().contains("Maintain Custom Field"));
-			driver.navigate().back();
 		}
-    	catch (Exception e) 
-    	
+    	catch (Exception e)     	
     	{
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-			
+			e.printStackTrace();			
 			Assert.fail(e.getMessage());
 		}
     }
-@Test
-(priority=13)
-
+//    @Test(priority=13)
     public void TCED23114()
-
-    {
-	 
+    { 
     	try 
     	
     	{
-			driver.navigate().refresh();
+    		MouseOver overmenuItem=new MouseOver();
+    		overmenuItem. MouseOver_DataAnalyst();
+    		
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
 			
-			//Click on  Tiering Criteria 
-			 
+			//Click Configure Settings			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
+			
+			//Click on  Tiering Criteria 			 
 			click("//*[@id='ctl00_MainContent_trTieringTypes']/td/a");
 			
-			//Assert the label " Multi-Tiered System of Supports"
-  	 
+			//Assert the label " Multi-Tiered System of Supports"  	 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_PlcPageCategory_RTIPageCategorySysadmin1_lblRTIFull']")).getText().contains("Multi-Tiered System of Supports"));
 			
-			//Assert the message "RTI View Configuration"
-			 
+			//Assert the message "RTI View Configuration"			 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table[1]/tbody/tr/td")).getText().contains("RTI View Configuration"));
-			driver.navigate().back();
-		} 
-    	
-    	catch (Exception e) 
-    	
+		}     	
+    	catch (Exception e)     	
     	{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -532,35 +517,33 @@ public class Configure_Settings extends BaseClassOne
 			Assert.fail(e.getMessage());
 		}
     }
-@Test
-(priority=14)
-
+//    @Test(priority=14)
     public void TCED23115()
-
-    {
-	 
+    {	 
     	try 
     	{
-			driver.navigate().refresh();
+    		MouseOver overmenuItem=new MouseOver();
+    		overmenuItem. MouseOver_DataAnalyst();
+    		
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/a"))).build().perform();
 			
-			//Click on Student Response 
-			 
+			//Click Configure Settings			
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[7]/div/div[21]/div/a");
+			
+			//Click on Student Response 			 
 			click("//*[@id='ctl00_MainContent_trStudentResponse']/td/a");
 			
-			//Assert the label " Multi-Tiered System of Supports"
-  	 
+			//Assert the label " Multi-Tiered System of Supports"  	 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_PlcPageCategory_RTIPageCategorySysadmin1_lblRTIFull']")).getText().contains("Multi-Tiered System of Supports"));
 			
 			//Assert the message "Maintain Student Response"
 			 
 			Assert.assertTrue(driver.findElement(By.xpath("//*[@id='ctl00_tdContentCell']/table/tbody/tr[3]/td/table/tbody/tr[1]/td")).getText().contains("Maintain Student Response"));
-			driver.navigate().back();
-			
+		
 			click("//*[@id='ctl00_A3']/img");
-		} 
-    	
-    	catch (Exception e) 
-    	
+		}     	
+    	catch (Exception e)     	
     	{
 			// TODO Auto-generated catch block
 			e.printStackTrace();

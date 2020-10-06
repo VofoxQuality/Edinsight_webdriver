@@ -11,6 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.generalMethods.AssessmentPrint;
+import com.generalMethods.MouseOver;
 import com.generalMethods.TestingSummary;
 
 import Library.BaseClassOne;
@@ -44,12 +45,14 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	{
 		try
 		{
+			
+			Thread.sleep(5000);
 			// To Assert the Validation Messages
-			Assert.assertEquals(getText("//td[contains(text(),'Total Scheduled Students:')]"), "Total Scheduled Students:");	
+			//Assert.assertEquals(getText("//td[contains(text(),'Total Scheduled Students:')]"), "Total Scheduled Students:");	
 
-			Assert.assertEquals( getText("//td[contains(text(),'Total test completed and scored:')]"),"Total test completed and scored:");	
+			//Assert.assertEquals( getText("//td[contains(text(),'Total test completed and scored:')]"),"Total test completed and scored:");	
 
-			Assert.assertEquals(getText("//td[contains(text(),'Total tests started but not completed:')]"), "Total tests started but not completed:");	
+			//Assert.assertEquals(getText("//td[contains(text(),'Total tests started but not completed:')]"), "Total tests started but not completed:");	
 
 			Assert.assertEquals( getText("//label[@for='ctl00_MainContent_rbBuilding']"),"Run Report By Building");	
 
@@ -480,10 +483,12 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			Thread.sleep(1000);
 			// Method for StudentFilters
 			StudentFiltersParampage();
+			
+			Thread.sleep(3000);
 
 			click("//*[@id='ctl00_MainContent_grdQuestions_ctl02_grdQuestionDetails_ctl02_lblPercentage']/a");
 			// Method for Studentdetail
-			AssertStudentdetailHeaders();
+			AssertStudentdetailHeaders(); 
 
 		}catch(Exception e) 
 		{
@@ -497,7 +502,15 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 	public void TCED14101() 
 	{
 		try
-		{	// Method for Report param pages
+		
+		{	// to Logout
+			waitForEnable("//*[@id='ctl00_A3']");
+			click("//*[@id='ctl00_A3']");
+			
+			//Supertent Login
+			login(Supertent_Login_id,Supertent_Login_Password);
+			Thread.sleep(500);
+			// Method for Report param pages
 			ReportParam ();
 			//To click on run report in param page
 			click("//input[@id='ctl00_MainContent_btnFilter']");
@@ -506,7 +519,9 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			FileDelete();
 			//To click on the Print on PDF
 			click("//input[@id='ctl00_MainContent_btnPrintToPDF1']");
-			Thread.sleep(4000);		
+			
+			waitFor_downloadfile();
+			Thread.sleep(25000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");		
 
 		}catch(Exception e) 
@@ -574,7 +589,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 			
 			String xpath = "//a[@id='ctl00_MainContent_lnkassessmentPDF']";
 			
-			objAssessmentPrint.AssessmentPrintReports(xpath);
+			AssessmentPrintReports(xpath);
 
 
 		}catch(Exception e) 
@@ -587,20 +602,101 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 
 
 	//***************Methods****************//
+public void AssessmentPrintReports(String xpath) throws InterruptedException
+	
+	{
+		//To click here to see the test
+		
+		click(xpath);	
 
-	public void ReportParam ()
+		//To select the frame
+		SwitchFrameName("rwAssessmentPrint");
+
+		//To delete all the files in the directory
+		FileDelete();
+
+		//To click print pdf
+		Thread.sleep(1000);
+		click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
+		waitFor_downloadfile();
+
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+		 
+		//To click on the print word
+		Thread.sleep(3000);
+		click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']");
+		waitFor_downloadfile();
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+		
+		//To delete all the files in the directory
+		FileDelete();
+			
+		//To click on the Print OE to PDF
+		Thread.sleep(3000);
+		click("//*[@id='ctl00_ContentPlaceHolder1_linkOePdfQuestions']");
+		waitFor_downloadfile();
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+
+		 
+		//To click on the OE to Word
+		Thread.sleep(3000);
+		click("//*[@id='ctl00_ContentPlaceHolder1_linkOeWordQuestions']");
+		waitFor_downloadfile();
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+
+		//*******Print answer Key**********************
+
+		//To delete all the files in the directory
+		FileDelete();
+			
+		//To click print pdf
+		click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfAnswer']");
+		waitFor_downloadfile();
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+		 
+		//To click on the print word
+		Thread.sleep(3000);
+		click("//*[@id='ctl00_ContentPlaceHolder1_linkWordAnswer']");
+		waitFor_downloadfile();
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+
+		//To delete all the files in the directory
+		FileDelete();
+
+		//To click on the Print condensed PDF
+		Thread.sleep(3000);
+		click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedPDF']");
+		waitFor_downloadfile();
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
+
+
+		//To click on the OE to Word
+		Thread.sleep(3000);
+		click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedWord']");
+		waitFor_downloadfile();
+		Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
+		
+		
+	}
+
+
+	public void ReportParam () throws InterruptedException
 
 	{
 
 		WebElement element = driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"));
+		
+		MouseOver overmenuItem=new MouseOver();
+		overmenuItem. MouseOver_DataAnalyst();
+		
 		Actions action = new Actions(driver);
 		action.moveToElement(element).click().build().perform();
-	
+		
 		//Click on main menu local Assesment.
-		click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
-
+		//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+		Thread.sleep(2000);	
 		//To click on the analyze by Score
-		click("//a[contains(.,'Analyze Scores')]");
+		click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[9]/div/a");
 
 		//To click on the item analysis by student link text
 		click("//*[@id='ctl00_MainContent_hlnkItemAnalysis']");
@@ -616,6 +712,7 @@ public class ItemAnalysisbyQuestion extends BaseClassOne {
 		//To select the Assessment 
 		new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAssessments']"))).selectByVisibleText("For Automation- do not edit");
 
+		Thread.sleep(3000);
 		//To select the Administrations
 		new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlAdministrations']"))).selectByVisibleText("For Automation- do not edit (Admin)(2017-2018)");
 

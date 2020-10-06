@@ -840,7 +840,7 @@ public void TCED27128()
 	 {
 		driver.navigate().refresh(); 
 		 
-		 click("//*[@id='ctl00_A3']/img");
+		 click("//*[@id='ctl00_A3']");
 	 } 
 	catch (Exception e) 
 	

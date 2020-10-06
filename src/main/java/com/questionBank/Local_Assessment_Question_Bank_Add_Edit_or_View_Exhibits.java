@@ -1,5 +1,7 @@
 package com.questionBank;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,7 +18,7 @@ public class Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits extends Ba
 			//Superintent Login
 			 login(Supertent_Login_id,Supertent_Login_Password);
 			 
-			 Assert.assertTrue(isElementPresent("//img[@src='../Images/EdInsight-Logo.jpg']"),"Login has some issues");
+			 Assert.assertTrue(isElementPresent("//*[@id='ctl00_A3']"),"Login has some issues");
 		 } 
 	     catch (Exception e)
 	     {
@@ -29,10 +31,15 @@ public class Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits extends Ba
 	{
 		try
 		{
+			
 			//Click on main menu local Assignment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			Thread.sleep(4000);
+			Actions act=new Actions(driver);					
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"))).build().perform();	
+			
 			
 			//To click on the Question Bank
+			Thread.sleep(2000);
 			click("//a[contains(.,'Question Bank')]");
 			
 			//Click on Add, Edit, or View Exhibits link
@@ -205,7 +212,7 @@ public class Local_Assessment_Question_Bank_Add_Edit_or_View_Exhibits extends Ba
 			Assert.assertEquals(getText("//td[contains(text(),'2100002')]"),"2100002");
 			
 			//click on Logout button		 
-			click("//*[@id='ctl00_A3']/img");
+			click("//*[@id='ctl00_A3']");
 			
 			//Assert the page Header as "Edinsight Login"					
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));

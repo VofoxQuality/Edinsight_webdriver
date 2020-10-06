@@ -583,7 +583,7 @@ public class View_Print extends BaseClassOne
 				
 				//click on Logout button
 				 
-				click("//*[@id='ctl00_A3']/img");
+				click("//*[@id='ctl00_A3']");
 				
 				//Assert the page Header as "Edinsight Login"
 							

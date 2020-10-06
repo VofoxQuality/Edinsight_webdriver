@@ -3,14 +3,47 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="com.localassessment.Question_Bank_Apply_Standards">
+      <class name="Report.PssaAssessmentAnchors">
         <methods>
+          <include name="TCED38820"/>
+          <include name="TCED38822"/>
+          <include name="TCED38821"/>
+          <include name="TCED38802"/>
+          <include name="TCED38824"/>
+          <include name="TCED38801"/>
+          <include name="TCED38823"/>
+          <include name="TCED38804"/>
+          <include name="TCED38826"/>
+          <include name="TCED38803"/>
+          <include name="TCED38825"/>
+          <include name="TCED38806"/>
+          <include name="TCED38828"/>
+          <include name="TCED38805"/>
+          <include name="TCED38827"/>
+          <include name="TCED38808"/>
+          <include name="TCED38807"/>
+          <include name="TCED38829"/>
           <include name="setup1"/>
-          <include name="TCED16206"/>
-          <include name="TCED16205"/>
+          <include name="TCED38831"/>
+          <include name="TCED38830"/>
+          <include name="TCED38811"/>
+          <include name="TCED38810"/>
+          <include name="TCED38832"/>
+          <include name="TCED38813"/>
+          <include name="TCED38812"/>
+          <include name="TCED38834"/>
+          <include name="TCED38815"/>
+          <include name="TCED38837"/>
+          <include name="TCED38814"/>
+          <include name="TCED38836"/>
+          <include name="TCED38817"/>
           <include name="tearDown"/>
+          <include name="TCED38816"/>
+          <include name="TCED38819"/>
+          <include name="TCED38818"/>
+          <include name="TCED38809"/>
         </methods>
-      </class> <!-- com.localassessment.Question_Bank_Apply_Standards -->
+      </class> <!-- Report.PssaAssessmentAnchors -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.localassessment.Question_Bank_Apply_Standards">
+      <class name="Report.SingleYearCollegeSAT">
         <methods>
+          <include name="TCED43501"/>
           <include name="setup1"/>
-          <include name="TCED16206"/>
+          <include name="TCED43506"/>
+          <include name="TCED43504"/>
           <include name="tearDown"/>
+          <include name="TCED43505"/>
+          <include name="TCED43502"/>
+          <include name="TCED43503"/>
         </methods>
-      </class> <!-- com.localassessment.Question_Bank_Apply_Standards -->
+      </class> <!-- Report.SingleYearCollegeSAT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

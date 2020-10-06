@@ -149,7 +149,10 @@ public class Custom_Reports extends BaseClassOne
 			//Click on PDF button
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnPDF']");		
 			
-			Thread.sleep(40000);		
+			//Wait for downloading the file
+			waitFor_downloadfile();
+			Thread.sleep(2000);	
+			
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");			
 			
 		} 
@@ -172,7 +175,10 @@ public class Custom_Reports extends BaseClassOne
 			//Click on WORD button
 			click("//*[@id='ctl00_ContentPlaceHolder1_btnWord']");
 			
-			Thread.sleep(40000);		
+			//Wait for downloading the file
+			waitFor_downloadfile();
+			
+			Thread.sleep(2000);		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 			
 			String parent_wind=driver.getWindowHandle();
@@ -189,7 +195,7 @@ public class Custom_Reports extends BaseClassOne
 		
 			
    			//click on Logout button			 
-			click("//*[@id='ctl00_A3']/img");
+			click("//*[@id='ctl00_A3']");
 			
 			//Assert the page Header as "Edinsight Login"						
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));

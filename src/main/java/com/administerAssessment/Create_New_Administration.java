@@ -4,12 +4,9 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-/**
- * 
- */
-
 import com.generalMethods.AssessmentPrint;
 import Library.BaseClassOne;
 public class Create_New_Administration extends BaseClassOne
@@ -22,6 +19,8 @@ public class Create_New_Administration extends BaseClassOne
 	     {
 			//Superintent Login
 			 login(Supertent_Login_id,Supertent_Login_Password);
+			 
+			 
 		 } 
 	     catch (Exception e)
 	     {
@@ -35,10 +34,14 @@ public class Create_New_Administration extends BaseClassOne
 		try
 		{
 			//Click on main menu local assessment.
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			//click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a");
+			
+			//Click on main menu local assessment.			
+			Actions act=new Actions(driver);					
+			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/a"))).build().perform();
 			
 			//Click Manage Assessments menu
-			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[5]/div/a");
+			click("//*[@id='ctl00_tdMenuContainer']/ul/li[5]/div/div[6]/div/a");
 			
 			//Search a Test
 			type("//*[@id='ctl00_MainContent_txtTestId']",test_id);
@@ -187,10 +190,10 @@ public class Create_New_Administration extends BaseClassOne
 			//Application should be in the  Create New Administration page.
 			
 			//Click on  the Option Button 
-			click("//span[@class='rbText']");
+			click("//*[@id='ctl00_MainContent_rsbAssessmentEditOptions']");
 			
 			//click save administration
-			click("//*[@id='ctl00_MainContent_rcmAssessmentEditOptions_detached']/ul/li/span");
+			click("//span[contains(text(),'Save Administration')]");
 			
 			//Asert the Validation message "Administration Name is Required"
 			Assert.assertEquals(getText("//span[@id='ctl00_MainContent_rfvAdministartionName']"),"Administration Name is Required");
@@ -213,10 +216,10 @@ public class Create_New_Administration extends BaseClassOne
 			type("//input[@id='ctl00_MainContent_txtAdministrationName']",generateRandomData());
 			
 			//Click on  the Option Button 
-			click("//span[@class='rbText']");
+			click("//*[@id='ctl00_MainContent_rsbAssessmentEditOptions']");
 			
 			//click save administration
-			click("//*[@id='ctl00_MainContent_rcmAssessmentEditOptions_detached']/ul/li/span");
+			click("//span[contains(text(),'Save Administration')]");
 			
 			//* Assert the Successfull message "Administration Saved Successfully"
 			Assert.assertEquals(getText("//span[@id='ctl00_MainContent_lblMsg']"),"Administration Saved Successfully");
@@ -235,7 +238,7 @@ public class Create_New_Administration extends BaseClassOne
 			//Application should be in the  Create New Administration page.
 			
 			//Click on  the Option Button 
-			click("//span[@class='rbText']");
+    		click("//*[@id='ctl00_MainContent_rsbAssessmentEditOptions']");
 			
 			//Assert the Option Button Values- Save Administration
 			 List<WebElement> li=driver.findElements(By.xpath("//*[@id='ctl00_MainContent_rcmAssessmentEditOptions_detached']/ul/li"));
@@ -319,7 +322,7 @@ public class Create_New_Administration extends BaseClassOne
 			//Application should be in the  Create New Administration page.			
 						
 			//Click on  the Option Button 
-			click("//span[@class='rbText']");
+			click("//*[@id='ctl00_MainContent_rsbAssessmentEditOptions']");
 			
 			//String print_test="//span[contains(text(),'Print Test')]";
 			
@@ -335,14 +338,15 @@ public class Create_New_Administration extends BaseClassOne
 			//To click print pdf
 				
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfQuestions']");
-			Thread.sleep(10000);
+			waitFor_downloadfile();
 
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			 
 			//To click on the print word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordQuestion']"); 
-			Thread.sleep(10000);
+			waitFor_downloadfile();
+
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 
 			//To delete all the files in the directory
@@ -351,14 +355,19 @@ public class Create_New_Administration extends BaseClassOne
 			//To click on the Print OE to PDF
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkOePdfQuestions']");
-			Thread.sleep(6000);
+			
+			waitFor_downloadfile();
+
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 
 			 
 			//To click on the OE to Word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkOeWordQuestions']");
-			Thread.sleep(6000);
+			
+			waitFor_downloadfile();
+
+		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 
 			//*******Print answer Key**********************
@@ -368,13 +377,17 @@ public class Create_New_Administration extends BaseClassOne
 				
 			//To click print pdf
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkPdfAnswer']");
-			Thread.sleep(6000);
+			
+			waitFor_downloadfile();
+
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			 
 			//To click on the print word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkWordAnswer']");
-			Thread.sleep(6000);
+			
+			waitFor_downloadfile();
+
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 
 			//To delete all the files in the directory
@@ -383,14 +396,18 @@ public class Create_New_Administration extends BaseClassOne
 			//To click on the Print condensed PDF
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedPDF']");
-			Thread.sleep(6000);
+			
+			waitFor_downloadfile();
+
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 
 
 			//To click on the OE to Word
 			Thread.sleep(3000);
 			click("//*[@id='ctl00_ContentPlaceHolder1_linkCondensedWord']");
-			Thread.sleep(6000);
+			
+			waitFor_downloadfile();
+
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".doc"), "Failed to download document which has extension .DOC");
 		}
 		catch (Exception e)
@@ -411,20 +428,30 @@ public class Create_New_Administration extends BaseClassOne
 			click("//*[@id='RadWindowWrapper_ctl00_MainContent_printPopup']/div[1]/div/ul/li[2]/span");
 			
 			//Click on  the Option Button 
-			click("//span[@class='rbText']");
+			click("//*[@id='ctl00_MainContent_rsbAssessmentEditOptions']");
+
+			Thread.sleep(2000);
 			
 			click("//*[@id='ctl00_MainContent_rcmAssessmentEditOptions_detached']/ul/li[2]/span");
 			
 			//* Assert the confirmation message "Are you sure you want to delete this administration?
-			Assert.assertTrue(driver.switchTo().alert().getText().contains("Are you sure you want to delete this administration?"),"failed to assert-Are you sure you want to delete this administration?");
+			System.out.println(getText("//div[@class='popup']//div[2]//div[1]"));
+			
+			Assert.assertTrue(getText("//div[@class='popup']//div[2]//div[1]").contains("WARNING: Deleting this administration will permanently delete ALL test results"),"failed to assert-WARNING: Deleting this administration will permanently delete ALL test results");
 		   
-			// Click on Ok button
-			driver.switchTo().alert().accept();
+			// Click on Delete button
+			click("//a[@href='#'][contains(text(),'Delete')]");
 			
 			Thread.sleep(2000);
 			
 			// AAssert dministration sholud delete and navigate to Manage Assessment page.
-			Assert.assertEquals(getText("//span[@class='administitle']"),"Manage Assessments");			
+			Assert.assertEquals(getText("//span[@class='administitle']"),"Manage Assessments");		
+			
+			//click on Logout button			 
+			click("//*[@id='ctl00_A3']");
+			
+			//Assert the page Header as "Edinsight Login"						
+			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));
     	
     	}
     	catch (Exception e)

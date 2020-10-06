@@ -19,13 +19,16 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 			//Superintent Login
 			login(Supertent_Login_id,Supertent_Login_Password);	
 			
-			//hover over Home link			
+			//hover over Home link
+			Thread.sleep(4000);
 			Actions act=new Actions(driver);					
 			act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[1]/a"))).build().perform();	
 			
+			Thread.sleep(2000);
 			//Click on  Student Building/Grade lists 
 			click("//a[contains(text(),'Student Building/Grade Lists')]");
 			
+			Thread.sleep(2000);
 			//Assert the Heading "Student Building/Grade lists"
 			Assert.assertEquals(getText("//td[@class='subheading']"),"Student Building/Grade lists");
 		} 
@@ -476,7 +479,8 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 		   
 		   driver.switchTo().parentFrame();
 		   
-		   //click on close button		   
+		   //click on close button	
+		   Thread.sleep(3000);
 		   click("//span[@title='Close']");
 		   
 		 //Assert the Heading "Student Building/Grade lists"
@@ -499,15 +503,16 @@ public class Student_Building_Grade_Lists extends BaseClassOne
 			FileDelete();
 			
 			//Click on  Export to PDF
+			Thread.sleep(2000);
 			click("//input[@id='ctl00_MainContent_btnPrintToPDF']");
 			
 			//Assert the PDF generated		
-			Thread.sleep(6000);		
+			waitFor_downloadfile();		
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".pdf"), "Failed to download document which has extension .PDF");
 			
 		    //click on Logout button
-			waitForEnable("//*[@id='ctl00_A3']/img");
-			click("//*[@id='ctl00_A3']/img");
+			waitForEnable("//*[@id='ctl00_A3']");
+			click("//*[@id='ctl00_A3']");
 			
 			//Assert the page Header as "Edinsight Login"					
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));

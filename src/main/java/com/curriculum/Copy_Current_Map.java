@@ -166,6 +166,7 @@ public class Copy_Current_Map extends BaseClassOne
 			
 			click("//*[@id='ctl00_MainContent_btnCopy']");
 			
+			Thread.sleep(3000);
 			//Assert the message "Both the ''Title'' and ''Target School Year'' must be entered to copy!"
 			
 			String alt_msg=driver.switchTo().alert().getText();
@@ -252,32 +253,33 @@ public class Copy_Current_Map extends BaseClassOne
 			 
 			 click("//*[@id='ctl00_MainContent_CurriculumMapEditMenu1_hlkCopyCurrentMap']");
 					
-			
+			 Thread.sleep(3000);
 			//Subject = Mathematics
 			Select sub_drop=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlSubjects']")));
 			sub_drop.selectByVisibleText("Mathematics");
-			
+			Thread.sleep(3000);
 			//Existing Map = 01 demo1
 			Select sub_map=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlMaps']")));
 			sub_map.selectByVisibleText("01 demo1");
 			
-			Thread.sleep(500);
+			Thread.sleep(3000);
 			
 			//Existing Map Unit = unit 1
 			Select sub_map_unit=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlUnits']")));
 			sub_map_unit.selectByVisibleText("Unit 1");
-			
+			Thread.sleep(3000);
 			//Existing Map Topics = Topic1
 			Select sub_map_top=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlTopics']")));
 			sub_map_top.selectByVisibleText("Topic1");		
-					
+			Thread.sleep(3000);
 			//Current Map Units = Test Unit 01
 			Select sub_map_un=new Select(driver.findElement(By.xpath("//*[@id='ctl00_MainContent_ddlCurrentMapUnits']")));
 			sub_map_un.selectByVisibleText("Test Unit 01");
-			
+			Thread.sleep(3000);
 			//Click on Copy to Current Map button
 			click("//*[@id='ctl00_MainContent_btnCopyFrom']");			
 			
+			Thread.sleep(5000);
 			//Assert the message "Topic Topic1 has been successfully added to the current map!"
 			String success=driver.switchTo().alert().getText();
 			
@@ -302,6 +304,7 @@ public class Copy_Current_Map extends BaseClassOne
 			click("//*[@id='ctl00_MainContent_CurriculumMapUnitTopic1_btnDeleteTopic']");
 			
 			//Assert the message "Are you sure you want to delete the selected Topic?"
+			Thread.sleep(2000);
 			
 			String del=driver.switchTo().alert().getText();
 			Assert.assertEquals("Are you sure you want to delete the selected Topic?",del);
@@ -321,7 +324,7 @@ public class Copy_Current_Map extends BaseClassOne
 			
 			//click on Logout button
 			 
-			click("//*[@id='ctl00_A3']/img");
+			click("//*[@id='ctl00_A3']");
 			
 			//Assert the page Header as "Edinsight Login"
 						

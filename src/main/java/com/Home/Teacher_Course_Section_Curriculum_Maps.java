@@ -207,8 +207,8 @@ public class Teacher_Course_Section_Curriculum_Maps extends BaseClassOne
 			 driver.switchTo().window(all_tabs.get(0));
 			 
 			//click on Logout button
-			waitForEnable("//*[@id='ctl00_A3']/img");
-			click("//*[@id='ctl00_A3']/img");
+			waitForEnable("//*[@id='ctl00_A3']");
+			click("//*[@id='ctl00_A3']");
 				
 			//Assert the page Header as "Edinsight Login"					
 			Assert.assertTrue(driver.getTitle().contains("EdInsight Login"));

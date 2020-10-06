@@ -3,6 +3,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.remote.server.handler.GetPageSource;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,7 +12,7 @@ import Library.BaseClassOne;
 public class Test_Suite_MTSS_T1_Interventions extends BaseClassOne
 {
 	
-	@Test(priority=0)	
+	@Test(priority=1)	
 	public void TCED19701()
 	{
 		try
@@ -37,7 +38,7 @@ public class Test_Suite_MTSS_T1_Interventions extends BaseClassOne
 			e.printStackTrace();
 		} 
 	}
-	@Test(priority=1)	
+	@Test(priority=2)	
 	public void TCED19702()
 	{
 		try
@@ -84,7 +85,7 @@ public class Test_Suite_MTSS_T1_Interventions extends BaseClassOne
 		}
 		
 	}
-	@Test(priority=2)	
+	@Test(priority=3)	
 	public void TCED19703()
 	{
 		try {
@@ -131,7 +132,7 @@ public class Test_Suite_MTSS_T1_Interventions extends BaseClassOne
 			e.printStackTrace();
 		}		
 	}
-	@Test(priority=3)	
+	@Test(priority=4)	
 	public void TCED19704()
 	{
 		try
@@ -142,7 +143,8 @@ public class Test_Suite_MTSS_T1_Interventions extends BaseClassOne
 			
 			//Click on the Export to CSV button
 			click("input#ctl00_MainContent_btnExportCSV.button");	    
-			Thread.sleep(6000);	
+		
+			waitFor_downloadfile();
 			
 			//Assert the downloaded csv file
 			Assert.assertTrue(isFileDownloaded_Ext(downloadPath, ".csv"), "Failed to download document which has extension .CSV");
@@ -153,7 +155,7 @@ public class Test_Suite_MTSS_T1_Interventions extends BaseClassOne
 			Assert.fail(e.getMessage());
 		}		
 	}	
-	@Test(priority=4)	
+	@Test(priority=5)	
 	public void TCED19705()
 	{		
 		try 
@@ -179,7 +181,10 @@ public class Test_Suite_MTSS_T1_Interventions extends BaseClassOne
 			//Click on "Create T1 Intervention For Selected students" button
 			click("//input[@id='ctl00_MainContent_btnTutorial']");
 			
+			SwitchFrameName("RadWindow5");
+			
 			//Assert the label "T1 Intervention Details "
+			Assert.assertEquals(getText("//*[@id='ctl00_ContentPlaceHolder1_divContents']/div[2]"),"T1 Intervention Details");
 		} 		
 		catch (Exception e) 
 		{
@@ -187,15 +192,153 @@ public class Test_Suite_MTSS_T1_Interventions extends BaseClassOne
 			Assert.fail(e.getMessage());
 		}		
 	}
-	@Test(priority=5)	
+	@Test(priority=6)	
 	public void TCED19706()
 	{
+		try{
+			
+			//Assert the Label Cluster
+			Assert.assertEquals(getText("//span[@id='ctl00_ContentPlaceHolder1_lblTutorialCluster']"),"Cluster");
+			
+			//Assert the Label Settings
+			Assert.assertEquals(getText("//span[@id='ctl00_ContentPlaceHolder1_lblProgramDescription']"),"Setting");
+			
+			//Assert the Label Design 
+			Assert.assertEquals(getText("//span[@id='ctl00_ContentPlaceHolder1_lblDesigneeBuilding']"),"Designee Building");
+			
+			//Assert the Label Designee
+			Assert.assertEquals(getText("//span[@id='ctl00_ContentPlaceHolder1_lblDesignee']"),"Designee");
+			
+			//Assert the Label Measurement
+			Assert.assertEquals(getText("//span[@id='ctl00_ContentPlaceHolder1_lblMeasureAssmnt']"),"Measurement");
+			
+			//Assert the Label T1 Intervention Teacher Building
+			Assert.assertEquals(getText("//span[@id='ctl00_ContentPlaceHolder1_lblPersonRespBuilding']"),"T1 Intervention Teacher Building");
+			
+			//Assert the Label T1 Intervention Teacher
+			Assert.assertEquals(getText("//span[@id='ctl00_ContentPlaceHolder1_lblPersonResponsible']"),"T1 Intervention Teacher");
+			
+			//Assert the Label T1 Intervention Teacher
+			Assert.assertEquals(getText("//span[@id='ctl00_ContentPlaceHolder1_lblFrequencyTPR']"),"Frequency");
+			
+			//Assert the Label T1 Intervention Teacher
+			Assert.assertEquals(getText("//span[@id='ctl00_ContentPlaceHolder1_litInitiationDate']"),"T1 Intervention Start Date (this should be the first day attended)");
+			
+			
+		}catch (Exception e) 
+		{
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}	
+		
 		
 	}
 	
-	
-//	@Test(priority=8)
+	@Test(priority=7)	
+	public void TCED19707()
+	{
+		try{
+			
+			
+			//Click on the Save & Continue button
+			click("//input[@id='ctl00_ContentPlaceHolder1_btnSaveContinue']");
+			
+			//Validation messages for T1 intervension details page 
+			Assert.assertTrue(driver.getPageSource().contains("T1 Intervention Plan Could Not Be Saved:"));
+			
+			Assert.assertTrue(driver.getPageSource().contains("You must select a Frequency Times Per Week."));
+			
+			Assert.assertTrue(driver.getPageSource().contains("You must select a Frequency Minutes Per Session."));
+			
+			//click on the button  Save & Submit button
+			click("//input[@id='ctl00_ContentPlaceHolder1_btnSaveSubmit']");
+			
+			//Validation messages for T1 intervension details page 
+			Assert.assertTrue(driver.getPageSource().contains("T1 Intervention Plan Has Been Saved But Could Not Be Submitted:"));
+			
+			Assert.assertTrue(driver.getPageSource().contains("You must select an Setting."));
+			
+			Assert.assertTrue(driver.getPageSource().contains("You must select a Frequency Times Per Week."));
+			
+			Assert.assertTrue(driver.getPageSource().contains("You must select a Frequency Minutes Per Session."));
+			
+			Assert.assertTrue(driver.getPageSource().contains("You must select an T1 Intervention Start Date (this should be the first day attended)."));
+			
+			Assert.assertTrue(driver.getPageSource().contains("You must select an Curriculum/Materials."));
+		}catch (Exception e) 
+		{
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}	
+		
+	}
+	@Test(priority=9)	
 	public void TCED19709()
+	{
+		try{
+			// click on the close button
+			click("//input[@id='ctl00_ContentPlaceHolder1_btnClose']");
+			
+			//Accept the alert 
+			
+			String message=driver.switchTo().alert().getText(); 
+			
+			Assert.assertEquals(message, "This intervention plan has not been submitted.  Are you sure you want to"
+					+ " close this window?");
+			
+			//To accept the alert
+			driver.switchTo().alert().accept();
+			
+			
+			//To switch to default content
+			driver.switchTo().defaultContent();
+			
+			//To verify the whether the pop up is closed or not
+			Assert.assertTrue(exists("//td[@class='subheading']"));	
+		
+		}catch (Exception e) 
+		{
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}
+	}
+	@Test(priority=10)	
+	public void TCED19710()
+	{
+		try{
+			
+			//click on the intervention button
+			Thread.sleep(5000);
+			click("//input[@id='ctl00_MainContent_rgSearch_ctl00_ctl04_btnIntervention']");
+			//JavaScriptclick("");
+			
+			Thread.sleep(5000);
+			
+			//Switch to the frame Name
+			SwitchFrameName("RadWindow1");
+			//driver.switchTo().frame(3);
+			
+			//Assert the Heading
+			Assert.assertEquals(getText("//div[@class='pageheading']"), "MTSS Student Summary");
+			
+			//Click on the close button
+			click("//input[@id='ctl00_ContentPlaceHolder1_btnClose']");
+			
+			//To switch to default content
+			driver.switchTo().defaultContent();
+			
+			//To verify the whether the pop up is closed or not
+			Assert.assertTrue(exists("//td[@class='subheading']"));  
+			
+		}catch (Exception e) 
+		{
+			e.printStackTrace();
+			Assert.fail(e.getMessage());
+		}
+	}
+
+//	@Test(priority=8)
+	public void TCED197015()
 	
 	{
 		
@@ -248,7 +391,7 @@ public class Test_Suite_MTSS_T1_Interventions extends BaseClassOne
 		 System.out.println(driver.switchTo().window(childWindow).getTitle());
 		 driver.close();
 		 }
-		 }
+	 }
 		
 	}
 	

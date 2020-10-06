@@ -24,7 +24,7 @@ public class Enter_weeks_minutes extends BaseClassOne
 		
 		//hover over curriculum link
 		
-		Actions act=new Actions(driver);		
+		Actions act=new Actions(driver);	
 				
 		act.moveToElement(driver.findElement(By.xpath("//*[@id='ctl00_tdMenuContainer']/ul/li[11]/a"))).build().perform();	
 		
@@ -262,7 +262,7 @@ public class Enter_weeks_minutes extends BaseClassOne
 		
 	}
 	
-	@Test(priority=3)
+	//@Test(priority=3)
 	
 	public void TCED29404()
 	{
@@ -300,61 +300,68 @@ public class Enter_weeks_minutes extends BaseClassOne
 			}
 			
             // Minutes For Topic for Test Topic 01 = 15
+			Thread.sleep(6000);
 			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();
+			//driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();
 			
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']",TU1);
+			//type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']",TU1);
 			
             //Minutes For Topic for Test Topic 02 = 20
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();
+			//driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Test Topic 01'])[1]/following::input[1]")).clear();
 			
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']",T1U1);
+			type("(.//*[normalize-space(text()) and normalize-space(.)='Test Topic 01'])[1]/following::input[1]",T1U1);
 			
 			
              //	Minutes For Topic for Test Topic 03 = 15
 			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();		
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']",TU2);
+			Thread.sleep(2000);
+			//driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();
+										
+			type("(.//*[normalize-space(text()) and normalize-space(.)='Test Topic 02'])[1]/following::input[1]",TU2);
 			
             //	Minutes For Topic for Test Topic 04 = 20
-			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();		
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']",T1U2);
+			Thread.sleep(2000);
+			//driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();		
+			type("(.//*[normalize-space(text()) and normalize-space(.)='Test Topic 02'])[1]/following::input[1]",T1U2);
 			
 			
            //	Minutes For Topic for Test Topic 05 = 15
-			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();		
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']",TU3);
+			Thread.sleep(2000);
+			//driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();		
+			type("(.//*[normalize-space(text()) and normalize-space(.)='Test Topic 03'])[1]/following::input[1]",TU3);
 			
             //	Minutes For Topic for Test Topic 06 = 20
-			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();		
-			type("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']",T1U3);
+			Thread.sleep(2000);
+			//driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();		
+			type("(.//*[normalize-space(text()) and normalize-space(.)='Test Topic 04'])[1]/following::input[1]",T1U3);
 			
 			//click save changes button
 			
 			click("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_btnSaveChanges']");		
 			
 			//Assert the message "Topic Minutes Successfully Saved"
-			
+			Thread.sleep(4000);
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_lblMessageSuccess']").contains("Topic Minutes Successfully Saved"),"failed to assert text"+"Topic Minutes Successfully Saved");
 			
 			//Delete all Entered values from Minutes For Topic column
 			
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();
+		/*	driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();
 			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();		
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl03_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl02_txtMinutesForTopic']")).clear();
-			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl04_grdDataEntryUnitTopic_ctl03_txtMinutesForTopic']")).clear();		
-
+			
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl04_txtMinutesForTopic']")).clear();	
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl05_txtMinutesForTopic']")).clear();		
+			
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl06_txtMinutesForTopic']")).clear();		
+			
+			driver.findElement(By.xpath("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_grdDataEntryTopics_ctl02_grdDataEntryUnitTopic_ctl07_txtMinutesForTopic']")).clear();	*/	
+			
+			
 			//click save changes button
 			
 			click("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_btnSaveChanges']");		
 					
 			//Assert the message "Topic Minutes Successfully Saved"
-					
+			Thread.sleep(2000);		
 			Assert.assertTrue(getText("//*[@id='ctl00_MainContent_CurriculumMapWeeksMinutes1_lblMessageSuccess']").contains("Topic Minutes Successfully Saved"),"failed to assert text"+"Topic Minutes Successfully Saved");
 			
 			//Click on Exit button
